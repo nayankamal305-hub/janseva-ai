@@ -105,12 +105,12 @@ def password_login(svc, ident, pw, ip=""):
     for k in keys: _fail(db, k)
     return None, "bad"
 
-def password_signup_or_reset(svc, ident, code, pw, name="", reset=False):
+def password_signup_or_reset(svc, ident, code, pw, name="", reset=False, ip=""):
     """OTP proves control of the email/phone once; then the password is set. Returns (user|None, error|None)."""
     e = pw_policy(pw)
     if e: return None, e
     u = otp_verify(svc, ident, code, name)
     if not u: return None, "invalid or expired code"
     set_password(svc, u["id"], pw)
-    svc.db.run("DELETE FROM login_attempts WHERE key=?", ("u:" + ident,))
+    svc.db.run("DELETE FROM login_attempts WHERE key IN (?,?)", ("u:" + ident, "ip:" + (ip or "?")))
     return svc.db.one("SELECT * FROM users WHERE id=?", (u["id"],)), None

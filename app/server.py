@@ -263,7 +263,7 @@ def make_handler(svc, admin_token, rate=120):
             if path in ("/api/auth/signup", "/api/auth/reset"):
                 ident = accounts.norm_ident(d.get("email") or d.get("phone"))
                 if not ident: return self._json(422, {"error": "valid email or 10-digit phone required"})
-                u, err = accounts.password_signup_or_reset(svc, ident, d.get("code", ""), d.get("password", ""), d.get("name", ""), path.endswith("reset"))
+                u, err = accounts.password_signup_or_reset(svc, ident, d.get("code", ""), d.get("password", ""), d.get("name", ""), path.endswith("reset"), self._ip())
                 return self._json(200, {"token": u["token"], "name": u["name"]}) if u else self._json(401 if "code" in err else 422, {"error": err})
             if path == "/api/otp/request":
                 ident = accounts.norm_ident(d.get("phone") or d.get("email")); 

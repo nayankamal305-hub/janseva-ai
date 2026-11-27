@@ -236,8 +236,8 @@ class Service:
         base = self.env.get("PUBLIC_BASE_URL", "")
         body = complaint_text(c, name) + ("\nPhoto: %s%s\n" % (base, c["photo_url"]) if c["photo_url"] and base else "") + "\nTracking ID: %s (please keep this ID in replies)\n" % c["code"]
         reply_to = None
-        if self.env.get("SMTP_FROM"):
-            fa = self.env["SMTP_FROM"].split("<")[-1].strip(" >"); lo, _, dom = fa.partition("@"); reply_to = "%s+%s@%s" % (lo, c["code"], dom)
+        if mailer.configured(self.env):
+            fa = mailer.from_address(self.env).split("<")[-1].strip(" >"); lo, _, dom = fa.partition("@"); reply_to = "%s+%s@%s" % (lo, c["code"], dom)
         r = mailer.send(to_email, "[%s] Public grievance: %s" % (c["code"], c["title"]), body, reply_to, self.env)
         st = "sent_unacknowledged" if r["sent"] else "not_sent_smtp_unconfigured"
         self.db.run("INSERT INTO notifications(complaint_id,ts,audience,channel,target,status,body) VALUES(?,?,?,?,?,?,?)", (cid, now(), "authority:" + authority_name, "email", to_email, st, body))

@@ -28,3 +28,15 @@ services:
         sync: false
       - key: WA_APP_SECRET
         sync: false
+      - key: EMAIL_PROVIDER
+        sync: false
+      - key: BREVO_API_KEY
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: MAIL_FROM
+        sync: false
+      - key: IMAP_USER
+        sync: false
+      - key: IMAP_PASS
+        sync: false

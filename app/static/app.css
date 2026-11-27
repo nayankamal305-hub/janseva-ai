@@ -114,3 +114,6 @@ table{width:100%;border-collapse:collapse;font-size:13.5px}th,td{text-align:left
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 :focus-visible{outline:3px solid var(--saf);outline-offset:2px}
 .logo div{white-space:nowrap}
+
+.stars{color:#c9d1e6;letter-spacing:2px;white-space:nowrap}.stars .st.on{color:var(--saf2)}.stars .st.half{background:linear-gradient(90deg,var(--saf2) 50%,#c9d1e6 50%);-webkit-background-clip:text;color:transparent}
+.stars.big{font-size:30px}.stars.pick .st{cursor:pointer}textarea{font:inherit;padding:10px;border:1px solid var(--line);border-radius:12px;min-height:70px}

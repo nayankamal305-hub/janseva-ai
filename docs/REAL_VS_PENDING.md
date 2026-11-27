@@ -29,3 +29,9 @@ NOT AVAILABLE: MLA, district collector, department-head emails (no official mach
 X: JANSEVA's own X API posting is paid (~$0.015/post, $0.20 with link), so not built. Citizen gets a prefilled post with official-site-linked handles and posts from their own account. Handles are suggestions, review before posting.
 CPGRAMS/Swachhata automation: not shipped (CAPTCHA/OTP are the citizen's; form selectors unmapped). Next: citizen-side userscript after mapping from a logged-in session.
 "Sent" never means "registered".
+
+## v1.1
+JANSEVA Rating: official-source offices only (540+244 MPs, 93 central ministry PG offices, 37 state/UT cells). 1-5 stars, 1 per user per office (editable), comment (500 chars, no phone/email/links/abuse words), like, report (3 reports auto-hide), moderator restore/remove at /api/admin/rating-queue. NOT listed: MLAs, collectors (no official dataset). Ratings are opinions, not official performance data.
+
+X tag queue (consent_x per complaint): text built from facts + official-site handles, validated (<=280, no abuse words, handles must be in verified lists, no duplicates), status queued/picked/posted/failed, daily cap X_DAILY_CAP (6), spacing X_MIN_GAP_MIN (25 + 0-10 jitter). Poster API (all POST, header Authorization: Bearer $X_POSTER_TOKEN): /api/poster/x/pending -> {item|null}; /api/poster/x/posted {id,url}; /api/poster/x/failed {id,error}. Poster must post the text verbatim and return the real tweet URL; items never auto-marked posted.
+HONEST RISKS: (1) X's automation rules restrict automated posting and bulk unsolicited tagging; a bot-like account can be suspended. Operate low-volume and review, or use the Post-on-X draft. (2) Verified handle coverage is thin (35 official pages, noisy). Add verified entries to data/social_handles_extra.json. MP/MLA/collector handles are not available from official data and are never guessed. 

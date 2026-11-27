@@ -50,11 +50,16 @@
    <label class="sw"><input type="checkbox" id="c3"><span class="t"></span><span><b>Also notify my elected representative</b><span class="sm mut" style="display:block">Optional. Only verified public contacts are used.</span></span></label>
    <label class="sw"><input type="checkbox" id="c4"><span class="t"></span><span><b>Email this complaint to the accountable authorities</b><span class="sm mut" style="display:block">Sent by JANSEVA via email with your photos attached, your name and a reply-to. Max 3 first emails, later levels only if unresolved. Recipients (with official source) are shown after submit. "Sent" is not "registered".</span></span></label>
    <label class="sw"><input type="checkbox" id="c5"><span class="t"></span><span><b>Use my email as reply-to</b><span class="sm mut" style="display:block">Authorities can reply to you directly. Your email is shared with them.</span></span></label>
+   <label class="sw"><input type="checkbox" id="c6"><span class="t"></span><span><b>Tag concerned authorities on X</b><span class="sm mut" style="display:block">A factual post (no personal data) with official handles is queued for the JANSEVA X account. Limited posts per day, so it may take a while. You can also post it yourself.</span></span></label>
    <input id="cst" placeholder="Your Lok Sabha constituency (optional, to email your MP)" style="width:100%;margin-top:6px">
    <input id="cmp" placeholder="Private company? e.g. Swiggy, Uber, Amazon, Flipkart (optional)" style="width:100%;margin-top:6px">
    <button class="btn saf big" style="width:100%;margin-top:12px" onclick="submitC()"><i data-ic="send"></i>Submit</button><div id="submsg" class="info gr" style="display:none;margin-top:10px"></div></div></div>
 </section>
 
+<section id="rate" class="sec"><h2 style="margin:16px 0 4px">JANSEVA Rating</h2>
+ <div class="info" style="margin-bottom:10px"><i data-ic="info"></i><div>Citizens rate how well public offices solve problems. Offices come only from official lists (Parliament, PG portal). Opinions about public work only, not official data. Login needed to rate.</div></div>
+ <div class="card"><div class="row"><input id="rq" class="grow" placeholder="Search MP, ministry, state grievance cell"><select id="rt"><option value="">All</option><option value="MP">MPs</option><option value="Ministry">Ministries</option><option value="State">State cells</option></select></div><div id="rlist" style="margin-top8px"></div></div>
+ <div id="rdet" class="card" style="display:none"></div></section>
 <section id="mine" class="sec"><h2 style="margin:16px 0 4px">My complaints</h2><div id="list"></div></section>
 
 <section id="nearby" class="sec"><h2 style="margin:16px 0 4px">Nearby and community issues</h2>

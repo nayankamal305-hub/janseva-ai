@@ -104,6 +104,17 @@ def make_handler(svc, admin_token, rate=120):
                 st = q.get("state", "").lower(); cat = q.get("category", "")
                 rows = [r for r in load_data("utility_contacts.json") if (not st or st in (r["state"] or "").lower()) and (not cat or cat in r["categories_heuristic"]) and (q.get("with_email") != "1" or r["emails_published_on_official_page"])]
                 return self._json(200, {"count": len(rows), "items": rows[:100], "note": "Emails are only those the body publishes on its own official site (page named in found_on). Whether they accept citizen complaints is unverified."})
+            if path == "/api/rating/search":
+                from . import rating
+                return self._json(200, {"items": rating.search(svc.db, q.get("q", ""), q.get("type", ""), q.get("state", ""), q.get("sort", "rating"))})
+            if path == "/api/rating/entity":
+                from . import rating
+                uu = self._user(); d = rating.detail(svc.db, q.get("key", ""), uu["id"] if uu else None)
+                return self._json(200, d) if d else self._json(404, {"error": "not found"})
+            if path == "/api/admin/rating-queue":
+                from . import rating
+                a = self._adm()
+                return self._json(200, {"items": rating.moderation_queue(svc.db)}) if a and roles.can(a["role"], "photos.approve") else self._json(403, {"error": "moderator only"})
             if path == "/api/companies": return self._json(200, {"items": load_data("companies.json")})
             if path == "/api/directory/mps":
                 from .service import load_data
@@ -119,10 +130,6 @@ def make_handler(svc, admin_token, rate=120):
                 return self._json(200, public.monthly_report(svc.db, m))
             if path == "/api/authorities": return self._json(200, svc.db.all("SELECT * FROM authorities WHERE verified=1"))
             if path == "/api/representatives": return self._json(200, svc.db.all("SELECT id,name,office,constituency,state,public_contact,profile_url,last_verified FROM representatives WHERE verified=1"))
-            if path == "/api/admin/dispatch-run":
-                a = self._adm()
-                from . import dispatch
-                return self._json(200, dispatch.tick(svc)) if a and a["role"] == "super_admin" else self._json(403, {"error": "super admin only"})
             if path == "/api/admin/inbound-poll":
                 a = self._adm()
                 return self._json(200, svc.ingest_replies()) if a and a["role"] == "super_admin" else self._json(403, {"error": "super admin only"})
@@ -165,6 +172,30 @@ def make_handler(svc, admin_token, rate=120):
         def do_POST(self):
             if self._limited(): return self._json(429, {"error": "rate limit"})
             path = urllib.parse.urlparse(self.path).path
+            if path.startswith("/api/rating/") or path.startswith("/api/admin/rating-"):
+                from . import rating
+                d = self._body() if hasattr(self, "_body") else {}
+                if path.startswith("/api/admin/rating-"):
+                    a = self._adm()
+                    if not (a and roles.can(a["role"], "photos.approve")): return self._json(403, {"error": "moderator only"})
+                    return self._json(200, rating.moderate(svc.db, int(d.get("id", 0)), d.get("action", "")))
+                uu = self._user()
+                if not uu: return self._json(401, {"error": "login"})
+                if path == "/api/rating/rate": return self._json(200, rating.rate(svc.db, uu["id"], d.get("key", ""), d.get("stars"), d.get("comment", "")))
+                if path == "/api/rating/like": return self._json(200, rating.like(svc.db, uu["id"], int(d.get("id", 0))))
+                if path == "/api/rating/report": return self._json(200, rating.report(svc.db, uu["id"], int(d.get("id", 0)), d.get("reason", "")))
+            if path == "/api/admin/dispatch-run":
+                a = self._adm()
+                from . import dispatch
+                return self._json(200, dispatch.tick(svc)) if a and a["role"] == "super_admin" else self._json(403, {"error": "super admin only"})
+            if path.startswith("/api/poster/x/"):
+                from . import social
+                tok = os.environ.get("X_POSTER_TOKEN", "")
+                if not tok or self.headers.get("Authorization", "") != "Bearer " + tok: return self._json(403, {"error": "poster token required"})
+                if path.endswith("/pending"): return self._json(200, social.next_pending(svc))
+                d = self._body()
+                if path.endswith("/posted"): return self._json(200, social.mark(svc, int(d.get("id", 0)), True, d.get("url", "")))
+                if path.endswith("/failed"): return self._json(200, social.mark(svc, int(d.get("id", 0)), False, error=d.get("error", "")))
             if path == "/api/upload":
                 if not self._user(): return self._json(401, {"error": "login"})
                 data = self._raw()
@@ -243,15 +274,19 @@ def make_handler(svc, admin_token, rate=120):
                 if act == "submit":
                     svc.db.run("UPDATE complaints SET consent_submit=?,consent_share_personal=?,notify_representative=? WHERE id=?",
                                (int(bool(d.get("consent_submit"))), int(bool(d.get("consent_share_personal"))), int(bool(d.get("notify_representative"))), cid))
-                    svc.db.run("UPDATE complaints SET consent_email=?,reply_to_user=?,constituency=?,company=? WHERE id=?", (int(bool(d.get("consent_email"))), int(bool(d.get("reply_to_user"))), (d.get("constituency") or None), (d.get("company") or None), cid))
+                    svc.db.run("UPDATE complaints SET consent_email=?,reply_to_user=?,constituency=?,company=?,consent_x=%d WHERE id=?" % int(bool(d.get("consent_x"))), (int(bool(d.get("consent_email"))), int(bool(d.get("reply_to_user"))), (d.get("constituency") or None), (d.get("company") or None), cid))
                     svc.db.audit("user:%s" % u["id"], "consent", "submit=%s share_personal=%s rep=%s email_authorities=%s v2" % (d.get("consent_submit"), d.get("consent_share_personal"), d.get("notify_representative"), d.get("consent_email")))
                     res = svc.submit(cid)
+                    if d.get("consent_x"):
+                        from . import social
+                        res["x_queue"] = social.enqueue(svc, cid)
                     if d.get("consent_email"):
                         from . import dispatch
                         try: res["email_dispatch"] = dispatch.plan(svc, cid); res["email_dispatch"]["send"] = dispatch.send_due(svc, cid)
                         except Exception as ex: res["email_dispatch"] = {"ok": False, "error": type(ex).__name__}
                     return self._json(200, res)
                 if act == "dispatches": return self._json(200, {"items": svc.db.all("SELECT level,kind,target_name,target_email,source_url,source_date,tier,status,due_at,sent_at FROM dispatches WHERE complaint_id=? ORDER BY level,id", (cid,))})
+                if act == "x-status": return self._json(200, {"item": svc.db.one("SELECT status,tweet_url,text,posted_at FROM x_queue WHERE complaint_id=?", (cid,))})
                 if act == "tweet-draft":
                     from . import social
                     return self._json(200, social.draft(svc, cid))

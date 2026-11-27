@@ -42,7 +42,7 @@ def draft(svc, cid):
 # ---------------- consented X tag queue (drained by a separate poster run by the operator) ----------------
 import os, re, time, hashlib, json, random
 ABUSE = re.compile(r"\b(thief|chor|corrupt|bastard|idiot|fuck\w*|madarchod|chutiy\w*|harami|kutta|shame on|resign)\b", re.I)
-X_DAILY_CAP = lambda: int(os.environ.get("X_DAILY_CAP", "6"))
+X_DAILY_CAP = lambda: int(os.environ.get("X_DAILY_CAP", "4"))
 X_MIN_GAP_MIN = lambda: int(os.environ.get("X_MIN_GAP_MIN", "25"))
 def _now(): return time.strftime("%Y-%m-%dT%H:%M:%S")
 def known_handles():

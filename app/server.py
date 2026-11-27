@@ -139,6 +139,7 @@ def make_handler(svc, admin_token, rate=120):
                 return self._json(200, {"count": len(rows), "items": rows[:200], "note": "Each handle is linked from the listed official site. Blue tick and follower count are not checked."})
             if path == "/api/coverage": return self._json(200, {"items": load_data("coverage.json"), "note": "reach% = official sites our crawler could open; low reach means unknown, not absent."})
             if path == "/api/directory/constituencies":
+                from .service import load_data
                 st = (q.get("state") or "").lower()
                 return self._json(200, {"items": sorted({m["constituency"] for m in load_data("representatives_parliament.json") if m["house"] == "Lok Sabha" and m.get("constituency") and (not st or st in (m["state"] or "").lower())})})
             if path == "/api/companies": return self._json(200, {"items": load_data("companies.json")})

@@ -312,8 +312,8 @@ window.aiPrepare=async function(){if(!T){openLogin();return}const text=$('aiqt')
  <button class="btn pri big" style="width:100%;margin-top:8px" onclick="aiConfirm()">Confirm and register</button>`};
 window.aiConfirm=async function(){if(!$('aic_1').checked){toast('Please tick the confirmation first');return}if(!LL){toast('Location needed: tap "Use my GPS" or pick on the map below');$('pickmap').scrollIntoView({behavior:'smooth'});return}
  $('title').value=$('aic_t').value;$('desc').value=$('aic_d').value;AICAT=$('aic_c').value;AISEV=$('aic_s').value;const s2=$('aic_2').checked;
- await analyse();AICAT=null;AISEV=null;if(!CUR||!CUR.id){return}
- if(CUR.category!=AICAT)await api('POST','/api/complaints/'+CUR.id+'/confirm',{category:AICAT});
+ await analyse();const ac=AICAT;AICAT=null;AISEV=null;if(!CUR||!CUR.id){return}
+ if(ac&&CUR.category!=ac)await api('POST','/api/complaints/'+CUR.id+'/confirm',{category:ac});
  $('c1').checked=true;$('c2').checked=s2;$('c4').checked=true;$('c5').checked=true;await submitC()};
 
 })();

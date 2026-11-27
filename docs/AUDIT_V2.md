@@ -58,3 +58,7 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - Dispatch L1 for garbage/drainage/toilet (and municipal roads) now uses the matched city ULB's published email first (consent rules unchanged).
 - Caveat: the PMAY list's "Municipal Corporation" type includes many census-town units (e.g. in Tamil Nadu), so 331 is not the count of real corporations. Type is shown as listed.
 - Dark mode fixes for Nearby and My Complaints.
+
+## v3.0 Kerala municipalities
+- Source: Kerala LSGD directory of local body websites (https://lsgkerala.gov.in/en/website/web), fetched 2026-11-27. Each municipality homepage read once; emails are as printed there (mostly secretary mailboxes, some gmail). 70 more ULBs added to data/ulb_contacts.json (206 total).
+- 17 Kerala municipality sites not matched to the PMAY list by name or no email; skipped, not guessed. 34 gram panchayat/block emails were found on the same directory but NOT imported (rural bodies are not routed yet).

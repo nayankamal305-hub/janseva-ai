@@ -1,1697 +1,2887 @@
 [
-{
-"ulb_name": "Chittoor",
-"city_code": "248122",
-"state": "Andhra Pradesh",
-"website": "https://chittoor.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://chittoor.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Anantapur",
-"city_code": "248112",
-"state": "Andhra Pradesh",
-"website": "https://anantapur.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://anantapur.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Eluru",
-"city_code": "251739",
-"state": "Andhra Pradesh",
-"website": "https://eluru.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://eluru.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Kurnool",
-"city_code": "251789",
-"state": "Andhra Pradesh",
-"website": "https://kurnool.ap.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://kurnool.ap.gov.in/public-utility/kurnol-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Machilipatnam",
-"city_code": "251750",
-"state": "Andhra Pradesh",
-"website": "https://machilipatnam.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://machilipatnam.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Kakinada",
-"city_code": "251731",
-"state": "Andhra Pradesh",
-"website": "https://kakinada.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://kakinada.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Rajahmundry",
-"city_code": "251725",
-"state": "Andhra Pradesh",
-"website": "https://rmc.ap.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://rmc.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Srikakulam",
-"city_code": "251700",
-"state": "Andhra Pradesh",
-"website": "https://srikakulam.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://srikakulam.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Nellore",
-"city_code": "251772",
-"state": "Andhra Pradesh",
-"website": "https://nellore.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://nellore.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ongole",
-"city_code": "251766",
-"state": "Andhra Pradesh",
-"website": "https://ongole.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://ongole.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Tirupati",
-"city_code": "248121",
-"state": "Andhra Pradesh",
-"website": "https://tirupati.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://tirupati.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Vijayawada",
-"city_code": "251746",
-"state": "Andhra Pradesh",
-"website": "https://vijayawada.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://vijayawada.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Visakhapatanam (GVMC)",
-"city_code": "251719",
-"state": "Andhra Pradesh",
-"website": "https://www.gvmc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.gvmc.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Vizianagaram",
-"city_code": "251709",
-"state": "Andhra Pradesh",
-"website": "https://vizianagaram.cdma.ap.gov.in",
-"website_kind": "state_cdma_portal_page",
-"found_via": "https://vizianagaram.cdma.ap.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Itanagar",
-"city_code": "276621",
-"state": "Arunachal Pradesh",
-"website": "https://www.imc.arunachal.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.imc.arunachal.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Begusarai",
-"city_code": "249624",
-"state": "Bihar",
-"website": "https://begusarai.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://begusarai.nic.in/service/apply-for-death-certificate/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Bettiah",
-"city_code": "249564",
-"state": "Bihar",
-"website": "https://westchamparan.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://westchamparan.nic.in/public-utility/bettiah-nagar-nigam/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Bhagalpur",
-"city_code": "249630",
-"state": "Bihar",
-"website": "https://bhagalpur.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://bhagalpur.nic.in/public-utility/municipal-corporation-bhagalpur/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Chapra",
-"city_code": "249612",
-"state": "Bihar",
-"website": "https://saran.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://saran.nic.in/public-utility/municipal-corporation-chhapra-2/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Darbhanga",
-"city_code": "249600",
-"state": "Bihar",
-"website": "https://darbhanga.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://darbhanga.nic.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Gaya",
-"city_code": "249680",
-"state": "Bihar",
-"website": "https://gaya.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://gaya.nic.in/public-utility/gaya-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Katihar",
-"city_code": "249595",
-"state": "Bihar",
-"website": "https://katihar.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://katihar.nic.in/public-utility/katihar-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Madhubani",
-"city_code": "249579",
-"state": "Bihar",
-"website": "https://madhubani.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://madhubani.nic.in/hi/public-utility/%e0%a4%a8%e0%a4%97%e0%a4%b0-%e0%a4%a8%e0%a4%bf%e0%a4%97%e0%a4%ae/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Munger",
-"city_code": "249634",
-"state": "Bihar",
-"website": "https://mmc.bihar.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mmc.bihar.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Patna",
-"city_code": "249650",
-"state": "Bihar",
-"website": "https://www.pmc.bihar.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.pmc.bihar.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Purnia",
-"city_code": "249592",
-"state": "Bihar",
-"website": "https://purnea.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://purnea.nic.in/hi/public-utility-category/%e0%a4%a8%e0%a4%97%e0%a4%b0-%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Saharsa",
-"city_code": "249599",
-"state": "Bihar",
-"website": "https://saharsa.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://saharsa.nic.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Samastipur",
-"city_code": "249619",
-"state": "Bihar",
-"website": "https://samastipur.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://samastipur.nic.in/department/nagar-nigam-parishad-panchayat/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Sasaram",
-"city_code": "249670",
-"state": "Bihar",
-"website": "https://rohtas.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://rohtas.nic.in/public-utility/sasaram-municipality-board/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Sitamarhi",
-"city_code": "249575",
-"state": "Bihar",
-"website": "https://sitamarhi.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://sitamarhi.nic.in/public-utility-category/municipality/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Bhilai Charoda",
-"city_code": "250638",
-"state": "Chhattisgarh",
-"website": "https://durg.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://durg.gov.in/en/public-utility/nagar-nigam-bhilai/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Durg",
-"city_code": "250640",
-"state": "Chhattisgarh",
-"website": "https://durg.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://durg.gov.in/en/public-utility-category/municipality/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Jagdalpur",
-"city_code": "250665",
-"state": "Chhattisgarh",
-"website": "https://bastar.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://bastar.gov.in/en/public-utility-category/municipality/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Dhamtari",
-"city_code": "248062",
-"state": "Chhattisgarh",
-"website": "https://dhamtari.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://dhamtari.gov.in/en/public-utility/municipal-office-dhamtari/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Raigarh",
-"city_code": "250594",
-"state": "Chhattisgarh",
-"website": "https://raigarh.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://raigarh.gov.in/en/public-utility/raigarh-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Korba",
-"city_code": "250598",
-"state": "Chhattisgarh",
-"website": "https://korba.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://korba.gov.in/en/public-utility/municipal-corporation-korba/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Rajnandgaon",
-"city_code": "250629",
-"state": "Chhattisgarh",
-"website": "https://rajnandgaon.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://rajnandgaon.nic.in/en/whoswho/commissioner-nargar-palik-nigam-rajnandgaon/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "New Delhi Municipal Council",
-"city_code": "276447",
-"state": "Delhi",
-"website": "https://www.ndmc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.ndmc.gov.in/",
-"emails": [
-{
-"email": "care@ndmc.gov.in",
-"found_on": "https://www.ndmc.gov.in/"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Bhavnagar",
-"city_code": "251165",
-"state": "Gujarat",
-"website": "https://bhavnagar.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://bhavnagar.nic.in/municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Gandhinagar",
-"city_code": "276440",
-"state": "Gujarat",
-"website": "https://gandhinagar.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://gandhinagar.nic.in/public-utility/gandhinagar-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Jamnagar",
-"city_code": "251133",
-"state": "Gujarat",
-"website": "https://jamnagar.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://jamnagar.nic.in/public-utility/jamnagar-municipal-corporation-jmc/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Junagadh",
-"city_code": "251147",
-"state": "Gujarat",
-"website": "https://junagadh.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://junagadh.nic.in/gu/public-utility/%e0%aa%ae%e0%aa%b9%e0%aa%be%e0%aa%a8%e0%aa%97%e0%aa%b0%e0%aa%aa%e0%aa%be%e0%aa%b2%e0%aa%bf%e0%aa%95%e0%aa%be-%e0%aa%9c%e0%ab%81%e0%aa%a8%e0%aa%be%e0%aa%97%e0%aa%a2/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Rajkot",
-"city_code": "251120",
-"state": "Gujarat",
-"website": "https://www.rmc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.rmc.gov.in/",
-"emails": [
-{
-"email": "mc_rmc@rmc.gov.in",
-"found_on": "https://www.rmc.gov.in/"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Surat",
-"city_code": "251231",
-"state": "Gujarat",
-"website": "https://www.suratmunicipal.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.suratmunicipal.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ambala",
-"city_code": "248491",
-"state": "Haryana",
-"website": "https://www.mcambala.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.mcambala.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Gurugram",
-"city_code": "248576",
-"state": "Haryana",
-"website": "https://www.mcg.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.mcg.gov.in/contact/office-contacts",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Faridabad",
-"city_code": "248585",
-"state": "Haryana",
-"website": "https://faridabad.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://faridabad.nic.in/municipal-corporation-faridabad/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Hisar",
-"city_code": "248546",
-"state": "Haryana",
-"website": "https://hisar.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://hisar.gov.in/public-utility/municipal-corporation-hisar/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Karnal",
-"city_code": "248517",
-"state": "Haryana",
-"website": "https://karnal.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://karnal.gov.in/public-utility/municipal-corporation-karnal/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Panchkula",
-"city_code": "248489",
-"state": "Haryana",
-"website": "https://panchkula.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://panchkula.nic.in/public-utility/municipal-corporation-panchkula-2/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Panipat",
-"city_code": "248521",
-"state": "Haryana",
-"website": "https://panipat.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://panipat.gov.in/public-utility/01-municipal-corporation-panipat/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Sonipat",
-"city_code": "248529",
-"state": "Haryana",
-"website": "https://sonipat.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://sonipat.gov.in/public-utility/municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Dharamshala",
-"city_code": null,
-"state": "Himachal Pradesh",
-"website": "https://hpkangra.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://hpkangra.nic.in/public-utility/municipal-corporation-dharamshala/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Palampur",
-"city_code": "248217",
-"state": "Himachal Pradesh",
-"website": "https://hpkangra.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://hpkangra.nic.in/public-utility/municipal-council-palampur-2/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Mandi",
-"city_code": "248225",
-"state": "Himachal Pradesh",
-"website": "https://hpmandi.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://hpmandi.nic.in/public-utility/municipal-council-mandi/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Shimla",
-"city_code": "248248",
-"state": "Himachal Pradesh",
-"website": "https://shimlamc.hp.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://shimlamc.hp.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Jammu (M Corp)",
-"city_code": "248194",
-"state": "Jammu and Kashmir",
-"website": "https://jmc.jk.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://jmc.jk.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Solan",
-"city_code": "248244",
-"state": "Himachal Pradesh",
-"website": "https://hpsolan.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://hpsolan.nic.in/public-utility/municipal-committee-solan/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Srinagar (M Corp)",
-"city_code": "248156",
-"state": "Jammu and Kashmir",
-"website": "https://smcsrinagar.jk.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://smcsrinagar.jk.gov.in/",
-"emails": [
-{
-"email": "commissioner-smc@jk.gov.in",
-"found_on": "https://smcsrinagar.jk.gov.in/"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Bokaro",
-"city_code": "362296",
-"state": "Jharkhand",
-"website": "https://bokaro.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://bokaro.nic.in/chas-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Deoghar",
-"city_code": "248049",
-"state": "Jharkhand",
-"website": "https://deoghar.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://deoghar.nic.in/public-utility/deoghar-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Dhanbad",
-"city_code": "250378",
-"state": "Jharkhand",
-"website": "https://dhanbad.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://dhanbad.nic.in/public-utility/dhanbad-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ranchi",
-"city_code": "250413",
-"state": "Jharkhand",
-"website": "https://ranchi.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://ranchi.nic.in/public-utility/ranchi-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ballari",
-"city_code": null,
-"state": "Karnataka",
-"website": "https://ballari.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://ballari.nic.in/en/public-utility/city-corporation-ballari/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Kalaburagi",
-"city_code": "248127",
-"state": "Karnataka",
-"website": "https://kalaburagi.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://kalaburagi.nic.in/en/public-utility/kalaburagi-city-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Tumakuru",
-"city_code": "251973",
-"state": "Karnataka",
-"website": "https://tumkur.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://tumkur.nic.in/en/public-utility/tumkur-city-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Kochi",
-"city_code": "252220",
-"state": "Kerala",
-"website": "https://kochicorporation.lsgkerala.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://kochicorporation.lsgkerala.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Kannur",
-"city_code": "252125",
-"state": "Kerala",
-"website": "https://kannurcorporation.lsgkerala.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://kannurcorporation.lsgkerala.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Kozhikode",
-"city_code": "252160",
-"state": "Kerala",
-"website": "https://kozhikodecorporation.lsgkerala.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://kozhikodecorporation.lsgkerala.gov.in/en",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Thrissur",
-"city_code": "252194",
-"state": "Kerala",
-"website": "https://thrissurcorporation.lsgkerala.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://thrissurcorporation.lsgkerala.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Thiruvananthapuram",
-"city_code": "252260",
-"state": "Kerala",
-"website": "https://trivandrumcorporation.web.lsgkerala.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://trivandrumcorporation.web.lsgkerala.gov.in/en",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ahmednagar",
-"city_code": null,
-"state": "Maharashtra",
-"website": "https://amc.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://amc.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Amravati",
-"city_code": "251328",
-"state": "Maharashtra",
-"website": "https://amravati.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://amravati.gov.in/en/public-utility-category/municipality/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Chandrapur",
-"city_code": "248082",
-"state": "Maharashtra",
-"website": "https://chanda.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://chanda.nic.in/en/public-utility/chandrapur-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ichalkaranji",
-"city_code": "251619",
-"state": "Maharashtra",
-"website": "https://kolhapur.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://kolhapur.gov.in/en/public-utility/ichalkaranji/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Jalgaon",
-"city_code": "276571",
-"state": "Maharashtra",
-"website": "https://www.jcmc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.jcmc.gov.in/",
-"emails": [
-{
-"email": "info@jcmc.gov.in",
-"found_on": "https://www.jcmc.gov.in/contact_us_M.html"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Kolhapur",
-"city_code": "251625",
-"state": "Maharashtra",
-"website": "https://web.kolhapurcorporation.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://web.kolhapurcorporation.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Mira-Bhayandar",
-"city_code": "251470",
-"state": "Maharashtra",
-"website": "https://mbmc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mbmc.gov.in/en/",
-"emails": [
-{
-"email": "commissioner@mbmc.gov.in",
-"found_on": "https://mbmc.gov.in/contact"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Nagpur",
-"city_code": "251362",
-"state": "Maharashtra",
-"website": "https://nagpur.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://nagpur.gov.in/public-utility/nagpur-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Nanded-Waghala",
-"city_code": "251401",
-"state": "Maharashtra",
-"website": "https://www.nwcmc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.nwcmc.gov.in/web/",
-"emails": [
-{
-"email": "info@nwcmc.gov.in",
-"found_on": "https://www.nwcmc.gov.in/"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Navi Mumbai",
-"city_code": "251472",
-"state": "Maharashtra",
-"website": "https://www.nmmc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.nmmc.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Panvel",
-"city_code": "251492",
-"state": "Maharashtra",
-"website": "https://panvelcorporation.maharashtra.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://panvelcorporation.maharashtra.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Pune",
-"city_code": "251530",
-"state": "Maharashtra",
-"website": "https://webadmin.pmc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://webadmin.pmc.gov.in/citizen-services",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Sangli-Miraj Kupwad",
-"city_code": "251639",
-"state": "Maharashtra",
-"website": "https://smkc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://smkc.gov.in/aboutsmkc.aspx",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Solapur",
-"city_code": "251577",
-"state": "Maharashtra",
-"website": "https://www.solapurcorporation.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.solapurcorporation.gov.in/smc/home_version2",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Thane",
-"city_code": "251471",
-"state": "Maharashtra",
-"website": "https://thane.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://thane.nic.in/en/municipal-corporations/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ulhasnagar",
-"city_code": "251484",
-"state": "Maharashtra",
-"website": "https://umc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://umc.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Imphal",
-"city_code": "276547",
-"state": "Manipur",
-"website": "https://www.imc.mn.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.imc.mn.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Aizawl Municipal Co-Operation",
-"city_code": "277318",
-"state": "Mizoram",
-"website": "https://aizawl.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://aizawl.nic.in/public-utility/aizawl-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Berhampur",
-"city_code": "250543",
-"state": "Odisha",
-"website": "https://www.berhampur.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.berhampur.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Bhubaneswar",
-"city_code": "250520",
-"state": "Odisha",
-"website": "https://www.bmc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.bmc.gov.in/",
-"emails": [
-{
-"email": "grievance@bmc.gov.in",
-"found_on": "https://www.bmc.gov.in/"
-},
-{
-"email": "info@bmc.gov.in",
-"found_on": "https://www.bmc.gov.in/"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Sambalpur",
-"city_code": "253100",
-"state": "Odisha",
-"website": "https://smcsambalpur.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://smcsambalpur.nic.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Abohar",
-"city_code": "248355",
-"state": "Punjab",
-"website": "https://mcabohar.punjab.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mcabohar.punjab.gov.in/Home",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Amritsar",
-"city_code": "248273",
-"state": "Punjab",
-"website": "https://mcamritsar.punjab.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mcamritsar.punjab.gov.in/Home",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Batala",
-"city_code": "248264",
-"state": "Punjab",
-"website": "https://mcbatala.punjab.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mcbatala.punjab.gov.in/Home",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Hoshiarpur",
-"city_code": "248308",
-"state": "Punjab",
-"website": "https://mchoshiarpur.punjab.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mchoshiarpur.punjab.gov.in/Home",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Bathinda",
-"city_code": "248367",
-"state": "Punjab",
-"website": "https://mcbathinda.punjab.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mcbathinda.punjab.gov.in/Home",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ludhiana",
-"city_code": "248338",
-"state": "Punjab",
-"website": "https://mcludhiana.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mcludhiana.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Moga",
-"city_code": "248347",
-"state": "Punjab",
-"website": "https://mcmoga.punjab.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mcmoga.punjab.gov.in/Home",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Pathankot",
-"city_code": "248256",
-"state": "Punjab",
-"website": "https://mcpathankot.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://mcpathankot.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Patiala",
-"city_code": "248399",
-"state": "Punjab",
-"website": "https://mcpatiala.punjab.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mcpatiala.punjab.gov.in/Home",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Phagwara",
-"city_code": "248286",
-"state": "Punjab",
-"website": "https://mcphagwara.punjab.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mcphagwara.punjab.gov.in/Home",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Mohali",
-"city_code": null,
-"state": "Punjab",
-"website": "https://mcmohali.punjab.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://mcmohali.punjab.gov.in/Home",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Cuddalore",
-"city_code": "252773",
-"state": "Tamil Nadu",
-"website": "https://cuddalore.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://cuddalore.nic.in/cuddalore-municipality/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Coimbatore",
-"city_code": "252653",
-"state": "Tamil Nadu",
-"website": "https://ccmc.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://ccmc.gov.in/",
-"emails": [
-{
-"email": "commr.coimbatore@tn.gov.in",
-"found_on": "https://ccmc.gov.in/"
-},
-{
-"email": "dc@ccmc.gov.in",
-"found_on": "https://ccmc.gov.in/index.php/contact-us"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Karur (M)",
-"city_code": "252725",
-"state": "Tamil Nadu",
-"website": "https://karur.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://karur.nic.in/public-utility/karur-municipality/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Salem",
-"city_code": "252474",
-"state": "Tamil Nadu",
-"website": "https://www.salemcorporation.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.salemcorporation.gov.in/",
-"emails": [
-{
-"email": "commr.salem@tn.gov.in",
-"found_on": "https://www.salemcorporation.gov.in/"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Tiruchirappalli",
-"city_code": "252749",
-"state": "Tamil Nadu",
-"website": "https://www.trichycorporation.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.trichycorporation.gov.in/",
-"emails": [
-{
-"email": "commr.trichy@tn.gov.in",
-"found_on": "https://www.trichycorporation.gov.in/"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Karimnagar",
-"city_code": "251653",
-"state": "Telangana",
-"website": "https://karimnagarcorporation.telangana.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://karimnagarcorporation.telangana.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Nizamabad",
-"city_code": "248091",
-"state": "Telangana",
-"website": "https://nizamabadcorporation.telangana.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://nizamabadcorporation.telangana.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Khammam",
-"city_code": "248105",
-"state": "Telangana",
-"website": "https://khammamcorporation.telangana.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://khammamcorporation.telangana.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ramagundam",
-"city_code": "251648",
-"state": "Telangana",
-"website": "https://ramagundamcorporation.telangana.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://ramagundamcorporation.telangana.gov.in/",
-"emails": [
-{
-"email": "comm-rmc-pdpl-maud@telangana.gov.in",
-"found_on": "https://ramagundamcorporation.telangana.gov.in//pages/commissioner-contact"
-}
-],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Aligarh",
-"city_code": "249025",
-"state": "Uttar Pradesh",
-"website": "https://aligarh.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://aligarh.nic.in/public-utility/aligarh-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ayodhya",
-"city_code": "249391",
-"state": "Uttar Pradesh",
-"website": "https://ayodhya.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://ayodhya.nic.in/hi/public-utility/municipal-corporation-ayodhya/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Firozabad",
-"city_code": "249079",
-"state": "Uttar Pradesh",
-"website": "https://firozabad.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://firozabad.nic.in/public-utility/municipal-corporation-firozabad/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Ghaziabad",
-"city_code": "248988",
-"state": "Uttar Pradesh",
-"website": "https://ghaziabad.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://ghaziabad.nic.in/en/public-utility-category/municipality/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Kanpur",
-"city_code": "249286",
-"state": "Uttar Pradesh",
-"website": "https://kmc.up.nic.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://kmc.up.nic.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Gorakhpur",
-"city_code": "249444",
-"state": "Uttar Pradesh",
-"website": "https://gorakhpurnagarnigam.up.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://gorakhpurnagarnigam.up.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Jhansi",
-"city_code": "249314",
-"state": "Uttar Pradesh",
-"website": "https://jhansi.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://jhansi.nic.in/public-utility/nagar-nigam-jhansi/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Lucknow",
-"city_code": "249234",
-"state": "Uttar Pradesh",
-"website": "https://www.lmc.up.nic.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://www.lmc.up.nic.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Moradabad",
-"city_code": "248929",
-"state": "Uttar Pradesh",
-"website": "https://moradabad.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://moradabad.nic.in/hi/public-utility-category/%e0%a4%a8%e0%a4%97%e0%a4%b0-%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Mathura-Vrindavan",
-"city_code": null,
-"state": "Uttar Pradesh",
-"website": "https://mathura.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://mathura.nic.in/public-utility/mathura-vrindavan-nagar-nigam/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Saharanpur",
-"city_code": "248873",
-"state": "Uttar Pradesh",
-"website": "https://saharanpur.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://saharanpur.nic.in/public-utility-category/nagar-nigam/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Varanasi",
-"city_code": "249531",
-"state": "Uttar Pradesh",
-"website": "https://varanasi.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://varanasi.nic.in/public-utility/nagar-nigam-varanasi/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Shahjahanpur",
-"city_code": "297802",
-"state": "Uttar Pradesh",
-"website": "https://shahjahanpur.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://shahjahanpur.nic.in/public-utility/nagar-palika-parishad-shahjahanpur/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Almora",
-"city_code": "248449",
-"state": "Uttarakhand",
-"website": "https://almora.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://almora.nic.in/public-utility/nagar-palika-parisad-almora/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Dehradun",
-"city_code": "248430",
-"state": "Uttarakhand",
-"website": "https://nndehradun.uk.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://nndehradun.uk.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Haridwar",
-"city_code": null,
-"state": "Uttarakhand",
-"website": "https://nnharidwar.uk.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://nnharidwar.uk.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Haldwani-cum-Kathgodam",
-"city_code": "248459",
-"state": "Uttarakhand",
-"website": "https://nainital.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://nainital.nic.in/public-utility/municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Rishikesh",
-"city_code": "248434",
-"state": "Uttarakhand",
-"website": "https://nnrishikesh.uk.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://nnrishikesh.uk.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Pithoragarh",
-"city_code": "248446",
-"state": "Uttarakhand",
-"website": "https://pithoragarh.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://pithoragarh.nic.in/public-utility-category/municipality/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Roorkee",
-"city_code": "248478",
-"state": "Uttarakhand",
-"website": "https://nnroorkee.uk.gov.in",
-"website_kind": "ulb_own_site",
-"found_via": "https://nnroorkee.uk.gov.in/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Srinagar Garhwal",
-"city_code": null,
-"state": "Uttarakhand",
-"website": "https://pauri.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://pauri.nic.in/public-utility/nagar-palika-srinagar-2/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Durgapur",
-"city_code": "250034",
-"state": "West Bengal",
-"website": "https://paschimbardhaman.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://paschimbardhaman.gov.in/public-utility/durgapur-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Howrah",
-"city_code": null,
-"state": "West Bengal",
-"website": "https://howrah.gov.in",
-"website_kind": "district_site_listing",
-"found_via": "https://howrah.gov.in/public-utility/howrah-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-},
-{
-"ulb_name": "Chandannagar",
-"city_code": "250172",
-"state": "West Bengal",
-"website": "https://hooghly.nic.in",
-"website_kind": "district_site_listing",
-"found_via": "https://hooghly.nic.in/public-utility/chandernagore-municipal-corporation/",
-"emails": [],
-"last_verified": "2026-11-27",
-"accepts_citizen_complaints": "unverified",
-"method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
-}
+ {
+  "ulb_name": "Chittoor",
+  "city_code": "248122",
+  "state": "Andhra Pradesh",
+  "website": "https://chittoor.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://chittoor.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Anantapur",
+  "city_code": "248112",
+  "state": "Andhra Pradesh",
+  "website": "https://anantapur.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://anantapur.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Eluru",
+  "city_code": "251739",
+  "state": "Andhra Pradesh",
+  "website": "https://eluru.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://eluru.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Kurnool",
+  "city_code": "251789",
+  "state": "Andhra Pradesh",
+  "website": "https://kurnool.ap.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://kurnool.ap.gov.in/public-utility/kurnol-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Machilipatnam",
+  "city_code": "251750",
+  "state": "Andhra Pradesh",
+  "website": "https://machilipatnam.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://machilipatnam.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Kakinada",
+  "city_code": "251731",
+  "state": "Andhra Pradesh",
+  "website": "https://kakinada.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://kakinada.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Rajahmundry",
+  "city_code": "251725",
+  "state": "Andhra Pradesh",
+  "website": "https://rmc.ap.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://rmc.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Srikakulam",
+  "city_code": "251700",
+  "state": "Andhra Pradesh",
+  "website": "https://srikakulam.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://srikakulam.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Nellore",
+  "city_code": "251772",
+  "state": "Andhra Pradesh",
+  "website": "https://nellore.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://nellore.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ongole",
+  "city_code": "251766",
+  "state": "Andhra Pradesh",
+  "website": "https://ongole.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://ongole.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Tirupati",
+  "city_code": "248121",
+  "state": "Andhra Pradesh",
+  "website": "https://tirupati.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://tirupati.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Vijayawada",
+  "city_code": "251746",
+  "state": "Andhra Pradesh",
+  "website": "https://vijayawada.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://vijayawada.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Visakhapatanam (GVMC)",
+  "city_code": "251719",
+  "state": "Andhra Pradesh",
+  "website": "https://www.gvmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.gvmc.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Vizianagaram",
+  "city_code": "251709",
+  "state": "Andhra Pradesh",
+  "website": "https://vizianagaram.cdma.ap.gov.in",
+  "website_kind": "state_cdma_portal_page",
+  "found_via": "https://vizianagaram.cdma.ap.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Itanagar",
+  "city_code": "276621",
+  "state": "Arunachal Pradesh",
+  "website": "https://www.imc.arunachal.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.imc.arunachal.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Begusarai",
+  "city_code": "249624",
+  "state": "Bihar",
+  "website": "https://begusarai.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://begusarai.nic.in/service/apply-for-death-certificate/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Bettiah",
+  "city_code": "249564",
+  "state": "Bihar",
+  "website": "https://westchamparan.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://westchamparan.nic.in/public-utility/bettiah-nagar-nigam/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Bhagalpur",
+  "city_code": "249630",
+  "state": "Bihar",
+  "website": "https://bhagalpur.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bhagalpur.nic.in/public-utility/municipal-corporation-bhagalpur/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Chapra",
+  "city_code": "249612",
+  "state": "Bihar",
+  "website": "https://saran.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://saran.nic.in/public-utility/municipal-corporation-chhapra-2/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Darbhanga",
+  "city_code": "249600",
+  "state": "Bihar",
+  "website": "https://darbhanga.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://darbhanga.nic.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Gaya",
+  "city_code": "249680",
+  "state": "Bihar",
+  "website": "https://gaya.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://gaya.nic.in/public-utility/gaya-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Katihar",
+  "city_code": "249595",
+  "state": "Bihar",
+  "website": "https://katihar.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://katihar.nic.in/public-utility/katihar-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Madhubani",
+  "city_code": "249579",
+  "state": "Bihar",
+  "website": "https://madhubani.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://madhubani.nic.in/hi/public-utility/%e0%a4%a8%e0%a4%97%e0%a4%b0-%e0%a4%a8%e0%a4%bf%e0%a4%97%e0%a4%ae/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Munger",
+  "city_code": "249634",
+  "state": "Bihar",
+  "website": "https://mmc.bihar.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mmc.bihar.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Patna",
+  "city_code": "249650",
+  "state": "Bihar",
+  "website": "https://www.pmc.bihar.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.pmc.bihar.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Purnia",
+  "city_code": "249592",
+  "state": "Bihar",
+  "website": "https://purnea.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://purnea.nic.in/hi/public-utility-category/%e0%a4%a8%e0%a4%97%e0%a4%b0-%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Saharsa",
+  "city_code": "249599",
+  "state": "Bihar",
+  "website": "https://saharsa.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://saharsa.nic.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Samastipur",
+  "city_code": "249619",
+  "state": "Bihar",
+  "website": "https://samastipur.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://samastipur.nic.in/department/nagar-nigam-parishad-panchayat/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Sasaram",
+  "city_code": "249670",
+  "state": "Bihar",
+  "website": "https://rohtas.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://rohtas.nic.in/public-utility/sasaram-municipality-board/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Sitamarhi",
+  "city_code": "249575",
+  "state": "Bihar",
+  "website": "https://sitamarhi.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://sitamarhi.nic.in/public-utility-category/municipality/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Bhilai Charoda",
+  "city_code": "250638",
+  "state": "Chhattisgarh",
+  "website": "https://durg.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://durg.gov.in/en/public-utility/nagar-nigam-bhilai/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Durg",
+  "city_code": "250640",
+  "state": "Chhattisgarh",
+  "website": "https://durg.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://durg.gov.in/en/public-utility-category/municipality/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Jagdalpur",
+  "city_code": "250665",
+  "state": "Chhattisgarh",
+  "website": "https://bastar.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bastar.gov.in/en/public-utility-category/municipality/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Dhamtari",
+  "city_code": "248062",
+  "state": "Chhattisgarh",
+  "website": "https://dhamtari.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://dhamtari.gov.in/en/public-utility/municipal-office-dhamtari/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Raigarh",
+  "city_code": "250594",
+  "state": "Chhattisgarh",
+  "website": "https://raigarh.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://raigarh.gov.in/en/public-utility/raigarh-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Korba",
+  "city_code": "250598",
+  "state": "Chhattisgarh",
+  "website": "https://korba.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://korba.gov.in/en/public-utility/municipal-corporation-korba/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Rajnandgaon",
+  "city_code": "250629",
+  "state": "Chhattisgarh",
+  "website": "https://rajnandgaon.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://rajnandgaon.nic.in/en/whoswho/commissioner-nargar-palik-nigam-rajnandgaon/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "New Delhi Municipal Council",
+  "city_code": "276447",
+  "state": "Delhi",
+  "website": "https://www.ndmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.ndmc.gov.in/",
+  "emails": [
+   {
+    "email": "care@ndmc.gov.in",
+    "found_on": "https://www.ndmc.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Bhavnagar",
+  "city_code": "251165",
+  "state": "Gujarat",
+  "website": "https://bhavnagar.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bhavnagar.nic.in/municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Gandhinagar",
+  "city_code": "276440",
+  "state": "Gujarat",
+  "website": "https://gandhinagar.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://gandhinagar.nic.in/public-utility/gandhinagar-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Jamnagar",
+  "city_code": "251133",
+  "state": "Gujarat",
+  "website": "https://jamnagar.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://jamnagar.nic.in/public-utility/jamnagar-municipal-corporation-jmc/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Junagadh",
+  "city_code": "251147",
+  "state": "Gujarat",
+  "website": "https://junagadh.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://junagadh.nic.in/gu/public-utility/%e0%aa%ae%e0%aa%b9%e0%aa%be%e0%aa%a8%e0%aa%97%e0%aa%b0%e0%aa%aa%e0%aa%be%e0%aa%b2%e0%aa%bf%e0%aa%95%e0%aa%be-%e0%aa%9c%e0%ab%81%e0%aa%a8%e0%aa%be%e0%aa%97%e0%aa%a2/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Rajkot",
+  "city_code": "251120",
+  "state": "Gujarat",
+  "website": "https://www.rmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.rmc.gov.in/",
+  "emails": [
+   {
+    "email": "mc_rmc@rmc.gov.in",
+    "found_on": "https://www.rmc.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Surat",
+  "city_code": "251231",
+  "state": "Gujarat",
+  "website": "https://www.suratmunicipal.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.suratmunicipal.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ambala",
+  "city_code": "248491",
+  "state": "Haryana",
+  "website": "https://www.mcambala.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.mcambala.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Gurugram",
+  "city_code": "248576",
+  "state": "Haryana",
+  "website": "https://www.mcg.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.mcg.gov.in/contact/office-contacts",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Faridabad",
+  "city_code": "248585",
+  "state": "Haryana",
+  "website": "https://faridabad.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://faridabad.nic.in/municipal-corporation-faridabad/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Hisar",
+  "city_code": "248546",
+  "state": "Haryana",
+  "website": "https://hisar.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://hisar.gov.in/public-utility/municipal-corporation-hisar/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Karnal",
+  "city_code": "248517",
+  "state": "Haryana",
+  "website": "https://karnal.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://karnal.gov.in/public-utility/municipal-corporation-karnal/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Panchkula",
+  "city_code": "248489",
+  "state": "Haryana",
+  "website": "https://panchkula.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://panchkula.nic.in/public-utility/municipal-corporation-panchkula-2/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Panipat",
+  "city_code": "248521",
+  "state": "Haryana",
+  "website": "https://panipat.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://panipat.gov.in/public-utility/01-municipal-corporation-panipat/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Sonipat",
+  "city_code": "248529",
+  "state": "Haryana",
+  "website": "https://sonipat.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://sonipat.gov.in/public-utility/municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Dharamshala",
+  "city_code": null,
+  "state": "Himachal Pradesh",
+  "website": "https://hpkangra.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://hpkangra.nic.in/public-utility/municipal-corporation-dharamshala/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Palampur",
+  "city_code": "248217",
+  "state": "Himachal Pradesh",
+  "website": "https://hpkangra.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://hpkangra.nic.in/public-utility/municipal-council-palampur-2/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Mandi",
+  "city_code": "248225",
+  "state": "Himachal Pradesh",
+  "website": "https://hpmandi.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://hpmandi.nic.in/public-utility/municipal-council-mandi/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Shimla",
+  "city_code": "248248",
+  "state": "Himachal Pradesh",
+  "website": "https://shimlamc.hp.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://shimlamc.hp.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Jammu (M Corp)",
+  "city_code": "248194",
+  "state": "Jammu and Kashmir",
+  "website": "https://jmc.jk.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://jmc.jk.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Solan",
+  "city_code": "248244",
+  "state": "Himachal Pradesh",
+  "website": "https://hpsolan.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://hpsolan.nic.in/public-utility/municipal-committee-solan/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Srinagar (M Corp)",
+  "city_code": "248156",
+  "state": "Jammu and Kashmir",
+  "website": "https://smcsrinagar.jk.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://smcsrinagar.jk.gov.in/",
+  "emails": [
+   {
+    "email": "commissioner-smc@jk.gov.in",
+    "found_on": "https://smcsrinagar.jk.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Bokaro",
+  "city_code": "362296",
+  "state": "Jharkhand",
+  "website": "https://bokaro.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bokaro.nic.in/chas-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Deoghar",
+  "city_code": "248049",
+  "state": "Jharkhand",
+  "website": "https://deoghar.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://deoghar.nic.in/public-utility/deoghar-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Dhanbad",
+  "city_code": "250378",
+  "state": "Jharkhand",
+  "website": "https://dhanbad.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://dhanbad.nic.in/public-utility/dhanbad-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ranchi",
+  "city_code": "250413",
+  "state": "Jharkhand",
+  "website": "https://ranchi.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ranchi.nic.in/public-utility/ranchi-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ballari",
+  "city_code": null,
+  "state": "Karnataka",
+  "website": "https://ballari.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ballari.nic.in/en/public-utility/city-corporation-ballari/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Kalaburagi",
+  "city_code": "248127",
+  "state": "Karnataka",
+  "website": "https://kalaburagi.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://kalaburagi.nic.in/en/public-utility/kalaburagi-city-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Tumakuru",
+  "city_code": "251973",
+  "state": "Karnataka",
+  "website": "https://tumkur.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://tumkur.nic.in/en/public-utility/tumkur-city-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Kochi",
+  "city_code": "252220",
+  "state": "Kerala",
+  "website": "https://kochicorporation.lsgkerala.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://kochicorporation.lsgkerala.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Kannur",
+  "city_code": "252125",
+  "state": "Kerala",
+  "website": "https://kannurcorporation.lsgkerala.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://kannurcorporation.lsgkerala.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Kozhikode",
+  "city_code": "252160",
+  "state": "Kerala",
+  "website": "https://kozhikodecorporation.lsgkerala.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://kozhikodecorporation.lsgkerala.gov.in/en",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Thrissur",
+  "city_code": "252194",
+  "state": "Kerala",
+  "website": "https://thrissurcorporation.lsgkerala.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://thrissurcorporation.lsgkerala.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Thiruvananthapuram",
+  "city_code": "252260",
+  "state": "Kerala",
+  "website": "https://trivandrumcorporation.web.lsgkerala.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://trivandrumcorporation.web.lsgkerala.gov.in/en",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ahmednagar",
+  "city_code": null,
+  "state": "Maharashtra",
+  "website": "https://amc.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://amc.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Amravati",
+  "city_code": "251328",
+  "state": "Maharashtra",
+  "website": "https://amravati.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://amravati.gov.in/en/public-utility-category/municipality/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Chandrapur",
+  "city_code": "248082",
+  "state": "Maharashtra",
+  "website": "https://chanda.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://chanda.nic.in/en/public-utility/chandrapur-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ichalkaranji",
+  "city_code": "251619",
+  "state": "Maharashtra",
+  "website": "https://kolhapur.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://kolhapur.gov.in/en/public-utility/ichalkaranji/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Jalgaon",
+  "city_code": "276571",
+  "state": "Maharashtra",
+  "website": "https://www.jcmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.jcmc.gov.in/",
+  "emails": [
+   {
+    "email": "info@jcmc.gov.in",
+    "found_on": "https://www.jcmc.gov.in/contact_us_M.html"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Kolhapur",
+  "city_code": "251625",
+  "state": "Maharashtra",
+  "website": "https://web.kolhapurcorporation.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://web.kolhapurcorporation.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Mira-Bhayandar",
+  "city_code": "251470",
+  "state": "Maharashtra",
+  "website": "https://mbmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mbmc.gov.in/en/",
+  "emails": [
+   {
+    "email": "commissioner@mbmc.gov.in",
+    "found_on": "https://mbmc.gov.in/contact"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Nagpur",
+  "city_code": "251362",
+  "state": "Maharashtra",
+  "website": "https://nagpur.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://nagpur.gov.in/public-utility/nagpur-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Nanded-Waghala",
+  "city_code": "251401",
+  "state": "Maharashtra",
+  "website": "https://www.nwcmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.nwcmc.gov.in/web/",
+  "emails": [
+   {
+    "email": "info@nwcmc.gov.in",
+    "found_on": "https://www.nwcmc.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Navi Mumbai",
+  "city_code": "251472",
+  "state": "Maharashtra",
+  "website": "https://www.nmmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.nmmc.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Panvel",
+  "city_code": "251492",
+  "state": "Maharashtra",
+  "website": "https://panvelcorporation.maharashtra.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://panvelcorporation.maharashtra.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Pune",
+  "city_code": "251530",
+  "state": "Maharashtra",
+  "website": "https://webadmin.pmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://webadmin.pmc.gov.in/citizen-services",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Sangli-Miraj Kupwad",
+  "city_code": "251639",
+  "state": "Maharashtra",
+  "website": "https://smkc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://smkc.gov.in/aboutsmkc.aspx",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Solapur",
+  "city_code": "251577",
+  "state": "Maharashtra",
+  "website": "https://www.solapurcorporation.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.solapurcorporation.gov.in/smc/home_version2",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Thane",
+  "city_code": "251471",
+  "state": "Maharashtra",
+  "website": "https://thane.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://thane.nic.in/en/municipal-corporations/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ulhasnagar",
+  "city_code": "251484",
+  "state": "Maharashtra",
+  "website": "https://umc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://umc.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Imphal",
+  "city_code": "276547",
+  "state": "Manipur",
+  "website": "https://www.imc.mn.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.imc.mn.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Aizawl Municipal Co-Operation",
+  "city_code": "277318",
+  "state": "Mizoram",
+  "website": "https://aizawl.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://aizawl.nic.in/public-utility/aizawl-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Berhampur",
+  "city_code": "250543",
+  "state": "Odisha",
+  "website": "https://www.berhampur.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.berhampur.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Bhubaneswar",
+  "city_code": "250520",
+  "state": "Odisha",
+  "website": "https://www.bmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.bmc.gov.in/",
+  "emails": [
+   {
+    "email": "grievance@bmc.gov.in",
+    "found_on": "https://www.bmc.gov.in/"
+   },
+   {
+    "email": "info@bmc.gov.in",
+    "found_on": "https://www.bmc.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Sambalpur",
+  "city_code": "253100",
+  "state": "Odisha",
+  "website": "https://smcsambalpur.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://smcsambalpur.nic.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Abohar",
+  "city_code": "248355",
+  "state": "Punjab",
+  "website": "https://mcabohar.punjab.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mcabohar.punjab.gov.in/Home",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Amritsar",
+  "city_code": "248273",
+  "state": "Punjab",
+  "website": "https://mcamritsar.punjab.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mcamritsar.punjab.gov.in/Home",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Batala",
+  "city_code": "248264",
+  "state": "Punjab",
+  "website": "https://mcbatala.punjab.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mcbatala.punjab.gov.in/Home",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Hoshiarpur",
+  "city_code": "248308",
+  "state": "Punjab",
+  "website": "https://mchoshiarpur.punjab.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mchoshiarpur.punjab.gov.in/Home",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Bathinda",
+  "city_code": "248367",
+  "state": "Punjab",
+  "website": "https://mcbathinda.punjab.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mcbathinda.punjab.gov.in/Home",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ludhiana",
+  "city_code": "248338",
+  "state": "Punjab",
+  "website": "https://mcludhiana.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mcludhiana.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Moga",
+  "city_code": "248347",
+  "state": "Punjab",
+  "website": "https://mcmoga.punjab.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mcmoga.punjab.gov.in/Home",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Pathankot",
+  "city_code": "248256",
+  "state": "Punjab",
+  "website": "https://mcpathankot.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://mcpathankot.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Patiala",
+  "city_code": "248399",
+  "state": "Punjab",
+  "website": "https://mcpatiala.punjab.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mcpatiala.punjab.gov.in/Home",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Phagwara",
+  "city_code": "248286",
+  "state": "Punjab",
+  "website": "https://mcphagwara.punjab.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mcphagwara.punjab.gov.in/Home",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Mohali",
+  "city_code": null,
+  "state": "Punjab",
+  "website": "https://mcmohali.punjab.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://mcmohali.punjab.gov.in/Home",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Cuddalore",
+  "city_code": "252773",
+  "state": "Tamil Nadu",
+  "website": "https://cuddalore.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://cuddalore.nic.in/cuddalore-municipality/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Coimbatore",
+  "city_code": "252653",
+  "state": "Tamil Nadu",
+  "website": "https://ccmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://ccmc.gov.in/",
+  "emails": [
+   {
+    "email": "commr.coimbatore@tn.gov.in",
+    "found_on": "https://ccmc.gov.in/"
+   },
+   {
+    "email": "dc@ccmc.gov.in",
+    "found_on": "https://ccmc.gov.in/index.php/contact-us"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Karur (M)",
+  "city_code": "252725",
+  "state": "Tamil Nadu",
+  "website": "https://karur.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://karur.nic.in/public-utility/karur-municipality/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Salem",
+  "city_code": "252474",
+  "state": "Tamil Nadu",
+  "website": "https://www.salemcorporation.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.salemcorporation.gov.in/",
+  "emails": [
+   {
+    "email": "commr.salem@tn.gov.in",
+    "found_on": "https://www.salemcorporation.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Tiruchirappalli",
+  "city_code": "252749",
+  "state": "Tamil Nadu",
+  "website": "https://www.trichycorporation.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.trichycorporation.gov.in/",
+  "emails": [
+   {
+    "email": "commr.trichy@tn.gov.in",
+    "found_on": "https://www.trichycorporation.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Karimnagar",
+  "city_code": "251653",
+  "state": "Telangana",
+  "website": "https://karimnagarcorporation.telangana.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://karimnagarcorporation.telangana.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Nizamabad",
+  "city_code": "248091",
+  "state": "Telangana",
+  "website": "https://nizamabadcorporation.telangana.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://nizamabadcorporation.telangana.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Khammam",
+  "city_code": "248105",
+  "state": "Telangana",
+  "website": "https://khammamcorporation.telangana.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://khammamcorporation.telangana.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ramagundam",
+  "city_code": "251648",
+  "state": "Telangana",
+  "website": "https://ramagundamcorporation.telangana.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://ramagundamcorporation.telangana.gov.in/",
+  "emails": [
+   {
+    "email": "comm-rmc-pdpl-maud@telangana.gov.in",
+    "found_on": "https://ramagundamcorporation.telangana.gov.in//pages/commissioner-contact"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Aligarh",
+  "city_code": "249025",
+  "state": "Uttar Pradesh",
+  "website": "https://aligarh.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://aligarh.nic.in/public-utility/aligarh-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ayodhya",
+  "city_code": "249391",
+  "state": "Uttar Pradesh",
+  "website": "https://ayodhya.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ayodhya.nic.in/hi/public-utility/municipal-corporation-ayodhya/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Firozabad",
+  "city_code": "249079",
+  "state": "Uttar Pradesh",
+  "website": "https://firozabad.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://firozabad.nic.in/public-utility/municipal-corporation-firozabad/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Ghaziabad",
+  "city_code": "248988",
+  "state": "Uttar Pradesh",
+  "website": "https://ghaziabad.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ghaziabad.nic.in/en/public-utility-category/municipality/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Kanpur",
+  "city_code": "249286",
+  "state": "Uttar Pradesh",
+  "website": "https://kmc.up.nic.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://kmc.up.nic.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Gorakhpur",
+  "city_code": "249444",
+  "state": "Uttar Pradesh",
+  "website": "https://gorakhpurnagarnigam.up.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://gorakhpurnagarnigam.up.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Jhansi",
+  "city_code": "249314",
+  "state": "Uttar Pradesh",
+  "website": "https://jhansi.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://jhansi.nic.in/public-utility/nagar-nigam-jhansi/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Lucknow",
+  "city_code": "249234",
+  "state": "Uttar Pradesh",
+  "website": "https://www.lmc.up.nic.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://www.lmc.up.nic.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Moradabad",
+  "city_code": "248929",
+  "state": "Uttar Pradesh",
+  "website": "https://moradabad.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://moradabad.nic.in/hi/public-utility-category/%e0%a4%a8%e0%a4%97%e0%a4%b0-%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Mathura-Vrindavan",
+  "city_code": null,
+  "state": "Uttar Pradesh",
+  "website": "https://mathura.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://mathura.nic.in/public-utility/mathura-vrindavan-nagar-nigam/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Saharanpur",
+  "city_code": "248873",
+  "state": "Uttar Pradesh",
+  "website": "https://saharanpur.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://saharanpur.nic.in/public-utility-category/nagar-nigam/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Varanasi",
+  "city_code": "249531",
+  "state": "Uttar Pradesh",
+  "website": "https://varanasi.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://varanasi.nic.in/public-utility/nagar-nigam-varanasi/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Shahjahanpur",
+  "city_code": "297802",
+  "state": "Uttar Pradesh",
+  "website": "https://shahjahanpur.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://shahjahanpur.nic.in/public-utility/nagar-palika-parishad-shahjahanpur/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Almora",
+  "city_code": "248449",
+  "state": "Uttarakhand",
+  "website": "https://almora.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://almora.nic.in/public-utility/nagar-palika-parisad-almora/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Dehradun",
+  "city_code": "248430",
+  "state": "Uttarakhand",
+  "website": "https://nndehradun.uk.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://nndehradun.uk.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Haridwar",
+  "city_code": null,
+  "state": "Uttarakhand",
+  "website": "https://nnharidwar.uk.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://nnharidwar.uk.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Haldwani-cum-Kathgodam",
+  "city_code": "248459",
+  "state": "Uttarakhand",
+  "website": "https://nainital.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://nainital.nic.in/public-utility/municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Rishikesh",
+  "city_code": "248434",
+  "state": "Uttarakhand",
+  "website": "https://nnrishikesh.uk.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://nnrishikesh.uk.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Pithoragarh",
+  "city_code": "248446",
+  "state": "Uttarakhand",
+  "website": "https://pithoragarh.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://pithoragarh.nic.in/public-utility-category/municipality/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Roorkee",
+  "city_code": "248478",
+  "state": "Uttarakhand",
+  "website": "https://nnroorkee.uk.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://nnroorkee.uk.gov.in/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Srinagar Garhwal",
+  "city_code": null,
+  "state": "Uttarakhand",
+  "website": "https://pauri.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://pauri.nic.in/public-utility/nagar-palika-srinagar-2/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Durgapur",
+  "city_code": "250034",
+  "state": "West Bengal",
+  "website": "https://paschimbardhaman.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://paschimbardhaman.gov.in/public-utility/durgapur-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Howrah",
+  "city_code": null,
+  "state": "West Bengal",
+  "website": "https://howrah.gov.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://howrah.gov.in/public-utility/howrah-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Chandannagar",
+  "city_code": "250172",
+  "state": "West Bengal",
+  "website": "https://hooghly.nic.in",
+  "website_kind": "district_site_listing",
+  "found_via": "https://hooghly.nic.in/public-utility/chandernagore-municipal-corporation/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
+ },
+ {
+  "ulb_name": "Adoor",
+  "city_code": "252253",
+  "state": "Kerala",
+  "website": "https://adoormunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secyadr@gmail.com",
+    "found_on": "https://adoormunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Alappuzha",
+  "city_code": "252247",
+  "state": "Kerala",
+  "website": "https://alappuzhamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretaryalappuzha@gmail.com",
+    "found_on": "https://alappuzhamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Aluva",
+  "city_code": "252211",
+  "state": "Kerala",
+  "website": "https://aluvamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretaryaluvamunicipality@gmail.com",
+    "found_on": "https://aluvamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Angamaly",
+  "city_code": "252208",
+  "state": "Kerala",
+  "website": "https://angamalymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretaryagly@gmail.com",
+    "found_on": "https://angamalymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Anthoor",
+  "city_code": "272915",
+  "state": "Kerala",
+  "website": "https://anthoormunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "anthoormunicipality@gmail.com",
+    "found_on": "https://anthoormunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Attingal",
+  "city_code": "252258",
+  "state": "Kerala",
+  "website": "https://attingalmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretaryattlmun@gmail.com",
+    "found_on": "https://attingalmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Chalakudy",
+  "city_code": "252205",
+  "state": "Kerala",
+  "website": "https://chalakudymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretarycmcchalakudy@gmail.com",
+    "found_on": "https://chalakudymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Changanassery",
+  "city_code": "252239",
+  "state": "Kerala",
+  "website": "https://changanasserymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretarychsry@gmail.com",
+    "found_on": "https://changanasserymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Chavakkad",
+  "city_code": "252181",
+  "state": "Kerala",
+  "website": "https://chavakkadmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "chavakkadsecretary@gmail.com",
+    "found_on": "https://chavakkadmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Chengannur",
+  "city_code": "252249",
+  "state": "Kerala",
+  "website": "https://chengannurmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "seccgnrmlty@gmail.com",
+    "found_on": "https://chengannurmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Cherthala",
+  "city_code": "252242",
+  "state": "Kerala",
+  "website": "https://cherthalamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretarycmc1@gmail.com",
+    "found_on": "https://cherthalamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Eloor",
+  "city_code": "252218",
+  "state": "Kerala",
+  "website": "https://eloormunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "eloormunicipality@gmail.com",
+    "found_on": "https://eloormunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Erattupetta",
+  "city_code": "272892",
+  "state": "Kerala",
+  "website": "https://erattupettamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "etpamun@gmail.com",
+    "found_on": "https://erattupettamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Ettumanoor",
+  "city_code": "272891",
+  "state": "Kerala",
+  "website": "https://ettumanoormunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "etmrmunicipality@gmail.com",
+    "found_on": "https://ettumanoormunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Feroke",
+  "city_code": "272900",
+  "state": "Kerala",
+  "website": "https://ferokemunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "ferokemunicipality@gmail.com",
+    "found_on": "https://ferokemunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Guruvayoor",
+  "city_code": "252184",
+  "state": "Kerala",
+  "website": "https://guruvayoormunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "guruvayursecretary@gmail.com",
+    "found_on": "https://guruvayoormunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Haripad",
+  "city_code": "272880",
+  "state": "Kerala",
+  "website": "https://haripadmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretaryharipad@gmail.com",
+    "found_on": "https://haripadmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Irinjalakuda",
+  "city_code": "252204",
+  "state": "Kerala",
+  "website": "https://irinjalakudamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretaryijk@gmail.com",
+    "found_on": "https://irinjalakudamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Iritty",
+  "city_code": "272890",
+  "state": "Kerala",
+  "website": "https://irittymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "irittymunicipality@gmail.com",
+    "found_on": "https://irittymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Kalamassery",
+  "city_code": "252224",
+  "state": "Kerala",
+  "website": "https://kalamasserymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretarykalamassery@gmail.com",
+    "found_on": "https://kalamasserymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Kalpetta",
+  "city_code": "252155",
+  "state": "Kerala",
+  "website": "https://kalpettamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "kalpettamunicipality@gmail.com",
+    "found_on": "https://kalpettamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Kanhangad",
+  "city_code": "252110",
+  "state": "Kerala",
+  "website": "https://kanhangadmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "knhdmlty@gmail.com",
+    "found_on": "https://kanhangadmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Karunagappally",
+  "city_code": "259707",
+  "state": "Kerala",
+  "website": "https://karunagappallymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secknpym07@gmail.com",
+    "found_on": "https://karunagappallymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Kasaragod",
+  "city_code": "252108",
+  "state": "Kerala",
+  "website": "https://kasaragodmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "kasaragodmunicipality@gmail.com",
+    "found_on": "https://kasaragodmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Kayamkulam",
+  "city_code": "252248",
+  "state": "Kerala",
+  "website": "https://kayamkulammunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "kayamkulammunicipality@gmail.com",
+    "found_on": "https://kayamkulammunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Koduvally",
+  "city_code": "272897",
+  "state": "Kerala",
+  "website": "https://koduvallymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "koduvallymunicipality@gmail.com",
+    "found_on": "https://koduvallymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Kondotty",
+  "city_code": "272901",
+  "state": "Kerala",
+  "website": "https://kondottymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "kondottynagarasabha@gmail.com",
+    "found_on": "https://kondottymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Koothattukulam",
+  "city_code": "272881",
+  "state": "Kerala",
+  "website": "https://koothattukulammunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "kklmmunicipality@gmail.com",
+    "found_on": "https://koothattukulammunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Koothuparamba",
+  "city_code": "252144",
+  "state": "Kerala",
+  "website": "https://koothuparambamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "kpbamly@gmail.com",
+    "found_on": "https://koothuparambamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Kothamangalam",
+  "city_code": "252231",
+  "state": "Kerala",
+  "website": "https://kothamangalammunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretarykothamangalam@gmail.com",
+    "found_on": "https://kothamangalammunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Kottakkal",
+  "city_code": "259709",
+  "state": "Kerala",
+  "website": "https://kottakkalmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretarykottakkal@gmail.com",
+    "found_on": "https://kottakkalmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Kottayam",
+  "city_code": "252238",
+  "state": "Kerala",
+  "website": "https://kottayammunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "ktmmunicipality@gmail.com",
+    "found_on": "https://kottayammunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Kunnamkulam",
+  "city_code": "252180",
+  "state": "Kerala",
+  "website": "https://kunnamkulammunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "kunnamkulamsecretary@gmail.com",
+    "found_on": "https://kunnamkulammunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Malappuram",
+  "city_code": "252170",
+  "state": "Kerala",
+  "website": "https://malappurammunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "mlpmmunici@gmail.com",
+    "found_on": "https://malappurammunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Mananthavady",
+  "city_code": "272910",
+  "state": "Kerala",
+  "website": "https://mananthavadymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "mndymunicipality@gmail.com",
+    "found_on": "https://mananthavadymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Manjeri",
+  "city_code": "252169",
+  "state": "Kerala",
+  "website": "https://manjerimunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "musecmanjeri@gmail.com",
+    "found_on": "https://manjerimunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Maradu",
+  "city_code": "252226",
+  "state": "Kerala",
+  "website": "https://maradumunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretarymaradu@gmail.com",
+    "found_on": "https://maradumunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Mattannur",
+  "city_code": "252139",
+  "state": "Kerala",
+  "website": "https://mattannurmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "munofmtnr@gmail.com",
+    "found_on": "https://mattannurmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Muvattupuzha",
+  "city_code": "252230",
+  "state": "Kerala",
+  "website": "https://muvattupuzhamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "muvattupuzhamunicipality@gmail.com",
+    "found_on": "https://muvattupuzhamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Nedumangad",
+  "city_code": "252259",
+  "state": "Kerala",
+  "website": "https://nedumangadmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "nddsec@gmail.com",
+    "found_on": "https://nedumangadmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Neyyattinkara",
+  "city_code": "252261",
+  "state": "Kerala",
+  "website": "https://neyyattinkaramunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretarynytamc@gmail.com",
+    "found_on": "https://neyyattinkaramunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Nilambur",
+  "city_code": "259710",
+  "state": "Kerala",
+  "website": "https://nilamburmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "nilamburmunicipality@gmail.com",
+    "found_on": "https://nilamburmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Palakkad",
+  "city_code": "252176",
+  "state": "Kerala",
+  "website": "https://palakkadmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secypkd@gmail.com",
+    "found_on": "https://palakkadmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Pandalam",
+  "city_code": "272908",
+  "state": "Kerala",
+  "website": "https://pandalammunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "pandalammunicipality@gmail.com",
+    "found_on": "https://pandalammunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Panoor",
+  "city_code": "272885",
+  "state": "Kerala",
+  "website": "https://panoormunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "panoormunicipality2015@gmail.com",
+    "found_on": "https://panoormunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Parappanangadi",
+  "city_code": "272912",
+  "state": "Kerala",
+  "website": "https://parappanangadimunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "parappanangadimunicipality@gmail.com",
+    "found_on": "https://parappanangadimunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Paravur (North)",
+  "city_code": "252215",
+  "state": "Kerala",
+  "website": "https://paravurmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secyparavur@gmail.com",
+    "found_on": "https://paravurmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Pathanamthitta",
+  "city_code": "252252",
+  "state": "Kerala",
+  "website": "https://pathanamthittamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "pathanamthittamunicipality2011@gmail.com",
+    "found_on": "https://pathanamthittamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Pattambi",
+  "city_code": "272905",
+  "state": "Kerala",
+  "website": "https://pattambimunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "pattambimunicipality@gmail.com",
+    "found_on": "https://pattambimunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Payyoli",
+  "city_code": "272896",
+  "state": "Kerala",
+  "website": "https://payyolimunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "payyolimunicipality@gmail.com",
+    "found_on": "https://payyolimunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Perinthalmanna",
+  "city_code": "252171",
+  "state": "Kerala",
+  "website": "https://perinthalmannamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "pmnamlty@gmail.com",
+    "found_on": "https://perinthalmannamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Perumbavoor",
+  "city_code": "252207",
+  "state": "Kerala",
+  "website": "https://perumbavoormunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "perumbavoormunicipality@gmail.com",
+    "found_on": "https://perumbavoormunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Piravom",
+  "city_code": "272882",
+  "state": "Kerala",
+  "website": "https://piravommunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "piravommunicipality@gmail.com",
+    "found_on": "https://piravommunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Ponnani",
+  "city_code": "252173",
+  "state": "Kerala",
+  "website": "https://ponnanimunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "ponnanisecy@gmail.com",
+    "found_on": "https://ponnanimunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Punalur",
+  "city_code": "252254",
+  "state": "Kerala",
+  "website": "https://punalurmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secypnlr@gmail.com",
+    "found_on": "https://punalurmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Ramanattukara",
+  "city_code": "272899",
+  "state": "Kerala",
+  "website": "https://ramanattukaramunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "ramanattukaracity@gmail.com",
+    "found_on": "https://ramanattukaramunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Sreekandapuram",
+  "city_code": "272884",
+  "state": "Kerala",
+  "website": "https://sreekandapurammunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "skpm.gov@gmail.com",
+    "found_on": "https://sreekandapurammunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Sulthan Bathery",
+  "city_code": "272911",
+  "state": "Kerala",
+  "website": "https://sulthanbatherymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "batherymunicipality@gmail.com",
+    "found_on": "https://sulthanbatherymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Taliparamba",
+  "city_code": "252112",
+  "state": "Kerala",
+  "website": "https://taliparambamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secthaliparamba@gmail.com",
+    "found_on": "https://taliparambamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Thalassery",
+  "city_code": "252149",
+  "state": "Kerala",
+  "website": "https://thalasserymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "thalasserymunicipality@gmail.com",
+    "found_on": "https://thalasserymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Thiruvalla",
+  "city_code": "252251",
+  "state": "Kerala",
+  "website": "https://thiruvallamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretarytvla@gmail.com",
+    "found_on": "https://thiruvallamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Thodupuzha",
+  "city_code": "252233",
+  "state": "Kerala",
+  "website": "https://thodupuzhamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "munsectdpa@gmail.com",
+    "found_on": "https://thodupuzhamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Thrikkakara",
+  "city_code": "259708",
+  "state": "Kerala",
+  "website": "https://thrikkakaramunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "sectkramncplty@gmail.com",
+    "found_on": "https://thrikkakaramunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Thrippunithura",
+  "city_code": "252227",
+  "state": "Kerala",
+  "website": "https://thrippunithuramunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "musectripunithura@gmail.com",
+    "found_on": "https://thrippunithuramunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Tirurangadi",
+  "city_code": "272903",
+  "state": "Kerala",
+  "website": "https://tirurangadimunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "tirurangadiurban@gmail.com",
+    "found_on": "https://tirurangadimunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Tirur (M)",
+  "city_code": "252172",
+  "state": "Kerala",
+  "website": "https://tirurmunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretarytirmun@gmail.com",
+    "found_on": "https://tirurmunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Vadakara",
+  "city_code": "252157",
+  "state": "Kerala",
+  "website": "https://vadakaramunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secretaryvatakara@gmail.com",
+    "found_on": "https://vadakaramunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Vaikom",
+  "city_code": "252236",
+  "state": "Kerala",
+  "website": "https://vaikommunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "mailtovaikommunicipality@gmail.com",
+    "found_on": "https://vaikommunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Valanchery",
+  "city_code": "272902",
+  "state": "Kerala",
+  "website": "https://valancherymunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "valancherymunicipality@gmail.com",
+    "found_on": "https://valancherymunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Varkala",
+  "city_code": "252257",
+  "state": "Kerala",
+  "website": "https://varkalamunicipality.lsgkerala.gov.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://lsgkerala.gov.in/en/website/web (Kerala LSGD local body websites directory)",
+  "emails": [
+   {
+    "email": "secyvarkala2@gmail.com",
+    "found_on": "https://varkalamunicipality.lsgkerala.gov.in/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ }
 ]

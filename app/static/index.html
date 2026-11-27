@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>JANSEVA AI</title><link rel="icon" href="data:,"><meta name="theme-color" content="#0b2a6b"><link rel="manifest" href="/manifest.json">
-<link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/vendor/leaflet/leaflet.css"><link rel="stylesheet" href="/static/app.css?v=18">
+<link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/vendor/leaflet/leaflet.css"><link rel="stylesheet" href="/static/app.css?v=19">
 </head><body class="anon"><div id="errbar" class="errbar" style="display:none"><span>Kuch gadbad hui. Page refresh karein.</span><button onclick="try{navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})});caches.keys().then(function(k){k.forEach(function(x){caches.delete(x)})})}catch(e){};setTimeout(function(){location.reload()},300)">Refresh</button></div>
 <div id="intro" class="intro" style="display:none" role="dialog" aria-modal="true" aria-labelledby="introT">
  <div class="introc"><div class="introtop"><span class="logo2">JANSEVA AI · जनसेवा</span><button class="pill ghost" id="introLg" onclick="introLang()">हिंदी / English</button></div>
@@ -123,7 +123,7 @@
 <section id="adm" class="sec"><h2 style="margin:16px 0 4px">Administration</h2><div class="card"><div class="row"><input id="atok" class="grow" type="password" placeholder="Admin token"><button class="btn pri" onclick="loadAdm()">Open</button></div></div><div id="admout"></div></section>
 
 <div class="card sm mut pfoot"><div class="pf"><i data-ic="lock"></i><span>Your phone and name are never shown publicly. Complaints are kept in anonymised form if you delete your account.</span></div><div class="row" style="margin-top:10px"><button class="btn out sm" onclick="del()"><i data-ic="trash-2"></i>Delete account</button><button class="btn out sm" onclick="go('adm')">Admin</button></div></div>
-<div class="xs mut" style="text-align:center;padding:6px 0 18px">Map data © OpenStreetMap contributors · v2.7</div>
+<div class="xs mut" style="text-align:center;padding:6px 0 18px">Map data © OpenStreetMap contributors · v2.9</div>
 </main>
 <nav class="bnav" id="bnav"></nav>
 <div class="sheetbg" id="sheet" onclick="if(event.target==this)closeLogin()"><div class="sheet"><h3 style="font-size:20px;margin-bottom:4px">Login</h3><p class="sm mut" style="margin:0 0 8px">Enter your email and we send a one-time code. Mobile SMS login is available only where the operator has set up a DLT-registered SMS service.</p>
@@ -131,5 +131,5 @@
  <button id="wabtn" class="btn ok" style="width:100%;margin-top:12px;display:none" onclick="waLogin()">Login with WhatsApp</button><button class="btn pri" style="width:100%;margin-top:12px" onclick="otpReq()">Get OTP by email</button>
  <div id="otpbox" style="display:none"><label class="f">OTP</label><input id="code" inputmode="numeric" placeholder="6-digit code"><button class="btn saf" style="width:100%;margin-top:10px" onclick="otpVer()">Verify and continue</button></div><div id="otpmsg" class="info bl" style="display:none;margin-top:10px"></div></div></div>
 <div class="toast" id="toast"></div>
-<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/app.js?v=19"></script>
+<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/app.js?v=20"></script>
 <script>setTimeout(function(){if(!window.__boot){var b=document.getElementById("errbar");if(b)b.style.display="flex"}},12000)</script></body></html>

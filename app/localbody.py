@@ -24,3 +24,11 @@ def find(city, state):
     top = [r for r in hits if _PRI.get(r["ulb_type"], 9) == _PRI.get(hits[0]["ulb_type"], 9) and not r["name"].lower().endswith("(cb)")]
     if len(top) == 1: return {"status": "matched", "bodies": [top[0]] + [h for h in hits if h is not top[0]][:2], "note": ""}
     return {"status": "ambiguous", "bodies": hits[:6], "note": "More than one body matches this name. Citizen must confirm."}
+
+_CON = {}
+def contact(body):
+    """Official website / published email for a ULB row from data/ulb_contacts.json (own site only for emails). None if not on file."""
+    if not _CON:
+        for r in load_data("ulb_contacts.json"):
+            if r.get("city_code"): _CON[r["city_code"]] = r
+    return _CON.get(body.get("city_code"))

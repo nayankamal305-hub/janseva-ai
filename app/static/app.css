@@ -173,3 +173,9 @@ html.dark .chip{background:#22305a;color:#dbe6ff}html.dark .drop{background:#101
 #nearby .card{padding:10px}
 .dark #mine .card{border-left-color:var(--saf)}
 .pfoot{margin-top:18px}.pf{display:flex;gap:10px;align-items:flex-start;font-size:13px}.pf .ic{margin-top:3px}
+/* v2.9 dark-mode fixes for Nearby / My Complaints */
+.dark details.cx>summary{color:#ffb454}.dark .seg i{background:#2a3558}.dark .seg i.on{background:#7aa2ff}.dark .seg i.cur{background:var(--saf)}
+.dark .issue{background:#141d36;border-color:#26335c;color:#e8eefc}.dark .issue .im{background:#1c2a4f;color:#9db8ff}
+.dark .chips button{background:#141d36;color:#dbe5ff;border-color:#2a3a6a}.dark .chips button.on{background:var(--navy3);color:#fff;border-color:var(--navy3)}
+.dark .btn.out{background:#141d36;color:#dbe5ff;box-shadow:inset 0 0 0 2px #2a3a6a}.dark .rec{background:#101830;border-color:#26335c}
+.dark #mine .card .row:first-child b{color:#fff}.dark .csum{color:#9aa9d1}

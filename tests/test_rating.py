@@ -55,3 +55,17 @@ class TestLocalBodies(unittest.TestCase):
         self.assertTrue(all(x["source_url"].startswith("https://") for x in lb))
         r = localbody.find("Pune", "Maharashtra"); self.assertEqual(r["status"], "matched"); self.assertEqual(r["bodies"][0]["ulb_type"], "Municipal Corporation")
         self.assertEqual(localbody.find("Nowhereville", "Maharashtra")["status"], "not_found")
+
+
+class TestUlbContacts(unittest.TestCase):
+    def test_contacts_sourced_and_used(self):
+        import json
+        from app import localbody
+        from app.dispatch import ladder
+        rows = json.load(open(os.path.join(os.path.dirname(__file__), "..", "data", "ulb_contacts.json")))
+        self.assertGreater(len(rows), 100)
+        for r in rows:
+            self.assertTrue(r["website"].startswith("https://")); self.assertIn(r["website_kind"], ("ulb_own_site", "district_site_listing", "state_cdma_portal_page"))
+            for e in r["emails"]: self.assertTrue(e["found_on"].startswith("https://") and e["email"].endswith((".gov.in", ".nic.in")))
+        l = ladder({"category": "garbage", "city": "Bhubaneswar", "state": "Odisha"})
+        self.assertTrue(any(t["kind"] == "local_body_published_email" and t["email"].endswith("bmc.gov.in") for t in l))

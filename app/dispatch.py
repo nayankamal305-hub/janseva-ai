@@ -32,6 +32,13 @@ def ladder(c):
     uc = UTIL_CAT.get(cat)
     if uc:
         n = 0
+        if uc == "municipal" or (cat == "road" and c.get("asset_owner") == "municipal"):
+            from . import localbody
+            lbr = localbody.find(c.get("city"), state)
+            if lbr["status"] == "matched":
+                ct = localbody.contact(lbr["bodies"][0])
+                for e in (ct or {}).get("emails", [])[:1]:
+                    if _okmail(e["email"]): out.append({"level": 1, "kind": "local_body_published_email", "name": lbr["bodies"][0]["name"] + " " + lbr["bodies"][0]["ulb_type"], "email": e["email"], "source_url": e["found_on"], "source_date": ct["last_verified"], "tier": "local body's own official page"}); n += 1
         for r in load_data("utility_contacts.json"):
             if uc in r["categories_heuristic"] and _match_state(r["state"], state):
                 for e in r["emails_published_on_official_page"]:

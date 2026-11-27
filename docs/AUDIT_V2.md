@@ -52,3 +52,9 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - Rating directory now has Local bodies + state departments/boards/discoms (utility_contacts, official-site sourced).
 - Routing: route preview shows the concerned local body by city+state (matched / ambiguous / not found). It is guided, not auto-sent, as no official email is on file.
 - Gram panchayats NOT loaded (LGD download is CAPTCHA; ~2.6 lakh rows).
+
+## v2.9 ULB sites/emails + dark mode
+- data/ulb_contacts.json: 136 municipal corporations with an official gov.in/nic.in website found (60 are the ULB's own site, rest are district-site listings or state CDMA portal pages, flagged by website_kind). 11 have a published email read from the official homepage/contact page (found_on per email). Method: web search, then homepage + up to 2 contact pages, robots.txt respected. accepts_citizen_complaints stays "unverified".
+- Dispatch L1 for garbage/drainage/toilet (and municipal roads) now uses the matched city ULB's published email first (consent rules unchanged).
+- Caveat: the PMAY list's "Municipal Corporation" type includes many census-town units (e.g. in Tamil Nadu), so 331 is not the count of real corporations. Type is shown as listed.
+- Dark mode fixes for Nearby and My Complaints.

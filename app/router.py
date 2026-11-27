@@ -74,4 +74,6 @@ def plan(complaint, platforms, connectors, user):
         pass
     from . import localbody
     lb = localbody.find(c.get("city"), c.get("state")) if c.get("category") in ("garbage", "drainage", "toilet", "road", "water", "streetlight", "electricity", "general") else None
+    if lb and lb.get("bodies"):
+        lb = dict(lb); lb["bodies"] = [dict(b, contact=localbody.contact(b)) for b in lb["bodies"]]
     return {"targets": targets, "rejected": rejected, "needs": needs, "local_body": lb, "context": {"ulb": ulb, "asset_owner": c.get("asset_owner")}}

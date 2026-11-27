@@ -129,3 +129,6 @@ Filing is never blocked by the old same-user/same-category/100 m/7-day duplicate
 
 ## v3.19
 submit no longer reports a saved complaint as failed: when routing needs more info (road owner unknown, or no verified channel) the API returns ok:true, waiting:true with the needs text; UI shows 'Saved. One detail left' with owner buttons. submit accepts asset_owner. AI card asks road owner.
+
+## v3.20
+aiConfirm kept the AI category before clearing it (was posting category:null to /confirm); confirm_category rejects null/empty/unknown; /api/directory/constituencies import fix.

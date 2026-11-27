@@ -113,6 +113,8 @@ class Service:
 
     def confirm_category(self, cid, category, user_id):
         c = self.get(cid)
+        if not c or not isinstance(category, str) or category.strip() not in ai.CATS: return {"ok": False, "error": "valid category required"}
+        category = category.strip()
         self.db.run("UPDATE complaints SET category=?,status='ready_for_submission',updated_at=? WHERE id=?", (category, now(), cid))
         self.db.timeline(cid, "citizen", "confirmed", "Citizen confirmed category '%s'" % category)
         self.db.audit("user:%s" % user_id, "category_confirmed", c["code"]); return {"ok": True}

@@ -127,3 +127,11 @@ class SubmitNeverFailsForCitizen(unittest.TestCase):
         self.assertTrue(s2["ok"]); self.assertFalse(s2.get("waiting"))
         self.assertEqual(svc.get(c["id"])["asset_owner"], "municipal")
         srv.shutdown()
+
+class ConfirmCategory(unittest.TestCase):
+    def test_null_or_unknown_category_rejected_and_not_saved(self):
+        svc = Service(); u = svc.register("cc%d@example.com" % id(svc), "A")
+        r = svc.create_complaint(u, {"title": "t", "description": "garbage dump near my house", "lat": 12.0 + (id(svc) % 700) / 40.0, "lon": 74.0 + (id(svc) % 300) / 40.0, "category": "garbage"})
+        for bad in (None, "", "  ", "made_up", 5): self.assertFalse(svc.confirm_category(r["id"], bad, u["id"])["ok"])
+        self.assertEqual(svc.get(r["id"])["category"], "garbage")
+        self.assertTrue(svc.confirm_category(r["id"], "road", u["id"])["ok"]); self.assertEqual(svc.get(r["id"])["category"], "road")

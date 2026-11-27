@@ -7,7 +7,9 @@ MAX_COMMENT = 500; REPORT_HIDE = 3; DAY_LIMIT = 15
 BAD = re.compile(r"\b(madarchod|bhosdi\w*|chutiy\w*|bc|mc|randi|harami|saala|kutta|kamina|bastard|fuck\w*|bitch|slut|idiot|corrupt thief)\b", re.I)
 PII = re.compile(r"(\+?\d[\d\s-]{8,}\d|[\w.+-]+@[\w-]+\.[\w.]+|https?://)", re.I)
 def _now(): return time.strftime("%Y-%m-%dT%H:%M:%S")
+_ENT = []
 def entities():
+    if _ENT: return _ENT
     out = []
     for m in load_data("representatives_parliament.json"):
         out.append({"key": "mp:%s:%s" % (m["house"][:2].lower(), m["name"].lower().replace(" ", "-")), "type": "MP (%s)" % m["house"], "title": "%s, %s" % (m["name"], m["constituency"] or m["state"]), "state": m["state"], "party": m.get("party"), "source_url": m["source_url"], "last_verified": m["last_verified"]})
@@ -20,7 +22,8 @@ def entities():
     for d in load_data("igod_districts.json"):
         if d.get("website"):
             out.append({"key": "district:%s:%s" % ((d["state"] or "").lower().replace(" ", "-"), d["title"].lower().replace(" ", "-")), "type": "District administration (partial: official district site only)", "title": "%s district administration, %s" % (d["title"], d["state"]), "state": d["state"], "source_url": d["website"], "last_verified": d["last_verified"]})
-    return out
+    _ENT.extend(out)
+    return _ENT
 _IDX = {}
 def lookup(key):
     if not _IDX: _IDX.update({e["key"]: e for e in entities()})

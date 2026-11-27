@@ -40,6 +40,6 @@ class TestMLA(unittest.TestCase):
     def test_mla_entities_sourced(self):
         from app import rating
         m = [e for e in rating.entities() if e["type"] == "MLA"]
-        self.assertGreater(len(m), 400)
+        self.assertGreater(len(m), 4000)
         self.assertTrue(all(e["source_url"].startswith("https://") and e["last_verified"] for e in m))
-        self.assertEqual({e["state"] for e in m}, {"Bihar", "Telangana", "Uttarakhand", "Nagaland"})
+        self.assertGreaterEqual(len({e["state"] for e in m}), 30)

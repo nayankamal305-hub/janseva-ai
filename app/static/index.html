@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>JANSEVA AI</title><meta name="theme-color" content="#0b2a6b"><link rel="manifest" href="/manifest.json">
-<link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/vendor/leaflet/leaflet.css"><link rel="stylesheet" href="/static/app.css">
-</head><body>
+<title>JANSEVA AI</title><link rel="icon" href="data:,"><meta name="theme-color" content="#0b2a6b"><link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/vendor/leaflet/leaflet.css"><link rel="stylesheet" href="/static/app.css?v=17">
+</head><body class="anon"><div id="errbar" class="errbar" style="display:none"><span>Kuch gadbad hui. Page refresh karein.</span><button onclick="try{navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})});caches.keys().then(function(k){k.forEach(function(x){caches.delete(x)})})}catch(e){};setTimeout(function(){location.reload()},300)">Refresh</button></div>
 <div id="intro" class="intro" style="display:none" role="dialog" aria-modal="true" aria-labelledby="introT">
  <div class="introc"><div class="introtop"><span class="logo2">JANSEVA AI · जनसेवा</span><button class="pill ghost" id="introLg" onclick="introLang()">हिंदी / English</button></div>
   <h1 id="introT"></h1><p id="introP" class="sm"></p>
@@ -18,6 +18,34 @@
 </header>
 <main><div id="lnote" class="info sm" style="display:none;margin:8px 0">Machine translation, not yet reviewed by native speakers. Core labels only; the rest stays in English.</div>
 <section id="home" class="sec on">
+<div id="landing" class="anononly">
+ <div class="hero"><div class="chips"><span class="chip">Free</span><span class="chip">Consent first</span><span class="chip">Honest tracking</span></div>
+  <h1><span>One Photo.</span> <span>One Voice.</span> <em>One Accountable India.</em></h1>
+  <p class="hi">एक फोटो। एक आवाज़। एक जवाबदेह भारत।</p>
+  <p class="lp">Report a civic problem, we find the right office, you choose who gets it, and you confirm the fix. Not a government site.</p>
+  <div class="cta"><button class="btn saf big pulse" onclick="go('report')"><i data-ic="camera"></i>Report a Problem</button><button class="btn glass" onclick="go('nearby')"><i data-ic="map-pin"></i>See problems near me</button></div></div>
+ <div class="stats l4"><div class="stat"><b id="ls1">0</b><span>Reported</span></div><div class="stat g"><b id="ls2">0</b><span>Citizen verified</span></div><div class="stat o"><b id="ls3">0</b><span>Pending</span></div><div class="stat"><b id="ls4">0</b><span>MLAs + MPs listed</span></div></div>
+ <div class="xs mut" style="text-align:center;margin:-4px 0 8px">Live from this server (sandbox build, not government data)</div>
+ <div class="card"><h3><i data-ic="shield-check"></i>What JANSEVA does</h3><div class="sm mut">Turns a photo into a complaint with the right category, location and office. Sends it by official email, portal links and optional X tags only after your tick, one complaint at a time. Then waits for you to say if it is really fixed. 17 languages, low data mode, works on slow phones.</div></div>
+ <div class="card"><h3><i data-ic="list-checks"></i>How it works</h3><div class="steps">
+  <div class="step"><div class="n"><i data-ic="camera"></i></div><div><b>1. Snap</b><div class="sm mut">Photo and GPS. Blur faces and plates on your phone.</div></div></div>
+  <div class="step"><div class="n"><i data-ic="search"></i></div><div><b>2. AI checks</b><div class="sm mut">Category and severity suggested. You confirm.</div></div></div>
+  <div class="step"><div class="n"><i data-ic="landmark"></i></div><div><b>3. Sent with consent</b><div class="sm mut">Body, state officer, ministry, MP. Up to 3 first emails, reminders at 7 and 15 days.</div></div></div>
+  <div class="step"><div class="n"><i data-ic="circle-check"></i></div><div><b>4. You verify</b><div class="sm mut">Authority says resolved is not enough. You confirm with an after photo.</div></div></div></div></div>
+ <div class="card"><h3><i data-ic="flag"></i>Sample flow <span class="chip">SAMPLE, not a real complaint</span></h3>
+  <div class="sample"><div class="sr"><i>1</i><div><b>Pothole, Hadapsar, Pune</b><div class="xs mut">Photo + GPS, face blur on device</div></div></div>
+   <div class="sr"><i>2</i><div><b>AI: Roads, medium</b><div class="xs mut">You confirm category and road owner</div></div></div>
+   <div class="sr"><i>3</i><div><b>You tick: email + MP + X</b><div class="xs mut">Each channel separate. Nothing goes without a tick</div></div></div>
+   <div class="sr"><i>4</i><div><b>Status: Sent, not registered</b><div class="xs mut">Becomes Official only with a real reference number</div></div></div>
+   <div class="sr"><i>5</i><div><b>Authority Marked Resolved</b><div class="xs mut">Shown separately from</div></div></div>
+   <div class="sr ok"><i>6</i><div><b>Citizen Verified Resolved</b><div class="xs mut">Only after you confirm with an after photo</div></div></div></div></div>
+ <div class="card"><h3><i data-ic="star"></i>JANSEVA Rating preview</h3><div class="xs mut" style="margin-bottom:6px">Citizens rate how well public offices solve problems. Opinions, not official data.</div><div id="lrate"><div class="skel"></div></div>
+  <div class="xs mut" id="lsd" style="margin-top:8px"></div><div class="xs mut" id="lsm" style="margin-top:2px"></div>
+  <button class="btn out" style="width:100%;margin-top:10px" onclick="go('rate')">Open Rating</button></div>
+ <div class="card"><h3><i data-ic="info"></i>Honest by design</h3><div class="sm mut">Sandbox build. Nothing is filed with a government system until official access is approved. No fake acknowledgements. Your phone and name are never shown publicly.</div>
+  <button class="btn saf big" style="width:100%;margin-top:12px" onclick="go('report')">Report a Problem</button></div>
+</div>
+<div id="appHome">
  <div class="hero"><h1><span data-i="h1a">One Photo.</span> <span data-i="h1b">One Voice.</span> <em data-i="h1c">One Accountable India.</em></h1>
   <p class="hi">एक फोटो। एक आवाज़। एक जवाबदेह भारत।</p>
   <div class="cta"><button class="btn saf big pulse" onclick="go('report')"><i data-ic="camera"></i><span data-i="cta">Report a Problem</span></button><button class="btn glass" onclick="go('mine')"><i data-ic="list-checks"></i><span data-i="track">Track Complaint</span></button></div></div>
@@ -33,7 +61,7 @@
   <div class="step"><div class="n"><i data-ic="landmark"></i></div><div><b>Right official channel</b><div class="sm mut">Jurisdiction and road owner are checked. Unclear cases go to a human, never a guess.</div></div></div>
   <div class="step"><div class="n"><i data-ic="circle-check"></i></div><div><b>You verify the fix</b><div class="sm mut">A department closing a complaint is not enough. You confirm with an after photo.</div></div></div></div></div>
  <div class="info" style="margin-bottom:14px"><i data-ic="info"></i><div><b>Sandbox build.</b> Nothing is filed with a government system until official access is approved. Every record is labelled live, sandbox or guided, and nothing shows as registered without a real reference number.</div></div>
-</section>
+</div></section>
 
 <section id="report" class="sec">
  <div class="wiz" id="wiz"></div>
@@ -68,7 +96,7 @@
 
 <section id="rate" class="sec"><h2 style="margin:16px 0 4px">JANSEVA Rating</h2>
  <div class="info" style="margin-bottom:10px"><i data-ic="info"></i><div>Citizens rate how well public offices solve problems. Offices come only from official lists (Parliament, PG portal). Opinions about public work only, not official data. Login needed to rate.</div></div>
- <div class="card"><div class="row"><input id="rq" class="grow" placeholder="Search MLA, MP, ministry, state cell"><select id="rt"><option value="">All</option><option value="MLA">MLAs</option><option value="MP">MPs</option><option value="Ministry">Ministries</option><option value="State">State cells</option><option value="District">District offices</option></select></div><p class="muted" style="font-size:12px;margin:8px 0 0">MLAs abhi sirf Bihar, Telangana, Uttarakhand, Nagaland (official state portal se). Baaki states pending, naam guess nahi kiye.</p><div id="rlist" style="margin-top8px"></div></div>
+ <div class="card"><div class="row"><input id="rq" class="grow" placeholder="Search MLA, MP, ministry, state cell"><select id="rt"><option value="">All</option><option value="MLA">MLAs</option><option value="MP">MPs</option><option value="Ministry">Ministries</option><option value="State">State cells</option><option value="District">District offices</option></select></div><p class="muted" style="font-size:12px;margin:8px 0 0">MLA list: India Vote Kar (CC BY 4.0), sab 31 states/UTs, latest assembly. 22 seats vacant. Official portal se 4 states cross-checked.</p><div id="rlist" style="margin-top8px"></div></div>
  <div id="rdet" class="card" style="display:none"></div></section>
 <section id="mine" class="sec"><h2 style="margin:16px 0 4px">My complaints</h2><div id="list"></div></section>
 
@@ -95,7 +123,7 @@
 <section id="adm" class="sec"><h2 style="margin:16px 0 4px">Administration</h2><div class="card"><div class="row"><input id="atok" class="grow" type="password" placeholder="Admin token"><button class="btn pri" onclick="loadAdm()">Open</button></div></div><div id="admout"></div></section>
 
 <div class="card sm mut" style="margin-top:18px"><div class="row"><i data-ic="lock"></i><span class="grow">Your phone and name are never shown publicly. Complaints are kept in anonymised form if you delete your account.</span><button class="btn out sm" onclick="del()"><i data-ic="trash-2"></i>Delete account</button><button class="btn out sm" onclick="go('adm')">Admin</button></div></div>
-<div class="xs mut" style="text-align:center;padding:6px 0 18px">Map data © OpenStreetMap contributors · v0.4</div>
+<div class="xs mut" style="text-align:center;padding:6px 0 18px">Map data © OpenStreetMap contributors · v2.5</div>
 </main>
 <nav class="bnav" id="bnav"></nav>
 <div class="sheetbg" id="sheet" onclick="if(event.target==this)closeLogin()"><div class="sheet"><h3 style="font-size:20px;margin-bottom:4px">Login</h3><p class="sm mut" style="margin:0 0 8px">Enter your email and we send a one-time code. Mobile SMS login is available only where the operator has set up a DLT-registered SMS service.</p>
@@ -103,5 +131,5 @@
  <button id="wabtn" class="btn ok" style="width:100%;margin-top:12px;display:none" onclick="waLogin()">Login with WhatsApp</button><button class="btn pri" style="width:100%;margin-top:12px" onclick="otpReq()">Get OTP by email</button>
  <div id="otpbox" style="display:none"><label class="f">OTP</label><input id="code" inputmode="numeric" placeholder="6-digit code"><button class="btn saf" style="width:100%;margin-top:10px" onclick="otpVer()">Verify and continue</button></div><div id="otpmsg" class="info bl" style="display:none;margin-top:10px"></div></div></div>
 <div class="toast" id="toast"></div>
-<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/app.js?v=16"></script>
-</body></html>
+<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/app.js?v=17"></script>
+<script>setTimeout(function(){if(!window.__boot){var b=document.getElementById("errbar");if(b)b.style.display="flex"}},12000)</script></body></html>

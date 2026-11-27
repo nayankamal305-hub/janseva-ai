@@ -51,7 +51,7 @@ def make_handler(svc, admin_token, rate=120):
             if path in ("/", "/index.html"):
                 return self._send(200, open(os.path.join(STATIC, "index.html"), "rb").read(), "text/html; charset=utf-8")
             if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": []}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, b"const C='jansevaai-v17';self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>c.add('/')))});self.addEventListener('activate',e=>e.waitUntil(clients.claim()));self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.pathname.startsWith('/api/'))return;e.respondWith(fetch(e.request).then(r=>{const k=r.clone();caches.open(C).then(c=>c.put(e.request,k));return r}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});", "application/javascript")
+            if path == "/sw.js": return self._send(200, "const C='jansevaai-v20';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now()})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
@@ -140,6 +140,13 @@ def make_handler(svc, admin_token, rate=120):
                     if dist <= 250 and (not q.get("category") or r["category"] == q["category"] or not r["category"]):
                         out.append({"id": r["id"], "code": r["code"], "category": r["category"], "title": (r["title"] or "")[:80], "status": r["status"], "distance_m": int(dist), "reported": r["created_at"][:10]})
                 out.sort(key=lambda x: x["distance_m"]); return self._json(200, {"items": out[:5]})
+            if path == "/api/public/overview":
+                from . import rating
+                from collections import Counter
+                es = rating.entities(); c = Counter(e["type"].split(" (")[0].split(" /")[0] for e in es)
+                mst = sorted({e["state"] for e in es if e["type"] == "MLA"})
+                st = public.stats(svc.db, q)
+                return self._json(200, {"stats": st, "directory": dict(c), "mla_states": mst, "languages": 17, "note": "Counts come from this server's database and official lists. Sandbox build: not government data."})
             if path == "/api/public/stats": return self._json(200, public.stats(svc.db, q))
             if path == "/api/public/heatmap": return self._json(200, public.heatmap(svc.db, q))
             if path == "/api/public/report":

@@ -1,11 +1,5 @@
 {
- "covered": {
-  "Telangana": 119,
-  "Uttarakhand": 70,
-  "Nagaland": 60,
-  "Bihar": 243
- },
- "note": "Names copied from state official portal tables fetched 2026-11-27. Pages may lag the latest by-election/assembly change; no mobile numbers or contacts imported. Source URL per row.",
+ "note": "Official-portal rows for 4 states, third-party CC BY rows for the rest. Pages may lag by-elections. No phone or email imported for any MLA. Sending to MLAs stays on official-source contacts only (none loaded yet).",
  "tried_failed": {
   "Rajasthan": "assembly site unreachable from our server (connection blocked)",
   "Tamil Nadu": "elections.tn.gov.in unreachable",
@@ -15,5 +9,104 @@
   "Puducherry": "page is script-rendered, no table",
   "ECI results.eci.gov.in / eci.gov.in statistical reports": "script-rendered pages, no fetchable data"
  },
- "not_tried": "All other states/UTs (Maharashtra, UP, MP, Gujarat, Karnataka, Kerala, WB, etc.) not yet attempted; each portal needs its own parser."
+ "vacant_seats_skipped": {
+  "Uttar Pradesh": 7,
+  "Gujarat": 1,
+  "Goa": 2,
+  "Tamil Nadu": 5,
+  "Karnataka": 2,
+  "Chhattisgarh": 1,
+  "Jharkhand": 1,
+  "Manipur": 2
+ },
+ "third_party_source": {
+  "name": "India Vote Kar MLA Register",
+  "url": "https://www.indiavotekar.com/datasets/mla-register/",
+  "licence": "CC BY 4.0 (stated on the dataset page, attribution required)",
+  "robots": "indiavotekar.com robots.txt allows the dataset path",
+  "accuracy_check": "Compared with official portals for Bihar, Telangana, Uttarakhand, Nagaland: 98-100% of overlapping seats matched on name. Differences are by-election or vacancy timing."
+ },
+ "other_sources_checked": {
+  "myneta.info (ADR)": "robots.txt allows crawling; data is per election and not the sitting list after by-elections, terms of use not reviewed, so not used. Affidavit phone numbers never imported.",
+  "netadata.in": "robots allow but not needed",
+  "eci.gov.in / results.eci.gov.in": "script-rendered, nothing fetchable"
+ },
+ "mla_rows_by_state": {
+  "Uttar Pradesh": 396,
+  "Maharashtra": 288,
+  "Gujarat": 181,
+  "Punjab": 117,
+  "Uttarakhand": 70,
+  "Goa": 38,
+  "Bihar": 243,
+  "West Bengal": 294,
+  "Himachal Pradesh": 68,
+  "Tamil Nadu": 229,
+  "Madhya Pradesh": 230,
+  "Karnataka": 222,
+  "Andhra Pradesh": 175,
+  "Rajasthan": 200,
+  "Kerala": 140,
+  "Odisha": 147,
+  "Telangana": 118,
+  "Chhattisgarh": 89,
+  "Haryana": 90,
+  "Delhi": 70,
+  "Tripura": 60,
+  "Meghalaya": 60,
+  "Mizoram": 40,
+  "Sikkim": 32,
+  "Puducherry": 30,
+  "Jharkhand": 80,
+  "Manipur": 58,
+  "Nagaland": 60,
+  "Jammu and Kashmir": 90,
+  "Assam": 126,
+  "Arunachal Pradesh": 60
+ },
+ "total_mlas": 4101,
+ "states_uts_covered": 31,
+ "vacant_seats_no_member": [
+  "Uttar Pradesh: Shikarpur",
+  "Uttar Pradesh: Fatehabad",
+  "Uttar Pradesh: Faridpur",
+  "Uttar Pradesh: Nizamabad",
+  "Uttar Pradesh: Ghosi",
+  "Uttar Pradesh: Rasara",
+  "Uttar Pradesh: Duddhi",
+  "Gujarat: Dediapada",
+  "Goa: Taleigao",
+  "Goa: Ponda",
+  "Tamil Nadu: Perundurai",
+  "Tamil Nadu: Karur",
+  "Tamil Nadu: Tiruchirappalli (East)",
+  "Tamil Nadu: Viralimalai",
+  "Tamil Nadu: Ambasamudram",
+  "Karnataka: Dharwad",
+  "Karnataka: Hiriyur",
+  "Telangana: Khairatabad",
+  "Chhattisgarh: Ahiwara",
+  "Jharkhand: Giridih",
+  "Manipur: Tadubi",
+  "Manipur: Thanlon"
+ ],
+ "official_cross_check": {
+  "Bihar": {
+   "matched": 239,
+   "differs": 2
+  },
+  "Telangana": {
+   "matched": 96,
+   "differs": 1
+  },
+  "Uttarakhand": {
+   "matched": 65,
+   "differs": 0
+  },
+  "Nagaland": {
+   "matched": 50,
+   "differs": 3
+  }
+ },
+ "rule": "Base list = India Vote Kar (CC BY 4.0), the most recent data (elected years up to 2026, incl. by-elections). Official state portal tables (Bihar, Telangana, Uttarakhand, Nagaland) kept as cross-check fields. Where they differ, the newer by-election timing is the likely cause; not asserted."
 }

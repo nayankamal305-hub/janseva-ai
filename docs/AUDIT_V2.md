@@ -40,3 +40,8 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - Added MLA entities from official state portal tables: Bihar 243, Telangana 119, Uttarakhand 70, Nagaland 60 (fetched 2026-11-27, source URL per row). See data/mla_coverage.json.
 - Not covered: all other states. Tried and failed: Rajasthan, Tamil Nadu (unreachable), Goa (503), Haryana (404), Delhi (PDF), Puducherry (script page), ECI results (script-rendered). Not yet attempted: remaining states.
 - Pages may lag by-elections; no mobile numbers imported.
+
+## v2.6 MLA all states + public landing + mobile error fix
+- MLAs: 4101 sitting MLAs, all 31 states/UTs, from India Vote Kar MLA Register (CC BY 4.0, attribution: India Vote Kar, https://www.indiavotekar.com/datasets/mla-register/), 22 vacant seats not listed. Bihar/Telangana/Uttarakhand/Nagaland cross-checked with official portal tables. Details: data/mla_coverage.json. By-election lag possible. No MLA phone/email imported.
+- Public landing page for logged-out users (stats, how it works, sample flow, rating preview). Logged-in home unchanged.
+- Mobile ERROR hardening: see docs/MOBILE_ERROR_RCA.md.

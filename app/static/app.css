@@ -125,8 +125,28 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--saf);outline-off
 .chip.g{background:#e3f6e1;color:#0b6b05}.chip.r{background:#fde8e6;color:#a3201a}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 .lite img{max-width:100%;image-rendering:auto}.lite *{animation:none!important;transition:none!important}.lite .hero{background:var(--navy)}#ldbtn.on{background:var(--saf);color:var(--navy2)}
-@media(max-width:430px){.appbar{gap:6px;padding:8px 10px}.appbar .pill{padding:6px 9px;font-size:12px}#ulang{max-width:62px;padding:6px 4px}.logo small{display:none}}
+@media(max-width:430px){.appbar{gap:6px;padding:8px 10px}.appbar .pill{padding:6px 9px;font-size:12px}#ulang{max-width:none;width:58px;padding:6px 2px;text-overflow:clip}.logo small{display:none}}
 .intro{position:fixed;inset:0;z-index:200;background:linear-gradient(160deg,var(--navy2),var(--navy));overflow:auto;justify-content:center;padding:16px}
 .introc{background:#fff;border-radius:22px;max-width:480px;width:100%;margin:auto;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
 .introtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.logo2{font-weight:700;color:var(--navy);font-size:13px}.introtop .pill{background:var(--bg);color:var(--navy);border:1px solid var(--line)}
 .introc h1{font-size:21px;line-height:1.25;color:var(--navy);margin:4px 0 6px}.isteps{margin:12px 0}.istep{display:flex;gap:10px;margin-bottom:10px}.in{flex:none;width:28px;height:28px;border-radius:50%;background:var(--saf);color:var(--navy2);display:grid;place-items:center;font-weight:700}
+
+/* v2.2 redesign: glance row, primary cards, dark mode, motion */
+.glance{display:flex;align-items:center;justify-content:space-between;gap:4px;background:var(--card);border-radius:var(--r);padding:12px 10px;margin:14px 0 10px;box-shadow:var(--sh);font-size:11.5px;font-weight:600;color:var(--navy)}
+.glance span{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;flex:1}.glance i{font-style:normal;width:26px;height:26px;border-radius:50%;background:var(--saf);color:var(--navy2);display:grid;place-items:center;font-weight:800}.glance b{color:var(--mut);font-size:16px}
+.prim{display:grid;gap:10px}.pc{display:flex;align-items:center;gap:14px;background:var(--card);border:0;border-radius:var(--r);padding:14px;box-shadow:var(--sh);font:inherit;color:var(--ink);text-align:left;cursor:pointer;transition:transform .15s}
+.pc:active{transform:scale(.98)}.pc .bub{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:#e8eefc;color:var(--navy);flex:none}.pc.o .bub{background:#fff1de;color:#c76a00}.pc.g .bub{background:#e3f6e1;color:var(--green)}
+.pc b{display:block;font-size:15.5px}.pc small{color:var(--mut);font-size:12.5px}.pc .chev{margin-left:auto;font-size:24px;color:var(--mut)}
+.sec.on{animation:rise .35s ease both}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+html.dark{--bg:#0d1324;--card:#172038;--ink:#e8ecf8;--mut:#9aa6c6;--line:#27324f;--sh:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);color-scheme:dark}
+html.dark body{background:var(--bg);color:var(--ink)}
+html.dark .card,html.dark .tile,html.dark .stat,html.dark .glance,html.dark .pc,html.dark .rec,html.dark .introc,html.dark .bnav{background:var(--card)!important;color:var(--ink)}
+html.dark .glance,html.dark .introc h1,html.dark .logo2{color:var(--ink)}
+html.dark input,html.dark select,html.dark textarea{background:#0f172b;color:var(--ink);border-color:var(--line)}
+html.dark .btn.out{background:transparent;color:var(--ink);border-color:var(--line)}
+html.dark .tile .bub,html.dark .pc .bub{background:#22305a;color:#cfe0ff}
+html.dark a{color:#8db4ff}
+@media(max-width:430px){#ulang{width:50px;font-size:12px}.appbar .pill{padding:6px 8px}.appbar{gap:5px}}
+html.dark .stat b,html.dark .stat{color:var(--ink)}html.dark .stat.g b{color:#5fd35a}html.dark .stat.o b{color:#ffb252}
+html.dark .bnav button.on,html.dark .bnav button.on span{color:var(--saf)!important}html.dark .bnav button{color:var(--mut)}
+@media(max-width:430px){.logo{font-size:14px;gap:6px}.logo i{width:30px;height:30px}#loginbtn #who{max-width:44px;overflow:hidden}}

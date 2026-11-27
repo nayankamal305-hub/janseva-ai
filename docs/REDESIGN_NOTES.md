@@ -1,0 +1,4 @@
+# Redesign research notes (2026-11-27), not yet implemented
+MyGov structure (mygov.in): top counters (participation numbers), "Get involved" with tabs (Do/Tasks, Discuss, Poll, Blog, Talk, Quiz, Pledge...), card per activity with date window, strong campaign banners. Take: counters strip, tabbed task cards, dated cards. Avoid: dense multi-section home.
+Gen Z UI sources: boundev.ai/blog/gen-z-design-ux-brand-strategy-guide, sanjaydey.com/designing-for-gen-z-ui-trends-next-generation, aufaitux.com/blog/tactile-maximalism-gen-z-ui, designdeluxe.in/minimalist-mobile-app-design-with-dark-mode-2026 (read in detail next run). 
+Plan: home = promise + one Report button + 3 task cards + live counters; More sheet; dark mode; 4-item bottom nav; stepper while filing; micro-animations (reduced-motion safe); vanilla CSS/JS only; keep v2.1 features and JS smoke test; 390px screenshots.

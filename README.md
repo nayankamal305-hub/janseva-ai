@@ -1,5 +1,7 @@
 # JANSEVA AI: unified grievance integration engine
 
+**Live:** https://janseva-ai-n00d.onrender.com (Render free tier - sleeps when idle, first load can take ~30s)
+
 One citizen report, routed to the right official channels, tracked in one place. Full-stack Python app (stdlib only, SQLite), web UI, admin Control Center, connector framework, tests, Docker.
 
 > **Honest status.** This build has NO live government credentials. Nothing is sent to a real government system. Records are labelled `live`, `sandbox` or `guided`. Sandbox references come from a local mock server and are never official acknowledgements.

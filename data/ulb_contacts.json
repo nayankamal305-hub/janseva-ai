@@ -1413,7 +1413,12 @@
   "website": "https://aligarh.nic.in",
   "website_kind": "district_site_listing",
   "found_via": "https://aligarh.nic.in/public-utility/aligarh-municipal-corporation/",
-  "emails": [],
+  "emails": [
+   {
+    "email": "nnaligarh@gmail.com",
+    "found_on": "https://aligarh.nic.in/public-utility-category/municipality/"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -2883,5 +2888,2181 @@
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "Kerala LSGD directory of local body websites, ULB homepage read; one fetch per site"
+ },
+ {
+  "ulb_name": "Ariyalur",
+  "city_code": "252767",
+  "state": "Tamil Nadu",
+  "website": "https://ariyalur.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ariyalur.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.ariyalur@tn.gov.in",
+    "found_on": "https://ariyalur.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Jayankondam",
+  "city_code": "252765",
+  "state": "Tamil Nadu",
+  "website": "https://ariyalur.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ariyalur.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.jayankondam@tn.gov.in",
+    "found_on": "https://ariyalur.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Chengalpattu",
+  "city_code": "252333",
+  "state": "Tamil Nadu",
+  "website": "https://chengalpattu.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://chengalpattu.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.chengalpattu@tn.gov.in",
+    "found_on": "https://chengalpattu.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Maraimalainagar",
+  "city_code": "252330",
+  "state": "Tamil Nadu",
+  "website": "https://chengalpattu.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://chengalpattu.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.maraimalainagar@tn.gov.in",
+    "found_on": "https://chengalpattu.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Kallakurichi",
+  "city_code": "252451",
+  "state": "Tamil Nadu",
+  "website": "https://kallakurichi.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://kallakurichi.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.kallakurichi@tn.gov.in",
+    "found_on": "https://kallakurichi.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Kulithalai",
+  "city_code": "252731",
+  "state": "Tamil Nadu",
+  "website": "https://karur.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://karur.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.kulithalai@tn.gov.in",
+    "found_on": "https://karur.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Krishnagiri",
+  "city_code": "252402",
+  "state": "Tamil Nadu",
+  "website": "https://krishnagiri.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://krishnagiri.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.krishnagiri@tn.gov.in",
+    "found_on": "https://krishnagiri.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Melur (M)",
+  "city_code": "252871",
+  "state": "Tamil Nadu",
+  "website": "https://madurai.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://madurai.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.melur@tn.gov.in",
+    "found_on": "https://madurai.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Tirumangalam",
+  "city_code": "252888",
+  "state": "Tamil Nadu",
+  "website": "https://madurai.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://madurai.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.tirumangalam@tn.gov.in",
+    "found_on": "https://madurai.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Usilampatti",
+  "city_code": "252884",
+  "state": "Tamil Nadu",
+  "website": "https://madurai.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://madurai.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.usilampatti@tn.gov.in",
+    "found_on": "https://madurai.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Mayiladuthurai",
+  "city_code": "252794",
+  "state": "Tamil Nadu",
+  "website": "https://mayiladuthurai.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://mayiladuthurai.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.mayiladuthurai@tn.gov.in",
+    "found_on": "https://mayiladuthurai.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Aranthangi",
+  "city_code": "252854",
+  "state": "Tamil Nadu",
+  "website": "https://pudukkottai.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://pudukkottai.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.aranthangi@tn.gov.in",
+    "found_on": "https://pudukkottai.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Arcot",
+  "city_code": "252373",
+  "state": "Tamil Nadu",
+  "website": "https://ranipet.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ranipet.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.arcot@tn.gov.in",
+    "found_on": "https://ranipet.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Melvisharam",
+  "city_code": "252366",
+  "state": "Tamil Nadu",
+  "website": "https://ranipet.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ranipet.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.melvisharam@tn.gov.in",
+    "found_on": "https://ranipet.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Kadayanallur",
+  "city_code": "252994",
+  "state": "Tamil Nadu",
+  "website": "https://tenkasi.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://tenkasi.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.kadayanallur@tn.gov.in",
+    "found_on": "https://tenkasi.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Tenkasi",
+  "city_code": "252997",
+  "state": "Tamil Nadu",
+  "website": "https://tenkasi.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://tenkasi.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.tenkasi@tn.gov.in",
+    "found_on": "https://tenkasi.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Ambasamudram",
+  "city_code": "253014",
+  "state": "Tamil Nadu",
+  "website": "https://tirunelveli.nic.in/public-utility-category/municipalities/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://tirunelveli.nic.in/public-utility-category/municipalities/",
+  "emails": [
+   {
+    "email": "commr.ambasamudram@tn.gov.in",
+    "found_on": "https://tirunelveli.nic.in/public-utility-category/municipalities/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Vikramasingapuram",
+  "city_code": "253015",
+  "state": "Tamil Nadu",
+  "website": "https://tirunelveli.nic.in/public-utility-category/municipalities/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://tirunelveli.nic.in/public-utility-category/municipalities/",
+  "emails": [
+   {
+    "email": "commr.vikramasingapuram@tn.gov.in",
+    "found_on": "https://tirunelveli.nic.in/public-utility-category/municipalities/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Ambur",
+  "city_code": "252391",
+  "state": "Tamil Nadu",
+  "website": "https://tirupathur.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://tirupathur.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.ambur@tn.gov.in",
+    "found_on": "https://tirupathur.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Jolarpet",
+  "city_code": "252397",
+  "state": "Tamil Nadu",
+  "website": "https://tirupathur.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://tirupathur.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.jolarpet@tn.gov.in",
+    "found_on": "https://tirupathur.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Vaniyambadi",
+  "city_code": "252394",
+  "state": "Tamil Nadu",
+  "website": "https://tirupathur.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://tirupathur.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.vaniyambadi@tn.gov.in",
+    "found_on": "https://tirupathur.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Dharapuram",
+  "city_code": "252592",
+  "state": "Tamil Nadu",
+  "website": "https://tiruppur.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://tiruppur.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.dharapuram@tn.gov.in",
+    "found_on": "https://tiruppur.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Palladam",
+  "city_code": "252636",
+  "state": "Tamil Nadu",
+  "website": "https://tiruppur.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://tiruppur.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "palladam@tn.gov.in",
+    "found_on": "https://tiruppur.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Gudiyatham",
+  "city_code": "252351",
+  "state": "Tamil Nadu",
+  "website": "https://vellore.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://vellore.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.gudiyatham@tn.gov.in",
+    "found_on": "https://vellore.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Tindivanam",
+  "city_code": "252438",
+  "state": "Tamil Nadu",
+  "website": "https://viluppuram.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://viluppuram.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commr.tindivanam@tn.gov.in",
+    "found_on": "https://viluppuram.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Aurad",
+  "city_code": "251866",
+  "state": "Karnataka",
+  "website": "https://bidar.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bidar.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "itstaff_ulb_aurad@yahoo.com",
+    "found_on": "https://bidar.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Alur (TP)",
+  "city_code": "252013",
+  "state": "Karnataka",
+  "website": "https://hassan.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://hassan.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "ownpanchayath.alur@gmail.com",
+    "found_on": "https://hassan.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Ankola",
+  "city_code": "251906",
+  "state": "Karnataka",
+  "website": "https://uttarakannada.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://uttarakannada.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "itstaff_ulb_ankola@yahoo.com",
+    "found_on": "https://uttarakannada.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Haliyal",
+  "city_code": "251901",
+  "state": "Karnataka",
+  "website": "https://uttarakannada.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://uttarakannada.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "tphaliyal2@yahoo.com",
+    "found_on": "https://uttarakannada.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Jali",
+  "city_code": "276572",
+  "state": "Karnataka",
+  "website": "https://uttarakannada.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://uttarakannada.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "jali.bat.utt@gmail.com",
+    "found_on": "https://uttarakannada.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Mundgod",
+  "city_code": "251904",
+  "state": "Karnataka",
+  "website": "https://uttarakannada.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://uttarakannada.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "tpmundgod@yahoo.co.in",
+    "found_on": "https://uttarakannada.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Yellareddy",
+  "city_code": "290067",
+  "state": "Telangana",
+  "website": "https://kamareddy.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://kamareddy.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "mpl.yellareddy@gmail.com",
+    "found_on": "https://kamareddy.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Dornakal",
+  "city_code": "290069",
+  "state": "Telangana",
+  "website": "https://mahabubabad.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://mahabubabad.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "mc.dornakal@gmail.com",
+    "found_on": "https://mahabubabad.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Mahabubabad",
+  "city_code": "257971",
+  "state": "Telangana",
+  "website": "https://mahabubabad.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://mahabubabad.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "mc-mahabd@yahoo.com",
+    "found_on": "https://mahabubabad.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Thorrur",
+  "city_code": "290071",
+  "state": "Telangana",
+  "website": "https://mahabubabad.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://mahabubabad.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "municipalthorrur@gmail.com",
+    "found_on": "https://mahabubabad.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Ramayampet",
+  "city_code": "290078",
+  "state": "Telangana",
+  "website": "https://medak.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://medak.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "municipalityramayampet@gmail.com",
+    "found_on": "https://medak.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Toopran",
+  "city_code": "290079",
+  "state": "Telangana",
+  "website": "https://medak.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://medak.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "municipalitytoopran@gmail.com",
+    "found_on": "https://medak.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Cherial",
+  "city_code": "290132",
+  "state": "Telangana",
+  "website": "https://siddipet.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://siddipet.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cherialmunicipality@gmail.com",
+    "found_on": "https://siddipet.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Dubbak",
+  "city_code": "260709",
+  "state": "Telangana",
+  "website": "https://siddipet.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://siddipet.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "npdubbak@gmail.com",
+    "found_on": "https://siddipet.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Gajwel",
+  "city_code": "254930",
+  "state": "Telangana",
+  "website": "https://siddipet.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://siddipet.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "np.gajwel@gmail.com",
+    "found_on": "https://siddipet.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Husnabad",
+  "city_code": "253267",
+  "state": "Telangana",
+  "website": "https://siddipet.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://siddipet.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "nphusnabad@gmail.com",
+    "found_on": "https://siddipet.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Siddipet",
+  "city_code": "248096",
+  "state": "Telangana",
+  "website": "https://siddipet.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://siddipet.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "siddipetmunicipality@gmail.com",
+    "found_on": "https://siddipet.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Kanad",
+  "city_code": "250859",
+  "state": "Madhya Pradesh",
+  "website": "https://agarmalwa.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://agarmalwa.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmokanad@mpurban.gov.in",
+    "found_on": "https://agarmalwa.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Nalkheda",
+  "city_code": "250855",
+  "state": "Madhya Pradesh",
+  "website": "https://agarmalwa.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://agarmalwa.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmonalkheda@mpurban.gov.in",
+    "found_on": "https://agarmalwa.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Susner",
+  "city_code": "250854",
+  "state": "Madhya Pradesh",
+  "website": "https://agarmalwa.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://agarmalwa.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmosusner@mpurban.gov.in",
+    "found_on": "https://agarmalwa.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Bijuri",
+  "city_code": "253194",
+  "state": "Madhya Pradesh",
+  "website": "https://anuppur.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://anuppur.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmobijuri@mpurban.gov.in",
+    "found_on": "https://anuppur.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Kotma",
+  "city_code": "253193",
+  "state": "Madhya Pradesh",
+  "website": "https://anuppur.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://anuppur.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmokotma@mpurban.gov.in",
+    "found_on": "https://anuppur.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Pasan",
+  "city_code": "253197",
+  "state": "Madhya Pradesh",
+  "website": "https://anuppur.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://anuppur.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmopasan@mpurban.gov.in",
+    "found_on": "https://anuppur.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Amarkantak",
+  "city_code": "253195",
+  "state": "Madhya Pradesh",
+  "website": "https://anuppur.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://anuppur.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoamarkantak@mpurban.gov.in",
+    "found_on": "https://anuppur.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Jaithari",
+  "city_code": "253196",
+  "state": "Madhya Pradesh",
+  "website": "https://anuppur.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://anuppur.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmojaithari@mpurban.gov.in",
+    "found_on": "https://anuppur.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Baihar",
+  "city_code": "251041",
+  "state": "Madhya Pradesh",
+  "website": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmobaiher@mpurban.gov.in",
+    "found_on": "https://balaghat.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Balaghat",
+  "city_code": "251040",
+  "state": "Madhya Pradesh",
+  "website": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmobalaghat@mpurban.gov.in",
+    "found_on": "https://balaghat.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Katangi (Balaghat)",
+  "city_code": "251035",
+  "state": "Madhya Pradesh",
+  "website": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmokatangibalaghat@mpurban.gov.in",
+    "found_on": "https://balaghat.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Lanji",
+  "city_code": "253162",
+  "state": "Madhya Pradesh",
+  "website": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmolanji@mpurban.gov.in",
+    "found_on": "https://balaghat.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Malajkhand",
+  "city_code": "251042",
+  "state": "Madhya Pradesh",
+  "website": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmomalajkhand@mpurban.gov.in",
+    "found_on": "https://balaghat.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Waraseoni",
+  "city_code": "251037",
+  "state": "Madhya Pradesh",
+  "website": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://balaghat.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmowaraseoni@mpurban.gov.in",
+    "found_on": "https://balaghat.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Sendhwa",
+  "city_code": "250919",
+  "state": "Madhya Pradesh",
+  "website": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmosendhwa@mpurban.gov.in",
+    "found_on": "https://barwani.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Anjad",
+  "city_code": "250915",
+  "state": "Madhya Pradesh",
+  "website": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoanjad@mpurban.gov.in",
+    "found_on": "https://barwani.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Khetia",
+  "city_code": "250918",
+  "state": "Madhya Pradesh",
+  "website": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmokhetai@mpurban.gov.in",
+    "found_on": "https://barwani.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Palsud",
+  "city_code": "253251",
+  "state": "Madhya Pradesh",
+  "website": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmopalsood@mpurban.gov.in",
+    "found_on": "https://barwani.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Pansemal",
+  "city_code": "250917",
+  "state": "Madhya Pradesh",
+  "website": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmopansemal@mpurban.gov.in",
+    "found_on": "https://barwani.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Rajpur",
+  "city_code": "250916",
+  "state": "Madhya Pradesh",
+  "website": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://barwani.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmorajpur@mpurban.gov.in",
+    "found_on": "https://barwani.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Amla",
+  "city_code": "248073",
+  "state": "Madhya Pradesh",
+  "website": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoamla@mpurban.gov.in",
+    "found_on": "https://betul.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Betul",
+  "city_code": "248072",
+  "state": "Madhya Pradesh",
+  "website": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmobetul@mpurban.gov.in",
+    "found_on": "https://betul.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Multai",
+  "city_code": "248071",
+  "state": "Madhya Pradesh",
+  "website": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmomultai@mpurban.gov.in",
+    "found_on": "https://betul.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Sarni",
+  "city_code": "248069",
+  "state": "Madhya Pradesh",
+  "website": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmosarni@mpurban.gov.in",
+    "found_on": "https://betul.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Athner",
+  "city_code": "263361",
+  "state": "Madhya Pradesh",
+  "website": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoaathner@mpurban.gov.in",
+    "found_on": "https://betul.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Betul-Bazar",
+  "city_code": "248070",
+  "state": "Madhya Pradesh",
+  "website": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmobetulbazaar@mpurban.gov.in",
+    "found_on": "https://betul.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Bhainsdehi",
+  "city_code": "250964",
+  "state": "Madhya Pradesh",
+  "website": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmobhaindehi@mpurban.gov.in",
+    "found_on": "https://betul.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Chicholi",
+  "city_code": "263218",
+  "state": "Madhya Pradesh",
+  "website": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmochicholi@mpurban.gov.in",
+    "found_on": "https://betul.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Shahpur (Betul)",
+  "city_code": "298920",
+  "state": "Madhya Pradesh",
+  "website": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://betul.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoshahpur@mpurban.gov.in",
+    "found_on": "https://betul.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Akoda",
+  "city_code": "250685",
+  "state": "Madhya Pradesh",
+  "website": "https://bhind.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bhind.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoakoda@mpurban.gov.in",
+    "found_on": "https://bhind.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Alampur",
+  "city_code": "250692",
+  "state": "Madhya Pradesh",
+  "website": "https://bhind.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bhind.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoalampur@mpurban.gov.in",
+    "found_on": "https://bhind.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Daboh",
+  "city_code": "250693",
+  "state": "Madhya Pradesh",
+  "website": "https://bhind.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bhind.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmodaboha1@mpurban.gov.in",
+    "found_on": "https://bhind.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Gormi",
+  "city_code": "250686",
+  "state": "Madhya Pradesh",
+  "website": "https://bhind.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bhind.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmogormi@mpurban.gov.in",
+    "found_on": "https://bhind.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Mau",
+  "city_code": "250689",
+  "state": "Madhya Pradesh",
+  "website": "https://bhind.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bhind.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmomau@mpurban.gov.in",
+    "found_on": "https://bhind.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Berasia",
+  "city_code": "250945",
+  "state": "Madhya Pradesh",
+  "website": "https://bhopal.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://bhopal.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoberasia@mpurban.gov.in",
+    "found_on": "https://bhopal.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Burhanpur",
+  "city_code": "250925",
+  "state": "Madhya Pradesh",
+  "website": "https://burhanpur.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://burhanpur.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "commburhanpur@mpurban.gov.in",
+    "found_on": "https://burhanpur.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Nepanagar",
+  "city_code": "250927",
+  "state": "Madhya Pradesh",
+  "website": "https://burhanpur.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://burhanpur.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmonepanagar@mpurban.gov.in",
+    "found_on": "https://burhanpur.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Chhatarpur",
+  "city_code": "250741",
+  "state": "Madhya Pradesh",
+  "website": "https://chhatarpur.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://chhatarpur.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmochhatarpur@mpurban.gov.in",
+    "found_on": "https://chhatarpur.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Damoh",
+  "city_code": "250774",
+  "state": "Madhya Pradesh",
+  "website": "https://damoh.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://damoh.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmodamoh@mpurban.gov.in",
+    "found_on": "https://damoh.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Hatta",
+  "city_code": "250771",
+  "state": "Madhya Pradesh",
+  "website": "https://damoh.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://damoh.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmohatta@mpurban.gov.in",
+    "found_on": "https://damoh.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Patera",
+  "city_code": "293826",
+  "state": "Madhya Pradesh",
+  "website": "https://damoh.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://damoh.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmopatera@mpurban.gov.in",
+    "found_on": "https://damoh.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Patharia",
+  "city_code": "250772",
+  "state": "Madhya Pradesh",
+  "website": "https://damoh.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://damoh.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmopathiriya@mpurban.gov.in",
+    "found_on": "https://damoh.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Datia",
+  "city_code": "250703",
+  "state": "Madhya Pradesh",
+  "website": "https://datia.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://datia.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmodatia@mpurban.gov.in",
+    "found_on": "https://datia.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Gwalior",
+  "city_code": "250694",
+  "state": "Madhya Pradesh",
+  "website": "https://gwalior.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://gwalior.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "nn.gwalior@mpurban.gov.in",
+    "found_on": "https://gwalior.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Dabra",
+  "city_code": "250698",
+  "state": "Madhya Pradesh",
+  "website": "https://gwalior.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://gwalior.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmodabra@mpurban.gov.in",
+    "found_on": "https://gwalior.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Pichhore (Gwalior)",
+  "city_code": "250697",
+  "state": "Madhya Pradesh",
+  "website": "https://gwalior.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://gwalior.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmopichhore@mpurban.gov.in",
+    "found_on": "https://gwalior.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Harda",
+  "city_code": "250967",
+  "state": "Madhya Pradesh",
+  "website": "https://harda.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://harda.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoharda@mpurban.gov.in",
+    "found_on": "https://harda.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Sirali",
+  "city_code": "298918",
+  "state": "Madhya Pradesh",
+  "website": "https://harda.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://harda.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmosirali@mpurban.gov.in",
+    "found_on": "https://harda.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Khirkiya",
+  "city_code": "250966",
+  "state": "Madhya Pradesh",
+  "website": "https://harda.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://harda.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmokhirkiya@mpurban.gov.in",
+    "found_on": "https://harda.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Timarni",
+  "city_code": "250968",
+  "state": "Madhya Pradesh",
+  "website": "https://harda.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://harda.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmotimarni@mpurban.gov.in",
+    "found_on": "https://harda.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Jhabua",
+  "city_code": "250879",
+  "state": "Madhya Pradesh",
+  "website": "https://jhabua.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://jhabua.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmojhabua@mpurban.gov.in",
+    "found_on": "https://jhabua.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Meghnagar",
+  "city_code": "273379",
+  "state": "Madhya Pradesh",
+  "website": "https://jhabua.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://jhabua.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmomeghnagar@mpurban.gov.in",
+    "found_on": "https://jhabua.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Petlawad",
+  "city_code": "250877",
+  "state": "Madhya Pradesh",
+  "website": "https://jhabua.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://jhabua.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmopetlawad@mpurban.gov.in",
+    "found_on": "https://jhabua.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Thandla",
+  "city_code": "250876",
+  "state": "Madhya Pradesh",
+  "website": "https://jhabua.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://jhabua.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmothandla@mpurban.gov.in",
+    "found_on": "https://jhabua.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Bichhiya",
+  "city_code": "253171",
+  "state": "Madhya Pradesh",
+  "website": "https://mandla.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://mandla.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmobichhiya@mpurban.gov.in",
+    "found_on": "https://mandla.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Mandla (M)",
+  "city_code": "289259",
+  "state": "Madhya Pradesh",
+  "website": "https://mandla.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://mandla.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmomandla@mpurban.gov.in",
+    "found_on": "https://mandla.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Niwas",
+  "city_code": "253170",
+  "state": "Madhya Pradesh",
+  "website": "https://mandla.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://mandla.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoniwas@mpurban.gov.in",
+    "found_on": "https://mandla.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Neemuch",
+  "city_code": "250823",
+  "state": "Madhya Pradesh",
+  "website": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoneemuch@mpurban.gov.in",
+    "found_on": "https://neemuch.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Athana",
+  "city_code": "293817",
+  "state": "Madhya Pradesh",
+  "website": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoathana@mpurban.gov.in",
+    "found_on": "https://neemuch.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Diken",
+  "city_code": "250821",
+  "state": "Madhya Pradesh",
+  "website": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmodiken@mpurban.gov.in",
+    "found_on": "https://neemuch.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Manasa",
+  "city_code": "250826",
+  "state": "Madhya Pradesh",
+  "website": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmomanasa@mpurban.gov.in",
+    "found_on": "https://neemuch.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Nayagaon (Neemuch)",
+  "city_code": "263154",
+  "state": "Madhya Pradesh",
+  "website": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmonayagaon@mpurban.gov.in",
+    "found_on": "https://neemuch.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Rampura",
+  "city_code": "250825",
+  "state": "Madhya Pradesh",
+  "website": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmorampura@mpurban.gov.in",
+    "found_on": "https://neemuch.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Ratangarh (TP)",
+  "city_code": "250820",
+  "state": "Madhya Pradesh",
+  "website": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoratangarh@mpurban.gov.in",
+    "found_on": "https://neemuch.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Singoli",
+  "city_code": "250819",
+  "state": "Madhya Pradesh",
+  "website": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://neemuch.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmosingoli@mpurban.gov.in",
+    "found_on": "https://neemuch.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Govindgarh (TP)",
+  "city_code": "250798",
+  "state": "Madhya Pradesh",
+  "website": "https://rewa.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://rewa.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmogovindgarh@mpurban.gov.in",
+    "found_on": "https://rewa.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Semaria",
+  "city_code": "250791",
+  "state": "Madhya Pradesh",
+  "website": "https://rewa.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://rewa.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmosemariya@mpurban.gov.in",
+    "found_on": "https://rewa.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Teonthar",
+  "city_code": "250789",
+  "state": "Madhya Pradesh",
+  "website": "https://rewa.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://rewa.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoteonthar@mpurban.gov.in",
+    "found_on": "https://rewa.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Barghat",
+  "city_code": "251034",
+  "state": "Madhya Pradesh",
+  "website": "https://seoni.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://seoni.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmobarghat@mpurban.gov.in",
+    "found_on": "https://seoni.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Badarwas",
+  "city_code": "250709",
+  "state": "Madhya Pradesh",
+  "website": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmobadarvas@mpurban.gov.in",
+    "found_on": "https://shivpuri.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Karera",
+  "city_code": "250707",
+  "state": "Madhya Pradesh",
+  "website": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmokarera@mpurban.gov.in",
+    "found_on": "https://shivpuri.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Khaniyadhana",
+  "city_code": "250711",
+  "state": "Madhya Pradesh",
+  "website": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmokhaniadhana@mpurban.gov.in",
+    "found_on": "https://shivpuri.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Kolaras",
+  "city_code": "250708",
+  "state": "Madhya Pradesh",
+  "website": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmokolaras@mpurban.gov.in",
+    "found_on": "https://shivpuri.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Narwar",
+  "city_code": "250706",
+  "state": "Madhya Pradesh",
+  "website": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmonarwar@mpurban.gov.in",
+    "found_on": "https://shivpuri.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Pichhore (Shivpuri)",
+  "city_code": "250710",
+  "state": "Madhya Pradesh",
+  "website": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmopichor@mpurban.gov.in",
+    "found_on": "https://shivpuri.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Rannod",
+  "city_code": "298921",
+  "state": "Madhya Pradesh",
+  "website": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://shivpuri.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmorannod@mpurban.gov.in",
+    "found_on": "https://shivpuri.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Churhat",
+  "city_code": "248068",
+  "state": "Madhya Pradesh",
+  "website": "https://sidhi.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://sidhi.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmochurhat@mpurban.gov.in",
+    "found_on": "https://sidhi.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Majhauli",
+  "city_code": "250818",
+  "state": "Madhya Pradesh",
+  "website": "https://sidhi.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://sidhi.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmomajhauli@mpurban.gov.in",
+    "found_on": "https://sidhi.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Mahidpur",
+  "city_code": "250849",
+  "state": "Madhya Pradesh",
+  "website": "https://ujjain.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ujjain.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmomahidpur@mpurban.gov.in",
+    "found_on": "https://ujjain.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Tarana",
+  "city_code": "250850",
+  "state": "Madhya Pradesh",
+  "website": "https://ujjain.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ujjain.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmotarana@mpurban.gov.in",
+    "found_on": "https://ujjain.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Ujjain",
+  "city_code": "250851",
+  "state": "Madhya Pradesh",
+  "website": "https://ujjain.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://ujjain.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "nn.ujjain@mpurban.gov.in",
+    "found_on": "https://ujjain.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Vidisha",
+  "city_code": "250944",
+  "state": "Madhya Pradesh",
+  "website": "https://vidisha.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://vidisha.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmovidisha@mpurban.gov.in",
+    "found_on": "https://vidisha.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Kurwai",
+  "city_code": "250942",
+  "state": "Madhya Pradesh",
+  "website": "https://vidisha.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://vidisha.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmokurwai@mpurban.gov.in",
+    "found_on": "https://vidisha.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Lateri",
+  "city_code": "250940",
+  "state": "Madhya Pradesh",
+  "website": "https://vidisha.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://vidisha.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmolateri@mpurban.gov.in",
+    "found_on": "https://vidisha.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Shamshabad (TP)",
+  "city_code": "262993",
+  "state": "Madhya Pradesh",
+  "website": "https://vidisha.nic.in/en/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://vidisha.nic.in/en/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "cmoshamshabad@mpurban.gov.in",
+    "found_on": "https://vidisha.nic.in/en/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Sardhana",
+  "city_code": "248955",
+  "state": "Uttar Pradesh",
+  "website": "https://meerut.nic.in/public-utility-category/municipality/",
+  "website_kind": "district_site_listing",
+  "found_via": "https://meerut.nic.in/public-utility-category/municipality/",
+  "emails": [
+   {
+    "email": "nppsardhana@gmail.com",
+    "found_on": "https://meerut.nic.in/public-utility-category/municipality/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
  }
 ]

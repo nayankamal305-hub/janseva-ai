@@ -62,3 +62,8 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 ## v3.0 Kerala municipalities
 - Source: Kerala LSGD directory of local body websites (https://lsgkerala.gov.in/en/website/web), fetched 2026-11-27. Each municipality homepage read once; emails are as printed there (mostly secretary mailboxes, some gmail). 70 more ULBs added to data/ulb_contacts.json (206 total).
 - 17 Kerala municipality sites not matched to the PMAY list by name or no email; skipped, not guessed. 34 gram panchayat/block emails were found on the same directory but NOT imported (rural bodies are not routed yet).
+
+## v3.1 District-portal municipality directories (MP, TN, UP, Karnataka, Telangana)
+- District NIC portals publish a "Municipalities" page with each ULB's email. Domain guesses ({district}.nic.in / .gov.in / state subdomain) were accepted only if the page loaded and was an official government district page. Names matched to the PMAY list within the same state and district only.
+- 29 entries whose email did not resemble the body name (source-side mix-ups, e.g. Chidambaram listed with another town's address) and personal-looking gmail ids were dropped. Districts not reached: those renamed or without a standard page (Telangana 10/31, UP 40/75, TN 24/38, Karnataka 15/31, MP 38/55 found).
+- Emails are as the official page prints them; accepts_citizen_complaints stays "unverified".

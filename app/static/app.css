@@ -150,3 +150,8 @@ html.dark a{color:#8db4ff}
 html.dark .stat b,html.dark .stat{color:var(--ink)}html.dark .stat.g b{color:#5fd35a}html.dark .stat.o b{color:#ffb252}
 html.dark .bnav button.on,html.dark .bnav button.on span{color:var(--saf)!important}html.dark .bnav button{color:var(--mut)}
 @media(max-width:430px){.logo{font-size:14px;gap:6px}.logo i{width:30px;height:30px}#loginbtn #who{max-width:44px;overflow:hidden}}
+/* v2.3 stepper + lists */
+.wiz{display:flex;gap:6px;margin:12px 0}.wiz>div{flex:1;font-size:11px;font-weight:600;color:var(--mut);text-align:center}.wiz>div i{display:block;height:5px;border-radius:4px;background:var(--line);margin-bottom:5px;transition:background .3s}
+.wiz>div.c{color:var(--navy)}.wiz>div.c i{background:var(--saf)}.wiz>div.d i{background:var(--green)}html.dark .wiz>div.c{color:var(--saf)}
+.chip{border-radius:999px}.seg i{border-radius:6px}.card h3{display:flex;align-items:center;gap:8px}
+html.dark .chip{background:#22305a;color:#dbe6ff}html.dark .drop{background:#101a33;border-color:#33436e;color:var(--ink)}html.dark .info{background:#2a2412;color:#ffe2a8}html.dark .info.bl{background:#13233f;color:#cfe0ff}

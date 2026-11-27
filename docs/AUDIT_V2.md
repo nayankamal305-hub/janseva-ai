@@ -30,3 +30,8 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - Header fits 390 px phones; nav label fixed. Screenshots: ui13_*.png.
 - MP auto-detect from pincode/GPS: NOT built (no official boundary data). MLA/collector partial rating: NOT built.
 - X daily cap 4.
+
+## Update v2.4
+- Rating now also lists ~780 district administration offices (official district site as source; no officer names, partial). MLAs still not listed (no official dataset).
+- MP selection: constituency picker (datalist from sansad.in, filtered by state). Auto-detect from pincode/GPS still NOT built (no official boundary data).
+- 6 languages (Bodo, Dogri, Kashmiri, Manipuri, Santali, Sindhi) NOT added: I cannot translate them reliably, need native translators.

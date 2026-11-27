@@ -29,3 +29,8 @@ class R(unittest.TestCase):
         rating.moderate(self.db, rid, "restore"); self.assertEqual(rating.detail(self.db, self.k)["count"], 1)
         rating.moderate(self.db, rid, "remove"); self.assertFalse(rating.rate(self.db, self.i1, self.k, 2)["ok"])
 if __name__ == "__main__": unittest.main()
+class Dist(unittest.TestCase):
+    def test_district_offices_listed_with_sources(self):
+        ds = [e for e in rating.entities() if e["key"].startswith("district:")]
+        self.assertGreater(len(ds), 500)
+        for e in ds[:30]: self.assertTrue(e["source_url"].startswith("http"))

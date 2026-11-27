@@ -16,6 +16,9 @@ def entities():
         out.append({"key": "ministry:" + a["name"].lower().replace(" ", "-"), "type": "Ministry / Department (PG office)", "title": a["name"], "state": None, "source_url": a["source_url"], "last_verified": a["last_verified"]})
     for a in load_data("authorities_state_nodal.json"):
         out.append({"key": "state-pg:" + a["name"].lower().replace(" ", "-"), "type": "State/UT grievance cell", "title": a["name"], "state": a["name"], "source_url": a["source_url"], "last_verified": a["last_verified"]})
+    for d in load_data("igod_districts.json"):
+        if d.get("website"):
+            out.append({"key": "district:%s:%s" % ((d["state"] or "").lower().replace(" ", "-"), d["title"].lower().replace(" ", "-")), "type": "District administration (partial: official district site only)", "title": "%s district administration, %s" % (d["title"], d["state"]), "state": d["state"], "source_url": d["website"], "last_verified": d["last_verified"]})
     return out
 _IDX = {}
 def lookup(key):

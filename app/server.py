@@ -51,7 +51,7 @@ def make_handler(svc, admin_token, rate=120):
             if path in ("/", "/index.html"):
                 return self._send(200, open(os.path.join(STATIC, "index.html"), "rb").read(), "text/html; charset=utf-8")
             if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": []}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, b"const C='jansevaai-v15';self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>c.add('/')))});self.addEventListener('activate',e=>e.waitUntil(clients.claim()));self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.pathname.startsWith('/api/'))return;e.respondWith(fetch(e.request).then(r=>{const k=r.clone();caches.open(C).then(c=>c.put(e.request,k));return r}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});", "application/javascript")
+            if path == "/sw.js": return self._send(200, b"const C='jansevaai-v16';self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>c.add('/')))});self.addEventListener('activate',e=>e.waitUntil(clients.claim()));self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.pathname.startsWith('/api/'))return;e.respondWith(fetch(e.request).then(r=>{const k=r.clone();caches.open(C).then(c=>c.put(e.request,k));return r}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});", "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now()})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
@@ -120,6 +120,9 @@ def make_handler(svc, admin_token, rate=120):
                 rows = [h for h in load_data("state_handle_sites.json") if (not st or (h["state"] or "").lower() == st) and (not t or t in h["title"].lower() or t in h["handle"].lower())]
                 return self._json(200, {"count": len(rows), "items": rows[:200], "note": "Each handle is linked from the listed official site. Blue tick and follower count are not checked."})
             if path == "/api/coverage": return self._json(200, {"items": load_data("coverage.json"), "note": "reach% = official sites our crawler could open; low reach means unknown, not absent."})
+            if path == "/api/directory/constituencies":
+                st = (q.get("state") or "").lower()
+                return self._json(200, {"items": sorted({m["constituency"] for m in load_data("representatives_parliament.json") if m["house"] == "Lok Sabha" and m.get("constituency") and (not st or st in (m["state"] or "").lower())})})
             if path == "/api/companies": return self._json(200, {"items": load_data("companies.json")})
             if path == "/api/directory/mps":
                 from .service import load_data

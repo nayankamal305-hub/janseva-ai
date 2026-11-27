@@ -53,7 +53,8 @@ function issueHtml(x){return `<div class="issue"><div class="im">${x.photo?`<img
 // ---------- report wizard ----------
 const WL=['Photo','Details','Review','Submit'];
 function wiz(n){WSTEP=n;$('wiz').innerHTML=WL.map((l,i)=>`<div class="${i+1<n?'d':i+1==n?'c':''}"><i></i>${l}</div>`).join('');['w1','w2','w3'].forEach((id,i)=>$(id).style.display=(n==i+1||(n==4&&id=='w3'))?'':'none')}
-window.nextW=function(n){if(n==2&&!LL){toast('Tap the map or use GPS first');return}wiz(n);if(n==2)similarCheck()};
+window.fillConst=async function(){const st=$('state').value.trim();const r=await api('GET','/api/directory/constituencies?state='+encodeURIComponent(st));$('cstl').innerHTML=((r&&r.items)||[]).map(c=>'<option value="'+esc(c)+'">').join('')};
+window.nextW=function(n){if(n==3||n==2)fillConst();if(n==2&&!LL){toast('Tap the map or use GPS first');return}wiz(n);if(n==2)similarCheck()};
 window.similarCheck=async function(){const b=$('simbox');if(!b||!LL)return;const r=await api('GET','/api/public/similar?lat='+LL.lat+'&lon='+LL.lon);const it=(r&&r.items)||[];
  b.style.display=it.length?'':'none';b.innerHTML=it.length?`<div class="info bl"><i data-ic="layers"></i><div><b>${it.length} similar open report${it.length>1?'s':''} within 250 m.</b> Support an existing one to add weight, or continue if yours is different.${it.map(x=>`<div class="row sm" style="margin-top:6px"><span class="grow">${esc(x.code)} · ${esc(lab(x.category||'issue'))} · ${x.distance_m} m · ${esc(lab(x.status))}</span><button class="btn out sm" onclick="supportSim(${x.id})">Support</button></div>`).join('')}</div></div>`:'';if(it.length)icons(b)};
 window.supportSim=async function(id){if(!T){openLogin();return}const r=await api('POST','/api/complaints/'+id+'/support',{kind:'support'});toast(r.error?r.error:'Thanks, your support is added');if(!r.error)go('nearby')};

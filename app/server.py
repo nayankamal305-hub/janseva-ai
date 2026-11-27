@@ -70,6 +70,16 @@ def make_handler(svc, admin_token, rate=120):
                 from .service import load_data
                 k = q.get("scope", "state"); rows = load_data("authorities_central_nodal.json" if k == "central" else "authorities_state_nodal.json")
                 t = q.get("q", "").lower(); items = [r for r in rows if t in r["name"].lower()]; return self._json(200, {"count": len(items), "items": items, "source": "https://pgportal.gov.in/Home/NodalPgOfficers", "note": "Official nodal public grievance officers. Whether an email accepts citizen complaints is unverified."})
+            if path in ("/api/directory/search", "/api/directory/districts", "/api/directory/states"):
+                from .service import load_data
+                st = q.get("state", "").lower(); t = q.get("q", "").lower(); cat = q.get("category", "")
+                if path.endswith("states"): rows = [r for r in load_data("igod_state_ut.json") if r["type"] == "SPORT"]
+                elif path.endswith("districts"): rows = [r for r in load_data("igod_districts.json") if not st or st in (r["state"] or "").lower()]
+                else:
+                    src = {"union": "igod_union.json", "legislature": "igod_legislature.json", "apex": "igod_apex.json"}.get(q.get("scope", "state"), "igod_state_ut.json")
+                    rows = [r for r in load_data(src) if (not st or st in (r["state"] or "").lower()) and (not cat or cat in r["categories_heuristic"])]
+                if t: rows = [r for r in rows if t in r["title"].lower()]
+                return self._json(200, {"count": len(rows), "items": rows[:int(q.get("limit", 100))], "source": "https://www.india.gov.in/directory/web-directory", "note": "IGOD (National Portal of India) listing. Websites only; no emails or phones are invented. 'categories_heuristic' is keyword-based, not official."})
             if path == "/api/directory/mps":
                 from .service import load_data
                 t = q.get("q", "").lower(); st = q.get("state", "").lower()

@@ -12,8 +12,10 @@ TERMINAL = {"resolved", "rejected"}
 
 import json as _json
 _DD = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+_CACHE = {}
 def load_data(name):
-    try: return _json.load(open(os.path.join(_DD, name)))
+    if name in _CACHE: return _CACHE[name]
+    try: _CACHE[name] = _json.load(open(os.path.join(_DD, name))); return _CACHE[name]
     except Exception: return []
 
 class Service:

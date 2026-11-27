@@ -12,4 +12,10 @@ class V05(unittest.TestCase):
         st = load_data("authorities_state_nodal.json"); cen = load_data("authorities_central_nodal.json"); mp = load_data("representatives_parliament.json")
         self.assertGreaterEqual(len(st), 36); self.assertGreaterEqual(len(cen), 80); self.assertGreaterEqual(len(mp), 700)
         for r in st + cen: self.assertTrue(r["source_url"].startswith("https://pgportal.gov.in")); self.assertEqual(r["email_accepts_citizen_complaints"], "unverified")
+
+class V06(unittest.TestCase):
+    def test_igod(self):
+        self.assertGreaterEqual(len(load_data("igod_districts.json")), 780); self.assertGreaterEqual(len(load_data("igod_state_ut.json")), 6000)
+        self.assertEqual(sum(1 for r in load_data("igod_state_ut.json") if r["type"] == "SPORT"), 36)
+        for r in load_data("igod_districts.json")[:50]: self.assertTrue(r["source"].startswith("https://www.india.gov.in"))
 if __name__ == "__main__": unittest.main()

@@ -7,6 +7,8 @@
 - Directory (official sources, last verified 2026-11-27):
   - 93 central ministry/department nodal public grievance officers and 37 state/UT nodal officers: https://pgportal.gov.in/Home/NodalPgOfficers and /NodalPgOfficersState
   - 540 sitting Lok Sabha members (https://sansad.in/ls/members) and 244 Rajya Sabha members (https://sansad.in/rs/members) with official sansad emails. Personal phone numbers and home addresses are deliberately not stored.
+- v0.6 IGOD directory (National Portal of India, NIC, https://www.india.gov.in/directory/web-directory, verified 2026-11-27): 6,049 state/UT government entries (incl. 36 state/UT portals), 784 district sites (with LGD short names), 4,863 union government entries, 435 legislature and 162 apex-body entries. Websites and contact pages only. Category tags (electricity, water, PWD, municipal, police...) are keyword guesses, labelled heuristic. Endpoints: /api/directory/search|districts|states.
+- LGD importer: scripts/import_lgd.py (person downloads the CSV, passes the CAPTCHA).
 - Gemini photo classification (server-side key, advisory, fallback to rules).
 
 ## Pending authorization or not possible
@@ -15,5 +17,5 @@
 - Swachhata live API: needs ULB-issued credentials.
 - A nodal officer email being listed does not prove it accepts citizen complaints (marked unverified). Delivery is shown as "sent, unacknowledged", never as registered.
 - Districts/LGD codes: the LGD bulk download is behind a CAPTCHA (not bypassed). A person can download the CSVs from https://lgdirectory.gov.in/downloadDirectory.do and load them. Pincode data: data.gov.in needs a free API key (not available here).
-- State-wise department lists (PWD, DISCOM, water boards, municipal bodies), elected state MLAs and councillors: not loaded. No single official machine-readable source; each state portal must be researched and verified.
+- Contact emails/phones for state PWD, DISCOM, water boards, municipal bodies: IGOD gives websites only, so none are invented; per-body grievance emails need individual verification. MLAs and councillors: not loaded (no single official machine-readable list found).
 - Browser-assisted submission by an agent on the citizen's behalf: only with citizen authorization per submission and never past CAPTCHA/OTP (not built).

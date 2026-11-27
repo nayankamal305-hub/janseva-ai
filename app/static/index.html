@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JANSEVA AI</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#f4f6fa;color:#1b2430}header{background:#0b3d91;color:#fff;padding:12px 16px}
+main{max-width:900px;margin:auto;padding:12px}.card{background:#fff;border-radius:10px;padding:12px;margin:10px 0;box-shadow:0 1px 3px #0002}
+input,textarea,select,button{font:inherit;padding:8px;margin:3px 0;width:100%;box-sizing:border-box}button{background:#0b3d91;color:#fff;border:0;border-radius:6px;cursor:pointer;width:auto;padding:8px 14px}
+.tag{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;color:#fff}.live{background:#1b7f3b}.sandbox{background:#b36b00}.guided{background:#555}.pending{background:#999}
+nav button{background:#fff;color:#0b3d91;margin-right:6px}small{color:#555}pre{white-space:pre-wrap;background:#eef;padding:8px;border-radius:6px}
+</style></head><body>
+<header><b>JANSEVA AI</b> &middot; one complaint, every official channel<br><small style="color:#cde">Sandbox build: no live government submission unless real credentials are configured</small></header>
+<main>
+<nav><button onclick="show('cit')">Citizen</button><button onclick="show('adm')">Government Integration Control Center</button></nav>
+<div id="cit">
+ <div class="card" id="login"><b>Login</b><input id="phone" placeholder="10-digit mobile"><input id="name" placeholder="Name"><button onclick="reg()">Continue</button></div>
+ <div class="card" id="newc" style="display:none"><b>Report an issue</b>
+  <input id="title" placeholder="Title"><textarea id="desc" placeholder="Describe the problem"></textarea>
+  <input id="photo" placeholder="Photo URL"><input id="addr" placeholder="Address / landmark"><input id="city" placeholder="City"><input id="state" placeholder="State">
+  <input id="lat" placeholder="Latitude"><input id="lon" placeholder="Longitude"><button onclick="gps()">Use my GPS</button>
+  <select id="owner"><option value="">Road owner (roads only): unknown</option><option value="municipal">Municipal</option><option value="pwd">State PWD</option><option value="nhai">NHAI</option></select>
+  <label><input type="checkbox" id="c1" style="width:auto"> I consent to submit this complaint to the matching official channels</label>
+  <label><input type="checkbox" id="c2" style="width:auto"> I consent to share my name and mobile with those platforms</label>
+  <label><input type="checkbox" id="c3" style="width:auto"> Also notify my elected representative (optional)</label>
+  <button onclick="create()">Create and submit</button><pre id="msg"></pre></div>
+ <div id="list"></div>
+</div>
+<div id="adm" style="display:none"><div class="card"><input id="atok" placeholder="Admin token"><button onclick="loadAdm()">Load</button></div><div id="admout"></div></div>
+</main>
+<script>
+let T=localStorage.jt||"",A="";const $=i=>document.getElementById(i);
+function show(x){$('cit').style.display=x=='cit'?'':'none';$('adm').style.display=x=='adm'?'':'none'}
+async function api(m,p,d,tok){const r=await fetch(p,{method:m,headers:{Authorization:'Bearer '+(tok||T),'Content-Type':'application/json'},body:d?JSON.stringify(d):undefined});return r.json()}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+async function reg(){const r=await api('POST','/api/register',{phone:$('phone').value,name:$('name').value});if(r.token){T=r.token;localStorage.jt=T;init()}else alert(r.error)}
+function gps(){navigator.geolocation.getCurrentPosition(p=>{$('lat').value=p.coords.latitude;$('lon').value=p.coords.longitude})}
+async function create(){const d={title:$('title').value,description:$('desc').value,photo_url:$('photo').value,address:$('addr').value,city:$('city').value,state:$('state').value,
+ lat:parseFloat($('lat').value),lon:parseFloat($('lon').value),asset_owner:$('owner').value||null,consent_submit:$('c1').checked,consent_share_personal:$('c2').checked,notify_representative:$('c3').checked};
+ const c=await api('POST','/api/complaints',d);if(!c.ok){$('msg').textContent=c.errors.join('\n');return}
+ const s=await api('POST','/api/complaints/'+c.id+'/submit',d);$('msg').textContent=s.ok?'Done: '+c.code:JSON.stringify(s,null,1);load()}
+async function load(){const l=await api('GET','/api/complaints');if(!Array.isArray(l))return;let h='';
+ for(const c of l){const d=await api('GET','/api/complaints/'+c.id);h+=`<div class="card"><b>${esc(c.code)}</b> ${esc(c.title||'')} <small>${esc(c.category)} &middot; <b>${esc(c.status)}</b></small>`;
+  for(const e of d.external_records){h+=`<div><span class="tag ${e.mode}">${esc(e.mode)}</span> L${e.level} ${esc(e.platform_id)}: ${esc(e.status)} ${e.external_ref?'ref <b>'+esc(e.external_ref)+'</b> ('+esc(e.reference_source)+')':'(no reference yet)'}`;
+   if(e.level>=3&&!e.external_ref){const g=JSON.parse(JSON.stringify(e.evidence.guide||{}));h+=`<details><summary>How to submit officially</summary><a href="${esc(g.portal)}" target=_blank>Open official portal</a><ol>${(g.steps||[]).map(s=>'<li>'+esc(s)+'</li>').join('')}</ol><pre>${esc(g.complaint_text)}</pre>
+   <input id="ref${e.id}" placeholder="Reference number from the portal"><button onclick="ref(${c.id},'${e.platform_id}',${e.id})">Save reference</button></details>`}h+='</div>'}
+  h+='<details><summary>Timeline</summary>'+d.timeline.map(t=>`<div><small>${esc(t.ts)}</small> ${esc(t.message)}</div>`).join('')+'</details>';
+  h+=`<button onclick="sy(${c.id})">Sync status</button> <button onclick="vf(${c.id},true)">Verify resolved</button> <button onclick="vf(${c.id},false)">Not resolved</button></div>`}
+ $('list').innerHTML=h}
+async function ref(cid,p,eid){await api('POST','/api/complaints/'+cid+'/reference',{platform_id:p,ref:$('ref'+eid).value});load()}
+async function sy(c){await api('POST','/api/complaints/'+c+'/sync',{});load()}
+async function vf(c,ok){await api('POST','/api/complaints/'+c+'/verify',{ok});load()}
+function init(){if(T){$('login').style.display='none';$('newc').style.display='';load()}}
+async function loadAdm(){A=$('atok').value;const cc=await api('GET','/api/admin/control-center',null,A);if(cc.error){$('admout').innerHTML='<div class=card>'+esc(cc.error)+'</div>';return}
+ const an=await api('GET','/api/admin/analytics',null,A),pl=await api('GET','/api/platforms');
+ $('admout').innerHTML='<div class=card><b>Control Center</b><pre>'+esc(JSON.stringify(cc,null,1))+'</pre></div><div class=card><b>Analytics</b><pre>'+esc(JSON.stringify(an,null,1))+'</pre></div><div class=card><b>Platform directory</b>'+
+ pl.map(p=>`<div><b>${esc(p.name)}</b> L${p.level} &middot; ${esc(p.approval_status)}<br><small>${esc(p.url)} | auth: ${esc(p.auth)} | docs: ${esc(p.api_docs)} | verified ${esc(p.last_verified)}</small></div>`).join('')+'</div>'}
+init();
+</script></body></html>

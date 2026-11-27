@@ -1,0 +1,4 @@
+{"_note":"SAMPLE data for sandbox. Real ULB IDs must come from the Swachhata onboarding list. Do not treat as authoritative.",
+ "ulbs":[{"ulb_id":"SAMPLE-PUNE","name":"Pune Municipal Corporation","city":"pune","state":"maharashtra","swachhata_onboarded":true},
+         {"ulb_id":"SAMPLE-GAYA","name":"Gaya Municipal Corporation","city":"gaya","state":"bihar","swachhata_onboarded":true},
+         {"ulb_id":"SAMPLE-RURAL","name":"Sample village (not a ULB)","city":"samplevillage","state":"bihar","swachhata_onboarded":false}]}

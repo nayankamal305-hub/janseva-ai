@@ -104,3 +104,26 @@ class Hinglish(unittest.TestCase):
             with mock.patch.dict(os.environ, {}):
                 os.environ.pop("GEMINI_API_KEY", None); os.environ.pop("GROQ_API_KEY", None)
                 self.assertEqual(llm.draft(9, t, {})["draft"]["category"], c, t)
+
+class SubmitNeverFailsForCitizen(unittest.TestCase):
+    def test_road_without_owner_is_saved_not_failed_then_owner_routes(self):
+        import json, tempfile, threading, urllib.request
+        from http.server import ThreadingHTTPServer
+        from app.server import make_handler
+        from app.db import DB
+        svc = Service(DB(os.path.join(tempfile.mkdtemp(), "r.db")), env={})
+        srv = ThreadingHTTPServer(("127.0.0.1", 0), make_handler(svc, "adm")); threading.Thread(target=srv.serve_forever, daemon=True).start()
+        base = "http://127.0.0.1:%d" % srv.server_address[1]
+        def call(m, p, d=None, tok=None):
+            req = urllib.request.Request(base + p, method=m, data=json.dumps(d).encode() if d is not None else None)
+            if tok: req.add_header("Authorization", "Bearer " + tok)
+            return json.loads(urllib.request.urlopen(req).read())
+        tok = call("POST", "/api/register", {"phone": "9000000077", "name": "R"})["token"]
+        c = call("POST", "/api/complaints", {"title": "pothole", "description": "deep pothole on the road near my house", "lat": 18.52, "lon": 73.85, "city": "Pune", "state": "Maharashtra", "category": "road"}, tok)
+        self.assertTrue(c["ok"])
+        s = call("POST", "/api/complaints/%d/submit" % c["id"], {"consent_submit": True, "consent_share_personal": True, "consent_email": True}, tok)
+        self.assertTrue(s["ok"]); self.assertTrue(s["waiting"]); self.assertTrue(s["needs_owner"]); self.assertTrue(s["needs"])
+        s2 = call("POST", "/api/complaints/%d/submit" % c["id"], {"consent_submit": True, "consent_share_personal": True, "consent_email": True, "asset_owner": "municipal"}, tok)
+        self.assertTrue(s2["ok"]); self.assertFalse(s2.get("waiting"))
+        self.assertEqual(svc.get(c["id"])["asset_owner"], "municipal")
+        srv.shutdown()

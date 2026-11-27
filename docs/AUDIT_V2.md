@@ -126,3 +126,6 @@ Filing is never blocked by the old same-user/same-category/100 m/7-day duplicate
 
 ## v3.18: AI quick report
 `app/llm.py`: speak/type -> draft (title, description, category, severity, language, road owner, department from our fixed map) via free-tier Gemini (GEMINI_API_KEY) or Groq (GROQ_API_KEY), tried in that order. Falls back to the rule classifier (now with Hinglish/Hindi keywords) on no key, 429/5xx (60 s cooldown), timeout, bad JSON or unknown category. Output is validated, URLs/emails/phones stripped, injected extra fields dropped, rule-detected emergencies never lowered, 30 drafts/user/day (AI_DRAFT_DAILY). The citizen confirms with two explicit ticks; nothing is registered otherwise. Photo goes to the AI only if ticked. Voice = browser Web Speech API (Chrome/Edge send audio to Google; unsupported on some browsers, typing always works). Place: GPS + OpenStreetMap Nominatim reverse geocode in the browser. Untested against live Gemini/Groq (no key available in build); tested with mocked transports.
+
+## v3.19
+submit no longer reports a saved complaint as failed: when routing needs more info (road owner unknown, or no verified channel) the API returns ok:true, waiting:true with the needs text; UI shows 'Saved. One detail left' with owner buttons. submit accepts asset_owner. AI card asks road owner.

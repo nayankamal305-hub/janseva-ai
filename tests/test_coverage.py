@@ -1,3 +1,4 @@
+from app.db import guard_test_database_url as _g; _g()
 import json, unittest
 from app import dispatch
 from app.service import load_data

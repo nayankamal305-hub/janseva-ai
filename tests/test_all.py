@@ -1,3 +1,4 @@
+from app.db import guard_test_database_url as _g; _g()
 import os, sys, tempfile, unittest, json, threading, urllib.request
 from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

@@ -1,3 +1,4 @@
+from app.db import guard_test_database_url as _g; _g()
 import os, tempfile, unittest
 from app.db import DB, now
 from app import density

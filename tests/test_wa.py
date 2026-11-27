@@ -1,3 +1,4 @@
+from app.db import guard_test_database_url as _g; _g()
 import hashlib, hmac, json, os, subprocess, sys, time, unittest, urllib.request as u, urllib.error
 class WA(unittest.TestCase):
     def test_flow(self):

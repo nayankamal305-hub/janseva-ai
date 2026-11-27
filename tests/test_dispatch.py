@@ -1,3 +1,4 @@
+from app.db import guard_test_database_url as _g; _g()
 import json, os, unittest
 from unittest import mock
 from app import dispatch, mailer

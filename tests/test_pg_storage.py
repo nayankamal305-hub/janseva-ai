@@ -1,3 +1,4 @@
+from app.db import guard_test_database_url as _g; _g()
 import datetime as dt, os, tempfile, threading, unittest, urllib.parse
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from app.db import pg_sql, pg_migration, DB

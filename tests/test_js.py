@@ -1,3 +1,4 @@
+from app.db import guard_test_database_url as _g; _g()
 import subprocess, unittest, shutil, os
 R = os.path.dirname(os.path.dirname(__file__))
 @unittest.skipUnless(shutil.which("node"), "node missing")

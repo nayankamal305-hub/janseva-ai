@@ -1,4 +1,23 @@
 import json, os, re, sqlite3, threading, uuid, decimal, datetime as dt
+
+
+def guard_test_database_url():
+    """Test-suite guard: refuse to run tests against a non-local DATABASE_URL.
+    Run the suite against local Postgres, or against a separate Neon branch with
+    JANSEVA_TEST_ALLOW_REMOTE=1 (never the production URL)."""
+    url = os.environ.get("DATABASE_URL", "")
+    if not url.startswith(("postgres://", "postgresql://")):
+        return
+    import urllib.parse
+    host = urllib.parse.urlparse(url).hostname or ""
+    if host in ("localhost", "127.0.0.1", "::1"):
+        return
+    if os.environ.get("JANSEVA_TEST_ALLOW_REMOTE") == "1":
+        return
+    raise RuntimeError(
+        "tests refuse to run against non-local DATABASE_URL host %r. "
+        "Use local Postgres, or a separate Neon branch with JANSEVA_TEST_ALLOW_REMOTE=1." % host)
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 _lock = threading.RLock()
 

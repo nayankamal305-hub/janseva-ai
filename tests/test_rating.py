@@ -1,3 +1,4 @@
+from app.db import guard_test_database_url as _g; _g()
 import os, unittest
 from app import rating
 from app.service import Service

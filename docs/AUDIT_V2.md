@@ -1,0 +1,25 @@
+# JANSEVA v2.0 self-audit against Kamal's requirements (2026-11-27)
+DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING = not built. "Needs keys" = code done, runs only once env keys exist.
+
+| # | Requirement | Status | Note |
+|---|---|---|---|
+| 1 | Complaint reaches every accountable authority | PARTIAL | Email ladder L1 guided body, L2 state PG officer (all 36 states/UTs tested), L3 central ministry PG officer, L4 MP (typed constituency). Needs keys (Brevo). No MLA/collector/dept-head emails exist officially. |
+| 2 | Email with photos, user's name, reply-to, tracking ID | DONE (needs keys) | Mock-tested; not live-tested with Brevo. |
+| 3 | Reminders + escalation ladder | DONE | 7/15 day timers, auto-cancel on resolve. Hourly tick. |
+| 4 | Private companies via official grievance email | PARTIAL | 6 companies with published email. Zomato, Ola, PhonePe, Paytm, MakeMyTrip, IRCTC: none found. |
+| 5 | X tag with consent, official handles only | PARTIAL | Queue, poster API, caps, spacing, validation done. Poster not run by me; X automation-rule suspension risk. 866 handles; coverage uneven (see docs/COVERAGE.md). No MP/MLA handles from official data. |
+| 6 | Post-on-X fallback | DONE | |
+| 7 | JANSEVA Rating | DONE | MPs, ministries, state cells. MLAs/collectors not listed (no official dataset). |
+| 8 | CPGRAMS-like umbrella flow | PARTIAL | Guided filing with copy-text + reference + citizen-reported status. Auto login/fill NOT built (CAPTCHA/OTP, unmapped selectors). |
+| 9 | Email OTP login, WhatsApp login | DONE (needs keys) | |
+| 10 | Full India data, all states/UTs | PARTIAL | IGOD 6,049 entries, 784 districts, 36/36 states have PG officer; handle crawl reached ~47% of 4,559 official sites. Rajasthan, Assam, Mizoram, Tripura, Gujarat, AP, Odisha, WB, Karnataka low (geo-block/WAF/timeouts). Archive-snapshot pass started, NOT finished (archive rate-limits). |
+| 11 | Nearby-duplicate prompt, 3-step filing, timeline | DONE | |
+| 12 | Premium UI | PARTIAL | Navy+saffron, mobile-first; no new screenshots this round; native review of translations pending. |
+| 13 | Gemini AI classification | PARTIAL | Code done; live call never tested; key must be in Render env. |
+| 14 | Fix upstream JS scope bug, boot last, versioned script, JS lint/smoke test | DONE | IIFE closes at end, boot runs last, app.js?v=12, sw cache v12, tests/js/smoke.js + tests/test_js.py. NOTE: GitHub agent repo commit 343b6ab not available to me, so I did my own fix; please diff/rebase. |
+| 15 | Yes answers: 22-language UI | MISSING | 9 shipped languages only. |
+| 16 | Yes answers: low-data mode | MISSING | PWA manifest + service worker exist; no data-saver mode. |
+| 17 | Yes answers: pincode/GPS MP auto-detect | MISSING | Needs an official boundary dataset. |
+| 18 | Yes answers: MLAs/collectors partial rating | MISSING | |
+| 19 | Postgres port (SQLite resets on Render free) | MISSING | Needs external Postgres. |
+| 20 | Coverage report per state/UT | DONE | docs/COVERAGE.md, /api/coverage. |

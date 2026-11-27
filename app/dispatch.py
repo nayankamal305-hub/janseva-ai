@@ -15,7 +15,7 @@ DAYS = {1: 0, 2: 0, 3: 7, 4: 15}
 MAX_INITIAL = 3; PER_USER_DAY = 10
 TERMINAL = ("citizen_verified_resolved", "resolved", "rejected", "authority_marked_resolved")
 
-def _st(x): return (x or "").lower().replace("union territory of", "").replace("nct of", "").strip()
+def _st(x): return (x or "").lower().replace("&", "and").replace("union territory of", "").replace("national capital territory of", "").replace("nct of", "").replace("keralam", "kerala").replace("chattisgarh", "chhattisgarh").strip()
 def _match_state(a, b):
     a, b = _st(a), _st(b)
     return bool(a and b) and (a in b or b in a or a.replace("chattisgarh", "chhattisgarh") in b.replace("chattisgarh", "chhattisgarh"))

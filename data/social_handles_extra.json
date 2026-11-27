@@ -1,1 +1,47 @@
-[]
+[
+ {
+  "title": "Ministry of Power",
+  "x_handles": [
+   "MinOfPower"
+  ],
+  "found_on": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2066111",
+  "last_verified": "2026-11-27",
+  "evidence": "account-labelled embedded post on pib.gov.in"
+ },
+ {
+  "title": "Ministry of Railways",
+  "x_handles": [
+   "RailMinIndia"
+  ],
+  "found_on": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2201815&lang=1&reg=3",
+  "last_verified": "2026-11-27",
+  "evidence": "account-labelled embedded post on pib.gov.in"
+ },
+ {
+  "title": "Ministry of Housing and Urban Affairs",
+  "x_handles": [
+   "MoHUA_India"
+  ],
+  "found_on": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2034095",
+  "last_verified": "2026-11-27",
+  "evidence": "account-labelled embedded post on pib.gov.in"
+ },
+ {
+  "title": "Department of Drinking Water and Sanitation (Ministry of Jal Shakti)",
+  "x_handles": [
+   "MoJSDDWS"
+  ],
+  "found_on": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1903930&lang=2&reg=3",
+  "last_verified": "2026-11-27",
+  "evidence": "account-labelled embedded post on pib.gov.in"
+ },
+ {
+  "title": "Department of Consumer Affairs",
+  "x_handles": [
+   "jagograhakjago"
+  ],
+  "found_on": "https://consumeraffairs.nic.in/",
+  "last_verified": "2026-11-27",
+  "evidence": "linked from official ministry homepage"
+ }
+]

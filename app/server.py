@@ -122,6 +122,16 @@ def make_handler(svc, admin_token, rate=120):
                 rows = [r for r in load_data("representatives_parliament.json") if (not t or t in r["name"].lower() or t in (r.get("constituency") or "").lower()) and (not st or st in (r.get("state") or "").lower())]
                 return self._json(200, {"count": len(rows), "items": rows[:200], "source": "https://sansad.in"})
             if path == "/api/public/feed": return self._json(200, public.feed(svc.db, q, int(q.get("limit", 50))))
+            if path == "/api/public/similar":
+                try: la, lo = float(q.get("lat")), float(q.get("lon"))
+                except Exception: return self._json(400, {"error": "lat/lon needed"})
+                import math
+                out = []
+                for r in svc.db.all("SELECT id,code,category,title,city,status,lat,lon,created_at FROM complaints WHERE status NOT IN ('citizen_verified_resolved','closed','rejected') AND lat IS NOT NULL ORDER BY id DESC LIMIT 600"):
+                    dy = (r["lat"] - la) * 111320; dx = (r["lon"] - lo) * 111320 * math.cos(math.radians(la)); dist = math.hypot(dx, dy)
+                    if dist <= 250 and (not q.get("category") or r["category"] == q["category"] or not r["category"]):
+                        out.append({"id": r["id"], "code": r["code"], "category": r["category"], "title": (r["title"] or "")[:80], "status": r["status"], "distance_m": int(dist), "reported": r["created_at"][:10]})
+                out.sort(key=lambda x: x["distance_m"]); return self._json(200, {"items": out[:5]})
             if path == "/api/public/stats": return self._json(200, public.stats(svc.db, q))
             if path == "/api/public/heatmap": return self._json(200, public.heatmap(svc.db, q))
             if path == "/api/public/report":
@@ -143,7 +153,10 @@ def make_handler(svc, admin_token, rate=120):
                 if len(parts) > 4 and parts[4] == "route": return self._json(200, svc.route(cid))
                 if len(parts) > 4 and parts[4] == "letter":
                     us = svc.db.one("SELECT name FROM users WHERE id=?", (c["user_id"],)); return self._json(200, {"letter": accounts.letter(c, us["name"], [])})
-                return self._json(200, svc.detail(cid))
+                dd = svc.detail(cid)
+                dd["dispatches"] = svc.db.all("SELECT level,kind,target_name,source_url,status,sent_at,due_at FROM dispatches WHERE complaint_id=? ORDER BY level,id", (cid,))
+                dd["x_queue"] = svc.db.one("SELECT status,tweet_url,posted_at FROM x_queue WHERE complaint_id=?", (cid,))
+                return self._json(200, dd)
             if path.startswith("/api/admin/"):
                 a = self._adm()
                 if not a: return self._json(403, {"error": "admin only"})

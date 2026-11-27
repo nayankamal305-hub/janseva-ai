@@ -37,14 +37,14 @@
   <div class="grid g2"><div><label class="f">PIN code</label><input id="pin" inputmode="numeric" placeholder="411004"></div><div><label class="f">Landmark / address</label><input id="addr" placeholder="Near bus stop"></div></div>
   <button class="btn pri" style="width:100%;margin-top:14px" onclick="nextW(2)">Continue<i data-ic="chevron-right"></i></button></div>
  <div id="w2" class="card" style="display:none"><h3><i data-ic="file-text"></i>Describe the problem</h3>
-  <label class="f">Title</label><input id="title" placeholder="Short title">
+  <div id="simbox" style="display:none;margin-bottom:10px"></div><label class="f">Title (optional)</label><input id="title" placeholder="Auto-filled from your description">
   <label class="f">What is wrong?</label><div class="row" style="align-items:flex-start;flex-wrap:nowrap"><textarea id="desc" class="grow" placeholder="Describe in any language. You can speak instead."></textarea><button class="btn out" id="mic" onclick="mic()" aria-label="Speak"><i data-ic="mic"></i></button></div>
   <label class="f">Road owner (roads only)</label><select id="owner"><option value="">Not sure</option><option value="municipal">Municipal corporation</option><option value="pwd">State PWD</option><option value="nhai">NHAI</option></select>
   <label class="sw"><input type="checkbox" id="anon"><span class="t"></span><span><b>Report anonymously</b><span class="sm mut" style="display:block">Anonymous reports cannot be filed officially, because government portals need your identity.</span></span></label>
   <div class="row" style="margin-top:10px"><button class="btn out" onclick="nextW(1)">Back</button><button class="btn saf grow" onclick="analyse()"><i data-ic="search"></i>Analyse</button></div><div id="msg" class="info rd" style="display:none;margin-top:10px"></div></div>
  <div id="w3" style="display:none"><div class="card"><h3><i data-ic="search"></i>AI review</h3><div id="aibox"></div><label class="f">Category</label><div class="row"><select id="catsel" class="grow"></select><button class="btn out sm" onclick="confirmCat()">Confirm</button></div></div>
   <div class="card"><h3><i data-ic="landmark"></i>Where it would go and why</h3><div id="routebox"></div></div>
-  <div class="card"><h3><i data-ic="lock"></i>Your consent</h3>
+  <div class="card"><h3><i data-ic="lock"></i>Your consent</h3><button class="btn out sm" type="button" onclick="document.querySelectorAll('#w3 .sw input').forEach(i=>{if(['c1','c2','c4','c5','c6'].includes(i.id))i.checked=true})">Select recommended (official channels + email + X)</button>
    <label class="sw"><input type="checkbox" id="c1"><span class="t"></span><span><b>Submit through matching official channels</b></span></label>
    <label class="sw"><input type="checkbox" id="c2"><span class="t"></span><span><b>Share my name and mobile with those platforms</b><span class="sm mut" style="display:block">Needed for official filing.</span></span></label>
    <label class="sw"><input type="checkbox" id="c3"><span class="t"></span><span><b>Also notify my elected representative</b><span class="sm mut" style="display:block">Optional. Only verified public contacts are used.</span></span></label>

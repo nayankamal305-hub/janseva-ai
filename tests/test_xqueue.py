@@ -26,3 +26,8 @@ class X(unittest.TestCase):
         self.svc.db.run("UPDATE complaints SET consent_x=1 WHERE id=?", (self.cid,))
         self.assertFalse(social.enqueue(self.svc, self.cid, "Officer is a thief @x")["ok"])
 if __name__ == "__main__": unittest.main()
+class H(unittest.TestCase):
+    def test_extra_handles_have_sources(self):
+        from app.service import load_data
+        e = load_data("social_handles_extra.json"); assert len(e) >= 5
+        for x in e: assert x["found_on"].startswith("https://") and x["last_verified"]

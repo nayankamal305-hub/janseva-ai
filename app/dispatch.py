@@ -107,6 +107,8 @@ def send_due(svc, cid=None, now_iso=None):
         who = (u.get("name") or "A citizen") if c["consent_share_personal"] and not c["anonymous"] else "A citizen"
         r = mailer.send(d["target_email"], ("[%s] %sPublic grievance: %s" % (c["code"], "Reminder: " if reminder else "", c["title"])), _body(dict(c), u, d, reminder), reply, os.environ, _attachments(svc, dict(c)), "%s via JANSEVA AI" % who)
         svc.db.run("UPDATE dispatches SET status=?, sent_at=?, error=? WHERE id=?", ("sent" if r["sent"] else "failed", now() if r["sent"] else None, None if r["sent"] else r.get("reason"), d["id"]))
+        try: svc.db.timeline(c["id"], "jansevaai", "email_" + ("sent" if r["sent"] else "failed"), ("Emailed %s (%s, level %s). Delivery is not a registration." % (d["target_name"], d["target_email"], d["level"])) if r["sent"] else ("Email to %s could not be sent." % d["target_name"]))
+        except Exception: pass
         svc.db.timeline(c["id"], "jansevaai", "email_sent" if r["sent"] else "email_failed", ("Emailed %s (level %d) at %s. Source: %s, checked %s. Delivery is not registration; an official reply is needed." % (d["target_name"], d["level"], d["target_email"], d["source_url"], d["source_date"])) if r["sent"] else "Email to %s failed: %s" % (d["target_name"], r.get("reason")))
         sent += 1 if r["sent"] else 0
     return {"sent": sent, "skipped": skipped}

@@ -53,6 +53,9 @@ def make_handler(svc, admin_token, rate=120):
             return c if a and roles.can(a["role"], "complaints.view") and roles.in_scope(a, c) else None
         def _q(self): return {k: v[0] for k, v in urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query).items()}
         def do_GET(self):
+            rt = os.environ.get("REDIRECT_TO", "").rstrip("/")
+            if rt:  # legacy host: send everyone to the current public URL
+                self.send_response(301); self.send_header("Location", rt + self.path); self.end_headers(); return
             if self._limited(): return self._json(429, {"error": "rate limit"})
             path = urllib.parse.urlparse(self.path).path; q = self._q()
             if path in ("/", "/index.html"):

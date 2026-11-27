@@ -3,15 +3,30 @@
 One citizen report, routed to the right official channels, tracked in one place. Full-stack Python app (stdlib only, SQLite), web UI, admin Control Center, connector framework, tests, Docker.
 
 > **Honest status.** This build has NO live government credentials. Nothing is sent to a real government system. Records are labelled `live`, `sandbox` or `guided`. Sandbox references come from a local mock server and are never official acknowledgements.
-> The "previous JANSEVA AI Master Prompt" features are not included yet (the prompt was not available). The connector layer is built to merge into it.
+> v0.3 merges the original JANSEVA master prompt (citizen app, AI analysis, routing, escalation, public dashboard, before/after verification, roles, assistant, emergency, privacy) with the unified connector engine. Stack deviation: Python stdlib + SQLite + vanilla JS PWA instead of Next.js/FastAPI/Postgres+PostGIS/Redis/Expo, so it runs on free hosts with no installs. The schema and API are plain and portable to Postgres/FastAPI later.
 
 ## Run
 ```
-python -m app.server            # http://localhost:8080 ; admin token printed at start (or set JANSEVA_ADMIN_TOKEN)
-python -m unittest discover -s tests -v
-docker build -t jansevaai . && docker run -p 8080:8080 jansevaai
+python -m app.server            # http://localhost:8080 ; admin token printed at start
+python -m unittest discover -s tests -v    # 48 tests
 ```
-Free deploy: Render (`render.yaml`, free plan sleeps and SQLite resets on redeploy; use a persistent DB for real use).
+Docs: docs/INTEGRATION_STATUS.md, docs/SECURITY.md, docs/DEPLOY.md, docs/API.md, .env.example.
+
+## Feature status (honest)
+| Area | Status |
+|---|---|
+| OTP login, roles, scoped admin, audit, consent, account deletion, rate limit, upload checks | built and tested (no SMS provider) |
+| Report flow: photo upload, GPS, AI analysis, category confirmation, routing explanation, consent, submit | built; AI is a text-only rules engine (no vision model, needs a model key) |
+| Routing: ULB lookup, road owner asked not guessed, jurisdiction check, four separate authority fields from a verified directory, human verification queue | built; directories start empty, nothing invented |
+| Connectors L1-L5, Swachhata adapter, registry, Control Center | built; sandbox only |
+| 14-status lifecycle, Authority Marked Resolved vs Citizen Verified Resolved, after-photo, reopen, appeal route | built and tested |
+| Duplicate grouping by location+category, merge without second gov complaint, community support | built (geo only; no image similarity) |
+| Public dashboard, feed, heatmap, filters, monthly CSV, privacy rules | built (state/city level; no ward/district polygons, overdue and cost metrics not computed) |
+| Escalation: 7 configurable levels, official appeal vs reminder | built (no sending of reminders; deadlines are configured, not statutory) |
+| Assistant (EN/HI) and letter generator | rule-based, not an LLM, no other languages yet |
+| Emergency: 112 notice and emergency flag | built |
+| Android APK | workflow written, build NOT yet verified |
+| Voice input/TTS, offline drafts, FCM push, email/SMS delivery, face blur, image similarity, PostGIS, all-India authority and representative data, live deployment | NOT done |
 
 ## Integration levels (what is real)
 | Platform | Level | Status | Source |
@@ -37,8 +52,3 @@ Levels: 1 full API, 2 partial API, 3 official guided submission, 4 verified emai
 ## Rules enforced (and tested)
 Consent to submit and separate consent to share personal data; no fake acknowledgement (no id returned = failed); duplicate complaint block (same user, category, 100 m, 7 days); parent resolved only when ALL linked official records are resolved, then citizen verification; escalation uses a platform's real appeal route, otherwise a reminder explicitly marked "not an official appeal"; analytics count unique citizen complaints separately from external records; credentials only from environment variables, never in the DB; every integration call and admin action logged; no CAPTCHA/OTP bypass.
 
-## v0.2 adds
-Pincode prefix lookup (sample), Hindi toggle on key UI labels, more registry entries (AirSewa, state portal, district collector, Jal Board, hospital, school, pollution board, transport: all unverified, guided), Android APK workflow `.github/workflows/apk.yml` (wraps the DEPLOYED URL; needs a deployed backend; debug APK, sideload only, build not yet verified).
-
-## Not done yet
-Credential vault with encryption at rest (env vars only now), photo AI classification, ward/pincode jurisdiction data, real SMTP, webhooks (none documented by the platforms), the old master-prompt features.

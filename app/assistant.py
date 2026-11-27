@@ -1,0 +1,17 @@
+"""Rule-based citizen assistant (English/Hindi). Not an LLM and gives no legal advice. Replace `answer` with a model call later."""
+FAQ = [
+ (["road", "pothole", "सड़क", "गड्ढा"], {"en": "Roads belong to different owners: municipal, state PWD, NHAI or a development authority. Report the issue; JANSEVA asks for the road owner if it is unclear and never guesses. NH roads: NHAI helpline 1033.", "hi": "सड़क अलग-अलग विभागों की होती है: नगर निगम, राज्य PWD, NHAI आदि। शिकायत दर्ज करें; मालिक स्पष्ट न हो तो हम पूछेंगे, अंदाज़ा नहीं लगाएंगे। राष्ट्रीय राजमार्ग: NHAI हेल्पलाइन 1033।"}),
+ (["garbage", "waste", "कचरा"], {"en": "Garbage collection is handled by your urban local body (municipal corporation or council). Where the city is on Swachhata, the complaint can go there; otherwise JANSEVA prepares it for the official city channel.", "hi": "कचरा संग्रह आपकी नगर पालिका/निगम का काम है। शहर Swachhata पर हो तो वहां जाएगी, वरना आधिकारिक शहर चैनल के लिए तैयार की जाएगी।"}),
+ (["water pipe", "pipeline", "leak", "पाइप", "पानी"], {"en": "Water supply is run by a municipal or state water board. Report with a photo and location; the system routes to the water authority entry for your area if one is verified in the directory.", "hi": "पानी की आपूर्ति नगर निगम या राज्य जल बोर्ड करता है। फोटो और लोकेशन के साथ शिकायत करें।"}),
+ (["ignored", "no response", "escalat", "अनदेखा"], {"en": "If a complaint is overdue, JANSEVA shows the next official route (a platform's own appeal if it has one) and can send a reminder only through a verified channel. A reminder is not an official appeal.", "hi": "शिकायत समय पर न सुलझे तो अगला आधिकारिक रास्ता दिखाया जाता है। रिमाइंडर आधिकारिक अपील नहीं होता।"}),
+ (["closure", "closed", "appeal", "अपील"], {"en": "If an authority marks your complaint resolved but it is not, tap 'Not resolved' with an after photo. The complaint reopens and the official appeal route is shown.", "hi": "अगर अधिकारी शिकायत बंद कर दें पर समस्या बनी रहे, तो 'हल नहीं हुआ' दबाएं। शिकायत दोबारा खुलेगी।"}),
+ (["anonymous", "गुमनाम"], {"en": "You can report anonymously in JANSEVA, but an official government submission needs your identity (name and mobile). Anonymous reports stay as JANSEVA-only issues.", "hi": "आप गुमनाम रिपोर्ट कर सकते हैं, पर सरकारी पोर्टल पर जमा करने के लिए पहचान चाहिए।"}),
+ (["rti"], {"en": "RTI is filed with the public authority concerned (online at rtionline.gov.in for central bodies). JANSEVA can only help with a draft of the questions. This is information, not legal advice.", "hi": "RTI संबंधित लोक प्राधिकरण को दी जाती है (केंद्रीय के लिए rtionline.gov.in)। यह जानकारी है, कानूनी सलाह नहीं।"}),
+ (["emergency", "danger", "आपातकाल", "wire", "manhole"], {"en": "Immediate danger: call 112 now. JANSEVA is a complaint tool, not an emergency dispatch service.", "hi": "तुरंत खतरा: अभी 112 पर कॉल करें। JANSEVA आपातकालीन सेवा नहीं है।"}),
+]
+def answer(q, lang="en"):
+    lang = lang if lang in ("en", "hi") else "en"
+    ql = (q or "").lower()
+    for keys, ans in FAQ:
+        if any(k in ql for k in keys): return {"answer": ans[lang], "lang": lang, "engine": "rules (not an LLM)", "disclaimer": "Information only, not legal advice."}
+    return {"answer": "I do not have a verified answer for this yet." if lang == "en" else "इसका सत्यापित उत्तर अभी उपलब्ध नहीं है।", "lang": lang, "engine": "rules (not an LLM)", "disclaimer": "Information only, not legal advice."}

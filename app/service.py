@@ -2,6 +2,7 @@ import json, math, os, secrets
 from datetime import datetime, timedelta, timezone
 from .db import DB, now
 from .router import classify, plan, lookup_ulb, infer_asset_owner
+from . import ai
 from .connectors.base import complaint_text
 from .connectors.swachhata import SwachhataConnector
 from .connectors.guided import GuidedConnector
@@ -41,7 +42,10 @@ class Service:
         if d.get("lat") is None or d.get("lon") is None: errs.append("GPS location required")
         elif not (6 <= float(d["lat"]) <= 38 and 68 <= float(d["lon"]) <= 98): errs.append("location outside India")
         if errs: return {"ok": False, "errors": errs}
-        cat = d.get("category") or classify((d.get("title") or "") + " " + d["description"])
+        an = ai.analyze(d.get("title"), d["description"], d.get("photo_url"))
+        user_cat = d.get("category")
+        cat = user_cat or an["category"]
+        low_conf = (not user_cat) and an["confidence"] < 0.6
         dup = self.find_duplicate(user["id"], cat, float(d["lat"]), float(d["lon"]))
         if dup: return {"ok": False, "errors": ["duplicate of %s (same category within 100 m in 7 days)" % dup["code"]], "duplicate_of": dup["code"]}
         city = (d.get("city") or "").strip()
@@ -50,15 +54,41 @@ class Service:
         if not city and pt: city = pt[0]; d["state"] = d.get("state") or pt[1]
         n = self.db.one("SELECT count(*) n FROM complaints")["n"] + 1
         code = "JS-%s-%06d" % (datetime.now().year, n)
-        asset = d.get("asset_owner")
+        status = "awaiting_citizen_confirmation" if low_conf else "ready_for_submission"
         cid = self.db.run("""INSERT INTO complaints(code,user_id,title,description,category,lat,lon,address,city,state,district,ward,pincode,photo_url,asset_owner,
-            status,consent_submit,consent_share_personal,notify_representative,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            status,consent_submit,consent_share_personal,notify_representative,created_at,updated_at,anonymous,severity,confidence,safety_risk,emergency,lang)
+            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             (code, user["id"], d.get("title"), d["description"], cat, float(d["lat"]), float(d["lon"]), d.get("address"), city.lower(),
-             (d.get("state") or "").lower(), d.get("district"), d.get("ward"), d.get("pincode"), d.get("photo_url"), asset, "created",
-             int(bool(d.get("consent_submit"))), int(bool(d.get("consent_share_personal"))), int(bool(d.get("notify_representative"))), now(), now()))
-        self.db.timeline(cid, "jansevaai", "created", "Complaint created in category '%s'" % cat)
+             (d.get("state") or "").lower(), d.get("district"), d.get("ward"), d.get("pincode"), d.get("photo_url"), d.get("asset_owner"), status,
+             int(bool(d.get("consent_submit"))), int(bool(d.get("consent_share_personal"))), int(bool(d.get("notify_representative"))), now(), now(),
+             int(bool(d.get("anonymous"))), an["severity"], an["confidence"], an["safety_risk"], int(an["emergency"]), d.get("lang") or "en"))
+        self.db.run("INSERT INTO ai_analysis(complaint_id,ts,engine,category,confidence,severity,safety_risk,emergency,suggested_department,notes) VALUES(?,?,?,?,?,?,?,?,?,?)",
+                    (cid, now(), an["engine"], an["category"], an["confidence"], an["severity"], an["safety_risk"], int(an["emergency"]), an["suggested_department"], an["notes"]))
+        self.db.timeline(cid, "jansevaai", "created", "Complaint reported (category '%s')" % cat)
+        self.db.timeline(cid, "jansevaai", "ai_analysed", "AI analysis (%s): %s, confidence %.1f, severity %d, safety risk %s%s" % (an["engine"], an["category"], an["confidence"], an["severity"], an["safety_risk"], "; EMERGENCY flag" if an["emergency"] else ""))
+        if low_conf: self.db.timeline(cid, "jansevaai", "needs_confirmation", "Low confidence: citizen must confirm or choose the category")
+        # community duplicate grouping (other citizens, same place and category)
+        grp = None
+        for r in self.db.all("SELECT * FROM complaints WHERE id!=? AND category=? AND status!='cancelled' AND created_at>=?", (cid, cat, (datetime.now(timezone.utc) - timedelta(days=30)).isoformat())):
+            if self.dist_m(float(d["lat"]), float(d["lon"]), r["lat"], r["lon"]) <= 100:
+                grp = r["duplicate_group"]
+                if not grp:
+                    grp = self.db.run("INSERT INTO duplicate_groups(parent_complaint_id,lat,lon,category,created_at) VALUES(?,?,?,?,?)", (r["id"], r["lat"], r["lon"], cat, now()))
+                    self.db.run("UPDATE complaints SET duplicate_group=? WHERE id=?", (grp, r["id"]))
+                self.db.run("UPDATE complaints SET duplicate_group=? WHERE id=?", (grp, cid))
+                self.db.timeline(cid, "jansevaai", "duplicate_grouped", "Grouped with %s (same place and category). Your own reference is kept." % r["code"])
+                self.db.run("INSERT OR IGNORE INTO supports(complaint_id,user_id,kind,ts) VALUES(?,?,?,?)", (r["id"], user["id"], "support", now()))
+                break
         self.db.audit("user:%s" % user["id"], "complaint_created", code)
-        return {"ok": True, "id": cid, "code": code, "category": cat}
+        out = {"ok": True, "id": cid, "code": code, "category": cat, "status": status, "ai": an, "duplicate_group": grp}
+        if an["emergency"]: out["emergency_notice"] = "Immediate danger: call 112 now. JANSEVA is not an emergency dispatch service."
+        return out
+
+    def confirm_category(self, cid, category, user_id):
+        c = self.get(cid)
+        self.db.run("UPDATE complaints SET category=?,status='ready_for_submission',updated_at=? WHERE id=?", (category, now(), cid))
+        self.db.timeline(cid, "citizen", "confirmed", "Citizen confirmed category '%s'" % category)
+        self.db.audit("user:%s" % user_id, "category_confirmed", c["code"]); return {"ok": True}
 
     def find_duplicate(self, uid, cat, lat, lon):
         cutoff = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
@@ -81,8 +111,22 @@ class Service:
         c = self.get(cid); u = self.db.one("SELECT * FROM users WHERE id=?", (c["user_id"],))
         if not c["consent_submit"]:
             return {"ok": False, "error": "citizen consent to submit is required"}
+        if c["status"] == "awaiting_citizen_confirmation":
+            return {"ok": False, "error": "citizen must confirm the category first"}
+        if c["duplicate_group"]:
+            g = self.db.one("SELECT parent_complaint_id FROM duplicate_groups WHERE id=?", (c["duplicate_group"],))
+            if g and g["parent_complaint_id"] != cid and self.db.one("SELECT id FROM external_records WHERE complaint_id=?", (g["parent_complaint_id"],)):
+                pc = self.get(g["parent_complaint_id"])
+                self.db.timeline(cid, "jansevaai", "merged", "Merged into %s which is already filed; no duplicate government complaint was created. Updates are mirrored." % pc["code"])
+                return {"ok": True, "merged_into": pc["code"], "results": []}
         r = self.route(cid)
-        if r["needs"]: return {"ok": False, "needs": r["needs"]}
+        if r["needs"]:
+            self.db.run("UPDATE complaints SET needs_human=1 WHERE id=?", (cid,))
+            return {"ok": False, "needs": r["needs"]}
+        if not r["targets"]:
+            self.db.run("UPDATE complaints SET needs_human=1 WHERE id=?", (cid,))
+            self.db.timeline(cid, "jansevaai", "needs_verification", "No verified official channel matches. Sent to the human verification queue instead of an arbitrary authority.")
+            return {"ok": False, "needs": ["No matching verified channel. A verification officer must review."]}
         conns = self.connectors(); results = []
         ulb = r["context"]["ulb"]
         cc = dict(c)
@@ -99,6 +143,8 @@ class Service:
                 results.append({"platform": p["id"], "status": "invalid", "errors": t["validation_errors"]})
                 self.db.timeline(cid, p["id"], "validation_failed", "; ".join(t["validation_errors"]))
                 continue
+            if p["level"] <= 2 and c["anonymous"]:
+                results.append({"platform": p["id"], "status": "blocked", "errors": ["official submission needs identity; this report is anonymous"]}); continue
             if p["level"] <= 2 and not c["consent_share_personal"]:
                 results.append({"platform": p["id"], "status": "blocked", "errors": ["explicit consent to share personal details required"]}); continue
             res = conn.submit(cc, u)
@@ -110,9 +156,22 @@ class Service:
         if c["notify_representative"]:
             self.db.run("INSERT INTO notifications(complaint_id,ts,audience,channel,target,status,body) VALUES(?,?,?,?,?,?,?)",
                         (cid, now(), "elected_representative", "email", "(verified public contact required)", "not_sent_no_verified_contact", "citizen opted in"))
-        self.db.run("UPDATE complaints SET status='submitted',updated_at=? WHERE id=?", (now(), cid))
+        self.db.run("UPDATE complaints SET routing_json=?,needs_human=0,updated_at=? WHERE id=?", (json.dumps(self.four_roles(cc, r)), now(), cid))
         self.refresh_parent(cid)
         return {"ok": True, "results": results, "routing": r}
+
+    def four_roles(self, c, r):
+        """Separate fields: operational authority, grievance redressal, elected representative, escalation authority. Only from the verified directory."""
+        def pick(types):
+            for a in self.db.all("SELECT * FROM authorities WHERE verified=1"):
+                if a["type"] in types and (not a["city"] or a["city"].lower() == (c.get("city") or "")) and (not a["state"] or a["state"].lower() == (c.get("state") or "")):
+                    if not a["categories"] or c["category"] in a["categories"].split(","): return {"id": a["id"], "name": a["name"], "last_verified": a["last_verified"]}
+            return None
+        rep = self.db.one("SELECT id,name,office,last_verified FROM representatives WHERE verified=1 AND (city IS NULL OR lower(city)=?) AND (state IS NULL OR lower(state)=?) LIMIT 1", (c.get("city") or "", c.get("state") or ""))
+        explain = "Routed by category '%s' and location '%s'; channels: %s." % (c["category"], c.get("city") or "unknown", ", ".join(t["platform_id"] for t in r["targets"]))
+        return {"operational_authority": pick(["operational"]), "grievance_authority": pick(["grievance"]), "elected_representative": rep,
+                "escalation_authority": pick(["escalation"]), "explanation": explain,
+                "note": "null means no verified directory entry exists yet; nothing is guessed"}
 
     def _store(self, cid, p, conn, res):
         status = res.status
@@ -171,20 +230,41 @@ class Service:
         return out
 
     def refresh_parent(self, cid):
-        """Parent is 'official_resolved' only when ALL official records are resolved. Citizen verification is separate."""
+        """Lifecycle: 'Authority Marked Resolved' and 'Citizen Verified Resolved' are separate. A closure alone never means resolved for the citizen."""
         c = self.get(cid)
-        recs = [r for r in self.db.all("SELECT * FROM external_records WHERE complaint_id=?", (cid,)) if r["level"] <= 3 or r["external_ref"]]
+        recs = self.db.all("SELECT * FROM external_records WHERE complaint_id=?", (cid,))
         if not recs: return
-        pend = [r for r in recs if r["status"] != "resolved"]
-        if c["citizen_verified"] and not pend: st = "resolved_verified"
-        elif not pend: st = "official_resolved"
-        elif any(r["status"] == "resolved" for r in recs): st = "partially_resolved"
-        else: st = "submitted"
-        self.db.run("UPDATE complaints SET status=?,updated_at=? WHERE id=?", (st, now(), cid))
+        with_ref = [r for r in recs if r["external_ref"]]
+        official = [r for r in recs if r["level"] <= 3 or r["external_ref"]]
+        pend = [r for r in official if r["status"] not in ("resolved",)]
+        states = {r["status"] for r in official}
+        basis = "none"
+        if any(r["mode"] == "live" and r["reference_source"] == "government_response" for r in recs): basis = "government_confirmed"
+        elif any(r["reference_source"] == "citizen_reported" for r in recs): basis = "citizen_reported"
+        elif any(r["mode"] == "sandbox" and r["external_ref"] for r in recs): basis = "sandbox"
+        if official and all(r["status"] == "rejected" for r in official): st = "rejected"
+        elif not pend and c["citizen_verified"]: st = "citizen_verified_resolved"
+        elif not pend and c["reopened"]: st = "reopened"
+        elif not pend: st = "authority_marked_resolved"
+        else:
+            if c["reopened"]: self.db.run("UPDATE complaints SET reopened=0 WHERE id=?", (cid,))
+            if "assigned" in states: st = "assigned"
+            elif any(r["status"] == "resolved" for r in official): st = "in_progress"
+            elif with_ref: st = "acknowledged"
+            else: st = "ready_for_submission"
+            if self.db.one("SELECT id FROM escalation_records WHERE complaint_id=?", (cid,)) and st not in ("ready_for_submission",): st = "escalated"
+        self.db.run("UPDATE complaints SET status=?,official_basis=?,updated_at=? WHERE id=?", (st, basis, now(), cid))
 
-    def citizen_verify(self, cid, ok, user_id):
-        self.db.run("UPDATE complaints SET citizen_verified=? WHERE id=?", (1 if ok else 0, cid))
-        self.db.timeline(cid, "citizen", "verification", "Citizen %s the resolution" % ("verified" if ok else "rejected"))
+    def citizen_verify(self, cid, ok, user_id, after_photo=None, note=""):
+        """Before/after: citizen confirms or rejects the authority's closure. Rejection reopens and shows the appeal route."""
+        if after_photo: self.db.run("UPDATE complaints SET after_photo_url=? WHERE id=?", (after_photo, cid))
+        self.db.run("UPDATE complaints SET citizen_verified=?,reopened=? WHERE id=?", (1 if ok else 0, 0 if ok else 1, cid))
+        self.db.run("INSERT INTO verifications(complaint_id,ts,kind,photo_url,note,user_id) VALUES(?,?,?,?,?,?)", (cid, now(), "confirmed" if ok else "rejected", after_photo, note, user_id))
+        self.db.timeline(cid, "citizen", "verification", "Citizen %s the resolution%s" % ("verified" if ok else "rejected", " (after photo attached)" if after_photo else ""))
+        if not ok:
+            for r in self.db.all("SELECT platform_id FROM external_records WHERE complaint_id=?", (cid,)):
+                p = self.db.platform(r["platform_id"])
+                if p.get("supports_appeal"): self.db.timeline(cid, "jansevaai", "appeal_route", "Official appeal route available on %s. Use the platform's own appeal." % p["name"])
         self.db.audit("user:%s" % user_id, "verify", str(cid)); self.refresh_parent(cid)
 
     # ---- escalation ------------------------------------------------------
@@ -203,9 +283,14 @@ class Service:
     def run_escalation(self, as_of=None):
         res = self.escalations(as_of)
         for e in res:
-            exists = self.db.one("SELECT id FROM timeline WHERE complaint_id=? AND kind='escalation' AND message LIKE ?", (e["complaint_id"], "%" + e["platform"] + "%"))
+            exists = self.db.one("SELECT id FROM escalation_records WHERE complaint_id=? AND platform_id=?", (e["complaint_id"], e["platform"]))
             if not exists:
-                self.db.timeline(e["complaint_id"], "jansevaai", "escalation", "%s overdue by %d days. %s" % (e["platform"], e["overdue_days"], e["note"]))
+                prev = self.db.one("SELECT count(*) n FROM escalation_records WHERE complaint_id=?", (e["complaint_id"],))["n"]
+                lvl = min(7, 2 + prev)
+                pol = self.db.one("SELECT name FROM escalation_policy WHERE level=?", (lvl,))
+                self.db.run("INSERT INTO escalation_records(complaint_id,ts,level,platform_id,action,note) VALUES(?,?,?,?,?,?)", (e["complaint_id"], now(), lvl, e["platform"], e["action"], e["note"]))
+                self.db.timeline(e["complaint_id"], "jansevaai", "escalation", "Level %d (%s): %s overdue by %d days. %s Deadline is a configured reminder, not a statutory one unless the platform publishes it." % (lvl, pol["name"] if pol else "", e["platform"], e["overdue_days"], e["note"]))
+                self.refresh_parent(e["complaint_id"])
         return res
 
     # ---- views -----------------------------------------------------------
@@ -239,11 +324,11 @@ class Service:
                 "credential_problems": self.db.all("SELECT platform_id, http_code, ts FROM integration_log WHERE http_code IN (401,403) ORDER BY id DESC LIMIT 10"),
                 "recent_errors": fails}
     def analytics(self):
-        uniq = self.db.one("SELECT count(*) n FROM complaints WHERE status!='draft'")["n"]
+        uniq = self.db.one("SELECT count(*) n FROM complaints WHERE status NOT IN ('draft')")["n"]
         per = self.db.all("SELECT platform_id, count(*) n, sum(CASE WHEN external_ref IS NOT NULL AND reference_source='government_response' THEN 1 ELSE 0 END) acked, "
                           "sum(CASE WHEN status='resolved' THEN 1 ELSE 0 END) resolved, mode FROM external_records GROUP BY platform_id, mode")
         return {"unique_citizen_complaints": uniq, "external_records_total": sum(p["n"] for p in per), "per_platform": per,
-                "official_resolved": self.db.one("SELECT count(*) n FROM complaints WHERE status IN ('official_resolved','resolved_verified')")["n"],
+                "official_resolved": self.db.one("SELECT count(*) n FROM complaints WHERE status IN ('authority_marked_resolved','citizen_verified_resolved')")["n"],
                 "citizen_verified": self.db.one("SELECT count(*) n FROM complaints WHERE citizen_verified=1")["n"],
                 "note": "Sandbox and guided records are listed by mode and are not official government acknowledgements."}
 

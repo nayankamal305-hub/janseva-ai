@@ -79,20 +79,20 @@ class T(unittest.TestCase):
         self.mock.set_status(cid_num, 4, "Cleaned"); self.svc.sync(r["id"])
         self.assertEqual(self.swachhata_rec(r["id"])["status"], "resolved")
         # guided municipal record is still pending -> parent must not be official_resolved
-        self.assertEqual(self.svc.get(r["id"])["status"], "partially_resolved")
+        self.assertEqual(self.svc.get(r["id"])["status"], "in_progress")
     def test_parent_resolved_only_when_all_and_citizen_verify(self):
         r = self.mk(); self.svc.submit(r["id"])
         rec = self.swachhata_rec(r["id"]); n = int(rec["external_ref"].split("C")[1])
         self.svc.record_reference(r["id"], "pmc_grievance", "PMC-1", self.u["id"])
         self.mock.set_status(n, 4, "done"); self.svc.sync(r["id"])
         self.svc.db.run("UPDATE external_records SET status='resolved',terminal=1 WHERE platform_id='pmc_grievance'"); self.svc.refresh_parent(r["id"])
-        self.assertEqual(self.svc.get(r["id"])["status"], "official_resolved")
-        self.svc.citizen_verify(r["id"], True, self.u["id"]); self.assertEqual(self.svc.get(r["id"])["status"], "resolved_verified")
+        self.assertEqual(self.svc.get(r["id"])["status"], "authority_marked_resolved")
+        self.svc.citizen_verify(r["id"], True, self.u["id"]); self.assertEqual(self.svc.get(r["id"])["status"], "citizen_verified_resolved")
     def test_reopened_complaint(self):
         r = self.mk(); self.svc.submit(r["id"]); rec = self.swachhata_rec(r["id"]); n = int(rec["external_ref"].split("C")[1])
         self.mock.set_status(n, 4); self.svc.sync(r["id"])
         self.svc.citizen_verify(r["id"], False, self.u["id"])
-        self.assertNotEqual(self.svc.get(r["id"])["status"], "resolved_verified")
+        self.assertNotEqual(self.svc.get(r["id"])["status"], "citizen_verified_resolved")
     def test_government_rejection(self):
         r = self.mk(); self.svc.submit(r["id"]); n = int(self.swachhata_rec(r["id"])["external_ref"].split("C")[1])
         self.mock.set_status(n, 6, "Not a ULB matter"); self.svc.sync(r["id"])

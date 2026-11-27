@@ -15,10 +15,14 @@ class DB:
 
     def migrate(self):
         mdir = os.path.join(ROOT, "migrations")
-        for f in sorted(os.listdir(mdir)):
-            if f.endswith(".sql"):
-                with _lock:
+        with _lock:
+            self.conn.execute("CREATE TABLE IF NOT EXISTS schema_migrations(name TEXT PRIMARY KEY, applied_at TEXT)")
+            done = {r[0] for r in self.conn.execute("SELECT name FROM schema_migrations")}
+            for f in sorted(os.listdir(mdir)):
+                if f.endswith(".sql") and f not in done:
                     self.conn.executescript(open(os.path.join(mdir, f)).read())
+                    self.conn.execute("INSERT INTO schema_migrations VALUES(?,?)", (f, now()))
+            self.conn.commit()
 
     def load_platforms(self):
         # seed registry from JSON; admin-added platforms (already in DB) are kept

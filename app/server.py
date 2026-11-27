@@ -115,6 +115,10 @@ def make_handler(svc, admin_token, rate=120):
                 from . import rating
                 a = self._adm()
                 return self._json(200, {"items": rating.moderation_queue(svc.db)}) if a and roles.can(a["role"], "photos.approve") else self._json(403, {"error": "moderator only"})
+            if path == "/api/directory/handles":
+                st = (q.get("state") or "").lower(); t = (q.get("q") or "").lower()
+                rows = [h for h in load_data("state_handle_sites.json") if (not st or (h["state"] or "").lower() == st) and (not t or t in h["title"].lower() or t in h["handle"].lower())]
+                return self._json(200, {"count": len(rows), "items": rows[:200], "note": "Each handle is linked from the listed official site. Blue tick and follower count are not checked."})
             if path == "/api/companies": return self._json(200, {"items": load_data("companies.json")})
             if path == "/api/directory/mps":
                 from .service import load_data

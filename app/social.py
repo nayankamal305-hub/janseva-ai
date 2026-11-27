@@ -6,17 +6,33 @@ from .service import load_data
 # social_handles_extra.json: operator-verified entries {"title","x_handles":[..],"found_on":url,"last_verified":date,"state"?}; a handle is only added after it is seen on an official page.
 KW = {"water": ["water", "jal shakti", "jal"], "road": ["road", "highways", "morth"], "railway": ["railway", "railways"], "electricity": ["power", "electricity"], "consumer": ["consumer"],"police": ["home affairs"],
       "garbage": ["housing and urban"], "drainage": ["housing and urban"], "toilet": ["housing and urban"], "pension": ["pension"]}
-GENERIC = {"narendramodi", "jpnadda", "ndtvprofit"}
+GENERIC = {"narendramodi", "jpnadda", "ndtvprofit", "cyberdost", "pmoindia", "mygovindia", "pib_india"}
 def draft(svc, cid):
     c = svc.db.one("SELECT * FROM complaints WHERE id=?", (cid,))
     if not c: return {"ok": False, "error": "not found"}
     hs = load_data("social_handles.json") + load_data("social_handles_extra.json"); tags = []; src = []
     for h in hs:
         t = h["title"].lower()
-        hit = any(re.search(r"\b"+re.escape(k)+r"\b", t) for k in KW.get(c["category"] or "", [])) or (c["state"] and c["state"].lower() in (h.get("state") or "").lower() and "portal" in t)
+        hit = any(re.search(r"\b"+re.escape(k)+r"\b", t) for k in KW.get(c["category"] or "", []))
         if hit:
             for x in h["x_handles"]:
-                if x.lower() not in GENERIC and x not in tags and len(tags) < 3: tags.append(x); src.append({"handle": x, "found_on": h["found_on"], "listed_for": h["title"], "last_verified": h["last_verified"]})
+                if x.lower() not in GENERIC and x not in tags and len(tags) < 2: tags.append(x); src.append({"handle": x, "found_on": h["found_on"], "listed_for": h["title"], "last_verified": h["last_verified"]})
+    # state-level and district-level handles linked from the official site of that office
+    sh = load_data("state_handle_sites.json"); st = (c["state"] or "").lower(); ct = (c["city"] or "").strip().lower()
+    SKW = {"electricity": ["power", "electric", "discom", "vidyut", "bijli"], "water": ["water", "phed", "public health engineering", "jal shakti", "jal nigam", "jal board", "jal sansthan"], "road": ["road", "public works", "pwd", "highway"],
+           "garbage": ["municipal", "urban", "nagar", "swachh"], "drainage": ["municipal", "urban", "nagar"], "toilet": ["municipal", "urban", "swachh"]}
+    def add(x, why):
+        if x["handle"].lower() not in {t.lower() for t in tags} and x["handle"].lower() not in GENERIC and len(tags) < 3:
+            tags.append(x["handle"]); src.append({"handle": x["handle"], "found_on": x["found_on"], "listed_for": x["title"], "last_verified": x["last_verified"], "role": why})
+    cat = c["category"] or ""
+    if cat == "police":
+        for x in sh:
+            if x["state"] and x["state"].lower() == st and ct and x["title"].strip().lower() == ct and "police" in x["handle"].lower(): add(x, "district police (official site link)")
+    else:
+        for x in sh:
+            if x["state"] and x["state"].lower() == st and any(re.search(r"\b" + re.escape(k), x["title"].lower()) for k in SKW.get(cat, [])) and x["type"] != "E042": add(x, "state department (official site link)"); break
+    for x in sh:
+        if x["state"] and x["state"].lower() == st and ct and x["title"].strip().lower() == ct and x["type"] == "E042" and re.search(r"(dm|dc|collector|district|dist|admin)", x["handle"].lower()) and "police" not in x["handle"].lower(): add(x, "district administration (official site link)"); break
     loc = ", ".join(x for x in (c["city"], c["state"]) if x)
     body = "%s at %s. Unresolved. Tracking %s" % ((c["title"] or "Public issue")[:110], loc, c["code"])
     text = (body + " " + " ".join("@" + t for t in tags) + " #JANSEVA").strip()[:280]
@@ -30,7 +46,7 @@ X_DAILY_CAP = lambda: int(os.environ.get("X_DAILY_CAP", "6"))
 X_MIN_GAP_MIN = lambda: int(os.environ.get("X_MIN_GAP_MIN", "25"))
 def _now(): return time.strftime("%Y-%m-%dT%H:%M:%S")
 def known_handles():
-    return {x.lower() for h in load_data("social_handles.json") + load_data("social_handles_extra.json") for x in h["x_handles"]}
+    return {x.lower() for h in load_data("social_handles.json") + load_data("social_handles_extra.json") for x in h["x_handles"]} | {h["handle"].lower() for h in load_data("state_handle_sites.json")}
 def enqueue(svc, cid, text=None):
     """Only after the citizen ticked consent_x for this complaint. Text = facts + official-site handles; never abusive."""
     c = svc.db.one("SELECT * FROM complaints WHERE id=?", (cid,))

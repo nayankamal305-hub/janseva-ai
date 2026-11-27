@@ -1,0 +1,6930 @@
+[
+ {
+  "handle": "krushibibhag",
+  "title": "AGRISNET - Directorate of Agriculture & Food Production, Odisha",
+  "state": "Odisha",
+  "type": "E004",
+  "found_on": "https://agrisnetodisha.ori.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "housingboardcg",
+  "title": "AWAS – Housing Board Computerization, Chhattisgarh",
+  "state": "Chhattisgarh",
+  "type": "E011",
+  "found_on": "https://cghb.cg.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mponlinelimited",
+  "title": "AYUSH Counselling, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "E009",
+  "found_on": "https://ayush.mponline.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dishombudget",
+  "title": "Abua Budget Portal, Jharkhand",
+  "state": "Jharkhand",
+  "type": "SPMA",
+  "found_on": "https://finance.jharkhand.gov.in/budgetvichar/default.aspx",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "asap_kerala",
+  "title": "Additional Skill Acquisition Programme (ASAP) Kerala",
+  "state": "Kerala",
+  "type": "E009",
+  "found_on": "https://asapkerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_ADB",
+  "title": "Adilabad",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://adilabad.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorAgar",
+  "title": "Agar-Malwa",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://agarmalwa.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ANERTKERALA",
+  "title": "Agency for Non Conventional Energy and Rural Technology (ANERT), Kerala",
+  "state": "Kerala",
+  "type": "E051",
+  "found_on": "https://anert.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "hpagriculture",
+  "title": "Agriculture Department, Himachal Pradesh",
+  "state": "Himachal Pradesh",
+  "type": "E003",
+  "found_on": "https://agriculture.hp.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Agriculture Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/agriculture",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "AgriDeptGoM",
+  "title": "Agriculture Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://krishi.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "AgriNgl",
+  "title": "Agriculture Department, Nagaland",
+  "state": "Nagaland",
+  "type": "E003",
+  "found_on": "https://agriculture.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Agriculture Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/agriculture-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "agrideptuk",
+  "title": "Agriculture Department, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E003",
+  "found_on": "https://agriculture.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOGuj",
+  "title": "Ahmedabad",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://ahmedabad.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorAhd",
+  "title": "Ahmedabad",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://ahmedabad.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "akolapolice",
+  "title": "Akola Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://akolapolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PMOIndia",
+  "title": "Aligarh",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://aligarh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOfficeUP",
+  "title": "Aligarh",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://aligarh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMAlirajpur",
+  "title": "Alirajpur",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://alirajpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "AmbedkarnagarDM",
+  "title": "Ambedkar Nagar",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://ambedkarnagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmAmethi",
+  "title": "Amethi",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://amethi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "amravati_dc",
+  "title": "Amravati",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://amravati.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MahaDGIPR",
+  "title": "Amravati",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://amravati.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "AmtRuralPolice",
+  "title": "Amravati Rural Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://amravatiruralpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorAmr",
+  "title": "Amreli",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://amreli.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOPbIndia",
+  "title": "Amritsar",
+  "state": "Punjab",
+  "type": "E042",
+  "found_on": "https://amritsar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pmoindia",
+  "title": "Amroha",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://amroha.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "myogiadityanath",
+  "title": "Amroha",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://amroha.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorAnd",
+  "title": "Anand",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://anand.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectoratpr",
+  "title": "Ananthapuramu",
+  "state": "Andhra Pradesh",
+  "type": "E042",
+  "found_on": "https://ananthapuramu.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DCAnantnag",
+  "title": "Anantnag",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://anantnag.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DrBilalbhatIAS",
+  "title": "Anantnag",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://anantnag.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lepakshiaphdc",
+  "title": "Andhra Pradesh Handicrafts Development Corporation Limited",
+  "state": "Andhra Pradesh",
+  "type": "E011",
+  "found_on": "https://www.lepakshihandicrafts.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "apsrtc",
+  "title": "Andhra Pradesh State Road Transport Corporation (APSRTC)",
+  "state": "Andhra Pradesh",
+  "type": "E011",
+  "found_on": "https://www.apsrtc.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Dept_of_AHD_MH",
+  "title": "Animal Husbandry Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://dahd.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pashudhanUK",
+  "title": "Animal Husbandry Department, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E003",
+  "found_on": "https://ahd.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "AhdPon",
+  "title": "Animal Husbandry and Animal Welfare Department, Puducherry",
+  "state": "Puducherry",
+  "type": "E003",
+  "found_on": "https://ahd.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Animal_Hus_Chd",
+  "title": "Animal Husbandry and Fisheries Department, Chandigarh",
+  "state": "Chandigarh",
+  "type": "E003",
+  "found_on": "https://chdanimalhusbandry.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "AHVS10",
+  "title": "Animal Husbandry and Veterinary Department, Nagaland",
+  "state": "Nagaland",
+  "type": "E003",
+  "found_on": "https://vety.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dirahvsandaman",
+  "title": "Animal Husbandry and Veterinary Services Department, Andaman & Nicobar",
+  "state": "Andaman and Nicobar Islands",
+  "type": "E003",
+  "found_on": "https://ahvs.andamannicobar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Animal/Sheep Husbandry Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/animal-sheep-husbandry",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SVBHaryana",
+  "title": "Anti Corruption Bureau, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://acb.haryana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmAraria",
+  "title": "Araria",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://araria.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ArariaP",
+  "title": "Araria",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://araria.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Twitt_AFRI",
+  "title": "Arid Forest Research Institute, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "OTHR",
+  "found_on": "https://afri.icfre.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "hfrishimla",
+  "title": "Arid Forest Research Institute, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "OTHR",
+  "found_on": "https://afri.icfre.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collariyalur",
+  "title": "Ariyalur",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://ariyalur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Arogyakeralam",
+  "title": "Arogya Keralam, Kerala",
+  "state": "Kerala",
+  "type": "OTHR",
+  "found_on": "https://arogyakeralam.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "art_haryana",
+  "title": "Art and Cultural Affairs Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://artandculturalaffairshry.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ArtPondy",
+  "title": "Arts and Culture Department, Puducherry",
+  "state": "Puducherry",
+  "type": "E003",
+  "found_on": "https://art.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dgppradesh",
+  "title": "Arunachal Pradesh Police",
+  "state": "Arunachal Pradesh",
+  "type": "E051",
+  "found_on": "https://arunpol.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "aphwcl",
+  "title": "Arunachal Pradesh Police Housing and Welfare Corporation Limited",
+  "state": "Arunachal Pradesh",
+  "type": "E011",
+  "found_on": "https://aphwcl.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cmoguj",
+  "title": "Arvalli",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://arvalli.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorarvali",
+  "title": "Arvalli",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://arvalli.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "arwal_dm",
+  "title": "Arwal",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://arwal.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CAshoknagar",
+  "title": "Ashoknagar",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://ashoknagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "AssamHRC",
+  "title": "Assam Human Rights Commission",
+  "state": "Assam",
+  "type": "E013",
+  "found_on": "https://www.ahrc.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "arngDistrict",
+  "title": "Aurangabad",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://aurangabad.bih.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "narendramodi",
+  "title": "Ayodhya",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://ayodhya.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "myogioffice",
+  "title": "Ayodhya",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://ayodhya.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmazamgarh",
+  "title": "Azamgarh",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://azamgarh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "GBA_office",
+  "title": "BBMP Property Tax System, Karnataka",
+  "state": "Karnataka",
+  "type": "SPMA",
+  "found_on": "https://bbmptax.karnataka.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMBageshwarUK",
+  "title": "Bageshwar",
+  "state": "Uttarakhand",
+  "type": "E042",
+  "found_on": "https://bageshwar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BagpatDm",
+  "title": "Baghpat",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://bagpat.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorbalagh",
+  "title": "Balaghat",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://balaghat.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmballia",
+  "title": "Ballia",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://ballia.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BalodDistrict",
+  "title": "Balod",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://balod.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BalodaBazarDist",
+  "title": "Balodabazar-Bhatapara",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://balodabazar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorbk",
+  "title": "Banas Kantha",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://banaskantha.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "narendramodi",
+  "title": "Banda",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://banda.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "myogioffice",
+  "title": "Banda",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://banda.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "OfficeOfLGJandK",
+  "title": "Bandipora",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://bandipore.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcbandipora",
+  "title": "Bandipora",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://bandipore.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BANKA_POLICE",
+  "title": "Banka",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://banka.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmBanka",
+  "title": "Banka",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://banka.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DM_Bankura",
+  "title": "Bankura",
+  "state": "West Bengal",
+  "type": "E042",
+  "found_on": "https://bankura.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "census2027_bbk",
+  "title": "Bara Banki",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://barabanki.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DPRO_Barnala",
+  "title": "Barnala",
+  "state": "Punjab",
+  "type": "E042",
+  "found_on": "https://barnala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "barnalapolice",
+  "title": "Barnala Police, Punjab",
+  "state": "Punjab",
+  "type": "E051",
+  "found_on": "https://barnala.punjabpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BastarDistrict",
+  "title": "Bastar",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://bastar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorBeed",
+  "title": "Beed",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://beed.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BEEDPOLICE",
+  "title": "Beed Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://beedpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "deobelagavi",
+  "title": "Belagavi",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://belagavi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BemetaraDist",
+  "title": "Bemetara",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://bemetara.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "RuralDc",
+  "title": "Bengaluru Rural",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://bangalorerural.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DEORamanagara",
+  "title": "Bengaluru South",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://ramanagara.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BetulCollector",
+  "title": "Betul",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://betul.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DM_Bhadohi",
+  "title": "Bhadohi",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://bhadohi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmbhagalpur",
+  "title": "Bhagalpur",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://bhagalpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PoliceBhagalpur",
+  "title": "Bhagalpur",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://bhagalpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorBharch",
+  "title": "Bharuch",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://bharuch.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BhindCollector",
+  "title": "Bhind",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://bhind.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorBhopal",
+  "title": "Bhopal",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://bhopal.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BSCL_BBSR",
+  "title": "Bhubaneswar Smart City Limited, Odisha",
+  "state": "Odisha",
+  "type": "OTHR",
+  "found_on": "https://www.smartcitybhubaneswar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Bbsr2SmartCity",
+  "title": "Bhubaneswar Smart City Limited, Odisha",
+  "state": "Odisha",
+  "type": "OTHR",
+  "found_on": "https://www.smartcitybhubaneswar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "brpgra",
+  "title": "Bihar Public Grievance Redressal System",
+  "state": "Bihar",
+  "type": "OTHR",
+  "found_on": "https://lokshikayat.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BSBCCL",
+  "title": "Bihar State Building Construction Corporation Limited (BSBCCL)",
+  "state": "Bihar",
+  "type": "E011",
+  "found_on": "https://bsbccl.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BsrdclPatna",
+  "title": "Bihar State Road Development Corporation Ltd (BSRDCL)",
+  "state": "Bihar",
+  "type": "E011",
+  "found_on": "https://bsrdcl.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TourismBiharGov",
+  "title": "Bihar Tourism",
+  "state": "Bihar",
+  "type": "OTHR",
+  "found_on": "https://tourism.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DistrictBijapur",
+  "title": "Bijapur",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://bijapur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SbbUttarakhand",
+  "title": "Biodiversity Board, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E011",
+  "found_on": "https://sbb.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DM_Birbhum",
+  "title": "Birbhum",
+  "state": "West Bengal",
+  "type": "E042",
+  "found_on": "https://birbhum.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Block Development Office Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/block-development-office",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BokaroDc",
+  "title": "Bokaro",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://bokaro.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_budaun",
+  "title": "Budaun",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://budaun.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "OffDSB",
+  "title": "BuildNow - Building and Layout Approval System, Telangana",
+  "state": "Telangana",
+  "type": "SPMA",
+  "found_on": "https://buildnow.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PrlsecyMAUD",
+  "title": "BuildNow - Building and Layout Approval System, Telangana",
+  "state": "Telangana",
+  "type": "SPMA",
+  "found_on": "https://buildnow.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PMOIndia",
+  "title": "Bulandshahr",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://bulandshahar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOfficeUP",
+  "title": "Bulandshahr",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://bulandshahar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SBM_MCD",
+  "title": "Burari Hospital, Delhi",
+  "state": "Delhi",
+  "type": "OTHR",
+  "found_on": "https://burari.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmburhanpur",
+  "title": "Burhanpur",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://burhanpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "buxaradmin",
+  "title": "Buxar",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://buxar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cmokerala",
+  "title": "CMO Portal, Kerala",
+  "state": "Kerala",
+  "type": "SPMA",
+  "found_on": "https://cmo.kerala.gov.in/index-en.html",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "rahat_up",
+  "title": "COVID-19 updates by Office of the Relief Commissioner, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E005",
+  "found_on": "https://rahat.up.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cgstmumbaizone",
+  "title": "Central Goods and Services Tax Mumbai Zone (CGST Mumbai Zone)",
+  "state": "Maharashtra",
+  "type": "SPMA",
+  "found_on": "https://cgstmumbai.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CWRDM1",
+  "title": "Centre for Water Resources Development and Management (CWRDM), Kerala",
+  "state": "Kerala",
+  "type": "E009",
+  "found_on": "https://cwrdm.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcchnagar",
+  "title": "Chamarajanagar",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://chamrajnagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ChamoliDm",
+  "title": "Chamoli",
+  "state": "Uttarakhand",
+  "type": "E042",
+  "found_on": "https://chamoli.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pushkardhami",
+  "title": "Champawat",
+  "state": "Uttarakhand",
+  "type": "E042",
+  "found_on": "https://champawat.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMChampawat",
+  "title": "Champawat",
+  "state": "Uttarakhand",
+  "type": "E042",
+  "found_on": "https://champawat.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmchandauli",
+  "title": "Chandauli",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://chandauli.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "sp_chandrapur",
+  "title": "Chandrapur Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://chandrapurpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pemakhandubjp",
+  "title": "Changlang",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://changlang.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "touristcareutdb",
+  "title": "Char Dham Yatra Registration And Hemkund Sahib Registration, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "OTHR",
+  "found_on": "https://registrationandtouristcare.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "chatraiprd",
+  "title": "Chatra",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://chatra.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TNCollectorCPT",
+  "title": "Chengalpattu",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://chengalpattu.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collchhatarpur",
+  "title": "Chhatarpur",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://chhatarpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "housingboardcg",
+  "title": "Chhattisgarh Housing Board, Raipur",
+  "state": "Chhattisgarh",
+  "type": "E011",
+  "found_on": "https://cghb.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "InvestCG_India",
+  "title": "Chhattisgarh Unified Industrial Portal",
+  "state": "Chhattisgarh",
+  "type": "SPMA",
+  "found_on": "https://oneclick.cgstate.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmchhindwara",
+  "title": "Chhindwara",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://chhindwara.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorcu",
+  "title": "Chhotaudepur",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://chhotaudepur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cgstvdrzone",
+  "title": "Chief Commissioner - CGST & C.Ex, Vadodara Zone, Gujarat",
+  "state": "Gujarat",
+  "type": "E013",
+  "found_on": "https://cgstvadodarazone.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HemantSorenJMM",
+  "title": "Chief Minister's Office, Jharkhand",
+  "state": "Jharkhand",
+  "type": "OTHR",
+  "found_on": "https://cm.jharkhand.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "JharkhandCMO",
+  "title": "Chief Minister's Office, Jharkhand",
+  "state": "Jharkhand",
+  "type": "OTHR",
+  "found_on": "https://cm.jharkhand.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_ckbpur",
+  "title": "Chikkaballapura",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://chikkaballapur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Child Development Project Officer (ICDS-CDPO) Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/child-development-project-officer-icds-cdpo-daman",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorctr",
+  "title": "Chittoor",
+  "state": "Andhra Pradesh",
+  "type": "E042",
+  "found_on": "https://chittoor.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cidco_ltd",
+  "title": "City and Industrial Development Corporation of Maharashtra Limited (CIDCO), Maharashtra",
+  "state": "Maharashtra",
+  "type": "E011",
+  "found_on": "https://cidco.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cad_haryana",
+  "title": "Civil Aviation Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://haraviation.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Civil Aviation Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/civil-aviation-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TNDIPRNEWS",
+  "title": "Civil Supplies and Consumer Protection Department, Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E003",
+  "found_on": "https://consumer.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Co-Operative Societies Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/co-operative-society",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "RCSManipur",
+  "title": "Co-operative Department, Manipur",
+  "state": "Manipur",
+  "type": "E003",
+  "found_on": "https://rcsmanipur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorCbe",
+  "title": "Coimbatore",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://coimbatore.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "GwaliorComm",
+  "title": "Commissioner, Gwalior Division, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "E013",
+  "found_on": "https://gwaliordivisionmp.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "sagarcomisioner",
+  "title": "Commissioner, Sagar Division, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "OTHR",
+  "found_on": "https://sagardivisionmp.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Banijyakar",
+  "title": "Commissionerate of CT and GST, Odisha",
+  "state": "Odisha",
+  "type": "E004",
+  "found_on": "https://odishatax.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "upsic6",
+  "title": "Complaint and Appeal Tracking System, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://upsic.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "UPGovt",
+  "title": "Complaint and Appeal Tracking System, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://upsic.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMcoochbehar",
+  "title": "Cooch Behar",
+  "state": "West Bengal",
+  "type": "E042",
+  "found_on": "https://coochbehar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Cooperative Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/cooperative",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dgpmaharashtra",
+  "title": "Crime Investigation Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E011",
+  "found_on": "https://mahacid.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cudcollector",
+  "title": "Cuddalore",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://cuddalore.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "IndianCERT",
+  "title": "Cyber Swachhta Kendra, Gujarat",
+  "state": "Gujarat",
+  "type": "OTHR",
+  "found_on": "https://www.cyberswachhtakendra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cwcvsk",
+  "title": "Cyclone Warning Centre, Visakhapatnam, Andhra Pradesh",
+  "state": "Andhra Pradesh",
+  "type": "OTHR",
+  "found_on": "https://mausam.imd.gov.in/visakhapatnam",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Dadra And Nagar Haveli",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E042",
+  "found_on": "https://dnh.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectordnh",
+  "title": "Dadra And Nagar Haveli",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E042",
+  "found_on": "https://dnh.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DantewadaDist",
+  "title": "Dakshin Bastar Dantewada",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://dantewada.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorDamoh",
+  "title": "Damoh",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://damoh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collectordan",
+  "title": "Dangs",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://dangs.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CDatia",
+  "title": "Datia",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://datia.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DCWDelhi",
+  "title": "Delhi Commission for Women",
+  "state": "Delhi",
+  "type": "E013",
+  "found_on": "https://dcw.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "official_dda",
+  "title": "Delhi Development Authority (DDA)",
+  "state": "Delhi",
+  "type": "E011",
+  "found_on": "https://dda.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "tourism_delhi",
+  "title": "Delhi Tourism",
+  "state": "Delhi",
+  "type": "E011",
+  "found_on": "https://www.delhitourism.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Dtptraffic",
+  "title": "Delhi Traffic Police",
+  "state": "Delhi",
+  "type": "E005",
+  "found_on": "https://traffic.delhipolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dtchq_delhi",
+  "title": "Delhi Transport Corporation (DTC)",
+  "state": "Delhi",
+  "type": "E011",
+  "found_on": "https://dtc.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcdeoghar",
+  "title": "Deoghar",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://deoghar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmdeoria",
+  "title": "Deoria",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://deoria.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMO_Odisha",
+  "title": "Department of General Administration and Public Grievance, Odisha",
+  "state": "Odisha",
+  "type": "OTHR",
+  "found_on": "https://janasunani.odisha.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "horticulture_mn",
+  "title": "Department of Horticulture & Soil Conservation, Manipur",
+  "state": "Manipur",
+  "type": "E003",
+  "found_on": "https://www.horticulture.mn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CmrTextiles",
+  "title": "Department of Textiles, Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E003",
+  "found_on": "https://tntextilesschemes.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMofGujarat",
+  "title": "Devbhumi Dwarka",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://devbhumidwarka.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectordwk",
+  "title": "Devbhumi Dwarka",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://devbhumidwarka.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collector_dewas",
+  "title": "Dewas",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://dewas.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMDhalai",
+  "title": "Dhalai",
+  "state": "Tripura",
+  "type": "E042",
+  "found_on": "https://dhalai.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DhamtariDist",
+  "title": "Dhamtari",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://dhamtari.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_dhanbad",
+  "title": "Dhanbad",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://dhanbad.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectordhar",
+  "title": "Dhar",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://dhar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collrdpi",
+  "title": "Dharmapuri",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://dharmapuri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_dharwad",
+  "title": "Dharwad",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://dharwad.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DiThimachal",
+  "title": "Digital Technologies and Governance Department, Himachal Pradesh",
+  "state": "Himachal Pradesh",
+  "type": "E003",
+  "found_on": "https://ddtg.hp.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_Dimapur",
+  "title": "Dimapur",
+  "state": "Nagaland",
+  "type": "E042",
+  "found_on": "https://dimapur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dindoridm",
+  "title": "Dindori",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://dindori.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "statecomforpwds",
+  "title": "Directorate for Welfare of the Differently Abled, Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E004",
+  "found_on": "https://www.scd.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Directorate of Accounts Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/directorate-of-accounts",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "datprg",
+  "title": "Directorate of Accounts and Treasuries, Puducherry",
+  "state": "Puducherry",
+  "type": "E004",
+  "found_on": "https://dat.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ukdirayurved",
+  "title": "Directorate of Ayurvedic & Unani Services, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E004",
+  "found_on": "https://ayurved.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pushkardhami",
+  "title": "Directorate of Departmental Accounts, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E003",
+  "found_on": "https://dda.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "FoodCgGov",
+  "title": "Directorate of Food, Chhattisgarh",
+  "state": "Chhattisgarh",
+  "type": "E004",
+  "found_on": "https://fcs.cg.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CHN_Metro_Water",
+  "title": "Directorate of Government Examinations, Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E004",
+  "found_on": "https://www.dge.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dhe_goa",
+  "title": "Directorate of Higher Education, Goa",
+  "state": "Goa",
+  "type": "E004",
+  "found_on": "https://dhe.goa.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DHE_Pune",
+  "title": "Directorate of Higher Education, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E011",
+  "found_on": "https://www.dhepune.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Bhupendrapbjp",
+  "title": "Directorate of ICT and e-Governance, Gujarat",
+  "state": "Gujarat",
+  "type": "OTHR",
+  "found_on": "https://directorit.gujarat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DITGujarat",
+  "title": "Directorate of ICT and e-Governance, Gujarat",
+  "state": "Gujarat",
+  "type": "OTHR",
+  "found_on": "https://directorit.gujarat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ITGOVM",
+  "title": "Directorate of Information Technology, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E004",
+  "found_on": "https://it.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BiharDlrs",
+  "title": "Directorate of Land Records & Survey, Bihar",
+  "state": "Bihar",
+  "type": "E004",
+  "found_on": "https://dlrs.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ulb_up",
+  "title": "Directorate of Local Bodies, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E004",
+  "found_on": "https://localbodies.up.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Commission_Dmer",
+  "title": "Directorate of Medical Education & Research, Mumbai",
+  "state": "Maharashtra",
+  "type": "E004",
+  "found_on": "https://dmer.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Directorate of Public Grievance Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/directorate-of-public-grievance",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "nipunharyana",
+  "title": "Directorate of Secondary Education, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://schooleducationharyana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Haryana_Schools",
+  "title": "Directorate of Secondary Education, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://schooleducationharyana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "skeputtarakhand",
+  "title": "Directorate of Soldier Welfare and Rehabilitation Board, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E004",
+  "found_on": "https://sainikkalyan.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pushkardhami",
+  "title": "Directorate of Technical Education, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E004",
+  "found_on": "https://dte.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DOTE_Connect_",
+  "title": "Directorate of Technical Education - Chennai, Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E004",
+  "found_on": "https://dte.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TNDOTE",
+  "title": "Directorate of Technical Education - Chennai, Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E004",
+  "found_on": "https://dte.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DTEMumOfficial",
+  "title": "Directorate of Technical Education, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E004",
+  "found_on": "https://dte.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DvetMaharashtra",
+  "title": "Directorate of Vocational Education and Training, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E004",
+  "found_on": "https://www.dvet.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "District Collectorate Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/collectorate",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "District Industries Centre Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/district-industries-centre",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E042",
+  "found_on": "https://diu.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "diudistrict",
+  "title": "Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E042",
+  "found_on": "https://diu.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "OfficeOfLGJandK",
+  "title": "Divisional Commissioner Kashmir, Jammu and Kashmir",
+  "state": "Jammu and Kashmir",
+  "type": "E013",
+  "found_on": "https://divcomkashmir.jk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "omarabdullah",
+  "title": "Divisional Commissioner Kashmir, Jammu and Kashmir",
+  "state": "Jammu and Kashmir",
+  "type": "E013",
+  "found_on": "https://divcomkashmir.jk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CentreDoda",
+  "title": "Doda",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://doda.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcdodaofficial",
+  "title": "Doda",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://doda.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "weareAUD",
+  "title": "Dr. B. R. Ambedkar University, Delhi",
+  "state": "Delhi",
+  "type": "E009",
+  "found_on": "https://aud.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "drmcrhrdit",
+  "title": "Dr. Marri Channa Reddy Human Resource Development Institute of Telangana, Andhra Pradesh",
+  "state": "Andhra Pradesh",
+  "type": "E051",
+  "found_on": "https://www.mcrhrdi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dsmru_lko",
+  "title": "Dr. Shakuntala Misra National Rehabilitation University, Lucknow",
+  "state": "Uttar Pradesh",
+  "type": "E009",
+  "found_on": "https://dsmru.up.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcdumka",
+  "title": "Dumka",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://dumka.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "durgdist",
+  "title": "Durg",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://durg.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "deptcooperative",
+  "title": "E-Cooperative, Bihar",
+  "state": "Bihar",
+  "type": "SPMA",
+  "found_on": "https://esahkari.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmeastdelhi",
+  "title": "East",
+  "state": "Delhi",
+  "type": "E042",
+  "found_on": "https://dmeast.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SangmaConrad",
+  "title": "East Jaintia Hills",
+  "state": "Meghalaya",
+  "type": "E042",
+  "found_on": "https://eastjaintiahills.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_EKH",
+  "title": "East Khasi Hills",
+  "state": "Meghalaya",
+  "type": "E042",
+  "found_on": "https://eastkhasihills.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "GovParnaik",
+  "title": "East Siang",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://eastsiang.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PemaKhanduBJP",
+  "title": "East Siang",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://eastsiang.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DCEastSinghbhum",
+  "title": "East Singhbum",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://jamshedpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SchoolEduChd",
+  "title": "Education Department, Chandigarh",
+  "state": "Chandigarh",
+  "type": "E003",
+  "found_on": "https://www.chdeducation.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pmsuryaghar_mby",
+  "title": "Electricity (Power) Department, Goa",
+  "state": "Goa",
+  "type": "E003",
+  "found_on": "https://www.goaelectricity.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Electricity Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/electricity-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "nipunharyana",
+  "title": "Elementary Education Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://harprathmik.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Haryana_Schools",
+  "title": "Elementary Education Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://harprathmik.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorEluru",
+  "title": "Eluru",
+  "state": "Andhra Pradesh",
+  "type": "E042",
+  "found_on": "https://eluru.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "emc_kerala",
+  "title": "Energy Management Centre, Kerala",
+  "state": "Kerala",
+  "type": "E005",
+  "found_on": "https://www.keralaenergy.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HubEnvis",
+  "title": "Environment Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://harenvironment.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "eptriindia",
+  "title": "Environment Protection Training and Research Institute, ​Telangana",
+  "state": "Telangana",
+  "type": "OTHR",
+  "found_on": "https://eptri.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "arunforests",
+  "title": "Environment and Forest Department, Arunachal Pradesh",
+  "state": "Arunachal Pradesh",
+  "type": "E003",
+  "found_on": "https://arunachalforests.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "epco18",
+  "title": "Environmental Planning & Coordination Organisation (EPCO), Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "E051",
+  "found_on": "https://epco.mp.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DPC_EkmRural",
+  "title": "Ernakulam Rural Police, Kerala",
+  "state": "Kerala",
+  "type": "OTHR",
+  "found_on": "https://ernakulamrural.keralapolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorerode",
+  "title": "Erode",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://erode.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "district_etawah",
+  "title": "Etawah",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://etawah.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "vdsatheesan",
+  "title": "Excise Department, Kerala",
+  "state": "Kerala",
+  "type": "E003",
+  "found_on": "https://keralaexcise.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "liju_mohanlal",
+  "title": "Excise Department, Kerala",
+  "state": "Kerala",
+  "type": "E003",
+  "found_on": "https://keralaexcise.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Excise Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/excise-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "FMUniversityBLS",
+  "title": "Fakir Mohan University, Odisha",
+  "state": "Odisha",
+  "type": "E009",
+  "found_on": "https://fmuniversity.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_faridabad",
+  "title": "Faridabad",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://faridabad.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "fibkerala",
+  "title": "Farm Information Bureau, Kerala",
+  "state": "Kerala",
+  "type": "E051",
+  "found_on": "https://www.fibkerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmfatehpur",
+  "title": "Fatehpur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://fatehpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cmohry",
+  "title": "Finance Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://finhry.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Finance Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/finance-department-2",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovArunachal",
+  "title": "Finance-Planning & Investment Department, Arunachal Pradesh",
+  "state": "Arunachal Pradesh",
+  "type": "E003",
+  "found_on": "https://www.arunachalplan.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ArunachalTsm",
+  "title": "Finance-Planning & Investment Department, Arunachal Pradesh",
+  "state": "Arunachal Pradesh",
+  "type": "E003",
+  "found_on": "https://www.arunachalplan.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Fire and Emergency Services Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/fire-and-emergency-services",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_firozabad",
+  "title": "Firozabad",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://firozabad.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "FisheriesHry",
+  "title": "Fisheries Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://harfish.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "fisheriesgom",
+  "title": "Fisheries Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://fisheries.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Fisheries Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/fisheries",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Food Civil Supplies & Consumer Affairs Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/food-civil-supplies-consumer-affairs",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "FDA_MAHARASHTRA",
+  "title": "Food and Drug Administration, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E011",
+  "found_on": "https://fda.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "food_haryana",
+  "title": "Food, Civil Supplies and Consumer Affairs Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://haryanafood.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "FCSCA_Meg",
+  "title": "Food, Civil Supplies and Consumer Affairs Department, Meghalaya",
+  "state": "Meghalaya",
+  "type": "E003",
+  "found_on": "https://megfcsca.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dev_fadnavis",
+  "title": "Food, Civil Supplies and Consumer Protection Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://mahafood.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mieknathshinde",
+  "title": "Food, Civil Supplies and Consumer Protection Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://mahafood.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MahaForest",
+  "title": "Forest Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://mahaforest.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TelanganaFD",
+  "title": "Forest Department, Telangana",
+  "state": "Telangana",
+  "type": "E003",
+  "found_on": "https://forests.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "utofpuducherry",
+  "title": "Forest and Wild Life Department, Puducherry",
+  "state": "Puducherry",
+  "type": "E003",
+  "found_on": "https://py.gov.in/forestry-wild-life",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Forest, Ecology & Environment Department",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/forest-ecology-environment-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ForestHaryana",
+  "title": "Forests Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://haryanaforest.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "InfoGadchiroli",
+  "title": "Gadchiroli",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://gadchiroli.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SP_GADCHIROLI",
+  "title": "Gadchiroli Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://gadchirolipolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "OfficeOfLGJandK",
+  "title": "Ganderbal",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://ganderbal.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcganderbal",
+  "title": "Ganderbal",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://ganderbal.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorgnr",
+  "title": "Gandhinagar",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://gandhinagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HemantSorenJMM",
+  "title": "Garhwa",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://garhwa.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_garhwa",
+  "title": "Garhwa",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://garhwa.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "GariyabandDist",
+  "title": "Gariyaband",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://gariaband.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmgbnagar",
+  "title": "Gautam Buddha Nagar",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://gbnagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "gaya_dm",
+  "title": "Gaya",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://gaya.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "General Administration Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/general-administration-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "maha_goodgovern",
+  "title": "General Administration Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://gad.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DGM_Uttarakhand",
+  "title": "Geology and Mining Unit, Directorate of Industries, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E011",
+  "found_on": "https://dgm.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_ghaziabad",
+  "title": "Ghaziabad",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://ghaziabad.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "AdminGhazipur",
+  "title": "Ghazipur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://ghazipur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "GiridihDc",
+  "title": "Giridih",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://giridih.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cyberdost",
+  "title": "Goa Police Department",
+  "state": "Goa",
+  "type": "E003",
+  "found_on": "https://citizen.goapolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DGP_Goa",
+  "title": "Goa Police Department",
+  "state": "Goa",
+  "type": "E003",
+  "found_on": "https://citizen.goapolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcgodda",
+  "title": "Godda",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://godda.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmgonda2",
+  "title": "Gonda",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://gonda.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ExploreGamPuri",
+  "title": "Gopabandhu Ayurveda Mahavidyalaya, Odisha",
+  "state": "Odisha",
+  "type": "E051",
+  "found_on": "https://gampuri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Puriulbeo",
+  "title": "Gopabandhu Ayurveda Mahavidyalaya, Odisha",
+  "state": "Odisha",
+  "type": "E051",
+  "found_on": "https://gampuri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Dist_Gopalganj",
+  "title": "Gopalganj",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://gopalganj.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "GopalganjPolice",
+  "title": "Gopalganj",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://gopalganj.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "gkpmahotsav2019",
+  "title": "Gorakhpur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://gorakhpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Dm_Gorakhpur",
+  "title": "Gorakhpur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://gorakhpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "gmch_32",
+  "title": "Government Medical College and Hospital, Chandigarh",
+  "state": "Chandigarh",
+  "type": "E009",
+  "found_on": "https://gmch.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "gpwkandaghat",
+  "title": "Government Polytechnic for Women, Kandaghat, Himachal Pradesh",
+  "state": "Himachal Pradesh",
+  "type": "E009",
+  "found_on": "https://gpcwkandaghat.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MumbaiPolice",
+  "title": "Greater Mumbai Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://mumbaipolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CPMumbaiPolice",
+  "title": "Greater Mumbai Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://mumbaipolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "GujaratAgricult",
+  "title": "Gujarat Agro Industries Corporation, Gujarat",
+  "state": "Gujarat",
+  "type": "E059",
+  "found_on": "https://gaic.gujarat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "gujsciencecity",
+  "title": "Gujarat Council of Science City, Gujarat",
+  "state": "Gujarat",
+  "type": "OTHR",
+  "found_on": "https://sciencecity.gujarat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PMOIndia",
+  "title": "Gujarat Industrial Development Corporation (GIDC)",
+  "state": "Gujarat",
+  "type": "OTHR",
+  "found_on": "https://gidc.gujarat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOGuj",
+  "title": "Gujarat Industrial Development Corporation (GIDC)",
+  "state": "Gujarat",
+  "type": "OTHR",
+  "found_on": "https://gidc.gujarat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "gurjarimail2014",
+  "title": "Gujarat State Handloom & Handicrafts Development Corporation Ltd., Gujarat",
+  "state": "Gujarat",
+  "type": "OTHR",
+  "found_on": "https://garvigurjari.gujarat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DCGumla",
+  "title": "Gumla",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://gumla.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorGuna",
+  "title": "Guna",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://guna.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_Gurugram",
+  "title": "Gurugram",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://gurugram.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmgwalior",
+  "title": "Gwalior",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://gwalior.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmhamirpurup",
+  "title": "Hamirpur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://hamirpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_HNK",
+  "title": "Hanumakonda",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://hanumakonda.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmHapur",
+  "title": "Hapur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://hapur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HbtuKanpur",
+  "title": "Harcourt Butler Technical University, Admission and eCounselling Services",
+  "state": "Uttar Pradesh",
+  "type": "E009",
+  "found_on": "https://hbtu.admissions.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorharda",
+  "title": "Harda",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://harda.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "officialHGSA",
+  "title": "Haryana Gau Seva Aayog, Haryana",
+  "state": "Haryana",
+  "type": "OTHR",
+  "found_on": "https://hargauseva.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HaryanaPrisons",
+  "title": "Haryana Prisons, Panchkula, Haryana",
+  "state": "Haryana",
+  "type": "OTHR",
+  "found_on": "https://haryanaprisons.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HassanTourismHS",
+  "title": "Hassan",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://hassan.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_hathras",
+  "title": "Hathras",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://hathras.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_Hazaribag",
+  "title": "Hazaribagh",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://hazaribag.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Healthandaman",
+  "title": "Health Department, Andaman & Nicobar",
+  "state": "Andaman and Nicobar Islands",
+  "type": "E003",
+  "found_on": "https://dhs.andamannicobar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Health and Family welfare Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/health-and-family-welfare",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ArogyaAndhra",
+  "title": "Health, Medical & Family Welfare Department, Andhra Pradesh",
+  "state": "Andhra Pradesh",
+  "type": "E003",
+  "found_on": "https://hmfw.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HedNagaland",
+  "title": "Higher Education Department, Nagaland",
+  "state": "Nagaland",
+  "type": "E003",
+  "found_on": "https://highereducation.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "himachalpolice",
+  "title": "Himachal Pradesh Police",
+  "state": "Himachal Pradesh",
+  "type": "OTHR",
+  "found_on": "https://citizenportal.hppolice.gov.in/citizen",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HingoliSp",
+  "title": "Hingoli Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://hingolipolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MeghalayaPolice",
+  "title": "Home (Police) Department, Meghalaya",
+  "state": "Meghalaya",
+  "type": "E003",
+  "found_on": "https://megpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Home Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/home",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DDefence",
+  "title": "Home Guards Department, Himachal Pradesh",
+  "state": "Himachal Pradesh",
+  "type": "E003",
+  "found_on": "https://himachal.nic.in/homeguard",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HorticultureBih",
+  "title": "Horticulture Directorate, Agriculture Department, Bihar",
+  "state": "Bihar",
+  "type": "E004",
+  "found_on": "https://horticulture.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TNHORTICULTURE",
+  "title": "Horticulture and Plantation Crops Department, Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E003",
+  "found_on": "https://www.tnhorticulture.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DcHoshiarpur",
+  "title": "Hoshiarpur",
+  "state": "Punjab",
+  "type": "E042",
+  "found_on": "https://hoshiarpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HD_GoM_",
+  "title": "Housing Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://housing.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Housing and Urban Development Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/housing-and-urban-development",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HowrahDistrict",
+  "title": "Howrah",
+  "state": "West Bengal",
+  "type": "E042",
+  "found_on": "https://howrah.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HMDA_Gov",
+  "title": "Hyderabad Metropolitan Development Authority (HMDA), Telangana",
+  "state": "Telangana",
+  "type": "E011",
+  "found_on": "https://www.hmda.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "tfri_jabalpur",
+  "title": "ICFRE - Tropical Forest Research Institute, Jabalpur, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "E009",
+  "found_on": "https://tfri.icfre.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TFRIjabalpur",
+  "title": "ICFRE - Tropical Forest Research Institute, Jabalpur, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "E009",
+  "found_on": "https://tfri.icfre.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "IncomeTaxGuj",
+  "title": "Income Tax Department, Gujarat Region",
+  "state": "Gujarat",
+  "type": "E003",
+  "found_on": "https://incometaxgujarat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "IncomeTaxIndia",
+  "title": "Income Tax Department, Gujarat Region",
+  "state": "Gujarat",
+  "type": "E003",
+  "found_on": "https://incometaxgujarat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "India Reserve Battalion Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/india-reserve-battalion",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "IndoreCollector",
+  "title": "Indore",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://indore.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PuriIti",
+  "title": "Industrial Training Institute (ITI), Puri, Odisha",
+  "state": "Odisha",
+  "type": "E009",
+  "found_on": "https://itipuri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Ind_GNCTD",
+  "title": "Industries Department, Delhi",
+  "state": "Delhi",
+  "type": "E003",
+  "found_on": "https://industries.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Information Technology Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/information-technology",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ditmanipur",
+  "title": "Information Technology Department, Manipur",
+  "state": "Manipur",
+  "type": "E003",
+  "found_on": "https://www.ditmanipur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Information Technology Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/information-technology-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ditc_nagaland",
+  "title": "Information Technology and Communications Department, Nagaland",
+  "state": "Nagaland",
+  "type": "E003",
+  "found_on": "https://ditc.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DoITCRaj",
+  "title": "Information Technology and Communications Department, Rajasthan",
+  "state": "Rajasthan",
+  "type": "E003",
+  "found_on": "https://doitc.rajasthan.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "iprdkerala",
+  "title": "Information and Public Relations Department, Kerala",
+  "state": "Kerala",
+  "type": "E003",
+  "found_on": "https://prd.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dipr_nagaland",
+  "title": "Information and Public Relations Department, Nagaland",
+  "state": "Nagaland",
+  "type": "E003",
+  "found_on": "https://ipr.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dip_goa",
+  "title": "Information and Publicity Department, Goa",
+  "state": "Goa",
+  "type": "E003",
+  "found_on": "https://dip.goa.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "utofpuducherry",
+  "title": "Information and Publicity Department, Puducherry",
+  "state": "Puducherry",
+  "type": "E003",
+  "found_on": "https://info.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "igrodisha",
+  "title": "Inspector General of Registration Revenue & Disaster Management Department, Odisha",
+  "state": "Odisha",
+  "type": "E011",
+  "found_on": "https://www.igrodisha.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MDwcd",
+  "title": "Integrated Child Development Services Scheme, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://icds.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "icdsmaharashtra",
+  "title": "Integrated Child Development Services Scheme, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://icds.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "aniidco",
+  "title": "Integrated Development Corporation Limited (ANIIDCO), Andaman & Nicobar Islands",
+  "state": "Andaman and Nicobar Islands",
+  "type": "E059",
+  "found_on": "https://aniidco.and.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "_InvestUP",
+  "title": "Invest Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://invest.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_JGTL",
+  "title": "Jagitial",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://jagtial.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "upswsm",
+  "title": "Jal Jeevan Mission, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://jjm.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOPbIndia",
+  "title": "Jalandhar",
+  "state": "Punjab",
+  "type": "E042",
+  "found_on": "https://jalandhar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "KeralaWater",
+  "title": "Jalanidhi - Kerala Rural water Supply and Sanitation Agency, Kerala",
+  "state": "Kerala",
+  "type": "OTHR",
+  "found_on": "https://jalanidhi.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "narendramodi",
+  "title": "Jalaun",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://jalaun.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "myogiadityanath",
+  "title": "Jalaun",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://jalaun.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "InfoJalna",
+  "title": "Jalna",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://jalna.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "sp_jalna",
+  "title": "Jalna Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://jalnapolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmjammuofficial",
+  "title": "Jammu",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://jammu.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cmoguj",
+  "title": "Jamnagar",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://jamnagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorjamngr",
+  "title": "Jamnagar",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://jamnagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcjamtara",
+  "title": "Jamtara",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://jamtara.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Dist_Admin_Jmt",
+  "title": "Jamtara",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://jamtara.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "District_Jamui",
+  "title": "Jamui",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://jamui.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_JGN",
+  "title": "Jangoan",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://jangaon.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "diprjk",
+  "title": "Jansugam Portal, Jammu and Kashmir",
+  "state": "Jammu and Kashmir",
+  "type": "SPMA",
+  "found_on": "https://jansugam.jk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "jansunwai_up",
+  "title": "Jansunwai - Samadhan (Integrated Public Grievance Redressal System), Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "OTHR",
+  "found_on": "https://jansunwai.up.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "JashpurDist",
+  "title": "Jashpur",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://jashpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMjaunpur",
+  "title": "Jaunpur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://jaunpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "telanganacmo",
+  "title": "Jayashankar Bhupalapally",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://bhoopalapally.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collector_jsk",
+  "title": "Jayashankar Bhupalapally",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://bhoopalapally.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DM_Jehanabad",
+  "title": "Jehanabad",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://jehanabad.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorjhabua",
+  "title": "Jhabua",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://jhabua.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "jhajjardc",
+  "title": "Jhajjar",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://jhajjar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmjhansi1",
+  "title": "Jhansi",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://jhansi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "JBB_Ranchi",
+  "title": "Jharkhand Biodiversity Board",
+  "state": "Jharkhand",
+  "type": "E051",
+  "found_on": "https://jbb.jharkhand.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TelanganaCMO",
+  "title": "Jogulamba Gadwal",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://gadwal.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_JGL",
+  "title": "Jogulamba Gadwal",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://gadwal.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOGuj",
+  "title": "Junagadh",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://junagadh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorjunag",
+  "title": "Junagadh",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://junagadh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorkut",
+  "title": "Kachchh",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://kachchh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "kaimurdm",
+  "title": "Kaimur (Bhabua)",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://kaimur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dckaithal",
+  "title": "Kaithal",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://kaithal.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_KMR",
+  "title": "Kamareddy",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://kamareddy.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "kannurcollector",
+  "title": "Kannur",
+  "state": "Kerala",
+  "type": "E042",
+  "found_on": "https://kannur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "NIC_KanpurDehat",
+  "title": "Kanpur Dehat",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://kanpurdehat.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TelanganaCMO",
+  "title": "Karimnagar",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://karimnagar.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_KNR",
+  "title": "Karimnagar",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://karimnagar.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorKarur",
+  "title": "Karur",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://karur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmkasganj",
+  "title": "Kasganj",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://kasganj.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "manojsinha_",
+  "title": "Kathua",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://kathua.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DiprKathua",
+  "title": "Kathua",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://kathua.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorKatni",
+  "title": "Katni",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://katni.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMkaushambi",
+  "title": "Kaushambi",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://kaushambi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "keralafdc",
+  "title": "Kerala Forest Development Corporation Limited (KFDC), Kottayam, Kerala",
+  "state": "Kerala",
+  "type": "E011",
+  "found_on": "https://kfdc.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TwitterDev",
+  "title": "Kerala House & Office Of The Resident Commissioner in New Delhi, Kerala",
+  "state": "Kerala",
+  "type": "OTHR",
+  "found_on": "https://keralahouse.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "keralainfoiprd",
+  "title": "Kerala News - I & PRD Portal, Kerala",
+  "state": "Kerala",
+  "type": "OTHR",
+  "found_on": "https://keralanews.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "kescpcr_kerala",
+  "title": "Kerala State Commission for Protection of Child Rights, Kerala",
+  "state": "Kerala",
+  "type": "E013",
+  "found_on": "https://kescpcr.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "KeralaSDMA",
+  "title": "Kerala State Disaster Management Authority, Kerala",
+  "state": "Kerala",
+  "type": "E011",
+  "found_on": "https://www.sdma.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "WaterKerala",
+  "title": "Kerala Water Authority, Kerala",
+  "state": "Kerala",
+  "type": "OTHR",
+  "found_on": "https://kwa.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "KhagariaDm",
+  "title": "Khagaria",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://khagaria.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TelanganaCMO",
+  "title": "Khammam",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://khammam.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_KMM",
+  "title": "Khammam",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://khammam.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_khandwa",
+  "title": "Khandwa (East Nimar)",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://khandwa.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollecterK",
+  "title": "Khargone (West Nimar)",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://khargone.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cmoguj",
+  "title": "Kheda",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://kheda.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorkheda",
+  "title": "Kheda",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://kheda.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMKheri",
+  "title": "Kheri",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://kheri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmkhowai",
+  "title": "Khowai",
+  "state": "Tripura",
+  "type": "E042",
+  "found_on": "https://khowai.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DCKinnaur",
+  "title": "Kinnaur",
+  "state": "Himachal Pradesh",
+  "type": "E042",
+  "found_on": "https://hpkinnaur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dckiphire",
+  "title": "Kiphire",
+  "state": "Nagaland",
+  "type": "E042",
+  "found_on": "https://kiphire.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_kishanganj",
+  "title": "Kishanganj",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://kishanganj.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "OfficeOfLGJandK",
+  "title": "Kishtwar",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://kishtwar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dckishtwar",
+  "title": "Kishtwar",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://kishtwar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dckodagu",
+  "title": "Kodagu",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://kodagu.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DEOKodagu",
+  "title": "Kodagu",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://kodagu.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dckoderma",
+  "title": "Koderma",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://koderma.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "depcomkolar",
+  "title": "Kolar",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://kolar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorKolha1",
+  "title": "Kolhapur",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://kolhapur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "KOLHAPUR_POLICE",
+  "title": "Kolhapur Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://kolhapurpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "kondagaondist",
+  "title": "Kondagaon",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://kondagaon.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Koppal_Dist",
+  "title": "Koppal",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://koppal.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "KoreaDist",
+  "title": "Korea",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://korea.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorkkd",
+  "title": "Kozhikode",
+  "state": "Kerala",
+  "type": "E042",
+  "found_on": "https://kozhikode.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "kvkpapumpare",
+  "title": "Krishi Vigyan Kendra (ICAR), Papum-Pare, Arunachal Pradesh",
+  "state": "Arunachal Pradesh",
+  "type": "E009",
+  "found_on": "https://kvkpapumpare.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DisCollrkgiri",
+  "title": "Krishnagiri",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://krishnagiri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DistrictKullu",
+  "title": "Kullu",
+  "state": "Himachal Pradesh",
+  "type": "E042",
+  "found_on": "https://hpkullu.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "manojsinha_",
+  "title": "Kupwara",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://kupwara.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dckupwara",
+  "title": "Kupwara",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://kupwara.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ddipr_knl",
+  "title": "Kurnool",
+  "state": "Andhra Pradesh",
+  "type": "E042",
+  "found_on": "https://kurnool.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "NayabSainiBJP",
+  "title": "Kurukshetra",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://kurukshetra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DistrictKKR",
+  "title": "Kurukshetra",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://kurukshetra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pemakhandubjp",
+  "title": "Kurung Kumey",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://kurungkumey.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Chukhu9",
+  "title": "Kurung Kumey",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://kurungkumey.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_kushinagar",
+  "title": "Kushinagar",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://kushinagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Labour & Employment Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/labour",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "LCOFFICEMP04",
+  "title": "Labour Department, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "E003",
+  "found_on": "https://labour.mponline.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mahakamgar",
+  "title": "Labour Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://mahakamgar.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pushkardhami",
+  "title": "Labour Department, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E003",
+  "found_on": "https://labour.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorlak",
+  "title": "Lakhisarai",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://lakhisarai.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "LakshadweepTou1",
+  "title": "Lakshadweep Tourism, Society for Promotion of Nature Tourism and Sports, Lakshadweep",
+  "state": "Lakshadweep",
+  "type": "OTHR",
+  "found_on": "https://samudram.utl.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "deo_lalitpur",
+  "title": "Lalitpur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://lalitpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HemantSorenJMM",
+  "title": "Latehar",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://latehar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "LateharDistrict",
+  "title": "Latehar",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://latehar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "laturdm",
+  "title": "Latur",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://latur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Law & Justice Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/law-and-justice",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Legal Metrology (Weights & Measures) Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/department-of-legal-metrology-weights-measures",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_leh_official",
+  "title": "Leh Ladakh",
+  "state": "Ladakh",
+  "type": "E042",
+  "found_on": "https://leh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Library Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/library",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorbhopal",
+  "title": "List of District Magistrates, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "OTHR",
+  "found_on": "https://bhopal.nic.in/en/dm-profiles",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_LOHARDAGA",
+  "title": "Lohardaga",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://lohardaga.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "LtGenGurmit",
+  "title": "Lok Bhawan, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "OTHR",
+  "found_on": "https://governoruk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_roing",
+  "title": "Lower Dibang Valley",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://roing.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "narendramodi",
+  "title": "Lucknow",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://lucknow.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "myogiadityanath",
+  "title": "Lucknow",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://lucknow.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DM_Mauganj",
+  "title": "MAUGANJ",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://mauganj.nic.in/en",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_madhepura",
+  "title": "Madhepura",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://madhepura.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmMadhubani",
+  "title": "Madhubani",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://madhubani.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collector_MDU",
+  "title": "Madurai",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://madurai.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "telanganacmo",
+  "title": "Mahabubnagar",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://mahabubnagar.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collector_mbnr",
+  "title": "Mahabubnagar",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://mahabubnagar.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "FireServies",
+  "title": "Maharashtra Fire Services, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E011",
+  "found_on": "https://mahafireservice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mpcb_official",
+  "title": "Maharashtra Pollution Control Board (MPCB), Maharashtra",
+  "state": "Maharashtra",
+  "type": "E011",
+  "found_on": "https://mpcb.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MSHRC_Mumbai",
+  "title": "Maharashtra State Human Rights Commission",
+  "state": "Maharashtra",
+  "type": "E013",
+  "found_on": "https://www.mshrc.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DGPMaharashtra",
+  "title": "Maharashtra State Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E004",
+  "found_on": "https://www.mahapolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DGPMaharashtra",
+  "title": "Maharashtra State Reserve Police Force (SRPF), Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://maharashtrasrpf.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Bhupendrapbjp",
+  "title": "Mahesana",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://mahesana.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorMeh",
+  "title": "Mahesana",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://mahesana.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmMahoba",
+  "title": "Mahoba",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://mahoba.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmMaharajganj",
+  "title": "Mahrajganj",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://maharajganj.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmMainpuri",
+  "title": "Mainpuri",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://mainpuri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dpromalerkotla",
+  "title": "Malerkotla",
+  "state": "Punjab",
+  "type": "E042",
+  "found_on": "https://malerkotla.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMandsaur",
+  "title": "Mandsaur",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://mandsaur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMMathura1",
+  "title": "Mathura",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://mathura.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMMau1",
+  "title": "Mau",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://mau.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TelanganaCMO",
+  "title": "Medak",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://medak.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_MDK",
+  "title": "Medak",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://medak.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "telanganacmo",
+  "title": "Medchal Malkajgiri",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://medchal-malkajgiri.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collector_mdl",
+  "title": "Medchal Malkajgiri",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://medchal-malkajgiri.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mponlinelimited",
+  "title": "Medical Education Department, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "E003",
+  "found_on": "https://dme.mponline.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Mah_MEDD",
+  "title": "Medical Education and Drugs Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://medical.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mrb_tn",
+  "title": "Medical Services Recruitment Board (MRB), Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E011",
+  "found_on": "https://www.mrb.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmMeerut",
+  "title": "Meerut",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://meerut.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mbda_meghalaya",
+  "title": "Meghalaya Basin Development Authority (MBDA), Meghalaya",
+  "state": "Meghalaya",
+  "type": "OTHR",
+  "found_on": "https://mbda.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "meg_srlm",
+  "title": "Meghalaya State Rural Livelihoods Society, Meghalaya",
+  "state": "Meghalaya",
+  "type": "OTHR",
+  "found_on": "https://msrls.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "iprdkerala",
+  "title": "Minister for Information Public Relations Department, Kerala",
+  "state": "Kerala",
+  "type": "OTHR",
+  "found_on": "https://prd.kerala.gov.in/council-of-ministers",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MBVVPOLICE",
+  "title": "Mira Bhayandar, Vasai Virar Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://mbvv.mahapolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mmacdistrict_cg",
+  "title": "Mohla-Manpur-Ambagarh Chouki",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://mohla-manpur-ambagarhchowki.cg.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pmoindia",
+  "title": "Moradabad",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://moradabad.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectormorena",
+  "title": "Morena",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://morena.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MMVD_RTO",
+  "title": "Motor Vehicles Department ( R.T.O.), Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://transport.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TelanganaCMO",
+  "title": "Mulugu",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://mulugu.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorMulugu",
+  "title": "Mulugu",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://mulugu.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "COMumbaicity",
+  "title": "Mumbai",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://mumbaicity.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mmrdaofficial",
+  "title": "Mumbai Metropolitan Region Development Authority (MMRDA), Maharashtra",
+  "state": "Maharashtra",
+  "type": "E011",
+  "found_on": "https://mmrda.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MSDCollector",
+  "title": "Mumbai Suburban",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://mumbaisuburban.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MumbaiPolice",
+  "title": "Mumbai Traffic Police, Maharshtra",
+  "state": "Maharashtra",
+  "type": "E059",
+  "found_on": "https://trafficpolicemumbai.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Municipal Corporation Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/municipal-corporation",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovArunachal",
+  "title": "MyGov Arunachal Pradesh",
+  "state": "Arunachal Pradesh",
+  "type": "OTHR",
+  "found_on": "https://arunachal.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mygovassam",
+  "title": "MyGov Assam",
+  "state": "Assam",
+  "type": "OTHR",
+  "found_on": "https://assam.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cgmygov",
+  "title": "MyGov Chhattisgarh",
+  "state": "Chhattisgarh",
+  "type": "OTHR",
+  "found_on": "https://chhattisgarh.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovGoa",
+  "title": "MyGov Goa",
+  "state": "Goa",
+  "type": "OTHR",
+  "found_on": "https://goa.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cmoguj",
+  "title": "MyGov Gujarat",
+  "state": "Gujarat",
+  "type": "OTHR",
+  "found_on": "https://gujarat.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mygovharyana",
+  "title": "MyGov Haryana",
+  "state": "Haryana",
+  "type": "OTHR",
+  "found_on": "https://haryana.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mygovhimachal",
+  "title": "MyGov Himachal Pradesh",
+  "state": "Himachal Pradesh",
+  "type": "OTHR",
+  "found_on": "https://himachal.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovJandK",
+  "title": "MyGov Jammu and Kashmir",
+  "state": "Jammu and Kashmir",
+  "type": "OTHR",
+  "found_on": "https://jk.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovIndia",
+  "title": "MyGov Jharkhand",
+  "state": "Jharkhand",
+  "type": "OTHR",
+  "found_on": "https://jharkhand.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovKarnataka",
+  "title": "MyGov Karnataka",
+  "state": "Karnataka",
+  "type": "OTHR",
+  "found_on": "https://karnataka.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovIndia",
+  "title": "MyGov Ladakh",
+  "state": "Ladakh",
+  "type": "OTHR",
+  "found_on": "https://ladakh.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MP_MyGov",
+  "title": "MyGov Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "OTHR",
+  "found_on": "https://mp.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mygovMaha",
+  "title": "MyGov Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://maharashtra.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "manipurmygov",
+  "title": "MyGov Manipur",
+  "state": "Manipur",
+  "type": "OTHR",
+  "found_on": "https://manipur.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovIndia",
+  "title": "MyGov Mizoram",
+  "state": "Mizoram",
+  "type": "OTHR",
+  "found_on": "https://mizoram.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovNagaland",
+  "title": "MyGov Nagaland",
+  "state": "Nagaland",
+  "type": "OTHR",
+  "found_on": "https://nagaland.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovIndia",
+  "title": "MyGov Rajasthan",
+  "state": "Rajasthan",
+  "type": "OTHR",
+  "found_on": "https://rajasthan.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGovTamilNadu",
+  "title": "MyGov Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "OTHR",
+  "found_on": "https://tamilnadu.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mygovtripura",
+  "title": "MyGov Tripura",
+  "state": "Tripura",
+  "type": "OTHR",
+  "found_on": "https://tripura.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGov_UP",
+  "title": "MyGov Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "OTHR",
+  "found_on": "https://up.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MyGov_UK",
+  "title": "MyGov Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "OTHR",
+  "found_on": "https://uttarakhand.mygov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DCMysuru",
+  "title": "Mysuru",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://mysore.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "UPPolNRI",
+  "title": "NRI Department, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E003",
+  "found_on": "https://nri.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "UPPBD2019",
+  "title": "NRI Department, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E003",
+  "found_on": "https://nri.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DM_NADIA_WB",
+  "title": "Nadia",
+  "state": "West Bengal",
+  "type": "E042",
+  "found_on": "https://nadia.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "npcb_nagaland",
+  "title": "Nagaland Pollution Control Board, Nagaland",
+  "state": "Nagaland",
+  "type": "E051",
+  "found_on": "https://npcb.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "statedisaster",
+  "title": "Nagaland State Disaster Management Authority, Nagaland",
+  "state": "Nagaland",
+  "type": "E011",
+  "found_on": "https://nsdma.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "NSRLM2",
+  "title": "Nagaland State Rural Livelihoods Mission",
+  "state": "Nagaland",
+  "type": "SPMA",
+  "found_on": "https://nsrlm.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_NGT",
+  "title": "Nagapattinam",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://www.nagapattinam.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "department95512",
+  "title": "Nagar Vikas Vibag, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://urban.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TelanganaCMO",
+  "title": "Nagarkurnool",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://nagarkurnool.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collector_NGKL",
+  "title": "Nagarkurnool",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://nagarkurnool.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "InfoNagpur",
+  "title": "Nagpur",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://nagpur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "NagpurPolice",
+  "title": "Nagpur City Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://nagpurpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmnalanda",
+  "title": "Nalanda",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://nalanda.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_NLG",
+  "title": "Nalgonda",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://nalgonda.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectornmk",
+  "title": "Namakkal",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://namakkal.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DistrictNamsai",
+  "title": "Namsai",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://namsai.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "InfoNanded",
+  "title": "Nanded",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://nanded.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_Nandurbar",
+  "title": "Nandurbar",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://nandurbar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "infonandurbar",
+  "title": "Nandurbar",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://nandurbar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "telanganacmo",
+  "title": "Narayanpet",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://narayanpet.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collector_nrpt",
+  "title": "Narayanpet",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://narayanpet.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorNar",
+  "title": "Narmada",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://narmada.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmhoshangabad",
+  "title": "Narmadapuram",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://narmadapuram.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmnarsinghpur",
+  "title": "Narsimhapur",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://narsinghpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorNashik",
+  "title": "Nashik",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://nashik.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "IGR_Maharashtra",
+  "title": "National Generic Document Registration System, Manipur",
+  "state": "Manipur",
+  "type": "OTHR",
+  "found_on": "https://ngdrsmanipur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "nhm_up",
+  "title": "National Health Mission (NHM), Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "OTHR",
+  "found_on": "https://upnrhm.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "nhm_uttarakhand",
+  "title": "National Health Mission, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "SPMA",
+  "found_on": "https://nhm.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorNav",
+  "title": "Navsari",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://navsari.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "NavsariRac",
+  "title": "Navsari",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://navsari.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMNawada",
+  "title": "Nawada",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://nawada.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectornemuch",
+  "title": "Neemuch",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://neemuch.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "tweetndmc",
+  "title": "New Delhi Muncipal Council (NDMC)",
+  "state": "Delhi",
+  "type": "OTHR",
+  "found_on": "https://ndmc.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "_InvestUP",
+  "title": "Nivesh Mitra 3.0, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://niveshmitra.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "_InvestUP",
+  "title": "Nivesh Mitra, Infrastructure and Industrial Development Department, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E003",
+  "found_on": "https://niveshmitra.up.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_NZB",
+  "title": "Nizamabad",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://nizamabad.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMODelhi",
+  "title": "North",
+  "state": "Delhi",
+  "type": "E042",
+  "found_on": "https://dmnorth.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DelhiDm14698",
+  "title": "North",
+  "state": "Delhi",
+  "type": "E042",
+  "found_on": "https://dmnorth.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMNorth24PGS",
+  "title": "North 24 Parganas",
+  "state": "West Bengal",
+  "type": "E042",
+  "found_on": "https://north24parganas.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_northeast",
+  "title": "North East",
+  "state": "Delhi",
+  "type": "E042",
+  "found_on": "https://dmnortheast.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "NorthDeo",
+  "title": "North Tripura",
+  "state": "Tripura",
+  "type": "E042",
+  "found_on": "https://northtripura.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DM_NorthWest",
+  "title": "North West",
+  "state": "Delhi",
+  "type": "E042",
+  "found_on": "https://dmnorthwest.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collectorntr",
+  "title": "Ntr",
+  "state": "Andhra Pradesh",
+  "type": "E042",
+  "found_on": "https://ntr.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "OdishaFS_HGs_CD",
+  "title": "Odisha Fire Service, Home Guards & Civil Defence, Odisha",
+  "state": "Odisha",
+  "type": "E004",
+  "found_on": "https://odishafshgscd.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "STAOdisha",
+  "title": "Odisha Motor Vehicle Department",
+  "state": "Odisha",
+  "type": "E003",
+  "found_on": "https://odishatransport.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "odisha_tourism",
+  "title": "Odisha Tourism",
+  "state": "Odisha",
+  "type": "OTHR",
+  "found_on": "https://odishatourism.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CommissionerMe3",
+  "title": "Office of the Divisional Commissioner, Meerut Division, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "OTHR",
+  "found_on": "https://meerutdivision.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cgstchennaizone",
+  "title": "Office of the Principal Chief Commissioner of GST & Central Excise Tamil Nadu & Puducherry Zone, Puducherry",
+  "state": "Puducherry",
+  "type": "OTHR",
+  "found_on": "https://gstchennai.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Official Language Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/rajbhasha-vibhag-official-language",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Official Portal UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "SPORT",
+  "found_on": "https://ddd.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "iprdkerala",
+  "title": "Official Portal of Kerala Government",
+  "state": "Kerala",
+  "type": "SPORT",
+  "found_on": "https://kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Official Portal of Ladakh Government",
+  "state": "Ladakh",
+  "type": "SPORT",
+  "found_on": "https://ladakh.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MahaDGIPR",
+  "title": "Official Portal of Maharashtra Government",
+  "state": "Maharashtra",
+  "type": "SPORT",
+  "found_on": "https://www.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "govt_of_manipur",
+  "title": "Official Portal of Manipur Government",
+  "state": "Manipur",
+  "type": "SPORT",
+  "found_on": "https://manipur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMO_Meghalaya",
+  "title": "Official Portal of Meghalaya Government",
+  "state": "Meghalaya",
+  "type": "SPORT",
+  "found_on": "https://meghalaya.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MeghalayaGov",
+  "title": "Official Portal of Meghalaya Government",
+  "state": "Meghalaya",
+  "type": "SPORT",
+  "found_on": "https://meghalaya.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "utofpuducherry",
+  "title": "Official Portal of Puducherry Government",
+  "state": "Puducherry",
+  "type": "SPORT",
+  "found_on": "https://www.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "telanganacmo",
+  "title": "Official Portal of Telangana Government",
+  "state": "Telangana",
+  "type": "SPORT",
+  "found_on": "https://telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "bih_serviceplus",
+  "title": "Online Citizen Services Portal, Bihar",
+  "state": "Bihar",
+  "type": "OTHR",
+  "found_on": "https://serviceonline.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "odepckerala",
+  "title": "Overseas Development and Employment Promotion Consultants Ltd. (ODEPC), Kerala",
+  "state": "Kerala",
+  "type": "OTHR",
+  "found_on": "https://odepc.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "OverseasManpow2",
+  "title": "Overseas Manpower Corporation Ltd., Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E011",
+  "found_on": "https://omcmanpower.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "PHE & IFC Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/phe-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcpakur",
+  "title": "Pakur",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://pakur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_Palamu",
+  "title": "Palamu",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://palamu.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorpal",
+  "title": "Palghar",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://palghar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MahaDGIPR",
+  "title": "Palghar",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://palghar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorgodhra",
+  "title": "Panch Mahals",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://panchmahals.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "uppanchayatiraj",
+  "title": "Panchayati Raj Department, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E003",
+  "found_on": "https://panchayatiraj.up.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SBMGUP2",
+  "title": "Panchayati Raj Department, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E003",
+  "found_on": "https://panchayatiraj.up.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_PANCHKULA",
+  "title": "Panchkula",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://panchkula.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorpanna",
+  "title": "Panna",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://panna.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DA_PapumPare",
+  "title": "Papum Pare",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://papumpare.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DistrictPaschim",
+  "title": "Paschim Bardhaman",
+  "state": "West Bengal",
+  "type": "E042",
+  "found_on": "https://paschimbardhaman.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dpropatiala",
+  "title": "Patiala",
+  "state": "Punjab",
+  "type": "E042",
+  "found_on": "https://patiala.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_patna",
+  "title": "Patna",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://patna.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PatnaPolice24x7",
+  "title": "Patna",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://patna.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_PDPL",
+  "title": "Peddapalli",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://peddapalli.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PMOIndia",
+  "title": "Pilibhit",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://pilibhit.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOfficeUP",
+  "title": "Pilibhit",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://pilibhit.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PCcitypolice",
+  "title": "Pimpri Chinchwad Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://pcpc.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmPithoragarh",
+  "title": "Pithoragarh",
+  "state": "Uttarakhand",
+  "type": "E042",
+  "found_on": "https://pithoragarh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cpjalandhar",
+  "title": "Police Commissionerate Jalandhar, Punjab",
+  "state": "Punjab",
+  "type": "E051",
+  "found_on": "https://jalandharcity.punjabpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DelhiPolice",
+  "title": "Police Department, Delhi",
+  "state": "Delhi",
+  "type": "E003",
+  "found_on": "https://delhipolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PuducheryPolice",
+  "title": "Police Department, Puducherry",
+  "state": "Puducherry",
+  "type": "E003",
+  "found_on": "https://police.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "sikkim_police",
+  "title": "Police Department, Sikkim",
+  "state": "Sikkim",
+  "type": "E003",
+  "found_on": "https://police.sikkim.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Police Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/police",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PRTSindore",
+  "title": "Police Radio Training School, Indore, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "OTHR",
+  "found_on": "https://prts-mppolice.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Pollution Control Committee Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/pollution-control-committee",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PoonchDM",
+  "title": "Poonch",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://poonch.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DICPoonch",
+  "title": "Poonch",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://poonch.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcprakasam",
+  "title": "Prakasam",
+  "state": "Andhra Pradesh",
+  "type": "E042",
+  "found_on": "https://prakasam.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pmoindia",
+  "title": "Prayagraj Division, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "OTHR",
+  "found_on": "https://prayagrajdivision.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOfficeUP",
+  "title": "Prayagraj Division, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "OTHR",
+  "found_on": "https://prayagrajdivision.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "AssetsPublic",
+  "title": "Public Assets Management Department, Madhya Pradesh",
+  "state": "Madhya Pradesh",
+  "type": "E003",
+  "found_on": "https://pam.mp.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "nagalandphed",
+  "title": "Public Health Engineering Department, Nagaland",
+  "state": "Nagaland",
+  "type": "E003",
+  "found_on": "https://phed.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "GowbPhe",
+  "title": "Public Health Engineering Department, West Bengal",
+  "state": "West Bengal",
+  "type": "E003",
+  "found_on": "https://www.wbphed.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MahaHealthIEC",
+  "title": "Public Health and Family Welfare Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://phd.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PWD125810",
+  "title": "Public Works Department, Himachal Pradesh",
+  "state": "Himachal Pradesh",
+  "type": "E003",
+  "found_on": "https://hppwd.hp.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Public Works Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/public-works-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorDeoPdy",
+  "title": "Puducherry",
+  "state": "Puducherry",
+  "type": "E042",
+  "found_on": "https://puducherry-dt.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcpulwama",
+  "title": "Pulwama",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://pulwama.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Dev_Fadnavis",
+  "title": "Pune",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://pune.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mieknathshinde",
+  "title": "Pune",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://pune.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "puneruralpolice",
+  "title": "Pune Rural Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://puneruralpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PBAgroOfficial",
+  "title": "Punjab Agro Industries Corporation Limited (PAIC), Punjab",
+  "state": "Punjab",
+  "type": "E011",
+  "found_on": "https://punjabagro.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmpurbmedinipur",
+  "title": "Purba Medinipur",
+  "state": "West Bengal",
+  "type": "E042",
+  "found_on": "https://purbamedinipur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "medinipursp",
+  "title": "Purba Medinipur District Police, West Bengal",
+  "state": "West Bengal",
+  "type": "E051",
+  "found_on": "https://www.purbamedinipurpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmpurnea",
+  "title": "Purnia",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://purnea.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "admnreforms",
+  "title": "RTI Online, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://rtionline.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "narendramodi",
+  "title": "Rae Bareli",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://raebareli.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "myogiadityanath",
+  "title": "Rae Bareli",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://raebareli.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MahaDGIPR",
+  "title": "Raigad",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://raigad.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOMaharashtra",
+  "title": "Raigad",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://raigad.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "RaigadPolice",
+  "title": "Raigad Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://raigadpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "raigarhdist",
+  "title": "Raigarh",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://raigarh.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorraisen",
+  "title": "Raisen",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://raisen.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TelanganaCMO",
+  "title": "Rajanna Sircilla",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://rajannasircilla.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_RSL",
+  "title": "Rajanna Sircilla",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://rajannasircilla.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorrajga1",
+  "title": "Rajgarh",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://rajgarh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Aarogyasri_TS",
+  "title": "Rajiv Aarogyasri Health Care Trust, Telangana",
+  "state": "Telangana",
+  "type": "E051",
+  "found_on": "https://www.rajivaarogyasri.telangana.gov.in/ASRI2.0",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOGuj",
+  "title": "Rajkot",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://rajkot.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorRjt",
+  "title": "Rajkot",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://rajkot.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "RajnandgaonDist",
+  "title": "Rajnandgaon",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://rajnandgaon.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmrajouri",
+  "title": "Rajouri",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://rajouri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DioRajouri",
+  "title": "Rajouri",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://rajouri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcramban",
+  "title": "Ramban",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://ramban.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DIPRRambandic",
+  "title": "Ramban",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://ramban.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_ramgarh",
+  "title": "Ramgarh",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://ramgarh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "RampurDm",
+  "title": "Rampur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://rampur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_Ranchi",
+  "title": "Ranchi",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://ranchi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "RatlamCollector",
+  "title": "Ratlam",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://ratlam.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMReasi",
+  "title": "Reasi",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://reasi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Delhicoop",
+  "title": "Registrar Cooperative Society, Delhi",
+  "state": "Delhi",
+  "type": "E059",
+  "found_on": "https://rcs.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TNCOOPDEPT",
+  "title": "Registrar of Cooperative Societies, Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E059",
+  "found_on": "https://rcs.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dro_pon",
+  "title": "Registration Department, Puducherry",
+  "state": "Puducherry",
+  "type": "E003",
+  "found_on": "https://regn.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Hareda_Haryana",
+  "title": "Renewable Energy Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://hareda.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "cmopb",
+  "title": "Revenue Court Management System, Punjab",
+  "state": "Punjab",
+  "type": "SPMA",
+  "found_on": "https://rcms.punjab.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Revenue Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/revenue-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "RCuttack",
+  "title": "Revenue Divisional Commissioner (Central Division), Cuttack, Odisha",
+  "state": "Odisha",
+  "type": "E043",
+  "found_on": "https://rdccdcuttack.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "RewaCollector",
+  "title": "Rewa",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://rewa.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DistrictRewari",
+  "title": "Rewari",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://rewari.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "biprajasthan",
+  "title": "Rising Rajasthan Global Investment Summit, Rajasthan",
+  "state": "Rajasthan",
+  "type": "SPMA",
+  "found_on": "https://rising.rajasthan.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_Rohtak",
+  "title": "Rohtak",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://rohtak.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_rohtas",
+  "title": "Rohtas",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://rohtas.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SangamRojg52942",
+  "title": "Rojgaar Sangam, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "OTHR",
+  "found_on": "https://rojgaarsangam.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Rural Development & Panchayati Raj Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/rural-development-panchayati-raj-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "RD_Haryana",
+  "title": "Rural Development Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://haryanarural.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Rural Development Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/rural-development",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "gramvikasvibhag",
+  "title": "Rural Development and Panchayat Raj Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://rdd.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcmohali",
+  "title": "S.A.S Nagar",
+  "state": "Punjab",
+  "type": "E042",
+  "found_on": "https://sasnagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorSK",
+  "title": "Sabar Kantha",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://sabarkantha.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorsagar",
+  "title": "Sagar",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://sagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "saharanpurdm",
+  "title": "Saharanpur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://saharanpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SaharsaDm",
+  "title": "Saharsa",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://saharsa.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_sahibganj",
+  "title": "Sahebganj",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://sahibganj.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "OfficeCMBihar",
+  "title": "Sahyog Portal - Real Time Monitoring System",
+  "state": "Bihar",
+  "type": "SPMA",
+  "found_on": "https://sahyog.bihar.gov.in/Sahyog/Default.aspx",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "district_salem",
+  "title": "Salem",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://salem.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DM_Samastipur",
+  "title": "Samastipur",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://samastipur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "diosamba1",
+  "title": "Samba",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://samba.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcsambaoffice",
+  "title": "Samba",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://samba.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DmSambhal",
+  "title": "Sambhal",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://sambhal.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SamoohikaS",
+  "title": "Samoohika Sannadhasena, Kerala",
+  "state": "Kerala",
+  "type": "SPMA",
+  "found_on": "https://sannadhasena.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TelanganaCMO",
+  "title": "Sangareddy",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://sangareddy.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collector_srd",
+  "title": "Sangareddy",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://sangareddy.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_sangrur",
+  "title": "Sangrur",
+  "state": "Punjab",
+  "type": "E042",
+  "found_on": "https://sangrur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DM_Sknagar",
+  "title": "Sant Kabir Nagar",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://sknagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DistrictSant",
+  "title": "Sant Kabir Nagar",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://sknagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SEEPZ_SEZ",
+  "title": "Santacruz Electronic Export Processing Zone (SEEPZ), Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://seepz.gov.in/introduction",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DCseraikella",
+  "title": "Saraikela Kharsawan",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://seraikela.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "saran_dm",
+  "title": "Saran",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://saran.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_Satna",
+  "title": "Satna",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://satna.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "utofpuducherry",
+  "title": "School Education Department, Puducherry",
+  "state": "Puducherry",
+  "type": "E003",
+  "found_on": "https://py.gov.in/school-education",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Science & Technology Department Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/science-technology-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "KSCSTE",
+  "title": "Science and Technology Department, Kerala",
+  "state": "Kerala",
+  "type": "E003",
+  "found_on": "https://www.kscste.kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorSehore",
+  "title": "Sehore",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://sehore.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorseoni1",
+  "title": "Seoni",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://seoni.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SeriUttarakhand",
+  "title": "Sericulture Department, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E003",
+  "found_on": "https://silk.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "sewa_mitra",
+  "title": "Sewa Mitra, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://sewamitra.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmshahdol",
+  "title": "Shahdol",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://shahdol.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmupsha",
+  "title": "Shahjahanpur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://shahjahanpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PROJSShajapur",
+  "title": "Shajapur",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://shajapur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_sheikhpura",
+  "title": "Sheikhpura",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://sheikhpura.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ShekhpuraPolice",
+  "title": "Sheikhpura",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://sheikhpura.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMSheohar",
+  "title": "Sheohar",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://sheohar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_sheohar",
+  "title": "Sheohar",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://sheohar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "projssheopur",
+  "title": "Sheopur",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://sheopur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_shimla",
+  "title": "Shimla",
+  "state": "Himachal Pradesh",
+  "type": "E042",
+  "found_on": "https://hpshimla.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorshivp1",
+  "title": "Shivpuri",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://shivpuri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmshopian",
+  "title": "Shopian",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://shopian.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Information",
+  "title": "Shopian",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://shopian.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmshravasti",
+  "title": "Shrawasti",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://shravasti.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "BKTC_UK",
+  "title": "Shri Badarinath Kedarnath Temple Committee, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "OTHR",
+  "found_on": "https://badrinath-kedarnath.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_SDPT",
+  "title": "Siddipet",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://siddipet.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SidhiCollector",
+  "title": "Sidhi",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://sidhi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SSDMA1",
+  "title": "Sikkim State Disaster Management Authority (SSDMA), Sikkim",
+  "state": "Sikkim",
+  "type": "E011",
+  "found_on": "https://www.ssdma.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_simdega",
+  "title": "Simdega",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://simdega.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "InfoSindhudurg",
+  "title": "Sindhudurg",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://sindhudurg.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Sindhudurg_SP",
+  "title": "Sindhudurg Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://sindhudurgpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DoIndustries_HP",
+  "title": "Single Window Clearance System, Himachal Pradesh",
+  "state": "Himachal Pradesh",
+  "type": "OTHR",
+  "found_on": "https://emerginghimachal.hp.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorSGL",
+  "title": "Singrauli",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://singrauli.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "diprosirsa",
+  "title": "Sirsa",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://sirsa.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_sitapur",
+  "title": "Sitapur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://sitapur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "visitnaimis",
+  "title": "Sitapur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://sitapur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Official_Siwan",
+  "title": "Siwan",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://siwan.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "sp_siwan",
+  "title": "Siwan",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://siwan.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "GoM_SEEID",
+  "title": "Skills, Employment, Entrepreneurship and Innovation Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://www.mahaswayam.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mahasjsa",
+  "title": "Social Justice and Special Assistance Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://sjsa.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "socialwelfaren1",
+  "title": "Social Welfare Department, Nagaland",
+  "state": "Nagaland",
+  "type": "E003",
+  "found_on": "https://dsw.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "socialwelfarepy",
+  "title": "Social Welfare Department, Puducherry",
+  "state": "Puducherry",
+  "type": "E003",
+  "found_on": "https://socwelfare.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Social Welfare Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/social-welfare-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_sol_hp",
+  "title": "Solan",
+  "state": "Himachal Pradesh",
+  "type": "E042",
+  "found_on": "https://hpsolan.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Info_Solapur",
+  "title": "Solapur",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://solapur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "sonipatdc",
+  "title": "Sonipat",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://sonipat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMSouthDelhi",
+  "title": "South",
+  "state": "Delhi",
+  "type": "E042",
+  "found_on": "https://dmsouth.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Deosouth24",
+  "title": "South 24 Parganas",
+  "state": "West Bengal",
+  "type": "E042",
+  "found_on": "https://s24pgs.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmsoutheastdelh",
+  "title": "South East",
+  "state": "Delhi",
+  "type": "E042",
+  "found_on": "https://dmsoutheast.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "goacm",
+  "title": "South Goa",
+  "state": "Goa",
+  "type": "E042",
+  "found_on": "https://southgoa.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Coll_SouthGoa",
+  "title": "South Goa",
+  "state": "Goa",
+  "type": "E042",
+  "found_on": "https://southgoa.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "southtripuraDM",
+  "title": "South Tripura",
+  "state": "Tripura",
+  "type": "E042",
+  "found_on": "https://southtripura.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMSouthWest1",
+  "title": "South West",
+  "state": "Delhi",
+  "type": "E042",
+  "found_on": "https://dmsouthwest.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcOfficeSwkhMeg",
+  "title": "South West Khasi Hills",
+  "state": "Meghalaya",
+  "type": "E042",
+  "found_on": "https://southwestkhasihills.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "satg_sports",
+  "title": "Sports Authority of Telangana",
+  "state": "Telangana",
+  "type": "E051",
+  "found_on": "https://satg.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dsya_haryana",
+  "title": "Sports and Youth Affairs Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://haryanasports.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_SSSD",
+  "title": "Sri Sathya Sai",
+  "state": "Andhra Pradesh",
+  "type": "E042",
+  "found_on": "https://srisathyasai.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collectorsklm",
+  "title": "Srikakulam",
+  "state": "Andhra Pradesh",
+  "type": "E042",
+  "found_on": "https://srikakulam.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "OfficeOfLGJandK",
+  "title": "Srinagar",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://srinagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "srinagaradmin",
+  "title": "Srinagar",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://srinagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "UPStartuppolicy",
+  "title": "StartInUP Portal",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://startinup.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SBTEBihar",
+  "title": "State Board of Technical Education (SBTE), Bihar",
+  "state": "Bihar",
+  "type": "E005",
+  "found_on": "https://sbte.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SCERT_haryana",
+  "title": "State Council of Educational Research & Training, Haryana",
+  "state": "Haryana",
+  "type": "OTHR",
+  "found_on": "https://scertharyana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SCERT2021",
+  "title": "State Council of Educational Research and Training (SCERT), Delhi",
+  "state": "Delhi",
+  "type": "OTHR",
+  "found_on": "https://scert.delhi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "State Disaster Management Authority Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/state-disaster-management-authority",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SHSBihar",
+  "title": "State Health Society, Bihar",
+  "state": "Bihar",
+  "type": "E059",
+  "found_on": "https://shs.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "twitter",
+  "title": "State Investment and Project Management and Implementation Unit (SIPMIU), Shillong, Megalaya",
+  "state": "Meghalaya",
+  "type": "OTHR",
+  "found_on": "https://sipmiu.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "State Taxes Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/state-taxes-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "hpsvacb",
+  "title": "State Vigilance & Anti Corruption Bureau, Himachal Pradesh",
+  "state": "Himachal Pradesh",
+  "type": "E051",
+  "found_on": "https://hpsvacb.hp.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SukmaDist",
+  "title": "Sukma",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://sukma.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SultanpurDm",
+  "title": "Sultanpur",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://sultanpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SurajpurDist",
+  "title": "Surajpur",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://surajpur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorsurat",
+  "title": "Surat",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://surat.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CMOGuj",
+  "title": "Surendranagar",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://surendranagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorSRN",
+  "title": "Surendranagar",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://surendranagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collsurguja",
+  "title": "Surguja",
+  "state": "Chhattisgarh",
+  "type": "E042",
+  "found_on": "https://surguja.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "boardofrevenue",
+  "title": "Survey of Villages Abadi and Mapping with Improvised Technology in Village Areas (SVAMITVA)",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://svamitva.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorSRPT",
+  "title": "Suryapet",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://suryapet.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SwachhJk",
+  "title": "Swachh Bharat Mission Urban 2.0, Jammu & Kashmir",
+  "state": "Jammu and Kashmir",
+  "type": "SPMA",
+  "found_on": "https://swachh.jk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "sbmuttarakhand",
+  "title": "Swajal Project, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "OTHR",
+  "found_on": "https://swajal.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TGCE_PORTBLAIR",
+  "title": "Tagore Government College of Education (TGCE), Port Blair",
+  "state": "Andaman and Nicobar Islands",
+  "type": "E009",
+  "found_on": "https://tgce.and.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_Tamenglong",
+  "title": "Tamenglong",
+  "state": "Manipur",
+  "type": "E042",
+  "found_on": "https://tamenglong.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TNeGA_Official",
+  "title": "Tamil Nadu Geographical Information System, Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "OTHR",
+  "found_on": "https://tngis.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorTapi",
+  "title": "Tapi",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://tapi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "tarntaran46",
+  "title": "Tarn Taran",
+  "state": "Punjab",
+  "type": "E042",
+  "found_on": "https://tarntaran.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "diprotawang",
+  "title": "Tawang",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://tawang.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PemaKhanduBJP",
+  "title": "Tawang",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://tawang.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Technical Education and Skill Development Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/technical-education-and-skill-development",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ukcmo",
+  "title": "Tehri Garhwal",
+  "state": "Uttarakhand",
+  "type": "E042",
+  "found_on": "https://tehri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DIPR_Tehri",
+  "title": "Tehri Garhwal",
+  "state": "Uttarakhand",
+  "type": "E042",
+  "found_on": "https://tehri.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ts_womensafety",
+  "title": "Telangana Police Women Safety Wing",
+  "state": "Telangana",
+  "type": "OTHR",
+  "found_on": "https://womensafetywing.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "tg_womensafety",
+  "title": "Telangana Police Women Safety Wing",
+  "state": "Telangana",
+  "type": "OTHR",
+  "found_on": "https://womensafetywing.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TS_REDCO",
+  "title": "Telangana State Renewable Energy Development Corporation Ltd., (TSREDCO), Telangana",
+  "state": "Telangana",
+  "type": "E011",
+  "found_on": "https://tgredco.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DCTengnoupal",
+  "title": "Tengnoupal",
+  "state": "Manipur",
+  "type": "E042",
+  "found_on": "https://tengnoupal.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollrTenkasi",
+  "title": "Tenkasi",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://tenkasi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ThaneCityPolice",
+  "title": "Thane City Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E059",
+  "found_on": "https://thanepolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TSRruralpolice",
+  "title": "Thrissur Rural Police, Kerala",
+  "state": "Kerala",
+  "type": "OTHR",
+  "found_on": "https://thrissurrural.keralapolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "tikamgarhc",
+  "title": "Tikamgarh",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://tikamgarh.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collector_try",
+  "title": "Tiruchirappalli",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://tiruchirappalli.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "tourismmanipur",
+  "title": "Tourism Department, Manipur",
+  "state": "Manipur",
+  "type": "E003",
+  "found_on": "https://manipurtourism.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "tourismdeptgon",
+  "title": "Tourism Department, Nagaland",
+  "state": "Nagaland",
+  "type": "E003",
+  "found_on": "https://tourism.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Tourism Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/tourism-2",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "hp_tourism",
+  "title": "Tourism and Civil Aviation Department, Himachal Pradesh",
+  "state": "Himachal Pradesh",
+  "type": "E003",
+  "found_on": "https://himachaltourism.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TCPDPuducherry",
+  "title": "Town and Country Planning Department, Puducherry",
+  "state": "Puducherry",
+  "type": "E003",
+  "found_on": "https://tcpd.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Town and Country Planning Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/town-and-country-planning",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "meg_transport",
+  "title": "Transport Department, Meghalaya",
+  "state": "Meghalaya",
+  "type": "E003",
+  "found_on": "https://megtransport.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "TDpuducherry",
+  "title": "Transport Department, Puducherry",
+  "state": "Puducherry",
+  "type": "E003",
+  "found_on": "https://transport.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dctumakuru",
+  "title": "Tumakuru",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://tumkur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "uprampofficial",
+  "title": "UP MSME 1-Connect Portal",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://msme1connect.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Uppolice",
+  "title": "UP Police, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E051",
+  "found_on": "https://uppolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_usnagar",
+  "title": "Udham Singh Nagar",
+  "state": "Uttarakhand",
+  "type": "E042",
+  "found_on": "https://usnagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "manojsinha_",
+  "title": "Udhampur",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://udhampur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "udhadm",
+  "title": "Udhampur",
+  "state": "Jammu and Kashmir",
+  "type": "E042",
+  "found_on": "https://udhampur.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcudupi",
+  "title": "Udupi",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://udupi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "IndustriesBihar",
+  "title": "Udyami Portal, Bihar",
+  "state": "Bihar",
+  "type": "SPMA",
+  "found_on": "https://udyami.bihar.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorUJN",
+  "title": "Ujjain",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://ujjain.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Dy_Comm_Ukhrul",
+  "title": "Ukhrul",
+  "state": "Manipur",
+  "type": "E042",
+  "found_on": "https://ukhrul.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorUmaria",
+  "title": "Umaria",
+  "state": "Madhya Pradesh",
+  "type": "E042",
+  "found_on": "https://umaria.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMUnakoti",
+  "title": "Unakoti",
+  "state": "Tripura",
+  "type": "E042",
+  "found_on": "https://unakoti.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "urise_up",
+  "title": "Unified Reimagined Innovation for Students Empowerment, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://urise.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dmunnao",
+  "title": "Unnao",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://unnao.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "NagarVikas_UP",
+  "title": "Urban Development Department, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E003",
+  "found_on": "https://urbandevelopment.up.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "UDDUttarakhand",
+  "title": "Urban Development Directorate, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E004",
+  "found_on": "https://udd.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pushkardhami",
+  "title": "Urban Development Directorate, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "E004",
+  "found_on": "https://udd.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "ulbharyana",
+  "title": "Urban Local Bodies Department, Haryana",
+  "state": "Haryana",
+  "type": "OTHR",
+  "found_on": "https://ulbharyana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "sbmu_haryana",
+  "title": "Urban Local Bodies Department, Haryana",
+  "state": "Haryana",
+  "type": "OTHR",
+  "found_on": "https://ulbharyana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "UttarDm",
+  "title": "Uttar Dinajpur",
+  "state": "West Bengal",
+  "type": "E042",
+  "found_on": "https://uttardinajpur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "EcoTourismUP",
+  "title": "Uttar Pradesh Eco-Tourism Development Board",
+  "state": "Uttar Pradesh",
+  "type": "E011",
+  "found_on": "https://upecoboard.up.gov.in/en",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "UPStartuppolicy",
+  "title": "Uttar Pradesh Electronics Corporation Limited",
+  "state": "Uttar Pradesh",
+  "type": "E059",
+  "found_on": "https://uplc.up.gov.in/en",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "upeidaofficial",
+  "title": "Uttar Pradesh Expressways Industrial Development Authority (UPEIDA), Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E011",
+  "found_on": "https://upeida.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "HomeGuardsUP",
+  "title": "Uttar Pradesh Home Guards",
+  "state": "Uttar Pradesh",
+  "type": "E051",
+  "found_on": "https://homeguard.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "upprpb",
+  "title": "Uttar Pradesh Police Recruitment & Promotion Board, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E011",
+  "found_on": "https://uppbpb.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "MmmutOfficial",
+  "title": "Uttar Pradesh Police Recruitment & Promotion Board, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "E011",
+  "found_on": "https://uppbpb.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "UPSDMOfficial",
+  "title": "Uttar Pradesh Skill Development Mission, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://upsdm.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "UPStateHajC",
+  "title": "Uttar Pradesh State Haj Committee",
+  "state": "Uttar Pradesh",
+  "type": "E013",
+  "found_on": "https://www.hajcommittee.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dcuttarakannada",
+  "title": "Uttara Kannada",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://uttarakannada.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "pushkardhami",
+  "title": "Uttarakhand State Disaster Management Authority",
+  "state": "Uttarakhand",
+  "type": "E051",
+  "found_on": "https://usdma.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "usrlmofficial",
+  "title": "Uttarakhand State Rural Livelihoods Mission, Uttarakhand",
+  "state": "Uttarakhand",
+  "type": "SPMA",
+  "found_on": "https://usrlm.uk.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dm_vaishali",
+  "title": "Vaishali",
+  "state": "Bihar",
+  "type": "E042",
+  "found_on": "https://vaishali.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collectorvalsad",
+  "title": "Valsad",
+  "state": "Gujarat",
+  "type": "E042",
+  "found_on": "https://valsad.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Value Added Tax (VAT) Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/value-added-tax-vat",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "deo_varanasi",
+  "title": "Varanasi",
+  "state": "Uttar Pradesh",
+  "type": "E042",
+  "found_on": "https://varanasi.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "vasco_iti",
+  "title": "Vasco Government Industrial Training Institute, Goa",
+  "state": "Goa",
+  "type": "E009",
+  "found_on": "https://itivasco.goa.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collvellore",
+  "title": "Vellore",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://vellore.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "prafulkpatel",
+  "title": "Vigilance Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "type": "E003",
+  "found_on": "https://ddd.gov.in/vigilance-department",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "telanganacmo",
+  "title": "Vikarabad",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://vikarabad.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "coll_vkb",
+  "title": "Vikarabad",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://vikarabad.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "tn_employment",
+  "title": "Virtual Learning Portal, Commissionerate of Employment & Training, Tamil Nadu",
+  "state": "Tamil Nadu",
+  "type": "E004",
+  "found_on": "https://tamilnaducareerservices.tn.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "VNRCollector",
+  "title": "Virudhunagar",
+  "state": "Tamil Nadu",
+  "type": "E042",
+  "found_on": "https://virudhunagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "uprampofficial",
+  "title": "Vishwakarma Artisan Connect Portal, Uttar Pradesh",
+  "state": "Uttar Pradesh",
+  "type": "SPMA",
+  "found_on": "https://vishwakarma.up.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "telanganacmo",
+  "title": "Wanaparthy",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://wanaparthy.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_WNP",
+  "title": "Wanaparthy",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://wanaparthy.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "collector_wgl",
+  "title": "Warangal",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://warangal.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DistWardha",
+  "title": "Wardha",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://wardha.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "PMOIndia",
+  "title": "Washim",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://washim.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "infowashim",
+  "title": "Washim",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://washim.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "SP_GADCHIROLI",
+  "title": "Washim Police, Maharashtra",
+  "state": "Maharashtra",
+  "type": "OTHR",
+  "found_on": "https://washimpolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "goawrd",
+  "title": "Water Resources Department, Goa",
+  "state": "Goa",
+  "type": "E003",
+  "found_on": "https://goawrd.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "mahawssd",
+  "title": "Water Supply and Sanitation Department, Maharashtra",
+  "state": "Maharashtra",
+  "type": "E003",
+  "found_on": "https://water.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "spwynd_kerala",
+  "title": "Wayanad District Police, Kerala",
+  "state": "Kerala",
+  "type": "OTHR",
+  "found_on": "https://wayanad.keralapolice.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "west_aids",
+  "title": "West Bengal State AIDS Prevention & Control Society, Kolkata, West Bengal",
+  "state": "West Bengal",
+  "type": "E011",
+  "found_on": "https://wbsapcs.wbhealth.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DBomdila",
+  "title": "West Kameng",
+  "state": "Arunachal Pradesh",
+  "type": "E042",
+  "found_on": "https://westkameng.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DC_Chaibasa",
+  "title": "West Singhbhum",
+  "state": "Jharkhand",
+  "type": "E042",
+  "found_on": "https://chaibasa.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DMWest_Tripura",
+  "title": "West Tripura",
+  "state": "Tripura",
+  "type": "E042",
+  "found_on": "https://westtripura.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "WCDGujarat",
+  "title": "Women and Child Development Department, Gujarat",
+  "state": "Gujarat",
+  "type": "E003",
+  "found_on": "https://wcd.gujarat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "wcd_haryana",
+  "title": "Women and Child Development Department, Haryana",
+  "state": "Haryana",
+  "type": "E003",
+  "found_on": "https://wcdhry.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "CollectorKadapa",
+  "title": "Y.S.R. Kadapa",
+  "state": "Andhra Pradesh",
+  "type": "E042",
+  "found_on": "https://kadapa.ap.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "Collector_YDR",
+  "title": "Yadadri Bhuvanagiri",
+  "state": "Telangana",
+  "type": "E042",
+  "found_on": "https://yadadri.telangana.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_yadgir",
+  "title": "Yadgir",
+  "state": "Karnataka",
+  "type": "E042",
+  "found_on": "https://yadgir.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "dc_ynr",
+  "title": "Yamunanagar",
+  "state": "Haryana",
+  "type": "E042",
+  "found_on": "https://yamunanagar.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "InfoYavatmal",
+  "title": "Yavatmal",
+  "state": "Maharashtra",
+  "type": "E042",
+  "found_on": "https://yavatmal.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "lg_ladakh",
+  "title": "Youth Services and Sports Department, Ladakh",
+  "state": "Ladakh",
+  "type": "E003",
+  "found_on": "https://ladakh.gov.in/youth-services-and-sports",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "handle": "DepartmentTax",
+  "title": "e-Abkari, Department of Tax, Excise and Narcotics, Arunachal Pradesh",
+  "state": "Arunachal Pradesh",
+  "type": "E003",
+  "found_on": "https://eabkari.arunachal.gov.in",
+  "last_verified": "2026-11-27"
+ }
+]

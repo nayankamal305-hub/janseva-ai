@@ -157,7 +157,6 @@ $('ulang').value=localStorage.jl||'en';setLang($('ulang').value);
 go((location.hash||'#home').slice(1)||'home');
 if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{});
 flushDrafts();
-})();
 
 let GT;window.loadIgod=function(){clearTimeout(GT);GT=setTimeout(async()=>{const sc=$('gscope').value,st=encodeURIComponent($('gstate').value),q=encodeURIComponent($('gq').value),c=$('gcat').value;
  const u=sc=='districts'?'/api/directory/districts?state='+st+'&q='+q:sc=='nodal'?'/api/directory/nodal?scope=state&q='+q:sc=='nodalc'?'/api/directory/nodal?scope=central&q='+q:sc=='mps'?'/api/directory/mps?state='+st+'&q='+q:'/api/directory/search?scope='+sc+'&state='+st+'&category='+c+'&q='+q+'&limit=60';
@@ -198,3 +197,4 @@ window.pickStar=function(i){$('pick').dataset.v=i;[...$('pick').children].forEac
 window.rateSend=async function(k){if(!T){openLogin();return}const v=+$('pick').dataset.v;const r=await api('POST','/api/rating/rate',{key:k,stars:v,comment:$('rc').value});if(r.ok)rateOpen(k);else $('rmsg').textContent=r.error||'Could not save'};
 window.rateAct=async function(a,id,k){if(!T){openLogin();return}await api('POST','/api/rating/'+a,{id});rateOpen(k)};
 $('rq').addEventListener('input',rateSearch);$('rt').addEventListener('change',rateSearch);
+})();

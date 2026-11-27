@@ -31,3 +31,10 @@ class H(unittest.TestCase):
         from app.service import load_data
         e = load_data("social_handles_extra.json"); assert len(e) >= 5
         for x in e: assert x["found_on"].startswith("https://") and x["last_verified"]
+class T(unittest.TestCase):
+    def test_state_district_tags(self):
+        class D:
+            def one(s, *a): return {"category": "electricity", "state": "Bihar", "city": "Patna", "title": "x", "code": "JS-1"}
+        class S: db = D()
+        r = social.draft(S(), 1); self.assertIn("MinOfPower", r["tags"]); self.assertLessEqual(len(r["tags"]), 3)
+        for x in r["tag_sources"]: self.assertTrue(x["found_on"].startswith("http"))

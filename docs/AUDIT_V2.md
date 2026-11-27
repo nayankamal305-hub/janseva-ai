@@ -84,3 +84,10 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 
 ## v3.6
 - Rajasthan: 212 ULB Raj-mail IDs from the LSG Department official list (https://department.rajasthan.gov.in/pages/sm/department-page/371474/2380, fetched 2026-11-27), each matched uniquely by name to the MoHUA list. 91 rows in the department list did not match (new ULBs or spelling differences) and are NOT imported; no fuzzy guessing. These are department-published official mail IDs, used only per-complaint with consent.
+
+## v3.7
+- West Bengal: municipality emails from the UD&MA Department list https://udma.wb.gov.in/Main/urban_local_bodies (fetched 2026-11-27; emails are published as [at]/[dot] and decoded). Listed against the chairperson/municipality; unique name match to MoHUA list only. Unmatched rows are not imported.
+- Bihar: https://biharsulm.in/index.php/sulm/executive_Officers lists officers and phones but no emails, so nothing imported.
+- Jharkhand: 32 ULB emails from https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx (UD&HD official page, fetched 2026-11-27); 11 rows unmatched/ambiguous to MoHUA list, not imported.
+- Chhattisgarh: 118 ULB emails from the UAD contact report https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx (fetched 2026-11-27); 75 unmatched/ambiguous, not imported. Emails are as published (some are gmail/rediffmail addresses the department lists for the CMO).
+- Found but not imported yet: Assam DMA contact PDF (messy multi-line table), Uttarakhand UDD list (names only, no emails), Odisha HUD directory (officials only).

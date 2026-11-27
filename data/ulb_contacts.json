@@ -13575,5 +13575,4343 @@
 "last_verified": "2026-11-27",
 "accepts_citizen_complaints": "unverified",
 "method": "Rajasthan LSG Department official ULB list (Raj-mail IDs), name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Alipurduar",
+"city_code": "249958",
+"state": "West Bengal",
+"district": "Alipurduar",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairmanapdm@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Baidyabati",
+"city_code": "250175",
+"state": "West Bengal",
+"district": "Hooghly",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "baidyabatimunicipality@yahoo.co.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bally (M)",
+"city_code": "250246",
+"state": "West Bengal",
+"district": "Howrah",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "ballymuni.ulb@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bankura",
+"city_code": "250209",
+"state": "West Bengal",
+"district": "Bankura",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "bankuramunicipality@rediffmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bansberia",
+"city_code": "250170",
+"state": "West Bengal",
+"district": "Hooghly",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "bansb_04@yahoo.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Barasat",
+"city_code": "250135",
+"state": "West Bengal",
+"district": "North 24 Paraganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "barasatmunicipality05@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Barrackpore",
+"city_code": "250132",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairman@bkpmuty.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Baruipur",
+"city_code": "250304",
+"state": "West Bengal",
+"district": "South 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "barui_07@yahoo.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Basirhat",
+"city_code": "250147",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "basirhatmunicipality@yahoo.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Beldanga",
+"city_code": "250001",
+"state": "West Bengal",
+"district": "Murshidabad",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "beldanga.municipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Berhampore",
+"city_code": "249999",
+"state": "West Bengal",
+"district": "Murshidabad",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairman.berhampore@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bhadreswar",
+"city_code": "250173",
+"state": "West Bengal",
+"district": "Hooghly",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "bmchairman@yahoo.co.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bhatpara",
+"city_code": "250125",
+"state": "West Bengal",
+"district": "N 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "bhat_09@yahoo.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bolpur",
+"city_code": "250028",
+"state": "West Bengal",
+"district": "Birbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "bolpurmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bongaon",
+"city_code": "250121",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairmanbm@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Buniadpur",
+"city_code": "289244",
+"state": "West Bengal",
+"district": "Dakshin Dinajpur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "buniadpurmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chakdaha",
+"city_code": "250103",
+"state": "West Bengal",
+"district": "Nadia",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chakdahamunicipality@ymail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Contai",
+"city_code": "250236",
+"state": "West Bengal",
+"district": "Purba Medinipur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "contaimunicipality.in@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Cooch Behar",
+"city_code": "249975",
+"state": "West Bengal",
+"district": "Cooch Behar",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairmancbm@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dainhat",
+"city_code": "250036",
+"state": "West Bengal",
+"district": "Purba Bardhaman",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairman.dm@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dalkhola",
+"city_code": "249985",
+"state": "West Bengal",
+"district": "Uttar Dinajpur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairman.dlkmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dankuni",
+"city_code": "298972",
+"state": "West Bengal",
+"district": "Hooghly",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "ulbdankuni@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dhupguri",
+"city_code": "249970",
+"state": "West Bengal",
+"district": "Jalpaiguri",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "dhupgurimunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Diamond Harbour",
+"city_code": "250305",
+"state": "West Bengal",
+"district": "South 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "dh.municipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dinhata",
+"city_code": "249977",
+"state": "West Bengal",
+"district": "Cooch Behar",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "dinhatamunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Domkal",
+"city_code": "273007",
+"state": "West Bengal",
+"district": "Murshidabad",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "municipalitydomkal@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dum Dum",
+"city_code": "250143",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairmanddm@yahoo.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Egra",
+"city_code": "250235",
+"state": "West Bengal",
+"district": "Purba Medinipur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "egramunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Falakata",
+"city_code": "299774",
+"state": "West Bengal",
+"district": "Alipurduar",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "falakatamunicipality2021@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Gangarampur",
+"city_code": "249988",
+"state": "West Bengal",
+"district": "Dakshin Dinajpur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "grp.municipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Garulia",
+"city_code": "250129",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairman_garulia@rediffmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Ghatal",
+"city_code": "250229",
+"state": "West Bengal",
+"district": "Paschim Medinipur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairmanghatalmunicipality1869@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Guskara",
+"city_code": "250037",
+"state": "West Bengal",
+"district": "Purba Bardhaman",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "guskaramunicipality@yahoo.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Habra",
+"city_code": "250127",
+"state": "West Bengal",
+"district": "North 24 Pgs",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "habramunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Haldia",
+"city_code": "250234",
+"state": "West Bengal",
+"district": "Purba Medinipur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "hald_muni@yahoo.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Haldibari",
+"city_code": "249972",
+"state": "West Bengal",
+"district": "Coochbehar",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "haldibari11municipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Halisahar",
+"city_code": "250123",
+"state": "West Bengal",
+"district": "North 24 Pgs",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "halisaharmycity@yahoo.co.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Islampur",
+"city_code": "249982",
+"state": "West Bengal",
+"district": "Uttar Dinajpur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "islampurmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Jhalda",
+"city_code": "250214",
+"state": "West Bengal",
+"district": "Purulia",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "jhlmunicipal@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Jiaganj Azimganj",
+"city_code": "249997",
+"state": "West Bengal",
+"district": "Murshidabad",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "jamunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kalimpong",
+"city_code": "249947",
+"state": "West Bengal",
+"district": "Kalimpong",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "kalimpongmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kalyani",
+"city_code": "250104",
+"state": "West Bengal",
+"district": "Nadia",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "info@kalyanimunicipality.org",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kamarhati",
+"city_code": "250140",
+"state": "West Bengal",
+"district": "North 24 PGS",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "kamarhati_municipality@rediffmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Katwa",
+"city_code": "250035",
+"state": "West Bengal",
+"district": "Purba Bardhaman",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "katwa.municipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kharagpur",
+"city_code": "250232",
+"state": "West Bengal",
+"district": "Paschim Medinipur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "cmkgpmpty@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Khardah",
+"city_code": "250137",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "khardahmunicipality@yahoo.co.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Konnagar",
+"city_code": "250178",
+"state": "West Bengal",
+"district": "Hooghly",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "konnagar.municipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Krishnanagar",
+"city_code": "250096",
+"state": "West Bengal",
+"district": "Nadia",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairmankm@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kurseong",
+"city_code": "249949",
+"state": "West Bengal",
+"district": "Darjeeling",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairman@kurseongmunicipality.org",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Madhyamgram",
+"city_code": "250136",
+"state": "West Bengal",
+"district": "North 24 Paraganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "madhyamgram_municipality@yahoo.co.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Mal",
+"city_code": "249955",
+"state": "West Bengal",
+"district": "Jalpaiguri",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "mal.municipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Mathabhanga",
+"city_code": "249974",
+"state": "West Bengal",
+"district": "Cooch Behar",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "mathabhanga_municipality@rediffmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Maynaguri",
+"city_code": "301103",
+"state": "West Bengal",
+"district": "Jalpaiguri",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "maynagurimunicipality2021@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Mekliganj",
+"city_code": "249973",
+"state": "West Bengal",
+"district": "Cooch Behar",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "mekliganj.m@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Memari",
+"city_code": "250039",
+"state": "West Bengal",
+"district": "Purba Burdwan",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "memarimunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Nabadwip",
+"city_code": "250097",
+"state": "West Bengal",
+"district": "Nadia",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairmannabadwip@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Naihati",
+"city_code": "250124",
+"state": "West Bengal",
+"district": "24 Parganas North",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairmannaihati@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Nalhati",
+"city_code": "253250",
+"state": "West Bengal",
+"district": "Birbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "nalhatimunicipality@rediffmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "North Barrackpore",
+"city_code": "250131",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "northbarrackporemunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Old Malda",
+"city_code": "249990",
+"state": "West Bengal",
+"district": "Malda",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "oldmaldamunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Panihati",
+"city_code": "250138",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "panihatimunicipality@yahoo.co.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Pujali",
+"city_code": "250302",
+"state": "West Bengal",
+"district": "South 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "pujalimunicipality@yahoo.co.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Raiganj",
+"city_code": "249983",
+"state": "West Bengal",
+"district": "Uttar Dinajpur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "raiganjmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Ramjibanpur",
+"city_code": "250225",
+"state": "West Bengal",
+"district": "Paschim Medinipur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "ramjibonpur_municipality@yahoo.co.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Rampurhat",
+"city_code": "250024",
+"state": "West Bengal",
+"district": "Birbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "rampurhat.mun@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Ranaghat",
+"city_code": "250101",
+"state": "West Bengal",
+"district": "Nadia",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "ranaghatmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Sainthia",
+"city_code": "250025",
+"state": "West Bengal",
+"district": "Birbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "sntmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Santipur",
+"city_code": "250099",
+"state": "West Bengal",
+"district": "Nadia",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "santipurmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Sonamukhi",
+"city_code": "250208",
+"state": "West Bengal",
+"district": "Bankura",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "sonamukhimunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "South Dum Dum",
+"city_code": "250144",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "southdumdum74@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Suri",
+"city_code": "250026",
+"state": "West Bengal",
+"district": "Birbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "surimunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Taherpur",
+"city_code": "250098",
+"state": "West Bengal",
+"district": "Nadia",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairmantnaa1993@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Taki",
+"city_code": "250148",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "cmoftm@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Tarakeswar",
+"city_code": "250169",
+"state": "West Bengal",
+"district": "Hooghly",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "tarakeswar_pouro@yahoo.co.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Tufanganj",
+"city_code": "249976",
+"state": "West Bengal",
+"district": "Cooch Behar",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "ulb.tufanganj@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Uluberia",
+"city_code": "250248",
+"state": "West Bengal",
+"district": "Howrah",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "uluberiamunicipality.eo@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Uttarpara Kotrung",
+"city_code": "250179",
+"state": "West Bengal",
+"district": "Hooghly",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "uttarparakotrungmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Baduria",
+"city_code": "250134",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "baduriamunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Balurghat",
+"city_code": "249989",
+"state": "West Bengal",
+"district": "Dakshin Dinajpur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "bmpality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Budge Budge",
+"city_code": "250301",
+"state": "West Bengal",
+"district": "South 24 Pgs",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chairmanbbm@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chandrakona",
+"city_code": "250226",
+"state": "West Bengal",
+"district": "Paschim Medinipur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chandrakonamunicipality@yahoo.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dubrajpur",
+"city_code": "250027",
+"state": "West Bengal",
+"district": "Birbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "dubrajpurmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Gobardanga",
+"city_code": "250126",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "gobardanga1870@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kalna",
+"city_code": "250040",
+"state": "West Bengal",
+"district": "Purba Bardhaman",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "ckm.kalna@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kharar",
+"city_code": "250228",
+"state": "West Bengal",
+"district": "Paschim Medinipur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "khararmunicipality@yahoo.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Maheshtala",
+"city_code": "250300",
+"state": "West Bengal",
+"district": "South 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "maheshtalamunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Murshidabad",
+"city_code": "249998",
+"state": "West Bengal",
+"district": "Murshidabad",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "murshidabadmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "New Barrackpore",
+"city_code": "250139",
+"state": "West Bengal",
+"district": "North 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "chnbrk@yahoo.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Panskura",
+"city_code": "253229",
+"state": "West Bengal",
+"district": "Purba Medinipur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "pans_munici@yahoo.co.in",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Rajpur Sonarpur",
+"city_code": "250303",
+"state": "West Bengal",
+"district": "South 24 Parganas",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "rajpursonarpurmunicipality@gmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Serampore",
+"city_code": "250176",
+"state": "West Bengal",
+"district": "Hooghly",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udma.wb.gov.in/Main/urban_local_bodies",
+"emails": [
+{
+"email": "seramporemunicipality@hotmail.com",
+"found_on": "https://udma.wb.gov.in/Main/urban_local_bodies"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "WB UD&MA Department official municipality list (email column, listed against the chairperson); name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chatra",
+"city_code": "248129",
+"state": "Jharkhand",
+"district": "Chatra",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "npchatra@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Madhupur",
+"city_code": "248050",
+"state": "Jharkhand",
+"district": "Deoghar",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nagarparshadmadhupur@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chirkunda",
+"city_code": "248055",
+"state": "Jharkhand",
+"district": "Dhanbad",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "executiveofficer.chirkunda@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Basukinath",
+"city_code": "250352",
+"state": "Jharkhand",
+"district": "Dumka",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nagarpanchayatbasukinath@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dumka",
+"city_code": "248054",
+"state": "Jharkhand",
+"district": "Dumka",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "dumka.nagar.parshad@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Adityapur",
+"city_code": "253166",
+"state": "Jharkhand",
+"district": "East Singhbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "mcadityapur@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chakulia",
+"city_code": "250445",
+"state": "Jharkhand",
+"district": "East Singhbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "chakulianp@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Jamshedpur",
+"city_code": "250434",
+"state": "Jharkhand",
+"district": "East Singhbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "jnacjsr@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Jugsalai",
+"city_code": "250435",
+"state": "Jharkhand",
+"district": "East Singhbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "jugsalaimunicipality@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Mango",
+"city_code": "250433",
+"state": "Jharkhand",
+"district": "East Singhbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "mangonotifiedarea@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Garhwa",
+"city_code": "248128",
+"state": "Jharkhand",
+"district": "Garhwa",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "eo.gharhwa.np@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Nagar Uttari",
+"city_code": "274815",
+"state": "Jharkhand",
+"district": "Garhwa",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "npnagaruntari@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dhanvar",
+"city_code": "277138",
+"state": "Jharkhand",
+"district": "Giridih",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nagar.dhanwar@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Giridih",
+"city_code": "250349",
+"state": "Jharkhand",
+"district": "Giridih",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "giridihmunicipalcorporation@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Godda",
+"city_code": "248051",
+"state": "Jharkhand",
+"district": "Godda",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "np.godda@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Gumla",
+"city_code": "248057",
+"state": "Jharkhand",
+"district": "Gumla",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nagarparishadgumla@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Jamtara",
+"city_code": "248134",
+"state": "Jharkhand",
+"district": "Jamtara",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "jamtaranagarpanchayat@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Khunti",
+"city_code": "250414",
+"state": "Jharkhand",
+"district": "Khunti",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "npkhunti2006@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Koderma",
+"city_code": "248131",
+"state": "Jharkhand",
+"district": "Koderma",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "kodermanagarpanchayat@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Latehar",
+"city_code": "250326",
+"state": "Jharkhand",
+"district": "Latehar",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nagarpanchayatlatehar@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Lohardaga",
+"city_code": "248137",
+"state": "Jharkhand",
+"district": "Lohardaga",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nagarparshad07.lohardaga@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Pakur",
+"city_code": "248133",
+"state": "Jharkhand",
+"district": "Pakur",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "jburman96@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bishrampur (M)",
+"city_code": "253231",
+"state": "Jharkhand",
+"district": "Palamu",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nagarpanchayatbishrampur2010@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Hussainabad",
+"city_code": "250323",
+"state": "Jharkhand",
+"district": "Palamu",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nphussainabad@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Medininagar",
+"city_code": "250324",
+"state": "Jharkhand",
+"district": "Palamu",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "municipalcouncil.medininagar@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bundu",
+"city_code": "250415",
+"state": "Jharkhand",
+"district": "Ranchi",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nagarpanchayatbundu@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Barharwa",
+"city_code": "277137",
+"state": "Jharkhand",
+"district": "Sahibganj",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "barharwaulb@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Rajmahal",
+"city_code": "248053",
+"state": "Jharkhand",
+"district": "Sahibganj",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nprajmahal@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Sahibganj",
+"city_code": "248052",
+"state": "Jharkhand",
+"district": "Sahibganj",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "nagarparishadsahibganj@yahoo.in",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Simdega",
+"city_code": "248138",
+"state": "Jharkhand",
+"district": "Simdega",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "simdeganagar@yahoo.in",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chaibasa",
+"city_code": "250430",
+"state": "Jharkhand",
+"district": "West Singhbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "npchaibasa@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chakradharpur",
+"city_code": "250416",
+"state": "Jharkhand",
+"district": "West Singhbhum",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx",
+"emails": [
+{
+"email": "npchakradharpur@gmail.com",
+"found_on": "https://udhd.jharkhand.gov.in/Other/ULBInformation.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Indouri",
+"city_code": "301507",
+"state": "Chhattisgarh",
+"district": "KABIRDHAM",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "indoria@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kawardha",
+"city_code": "250623",
+"state": "Chhattisgarh",
+"district": "KABIRDHAM",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "pwdkawardha@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Pandatarai",
+"city_code": "273467",
+"state": "Chhattisgarh",
+"district": "KABIRDHAM",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmopandatarai@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bodla",
+"city_code": "273466",
+"state": "Chhattisgarh",
+"district": "KABIRDHAM",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobodla@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Khairagarh",
+"city_code": "262094",
+"state": "Chhattisgarh",
+"district": "KHAIRAGARH-CHHUIKHADAN-GANDAI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npp05.01.2010@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Gandai",
+"city_code": "250625",
+"state": "Chhattisgarh",
+"district": "KHAIRAGARH-CHHUIKHADAN-GANDAI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "panchayat.gandai.cg@gov.in",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chhuikhadan",
+"city_code": "250626",
+"state": "Chhattisgarh",
+"district": "KHAIRAGARH-CHHUIKHADAN-GANDAI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchayatckn@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Amleshwar",
+"city_code": "299657",
+"state": "Chhattisgarh",
+"district": "DURG",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmoamleshwar@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Ahiwara",
+"city_code": "250635",
+"state": "Chhattisgarh",
+"district": "DURG",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmoahiwara@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Utai",
+"city_code": "253153",
+"state": "Chhattisgarh",
+"district": "DURG",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmoutai@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kumhari",
+"city_code": "250637",
+"state": "Chhattisgarh",
+"district": "DURG",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmokumhari@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Jamul",
+"city_code": "250636",
+"state": "Chhattisgarh",
+"district": "DURG",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nppjamul@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dhamdha",
+"city_code": "250634",
+"state": "Chhattisgarh",
+"district": "DURG",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmodhamdha275@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Patan (NP)",
+"city_code": "250641",
+"state": "Chhattisgarh",
+"district": "DURG",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nppatanpatan@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bhilai Nagar",
+"city_code": "250639",
+"state": "Chhattisgarh",
+"district": "DURG",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nigam_bhilai@yahoo.co.in",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Risali",
+"city_code": "296874",
+"state": "Chhattisgarh",
+"district": "DURG",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarnigamrisali@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Devkar",
+"city_code": "253151",
+"state": "Chhattisgarh",
+"district": "BEMETARA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmodeokar@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dadhi",
+"city_code": "301508",
+"state": "Chhattisgarh",
+"district": "BEMETARA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchayatdadhi@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bemetara",
+"city_code": "250632",
+"state": "Chhattisgarh",
+"district": "BEMETARA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobemetara@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Berla",
+"city_code": "253152",
+"state": "Chhattisgarh",
+"district": "BEMETARA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmoberla@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Maro",
+"city_code": "253160",
+"state": "Chhattisgarh",
+"district": "BEMETARA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npmaro@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Saja",
+"city_code": "253149",
+"state": "Chhattisgarh",
+"district": "BEMETARA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmo_saja@yahoo.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Arjunda",
+"city_code": "253155",
+"state": "Chhattisgarh",
+"district": "BALOD",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nparjunda@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Gunderdehi",
+"city_code": "253154",
+"state": "Chhattisgarh",
+"district": "BALOD",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "n.p.gunderdehi@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Gurur",
+"city_code": "253158",
+"state": "Chhattisgarh",
+"district": "BALOD",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchayatgurur@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Doundi",
+"city_code": "253156",
+"state": "Chhattisgarh",
+"district": "BALOD",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmonpdondi@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Balod",
+"city_code": "250642",
+"state": "Chhattisgarh",
+"district": "BALOD",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobalod@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dongargarh",
+"city_code": "250628",
+"state": "Chhattisgarh",
+"district": "RAJNANDGAON",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmodongargarh@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Antagarh",
+"city_code": "253248",
+"state": "Chhattisgarh",
+"district": "KANKER",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmoantagarh@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kanker",
+"city_code": "250663",
+"state": "Chhattisgarh",
+"district": "KANKER",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmo.kanker01@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Charama",
+"city_code": "253144",
+"state": "Chhattisgarh",
+"district": "KANKER",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmocharama@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Narharpur",
+"city_code": "253249",
+"state": "Chhattisgarh",
+"district": "KANKER",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmo.narharpur@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bhanupratappur",
+"city_code": "253145",
+"state": "Chhattisgarh",
+"district": "KANKER",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobhanu@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kondagaon",
+"city_code": "250664",
+"state": "Chhattisgarh",
+"district": "KONDAGAON",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmokondagaon.2010@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Farasgaon",
+"city_code": "265121",
+"state": "Chhattisgarh",
+"district": "KONDAGAON",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nager.p.pharasgaon@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dantewada",
+"city_code": "250669",
+"state": "Chhattisgarh",
+"district": "DANTEWADA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmodantewada@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Barsur",
+"city_code": "253215",
+"state": "Chhattisgarh",
+"district": "DANTEWADA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "barsoorcmo@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Narayanpur (NP)",
+"city_code": "248064",
+"state": "Chhattisgarh",
+"district": "NARAYANPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmonarayanpur@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bijapur (M)",
+"city_code": "253244",
+"state": "Chhattisgarh",
+"district": "BIJAPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchayatbijapur@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bhairamgarh",
+"city_code": "253245",
+"state": "Chhattisgarh",
+"district": "BIJAPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmo.bhairamgarh.np@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Konta",
+"city_code": "253217",
+"state": "Chhattisgarh",
+"district": "SUKMA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmokonta@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dornapal",
+"city_code": "253218",
+"state": "Chhattisgarh",
+"district": "SUKMA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmonpd@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Sukma",
+"city_code": "253216",
+"state": "Chhattisgarh",
+"district": "SUKMA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmosukma@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Katghora",
+"city_code": "250597",
+"state": "Chhattisgarh",
+"district": "KORBA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpalikakatghora@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Dipka",
+"city_code": "250599",
+"state": "Chhattisgarh",
+"district": "KORBA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "dipkacmo@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Banki Mongra",
+"city_code": "301510",
+"state": "Chhattisgarh",
+"district": "KORBA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpalikabankimongra@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Pendra",
+"city_code": "250609",
+"state": "Chhattisgarh",
+"district": "GAURELA-PENDRA-MARWAHI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "panchayat.pendra.cg@gov.in",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Marwahi",
+"city_code": "301513",
+"state": "Chhattisgarh",
+"district": "GAURELA-PENDRA-MARWAHI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "marwahinagarpanchayat@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Akaltara",
+"city_code": "250603",
+"state": "Chhattisgarh",
+"district": "JANJGIR-CHAMPA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmoakaltara@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Champa",
+"city_code": "250605",
+"state": "Chhattisgarh",
+"district": "JANJGIR-CHAMPA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmochampa@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Nariyara",
+"city_code": "301526",
+"state": "Chhattisgarh",
+"district": "JANJGIR-CHAMPA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npnariyaracmo@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Pamgarh",
+"city_code": "301512",
+"state": "Chhattisgarh",
+"district": "JANJGIR-CHAMPA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmopamgarh@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Saragaon",
+"city_code": "253287",
+"state": "Chhattisgarh",
+"district": "JANJGIR-CHAMPA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npsaragaon@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Takhatpur",
+"city_code": "250615",
+"state": "Chhattisgarh",
+"district": "BILASPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nptkp2013@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bilha",
+"city_code": "250622",
+"state": "Chhattisgarh",
+"district": "BILASPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobilha@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bodri",
+"city_code": "250621",
+"state": "Chhattisgarh",
+"district": "BILASPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobodri@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Malhar",
+"city_code": "253174",
+"state": "Chhattisgarh",
+"district": "BILASPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmo_malhar@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Ratanpur",
+"city_code": "250612",
+"state": "Chhattisgarh",
+"district": "BILASPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmoratanpur@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Jarhagaon",
+"city_code": "301630",
+"state": "Chhattisgarh",
+"district": "MUNGELI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmojarhagaon@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Barela",
+"city_code": "301522",
+"state": "Chhattisgarh",
+"district": "MUNGELI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "barelacmo@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Mungeli",
+"city_code": "250614",
+"state": "Chhattisgarh",
+"district": "MUNGELI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmo.mungelii@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Lormi",
+"city_code": "250611",
+"state": "Chhattisgarh",
+"district": "MUNGELI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchyat.lormi@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Sargaon",
+"city_code": "253176",
+"state": "Chhattisgarh",
+"district": "MUNGELI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npsargaoncmo@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kirodimalnagar",
+"city_code": "253280",
+"state": "Chhattisgarh",
+"district": "RAIGARH",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "kirodimalnagarpanchyat@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Gharghoda",
+"city_code": "250593",
+"state": "Chhattisgarh",
+"district": "RAIGARH",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmogharghoda@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Lailunga",
+"city_code": "253279",
+"state": "Chhattisgarh",
+"district": "RAIGARH",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchayatlailunga@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chandrapur (NP)",
+"city_code": "253285",
+"state": "Chhattisgarh",
+"district": "SAKTI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "np_chandrapur@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Jaijepur",
+"city_code": "253284",
+"state": "Chhattisgarh",
+"district": "SAKTI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npcmoj4@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Sakti",
+"city_code": "250606",
+"state": "Chhattisgarh",
+"district": "SAKTI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmosakti@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Baramkela",
+"city_code": "253276",
+"state": "Chhattisgarh",
+"district": "SARANGARH-BILAIGARH",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobkl@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bilaigarh",
+"city_code": "250656",
+"state": "Chhattisgarh",
+"district": "SARANGARH-BILAIGARH",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npbilaigarh@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Sariya",
+"city_code": "253277",
+"state": "Chhattisgarh",
+"district": "SARANGARH-BILAIGARH",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "sariyanp08@yahoo.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Sarangarh",
+"city_code": "250596",
+"state": "Chhattisgarh",
+"district": "SARANGARH-BILAIGARH",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmosaranggarh@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kopra",
+"city_code": "301514",
+"state": "Chhattisgarh",
+"district": "GARIYABAND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchayatkopra@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Gariyaband",
+"city_code": "253182",
+"state": "Chhattisgarh",
+"district": "GARIYABAND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npanchayatgbnd@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chhura",
+"city_code": "253181",
+"state": "Chhattisgarh",
+"district": "GARIYABAND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmochoora@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Devbhog",
+"city_code": "301812",
+"state": "Chhattisgarh",
+"district": "GARIYABAND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchayatdeobhog@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Fingeshwar",
+"city_code": "253180",
+"state": "Chhattisgarh",
+"district": "GARIYABAND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmofingeshwar@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Rajim",
+"city_code": "253178",
+"state": "Chhattisgarh",
+"district": "GARIYABAND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmorajimnagar1@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kurud",
+"city_code": "248061",
+"state": "Chhattisgarh",
+"district": "DHAMTARI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npkurud@yahoo.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bhakhara",
+"city_code": "253107",
+"state": "Chhattisgarh",
+"district": "DHAMTARI",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobhakhara.613@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Tundra",
+"city_code": "250654",
+"state": "Chhattisgarh",
+"district": "BALODABAZAR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchayattundra@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Palari",
+"city_code": "250647",
+"state": "Chhattisgarh",
+"district": "BALODABAZAR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmonppallari@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bhatapara",
+"city_code": "250651",
+"state": "Chhattisgarh",
+"district": "BALODABAZAR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobhatapara@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Rohansi",
+"city_code": "301528",
+"state": "Chhattisgarh",
+"district": "BALODABAZAR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmonprohasi@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Lawan (NP)",
+"city_code": "253184",
+"state": "Chhattisgarh",
+"district": "BALODABAZAR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmolawan@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Simga",
+"city_code": "250644",
+"state": "Chhattisgarh",
+"district": "BALODABAZAR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "anandeswersimga@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Tumgaon",
+"city_code": "253105",
+"state": "Chhattisgarh",
+"district": "MAHASAMUND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nptumgaon@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Basna",
+"city_code": "250658",
+"state": "Chhattisgarh",
+"district": "MAHASAMUND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npbasna@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bagbahara",
+"city_code": "250662",
+"state": "Chhattisgarh",
+"district": "MAHASAMUND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npbgbr5@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Mahasamund",
+"city_code": "250661",
+"state": "Chhattisgarh",
+"district": "MAHASAMUND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nppmahasamund@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Saraipali",
+"city_code": "250659",
+"state": "Chhattisgarh",
+"district": "MAHASAMUND",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmonppsaraipali@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Abhanpur",
+"city_code": "253177",
+"state": "Chhattisgarh",
+"district": "RAIPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmoabhanpur@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kharora",
+"city_code": "250652",
+"state": "Chhattisgarh",
+"district": "RAIPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npkharora@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Birgaon",
+"city_code": "253179",
+"state": "Chhattisgarh",
+"district": "RAIPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobirgaon@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Samoda",
+"city_code": "298990",
+"state": "Chhattisgarh",
+"district": "RAIPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npsamoda21@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Patna",
+"city_code": "301809",
+"state": "Chhattisgarh",
+"district": "KORIYA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmonppatna@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Baikunthpur (M)",
+"city_code": "250579",
+"state": "Chhattisgarh",
+"district": "KORIYA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nppbkp@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kunkuri",
+"city_code": "253198",
+"state": "Chhattisgarh",
+"district": "JASHPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchayatkunkuri@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Kotba",
+"city_code": "253199",
+"state": "Chhattisgarh",
+"district": "JASHPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmonpkotba@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Bagicha",
+"city_code": "253200",
+"state": "Chhattisgarh",
+"district": "JASHPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobagicha@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Balrampur",
+"city_code": "253119",
+"state": "Chhattisgarh",
+"district": "BALRAMPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmobalrampur@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Rajpur (NP)",
+"city_code": "253117",
+"state": "Chhattisgarh",
+"district": "BALRAMPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmorajpur@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Ramanujganj",
+"city_code": "250583",
+"state": "Chhattisgarh",
+"district": "BALRAMPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmoramanujganj@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Wadrafnagar",
+"city_code": "253116",
+"state": "Chhattisgarh",
+"district": "BALRAMPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmowadrafnagar@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Chirmiri",
+"city_code": "250578",
+"state": "Chhattisgarh",
+"district": "MANENDRAGARH-CHIRMIRI-BHARATPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarnigam_chirimiri@yahoo.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Janakpur",
+"city_code": "301515",
+"state": "Chhattisgarh",
+"district": "MANENDRAGARH-CHIRMIRI-BHARATPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "janakpurnagarpanchayat@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Jhagrakhand",
+"city_code": "250582",
+"state": "Chhattisgarh",
+"district": "MANENDRAGARH-CHIRMIRI-BHARATPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmo.npjhagrakhand@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Manendragarh",
+"city_code": "250580",
+"state": "Chhattisgarh",
+"district": "MANENDRAGARH-CHIRMIRI-BHARATPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpalikamdgr@yahoo.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Ambikapur",
+"city_code": "250588",
+"state": "Chhattisgarh",
+"district": "SARGUJA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarnigamambikapur@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Lakhanpur",
+"city_code": "253121",
+"state": "Chhattisgarh",
+"district": "SARGUJA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmolakhanpur@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Sitapur (NP)",
+"city_code": "253120",
+"state": "Chhattisgarh",
+"district": "SARGUJA",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmositapur@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Jarhi",
+"city_code": "253115",
+"state": "Chhattisgarh",
+"district": "SURAJPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "jarhi_nagarpanchyat@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Pratappur",
+"city_code": "253123",
+"state": "Chhattisgarh",
+"district": "SURAJPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpanchayatpratappur@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Premnagar",
+"city_code": "253191",
+"state": "Chhattisgarh",
+"district": "SURAJPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "cmopremnagar@rediffmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Vishrampur",
+"city_code": "250586",
+"state": "Chhattisgarh",
+"district": "SURAJPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "panchayatvishrampur@yahoo.in",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Shivnandanpur",
+"city_code": "301867",
+"state": "Chhattisgarh",
+"district": "SURAJPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "npshivnandanpur@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
+},
+{
+"ulb_name": "Surajpur",
+"city_code": "250585",
+"state": "Chhattisgarh",
+"district": "SURAJPUR",
+"website": "",
+"website_kind": "none_found",
+"found_via": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx",
+"emails": [
+{
+"email": "nagarpalikasurajpur@gmail.com",
+"found_on": "https://uad.cg.gov.in/ContactUAD/ContactUsEnglishReportPage.aspx"
+}
+],
+"last_verified": "2026-11-27",
+"accepts_citizen_complaints": "unverified",
+"method": "State urban department official ULB contact list; name matched uniquely to MoHUA list"
 }
 ]

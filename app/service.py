@@ -56,31 +56,37 @@ class Service:
         code = "JS-%s-%06d" % (datetime.now().year, n)
         status = "awaiting_citizen_confirmation" if low_conf else "ready_for_submission"
         cid = self.db.run("""INSERT INTO complaints(code,user_id,title,description,category,lat,lon,address,city,state,district,ward,pincode,photo_url,asset_owner,
-            status,consent_submit,consent_share_personal,notify_representative,created_at,updated_at,anonymous,severity,confidence,safety_risk,emergency,lang)
-            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            status,consent_submit,consent_share_personal,notify_representative,created_at,updated_at,anonymous,severity,confidence,safety_risk,emergency,lang,phash)
+            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             (code, user["id"], d.get("title"), d["description"], cat, float(d["lat"]), float(d["lon"]), d.get("address"), city.lower(),
              (d.get("state") or "").lower(), d.get("district"), d.get("ward"), d.get("pincode"), d.get("photo_url"), d.get("asset_owner"), status,
              int(bool(d.get("consent_submit"))), int(bool(d.get("consent_share_personal"))), int(bool(d.get("notify_representative"))), now(), now(),
-             int(bool(d.get("anonymous"))), an["severity"], an["confidence"], an["safety_risk"], int(an["emergency"]), d.get("lang") or "en"))
+             int(bool(d.get("anonymous"))), an["severity"], an["confidence"], an["safety_risk"], int(an["emergency"]), d.get("lang") or "en", (d.get("phash") or None)))
         self.db.run("INSERT INTO ai_analysis(complaint_id,ts,engine,category,confidence,severity,safety_risk,emergency,suggested_department,notes) VALUES(?,?,?,?,?,?,?,?,?,?)",
                     (cid, now(), an["engine"], an["category"], an["confidence"], an["severity"], an["safety_risk"], int(an["emergency"]), an["suggested_department"], an["notes"]))
         self.db.timeline(cid, "jansevaai", "created", "Complaint reported (category '%s')" % cat)
         self.db.timeline(cid, "jansevaai", "ai_analysed", "AI analysis (%s): %s, confidence %.1f, severity %d, safety risk %s%s" % (an["engine"], an["category"], an["confidence"], an["severity"], an["safety_risk"], "; EMERGENCY flag" if an["emergency"] else ""))
         if low_conf: self.db.timeline(cid, "jansevaai", "needs_confirmation", "Low confidence: citizen must confirm or choose the category")
         # community duplicate grouping (other citizens, same place and category)
-        grp = None
-        for r in self.db.all("SELECT * FROM complaints WHERE id!=? AND category=? AND status!='cancelled' AND created_at>=?", (cid, cat, (datetime.now(timezone.utc) - timedelta(days=30)).isoformat())):
-            if self.dist_m(float(d["lat"]), float(d["lon"]), r["lat"], r["lon"]) <= 100:
+        grp = None; prob = None
+        recent = (datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
+        for r in self.db.all("SELECT * FROM complaints WHERE id!=? AND status!='cancelled' AND created_at>=?", (cid, recent)):
+            dm = self.dist_m(float(d["lat"]), float(d["lon"]), r["lat"], r["lon"])
+            ham = self.hamming(d.get("phash"), r["phash"])
+            same_place_cat = dm <= 100 and r["category"] == cat
+            img_match = ham is not None and ham <= 10 and dm <= 300
+            if same_place_cat or img_match:
+                prob = 0.95 if (same_place_cat and img_match) else 0.8 if img_match else 0.6
                 grp = r["duplicate_group"]
                 if not grp:
                     grp = self.db.run("INSERT INTO duplicate_groups(parent_complaint_id,lat,lon,category,created_at) VALUES(?,?,?,?,?)", (r["id"], r["lat"], r["lon"], cat, now()))
                     self.db.run("UPDATE complaints SET duplicate_group=? WHERE id=?", (grp, r["id"]))
-                self.db.run("UPDATE complaints SET duplicate_group=? WHERE id=?", (grp, cid))
-                self.db.timeline(cid, "jansevaai", "duplicate_grouped", "Grouped with %s (same place and category). Your own reference is kept." % r["code"])
+                self.db.run("UPDATE complaints SET duplicate_group=?,duplicate_probability=? WHERE id=?", (grp, prob, cid))
+                self.db.timeline(cid, "jansevaai", "duplicate_grouped", "Grouped with %s (%s). Your own reference is kept." % (r["code"], "image and place match" if img_match else "same place and category"))
                 self.db.run("INSERT OR IGNORE INTO supports(complaint_id,user_id,kind,ts) VALUES(?,?,?,?)", (r["id"], user["id"], "support", now()))
                 break
         self.db.audit("user:%s" % user["id"], "complaint_created", code)
-        out = {"ok": True, "id": cid, "code": code, "category": cat, "status": status, "ai": an, "duplicate_group": grp}
+        out = {"ok": True, "id": cid, "code": code, "category": cat, "status": status, "ai": an, "duplicate_group": grp, "duplicate_probability": prob}
         if an["emergency"]: out["emergency_notice"] = "Immediate danger: call 112 now. JANSEVA is not an emergency dispatch service."
         return out
 
@@ -89,6 +95,14 @@ class Service:
         self.db.run("UPDATE complaints SET category=?,status='ready_for_submission',updated_at=? WHERE id=?", (category, now(), cid))
         self.db.timeline(cid, "citizen", "confirmed", "Citizen confirmed category '%s'" % category)
         self.db.audit("user:%s" % user_id, "category_confirmed", c["code"]); return {"ok": True}
+
+    @staticmethod
+    def hamming(a, b):
+        """Perceptual-hash distance. Hashes are computed in the browser (64-bit dHash, 16 hex chars). None if either is missing or malformed."""
+        try:
+            if not a or not b or len(a) != 16 or len(b) != 16: return None
+            return bin(int(a, 16) ^ int(b, 16)).count("1")
+        except ValueError: return None
 
     def find_duplicate(self, uid, cat, lat, lon):
         cutoff = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()

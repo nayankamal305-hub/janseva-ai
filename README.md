@@ -54,3 +54,9 @@ Levels: 1 full API, 2 partial API, 3 official guided submission, 4 verified emai
 ## Rules enforced (and tested)
 Consent to submit and separate consent to share personal data; no fake acknowledgement (no id returned = failed); duplicate complaint block (same user, category, 100 m, 7 days); parent resolved only when ALL linked official records are resolved, then citizen verification; escalation uses a platform's real appeal route, otherwise a reminder explicitly marked "not an official appeal"; analytics count unique citizen complaints separately from external records; credentials only from environment variables, never in the DB; every integration call and admin action logged; no CAPTCHA/OTP bypass.
 
+
+## v0.4
+- Premium mobile-first UI (navy + saffron, Noto Sans/Devanagari, Lucide icons, Leaflet/OpenStreetMap maps, SVG charts), all vendored under `app/static`.
+- Optional vision classification: set `GEMINI_API_KEY` (server env only, never sent to the browser). Without it the text rules engine is used. Output is advisory; the citizen confirms.
+- `JANSEVA_SEED_DEMO=1` seeds records titled "[DEMO]" (sandbox, never counted as officially submitted).
+- Hosting: Render free sleeps and resets SQLite. Plan: external free Postgres (Neon/Supabase) after a Postgres port (not done); keep-warm ping via cron.

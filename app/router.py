@@ -63,11 +63,12 @@ def plan(complaint, platforms, connectors, user):
         targets.append({"platform_id": p["id"], "level": p["level"], "reason": "category and jurisdiction match", "validation_errors": errs,
                         "notify_only": bool(p.get("notify_only"))})
     # avoid indiscriminate fan-out: central generic portal (CPGRAMS) only when no direct local official channel exists
-    local_official = [t for t in targets if t["platform_id"] not in ("cpgrams",) and not t["notify_only"]]
+    FALLBACK = ("cpgrams", "state_grievance", "mh_cm_grievance", "district_collector")
+    local_official = [t for t in targets if t["platform_id"] not in FALLBACK and not t["notify_only"]]
     if local_official:
         for t in list(targets):
-            if t["platform_id"] == "cpgrams":
-                targets.remove(t); rejected.append(("cpgrams", "a direct, more specific official channel exists; avoiding duplicate government complaint"))
+            if t["platform_id"] in FALLBACK:
+                targets.remove(t); rejected.append((t["platform_id"], "a direct, more specific official channel exists; avoiding duplicate government complaint"))
     # Swachhata and municipal guided channel are different owners' systems: only add municipal guided when swachhata is not usable
     if any(t["platform_id"] == "swachhata" and not t["validation_errors"] for t in targets):
         pass

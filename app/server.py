@@ -51,15 +51,22 @@ def make_handler(svc, admin_token, rate=120):
             if path in ("/", "/index.html"):
                 return self._send(200, open(os.path.join(STATIC, "index.html"), "rb").read(), "text/html; charset=utf-8")
             if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": []}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, b"self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('fetch',e=>{});", "application/javascript")
+            if path == "/sw.js": return self._send(200, b"const C='jansevaai-v4';self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>c.add('/')))});self.addEventListener('activate',e=>e.waitUntil(clients.claim()));self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.pathname.startsWith('/api/'))return;e.respondWith(fetch(e.request).then(r=>{const k=r.clone();caches.open(C).then(c=>c.put(e.request,k));return r}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});", "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now()})
+            if path.startswith("/static/"):
+                rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
+                f = os.path.join(STATIC, rel)
+                if ".." not in rel and os.path.isfile(f):
+                    ct = {"css": "text/css", "js": "application/javascript", "woff2": "font/woff2", "png": "image/png", "svg": "image/svg+xml"}.get(f.rsplit(".", 1)[-1], "application/octet-stream")
+                    return self._send(200, open(f, "rb").read(), ct, {"Cache-Control": "public, max-age=86400"})
+                return self._json(404, {"error": "not found"})
             if path.startswith("/uploads/"):
                 f = os.path.join(UPLOADS, os.path.basename(path))
                 if os.path.exists(f): return self._send(200, open(f, "rb").read(), "image/jpeg" if f.endswith("jpg") else "image/png")
                 return self._json(404, {"error": "not found"})
             if path == "/api/platforms": return self._json(200, svc.db.platforms())
             if path == "/api/emergency": return self._json(200, {"number": "112", "note": "Call 112 for immediate danger. JANSEVA is a complaint tool, not an emergency dispatch service.", "source": "India national emergency number"})
-            if path == "/api/public/feed": return self._json(200, public.feed(svc.db, q))
+            if path == "/api/public/feed": return self._json(200, public.feed(svc.db, q, int(q.get("limit", 50))))
             if path == "/api/public/stats": return self._json(200, public.stats(svc.db, q))
             if path == "/api/public/heatmap": return self._json(200, public.heatmap(svc.db, q))
             if path == "/api/public/report":
@@ -188,6 +195,9 @@ def main():
     if not base and os.environ.get("SWACHHATA_LIVE") != "1":
         mock = MockSwachhata(); base = mock.url
     svc = Service(sandbox_base=base)
+    if os.environ.get("JANSEVA_SEED_DEMO") == "1":
+        from .seed import seed
+        seed(svc)
     print("JANSEVA AI on :%d  admin token: %s  swachhata mode: %s" % (port, ADMIN_TOKEN, svc.connectors()["swachhata"].mode()), flush=True)
     ThreadingHTTPServer(("0.0.0.0", port), make_handler(svc, ADMIN_TOKEN)).serve_forever()
 

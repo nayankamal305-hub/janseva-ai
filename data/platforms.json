@@ -156,8 +156,8 @@
  },
  {
   "id": "pmc_grievance",
-  "name": "Pune Municipal Corporation grievance (guided)",
-  "url": "https://pmc.gov.in/",
+  "name": "Pune Municipal Corporation: PMC CARE (grievance registration)",
+  "url": "https://pmccare.in/cep/home",
   "department": "Pune Municipal Corporation",
   "jurisdiction": {
    "scope": "city",
@@ -176,19 +176,20 @@
   ],
   "level": 3,
   "connector": "guided",
-  "api_docs": "not verified",
+  "api_docs": "No public API document found. Portal link listed on the official PMC citizen-services page.",
   "auth": "portal",
   "required_credentials": [],
-  "approval_status": "unverified",
+  "approval_status": "official_url_verified",
   "last_verified": "2026-11-27",
   "admin_owner": "unassigned",
   "sla_days": 7,
   "supports_appeal": false,
   "steps": [
-   "Open the PMC complaint page (verify URL on pmc.gov.in).",
-   "Paste the complaint text and photo.",
-   "Enter reference in JANSEVA."
-  ]
+   "Open PMC CARE (https://pmccare.in/cep/home), listed on the official PMC citizen services page.",
+   "Register or log in, choose grievance registration, paste the generated text and photo.",
+   "Enter the reference number in JANSEVA."
+  ],
+  "source_url": "https://webadmin.pmc.gov.in/citizen-services"
  },
  {
   "id": "nhai",
@@ -204,7 +205,7 @@
   ],
   "level": 5,
   "connector": "guided",
-  "api_docs": "not verified",
+  "api_docs": "not verified; Citizen Charter 2024 lists 1033 for toll/FASTag complaints only",
   "auth": "portal / helpline 1033",
   "required_credentials": [],
   "approval_status": "unverified",
@@ -213,7 +214,7 @@
   "sla_days": 7,
   "supports_appeal": false,
   "steps": [
-   "Call NHAI helpline 1033 or use the official NHAI complaint route.",
+   "NHAI states helpline 1033 for toll/FASTag complaints (Citizen Charter 2024). For road defects, use the contact of the NHAI Project Implementation Unit for that highway stretch from the official NHAI site.",
    "Quote the generated text and GPS location."
   ]
  },
@@ -520,5 +521,82 @@
    "Find the official grievance page/helpline of this authority on its own official website (this entry has no verified URL yet).",
    "Use the generated complaint letter and GPS location."
   ]
+ },
+ {
+  "id": "mh_cm_grievance",
+  "name": "Maharashtra Public Grievance Portal (CM's Office)",
+  "url": "https://grievances.maharashtra.gov.in/en",
+  "department": "Maharashtra Chief Minister's Office",
+  "jurisdiction": {
+   "scope": "state",
+   "states": [
+    "maharashtra"
+   ]
+  },
+  "categories": [
+   "general",
+   "water",
+   "electricity",
+   "road",
+   "garbage",
+   "drainage",
+   "health",
+   "education",
+   "police",
+   "pension"
+  ],
+  "level": 3,
+  "connector": "guided",
+  "api_docs": "none public found",
+  "auth": "Citizen login with captcha on official portal",
+  "required_credentials": [],
+  "approval_status": "official_url_verified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 21,
+  "supports_appeal": false,
+  "helpline": "1800 120 8040 (toll free, per portal)",
+  "steps": [
+   "Open https://grievances.maharashtra.gov.in/en and log in or register (the portal uses a captcha, you complete it).",
+   "Paste the generated text and attach the photo.",
+   "Enter the grievance number in JANSEVA."
+  ],
+  "source_url": "https://grievances.maharashtra.gov.in/en"
+ },
+ {
+  "id": "gaya_municipal",
+  "name": "Gaya Municipal Corporation (guided)",
+  "url": "https://gayamunicipal.net/pmc/public/index.html",
+  "department": "Gaya Municipal Corporation",
+  "jurisdiction": {
+   "scope": "city",
+   "cities": [
+    "gaya"
+   ]
+  },
+  "categories": [
+   "garbage",
+   "sanitation",
+   "drainage",
+   "road",
+   "water",
+   "streetlight"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "none found",
+  "auth": "none",
+  "required_credentials": [],
+  "approval_status": "official_url_verified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 7,
+  "supports_appeal": false,
+  "helpline": "1800 121 8545 (per the corporation site)",
+  "steps": [
+   "Call the Gaya Municipal Corporation toll free number 1800 121 8545 or use the corporation website.",
+   "Quote the generated complaint text and location."
+  ],
+  "source_url": "https://gayamunicipal.net/pmc/public/index.html"
  }
 ]

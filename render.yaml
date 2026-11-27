@@ -6,3 +6,9 @@ services:
     envVars:
       - key: JANSEVA_ADMIN_TOKEN
         generateValue: true
+      - key: JANSEVA_SEED_DEMO
+        value: "1"
+      - key: JANSEVA_DEV_OTP
+        value: "1"
+      - key: GEMINI_API_KEY
+        sync: false

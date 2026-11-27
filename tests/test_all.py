@@ -162,7 +162,7 @@ class HTTP(unittest.TestCase):
         s = call("POST", "/api/complaints/%d/submit" % c["id"], dict(consent_submit=True, consent_share_personal=True), tok); self.assertTrue(s["ok"])
         other = call("POST", "/api/register", {"phone": "9000000002", "name": "B"})["token"]
         self.assertEqual(call("GET", "/api/complaints/%d" % c["id"], tok=other)["_code"], 404)
-        self.assertEqual(call("GET", "/api/admin/control-center", tok="adm")["total_platforms"], 18)
+        self.assertEqual(call("GET", "/api/admin/control-center", tok="adm")["total_platforms"], 20)
         srv.shutdown(); mock.stop()
 
 if __name__ == "__main__": unittest.main()

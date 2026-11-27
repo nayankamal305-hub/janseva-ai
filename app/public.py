@@ -50,7 +50,12 @@ def stats(db, f):
     if times:
         d = [(datetime.fromisoformat(t["updated_at"]) - datetime.fromisoformat(t["created_at"])).total_seconds() / 3600 for t in times]; avg = round(sum(d) / len(d), 1)
     by = lambda col: db.all("SELECT c.%s k, count(*) n FROM complaints c WHERE %s GROUP BY c.%s ORDER BY n DESC LIMIT 20" % (col, w, col), a)
-    return {"total_reported": total, "user_reported": total,
+    overdue = 0; plats = {x["id"]: x for x in db.platforms()}
+    for r in db.all("SELECT e.platform_id, e.submitted_at FROM external_records e JOIN complaints c ON c.id=e.complaint_id WHERE " + w + " AND e.external_ref IS NOT NULL AND e.status NOT IN ('resolved','rejected') AND e.submitted_at IS NOT NULL", a):
+        if datetime.now(timezone.utc) - datetime.fromisoformat(r["submitted_at"]) > timedelta(days=plats.get(r["platform_id"], {}).get("sla_days", 7)): overdue += 1
+    acks = db.all("SELECT c.created_at, e.acknowledged_at FROM complaints c JOIN external_records e ON e.complaint_id=c.id WHERE " + w + " AND e.acknowledged_at IS NOT NULL", a)
+    ack_h = round(sum((datetime.fromisoformat(x["acknowledged_at"]) - datetime.fromisoformat(x["created_at"])).total_seconds() for x in acks) / len(acks) / 3600, 2) if acks else None
+    return {"overdue_records": overdue, "avg_hours_to_acknowledgement": ack_h, "total_reported": total, "user_reported": total,
             "ai_analysed": q(" AND c.confidence IS NOT NULL"),
             "officially_submitted_government_confirmed": live_sub,
             "sandbox_test_complaints": q(" AND c.official_basis='sandbox'"),
@@ -60,7 +65,7 @@ def stats(db, f):
             "avg_hours_to_verified_resolution": avg,
             "resolution_percent_citizen_verified": round(100 * verified / total, 1) if total else None,
             "by_state": by("state"), "by_city": by("city"), "by_category": by("category"), "by_status": by("status"),
-            "disclosure": "Counts are of reports on this platform, not of all issues. Only government-confirmed (live) submissions count as officially submitted. Overdue counts and cost per verified resolution are not computed in this build."}
+            "disclosure": "Counts are of reports on this platform, not of all issues. Only government-confirmed (live) submissions count as officially submitted. Overdue uses each platform's configured SLA days (not statutory unless the platform publishes them). Cost per verified resolution is not computed (no cost data)."}
 
 def heatmap(db, f, cell=0.01):
     w, a = _where(f)

@@ -40,6 +40,8 @@ class Connector:
         sc = j.get("scope")
         if sc == "city" and (c.get("city") or "").lower() not in j.get("cities", []):
             return False, "city not covered by this platform"
+        if sc == "state" and j.get("states") and (c.get("state") or "").lower() not in j["states"]:
+            return False, "state not covered by this platform"
         if j.get("asset_owner") and c.get("asset_owner") != j["asset_owner"]:
             return False, "asset owner is not %s" % j["asset_owner"]
         return True, "ok"

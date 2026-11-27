@@ -1,118 +1,84 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>JANSEVA AI</title><meta name="theme-color" content="#0b2a6b"><link rel="manifest" href="/manifest.json">
-<style>
-:root{--navy:#0b2a6b;--saf:#f59e0b;--ok:#15803d;--red:#b91c1c;--bg:#f6f8fc}
-*{box-sizing:border-box}body{font-family:system-ui,"Noto Sans Devanagari",sans-serif;margin:0;background:var(--bg);color:#16202e;font-size:17px}
-header{background:var(--navy);color:#fff;padding:14px 16px;border-bottom:4px solid var(--saf)}header h1{margin:0;font-size:22px}header small{color:#cbd5f0}
-#emg{background:var(--red);color:#fff;padding:8px 16px;font-weight:600}
-main{max-width:960px;margin:auto;padding:10px}nav{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
-nav button,.btn{background:#fff;color:var(--navy);border:2px solid var(--navy);border-radius:8px;padding:10px 14px;font:inherit;cursor:pointer}
-nav button.on,.btn.p{background:var(--navy);color:#fff}.btn.s{background:var(--saf);border-color:var(--saf);color:#1b1300;font-weight:700}
-.card{background:#fff;border-radius:12px;padding:14px;margin:10px 0;box-shadow:0 1px 4px #0002}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.tile{background:#fff;border:2px solid #dbe3f5;border-radius:12px;padding:16px;text-align:center;cursor:pointer;font-weight:600;color:var(--navy)}
-.tile.big{grid-column:1/-1;background:var(--saf);border-color:var(--saf);font-size:22px;color:#1b1300}
-input,textarea,select{font:inherit;padding:10px;margin:4px 0;width:100%;border:1px solid #b8c4e0;border-radius:8px}label{display:block;margin:6px 0}label input{width:auto}
-.tag{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;color:#fff}.live{background:var(--ok)}.sandbox{background:#b36b00}.guided{background:#555}.pending{background:#999}
-.st{display:inline-block;padding:2px 10px;border-radius:12px;background:#e4ebfb;color:var(--navy);font-size:14px}.st.good{background:#dcfce7;color:var(--ok)}.st.bad{background:#fee2e2;color:var(--red)}
-pre{white-space:pre-wrap;background:#eef2fb;padding:8px;border-radius:6px;font-size:14px}small,.mut{color:#566}.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1;min-width:120px}
-.bar{height:10px;background:var(--navy);border-radius:5px}.sec{display:none}.sec.on{display:block}
-</style></head><body>
-<header><h1>JANSEVA AI</h1><small>One Photo. One Voice. One Accountable India. &middot; Sandbox build: no live government submission without real credentials</small></header>
-<div id="emg">Immediate danger? Call 112 now. JANSEVA is a complaint tool, not an emergency service.</div>
+<link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/vendor/leaflet/leaflet.css"><link rel="stylesheet" href="/static/app.css">
+</head><body>
+<header class="appbar">
+ <div class="logo" onclick="go('home')"><i data-ic="landmark"></i><div>JANSEVA AI<small>जनसेवा</small></div></div>
+ <nav class="topnav" id="topnav"></nav><div class="sp"></div>
+ <select id="ulang" aria-label="Language" onchange="setLang(this.value)"><option value="en">English</option><option value="hi">हिंदी</option><option value="mr">मराठी</option><option value="bn">বাংলা</option><option value="ta">தமிழ்</option><option value="te">తెలుగు</option><option value="gu">ગુજરાતી</option><option value="kn">ಕನ್ನಡ</option></select>
+ <button class="pill sos" onclick="go('emergency')" aria-label="Emergency 112"><i data-ic="siren"></i>112</button>
+ <button class="pill ghost" id="loginbtn" onclick="openLogin()"><i data-ic="user-round"></i><span id="who">Login</span></button>
+</header>
 <main>
-<nav id="nav"></nav>
-<section id="home" class="sec on"><div class="tiles">
- <div class="tile big" onclick="go('report')">📷 Report a Problem</div>
- <div class="tile" onclick="go('mine')">My Complaints</div><div class="tile" onclick="go('nearby')">Nearby Problems</div>
- <div class="tile" onclick="go('mine')">Track Complaint</div><div class="tile" onclick="go('pub')">Public Accountability Dashboard</div>
- <div class="tile" onclick="go('dir')">Government Departments</div><div class="tile" onclick="go('emergency')">Emergency Help</div><div class="tile" onclick="go('nearby')">Community Issues</div>
- <div class="tile" onclick="go('assist')">Ask the Assistant</div></div>
- <div class="card" id="login"><b>Login (OTP)</b><div class="row"><input id="phone" placeholder="10-digit mobile"><input id="name" placeholder="Name (optional)"></div>
-  <button class="btn p" onclick="otpReq()">Get OTP</button> <span id="otpbox" style="display:none"><input id="code" placeholder="6-digit OTP" style="width:160px"><button class="btn s" onclick="otpVer()">Verify</button></span>
-  <div class="mut" id="otpmsg"></div><small>No SMS provider is connected in this build. In the dev build the code is shown here.</small></div></section>
-<section id="report" class="sec"><div class="card"><b>Step 1: Photo, location, description</b>
- <input type="file" id="file" accept="image/*" capture="environment"><div id="upmsg" class="mut"></div>
- <input id="title" placeholder="Title"><textarea id="desc" rows=3 placeholder="Describe the problem (Hindi or English)"></textarea>
- <div class="row"><input id="lat" placeholder="Latitude"><input id="lon" placeholder="Longitude"><button class="btn" onclick="gps()">Use my GPS</button></div>
- <div class="row"><input id="addr" placeholder="Address / landmark"><input id="city" placeholder="City"><input id="state" placeholder="State"><input id="pin" placeholder="PIN code"></div>
- <select id="owner"><option value="">Road owner (roads only): not sure</option><option value="municipal">Municipal</option><option value="pwd">State PWD</option><option value="nhai">NHAI</option></select>
- <label><input type="checkbox" id="anon"> Report anonymously (cannot be filed officially without identity)</label>
- <button class="btn s" onclick="analyse()">Analyse and continue</button> <pre id="msg" style="display:none"></pre></div>
- <div class="card" id="step2" style="display:none"><b>Step 2: Confirm what the AI found</b><div id="aibox"></div>
-  <select id="catsel"></select><button class="btn" onclick="confirmCat()">Confirm category</button>
-  <div id="routebox"></div>
-  <label><input type="checkbox" id="c1"> I consent to submit this complaint through the matching official channels</label>
-  <label><input type="checkbox" id="c2"> I consent to share my name and mobile with those platforms</label>
-  <label><input type="checkbox" id="c3"> Also notify my elected representative (optional, only verified contacts)</label>
-  <button class="btn s" onclick="submitC()">Submit</button> <pre id="submsg" style="display:none"></pre></div></section>
-<section id="mine" class="sec"><div id="list"></div></section>
-<section id="nearby" class="sec"><div class="card"><b>Public issue feed and map</b><div class="row"><input id="fcity" placeholder="City"><select id="fcat"><option value="">All categories</option></select><select id="fdays"><option value="">Any time</option><option value="1">Today</option><option value="7">Last 7 days</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option></select><button class="btn" onclick="loadFeed()">Filter</button></div><svg id="map" viewBox="0 0 400 200" style="width:100%;background:#e8eefb;border-radius:8px"></svg></div><div id="feed"></div></section>
-<section id="pub" class="sec"><div class="card"><div class="row"><input id="pstate" placeholder="State"><input id="pcity" placeholder="City"><select id="pdays"><option value="">All time</option><option value="7">7 days</option><option value="30">30 days</option><option value="90">90 days</option></select><button class="btn p" onclick="loadStats()">Apply</button> <a class="btn" id="csv">Download monthly report (CSV)</a></div></div><div id="stats"></div></section>
-<section id="dir" class="sec"><div class="card"><b>Government platform directory</b><div id="plats"></div></div><div class="card"><b>Verified authorities and representatives</b><div id="auths" class="mut">Only entries with an official source are listed. None are listed yet.</div></div></section>
-<section id="emergency" class="sec"><div class="card"><h2 style="color:var(--red)">Call 112</h2>For fallen wires, open manholes, collapse risk, severe flooding: call <b>112</b> directly. A JANSEVA complaint is not an emergency dispatch.</div></section>
-<section id="assist" class="sec"><div class="card"><b>Citizen assistant</b> <small>(rule-based, not legal advice)</small><div class="row"><input id="aq" placeholder="Where should I complain about this road?"><select id="alang"><option value="en">English</option><option value="hi">हिंदी</option></select><button class="btn p" onclick="ask()">Ask</button></div><pre id="aans" style="display:none"></pre></div></section>
-<section id="adm" class="sec"><div class="card"><div class="row"><input id="atok" placeholder="Admin token"><button class="btn p" onclick="loadAdm()">Load</button></div></div><div id="admout"></div></section>
-<div class="card"><button class="btn" onclick="del()" style="font-size:13px">Delete my account (anonymises data)</button> <small>Privacy: your phone and name are never shown publicly. Retention: complaints are kept in anonymised form.</small></div>
+<section id="home" class="sec on">
+ <div class="hero"><h1><span data-i="h1a">One Photo.</span> <span data-i="h1b">One Voice.</span> <em data-i="h1c">One Accountable India.</em></h1>
+  <p class="hi">एक फोटो। एक आवाज़। एक जवाबदेह भारत।</p>
+  <div class="cta"><button class="btn saf big pulse" onclick="go('report')"><i data-ic="camera"></i><span data-i="cta">Report a Problem</span></button><button class="btn glass" onclick="go('mine')"><i data-ic="list-checks"></i><span data-i="track">Track Complaint</span></button></div></div>
+ <div class="stats"><div class="stat"><b id="s1">0</b><span data-i="reported">Reported</span></div><div class="stat g"><b id="s2">0</b><span data-i="verified">Citizen verified</span></div><div class="stat o"><b id="s3">0</b><span data-i="pending">Pending</span></div></div>
+ <div class="tiles" style="margin-top:14px" id="tiles"></div>
+ <div class="card"><h3><i data-ic="flag"></i><span data-i="recent">Recent public issues</span></h3><div id="homefeed"><div class="skel"></div></div></div>
+ <div class="card"><h3><i data-ic="shield-check"></i>How it works</h3><div class="steps">
+  <div class="step"><div class="n"><i data-ic="camera"></i></div><div><b>Photo + location</b><div class="sm mut">Snap the problem. GPS is captured. Blur faces and plates on your phone before upload.</div></div></div>
+  <div class="step"><div class="n"><i data-ic="search"></i></div><div><b>AI check</b><div class="sm mut">Category, severity and safety risk. You confirm. Low confidence always asks you.</div></div></div>
+  <div class="step"><div class="n"><i data-ic="landmark"></i></div><div><b>Right official channel</b><div class="sm mut">Jurisdiction and road owner are checked. Unclear cases go to a human, never a guess.</div></div></div>
+  <div class="step"><div class="n"><i data-ic="circle-check"></i></div><div><b>You verify the fix</b><div class="sm mut">A department closing a complaint is not enough. You confirm with an after photo.</div></div></div></div></div>
+ <div class="info" style="margin-bottom:14px"><i data-ic="info"></i><div><b>Sandbox build.</b> Nothing is filed with a government system until official access is approved. Every record is labelled live, sandbox or guided, and nothing shows as registered without a real reference number.</div></div>
+</section>
+
+<section id="report" class="sec">
+ <div class="wiz" id="wiz"></div>
+ <div id="w1" class="card"><h3><i data-ic="camera"></i>Photo and place</h3>
+  <label class="drop" id="dropz" for="file"><i data-ic="camera"></i><b>Take or choose a photo</b><span class="sm mut">Compressed on your phone. You can blur anything private next.</span></label>
+  <input type="file" id="file" accept="image/*" capture="environment" hidden>
+  <div id="ed" style="display:none;margin-top:12px"><div class="info bl sm"><i data-ic="eye-off"></i><div id="edhelp">Drag on the photo to blur faces, number plates or anything private. Only the blurred copy is uploaded.</div></div><canvas id="cv" style="margin-top:10px"></canvas><div class="row" style="margin-top:10px"><button class="btn out sm" onclick="autoFaces()"><i data-ic="eye-off"></i>Auto-blur faces</button><button class="btn out sm" onclick="undoBlur()"><i data-ic="refresh-cw"></i>Undo</button></div></div>
+  <label class="f">Location (tap the map or use GPS)</label><div id="pickmap"></div>
+  <div class="row" style="margin-top:8px"><button class="btn out sm" onclick="gps()"><i data-ic="map-pin"></i>Use my GPS</button><span class="sm mut" id="coords">No location yet</span></div>
+  <div class="grid g2"><div><label class="f">City</label><input id="city" placeholder="e.g. Pune"></div><div><label class="f">State</label><input id="state" placeholder="e.g. Maharashtra"></div></div>
+  <div class="grid g2"><div><label class="f">PIN code</label><input id="pin" inputmode="numeric" placeholder="411004"></div><div><label class="f">Landmark / address</label><input id="addr" placeholder="Near bus stop"></div></div>
+  <button class="btn pri" style="width:100%;margin-top:14px" onclick="nextW(2)">Continue<i data-ic="chevron-right"></i></button></div>
+ <div id="w2" class="card" style="display:none"><h3><i data-ic="file-text"></i>Describe the problem</h3>
+  <label class="f">Title</label><input id="title" placeholder="Short title">
+  <label class="f">What is wrong?</label><div class="row" style="align-items:flex-start;flex-wrap:nowrap"><textarea id="desc" class="grow" placeholder="Describe in any language. You can speak instead."></textarea><button class="btn out" id="mic" onclick="mic()" aria-label="Speak"><i data-ic="mic"></i></button></div>
+  <label class="f">Road owner (roads only)</label><select id="owner"><option value="">Not sure</option><option value="municipal">Municipal corporation</option><option value="pwd">State PWD</option><option value="nhai">NHAI</option></select>
+  <label class="sw"><input type="checkbox" id="anon"><span class="t"></span><span><b>Report anonymously</b><span class="sm mut" style="display:block">Anonymous reports cannot be filed officially, because government portals need your identity.</span></span></label>
+  <div class="row" style="margin-top:10px"><button class="btn out" onclick="nextW(1)">Back</button><button class="btn saf grow" onclick="analyse()"><i data-ic="search"></i>Analyse</button></div><div id="msg" class="info rd" style="display:none;margin-top:10px"></div></div>
+ <div id="w3" style="display:none"><div class="card"><h3><i data-ic="search"></i>AI review</h3><div id="aibox"></div><label class="f">Category</label><div class="row"><select id="catsel" class="grow"></select><button class="btn out sm" onclick="confirmCat()">Confirm</button></div></div>
+  <div class="card"><h3><i data-ic="landmark"></i>Where it would go and why</h3><div id="routebox"></div></div>
+  <div class="card"><h3><i data-ic="lock"></i>Your consent</h3>
+   <label class="sw"><input type="checkbox" id="c1"><span class="t"></span><span><b>Submit through matching official channels</b></span></label>
+   <label class="sw"><input type="checkbox" id="c2"><span class="t"></span><span><b>Share my name and mobile with those platforms</b><span class="sm mut" style="display:block">Needed for official filing.</span></span></label>
+   <label class="sw"><input type="checkbox" id="c3"><span class="t"></span><span><b>Also notify my elected representative</b><span class="sm mut" style="display:block">Optional. Only verified public contacts are used.</span></span></label>
+   <button class="btn saf big" style="width:100%;margin-top:12px" onclick="submitC()"><i data-ic="send"></i>Submit</button><div id="submsg" class="info gr" style="display:none;margin-top:10px"></div></div></div>
+</section>
+
+<section id="mine" class="sec"><h2 style="margin:16px 0 4px">My complaints</h2><div id="list"></div></section>
+
+<section id="nearby" class="sec"><h2 style="margin:16px 0 4px">Nearby and community issues</h2>
+ <div class="card"><div class="chips" id="fchips"></div><div id="nearmap"></div></div><div id="feed"></div></section>
+
+<section id="pub" class="sec"><h2 style="margin:16px 0 4px">Public accountability dashboard</h2>
+ <div class="chips" id="pchips"></div><div class="row" style="margin:6px 0"><input id="pstate" class="grow" placeholder="State"><input id="pcity" class="grow" placeholder="City"><button class="btn pri sm" onclick="loadStats()">Apply</button><a class="btn out sm" href="/api/public/report?format=csv"><i data-ic="download"></i>Monthly CSV</a></div>
+ <div id="stats"><div class="skel"></div></div></section>
+
+<section id="dir" class="sec"><h2 style="margin:16px 0 4px">Government departments and platforms</h2><input id="dq" placeholder="Search platforms" oninput="renderDir()" style="margin:8px 0"><div id="plats"></div>
+ <div class="card"><h3><i data-ic="shield-check"></i>Verified authorities and representatives</h3><div id="auths" class="mut sm"></div></div></section>
+
+<section id="emergency" class="sec"><div class="card" style="text-align:center;margin-top:18px"><div style="font-size:54px;color:var(--red)"><i data-ic="siren"></i></div><h1 style="color:var(--red);font-size:42px">112</h1><p>For fallen wires, open manholes, building collapse risk or severe flooding, call <b>112</b> now.</p><a class="btn red big" href="tel:112"><i data-ic="phone"></i>Call 112</a><p class="sm mut" style="margin-top:14px">JANSEVA is a complaint tool, not an emergency dispatch service.</p></div></section>
+
+<section id="assist" class="sec"><h2 style="margin:16px 0 4px">Citizen assistant</h2><div class="card"><div class="chat" id="chat"><div class="bub a">Ask how to complain, who is responsible, or what to do if a complaint is ignored. I answer in your language where I can.<span class="xs">Rule-based helper, not an AI model or legal advice.</span></div></div>
+ <div class="chips" style="margin-top:10px"><button onclick="sugg(this)">Where should I complain about this road?</button><button onclick="sugg(this)">Who handles garbage collection?</button><button onclick="sugg(this)">What if my complaint is ignored?</button><button onclick="sugg(this)">Can I report anonymously?</button><button onclick="sugg(this)">How do I file an RTI?</button></div>
+ <div class="row" style="margin-top:8px;flex-wrap:nowrap"><input id="aq" class="grow" placeholder="Type your question" onkeydown="if(event.key=='Enter')ask()"><button class="btn out" onclick="mic('aq')" aria-label="Speak"><i data-ic="mic"></i></button><button class="btn pri" onclick="ask()" aria-label="Send"><i data-ic="send"></i></button></div></div></section>
+
+<section id="adm" class="sec"><h2 style="margin:16px 0 4px">Administration</h2><div class="card"><div class="row"><input id="atok" class="grow" type="password" placeholder="Admin token"><button class="btn pri" onclick="loadAdm()">Open</button></div></div><div id="admout"></div></section>
+
+<div class="card sm mut" style="margin-top:18px"><div class="row"><i data-ic="lock"></i><span class="grow">Your phone and name are never shown publicly. Complaints are kept in anonymised form if you delete your account.</span><button class="btn out sm" onclick="del()"><i data-ic="trash-2"></i>Delete account</button><button class="btn out sm" onclick="go('adm')">Admin</button></div></div>
+<div class="xs mut" style="text-align:center;padding:6px 0 18px">Map data © OpenStreetMap contributors · v0.4</div>
 </main>
-<script>
-let T=localStorage.jt||"",CUR=null;const $=i=>document.getElementById(i);
-const NAV=[['home','Home'],['report','Report'],['mine','My Complaints'],['nearby','Nearby'],['pub','Public Dashboard'],['dir','Departments'],['assist','Assistant'],['adm','Admin']];
-$('nav').innerHTML=NAV.map(n=>`<button id="n_${n[0]}" onclick="go('${n[0]}')">${n[1]}</button>`).join('');
-function go(x){document.querySelectorAll('.sec').forEach(s=>s.classList.toggle('on',s.id==x));NAV.forEach(n=>$('n_'+n[0]).classList.toggle('on',n[0]==x));
- if(x=='mine')load();if(x=='nearby')loadFeed();if(x=='pub')loadStats();if(x=='dir')loadDir();}
-go(location.hash.slice(1)||"home");
-const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-async function api(m,p,d,tok){const r=await fetch(p,{method:m,headers:{Authorization:'Bearer '+(tok||T),'Content-Type':'application/json'},body:d?JSON.stringify(d):undefined});return r.json()}
-async function otpReq(){const r=await api('POST','/api/otp/request',{phone:$('phone').value});$('otpbox').style.display='';$('otpmsg').textContent=(r.dev_code?'Dev OTP: '+r.dev_code:r.note||r.error)}
-async function otpVer(){let r=await api('POST','/api/otp/verify',{phone:$('phone').value,code:$('code').value,name:$('name').value});
- if(!r.token&&!r.error){} if(r.token){T=r.token;localStorage.jt=T;$('login').style.display='none';go('report')}else $('otpmsg').textContent=r.error}
-if(T)$('login').style.display='none';
-function gps(){navigator.geolocation.getCurrentPosition(p=>{$('lat').value=p.coords.latitude;$('lon').value=p.coords.longitude},e=>alert('GPS unavailable: '+e.message))}
-let PHOTO=null;$('file').onchange=async e=>{const f=e.target.files[0];if(!f)return;const b=await f.arrayBuffer();
- const r=await fetch('/api/upload',{method:'POST',headers:{Authorization:'Bearer '+T},body:b});const j=await r.json();PHOTO=j.url||null;$('upmsg').textContent=j.url?'Photo saved':'Upload failed: '+j.error}
-async function analyse(){const d={title:$('title').value,description:$('desc').value,photo_url:PHOTO?location.origin+PHOTO:null,address:$('addr').value,city:$('city').value,state:$('state').value,pincode:$('pin').value,
- lat:parseFloat($('lat').value),lon:parseFloat($('lon').value),asset_owner:$('owner').value||null,anonymous:$('anon').checked};
- const c=await api('POST','/api/complaints',d);const m=$('msg');m.style.display='';if(!c.ok){m.textContent=(c.errors||[c.error]).join('\n');return}
- m.style.display='none';CUR=c;$('step2').style.display='';const a=c.ai;
- $('aibox').innerHTML=`<div>Category: <b>${esc(a.category)}</b> &middot; confidence ${a.confidence} &middot; severity ${a.severity}/5 &middot; safety risk ${esc(a.safety_risk)}</div><div>Suggested department: ${esc(a.suggested_department)}</div><small>${esc(a.engine)}. ${esc(a.notes)}</small>`+(c.emergency_notice?`<div style="color:var(--red);font-weight:700">${esc(c.emergency_notice)}</div>`:'')+(a.confidence<0.6?'<div class="mut">Low confidence: please choose the category.</div>':'');
- const cats=['garbage','drainage','toilet','road','water','electricity','railway','consumer','pension','police','general'];$('catsel').innerHTML=cats.map(x=>`<option ${x==a.category?'selected':''}>${x}</option>`).join('');showRoute()}
-async function showRoute(){const r=await api('GET','/api/complaints/'+CUR.id+'/route');$('routebox').innerHTML='<b>Where it would go and why</b>'+r.targets.map(t=>`<div>L${t.level} ${esc(t.platform_id)} <small>${esc(t.reason)} ${t.validation_errors.length?'(needs: '+esc(t.validation_errors.join(', '))+')':''}</small></div>`).join('')+(r.needs.length?'<div style="color:var(--red)">'+esc(r.needs.join(' '))+'</div>':'')+'<small>Not used: '+r.rejected.slice(0,5).map(x=>esc(x[0]+' ('+x[1]+')')).join('; ')+'</small>'}
-async function confirmCat(){await api('POST','/api/complaints/'+CUR.id+'/confirm',{category:$('catsel').value});showRoute()}
-async function submitC(){const r=await api('POST','/api/complaints/'+CUR.id+'/submit',{consent_submit:$('c1').checked,consent_share_personal:$('c2').checked,notify_representative:$('c3').checked});
- const m=$('submsg');m.style.display='';m.textContent=r.ok?'Done. JANSEVA ID '+CUR.code+'. Open My Complaints to track. Guided channels still need you to submit on the official portal; nothing is shown as registered until a reference exists.':JSON.stringify(r,null,1)}
-const GOOD=['citizen_verified_resolved'],BAD=['rejected','reopened','escalated'];
-async function load(){const l=await api('GET','/api/complaints');if(!Array.isArray(l)){$('list').innerHTML='<div class=card>Please log in first.</div>';return}let h='';
- for(const c of l){const d=await api('GET','/api/complaints/'+c.id);h+=`<div class="card"><b>${esc(c.code)}</b> ${esc(c.title||'')} <span class="st ${GOOD.includes(c.status)?'good':BAD.includes(c.status)?'bad':''}">${esc(c.status.replace(/_/g,' '))}</span> ${c.official_basis=='sandbox'?'<span class="tag sandbox">sandbox: not official</span>':''}`;
-  for(const e of d.external_records){h+=`<div style="margin:6px 0"><span class="tag ${e.mode}">${esc(e.mode)}</span> L${e.level} ${esc(e.platform_id)}: ${esc(e.status)} ${e.external_ref?'ref <b>'+esc(e.external_ref)+'</b> ('+esc(e.reference_source)+')':'(no reference yet)'}`;
-   if(e.level>=3&&!e.external_ref){const g=e.evidence.guide||{};h+=`<details><summary>How to submit officially</summary><a href="${esc(g.portal)}" target=_blank rel=noopener>Open official portal</a><ol>${(g.steps||[]).map(s=>'<li>'+esc(s)+'</li>').join('')}</ol><pre>${esc(g.complaint_text)}</pre><input id="ref${e.id}" placeholder="Reference number from the portal"><button class="btn" onclick="ref(${c.id},'${e.platform_id}',${e.id})">Save reference</button></details>`}h+='</div>'}
-  h+='<details><summary>Timeline</summary>'+d.timeline.map(t=>`<div><small>${esc(t.ts.slice(0,16))}</small> ${esc(t.message)}</div>`).join('')+'</details>';
-  if(['authority_marked_resolved','citizen_verified_resolved','reopened'].includes(c.status))h+=`<div class="row"><input type="file" id="af${c.id}" accept="image/*"><button class="btn p" onclick="vf(${c.id},true)">Verify resolved</button><button class="btn" onclick="vf(${c.id},false)">Not resolved</button></div>`;
-  h+=`<button class="btn" onclick="sy(${c.id})">Sync status</button></div>`}
- $('list').innerHTML=h||'<div class=card>No complaints yet.</div>'}
-async function ref(cid,p,eid){await api('POST','/api/complaints/'+cid+'/reference',{platform_id:p,ref:$('ref'+eid).value});load()}
-async function sy(c){await api('POST','/api/complaints/'+c+'/sync',{});load()}
-async function vf(c,ok){let ph=null;const f=$('af'+c).files[0];if(f){const r=await fetch('/api/upload',{method:'POST',headers:{Authorization:'Bearer '+T},body:await f.arrayBuffer()});ph=(await r.json()).url}await api('POST','/api/complaints/'+c+'/verify',{ok,after_photo:ph});load()}
-async function loadFeed(){const q=new URLSearchParams({city:$('fcity').value,category:$('fcat').value,days:$('fdays').value});for(const [k,v] of [...q])if(!v)q.delete(k);
- const f=await api('GET','/api/public/feed?'+q);if(!$('fcat').options[1]){['garbage','drainage','road','water','electricity','railway','consumer','general'].forEach(x=>$('fcat').add(new Option(x,x)))}
- $('feed').innerHTML=f.map(x=>`<div class="card">${x.photo?`<img src="${esc(x.photo)}" style="max-width:100%;border-radius:8px">`:''}<b>${esc(x.category)}</b> ${x.emergency?'<span class="st bad">urgent</span>':''} <span class="st">${esc(x.status.replace(/_/g,' '))}</span><br><small>${esc(x.city)} ${esc(x.state)} &middot; ${esc(x.reported)} &middot; ${x.supporters} supporting &middot; ${esc(x.label)}</small>${x.official_ids.length?'<br>Official ID: '+x.official_ids.map(o=>esc(o.platform+' '+o.ref)).join(', '):''}<br><button class="btn" onclick="sup(${x.id})">Support</button> <button class="btn" onclick="sup(${x.id},'still_exists')">Still exists</button></div>`).join('')||'<div class=card>No issues match.</div>';
- const hm=await api('GET','/api/public/heatmap');const la=hm.map(p=>p.lat),lo=hm.map(p=>p.lon);const mn=a=>Math.min(...a),mx=a=>Math.max(...a);
- $('map').innerHTML=hm.map(p=>`<circle cx="${20+360*((p.lon-mn(lo))/((mx(lo)-mn(lo))||1))}" cy="${180-160*((p.lat-mn(la))/((mx(la)-mn(la))||1))}" r="${6+p.count*3}" fill="#f59e0b" opacity=".7"><title>${p.count} issue(s) near ${p.lat},${p.lon}</title></circle>`).join('')}
-async function sup(id,k){const r=await api('POST','/api/complaints/'+id+'/support',{kind:k||'support'});if(r.error)alert('Please log in');loadFeed()}
-async function loadStats(){const q=new URLSearchParams({state:$('pstate').value,city:$('pcity').value,days:$('pdays').value});for(const [k,v] of [...q])if(!v)q.delete(k);
- const s=await api('GET','/api/public/stats?'+q);$('csv').href='/api/public/report?format=csv';const K=[['total_reported','User-reported'],['ai_analysed','AI analysed'],['officially_submitted_government_confirmed','Officially submitted (govt confirmed)'],['sandbox_test_complaints','Sandbox tests'],['authority_marked_resolved','Authority marked resolved'],['citizen_verified_resolved','Citizen verified resolved'],['pending','Pending'],['rejected','Rejected'],['reopened','Reopened'],['emergency_flagged','Urgent flagged']];
- const mxv=Math.max(1,...s.by_category.map(x=>x.n));
- $('stats').innerHTML='<div class="tiles">'+K.map(k=>`<div class="card" style="text-align:center"><div style="font-size:28px;color:var(--navy)"><b>${s[k[0]]}</b></div><small>${k[1]}</small></div>`).join('')+'</div>'+
- `<div class="card"><b>Resolution (citizen verified)</b>: ${s.resolution_percent_citizen_verified==null?'n/a':s.resolution_percent_citizen_verified+'%'} &middot; average hours to verified resolution: ${s.avg_hours_to_verified_resolution==null?'n/a':s.avg_hours_to_verified_resolution}</div>`+
- '<div class="card"><b>Most reported issues</b>'+s.by_category.map(x=>`<div>${esc(x.k)} ${x.n}<div class="bar" style="width:${100*x.n/mxv}%"></div></div>`).join('')+'</div><div class="card"><b>By state</b>'+s.by_state.map(x=>`<div>${esc(x.k||'unknown')}: ${x.n}</div>`).join('')+'</div><small>'+esc(s.disclosure)+'</small>'}
-async function loadDir(){const p=await api('GET','/api/platforms');$('plats').innerHTML=p.map(x=>`<div style="margin:8px 0"><b>${esc(x.name)}</b> <span class="st">Level ${x.level}</span> <span class="st">${esc(x.approval_status)}</span><br><small>${x.url?`<a href="${esc(x.url)}" target=_blank rel=noopener>${esc(x.url)}</a> | `:''}auth: ${esc(x.auth)} | verified ${esc(x.last_verified)}</small></div>`).join('');
- const a=await api('GET','/api/authorities'),r=await api('GET','/api/representatives');if(a.length||r.length)$('auths').innerHTML=a.map(x=>`<div><b>${esc(x.name)}</b> ${esc(x.type)} ${esc(x.city||'')} <small>verified ${esc(x.last_verified)} <a href="${esc(x.source_url)}">source</a></small></div>`).join('')+r.map(x=>`<div><b>${esc(x.name)}</b> ${esc(x.office)} ${esc(x.constituency||'')} <small>verified ${esc(x.last_verified)}</small></div>`).join('')}
-async function ask(){const r=await api('GET','/api/assistant?q='+encodeURIComponent($('aq').value)+'&lang='+$('alang').value);$('aans').style.display='';$('aans').textContent=r.answer+'\n('+r.engine+'. '+r.disclaimer+')'}
-async function del(){if(confirm('Delete your account? Your identity is removed; complaints stay anonymised.')){await api('POST','/api/account/delete',{});localStorage.removeItem('jt');location.reload()}}
-async function loadAdm(){const A=$('atok').value;const me=await api('GET','/api/admin/me',null,A);if(me.error){$('admout').innerHTML='<div class=card>'+esc(me.error)+'</div>';return}
- let h='<div class=card>Role: <b>'+esc(me.role)+'</b></div>';const cs=await api('GET','/api/admin/complaints',null,A);
- if(Array.isArray(cs))h+='<div class=card><b>Complaints in your scope (no citizen identity shown)</b>'+cs.map(c=>`<div>${esc(c.code)} ${esc(c.category)} <span class=st>${esc(c.status)}</span> ${esc(c.city)} ${c.needs_human?'<span class="st bad">needs verification</span>':''}</div>`).join('')+'</div>';
- if(me.role=='super_admin'){const cc=await api('GET','/api/admin/control-center',null,A),an=await api('GET','/api/admin/analytics',null,A),au=await api('GET','/api/admin/audit',null,A);
-  h+='<div class=card><b>Government Integration Control Center</b><pre>'+esc(JSON.stringify(cc,null,1))+'</pre></div><div class=card><b>Analytics</b><pre>'+esc(JSON.stringify(an,null,1))+'</pre></div><div class=card><b>Audit log</b>'+au.slice(0,15).map(x=>`<div><small>${esc(x.ts)} ${esc(x.actor)} ${esc(x.action)}</small></div>`).join('')+'</div>'}
- $('admout').innerHTML=h}
-if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{});
-</script></body></html>
+<nav class="bnav" id="bnav"></nav>
+<div class="sheetbg" id="sheet" onclick="if(event.target==this)closeLogin()"><div class="sheet"><h3 style="font-size:20px;margin-bottom:4px">Login with OTP</h3><p class="sm mut" style="margin:0 0 8px">Enter your mobile number. No SMS provider is connected in this build, so the code is shown on screen in the demo.</p>
+ <label class="f">Mobile number</label><input id="phone" inputmode="numeric" placeholder="10-digit mobile"><label class="f">Name (optional)</label><input id="name" placeholder="Your name">
+ <button class="btn pri" style="width:100%;margin-top:12px" onclick="otpReq()">Get OTP</button>
+ <div id="otpbox" style="display:none"><label class="f">OTP</label><input id="code" inputmode="numeric" placeholder="6-digit code"><button class="btn saf" style="width:100%;margin-top:10px" onclick="otpVer()">Verify and continue</button></div><div id="otpmsg" class="info bl" style="display:none;margin-top:10px"></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/app.js"></script>
+</body></html>

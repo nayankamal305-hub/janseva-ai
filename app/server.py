@@ -62,7 +62,7 @@ def make_handler(svc, admin_token, rate=120):
                 fn = "favicon.ico" if path == "/favicon.ico" else "apple-touch-icon.png"
                 return self._send(200, open(os.path.join(STATIC, "brand", fn), "rb").read(), "image/x-icon" if fn.endswith("ico") else "image/png", {"Cache-Control": "public, max-age=86400"})
             if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": [{"src": "/static/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, "const C='jansevaai-v36';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
+            if path == "/sw.js": return self._send(200, "const C='jansevaai-v38';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now(), "db": "postgres" if getattr(svc.db, "pg", False) else "sqlite", "photo_storage": storage.from_env(os.environ, UPLOADS).kind})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
@@ -169,6 +169,9 @@ def make_handler(svc, admin_token, rate=120):
                 m = q.get("month") or now()[:7]
                 if q.get("format") == "csv": return self._send(200, public.monthly_report(svc.db, m, "csv").encode(), "text/csv", {"Content-Disposition": "attachment; filename=jansevaai-%s.csv" % m})
                 return self._json(200, public.monthly_report(svc.db, m))
+            if path == "/api/portal-guide":
+                from . import filing
+                return self._json(200, {"items": filing.TYPE_GUIDE, "note": "Official sites need your own login/OTP. JANSEVA only prepares the text."})
             if path == "/api/authorities": return self._json(200, svc.db.all("SELECT * FROM authorities WHERE verified=1"))
             if path == "/api/representatives": return self._json(200, svc.db.all("SELECT id,name,office,constituency,state,public_contact,profile_url,last_verified FROM representatives WHERE verified=1"))
             if path == "/api/admin/inbound-poll":
@@ -346,6 +349,9 @@ def make_handler(svc, admin_token, rate=120):
                         try: res["email_dispatch"] = dispatch.plan(svc, cid); res["email_dispatch"]["send"] = dispatch.send_due(svc, cid); res["email_dispatch"]["mode"] = "server" if dispatch.server_email_on() else "citizen_own_email"
                         except Exception as ex: res["email_dispatch"] = {"ok": False, "error": type(ex).__name__}
                     return self._json(200, res)
+                if act == "filing-mark" and d.get("channel") == "mp":
+                    from . import filing
+                    r = filing.add_mp(svc, c, d.get("target")); return self._json(200 if r.get("ok") else 422, r)
                 if act == "filing-mark":
                     from . import filing
                     r = filing.mark(svc, c, d.get("channel"), d.get("target"), d.get("reference")); return self._json(200 if r.get("ok") else 422, r)

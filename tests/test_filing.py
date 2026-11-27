@@ -32,6 +32,19 @@ class F(unittest.TestCase):
         self.assertNotEqual(self.svc.get(self.cid)["status"], "registered")
         self.assertEqual(self.svc.db.one("SELECT status FROM filing_records WHERE complaint_id=?", (self.cid,))["status"], "filed_by_citizen")
         self.assertIn("not verified", self.svc.db.one("SELECT message FROM timeline WHERE complaint_id=? ORDER BY id DESC", (self.cid,))["message"] if False else "not verified")
+    def test_best_portal_first_and_copy_all(self):
+        dispatch.plan(self.svc, self.cid); pk = filing.pack(self.svc, self.c, self.us)
+        self.assertTrue(pk["portals"][0]["best"]); self.assertEqual(sum(1 for p in pk["portals"] if p["best"]), 1)
+        for p in pk["portals"]: self.assertIn("copy_all", p); self.assertNotIn("auto", p)
+        self.assertEqual(pk["portals"][0]["id"], "swachhata")
+    def test_type_guide_links_official(self):
+        for g in filing.TYPE_GUIDE: self.assertTrue(g["url"].startswith("https://"))
+    def test_send_all_and_mp(self):
+        dispatch.plan(self.svc, self.cid); r = filing.add_mp(self.svc, self.svc.get(self.cid), "Patna Sahib")
+        self.assertTrue(r["ok"] or "list" in r["error"])
+        pk = filing.pack(self.svc, self.svc.get(self.cid), self.us); sa = pk["send_all"]
+        self.assertTrue(sa["to"]); self.assertIn("mail.google.com", sa["links"]["gmail"]); self.assertTrue(sa["links"]["mailto"].startswith("mailto:"))
+        self.assertFalse(filing.add_mp(self.svc, self.svc.get(self.cid), "Nowhere")["ok"])
     def test_html_letter(self):
         h = filing.letter_html(self.c, self.us); self.assertIn("Print / Save as PDF", h); self.assertIn("<!doctype html>", h)
 if __name__ == "__main__": unittest.main()

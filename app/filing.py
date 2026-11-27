@@ -66,11 +66,22 @@ def letter_html(c, u, target=None, base=""):
             "@media print{.bar{display:none}body{margin:0}}</style></head><body><div class=\"bar\">This is a citizen's complaint letter prepared with JANSEVA AI (not a government site). Print it or Save as PDF and send it with the photo. "
             "<button onclick=\"window.print()\">Print / Save as PDF</button></div><h1>Public grievance: %s</h1>%s</body></html>") % (html.escape(c.get("code") or ""), html.escape(subject(c)), body)
 
-def compose_links(to, subj, body):
-    q = lambda s: quote(s, safe="")
-    return {"mailto": "mailto:%s?subject=%s&body=%s" % (to, q(subj), q(body)),
-            "gmail": "https://mail.google.com/mail/?view=cm&fs=1&to=%s&su=%s&body=%s" % (q(to), q(subj), q(body)),
-            "outlook": "https://outlook.live.com/mail/0/deeplink/compose?to=%s&subject=%s&body=%s" % (q(to), q(subj), q(body))}
+def compose_links(to, subj, body, cc=""):
+    q = lambda s: quote(s, safe="@,")
+    qq = lambda s: quote(s, safe="")
+    m = "mailto:%s?subject=%s&body=%s" % (q(to), qq(subj), qq(body)) + ("&cc=" + q(cc) if cc else "")
+    g = "https://mail.google.com/mail/?view=cm&fs=1&to=%s&su=%s&body=%s" % (qq(to), qq(subj), qq(body)) + ("&cc=" + qq(cc) if cc else "")
+    o = "https://outlook.live.com/mail/0/deeplink/compose?to=%s&subject=%s&body=%s" % (qq(to), qq(subj), qq(body)) + ("&cc=" + qq(cc) if cc else "")
+    return {"mailto": m, "gmail": g, "outlook": o}
+
+def send_all(emails, c, u, base=""):
+    """One compose: officers in To, MP (if the citizen chose one) in Cc. Every address is a verified official one with a source."""
+    off = [e["email"] for e in emails if e["level"] < 4]; mp = [e["email"] for e in emails if e["level"] >= 4]
+    if not (off or mp): return None
+    to = ",".join(off or mp); cc = ",".join(mp) if off else ""
+    subj = "[%s] %s" % (c["code"], subject(c)); body = letter_text(c, u, {"target_name": "Concerned Authorities"}, base)
+    if len(body) > 1500: body = letter_text(dict(c, description=(c.get("description") or "")[:600]), u, {"target_name": "Concerned Authorities"}, base)
+    return {"to": off or mp, "cc": mp if off else [], "subject": subj, "body": body, "links": compose_links(to, subj, body, cc)}
 
 def email_options(svc, c, u, base=""):
     out = []
@@ -117,7 +128,17 @@ def portals(svc, c, u, base=""):
             out.append({"id": p["id"], "name": p["name"], "url": p["url"], "register_url": "", "who": "Official portal for your location/category.", "needs": "Check the portal; many need your own login or a security code. " + (p.get("auth") or ""),
                         "steps": ["Open the official portal.", "Log in or register with your own details.", "Paste the subject and description below and add the photo.", "Submit and enter the number you get here."],
                         "fields": {"Subject": common["title"], "Description": desc[:1500], "Location": common["location"]}, "sources": [p["url"]]})
-    for o in out:
+    CENTRAL = {"pension", "central_govt", "passport", "tax", "bank_insurance", "telecom", "service_matters", "police", "health", "education", "general"}
+    def rank(o):
+        if o["id"] == "cpgrams": return 0 if cat in CENTRAL else 9
+        if o["id"] == "swachhata": return 2 if lb["status"] != "not_found" else 8
+        if o["id"] == "meri_panchayat": return 1
+        return 3
+    out.sort(key=rank)
+    for n, o in enumerate(out):
+        o["best"] = n == 0
+        o["copy_all"] = "\n".join("%s: %s" % (k, v) for k, v in o["fields"].items())
+        o["why"] = ("Best match for this complaint" if n == 0 else "Also possible")
         r = svc.db.one("SELECT reference, status, created_at FROM filing_records WHERE complaint_id=? AND channel='portal' AND target=?", (c["id"], o["id"]))
         o["filed_by_citizen"] = dict(r) if r else None
     return out
@@ -125,7 +146,7 @@ def portals(svc, c, u, base=""):
 def pack(svc, c, u, base=""):
     return {"complaint": {"code": c["code"], "status": c["status"]}, "letter_subject": subject(c), "identity_shared": identity(c, u)["share"],
             "email_note": "Opens in YOUR own email app or Gmail/Outlook, so it is sent from your own address. JANSEVA never sends complaint emails as you. Attach your photo if you can; the letter also links it.",
-            "emails": email_options(svc, c, u, base), "portals": portals(svc, c, u, base),
+            "emails": email_options(svc, c, u, base), "send_all": send_all(email_options(svc, c, u, base), c, u, base), "mp_chosen": bool(c.get("constituency") and c.get("notify_representative")), "state": c.get("state"), "portals": portals(svc, c, u, base),
             "honesty": "Sending an email or filing on a portal is done by you. 'Sent by you' or a number you type here is NOT proof of government registration. Authority-marked and citizen-verified resolution stay separate."}
 
 def mark(svc, c, channel, target, reference=None):
@@ -142,3 +163,24 @@ def mark(svc, c, channel, target, reference=None):
           ("You entered %s as the %s registration number (citizen-entered, not verified by JANSEVA)." % (ref, target))
     svc.db.timeline(c["id"], "citizen", st, msg); svc.db.audit("user:%s" % c["user_id"], "filing_" + st, "%s %s" % (target, ref or ""))
     return {"ok": True, "status": st}
+
+
+TYPE_GUIDE = [
+ {"type": "Garbage, dustbin, sweeping, dead animal, open drain/sewage, public toilet (city)", "portal": "Swachhata-MoHUA app + your city's municipal corporation grievance page", "url": "https://www.swachh.city/", "needs": "App + mobile OTP"},
+ {"type": "Same, but village (gram panchayat area)", "portal": "Meri Panchayat app", "url": "https://meripanchayat.gov.in/homepage", "needs": "App + login"},
+ {"type": "Road, pothole, street light, water supply, encroachment (city)", "portal": "Your city municipal corporation / state grievance portal (shown for your city on the filing screen)", "url": "https://pgportal.gov.in/", "needs": "Varies by city; many need login"},
+ {"type": "Central government: pension, passport, income tax, bank/insurance, telecom, railways, central services", "portal": "CPGRAMS", "url": "https://pgportal.gov.in/Home/LodgeGrievance", "needs": "Registered account + security code. Register: https://pgportal.gov.in/Registration"},
+ {"type": "State government departments (police, health, education, electricity)", "portal": "Your state's grievance portal; CPGRAMS also forwards to State governments", "url": "https://pgportal.gov.in/", "needs": "Login"},
+]
+
+
+def add_mp(svc, c, constituency):
+    """Citizen taps 'add my MP': stores the choice (explicit consent for this complaint) and plans the verified Lok Sabha email, if any."""
+    from . import dispatch
+    from .service import load_data
+    rows = [r for r in load_data("representatives_parliament.json") if r["house"] == "Lok Sabha" and (r.get("constituency") or "").lower() == (constituency or "").lower()]
+    if not rows: return {"ok": False, "error": "constituency not in the official Lok Sabha list"}
+    svc.db.run("UPDATE complaints SET constituency=?, notify_representative=1 WHERE id=?", (rows[0]["constituency"], c["id"]))
+    svc.db.audit("user:%s" % c["user_id"], "filing_add_mp", rows[0]["constituency"])
+    dispatch.plan(svc, c["id"])
+    return {"ok": True, "constituency": rows[0]["constituency"], "name": rows[0]["name"]}

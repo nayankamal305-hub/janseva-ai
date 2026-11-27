@@ -67,3 +67,6 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - District NIC portals publish a "Municipalities" page with each ULB's email. Domain guesses ({district}.nic.in / .gov.in / state subdomain) were accepted only if the page loaded and was an official government district page. Names matched to the PMAY list within the same state and district only.
 - 29 entries whose email did not resemble the body name (source-side mix-ups, e.g. Chidambaram listed with another town's address) and personal-looking gmail ids were dropped. Districts not reached: those renamed or without a standard page (Telangana 10/31, UP 40/75, TN 24/38, Karnataka 15/31, MP 38/55 found).
 - Emails are as the official page prints them; accepts_citizen_complaints stays "unverified".
+
+## v3.2 more district portals
+- Same method for Punjab, Rajasthan, Gujarat, Maharashtra, Bihar, Odisha, WB, Chhattisgarh, Uttarakhand, HP, Haryana, Jharkhand, Assam. Few standard district pages found (Odisha 0/30, Rajasthan 1/50, HP 1/10); those states need their own urban-department portals. +39 emails, 60 entries dropped by the name-resemblance filter.

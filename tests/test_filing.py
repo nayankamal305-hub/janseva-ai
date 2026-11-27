@@ -48,3 +48,14 @@ class F(unittest.TestCase):
     def test_html_letter(self):
         h = filing.letter_html(self.c, self.us); self.assertIn("Print / Save as PDF", h); self.assertIn("<!doctype html>", h)
 if __name__ == "__main__": unittest.main()
+
+class NoBlock(unittest.TestCase):
+    def test_same_user_same_place_same_category_not_blocked(self):
+        svc = Service(); u = svc.register("nb%d@example.com" % id(svc), "Raj")
+        d = {"title": "Pothole", "description": "big pothole on road", "lat": 8.0 + (id(svc) % 1000) / 50.0, "lon": 70.0 + (id(svc) % 500) / 50.0, "category": "road", "city": "Pune", "state": "Maharashtra"}
+        a = svc.create_complaint(u, dict(d)); b = svc.create_complaint(u, dict(d, description="another pothole, different one"))
+        self.assertTrue(a["ok"]); self.assertTrue(b["ok"]); self.assertNotEqual(a["id"], b["id"])
+        self.assertTrue(any(x["id"] == a["id"] for x in b["similar_nearby"]))
+        u2 = svc.register("nb2%d@example.com" % id(svc), "Sam"); c = svc.create_complaint(u2, dict(d, lat=d["lat"] + 0.0005))
+        self.assertTrue(c["ok"]); self.assertTrue(c["similar_nearby"])
+        far = svc.create_complaint(u2, dict(d, lat=d["lat"] + 0.5)); self.assertTrue(all(x["distance_m"] <= 250 for x in far["similar_nearby"])); self.assertNotIn(a["id"], [x["id"] for x in far["similar_nearby"]])

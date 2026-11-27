@@ -57,7 +57,7 @@ class T(unittest.TestCase):
         r = self.mk(); self.svc.submit(r["id"]); self.assertEqual(self.svc.db.one("SELECT * FROM integration_log WHERE ok=0")["http_code"], 403)
         self.assertEqual(self.svc.control_center()["credential_problems"][0]["http_code"], 403)
     def test_duplicate_complaint(self):
-        self.assertTrue(self.mk()["ok"]); d = self.mk(); self.assertFalse(d["ok"]); self.assertIn("duplicate", d["errors"][0])
+        self.assertTrue(self.mk()["ok"]); d = self.mk(); self.assertTrue(d["ok"], "filing is never blocked"); self.assertTrue(d["similar_nearby"])
     def test_platform_duplicate_response(self):
         self.env.update(SWACHHATA_VENDOR_NAME="x", SWACHHATA_ACCESS_KEY="dup")
         r = self.mk(); self.svc.submit(r["id"]); self.assertIsNone(self.swachhata_rec(r["id"]))

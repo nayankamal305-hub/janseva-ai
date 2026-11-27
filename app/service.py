@@ -64,8 +64,8 @@ class Service:
         user_cat = d.get("category")
         cat = user_cat or an["category"]
         low_conf = (not user_cat) and an["confidence"] < 0.6
-        dup = self.find_duplicate(user["id"], cat, float(d["lat"]), float(d["lon"]))
-        if dup: return {"ok": False, "errors": ["duplicate of %s (same category within 100 m in 7 days)" % dup["code"]], "duplicate_of": dup["code"]}
+        # Never block filing: many people can report different issues from the same place. Similar nearby reports are only a hint.
+        similar = self.similar_nearby(cat, float(d["lat"]), float(d["lon"]))
         city = (d.get("city") or "").strip()
         pin = str(d.get("pincode") or "")
         pt = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "pincodes.json")))["prefixes"].get(pin[:3])
@@ -104,7 +104,7 @@ class Service:
                 self.db.run("INSERT OR IGNORE INTO supports(complaint_id,user_id,kind,ts) VALUES(?,?,?,?)", (r["id"], user["id"], "support", now()))
                 break
         self.db.audit("user:%s" % user["id"], "complaint_created", code)
-        out = {"ok": True, "id": cid, "code": code, "category": cat, "status": status, "ai": an, "duplicate_group": grp, "duplicate_probability": prob}
+        out = {"ok": True, "id": cid, "code": code, "category": cat, "status": status, "ai": an, "duplicate_group": grp, "duplicate_probability": prob, "similar_nearby": [x for x in similar if x["id"] != cid]}
         if an["emergency"]: out["emergency_notice"] = "Immediate danger: call 112 now. JANSEVA is not an emergency dispatch service."
         return out
 
@@ -122,6 +122,12 @@ class Service:
             return bin(int(a, 16) ^ int(b, 16)).count("1")
         except ValueError: return None
 
+    def similar_nearby(self, cat, lat, lon, radius=250, days=30, limit=3):
+        cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat(); out = []
+        for r in self.db.all("SELECT id,code,status,lat,lon FROM complaints WHERE category=? AND created_at>=? AND status NOT IN ('cancelled','rejected') ORDER BY id DESC LIMIT 400", (cat, cutoff)):
+            m = self.dist_m(lat, lon, r["lat"], r["lon"])
+            if m <= radius: out.append({"id": r["id"], "code": r["code"], "status": r["status"], "distance_m": int(m)})
+        return sorted(out, key=lambda x: x["distance_m"])[:limit]
     def find_duplicate(self, uid, cat, lat, lon):
         cutoff = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
         for r in self.db.all("SELECT * FROM complaints WHERE user_id=? AND category=? AND created_at>=? AND status!='cancelled'", (uid, cat, cutoff)):

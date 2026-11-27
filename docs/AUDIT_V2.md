@@ -120,3 +120,6 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 ## v3.16: one-screen filing
 Portal research: no documented URL-prefill for CPGRAMS, Swachhata or Meri Panchayat; CPGRAMS needs a registered login (https://pgportal.gov.in/Home/LodgeGrievance). So the screen shows the best official portal for the complaint first (copy full text, open official site, native Share, field-by-field copy, citizen-entered registration number), other portals and own-email below, and `GET /api/portal-guide` + "Which portal for what" lists the official link per complaint type. No bookmarklet/auto-fill (untestable without a real login, breaks on portal change, not available on most phones). QR hand-off to phone not built.
 - v3.16 add-on: 'Email officers + your MP in one tap' (officers in To, citizen-chosen Lok Sabha MP in Cc, official sansad.in email with source). MLA emails: none in a verified source, so none listed. Post on X / public map / rating shortcuts in the same screen.
+
+## v3.17
+Filing is never blocked by the old same-user/same-category/100 m/7-day duplicate check (it returned an error). create_complaint now returns optional similar_nearby (same category, 250 m, 30 days, any user) and the UI shows 'Support it'. The only other limiter is the per-token API rate limit (120 requests/min).

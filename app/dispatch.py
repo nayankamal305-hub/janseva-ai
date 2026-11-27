@@ -95,8 +95,11 @@ def _body(c, user, d, reminder):
         c["code"], c["lat"], c["lon"], ("\nLink: %s/#track" % base) if base else "", d["source_url"], d["source_date"])
     return head + complaint_text(c, name) + tail
 
+def server_email_on(): return os.environ.get("JANSEVA_SERVER_EMAIL") == "1"
+
 def send_due(svc, cid=None, now_iso=None):
     """Send every scheduled dispatch that is due. Unresolved complaints only. Honors caps. Never raises."""
+    if not server_email_on(): return {"sent": 0, "skipped": ["server-sent complaint email is off: the citizen sends from their own email (see /filing)"]}
     now_iso = now_iso or datetime.now(timezone.utc).isoformat(); cap = int(os.environ.get("MAIL_DAILY_CAP", "250")); sent = 0; skipped = []
     q = "SELECT d.*, c.user_id FROM dispatches d JOIN complaints c ON c.id=d.complaint_id WHERE d.status='scheduled' AND d.due_at<=?" + (" AND d.complaint_id=?" if cid else "") + " ORDER BY d.level"
     for d in svc.db.all(q, (now_iso, cid) if cid else (now_iso,)):

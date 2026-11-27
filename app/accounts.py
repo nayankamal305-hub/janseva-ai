@@ -129,5 +129,5 @@ def password_signup_or_reset(svc, ident, code, pw, name="", reset=False, ip=""):
     u = otp_verify(svc, ident, code, name)
     if not u: return None, "invalid or expired code"
     set_password(svc, u["id"], pw)
-    svc.db.run("DELETE FROM login_attempts WHERE key IN (?,?)", ("u:" + ident, "ip:" + (ip or "?")))
+    svc.db.run("DELETE FROM login_attempts WHERE key IN (?,?)", ("u:" + ident, "ip:" + ip))
     return svc.db.one("SELECT * FROM users WHERE id=?", (u["id"],)), None

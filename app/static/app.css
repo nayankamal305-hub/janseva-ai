@@ -232,3 +232,9 @@ html.dark .card,html.dark .stat,html.dark .tile{border-color:rgba(255,255,255,.0
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 .lite .card,.lite .stat,.lite .tile{animation:none!important;transition:none!important;box-shadow:0 1px 2px rgba(0,0,0,.08)}.lite .hero:before{animation:none}.lite .bnav{backdrop-filter:none}
 @media(hover:none){.card:hover,.tile:hover{box-shadow:var(--sh);transform:none}}
+/* v3.15 narrow phones (360): appbar must never push the page wider */
+@media(max-width:400px){.appbar{gap:4px;padding:8px 8px;max-width:100vw;box-sizing:border-box}.appbar>*{min-width:0}.appbar .pill{padding:6px 7px;font-size:12px;gap:4px}#who{max-width:52px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.appbar .logo{min-width:0;flex:1 1 auto;overflow:hidden;font-size:15px}.appbar .logo b,.appbar .logo span{white-space:nowrap}#ulang{width:44px}}
+html,body{overflow-x:clip;max-width:100vw}
+.sheet,.card,.rec{max-width:100%;box-sizing:border-box;overflow-wrap:anywhere}
+.sheet a.btn,.sheet button.btn{white-space:normal}
+@media(max-width:400px){.appbar .logo{flex:0 0 auto;font-size:13.5px;gap:4px}.appbar .logo img,.appbar .logo svg{width:30px;height:30px}.appbar .pill{padding:6px 6px}#who{max-width:none}#ulang{width:40px;padding:6px 0;background-image:none}}

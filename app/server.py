@@ -62,7 +62,7 @@ def make_handler(svc, admin_token, rate=120):
                 fn = "favicon.ico" if path == "/favicon.ico" else "apple-touch-icon.png"
                 return self._send(200, open(os.path.join(STATIC, "brand", fn), "rb").read(), "image/x-icon" if fn.endswith("ico") else "image/png", {"Cache-Control": "public, max-age=86400"})
             if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": [{"src": "/static/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, "const C='jansevaai-v35';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
+            if path == "/sw.js": return self._send(200, "const C='jansevaai-v36';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now(), "db": "postgres" if getattr(svc.db, "pg", False) else "sqlite", "photo_storage": storage.from_env(os.environ, UPLOADS).kind})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
@@ -182,6 +182,12 @@ def make_handler(svc, admin_token, rate=120):
                 parts = path.split("/"); cid = int(parts[3]); c = self._owned(u, cid)
                 if not c: return self._json(404, {"error": "not found"})
                 if len(parts) > 4 and parts[4] == "route": return self._json(200, svc.route(cid))
+                if len(parts) > 4 and parts[4] in ("filing", "letter-html"):
+                    from . import filing
+                    us = svc.db.one("SELECT * FROM users WHERE id=?", (c["user_id"],)); base = os.environ.get("PUBLIC_URL", "")
+                    if parts[4] == "filing": return self._json(200, filing.pack(svc, c, us, base))
+                    tg = svc.db.one("SELECT * FROM dispatches WHERE id=? AND complaint_id=?", (int(q.get("target") or 0), cid)) if q.get("target") else None
+                    return self._send(200, filing.letter_html(c, us, tg, base).encode(), "text/html; charset=utf-8", {"Cache-Control": "no-store"})
                 if len(parts) > 4 and parts[4] == "letter":
                     us = svc.db.one("SELECT name FROM users WHERE id=?", (c["user_id"],)); return self._json(200, {"letter": accounts.letter(c, us["name"], [])})
                 dd = svc.detail(cid)
@@ -337,9 +343,12 @@ def make_handler(svc, admin_token, rate=120):
                         res["x_queue"] = social.enqueue(svc, cid)
                     if d.get("consent_email"):
                         from . import dispatch
-                        try: res["email_dispatch"] = dispatch.plan(svc, cid); res["email_dispatch"]["send"] = dispatch.send_due(svc, cid)
+                        try: res["email_dispatch"] = dispatch.plan(svc, cid); res["email_dispatch"]["send"] = dispatch.send_due(svc, cid); res["email_dispatch"]["mode"] = "server" if dispatch.server_email_on() else "citizen_own_email"
                         except Exception as ex: res["email_dispatch"] = {"ok": False, "error": type(ex).__name__}
                     return self._json(200, res)
+                if act == "filing-mark":
+                    from . import filing
+                    r = filing.mark(svc, c, d.get("channel"), d.get("target"), d.get("reference")); return self._json(200 if r.get("ok") else 422, r)
                 if act == "dispatches": return self._json(200, {"items": svc.db.all("SELECT level,kind,target_name,target_email,source_url,source_date,tier,status,due_at,sent_at FROM dispatches WHERE complaint_id=? ORDER BY level,id", (cid,))})
                 if act == "x-status": return self._json(200, {"item": svc.db.one("SELECT status,tweet_url,text,posted_at FROM x_queue WHERE complaint_id=?", (cid,))})
                 if act == "tweet-draft":

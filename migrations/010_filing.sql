@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS filing_records(id INTEGER PRIMARY KEY AUTOINCREMENT, complaint_id INTEGER NOT NULL, channel TEXT NOT NULL, target TEXT NOT NULL, reference TEXT, status TEXT NOT NULL, note TEXT, created_at TEXT);

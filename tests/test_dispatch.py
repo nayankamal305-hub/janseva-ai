@@ -26,7 +26,7 @@ class D(unittest.TestCase):
     def test_no_consent_no_plan(self):
         cid = self.mk(consent=0); self.assertFalse(dispatch.plan(self.svc, cid)["ok"])
     def test_send_flow_and_caps(self):
-        cid = self.mk(); env = {"EMAIL_PROVIDER": "brevo", "BREVO_API_KEY": "k", "MAIL_FROM": "J <a@b.com>"}
+        cid = self.mk(); env = {"JANSEVA_SERVER_EMAIL": "1", "EMAIL_PROVIDER": "brevo", "BREVO_API_KEY": "k", "MAIL_FROM": "J <a@b.com>"}
         with mock.patch.dict(os.environ, env), mock.patch.object(mailer, "_post", return_value={"sent": True}) as p:
             pl = dispatch.plan(self.svc, cid); self.assertTrue(pl["ok"])
             r = dispatch.send_due(self.svc, cid)

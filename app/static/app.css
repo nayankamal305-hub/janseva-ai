@@ -189,3 +189,15 @@ html.dark{--d0:#1f2535;--d1:#5a4020;--d2:#9a6a1c;--d3:#e08c1c;--d4:#ffd28a;--dst
 .ds,.dd{stroke:var(--dstroke);stroke-width:.6;cursor:pointer;vector-effect:non-scaling-stroke}.ds.under{opacity:.25}.ds.sel{stroke:var(--dsel);stroke-width:1.8}.dd{stroke-width:.4}.ds:hover,.dd:hover{stroke:var(--dsel);stroke-width:1.4}
 .dmw~.row input[type=checkbox]{width:18px;height:18px;flex:none;margin:0 6px 0 0;vertical-align:middle}.dmw~.row label{display:flex;align-items:center}
 html.dark .dmz .btn{background:#1b2440;color:#ffd9a0;border-color:#c77a1a}html.dark .dmz .btn:active{background:#2a3560}
+/* v3.13 desktop: use the full window, content capped at 1480px and centred, hero full-bleed. Mobile unchanged. */
+@media(min-width:760px){
+ :root{--gut:max(clamp(20px,3vw,56px),calc((100vw - 1480px)/2))}
+ main{max-width:none;padding-left:var(--gut);padding-right:var(--gut)}
+ .hero{margin-left:calc(-1*var(--gut));margin-right:calc(-1*var(--gut));padding-left:var(--gut);padding-right:var(--gut);border-radius:0 0 32px 32px}
+ .hero h1{font-size:clamp(40px,3.4vw,56px);max-width:760px}.hero .lp{max-width:680px;font-size:17px}
+ .appbar{padding-left:var(--gut);padding-right:var(--gut)}
+ .stats{margin-top:-56px}
+ .dmw svg{max-height:72vh}
+ .tiles,.g4{gap:16px}
+}
+@media(min-width:1200px){.steps{grid-template-columns:repeat(4,1fr)}.feedgrid,#feed{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;align-items:start}.kpis{grid-template-columns:repeat(6,1fr)}}

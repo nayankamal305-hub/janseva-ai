@@ -100,3 +100,6 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - Existing users have no password until they use Forgot password / Create account with OTP once; their OTP login still works.
 - Known limits: the session token is still the existing per-user token (no expiry/rotation); IP rate limit uses the socket address, so behind a proxy (Render) it sees the proxy IP unless X-Forwarded-For is handled: please check, the per-account limit still works.
 - Small db.py changes: login_attempts conflict key; test guard also accepts local unix-socket Postgres (host=/path).
+
+## v3.13 desktop layout
+- At 760px and wider the page uses the full window: content centred and capped at 1480px, hero and top bar full-bleed (was a 1040px column that looked cut on laptops). Mobile layout unchanged. Checked at 1366x768 and 1920x1080 (home, dashboard, report). Login sheet: Send OTP now sits above the main button.

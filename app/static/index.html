@@ -135,9 +135,9 @@
  <div id="nameRow" style="display:none"><label class="f">Name (optional)</label><input id="name" autocomplete="name" placeholder="Your name"></div>
  <div id="pwRow"><label class="f" id="pwLabel">Password</label><input id="pw" type="password" autocomplete="current-password" placeholder="At least 8 characters"></div>
  <button id="wabtn" class="btn ok" style="width:100%;margin-top:12px;display:none" onclick="waLogin()">Login with WhatsApp</button>
- <button class="btn pri" id="lgMain" style="width:100%;margin-top:12px" onclick="lgGo()">Login</button>
- <button class="btn ghost" id="lgSend" style="width:100%;margin-top:8px;display:none" onclick="otpReq()">Send OTP</button>
+ <button class="btn saf" id="lgSend" style="width:100%;margin-top:12px;display:none" onclick="otpReq()">Send OTP</button>
  <div id="otpbox" style="display:none"><label class="f">OTP</label><input id="code" inputmode="numeric" autocomplete="one-time-code" placeholder="6-digit code"></div>
+ <button class="btn pri" id="lgMain" style="width:100%;margin-top:12px" onclick="lgGo()">Login</button>
  <div style="margin-top:10px"><a href="#" id="lgForgot" class="sm" onclick="lgMode('reset');return false">Forgot password?</a></div>
  <div id="otpmsg" class="info bl" style="display:none;margin-top:10px"></div></div></div>
 <div class="toast" id="toast"></div>

@@ -39,7 +39,7 @@ window.go=function(x){document.querySelectorAll('.sec').forEach(s=>s.classList.t
  if(x=='home')loadHome();if(x=='mine')load();if(x=='nearby')loadFeed();if(x=='pub')loadStats();if(x=='dir')loadDir();if(x=='report'){setTimeout(initPick,60);wiz(WSTEP)}};
 // ---------- login ----------
 window.openLogin=function(){if(T){go('mine');return}$('sheet').classList.add('on')};window.closeLogin=()=>$('sheet').classList.remove('on');
-window.otpReq=async function(){const r=await api('POST','/api/otp/request',{phone:$('phone').value});const m=$('otpmsg');m.style.display='flex';if(r.error){m.textContent=r.error;return}$('otpbox').style.display='';m.textContent=r.dev_code?('Demo OTP: '+r.dev_code):(r.note||'Code requested')};
+window.otpReq=async function(){const r=await api('POST','/api/otp/request',{phone:$('phone').value});const m=$('otpmsg');m.style.display='flex';if(r.error){m.textContent=r.error;return}$('otpbox').style.display='';m.textContent=r.sent?('Code sent to your '+r.channel+'. Check your inbox and spam folder.'):(r.dev_code?('Test mode code: '+r.dev_code):(r.note||'Could not send code'))};
 window.otpVer=async function(){const r=await api('POST','/api/otp/verify',{phone:$('phone').value,code:$('code').value,name:$('name').value});if(r.token){T=r.token;localStorage.jt=T;closeLogin();$('who').textContent='Account';toast('Logged in');flushDrafts()}else{$('otpmsg').style.display='flex';$('otpmsg').textContent=r.error||'Failed'}};
 // ---------- home ----------
 async function loadHome(){const s=await api('GET','/api/public/stats');if(s.total_reported!=null){$('s1').textContent=s.total_reported;$('s2').textContent=s.citizen_verified_resolved;$('s3').textContent=s.pending}

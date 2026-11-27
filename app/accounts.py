@@ -1,15 +1,28 @@
-import hashlib, hmac, os, random, secrets
+import hashlib, hmac, os, random, re, secrets
 from datetime import datetime, timedelta, timezone
 from .db import now
 
 def hs(x): return hashlib.sha256(x.encode()).hexdigest()
 
+def norm_ident(x):
+    x = (x or "").strip()
+    if "@" in x:
+        x = x.lower()
+        return x if re.match(r"^[^@\s]+@[^@\s]+\.[^@\s]+$", x) else None
+    d = re.sub(r"\D", "", x)[-10:]
+    return d if len(d) == 10 else None
+
 def otp_request(db, phone, dev=False):
     code = "%06d" % random.SystemRandom().randrange(10**6)
     db.run("INSERT OR REPLACE INTO otps(phone,code_hash,expires,attempts) VALUES(?,?,?,0)", (phone, hs(phone + code), (datetime.now(timezone.utc) + timedelta(minutes=5)).isoformat()))
     db.audit("system", "otp_issued", phone[-4:])
-    # No SMS provider is wired in. Code is returned ONLY in dev mode (JANSEVA_DEV_OTP=1).
-    return {"sent": False, "note": "SMS provider not configured in this build", **({"dev_code": code} if dev else {})}
+    # Email OTP is real when SMTP_* is configured. No SMS provider is wired in (DLT rules). Code is returned ONLY in dev mode (JANSEVA_DEV_OTP=1).
+    if "@" in phone:
+        from . import mailer
+        r = mailer.send(phone, "Your JANSEVA AI login code", "Your JANSEVA AI login code is %s. It expires in 5 minutes. If you did not ask for it, ignore this email." % code)
+        if r["sent"]: return {"sent": True, "channel": "email"}
+        return {"sent": False, "channel": "email", "note": "Email sending not configured on this server", **({"dev_code": code} if dev else {})}
+    return {"sent": False, "channel": "sms", "note": "SMS OTP needs a DLT-registered provider; use email login", **({"dev_code": code} if dev else {})}
 
 def otp_verify(svc, phone, code, name=""):
     db = svc.db; r = db.one("SELECT * FROM otps WHERE phone=?", (phone,))

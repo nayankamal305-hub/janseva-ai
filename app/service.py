@@ -10,6 +10,12 @@ from .connectors.email import EmailConnector
 
 TERMINAL = {"resolved", "rejected"}
 
+import json as _json
+_DD = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+def load_data(name):
+    try: return _json.load(open(os.path.join(_DD, name)))
+    except Exception: return []
+
 class Service:
     def __init__(self, db: DB = None, env=None, sandbox_base=None):
         self.db = db or DB()
@@ -213,6 +219,41 @@ class Service:
                     (cid, now(), "responsible_department", "email", p.get("email_target"), res.status, res.evidence.get("body", "")))
         self.db.timeline(cid, "jansevaai", "authority_notified", "Department notified (%s). This is a notification, not a government registration." % res.status)
         return {"platform": p["id"], "status": res.status, "note": "notification only"}
+
+    def email_authority(self, cid, to_email, authority_name, user):
+        """Send the citizen's consented complaint by email from the JANSEVA mailbox. Delivery is NOT registration: status stays 'sent_unacknowledged'."""
+        from . import mailer
+        from .connectors.base import complaint_text
+        c = self.db.one("SELECT * FROM complaints WHERE id=?", (cid,))
+        if not c or not c["consent_submit"]: return {"ok": False, "error": "citizen consent for submission is required first"}
+        if not to_email or "@" not in to_email: return {"ok": False, "error": "no verified email target"}
+        known = {x.get("email") for f in ("authorities_central_nodal.json", "authorities_state_nodal.json") for x in load_data(f)}
+        row = self.db.one("SELECT 1 AS x FROM authorities WHERE grievance_email=? AND verified=1", (to_email,))
+        if to_email not in known and not row: return {"ok": False, "error": "target email is not in the official directory"}
+        name = user.get("name", "") if c["consent_share_personal"] and not c["anonymous"] else ""
+        base = self.env.get("PUBLIC_BASE_URL", "")
+        body = complaint_text(c, name) + ("\nPhoto: %s%s\n" % (base, c["photo_url"]) if c["photo_url"] and base else "") + "\nTracking ID: %s (please keep this ID in replies)\n" % c["code"]
+        reply_to = None
+        if self.env.get("SMTP_FROM"):
+            fa = self.env["SMTP_FROM"].split("<")[-1].strip(" >"); lo, _, dom = fa.partition("@"); reply_to = "%s+%s@%s" % (lo, c["code"], dom)
+        r = mailer.send(to_email, "[%s] Public grievance: %s" % (c["code"], c["title"]), body, reply_to, self.env)
+        st = "sent_unacknowledged" if r["sent"] else "not_sent_smtp_unconfigured"
+        self.db.run("INSERT INTO notifications(complaint_id,ts,audience,channel,target,status,body) VALUES(?,?,?,?,?,?,?)", (cid, now(), "authority:" + authority_name, "email", to_email, st, body))
+        self.db.timeline(cid, "jansevaai", "email_sent" if r["sent"] else "email_not_sent", ("Emailed %s at %s with your consent. This is delivery, not a registration; an official reply is needed." % (authority_name, to_email)) if r["sent"] else "Email not sent: %s" % r.get("reason"))
+        return {"ok": r["sent"], "status": st, "note": "delivery is not registration"}
+
+    def ingest_replies(self):
+        """Parse replies from the JANSEVA mailbox. Records them in the timeline; NEVER auto-marks resolved."""
+        from . import mailer
+        n = 0
+        for m in mailer.poll_inbox(self.env):
+            if "error" in m: return {"error": m["error"]}
+            c = self.db.one("SELECT id FROM complaints WHERE upper(code)=?", (m["code"],))
+            if not c: continue
+            if self.db.one("SELECT 1 AS x FROM timeline WHERE complaint_id=? AND kind='authority_reply' AND message LIKE ?", (c["id"], "%" + m["imap_id"] + "%")): continue
+            self.db.timeline(c["id"], "authority_email", "authority_reply", "Reply received from %s (mail #%s): %s" % (m["from"], m["imap_id"], m["snippet"][:300]))
+            n += 1
+        return {"ingested": n}
 
     def record_reference(self, cid, platform_id, ref, user_id):
         """Citizen reports the number the official portal gave them. Stored as citizen-reported, unverified."""

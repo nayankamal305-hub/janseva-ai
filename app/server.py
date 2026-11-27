@@ -66,6 +66,15 @@ def make_handler(svc, admin_token, rate=120):
                 return self._json(404, {"error": "not found"})
             if path == "/api/platforms": return self._json(200, svc.db.platforms())
             if path == "/api/emergency": return self._json(200, {"number": "112", "note": "Call 112 for immediate danger. JANSEVA is a complaint tool, not an emergency dispatch service.", "source": "India national emergency number"})
+            if path == "/api/directory/nodal":
+                from .service import load_data
+                k = q.get("scope", "state"); rows = load_data("authorities_central_nodal.json" if k == "central" else "authorities_state_nodal.json")
+                t = q.get("q", "").lower(); items = [r for r in rows if t in r["name"].lower()]; return self._json(200, {"count": len(items), "items": items, "source": "https://pgportal.gov.in/Home/NodalPgOfficers", "note": "Official nodal public grievance officers. Whether an email accepts citizen complaints is unverified."})
+            if path == "/api/directory/mps":
+                from .service import load_data
+                t = q.get("q", "").lower(); st = q.get("state", "").lower()
+                rows = [r for r in load_data("representatives_parliament.json") if (not t or t in r["name"].lower() or t in (r.get("constituency") or "").lower()) and (not st or st in (r.get("state") or "").lower())]
+                return self._json(200, {"count": len(rows), "items": rows[:200], "source": "https://sansad.in"})
             if path == "/api/public/feed": return self._json(200, public.feed(svc.db, q, int(q.get("limit", 50))))
             if path == "/api/public/stats": return self._json(200, public.stats(svc.db, q))
             if path == "/api/public/heatmap": return self._json(200, public.heatmap(svc.db, q))
@@ -75,6 +84,9 @@ def make_handler(svc, admin_token, rate=120):
                 return self._json(200, public.monthly_report(svc.db, m))
             if path == "/api/authorities": return self._json(200, svc.db.all("SELECT * FROM authorities WHERE verified=1"))
             if path == "/api/representatives": return self._json(200, svc.db.all("SELECT id,name,office,constituency,state,public_contact,profile_url,last_verified FROM representatives WHERE verified=1"))
+            if path == "/api/admin/inbound-poll":
+                a = self._adm()
+                return self._json(200, svc.ingest_replies()) if a and a["role"] == "super_admin" else self._json(403, {"error": "super admin only"})
             if path == "/api/assistant": return self._json(200, assistant.answer(q.get("q", ""), q.get("lang", "en")))
             u = self._user()
             if path == "/api/complaints":
@@ -124,9 +136,11 @@ def make_handler(svc, admin_token, rate=120):
                 open(os.path.join(UPLOADS, name), "wb").write(data)
                 return self._json(200, {"url": "/uploads/" + name, "note": "No malware scan or EXIF check in this build"})
             d = self._body()
-            if path == "/api/otp/request": return self._json(200, accounts.otp_request(svc.db, d.get("phone", ""), dev_otp)) if len(d.get("phone", "")) >= 10 else self._json(422, {"error": "valid phone required"})
+            if path == "/api/otp/request":
+                ident = accounts.norm_ident(d.get("phone") or d.get("email")); 
+                return self._json(200, accounts.otp_request(svc.db, ident, dev_otp)) if ident else self._json(422, {"error": "valid email or 10-digit phone required"})
             if path == "/api/otp/verify":
-                u = accounts.otp_verify(svc, d.get("phone", ""), d.get("code", ""), d.get("name", ""))
+                u = accounts.otp_verify(svc, accounts.norm_ident(d.get("phone") or d.get("email")) or "", d.get("code", ""), d.get("name", ""))
                 return self._json(200, {"token": u["token"], "name": u["name"]}) if u else self._json(401, {"error": "invalid or expired code"})
             if path == "/api/register":
                 if require_otp: return self._json(403, {"error": "OTP login required"})
@@ -184,6 +198,7 @@ def make_handler(svc, admin_token, rate=120):
                     return self._json(200, svc.submit(cid))
                 if act == "confirm": return self._json(200, svc.confirm_category(cid, d.get("category"), u["id"]))
                 if act == "reference": return self._json(200, svc.record_reference(cid, d.get("platform_id"), d.get("ref", "").strip(), u["id"]))
+                if act == "email-authority": return self._json(200, svc.email_authority(cid, d.get("email", ""), d.get("authority", ""), u))
                 if act == "sync": return self._json(200, svc.sync(cid))
                 if act == "verify": svc.citizen_verify(cid, bool(d.get("ok")), u["id"], d.get("after_photo"), d.get("note", "")); return self._json(200, {"ok": True})
             self._json(404, {"error": "not found"})

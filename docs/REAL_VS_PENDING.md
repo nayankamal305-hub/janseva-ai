@@ -1,0 +1,19 @@
+# v0.5: what is real, what is pending (2026-11-27)
+
+## Real today (works with free services, no card)
+- Email login with a one-time code. Needs one free SMTP account: Brevo free (300 mails/day) or Gmail app password. Set SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM. Without it, login cannot send codes (test-only JANSEVA_DEV_OTP shows the code on screen; never enable in production).
+- Email-to-authority: with the citizen's per-complaint consent, JANSEVA sends the complaint (text, GPS, photo link, tracking ID) from its own mailbox to an email found in the official directory. Target must be in the directory (pgportal nodal officer list or a verified authority). Reply-To uses plus-addressing so replies carry the tracking ID.
+- Reply parsing: POST /api/admin/inbound-poll reads the JANSEVA mailbox over IMAP (IMAP_HOST) and adds replies to the complaint timeline. It never marks a complaint resolved.
+- Directory (official sources, last verified 2026-11-27):
+  - 93 central ministry/department nodal public grievance officers and 37 state/UT nodal officers: https://pgportal.gov.in/Home/NodalPgOfficers and /NodalPgOfficersState
+  - 540 sitting Lok Sabha members (https://sansad.in/ls/members) and 244 Rajya Sabha members (https://sansad.in/rs/members) with official sansad emails. Personal phone numbers and home addresses are deliberately not stored.
+- Gemini photo classification (server-side key, advisory, fallback to rules).
+
+## Pending authorization or not possible
+- SMS OTP: not free in India. Operators require DLT registration (Fast2SMS lists DLT entity registration at Rs 5,900/year; free credit is only a Rs 50 test). Source: https://www.fast2sms.com/help/fast2sms-free-sms/ . Email login is the free route.
+- Direct registration on CPGRAMS, Rail Madad, NCH, UMANG: no public citizen API. These stay guided (citizen completes login/OTP/CAPTCHA). The app never bypasses them.
+- Swachhata live API: needs ULB-issued credentials.
+- A nodal officer email being listed does not prove it accepts citizen complaints (marked unverified). Delivery is shown as "sent, unacknowledged", never as registered.
+- Districts/LGD codes: the LGD bulk download is behind a CAPTCHA (not bypassed). A person can download the CSVs from https://lgdirectory.gov.in/downloadDirectory.do and load them. Pincode data: data.gov.in needs a free API key (not available here).
+- State-wise department lists (PWD, DISCOM, water boards, municipal bodies), elected state MLAs and councillors: not loaded. No single official machine-readable source; each state portal must be researched and verified.
+- Browser-assisted submission by an agent on the citizen's behalf: only with citizen authorization per submission and never past CAPTCHA/OTP (not built).

@@ -6,9 +6,19 @@ services:
     envVars:
       - key: JANSEVA_ADMIN_TOKEN
         generateValue: true
-      - key: JANSEVA_SEED_DEMO
-        value: "1"
-      - key: JANSEVA_DEV_OTP
-        value: "1"
       - key: GEMINI_API_KEY
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: SMTP_FROM
+        sync: false
+      - key: IMAP_HOST
+        sync: false
+      - key: PUBLIC_BASE_URL
         sync: false

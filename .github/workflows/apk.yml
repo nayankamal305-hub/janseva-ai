@@ -19,7 +19,7 @@ jobs:
         run: |
           sed -i "s#https://REPLACE-WITH-DEPLOYED-URL#${{ github.event.inputs.server_url }}#g" capacitor.config.json www/index.html
           npm init -y >/dev/null
-          npm i @capacitor/core @capacitor/cli @capacitor/android
+          npm i @capacitor/core@7.4.4 @capacitor/cli@7.4.4 @capacitor/android@7.4.4  # pinned: mixed versions break the Android build
           npx cap add android
           npx cap sync android
           cd android && chmod +x gradlew && ./gradlew assembleDebug

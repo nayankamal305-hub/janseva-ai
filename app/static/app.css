@@ -157,7 +157,7 @@ html.dark .bnav button.on,html.dark .bnav button.on span{color:var(--saf)!import
 html.dark .chip{background:#22305a;color:#dbe6ff}html.dark .drop{background:#101a33;border-color:#33436e;color:var(--ink)}html.dark .info{background:#2a2412;color:#ffe2a8}html.dark .info.bl{background:#13233f;color:#cfe0ff}
 
 .anononly{display:none}.anon .anononly{display:block}.anon #appHome{display:none}
-.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;position:relative}.chips .chip{background:rgba(255,255,255,.16);color:#fff}
+.lchips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;position:relative}.lchips .chip{background:rgba(255,255,255,.16);color:#fff}
 .hero .lp{color:#dbe5ff;font-size:15px;margin:10px 0 14px;position:relative;max-width:520px}
 .stats.l4{grid-template-columns:repeat(2,1fr)}@media(min-width:700px){.stats.l4{grid-template-columns:repeat(4,1fr)}}
 .lr{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line)}.lr:first-child{border-top:0}
@@ -165,3 +165,11 @@ html.dark .chip{background:#22305a;color:#dbe6ff}html.dark .drop{background:#101
 .errbar{position:fixed;left:0;right:0;bottom:0;z-index:999;background:#8f1d14;color:#fff;padding:12px 14px;align-items:center;justify-content:space-between;gap:10px}.errbar button{background:#fff;color:#8f1d14;border:0;border-radius:10px;padding:8px 14px;font-weight:700}
 .dark .sr{background:#16213f}.dark .sr.ok{background:#12301a}
 .lr>div:last-child{text-align:right;flex:none;white-space:nowrap}
+
+/* v2.7 Nearby + My Complaints restyle */
+#mine .card{padding:14px 14px 12px;border-left:4px solid var(--navy3)}#mine .card .row:first-child b{font-size:15px;letter-spacing:.2px}
+.csum{margin-top:6px}details.cx{margin-top:10px;border-top:1px dashed var(--line);padding-top:6px}details.cx>summary{font-weight:700;color:var(--navy);cursor:pointer;padding:8px 0;list-style:none}details.cx>summary:before{content:"▸ "}details.cx[open]>summary:before{content:"▾ "}
+#nearby .issue{border:1px solid var(--line);box-shadow:none;border-radius:18px;padding:12px}#nearby .issue .bd>.row b{font-size:15px}
+#nearby .card{padding:10px}
+.dark #mine .card{border-left-color:var(--saf)}
+.pfoot{margin-top:18px}.pf{display:flex;gap:10px;align-items:flex-start;font-size:13px}.pf .ic{margin-top:3px}

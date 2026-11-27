@@ -23,3 +23,10 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 | 18 | Yes answers: MLAs/collectors partial rating | MISSING | |
 | 19 | Postgres port (SQLite resets on Render free) | MISSING | Needs external Postgres. |
 | 20 | Coverage report per state/UT | DONE | docs/COVERAGE.md, /api/coverage. |
+
+## Update v2.1
+- 22-language UI: PARTIAL. Now 17 UI languages (en, hi, mr, bn, ta, te, gu, kn + ml, or, pa, ur, as, ne, sa, mai, kok). Core labels only, machine translated, banner says "not reviewed". Still missing of the 22 scheduled: Bodo, Dogri, Kashmiri, Manipuri, Santali, Sindhi.
+- Low-data mode: DONE (Lite button, also auto on save-data/2g): no map tiles, photos at 50% quality, no animation. PWA manifest + service worker unchanged.
+- Header fits 390 px phones; nav label fixed. Screenshots: ui13_*.png.
+- MP auto-detect from pincode/GPS: NOT built (no official boundary data). MLA/collector partial rating: NOT built.
+- X daily cap 4.

@@ -2,14 +2,21 @@
 <title>JANSEVA AI</title><meta name="theme-color" content="#0b2a6b"><link rel="manifest" href="/manifest.json">
 <link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/vendor/leaflet/leaflet.css"><link rel="stylesheet" href="/static/app.css">
 </head><body>
+<div id="intro" class="intro" style="display:none" role="dialog" aria-modal="true" aria-labelledby="introT">
+ <div class="introc"><div class="introtop"><span class="logo2">JANSEVA AI · जनसेवा</span><button class="pill ghost" id="introLg" onclick="introLang()">हिंदी / English</button></div>
+  <h1 id="introT"></h1><p id="introP" class="sm"></p>
+  <div id="introS" class="isteps"></div>
+  <div class="info sm" id="introN"></div>
+  <button class="btn saf big" style="width:100%" onclick="introDone('report')" id="introGo"></button>
+  <button class="btn out" style="width:100%;margin-top:8px" onclick="introDone('home')" id="introSkip"></button></div></div>
 <header class="appbar">
  <div class="logo" onclick="go('home')"><i data-ic="landmark"></i><div>JANSEVA AI<small>जनसेवा</small></div></div>
  <nav class="topnav" id="topnav"></nav><div class="sp"></div>
- <select id="ulang" aria-label="Language" onchange="setLang(this.value)"><option value="en">English</option><option value="hi">हिंदी</option><option value="mr">मराठी</option><option value="bn">বাংলা</option><option value="ta">தமிழ்</option><option value="te">తెలుగు</option><option value="gu">ગુજરાતી</option><option value="kn">ಕನ್ನಡ</option></select>
- <button class="pill sos" onclick="go('emergency')" aria-label="Emergency 112"><i data-ic="siren"></i>112</button>
+ <select id="ulang" aria-label="Language" onchange="setLang(this.value)"><option value="en">English</option><option value="hi">हिंदी</option><option value="mr">मराठी</option><option value="bn">বাংলা</option><option value="ta">தமிழ்</option><option value="te">తెలుగు</option><option value="gu">ગુજરાતી</option><option value="kn">ಕನ್ನಡ</option><option value="ml">മലയാളം</option><option value="or">ଓଡ଼ିଆ</option><option value="pa">ਪੰਜਾਬੀ</option><option value="ur">اردو</option><option value="as">অসমীয়া</option><option value="ne">नेपाली</option><option value="sa">संस्कृतम्</option><option value="mai">मैथिली</option><option value="kok">कोंकणी</option></select>
+ <button class="pill ghost" id="ldbtn" onclick="toggleLD()" aria-label="Low data mode" title="Low data mode">Lite</button> <button class="pill sos" onclick="go('emergency')" aria-label="Emergency 112"><i data-ic="siren"></i>112</button>
  <button class="pill ghost" id="loginbtn" onclick="openLogin()"><i data-ic="user-round"></i><span id="who">Login</span></button>
 </header>
-<main>
+<main><div id="lnote" class="info sm" style="display:none;margin:8px 0">Machine translation, not yet reviewed by native speakers. Core labels only; the rest stays in English.</div>
 <section id="home" class="sec on">
  <div class="hero"><h1><span data-i="h1a">One Photo.</span> <span data-i="h1b">One Voice.</span> <em data-i="h1c">One Accountable India.</em></h1>
   <p class="hi">एक फोटो। एक आवाज़। एक जवाबदेह भारत।</p>
@@ -17,7 +24,7 @@
  <div class="stats"><div class="stat"><b id="s1">0</b><span data-i="reported">Reported</span></div><div class="stat g"><b id="s2">0</b><span data-i="verified">Citizen verified</span></div><div class="stat o"><b id="s3">0</b><span data-i="pending">Pending</span></div></div>
  <div class="tiles" style="margin-top:14px" id="tiles"></div>
  <div class="card"><h3><i data-ic="flag"></i><span data-i="recent">Recent public issues</span></h3><div id="homefeed"><div class="skel"></div></div></div>
- <div class="card"><h3><i data-ic="shield-check"></i>How it works</h3><div class="steps">
+ <div class="card"><h3><i data-ic="shield-check"></i>How it works <button class="btn out sm" style="float:right" onclick="introOpen()">Intro</button></h3><div class="steps">
   <div class="step"><div class="n"><i data-ic="camera"></i></div><div><b>Photo + location</b><div class="sm mut">Snap the problem. GPS is captured. Blur faces and plates on your phone before upload.</div></div></div>
   <div class="step"><div class="n"><i data-ic="search"></i></div><div><b>AI check</b><div class="sm mut">Category, severity and safety risk. You confirm. Low confidence always asks you.</div></div></div>
   <div class="step"><div class="n"><i data-ic="landmark"></i></div><div><b>Right official channel</b><div class="sm mut">Jurisdiction and road owner are checked. Unclear cases go to a human, never a guess.</div></div></div>
@@ -93,5 +100,5 @@
  <button id="wabtn" class="btn ok" style="width:100%;margin-top:12px;display:none" onclick="waLogin()">Login with WhatsApp</button><button class="btn pri" style="width:100%;margin-top:12px" onclick="otpReq()">Get OTP by email</button>
  <div id="otpbox" style="display:none"><label class="f">OTP</label><input id="code" inputmode="numeric" placeholder="6-digit code"><button class="btn saf" style="width:100%;margin-top:10px" onclick="otpVer()">Verify and continue</button></div><div id="otpmsg" class="info bl" style="display:none;margin-top:10px"></div></div></div>
 <div class="toast" id="toast"></div>
-<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/app.js?v=12"></script>
+<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/app.js?v=14"></script>
 </body></html>

@@ -74,7 +74,10 @@ class DB:
     def _connect(self):
         self.conn = self._pg.connect(self.url, connect_timeout=15, keepalives=1, keepalives_idle=30, keepalives_interval=10, keepalives_count=3)
         self.conn.autocommit = True
+        # Pooled connections (Neon pgbouncer) can carry a stale search_path from a
+        # previous session (e.g. a dropped test schema) - always pin it explicitly.
         if self.schema: self._exec("SET search_path TO " + self.schema)
+        else: self._exec("SET search_path TO public")
         self._ids = None
 
     def _exec(self, sql, args=None):

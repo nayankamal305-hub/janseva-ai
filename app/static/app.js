@@ -31,7 +31,7 @@ const I2={"ml": {"h1a": "ഒരു ഫോട്ടോ.", "h1b": "ഒരു ശ�
 const LG=()=>$('ulang').value, t9=k=>(I[LG()]||I.en)[k]||I.en[k]||k;
 window.setLang=function(l){const nb=$('lnote');if(nb){nb.style.display=(window.UNREVIEWED&&UNREVIEWED.has(l))?'':'none'}LS.jl=l;document.documentElement.lang=l;document.querySelectorAll('[data-i]').forEach(e=>e.textContent=t9(e.dataset.i));document.querySelectorAll('[data-n]').forEach(e=>{const k={mine:'mine',pub:'pub',dir:'dir',assist:'assist'}[e.dataset.n]||e.dataset.n;if(e.closest&&e.closest('.bnav')&&k==='mine'){e.textContent='Mine';return}e.textContent=t9(k)});$('who').textContent=T?'Account':t9('login')};
 // ---------- helpers ----------
-async function api(m,p,d,tok){const r=await fetch(p,{method:m,headers:{Authorization:'Bearer '+(tok||T),'Content-Type':'application/json'},body:d?JSON.stringify(d):undefined});return r.json()}
+async function api(m,p,d,tok){const r=await fetch(p,{method:m,headers:{Authorization:'Bearer '+(tok||T),'Content-Type':'application/json'},body:d?JSON.stringify(d):undefined});if(r.status===401){T='';try{LS.removeItem('jt')}catch(e){delete LS.jt}}return r.json()}
 window.toast=function(msg){const e=$('toast');e.textContent=msg;e.style.display='block';clearTimeout(e._t);e._t=setTimeout(()=>e.style.display='none',3800)};
 const lab=s=>String(s||'').replace(/_/g,' ').replace(/^./,c=>c.toUpperCase());
 const STAGES=['reported','ready_for_submission','acknowledged','assigned','in_progress','authority_marked_resolved','citizen_verified_resolved'];
@@ -44,7 +44,7 @@ window.go=function(x){document.body.classList.toggle('anon',!T);if(x==='home'&&!
  history.replaceState(null,'','#'+x);scrollTo({top:0});
  if(x=='home')loadHome();if(x=='mine')load();if(x=='nearby')loadFeed();if(x=='pub')loadStats();if(x=='rate')rateSearch();if(x=='dir'){loadDir();loadIgod()}if(x=='report'){setTimeout(()=>{initPick();if(!LL)gps()},60);wiz(WSTEP)}};
 // ---------- login ----------
-window.openLogin=function(){if(T){go('mine');return}$('sheet').classList.add('on')};window.closeLogin=()=>{$('sheet').classList.remove('on');document.body.classList.toggle('anon',!T)};
+window.openLogin=async function(){if(T){const r=await api('GET','/api/complaints');if(Array.isArray(r)){go('mine');return}}$('sheet').classList.add('on')};window.closeLogin=()=>{$('sheet').classList.remove('on');document.body.classList.toggle('anon',!T)};
 window.otpReq=async function(){const r=await api('POST','/api/otp/request',{phone:$('phone').value});const m=$('otpmsg');m.style.display='flex';if(r.error){m.textContent=r.error;return}$('otpbox').style.display='';m.textContent=r.sent?('Code sent to your '+r.channel+'. Check your inbox and spam folder.'):(r.dev_code?('Test mode code: '+r.dev_code):(r.note||'Could not send code'))};
 window.otpVer=async function(){const r=await api('POST','/api/otp/verify',{phone:$('phone').value,code:$('code').value,name:$('name').value});if(r.token){T=r.token;LS.jt=T;closeLogin();$('who').textContent='Account';toast('Logged in');flushDrafts()}else{$('otpmsg').style.display='flex';$('otpmsg').textContent=r.error||'Failed'}};
 // ---------- home ----------

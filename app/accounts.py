@@ -24,13 +24,29 @@ def otp_request(db, phone, dev=False):
         return {"sent": False, "channel": "email", "note": "Email sending not configured on this server", **({"dev_code": code} if dev else {})}
     return {"sent": False, "channel": "sms", "note": "SMS OTP needs a DLT-registered provider; use email login", **({"dev_code": code} if dev else {})}
 
+TOKEN_DAYS = 30
+def token_exp_iso(): return (datetime.now(timezone.utc) + timedelta(days=TOKEN_DAYS)).isoformat()
+
+def issue_token(db, uid):
+    """Fresh session token with a 30-day sliding expiry. Called on every real login, so a stolen old token stops working."""
+    tok = secrets.token_urlsafe(24)
+    db.run("UPDATE users SET token=?, token_exp=? WHERE id=?", (tok, token_exp_iso(), uid))
+    return db.one("SELECT * FROM users WHERE id=?", (uid,))
+
+def ensure_token(db, u):
+    """Real login: keep a still-valid token (so a second device does not log the first one out) and extend it; rotate only if expired or missing."""
+    exp = u.get("token_exp")
+    if u.get("token") and exp and datetime.fromisoformat(exp) > datetime.now(timezone.utc):
+        db.run("UPDATE users SET token_exp=? WHERE id=?", (token_exp_iso(), u["id"])); return db.one("SELECT * FROM users WHERE id=?", (u["id"],))
+    return issue_token(db, u["id"])
+
 def otp_verify(svc, phone, code, name=""):
     db = svc.db; r = db.one("SELECT * FROM otps WHERE phone=?", (phone,))
     if not r or r["attempts"] >= 5 or datetime.fromisoformat(r["expires"]) < datetime.now(timezone.utc): return None
     db.run("UPDATE otps SET attempts=attempts+1 WHERE phone=?", (phone,))
     if not hmac.compare_digest(r["code_hash"], hs(phone + code)): return None
     db.run("DELETE FROM otps WHERE phone=?", (phone,))
-    return svc.register(phone, name)
+    return ensure_token(db, svc.register(phone, name))
 
 def delete_account(db, uid):
     """Anonymise: remove identity, keep complaints (government records exist) without personal link."""
@@ -90,6 +106,7 @@ def _fail(db, key):
 
 def set_password(svc, user_id, pw):
     svc.db.run("UPDATE users SET pw_hash=?, pw_set_at=?, token=? WHERE id=?", (pw_hash(pw), now(), secrets.token_urlsafe(24), user_id))  # new token: old sessions end when the password changes
+    issue_token(svc.db, user_id)
     svc.db.audit("user:%d" % user_id, "password_set", "")
 
 def password_login(svc, ident, pw, ip=""):
@@ -101,7 +118,7 @@ def password_login(svc, ident, pw, ip=""):
     if _DUMMY is None: _DUMMY = pw_hash("dummy-password")
     ok = pw_check(pw or "", u["pw_hash"] if u and u.get("pw_hash") else _DUMMY)
     if u and u.get("pw_hash") and ok:
-        db.run("DELETE FROM login_attempts WHERE key=?", (keys[0],)); return u, "ok"
+        db.run("DELETE FROM login_attempts WHERE key=?", (keys[0],)); return ensure_token(db, u), "ok"
     for k in keys: _fail(db, k)
     return None, "bad"
 

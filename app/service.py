@@ -41,7 +41,17 @@ class Service:
         self.db.run("INSERT INTO users(phone,name,token,created_at) VALUES(?,?,?,?)", (phone, name, tok, now()))
         self.db.audit("system", "user_registered", phone[-4:])
         return self.db.one("SELECT * FROM users WHERE phone=?", (phone,))
-    def user_by_token(self, tok): return self.db.one("SELECT * FROM users WHERE token=?", (tok,)) if tok else None
+    def user_by_token(self, tok):
+        """Session token with 30-day sliding expiry. Tokens issued before expiry existed get an expiry on first use."""
+        if not tok: return None
+        u = self.db.one("SELECT * FROM users WHERE token=?", (tok,))
+        if not u: return None
+        from datetime import datetime, timedelta, timezone
+        n = datetime.now(timezone.utc); exp = u.get("token_exp")
+        if exp and datetime.fromisoformat(exp) < n: return None
+        if not exp or datetime.fromisoformat(exp) - n < timedelta(days=29):
+            self.db.run("UPDATE users SET token_exp=? WHERE id=?", ((n + timedelta(days=30)).isoformat(), u["id"]))
+        return u
 
     # ---- complaints -----------------------------------------------------
     def create_complaint(self, user, d):

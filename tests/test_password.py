@@ -77,3 +77,21 @@ class TestBrand(unittest.TestCase):
             self.assertGreater(os.path.getsize(os.path.join(R, "app", "static", "brand", f)), 300, f)
         h = open(os.path.join(R, "app", "static", "index.html")).read()
         for k in ('rel="icon"', 'rel="apple-touch-icon"', 'og:image', '/favicon.ico'): self.assertIn(k, h)
+
+class TestTokenExpiry(unittest.TestCase):
+    def setUp(self):
+        self.svc = Service(DB(os.path.join(tempfile.mkdtemp(), "e.db")), env={}, sandbox_base="http://127.0.0.1:1")
+    def test_expired_token_rejected_and_login_issues_new(self):
+        from datetime import datetime, timedelta, timezone
+        i = "e@example.com"; u, _ = accounts.password_signup_or_reset(self.svc, i, accounts.otp_request(self.svc.db, i, True)["dev_code"], "expiry pass 1")
+        self.assertIsNotNone(self.svc.user_by_token(u["token"]))
+        self.svc.db.run("UPDATE users SET token_exp=? WHERE id=?", ((datetime.now(timezone.utc) - timedelta(minutes=1)).isoformat(), u["id"]))
+        self.assertIsNone(self.svc.user_by_token(u["token"]))
+        v, st = accounts.password_login(self.svc, i, "expiry pass 1", "8.8.8.8"); self.assertEqual(st, "ok")
+        self.assertNotEqual(v["token"], u["token"]); self.assertIsNotNone(self.svc.user_by_token(v["token"])); self.assertIsNone(self.svc.user_by_token(u["token"]))
+    def test_legacy_token_gets_expiry_on_first_use(self):
+        u = self.svc.register("9999999999", "Old"); self.assertIsNone(self.svc.db.one("SELECT token_exp FROM users WHERE id=?", (u["id"],))["token_exp"])
+        self.assertIsNotNone(self.svc.user_by_token(u["token"])); self.assertIsNotNone(self.svc.db.one("SELECT token_exp FROM users WHERE id=?", (u["id"],))["token_exp"])
+    def test_otp_login_keeps_valid_token(self):
+        i = "o@example.com"; u1 = accounts.otp_verify(self.svc, i, accounts.otp_request(self.svc.db, i, True)["dev_code"])
+        u2 = accounts.otp_verify(self.svc, i, accounts.otp_request(self.svc.db, i, True)["dev_code"]); self.assertEqual(u1["token"], u2["token"])

@@ -27,17 +27,17 @@
  <div class="stats l4"><div class="stat"><b id="ls1">0</b><span>Reported</span></div><div class="stat g"><b id="ls2">0</b><span>Citizen verified</span></div><div class="stat o"><b id="ls3">0</b><span>Pending</span></div><div class="stat"><b id="ls4">0</b><span>MLAs + MPs listed</span></div></div>
  <div class="xs mut" style="text-align:center;margin:-4px 0 8px">Live from this server (sandbox build, not government data)</div>
  <div class="card" id="dmLanding"></div>
- <div class="card"><h3><i data-ic="shield-check"></i>What JANSEVA does</h3><div class="sm mut">Turns a photo into a complaint with the right category, location and office. Sends it by official email, portal links and optional X tags only after your tick, one complaint at a time. Then waits for you to say if it is really fixed. 17 languages, low data mode, works on slow phones.</div></div>
+ <div class="card"><h3><i data-ic="shield-check"></i>What JANSEVA does</h3><div class="sm mut">Turns a photo or a spoken sentence into a complaint draft with the likely category, location and office. It saves the complaint in JANSEVA, writes the letter, and opens YOUR mail app or the official portal so you send or file it yourself. JANSEVA does not send or post anything for you. Then it waits for you to say if it is really fixed. 17 languages, low data mode, works on slow phones.</div></div>
  <div class="card"><h3><i data-ic="list-checks"></i>How it works</h3><div class="steps">
   <div class="step"><div class="n"><i data-ic="camera"></i></div><div><b>1. Snap</b><div class="sm mut">Photo and GPS. Blur faces and plates on your phone.</div></div></div>
   <div class="step"><div class="n"><i data-ic="search"></i></div><div><b>2. AI checks</b><div class="sm mut">Category and severity suggested. You confirm.</div></div></div>
-  <div class="step"><div class="n"><i data-ic="landmark"></i></div><div><b>3. Sent with consent</b><div class="sm mut">Body, state officer, ministry, MP. Up to 3 first emails, reminders at 7 and 15 days.</div></div></div>
+  <div class="step"><div class="n"><i data-ic="landmark"></i></div><div><b>3. Ready to send</b><div class="sm mut">Letter, official email addresses (with source) and portal links are prepared. You press Send in your own mail app, or log in on the portal. Sent only when you do it.</div></div></div>
   <div class="step"><div class="n"><i data-ic="circle-check"></i></div><div><b>4. You verify</b><div class="sm mut">Authority says resolved is not enough. You confirm with an after photo.</div></div></div></div></div>
  <div class="card"><h3><i data-ic="flag"></i>Sample flow <span class="chip">SAMPLE, not a real complaint</span></h3>
   <div class="sample"><div class="sr"><i>1</i><div><b>Pothole, Hadapsar, Pune</b><div class="xs mut">Photo + GPS, face blur on device</div></div></div>
    <div class="sr"><i>2</i><div><b>AI: Roads, medium</b><div class="xs mut">You confirm category and road owner</div></div></div>
-   <div class="sr"><i>3</i><div><b>You tick: email + MP + X</b><div class="xs mut">Each channel separate. Nothing goes without a tick</div></div></div>
-   <div class="sr"><i>4</i><div><b>Status: Sent, not registered</b><div class="xs mut">Becomes Official only with a real reference number</div></div></div>
+   <div class="sr"><i>3</i><div><b>You choose: email + MP + X draft</b><div class="xs mut">Each one is prepared for you. Nothing is sent by JANSEVA</div></div></div>
+   <div class="sr"><i>4</i><div><b>Status: Sent by you, not registered</b><div class="xs mut">Registered only with a real authority reference number</div></div></div>
    <div class="sr"><i>5</i><div><b>Authority Marked Resolved</b><div class="xs mut">Shown separately from</div></div></div>
    <div class="sr ok"><i>6</i><div><b>Citizen Verified Resolved</b><div class="xs mut">Only after you confirm with an after photo</div></div></div></div></div>
  <div class="card"><h3><i data-ic="star"></i>JANSEVA Rating preview</h3><div class="xs mut" style="margin-bottom:6px">Citizens rate how well public offices solve problems. Opinions, not official data.</div><div id="lrate"><div class="skel"></div></div>
@@ -51,7 +51,7 @@
   <p class="hi">एक फोटो। एक आवाज़। एक जवाबदेह भारत।</p>
   <div class="cta"><button class="btn saf big pulse" onclick="go('report')"><i data-ic="camera"></i><span data-i="cta">Report a Problem</span></button><button class="btn glass" onclick="go('mine')"><i data-ic="list-checks"></i><span data-i="track">Track Complaint</span></button></div></div>
  <div class="stats"><div class="stat"><b id="s1">0</b><span data-i="reported">Reported</span></div><div class="stat g"><b id="s2">0</b><span data-i="verified">Citizen verified</span></div><div class="stat o"><b id="s3">0</b><span data-i="pending">Pending</span></div></div>
- <div class="glance" aria-label="How it works"><span><i>1</i>Snap</span><b>›</b><span><i>2</i>AI checks</span><b>›</b><span><i>3</i>Sent with consent</span><b>›</b><span><i>4</i>You verify</span></div>
+ <div class="glance" aria-label="How it works"><span><i>1</i>Snap</span><b>›</b><span><i>2</i>AI checks</span><b>›</b><span><i>3</i>You send it</span><b>›</b><span><i>4</i>You verify</span></div>
  <div class="prim" id="prim"></div>
  <button class="btn out" id="moreBtn" style="width:100%;margin:12px 0 6px" onclick="toggleMore()">More</button>
  <div class="tiles" style="display:none;margin-top:6px" id="tiles"></div>
@@ -90,16 +90,16 @@
   <div class="row" style="margin-top:10px"><button class="btn out" onclick="nextW(1)">Back</button><button class="btn saf grow" onclick="analyse()"><i data-ic="search"></i>Analyse</button></div><div id="msg" class="info rd" style="display:none;margin-top:10px"></div></div>
  <div id="w3" style="display:none"><div class="card"><h3><i data-ic="search"></i>AI review</h3><div id="aibox"></div><label class="f">Category</label><div class="row"><select id="catsel" class="grow"></select><button class="btn out sm" onclick="confirmCat()">Confirm</button></div></div>
   <div class="card"><h3><i data-ic="landmark"></i>Where it would go and why</h3><div id="routebox"></div></div>
-  <div class="card"><h3><i data-ic="lock"></i>Your consent</h3><button class="btn out sm" type="button" onclick="document.querySelectorAll('#w3 .sw input').forEach(i=>{if(['c1','c2','c4','c5','c6'].includes(i.id))i.checked=true})">Select recommended (official channels + email + X)</button>
-   <label class="sw"><input type="checkbox" id="c1"><span class="t"></span><span><b>Submit through matching official channels</b></span></label>
-   <label class="sw"><input type="checkbox" id="c2"><span class="t"></span><span><b>Share my name and mobile with those platforms</b><span class="sm mut" style="display:block">Needed for official filing.</span></span></label>
-   <label class="sw"><input type="checkbox" id="c3"><span class="t"></span><span><b>Also notify my elected representative</b><span class="sm mut" style="display:block">Optional. Only verified public contacts are used.</span></span></label>
-   <label class="sw"><input type="checkbox" id="c4"><span class="t"></span><span><b>Email this complaint to the accountable authorities</b><span class="sm mut" style="display:block">JANSEVA does NOT send it. After submit you get a ready letter and one-tap links that open in YOUR own email (Gmail/Outlook/Mail app), so it goes from your address and you press Send. Recipients (with official source) are shown after submit. "Sent" is not "registered".</span></span></label>
-   <label class="sw"><input type="checkbox" id="c5"><span class="t"></span><span><b>Use my email as reply-to</b><span class="sm mut" style="display:block">Authorities can reply to you directly. Your email is shared with them.</span></span></label>
-   <label class="sw"><input type="checkbox" id="c6"><span class="t"></span><span><b>Tag concerned authorities on X</b><span class="sm mut" style="display:block">A factual post (no personal data) with official handles is queued for the JANSEVA X account. Limited posts per day, so it may take a while. You can also post it yourself.</span></span></label>
+  <div class="card"><h3><i data-ic="lock"></i>Your consent</h3><button class="btn out sm" type="button" onclick="document.querySelectorAll('#w3 .sw input').forEach(i=>{if(['c1','c2','c4','c5','c6'].includes(i.id))i.checked=true})">Select recommended (letter + own-email + X draft)</button>
+   <label class="sw"><input type="checkbox" id="c1"><span class="t"></span><span><b>Save my complaint and prepare it for the matching official channels</b><span class="sm mut" style="display:block">JANSEVA saves it and prepares the letter and portal text. It opens your mail app or the official portal; you send or file it yourself.</span></span></label>
+   <label class="sw"><input type="checkbox" id="c2"><span class="t"></span><span><b>Include my name and mobile in the prepared letter and portal text</b><span class="sm mut" style="display:block">Government portals need your identity. Used only for this complaint.</span></span></label>
+   <label class="sw"><input type="checkbox" id="c3"><span class="t"></span><span><b>Also include my elected representative</b><span class="sm mut" style="display:block">Optional. Only verified public contacts are used. You press Send yourself.</span></span></label>
+   <label class="sw"><input type="checkbox" id="c4"><span class="t"></span><span><b>Prepare an email to the accountable authorities</b><span class="sm mut" style="display:block">JANSEVA does NOT send it. After submit you get a ready letter and one-tap links that open in YOUR own email (Gmail/Outlook/Mail app), so it goes from your address and you press Send. Recipients (with official source) are shown after submit. "Sent" is not "registered".</span></span></label>
+   <label class="sw"><input type="checkbox" id="c5"><span class="t"></span><span><b>Include my email so authorities can reply to me</b><span class="sm mut" style="display:block">Your email appears in the prepared letter.</span></span></label>
+   <label class="sw"><input type="checkbox" id="c6"><span class="t"></span><span><b>Prepare an X post tagging the concerned authorities</b><span class="sm mut" style="display:block">A factual post (no personal data) with official handles. JANSEVA does not post it. You review it and post it yourself.</span></span></label>
    <input id="cst" list="cstl" placeholder="Your Lok Sabha constituency (pick from list, optional, to email your MP)" style="width:100%;margin-top:6px"><datalist id="cstl"></datalist>
    <input id="cmp" placeholder="Private company? e.g. Swiggy, Uber, Amazon, Flipkart (optional)" style="width:100%;margin-top:6px">
-   <button class="btn saf big" style="width:100%;margin-top:12px" onclick="submitC()"><i data-ic="send"></i>Submit</button><div id="submsg" class="info gr" style="display:none;margin-top:10px"></div></div></div>
+   <button class="btn saf big" style="width:100%;margin-top:12px" onclick="submitC()"><i data-ic="send"></i>Save and prepare</button><div id="submsg" class="info gr" style="display:none;margin-top:10px"></div></div></div>
 </section>
 
 <section id="rate" class="sec"><h2 style="margin:16px 0 4px">JANSEVA Rating</h2>

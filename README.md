@@ -52,7 +52,7 @@ Levels: 1 full API, 2 partial API, 3 official guided submission, 4 verified emai
 - `app/server.py`: HTTP API + UI. `migrations/001_init.sql`: schema.
 
 ## Rules enforced (and tested)
-Consent to submit and separate consent to share personal data; no fake acknowledgement (no id returned = failed); duplicate complaint block (same user, category, 100 m, 7 days); parent resolved only when ALL linked official records are resolved, then citizen verification; escalation uses a platform's real appeal route, otherwise a reminder explicitly marked "not an official appeal"; analytics count unique citizen complaints separately from external records; credentials only from environment variables, never in the DB; every integration call and admin action logged; no CAPTCHA/OTP bypass.
+Consent to submit and separate consent to share personal data; no fake acknowledgement (no id returned = failed); duplicate hint only, never a block (same user, category, 100 m, 7 days); parent resolved only when ALL linked official records are resolved, then citizen verification; escalation uses a platform's real appeal route, otherwise a reminder explicitly marked "not an official appeal"; analytics count unique citizen complaints separately from external records; credentials only from environment variables, never in the DB; every integration call and admin action logged; no CAPTCHA/OTP bypass.
 
 
 ## v0.4

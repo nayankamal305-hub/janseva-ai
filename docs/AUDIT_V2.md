@@ -75,3 +75,9 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - Official source 1: Maharashtra DMA contact PDF https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf (407 councils/nagar panchayats with email, Marathi). Names are garbled in text extraction, so rows were matched to the PMAY list by email-name similarity >= 0.95, unique match only: 221 new rows + 12 existing rows updated. Unmatched (~125) are not guessed (renamed towns, spelling gaps, duplicate names like Karanja/Kalamb).
 - Official source 2: Urban Development Dept corporation directory (website column) https://urban.maharashtra.gov.in/organization/... used for 27 corporation websites; homepage + contact pages read (robots respected). Only corporation-looking emails kept (Malegaon, Sangli-Miraj, Chh. Sambhajinagar, Panvel); personal-looking gmail ids and placeholder example.com were dropped. Many corporation sites (Thane, KDMC, Nashik, PCMC, Pune, Kolhapur, Akola, Ahmednagar) did not load from here.
 - UI: route preview now handles bodies with an email but no website.
+
+## v3.5
+- Problem-density map (state, then district on tap). Real counts only, placed by each complaint's own coordinates; unlocated counted separately; SAMPLE toggle labelled; honest empty state. Boundaries: LGD via bharatlas (see docs/GEO_SOURCES.md). Saffron ramp, dark mode ramp.
+- Contacts: +17 UP Nagar Nigam (https://localbodies.up.nic.in/listnn.htm), Patna Municipal Commissioner email (https://betastate.bihar.gov.in/urban/KeyContacts).
+- Skipped: Gujarat district-page emails (misaligned with body names), Odisha (0/30 pages loaded), Rajasthan (1/50), HP (1/10).
+- Not verified: Nearby and Dashboard mounts were wired in code but not screenshot-checked; lite mode not checked.

@@ -3,7 +3,7 @@ from collections import defaultdict, deque
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from .service import Service
 from .connectors.mock_gov import MockSwachhata
-from . import accounts, public, assistant, roles, storage
+from . import accounts, public, assistant, roles, storage, density
 from .db import ROOT, now
 
 STATIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
@@ -12,6 +12,7 @@ ADMIN_TOKEN = os.environ.get("JANSEVA_ADMIN_TOKEN") or secrets.token_urlsafe(16)
 MAX_UPLOAD = 5 * 1024 * 1024
 MAGIC = {b"\xff\xd8\xff": ("jpg", "image/jpeg"), b"\x89PNG": ("png", "image/png")}
 
+_GZ = {}
 def make_handler(svc, admin_token, rate=120):
     hits = defaultdict(deque)
     dev_otp = os.environ.get("JANSEVA_DEV_OTP") == "1"
@@ -51,14 +52,17 @@ def make_handler(svc, admin_token, rate=120):
             if path in ("/", "/index.html"):
                 return self._send(200, open(os.path.join(STATIC, "index.html"), "rb").read(), "text/html; charset=utf-8")
             if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": []}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, "const C='jansevaai-v28';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
+            if path == "/sw.js": return self._send(200, "const C='jansevaai-v29';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now(), "db": "postgres" if getattr(svc.db, "pg", False) else "sqlite", "photo_storage": storage.from_env(os.environ, UPLOADS).kind})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
                 f = os.path.join(STATIC, rel)
                 if ".." not in rel and os.path.isfile(f):
-                    ct = {"css": "text/css", "js": "application/javascript", "woff2": "font/woff2", "png": "image/png", "svg": "image/svg+xml"}.get(f.rsplit(".", 1)[-1], "application/octet-stream")
-                    return self._send(200, open(f, "rb").read(), ct, {"Cache-Control": "public, max-age=86400"})
+                    ct = {"css": "text/css", "js": "application/javascript", "woff2": "font/woff2", "geojson": "application/geo+json", "json": "application/json", "png": "image/png", "svg": "image/svg+xml"}.get(f.rsplit(".", 1)[-1], "application/octet-stream")
+                    raw = open(f, "rb").read(); hd = {"Cache-Control": "public, max-age=86400"}
+                    if f.endswith(".geojson") and "gzip" in (self.headers.get("Accept-Encoding") or ""):
+                        import gzip; raw = _GZ.get(f) or _GZ.setdefault(f, gzip.compress(raw, 6)); hd["Content-Encoding"] = "gzip"
+                    return self._send(200, raw, ct, hd)
                 return self._json(404, {"error": "not found"})
             if path.startswith("/uploads/"):
                 try: got = storage.from_env(os.environ, UPLOADS).get(os.path.basename(path))
@@ -149,6 +153,7 @@ def make_handler(svc, admin_token, rate=120):
                 st = public.stats(svc.db, q)
                 return self._json(200, {"stats": st, "directory": dict(c), "mla_states": mst, "languages": 17, "note": "Counts come from this server's database and official lists. Sandbox build: not government data."})
             if path == "/api/public/stats": return self._json(200, public.stats(svc.db, q))
+            if path == "/api/public/density": return self._json(200, density.density(svc.db, q))
             if path == "/api/public/heatmap": return self._json(200, public.heatmap(svc.db, q))
             if path == "/api/public/report":
                 m = q.get("month") or now()[:7]

@@ -26,6 +26,7 @@
   <div class="cta"><button class="btn saf big pulse" onclick="go('report')"><i data-ic="camera"></i>Report a Problem</button><button class="btn glass" onclick="go('nearby')"><i data-ic="map-pin"></i>See problems near me</button></div></div>
  <div class="stats l4"><div class="stat"><b id="ls1">0</b><span>Reported</span></div><div class="stat g"><b id="ls2">0</b><span>Citizen verified</span></div><div class="stat o"><b id="ls3">0</b><span>Pending</span></div><div class="stat"><b id="ls4">0</b><span>MLAs + MPs listed</span></div></div>
  <div class="xs mut" style="text-align:center;margin:-4px 0 8px">Live from this server (sandbox build, not government data)</div>
+ <div class="card" id="dmLanding"></div>
  <div class="card"><h3><i data-ic="shield-check"></i>What JANSEVA does</h3><div class="sm mut">Turns a photo into a complaint with the right category, location and office. Sends it by official email, portal links and optional X tags only after your tick, one complaint at a time. Then waits for you to say if it is really fixed. 17 languages, low data mode, works on slow phones.</div></div>
  <div class="card"><h3><i data-ic="list-checks"></i>How it works</h3><div class="steps">
   <div class="step"><div class="n"><i data-ic="camera"></i></div><div><b>1. Snap</b><div class="sm mut">Photo and GPS. Blur faces and plates on your phone.</div></div></div>
@@ -101,10 +102,11 @@
 <section id="mine" class="sec"><h2 style="margin:16px 0 4px">My complaints</h2><div id="list"></div></section>
 
 <section id="nearby" class="sec"><h2 style="margin:16px 0 4px">Nearby and community issues</h2>
- <div class="card"><div class="chips" id="fchips"></div><div id="nearmap"></div></div><div id="feed"></div></section>
+ <div class="card"><div class="chips" id="fchips"></div><div id="nearmap"></div></div><div class="card" id="dmNearby"></div><div id="feed"></div></section>
 
 <section id="pub" class="sec"><h2 style="margin:16px 0 4px">Public accountability dashboard</h2>
  <div class="chips" id="pchips"></div><div class="row" style="margin:6px 0"><input id="pstate" class="grow" placeholder="State"><input id="pcity" class="grow" placeholder="City"><button class="btn pri sm" onclick="loadStats()">Apply</button><a class="btn out sm" href="/api/public/report?format=csv"><i data-ic="download"></i>Monthly CSV</a></div>
+ <div class="card" id="dmDash"></div>
  <div id="stats"><div class="skel"></div></div></section>
 
 <section id="dir" class="sec"><h2 style="margin:16px 0 4px">Government departments and platforms</h2><input id="dq" placeholder="Search platforms" oninput="renderDir()" style="margin:8px 0"><div id="plats"></div><div class="card" style="margin:12px 0"><h3 style="margin:0 0 6px;font-size:17px">Official India directory</h3><p class="sm mut" style="margin:0 0 8px">Source: National Portal of India (IGOD), pgportal.gov.in and sansad.in. Websites and contacts exactly as listed; nothing invented.</p>
@@ -131,5 +133,5 @@
  <button id="wabtn" class="btn ok" style="width:100%;margin-top:12px;display:none" onclick="waLogin()">Login with WhatsApp</button><button class="btn pri" style="width:100%;margin-top:12px" onclick="otpReq()">Get OTP by email</button>
  <div id="otpbox" style="display:none"><label class="f">OTP</label><input id="code" inputmode="numeric" placeholder="6-digit code"><button class="btn saf" style="width:100%;margin-top:10px" onclick="otpVer()">Verify and continue</button></div><div id="otpmsg" class="info bl" style="display:none;margin-top:10px"></div></div></div>
 <div class="toast" id="toast"></div>
-<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/app.js?v=21"></script>
+<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/density.js?v=1"></script><script src="/static/app.js?v=22"></script>
 <script>setTimeout(function(){if(!window.__boot){var b=document.getElementById("errbar");if(b)b.style.display="flex"}},12000)</script></body></html>

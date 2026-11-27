@@ -179,3 +179,12 @@ html.dark .chip{background:#22305a;color:#dbe6ff}html.dark .drop{background:#101
 .dark .chips button{background:#141d36;color:#dbe5ff;border-color:#2a3a6a}.dark .chips button.on{background:var(--navy3);color:#fff;border-color:var(--navy3)}
 .dark .btn.out{background:#141d36;color:#dbe5ff;box-shadow:inset 0 0 0 2px #2a3a6a}.dark .rec{background:#101830;border-color:#26335c}
 .dark #mine .card .row:first-child b{color:#fff}.dark .csum{color:#9aa9d1}
+/* v3.5 problem-density map (light-to-dark saffron ramp, navy highlight; no green) */
+.dmh{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:6px}.dmw{position:relative;background:var(--bg);border:1px solid var(--line);border-radius:14px;overflow:hidden;touch-action:none}
+.dmw svg{display:block;width:100%;height:auto;max-height:68vh}.dmz{position:absolute;right:8px;top:8px;display:flex;flex-direction:column;gap:6px}.dmz .btn{padding:4px 10px;min-width:36px}
+.dmi{margin:8px 0 4px;font-size:13px;min-height:20px}.dml{display:flex;align-items:center;gap:4px;margin-top:6px}.dml i{display:inline-block;width:26px;height:12px;border-radius:3px}
+:root{--d0:#f1ede6;--d1:#ffe6bf;--d2:#ffc27a;--d3:#f08a1c;--d4:#9a4a06;--dstroke:#ffffff;--dsel:#0b2a6b}
+html.dark{--d0:#1f2535;--d1:#5a4020;--d2:#9a6a1c;--d3:#e08c1c;--d4:#ffd28a;--dstroke:#0d1324;--dsel:#ffffff}
+.dc0{fill:var(--d0);background:var(--d0)}.dc1{fill:var(--d1);background:var(--d1)}.dc2{fill:var(--d2);background:var(--d2)}.dc3{fill:var(--d3);background:var(--d3)}.dc4{fill:var(--d4);background:var(--d4)}
+.ds,.dd{stroke:var(--dstroke);stroke-width:.6;cursor:pointer;vector-effect:non-scaling-stroke}.ds.under{opacity:.25}.ds.sel{stroke:var(--dsel);stroke-width:1.8}.dd{stroke-width:.4}.ds:hover,.dd:hover{stroke:var(--dsel);stroke-width:1.4}
+.dmw~.row input[type=checkbox]{width:18px;height:18px;flex:none;margin:0 6px 0 0;vertical-align:middle}.dmw~.row label{display:flex;align-items:center}

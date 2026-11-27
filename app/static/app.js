@@ -120,7 +120,7 @@ const CATS=['','garbage','drainage','road','water','electricity','railway','cons
 function chipsRow(id,items,cur,fn){$(id).innerHTML=items.map(([v,l])=>`<button class="${v==cur?'on':''}" onclick="${fn}('${v}')">${l}</button>`).join('')}
 window.setFcat=v=>{FCAT=v;loadFeed()};
 let NM=null,NL=null;
-async function loadFeed(){chipsRow('fchips',CATS.map(c=>[c,c?lab(c):'All']),FCAT,'setFcat');const q=new URLSearchParams({category:FCAT});if(!FCAT)q.delete('category');
+async function loadFeed(){if(window.DensityMap)DensityMap.mount('dmNearby');chipsRow('fchips',CATS.map(c=>[c,c?lab(c):'All']),FCAT,'setFcat');const q=new URLSearchParams({category:FCAT});if(!FCAT)q.delete('category');
  const f=await api('GET','/api/public/feed?'+q);$('feed').innerHTML=(Array.isArray(f)&&f.length)?f.map(issueHtml).join(''):empty('No issues match this filter.');
  if(!window.L)return;if(!NM){NM=L.map('nearmap').setView([20.59,78.96],5);(LITE()||L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(NM));NL=L.layerGroup().addTo(NM)}NL.clearLayers();setTimeout(()=>NM.invalidateSize(),80);
  const pts=[];(Array.isArray(f)?f:[]).forEach(x=>{const m=L.circleMarker([x.approx_lat,x.approx_lon],{radius:9,color:'#fff',weight:2,fillColor:x.emergency?'#d92d20':'#0b2a6b',fillOpacity:.9}).addTo(NL);m.bindPopup('<b>'+esc(x.category)+'</b><br>'+esc(lab(x.status))+'<br>'+x.supporters+' supporting');pts.push([x.approx_lat,x.approx_lon])});if(pts.length)NM.fitBounds(pts,{maxZoom:15,padding:[30,30]})}
@@ -129,7 +129,7 @@ window.sup=async(id,k)=>{const r=await api('POST','/api/complaints/'+id+'/suppor
 window.setPeriod=v=>{PERIOD=v;loadStats()};
 let DM=null,DL=null;
 const SCOL={citizen_verified_resolved:'#138808',authority_marked_resolved:'#7ab36f',acknowledged:'#163b8f',assigned:'#4f7be0',in_progress:'#8aa6ee',ready_for_submission:'#ff9933',awaiting_citizen_confirmation:'#ffc680',escalated:'#c76a00',reopened:'#d92d20',rejected:'#98a2b3',closed:'#667085'};
-async function loadStats(){chipsRow('pchips',[['','All time'],['7','7 days'],['30','30 days'],['90','90 days']],PERIOD,'setPeriod');const q=new URLSearchParams({state:$('pstate').value,city:$('pcity').value,days:PERIOD});[...q].forEach(([k,v])=>{if(!v)q.delete(k)});
+async function loadStats(){if(window.DensityMap)DensityMap.mount('dmDash');chipsRow('pchips',[['','All time'],['7','7 days'],['30','30 days'],['90','90 days']],PERIOD,'setPeriod');const q=new URLSearchParams({state:$('pstate').value,city:$('pcity').value,days:PERIOD});[...q].forEach(([k,v])=>{if(!v)q.delete(k)});
  const s=await api('GET','/api/public/stats?'+q);if(s.error)return;const K=[['total_reported','User-reported','flag',''],['ai_analysed','AI analysed','search',''],['officially_submitted_government_confirmed','Officially submitted (govt confirmed)','landmark',''],['sandbox_test_complaints','Sandbox tests','layers','o'],['authority_marked_resolved','Authority marked resolved','clock','o'],['citizen_verified_resolved','Citizen verified resolved','circle-check','g'],['pending','Pending','clock',''],['overdue_records','Overdue (configured SLA)','triangle-alert','r'],['rejected','Rejected','x','r']];
  const st=s.by_status,tot=st.reduce((a,b)=>a+b.n,0)||1;let acc=0;const R=52,C=2*Math.PI*R;const segs=st.map(x=>{const len=C*x.n/tot,o=C-acc;acc+=len;return `<circle r="${R}" cx="70" cy="70" fill="none" stroke="${SCOL[x.k]||'#98a2b3'}" stroke-width="22" stroke-dasharray="${len} ${C-len}" stroke-dashoffset="${o+C/4}" transform=""/>`}).join('');
  const mx=Math.max(1,...s.by_category.map(x=>x.n));
@@ -221,7 +221,7 @@ function applyDark(){const pref=/[?&]dark=1/.test(location.search)?'1':LS.dk;con
 applyDark();
 
 let LANDED=0;
-async function landing(){if(LANDED)return;LANDED=1;try{
+async function landing(){if(LANDED)return;LANDED=1;try{if(window.DensityMap)DensityMap.mount('dmLanding');
  const o=await api('GET','/api/public/overview');if(!o||!o.stats){LANDED=0;return}
  const st=o.stats,d=o.directory||{};const set=(i,v)=>{const e=$(i);if(e)e.textContent=v};
  set('ls1',st.total_reported||0);set('ls2',st.citizen_verified_resolved||0);set('ls3',st.pending||0);set('ls4',(d.MLA||0)+(d.MP||0));

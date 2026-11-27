@@ -1440,13 +1440,13 @@
   "ulb_name": "Aligarh",
   "city_code": "249025",
   "state": "Uttar Pradesh",
-  "website": "https://aligarh.nic.in",
-  "website_kind": "district_site_listing",
-  "found_via": "https://aligarh.nic.in/public-utility/aligarh-municipal-corporation/",
+  "website": "https://nnaligarh.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
   "emails": [
    {
     "email": "nnaligarh@gmail.com",
-    "found_on": "https://aligarh.nic.in/public-utility-category/municipality/"
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
    }
   ],
   "last_verified": "2026-11-27",
@@ -1457,10 +1457,15 @@
   "ulb_name": "Ayodhya",
   "city_code": "249391",
   "state": "Uttar Pradesh",
-  "website": "https://ayodhya.nic.in",
-  "website_kind": "district_site_listing",
-  "found_via": "https://ayodhya.nic.in/hi/public-utility/municipal-corporation-ayodhya/",
-  "emails": [],
+  "website": "http://www.nagarnigamayodhya.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "nagarnigamayodhya@gmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1469,10 +1474,15 @@
   "ulb_name": "Firozabad",
   "city_code": "249079",
   "state": "Uttar Pradesh",
-  "website": "https://firozabad.nic.in",
-  "website_kind": "district_site_listing",
-  "found_via": "https://firozabad.nic.in/public-utility/municipal-corporation-firozabad/",
-  "emails": [],
+  "website": "http://firozabadnagarnigam.com",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "nagarnigamfzd@gmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1481,10 +1491,15 @@
   "ulb_name": "Ghaziabad",
   "city_code": "248988",
   "state": "Uttar Pradesh",
-  "website": "https://ghaziabad.nic.in",
-  "website_kind": "district_site_listing",
-  "found_via": "https://ghaziabad.nic.in/en/public-utility-category/municipality/",
-  "emails": [],
+  "website": "http://ghaziabadnagarnigam.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "gzb.nagar.nigam@gmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1496,7 +1511,12 @@
   "website": "https://kmc.up.nic.in",
   "website_kind": "ulb_own_site",
   "found_via": "https://kmc.up.nic.in/",
-  "emails": [],
+  "emails": [
+   {
+    "email": "mckanpur@yahoo.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1508,7 +1528,12 @@
   "website": "https://gorakhpurnagarnigam.up.gov.in",
   "website_kind": "ulb_own_site",
   "found_via": "https://gorakhpurnagarnigam.up.gov.in/",
-  "emails": [],
+  "emails": [
+   {
+    "email": "nagarnigamgkp@gmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1517,10 +1542,15 @@
   "ulb_name": "Jhansi",
   "city_code": "249314",
   "state": "Uttar Pradesh",
-  "website": "https://jhansi.nic.in",
-  "website_kind": "district_site_listing",
-  "found_via": "https://jhansi.nic.in/public-utility/nagar-nigam-jhansi/",
-  "emails": [],
+  "website": "https://jnnjhansi.com/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "nagarayukta@jnnjhansi.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1532,7 +1562,12 @@
   "website": "https://www.lmc.up.nic.in",
   "website_kind": "ulb_own_site",
   "found_via": "https://www.lmc.up.nic.in/",
-  "emails": [],
+  "emails": [
+   {
+    "email": "nnlko@up.nic.in",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1541,10 +1576,15 @@
   "ulb_name": "Moradabad",
   "city_code": "248929",
   "state": "Uttar Pradesh",
-  "website": "https://moradabad.nic.in",
-  "website_kind": "district_site_listing",
-  "found_via": "https://moradabad.nic.in/hi/public-utility-category/%e0%a4%a8%e0%a4%97%e0%a4%b0-%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be/",
-  "emails": [],
+  "website": "https://nagarnigammoradabad.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "moradabadnagarnigam@gmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1565,10 +1605,15 @@
   "ulb_name": "Saharanpur",
   "city_code": "248873",
   "state": "Uttar Pradesh",
-  "website": "https://saharanpur.nic.in",
-  "website_kind": "district_site_listing",
-  "found_via": "https://saharanpur.nic.in/public-utility-category/nagar-nigam/",
-  "emails": [],
+  "website": "http://saharanpurnagarnigam.com",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "nagarnigamsaharanpur@gmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1577,10 +1622,15 @@
   "ulb_name": "Varanasi",
   "city_code": "249531",
   "state": "Uttar Pradesh",
-  "website": "https://varanasi.nic.in",
-  "website_kind": "district_site_listing",
-  "found_via": "https://varanasi.nic.in/public-utility/nagar-nigam-varanasi/",
-  "emails": [],
+  "website": "http://www.nnvns.org",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "mcvns1@gmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1589,10 +1639,15 @@
   "ulb_name": "Shahjahanpur",
   "city_code": "297802",
   "state": "Uttar Pradesh",
-  "website": "https://shahjahanpur.nic.in",
-  "website_kind": "district_site_listing",
-  "found_via": "https://shahjahanpur.nic.in/public-utility/nagar-palika-parishad-shahjahanpur/",
-  "emails": [],
+  "website": "http://www.nagarnigamshahjahanpur.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "nagarnigamshahjahanpur@gmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -9619,5 +9674,90 @@
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Agra",
+  "city_code": "249062",
+  "state": "Uttar Pradesh",
+  "website": "https://nagarnigamagra.com",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "amcagra@yahoo.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "UP Directorate of Local Bodies Nagar Nigam list (website + commissioner contact email)"
+ },
+ {
+  "ulb_name": "Prayagraj",
+  "city_code": "249369",
+  "state": "Uttar Pradesh",
+  "website": "http://allahabadmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "osnagarnigam@rediffmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "UP Directorate of Local Bodies Nagar Nigam list (website + commissioner contact email)"
+ },
+ {
+  "ulb_name": "Bareilly",
+  "city_code": "249149",
+  "state": "Uttar Pradesh",
+  "website": "https://nagarnigambareilly.com",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "nagarayukt.bareilly@gmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "UP Directorate of Local Bodies Nagar Nigam list (website + commissioner contact email)"
+ },
+ {
+  "ulb_name": "Mathura",
+  "city_code": "249052",
+  "state": "Uttar Pradesh",
+  "website": "http://nnmvonline.in/",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "nagarayuktmathura@gmail.com",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "UP Directorate of Local Bodies Nagar Nigam list (website + commissioner contact email)"
+ },
+ {
+  "ulb_name": "Meerut",
+  "city_code": "248964",
+  "state": "Uttar Pradesh",
+  "website": "http://meerutnagarnigam.com/main",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://localbodies.up.nic.in/listnn.htm",
+  "emails": [
+   {
+    "email": "nnmee@up.nic.in",
+    "found_on": "https://localbodies.up.nic.in/listnn.htm"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "UP Directorate of Local Bodies Nagar Nigam list (website + commissioner contact email)"
  }
 ]

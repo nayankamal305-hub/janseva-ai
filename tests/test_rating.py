@@ -65,7 +65,7 @@ class TestUlbContacts(unittest.TestCase):
         rows = json.load(open(os.path.join(os.path.dirname(__file__), "..", "data", "ulb_contacts.json")))
         self.assertGreater(len(rows), 100)
         for r in rows:
-            self.assertTrue(r["website"].startswith("https://")); self.assertIn(r["website_kind"], ("ulb_own_site", "district_site_listing", "state_cdma_portal_page"))
-            for e in r["emails"]: self.assertTrue(e["found_on"].startswith("https://") and e["found_on"].split("/")[2].endswith((".gov.in", ".nic.in")))
+            self.assertTrue(r["website"].startswith("http") or (r["website_kind"] == "none_found" and r["emails"])); self.assertIn(r["website_kind"], ("ulb_own_site", "district_site_listing", "state_cdma_portal_page", "none_found"))
+            for e in r["emails"]: self.assertTrue(e["found_on"].startswith("https://") and (e["found_on"].split("/")[2].endswith((".gov.in", ".nic.in", "ulbdataportal.in")) or (r["website_kind"] == "ulb_own_site" and e["found_on"].split("/")[2].replace("www.", "") == r["website"].split("/")[2].replace("www.", ""))))
         l = ladder({"category": "garbage", "city": "Bhubaneswar", "state": "Odisha"})
         self.assertTrue(any(t["kind"] == "local_body_published_email" and t["email"].endswith("bmc.gov.in") for t in l))

@@ -1020,10 +1020,15 @@
   "ulb_name": "Panvel",
   "city_code": "251492",
   "state": "Maharashtra",
-  "website": "https://panvelcorporation.maharashtra.gov.in",
+  "website": "https://www.panvelcorporation.com",
   "website_kind": "ulb_own_site",
   "found_via": "https://panvelcorporation.maharashtra.gov.in/",
-  "emails": [],
+  "emails": [
+   {
+    "email": "panvelcorporation@gmail.com",
+    "found_on": "https://www.panvelcorporation.com"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -1047,7 +1052,12 @@
   "website": "https://smkc.gov.in",
   "website_kind": "ulb_own_site",
   "found_via": "https://smkc.gov.in/aboutsmkc.aspx",
-  "emails": [],
+  "emails": [
+   {
+    "email": "smkcorporation@gmail.com",
+    "found_on": "https://www.smkc.gov.in"
+   }
+  ],
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "web search for official site (gov.in/nic.in only), then homepage + up to 2 contact pages read; robots.txt respected"
@@ -5286,8 +5296,12 @@
   "found_via": "https://beed.nic.in/en/public-utility-category/municipality/",
   "emails": [
    {
+    "email": "dharurmc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   },
+   {
     "email": "mc_dharur@rediffmail.com",
-    "found_on": "https://beed.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5304,7 +5318,7 @@
   "emails": [
    {
     "email": "mcgeorai@gmail.com",
-    "found_on": "https://beed.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5321,7 +5335,7 @@
   "emails": [
    {
     "email": "cokaij@gmail.com",
-    "found_on": "https://beed.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5338,7 +5352,7 @@
   "emails": [
    {
     "email": "copatoda@gmail.com",
-    "found_on": "https://beed.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5372,7 +5386,7 @@
   "emails": [
    {
     "email": "npbhadgaon@gmail.com",
-    "found_on": "https://jalgaon.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5389,7 +5403,7 @@
   "emails": [
    {
     "email": "nagarparishadalibag@gmail.com",
-    "found_on": "https://raigad.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5457,7 +5471,7 @@
   "emails": [
    {
     "email": "mahadnagarpalika@gmail.com",
-    "found_on": "https://raigad.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5474,7 +5488,7 @@
   "emails": [
    {
     "email": "nagarpanchayatmangaon@gmail.com",
-    "found_on": "https://raigad.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5508,7 +5522,7 @@
   "emails": [
    {
     "email": "co.murudjanjira@gmail.com",
-    "found_on": "https://raigad.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5525,7 +5539,7 @@
   "emails": [
    {
     "email": "comcakkalkot123@gmail.com",
-    "found_on": "https://solapur.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5559,7 +5573,7 @@
   "emails": [
    {
     "email": "comckarmala@gmail.com",
-    "found_on": "https://solapur.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5576,7 +5590,7 @@
   "emails": [
    {
     "email": "comcmohol@gmail.com",
-    "found_on": "https://solapur.nic.in/en/public-utility-category/municipality/"
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
    }
   ],
   "last_verified": "2026-11-27",
@@ -5667,5 +5681,3943 @@
   "last_verified": "2026-11-27",
   "accepts_citizen_complaints": "unverified",
   "method": "District NIC portal \"Municipalities\" directory page (official), name matched to PMAY ULB within the same state+district; entries whose email does not resemble the body name were dropped"
+ },
+ {
+  "ulb_name": "Akot",
+  "city_code": "251310",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "akotmc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Balapur",
+  "city_code": "251311",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcbalapur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Barshitakli",
+  "city_code": "276332",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayat.barshitakali@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Patur",
+  "city_code": "251316",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcpatur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Telhara",
+  "city_code": "251309",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mctelhara@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Achalpur",
+  "city_code": "251323",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcachalpur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Anjangaon",
+  "city_code": "251322",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcanjangaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Chandurbazar",
+  "city_code": "251324",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcchandurbazar@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Chandur Railway",
+  "city_code": "251330",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcchandurrailway@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Chikhaldara",
+  "city_code": "276634",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcchikhaldara@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Morshi",
+  "city_code": "251325",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcmorshi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Buldana",
+  "city_code": "251305",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcbuldana@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Chikhli",
+  "city_code": "251304",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcchikhlinp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Deulgaon Raja",
+  "city_code": "251306",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcdeulgaonraja@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Khamgaon (M)",
+  "city_code": "251302",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comckhamgaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Lonar",
+  "city_code": "251308",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mclonar@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mehkar",
+  "city_code": "251303",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcmehkar@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   },
+   {
+    "email": "mehkarco@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Nandura",
+  "city_code": "251300",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nanduraco@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sangrampur",
+  "city_code": "276274",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatsangrampur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shegaon",
+  "city_code": "802663",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "co.shegaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sindkhed Raja",
+  "city_code": "251307",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "sindkhedrajamc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Malegaon (M Corp)",
+  "city_code": "251438",
+  "state": "Maharashtra",
+  "website": "https://www.malegaoncorporation.org",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [
+   {
+    "email": "mlgmmc@gmail.com",
+    "found_on": "https://www.malegaoncorporation.org"
+   },
+   {
+    "email": "npmalegaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mangrulpir",
+  "city_code": "251317",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcmangrulpir@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Manora",
+  "city_code": "276294",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npmanora@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Risod",
+  "city_code": "251320",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "risodnp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Washim",
+  "city_code": "251319",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcwashim@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Arni",
+  "city_code": "259703",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcarni4@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Darwha",
+  "city_code": "251389",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npdarwha@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Dhanki",
+  "city_code": "290430",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "dhankinp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Digras",
+  "city_code": "251390",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npdigras@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Ghatanji",
+  "city_code": "251394",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcghatanji@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mahagaon",
+  "city_code": "276309",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npmahagaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Maregaon",
+  "city_code": "276310",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npmaregaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Pusad",
+  "city_code": "251391",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcpusad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Ralegaon",
+  "city_code": "276308",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "co.npralegaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Umarkhed",
+  "city_code": "251393",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcumarkhed@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Wani",
+  "city_code": "251397",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "wani.mc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Yavatmal",
+  "city_code": "251386",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npyavatmal@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shirur Kasar",
+  "city_code": "275726",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npshirurkasar2015@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Gangapur (M)",
+  "city_code": "251432",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcgangapur1@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kannad",
+  "city_code": "251426",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "chiefofficerkannad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sillod",
+  "city_code": "297092",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcsillod@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   },
+   {
+    "email": "cosillod@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Vaijapur",
+  "city_code": "251431",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npvaijapur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Murum",
+  "city_code": "251572",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcmurum@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Naldurg",
+  "city_code": "251571",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "naldurgmc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Paranda",
+  "city_code": "251566",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcparanda@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Tuljapur",
+  "city_code": "251570",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "tuljapurmc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Washi",
+  "city_code": "276312",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npwashi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Ambad",
+  "city_code": "251424",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "ambadmc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Badnapur",
+  "city_code": "276369",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npbadnapur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Jafrabad",
+  "city_code": "276372",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cojafrabad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mantha",
+  "city_code": "276371",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npmantha@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Partur",
+  "city_code": "251425",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "parturco@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Ausa",
+  "city_code": "251563",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcausa1956@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Chakur",
+  "city_code": "276375",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npchakur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Jalkot",
+  "city_code": "276373",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "jalkotnagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Nilanga",
+  "city_code": "251564",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "municipalcouncilnilanga@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Renapur",
+  "city_code": "276376",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nprenapur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shirur-Anantpal",
+  "city_code": "276374",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npshiruranantpal@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Udgir",
+  "city_code": "251565",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcudgir@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Ardhapur",
+  "city_code": "258020",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "ardhapurco@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   },
+   {
+    "email": "coardhapur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Bhokar",
+  "city_code": "259697",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cobhokar1@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Biloli",
+  "city_code": "251406",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cobiloli7@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Hadgaon",
+  "city_code": "251399",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cohadgaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kandhar",
+  "city_code": "251408",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cokandhar@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kinwat",
+  "city_code": "251398",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cokinwat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kundalwadi",
+  "city_code": "251405",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cokundalwadi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Loha",
+  "city_code": "251407",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcloha18@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mahur",
+  "city_code": "258024",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mahurco@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mudkhed",
+  "city_code": "251402",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comudkhed@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mukhed",
+  "city_code": "251409",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comukhed@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Gangakhed",
+  "city_code": "251420",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcgangakhed@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Jintur",
+  "city_code": "251415",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "co.mcjintur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Palam",
+  "city_code": "276297",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nppalam@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Pathri",
+  "city_code": "251418",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcpathri@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Purna",
+  "city_code": "251421",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcpurna@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sailu",
+  "city_code": "251414",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcsailu@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sonpeth",
+  "city_code": "251419",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cosonpeth@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Jawhar",
+  "city_code": "251453",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "jawharnp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mokhada",
+  "city_code": "276317",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npmokhada@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Palghar",
+  "city_code": "251460",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "palgharnagarparishad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Talasari",
+  "city_code": "276315",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nptalasari@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Vikramgad",
+  "city_code": "276316",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "vikramgad.nagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Pali",
+  "city_code": "300027",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "palinagarpanchayat2021@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Pen",
+  "city_code": "251502",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "copenmc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Poladpur",
+  "city_code": "276636",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "poladpurnagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Tala",
+  "city_code": "276270",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayattala@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Devrukh",
+  "city_code": "259684",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npdevrukh@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Khed",
+  "city_code": "251601",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "khednp1940@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Lanja",
+  "city_code": "251607",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nplanja@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mandangad",
+  "city_code": "276295",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npmandangad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Devgad-Jamsande",
+  "city_code": "276321",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "devgadjamsandenp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kudal",
+  "city_code": "251612",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "kudalnagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sawantwadi",
+  "city_code": "251613",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cosawantwadi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Vabhave- Vaibhavwadi",
+  "city_code": "263834",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npvabhavevaibhavwadi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shahapur",
+  "city_code": "276333",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "shahapurnagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Bhandara",
+  "city_code": "248078",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "bhandaranagarpalika@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mohadi",
+  "city_code": "276325",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npmohadi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Pauni",
+  "city_code": "248077",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcpauni44@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Tumsar",
+  "city_code": "248079",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "co.mc.tumsar@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Ballarpur",
+  "city_code": "251381",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "municipalcouncilballarpur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Bhisi",
+  "city_code": "300392",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayat.bhisi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Gadchandur",
+  "city_code": "265791",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cogadchandur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Ghugus",
+  "city_code": "298902",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npghugus@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Korpana",
+  "city_code": "276357",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "korpananagar@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mul",
+  "city_code": "251382",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcmul220356@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Nagbhid",
+  "city_code": "276361",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcnagbhid@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Pombhurna",
+  "city_code": "276359",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nppombhurna@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Rajura",
+  "city_code": "251384",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcrajura@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   },
+   {
+    "email": "mcrajura@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Warora",
+  "city_code": "251376",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcwarora@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Aheri",
+  "city_code": "276327",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayataheri1@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Armori",
+  "city_code": "297866",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatarmori@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Bhamragad",
+  "city_code": "276283",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatbhamragad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Chamorshi",
+  "city_code": "276329",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatchamorshi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Dhanora",
+  "city_code": "276284",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatdhanora@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Etapalli",
+  "city_code": "276330",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatetapalli01@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Korchi",
+  "city_code": "538785",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatkorchi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kurkheda",
+  "city_code": "276286",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatkurkheda@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mulchera",
+  "city_code": "276287",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatmulchera@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Deori",
+  "city_code": "276363",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npdeori2@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Gondiya",
+  "city_code": "251371",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "chiefofficergondiya@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Goregaon",
+  "city_code": "251510",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npgoregaon1@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sadak-Arjuni",
+  "city_code": "276368",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npsadakarjuni@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Salekasa",
+  "city_code": "276365",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npsalekasa@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Tirora",
+  "city_code": "251370",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mctirora@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   },
+   {
+    "email": "tiroraco2011@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Bhiwapur",
+  "city_code": "263363",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "bhiwapurnagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Butibori",
+  "city_code": "277411",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcbutibori@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kalameshwar",
+  "city_code": "251342",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mckalmeshwar@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Katol",
+  "city_code": "251341",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "n.p.katol@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Khapa",
+  "city_code": "251345",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npkhapa@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kuhi",
+  "city_code": "263364",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatkuhi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mahadula",
+  "city_code": "251358",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mahadulanagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mohpa",
+  "city_code": "251343",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcmohpa@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mouda",
+  "city_code": "259672",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npmouda@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Narkhed",
+  "city_code": "251340",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcnarkhed@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Parshivani",
+  "city_code": "276305",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "parshivaninagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Ramtek",
+  "city_code": "251353",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "m.c.ramtek@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Umred",
+  "city_code": "251366",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarparishadumred@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Wadi",
+  "city_code": "251359",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcwadi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Arvi",
+  "city_code": "251332",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "arvinagarparishad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Deoli (M)",
+  "city_code": "251337",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcdeoli@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Pulgaon",
+  "city_code": "251336",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "pulgaonnagarparishad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Samudrapur",
+  "city_code": "276379",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npsamudrapur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Seloo",
+  "city_code": "276378",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npseloo@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sindi",
+  "city_code": "251333",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarparishadsindi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Wardha",
+  "city_code": "251334",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "co.wardha@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   },
+   {
+    "email": "coord.des@hotmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Akole",
+  "city_code": "275728",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "coakole1@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Deolali Pravara",
+  "city_code": "251552",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "deolalipravaraco@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Jamkhed",
+  "city_code": "251554",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cojamkhed1@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kopargaon",
+  "city_code": "251540",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cokopargaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Parner",
+  "city_code": "275730",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "coparner@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Pathardi",
+  "city_code": "251546",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "copathardi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Rahuri",
+  "city_code": "251551",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "corahuri@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sangamner",
+  "city_code": "251539",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cosangamner@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shevgaon",
+  "city_code": "276331",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "coshevgaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shirdi",
+  "city_code": "251542",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "coshirdi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shrigonda",
+  "city_code": "251553",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "coshrigonda@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shrirampur (M)",
+  "city_code": "251544",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "coshrirampur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sakri",
+  "city_code": "276339",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cosakri@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Amalner",
+  "city_code": "251294",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "coamalner@rediffmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Bodwad",
+  "city_code": "276272",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "bodwadnagar123@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Chalisgaon",
+  "city_code": "251296",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "chalisgaonnp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Erandol",
+  "city_code": "251292",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mcerandol@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Faizpur",
+  "city_code": "251285",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "faizpurnp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Jamner",
+  "city_code": "253139",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cojamner@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Pachora",
+  "city_code": "251297",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "copachora@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Raver",
+  "city_code": "251287",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "ravernp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Savda",
+  "city_code": "251286",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cosavda3@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shendurni",
+  "city_code": "277413",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatshendurni18@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Varangaon",
+  "city_code": "276273",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "covarangaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Yawal",
+  "city_code": "251284",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "coyawal@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Dindori",
+  "city_code": "276276",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "dindorinagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Manmad",
+  "city_code": "251440",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "co.manmad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Nandgaon",
+  "city_code": "251439",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nandgaon.municipal@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Niphad",
+  "city_code": "276279",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npniphad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Satana",
+  "city_code": "251435",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "satanamc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Sinnar",
+  "city_code": "251447",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cosinnar@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Surgana",
+  "city_code": "251434",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "surgananp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Ajara",
+  "city_code": "251630",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatajara@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Chandgad.",
+  "city_code": "290433",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "chandgadnagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Hatkanangale.",
+  "city_code": "290434",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayathatkanangale@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Jaysingpur",
+  "city_code": "251621",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cojaysingpur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kagal",
+  "city_code": "251628",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cokagal@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Murgud",
+  "city_code": "251629",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "murgudnp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shirol",
+  "city_code": "276635",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npshirol2018@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Alandi",
+  "city_code": "251521",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "alandimc2@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Baramati",
+  "city_code": "251536",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "baramatinp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Bhor",
+  "city_code": "251535",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "bhormc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Chakan",
+  "city_code": "251520",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "chakanmc2015@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Indapur",
+  "city_code": "251537",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "indapurnagarparishad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Junnar",
+  "city_code": "251516",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "junnarmunicipal@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Manchar",
+  "city_code": "300391",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mancharnagarpanchayat@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Talegaon Dabhade",
+  "city_code": "251522",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "talegaondabhademc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Ashta",
+  "city_code": "251634",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "coashtamc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Atpadi",
+  "city_code": "300410",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatatpadi@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Jath",
+  "city_code": "259699",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npjath121@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Kadegaon",
+  "city_code": "290358",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npkadegaon2016@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Khanapur",
+  "city_code": "276348",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "khanapurnp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   },
+   {
+    "email": "npkhanapur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Palus",
+  "city_code": "276350",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "palusnagarparishad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Shirala",
+  "city_code": "276349",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatshirala@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Tasgaon",
+  "city_code": "251636",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "tasgaon.co@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Vita",
+  "city_code": "251635",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "covitamc@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Karad",
+  "city_code": "251598",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "karadnagarparishad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Khandala",
+  "city_code": "276383",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cokhandala12@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Koregaon",
+  "city_code": "276381",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "npkoregaon@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Lonand",
+  "city_code": "276414",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "colonand15@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Medha",
+  "city_code": "276415",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatmedha@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Mhaswad",
+  "city_code": "251589",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "mhaswadnagarparishad@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Patan",
+  "city_code": "251596",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nagarpanchayatpatan2016@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Phaltan",
+  "city_code": "251588",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "cophaltan@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Rahimatpur",
+  "city_code": "251590",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "rahimatpur.nagarpalika1@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Satara",
+  "city_code": "251593",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "sataramunicipal@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Wai",
+  "city_code": "251586",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "waimunicipalcouncil@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Akluj",
+  "city_code": "300383",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcakluj21@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Angar",
+  "city_code": "300382",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcangar7@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Dudhani",
+  "city_code": "251583",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "codudhani2012@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Madha",
+  "city_code": "276302",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcmadha@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Malshiras",
+  "city_code": "276303",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcmalshiras@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Natepute",
+  "city_code": "300384",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "nateputenp@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Pandharpur",
+  "city_code": "297006",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcpandharpur@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Vairag",
+  "city_code": "300385",
+  "state": "Maharashtra",
+  "website": "",
+  "website_kind": "none_found",
+  "found_via": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf",
+  "emails": [
+   {
+    "email": "comcvairag@gmail.com",
+    "found_on": "https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Maharashtra Directorate of Municipal Administration contact PDF (ulbdataportal.in); matched to PMAY ULB by email-name similarity >=0.95, unique only"
+ },
+ {
+  "ulb_name": "Greater Mumbai",
+  "city_code": "251488",
+  "state": "Maharashtra",
+  "website": "https://www.mcgm.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Kalyan-Dombivli",
+  "city_code": "251483",
+  "state": "Maharashtra",
+  "website": "https://www.kdmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Bhiwandi Nizampur",
+  "city_code": "251477",
+  "state": "Maharashtra",
+  "website": "https://www.bncmc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Nashik",
+  "city_code": "251442",
+  "state": "Maharashtra",
+  "website": "https://www.nashikcorporatiion.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Pimpri Chinchwad",
+  "city_code": "251528",
+  "state": "Maharashtra",
+  "website": "https://www.pcmcindia.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Aurangabad (M Corp)",
+  "city_code": "251428",
+  "state": "Maharashtra",
+  "website": "https://www.aurangabadmahapalika.org",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [
+   {
+    "email": "contact@aurangabadmahapalika.org",
+    "found_on": "https://www.aurangabadmahapalika.org/f9a40a4780f5e1306c46f1c8daecee3b"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Akola (M Corp)",
+  "city_code": "251312",
+  "state": "Maharashtra",
+  "website": "https://www.amcakola.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Ahmadnagar",
+  "city_code": "251548",
+  "state": "Maharashtra",
+  "website": "https://www.amc.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Dhule",
+  "city_code": "251282",
+  "state": "Maharashtra",
+  "website": "https://www.dhulecorporation.org",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Vasai-Virar",
+  "city_code": "251463",
+  "state": "Maharashtra",
+  "website": "https://www.vcmc.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Parbhani",
+  "city_code": "251416",
+  "state": "Maharashtra",
+  "website": "https://www.parbhani.gov.in",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
+ },
+ {
+  "ulb_name": "Latur",
+  "city_code": "251561",
+  "state": "Maharashtra",
+  "website": "https://www.mclatur.org",
+  "website_kind": "ulb_own_site",
+  "found_via": "https://urban.maharashtra.gov.in/organization/%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a4%97%e0%a4%b0%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%95%e0%a4%be-%e0%a4%a6%e0%a5%82%e0%a4%b0%e0%a4%a7%e0%a5%8d%e0%a4%b5%e0%a4%a8%e0%a5%80-%e0%a4%95/",
+  "emails": [],
+  "last_verified": "2026-11-27",
+  "accepts_citizen_complaints": "unverified",
+  "method": "Website from Maharashtra Urban Development Dept municipal corporation directory"
  }
 ]

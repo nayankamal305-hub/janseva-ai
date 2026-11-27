@@ -70,3 +70,8 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 
 ## v3.2 more district portals
 - Same method for Punjab, Rajasthan, Gujarat, Maharashtra, Bihar, Odisha, WB, Chhattisgarh, Uttarakhand, HP, Haryana, Jharkhand, Assam. Few standard district pages found (Odisha 0/30, Rajasthan 1/50, HP 1/10); those states need their own urban-department portals. +39 emails, 60 entries dropped by the name-resemblance filter.
+
+## v3.3 Maharashtra deep dive
+- Official source 1: Maharashtra DMA contact PDF https://www.ulbdataportal.in/uploads/Contacts_ULB.pdf (407 councils/nagar panchayats with email, Marathi). Names are garbled in text extraction, so rows were matched to the PMAY list by email-name similarity >= 0.95, unique match only: 221 new rows + 12 existing rows updated. Unmatched (~125) are not guessed (renamed towns, spelling gaps, duplicate names like Karanja/Kalamb).
+- Official source 2: Urban Development Dept corporation directory (website column) https://urban.maharashtra.gov.in/organization/... used for 27 corporation websites; homepage + contact pages read (robots respected). Only corporation-looking emails kept (Malegaon, Sangli-Miraj, Chh. Sambhajinagar, Panvel); personal-looking gmail ids and placeholder example.com were dropped. Many corporation sites (Thane, KDMC, Nashik, PCMC, Pune, Kolhapur, Akola, Ahmednagar) did not load from here.
+- UI: route preview now handles bodies with an email but no website.

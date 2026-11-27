@@ -12,6 +12,8 @@ def guard_test_database_url():
     host = urllib.parse.urlparse(url).hostname or ""
     if host in ("localhost", "127.0.0.1", "::1"):
         return
+    if not host and urllib.parse.parse_qs(urllib.parse.urlparse(url).query).get("host", [""])[0].startswith("/"):
+        return  # local unix-socket Postgres
     if os.environ.get("JANSEVA_TEST_ALLOW_REMOTE") == "1":
         return
     raise RuntimeError(
@@ -24,7 +26,7 @@ _lock = threading.RLock()
 def now():
     return dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
 
-_CONFLICT = {"otps": ("phone",), "platforms": ("id",), "external_records": ("complaint_id", "platform_id")}
+_CONFLICT = {"otps": ("phone",), "login_attempts": ("key",), "platforms": ("id",), "external_records": ("complaint_id", "platform_id")}
 
 def pg_sql(sql):
     """Translate this app's SQLite-flavoured SQL (? placeholders, INSERT OR IGNORE/REPLACE, LIKE) to Postgres."""

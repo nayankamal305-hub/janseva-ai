@@ -32,11 +32,15 @@ def make_handler(svc, admin_token, rate=120):
         def _body(self):
             try: return json.loads(self._raw() or b"{}")
             except Exception: return {}
+        def _ip(self):
+            xff = self.headers.get("X-Forwarded-For", "")
+            if xff: return xff.split(",")[0].strip()
+            return self.client_address[0]
         def _tok(self): return (self.headers.get("Authorization") or "").replace("Bearer ", "").strip()
         def _user(self): return svc.user_by_token(self._tok())
         def _adm(self): return accounts.admin_by_token(svc.db, self._tok(), admin_token)
         def _limited(self):
-            k = self._tok() or self.client_address[0]; q = hits[k]; t = time.time()
+            k = self._tok() or self._ip(); q = hits[k]; t = time.time()
             while q and q[0] < t - 60: q.popleft()
             q.append(t); return len(q) > rate
         def _owned(self, user, cid):
@@ -52,7 +56,7 @@ def make_handler(svc, admin_token, rate=120):
             if path in ("/", "/index.html"):
                 return self._send(200, open(os.path.join(STATIC, "index.html"), "rb").read(), "text/html; charset=utf-8")
             if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": []}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, "const C='jansevaai-v30';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
+            if path == "/sw.js": return self._send(200, "const C='jansevaai-v31';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now(), "db": "postgres" if getattr(svc.db, "pg", False) else "sqlite", "photo_storage": storage.from_env(os.environ, UPLOADS).kind})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
@@ -251,6 +255,16 @@ def make_handler(svc, admin_token, rate=120):
                 from . import walogin
                 return self._json(200, walogin.start(svc.db, os.environ)) if walogin.enabled(os.environ) else self._json(503, {"error": "WhatsApp login not configured"})
             d = self._body()
+            if path == "/api/auth/login":
+                ident = accounts.norm_ident(d.get("email") or d.get("phone"))
+                u, st = accounts.password_login(svc, ident, d.get("password", ""), self._ip())
+                if u: return self._json(200, {"token": u["token"], "name": u["name"]})
+                return self._json(429 if st == "locked" else 401, {"error": "Too many wrong attempts. Try again in 15 minutes or reset your password." if st == "locked" else "Wrong email/phone or password. New here, or forgot it? Use the OTP option."})
+            if path in ("/api/auth/signup", "/api/auth/reset"):
+                ident = accounts.norm_ident(d.get("email") or d.get("phone"))
+                if not ident: return self._json(422, {"error": "valid email or 10-digit phone required"})
+                u, err = accounts.password_signup_or_reset(svc, ident, d.get("code", ""), d.get("password", ""), d.get("name", ""), path.endswith("reset"))
+                return self._json(200, {"token": u["token"], "name": u["name"]}) if u else self._json(401 if "code" in err else 422, {"error": err})
             if path == "/api/otp/request":
                 ident = accounts.norm_ident(d.get("phone") or d.get("email")); 
                 return self._json(200, accounts.otp_request(svc.db, ident, dev_otp)) if ident else self._json(422, {"error": "valid email or 10-digit phone required"})

@@ -45,7 +45,7 @@ window.go=function(x){document.body.classList.toggle('anon',!T);if(x==='home'&&!
  history.replaceState(null,'','#'+x);scrollTo({top:0});
  if(x=='home')loadHome();if(x=='mine')load();if(x=='nearby')loadFeed();if(x=='pub')loadStats();if(x=='rate')rateSearch();if(x=='dir'){loadDir();loadIgod()}if(x=='report'){setTimeout(()=>{initPick();if(!LL)gps()},60);wiz(WSTEP)}};
 // ---------- login ----------
-window.openLogin=async function(){if(T){const l=await api('GET','/api/complaints');if(Array.isArray(l)){go('mine');return}}$('sheet').classList.add('on')};window.closeLogin=()=>{$('sheet').classList.remove('on');document.body.classList.toggle('anon',!T)};
+window.openLogin=async function(){if(T){const l=await api('GET','/api/complaints');if(Array.isArray(l)){go('mine');return}}$('sheet').classList.add('on');if(window.lgMode)lgMode('login')};window.closeLogin=()=>{$('sheet').classList.remove('on');document.body.classList.toggle('anon',!T)};
 window.otpReq=async function(){const r=await api('POST','/api/otp/request',{phone:$('phone').value});const m=$('otpmsg');m.style.display='flex';if(r.error){m.textContent=r.error;return}$('otpbox').style.display='';m.textContent=r.sent?('Code sent to your '+r.channel+'. Check your inbox and spam folder.'):(r.dev_code?('Test mode code: '+r.dev_code):(r.note||'Could not send code'))};
 window.otpVer=async function(){const r=await api('POST','/api/otp/verify',{phone:$('phone').value,code:$('code').value,name:$('name').value});if(r.token){T=r.token;LS.jt=T;closeLogin();$('who').textContent='Account';toast('Logged in');flushDrafts()}else{$('otpmsg').style.display='flex';$('otpmsg').textContent=r.error||'Failed'}};
 // ---------- home ----------
@@ -239,5 +239,18 @@ const FIRST=!location.hash&&LS.intro!=='1';go((location.hash||'#home').slice(1)|
 if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{});
 if(T)api('GET','/api/complaints').catch(()=>{});
 flushDrafts();
+var LGM='login';
+window.lgMode=function(m){LGM=m;const H={login:['Login','Enter your email or mobile and your password. No OTP needed on every login.','Login'],signup:['Create account','We verify your email once with an OTP, then you set a password.','Create account'],reset:['Reset password','We send a one-time code to prove it is you, then you set a new password.','Set new password'],otp:['Login with OTP','Optional: log in with a one-time code instead of a password.','Verify and login']}[m];
+$('lgTitle').textContent=H[0];$('lgHelp').textContent=H[1];$('lgMain').textContent=H[2];
+['login','signup','otp'].forEach(k=>$('lgT_'+k).classList.toggle('on',k==m||(m=='reset'&&k=='login'&&false)));
+const needCode=m!='login';$('lgSend').style.display=needCode?'':'none';$('otpbox').style.display='none';$('pwRow').style.display=(m=='otp')?'none':'';$('nameRow').style.display=m=='signup'?'':'none';$('lgForgot').style.display=m=='login'?'':'none';
+$('pw').autocomplete=m=='login'?'current-password':'new-password';$('pwLabel').textContent=m=='login'?'Password':'New password (min 8 characters)';$('otpmsg').style.display='none';
+if(m=='otp'||needCode)$('lgMain').style.display=needCode?'':'';};
+window.lgGo=async function(){const m=$('otpmsg');m.style.display='flex';const id=$('phone').value;let r;
+if(LGM=='login')r=await api('POST','/api/auth/login',{email:id,password:$('pw').value});
+else{if(!$('code').value&&$('otpbox').style.display=='none'){m.textContent='First tap "Send OTP", then enter the code.';return}
+if(LGM=='otp')r=await api('POST','/api/otp/verify',{phone:id,code:$('code').value,name:$('name').value});
+else r=await api('POST',LGM=='signup'?'/api/auth/signup':'/api/auth/reset',{email:id,code:$('code').value,password:$('pw').value,name:$('name').value})}
+if(r&&r.token){T=r.token;LS.jt=T;closeLogin();$('who').textContent='Account';toast('Logged in');$('pw').value='';flushDrafts()}else m.textContent=(r&&r.error)||'Failed'};
 window.__boot=1;
 })();

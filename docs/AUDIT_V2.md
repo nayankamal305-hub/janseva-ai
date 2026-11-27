@@ -93,3 +93,10 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - Found but not imported yet: Assam DMA contact PDF (messy multi-line table), Uttarakhand UDD list (names only, no emails), Odisha HUD directory (officials only).
 - Assam: 48 ULB emails from the DMA Assam contact list PDF https://dma.assam.gov.in/sites/default/files/swf_utility_folder/departments/dma_medhassu_in_oid_5/do_u_want_2_know/Contact%20list%20of%20ULBs.pdf (fetched 2026-11-27); 26 rows unmatched/duplicates, not imported (e.g. GMC, abbreviations M.B./T.C.).
 - Himachal Pradesh: emails from https://ud.hp.gov.in/municipalities-at-a-glance/contact-details-of-ulbs ; Tripura: https://tulm.tripura.gov.in/ulb-details (both fetched 2026-11-27, unique name match to MoHUA list; unmatched rows not imported). J&K HUDD, Nagaland, Manipur, South Goa pages checked: no emails published.
+
+## v3.12 password login
+- Email/mobile + password login (scrypt, 16-byte random salt per user, stdlib). OTP only for first signup and Forgot password; OTP-only login kept as an optional tab. Endpoints: POST /api/auth/signup, /api/auth/reset (OTP code + new password), /api/auth/login. Min 8 chars, common-password blocklist.
+- Rate limit: 5 wrong attempts per account or per IP locks for 15 minutes (table login_attempts, migration 008). Unknown user and wrong password give the same answer; a dummy hash check keeps timing similar. A successful reset unlocks the account.
+- Existing users have no password until they use Forgot password / Create account with OTP once; their OTP login still works.
+- Known limits: the session token is still the existing per-user token (no expiry/rotation); IP rate limit uses the socket address, so behind a proxy (Render) it sees the proxy IP unless X-Forwarded-For is handled: please check, the per-account limit still works.
+- Small db.py changes: login_attempts conflict key; test guard also accepts local unix-socket Postgres (host=/path).

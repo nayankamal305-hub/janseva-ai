@@ -1,0 +1,3 @@
+ALTER TABLE users ADD COLUMN pw_hash TEXT;
+ALTER TABLE users ADD COLUMN pw_set_at TEXT;
+CREATE TABLE IF NOT EXISTS login_attempts(key TEXT PRIMARY KEY, fails INTEGER NOT NULL DEFAULT 0, locked_until TEXT, updated_at TEXT);

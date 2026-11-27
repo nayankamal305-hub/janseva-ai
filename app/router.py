@@ -7,14 +7,14 @@ from .connectors.swachhata import CATEGORY_MAP
 KEYWORDS = [
  ("railway", ["train", "railway", "rail ", "station", "pnr", "coach", "रेल", "ट्रेन"]),
  ("consumer", ["refund", "overcharg", "defective", "consumer", "warranty", "fake product", "मोबाइल कंपनी"]),
- ("road", ["pothole", "highway", "bridge", "road damage", "broken road", "गड्ढा", "सड़क"]),
- ("drainage", ["drain", "sewage", "sewer", "manhole", "नाली", "सीवर"]),
- ("garbage", ["garbage", "trash", "waste", "dump", "litter", "कचरा", "गंदगी"]),
- ("toilet", ["toilet", "urinal", "शौचालय"]),
- ("electricity", ["electric", "power cut", "transformer", "streetlight", "बिजली"]),
- ("water", ["water supply", "no water", "pipeline leak", "पानी"]),
+ ("road", ["pothole", "highway", "bridge", "road damage", "broken road", "गड्ढा", "सड़क", "sadak", "gaddha", "gadda", "khadda", "गड्ढे", "रोड"]),
+ ("drainage", ["drain", "sewage", "sewer", "manhole", "नाली", "सीवर", "naali", "nali", "nala ", "gutter", "नाला", "overflow"]),
+ ("garbage", ["garbage", "trash", "waste", "dump", "litter", "कचरा", "गंदगी", "kachra", "kooda", "kuda ", "gandagi", "कूड़ा", "कुड़ा", "badbu", "बदबू"]),
+ ("toilet", ["toilet", "urinal", "शौचालय", "shauchalay", "sulabh", "bathroom"]),
+ ("electricity", ["electric", "power cut", "transformer", "streetlight", "street light", "बिजली", "bijli", "batti", "बत्ती", "light nahi"]),
+ ("water", ["water supply", "no water", "pipeline leak", "पानी", "paani", "pani nahi", "tanker", "pipe leak", "नल"]),
  ("pension", ["pension", "epfo", "पेंशन"]),
- ("police", ["police", "fir ", "पुलिस"]),
+ ("police", ["police", "fir ", "पुलिस", "thana", "chori", "चोरी", "थाना"]),
 ]
 
 def classify(text):

@@ -5,7 +5,7 @@ const $=i=>document.getElementById(i);
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const ic=(n,cls)=>'<svg class="ic '+(cls||'')+'" viewBox="0 0 24 24" aria-hidden="true">'+((window.ICONS||{})[n]||'')+'</svg>';
 function icons(root){(root||document).querySelectorAll('[data-ic]').forEach(e=>{e.outerHTML=ic(e.dataset.ic)})}
-let T=LS.jt||'',CUR=null,PHOTO=null,PHASH=null,BLOB=null,LL=null,IMG=null,RECTS=[],DRAG=null,PERIOD='',FCAT='',WSTEP=1;
+let AICAT=null,AISEV=null,T=LS.jt||'',CUR=null,PHOTO=null,PHASH=null,BLOB=null,LL=null,IMG=null,RECTS=[],DRAG=null,PERIOD='',FCAT='',WSTEP=1;
 const NAV=[['home','Home','house'],['nearby','Nearby','map-pin'],['report','Report','camera'],['mine','Mine','list-checks'],['rate','Rating','star']];
 const TOP=[['home','Home'],['report','Report'],['mine','My Complaints'],['nearby','Nearby'],['pub','Dashboard'],['rate','Rating'],['dir','Departments'],['assist','Assistant']];
 $('bnav').innerHTML=NAV.map(n=>n[0]=='report'?`<button class="fab" onclick="go('report')" aria-label="Report"><span>${ic('camera')}</span></button>`:`<button id="b_${n[0]}" onclick="go('${n[0]}')">${ic(n[2])}<span data-n="${n[0]}">${n[1]}</span></button>`).join('');
@@ -78,7 +78,7 @@ async function uploadBlob(b){try{const r=await fetch('/api/upload',{method:'POST
 function dhash(img){const c=document.createElement('canvas');c.width=9;c.height=8;const x=c.getContext('2d');x.drawImage(img,0,0,9,8);const d=x.getImageData(0,0,9,8).data;const g=i=>d[i*4]*.3+d[i*4+1]*.59+d[i*4+2]*.11;let b='';for(let y=0;y<8;y++)for(let i=0;i<8;i++)b+=g(y*9+i)>g(y*9+i+1)?'1':'0';let h='';for(let i=0;i<64;i+=4)h+=parseInt(b.slice(i,i+4),2).toString(16);return h}
 window.mic=function(target){const R=window.SpeechRecognition||window.webkitSpeechRecognition;if(!R){toast('Voice input is not supported in this browser');return}const r=new R();r.lang=SPEECH[LG()]||'en-IN';const el=$(typeof target=='string'?target:'desc');r.onresult=e=>{el.value=(el.value+' '+e.results[0][0].transcript).trim()};r.onerror=e=>toast('Voice error: '+e.error);r.start();toast('Listening...')};
 window.analyse=async function(){if(!T){openLogin();return}if(BLOB&&!PHOTO){const j=await uploadBlob(BLOB);if(j&&j.url)PHOTO=j.url}
- const d={title:$('title').value.trim()||($('desc').value.trim().slice(0,60)),description:$('desc').value,photo_url:PHOTO?location.origin+PHOTO:null,phash:PHASH,lang:LG(),address:$('addr').value,city:$('city').value,state:$('state').value,pincode:$('pin').value,lat:LL?LL.lat:NaN,lon:LL?LL.lon:NaN,asset_owner:$('owner').value||null,anonymous:$('anon').checked};
+ const d={title:$('title').value.trim()||($('desc').value.trim().slice(0,60)),description:$('desc').value,photo_url:PHOTO?location.origin+PHOTO:null,phash:PHASH,lang:LG(),address:$('addr').value,city:$('city').value,state:$('state').value,pincode:$('pin').value,lat:LL?LL.lat:NaN,lon:LL?LL.lon:NaN,asset_owner:$('owner').value||null,anonymous:$('anon').checked,category:AICAT||undefined,severity:AISEV?+AISEV:undefined};
  let c;try{c=await api('POST','/api/complaints',d)}catch(e){saveDraft(d);const m=$('msg');m.style.display='flex';m.textContent=t9('offline');return}
  const m=$('msg');if(!c.ok){m.style.display='flex';m.textContent=(c.errors||[c.error||'Error']).join(' ');return}m.style.display='none';CUR=c;const a=c.ai;
  $('aibox').innerHTML=(c.emergency_notice?`<div class="info rd" style="margin-bottom:10px">${ic('siren')}<div><b>${esc(c.emergency_notice)}</b></div></div>`:'')+`<div class="row" style="gap:8px"><span class="chip">${esc(a.category)}</span><span class="chip ${a.safety_risk=='high'?'r':a.safety_risk=='medium'?'o':'g'}">Safety risk: ${esc(a.safety_risk)}</span></div>
@@ -286,4 +286,34 @@ window.fileOff=async function(id,keep){const p=await api('GET','/api/complaints/
 window.openLetter=async function(id){const w=window.open('','_blank');const r=await fetch('/api/complaints/'+id+'/letter-html',{headers:{Authorization:'Bearer '+T}});const t=await r.text();if(w){w.document.open();w.document.write(t);w.document.close()}else toast('Allow pop-ups to open the letter')};
 window.addMp=async function(id){const r=await api('POST','/api/complaints/'+id+'/filing-mark',{channel:'mp',target:$('mpsel').value});toast(r.ok?'Added '+r.name:(r.error||'Error'));if(r.ok)fileOff(id,true)};
 window.portalGuide=async function(){const r=await fetch('/api/portal-guide').then(x=>x.json());const d=document.createElement('div');d.className='sheetbg';d.style.display='flex';d.onclick=ev=>{if(ev.target==d)d.remove()};d.innerHTML='<div class="sheet" style="max-height:92vh;overflow:auto"><div class="row"><h3 class="grow" style="font-size:19px">Which portal for what</h3><button class="btn out sm" onclick="this.closest(\'.sheetbg\').remove()">Close</button></div>'+r.items.map(i=>`<div class="rec"><b class="sm">${esc(i.type)}</b><div class="sm">${esc(i.portal)}</div><div class="xs mut">${esc(i.needs)}</div><a class="btn pri sm" href="${esc(i.url)}" target="_blank" rel="noopener">Open official link</a></div>`).join('')+'<div class="xs mut">'+esc(r.note)+'</div></div>';document.body.appendChild(d)};
+// ---------- v3.18: AI quick report (speak/type -> draft -> one confirm) ----------
+let RGT=0;
+async function revGeo(la,lo){try{const r=await fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&addressdetails=1&zoom=18&accept-language=en&lat='+la+'&lon='+lo);if(!r.ok)return;const j=await r.json(),a=j.address||{};
+ const set=(id,v)=>{if(v&&!$(id).value)$(id).value=v};set('city',a.city||a.town||a.village||a.municipality||a.county||a.state_district);set('state',a.state);set('pin',(a.postcode||'').replace(/\D/g,'').slice(0,6));set('addr',[a.road||a.neighbourhood,a.suburb].filter(Boolean).join(', '))}catch(e){}}
+const _setLL=setLL;setLL=function(la,lo,acc){_setLL(la,lo,acc);clearTimeout(RGT);RGT=setTimeout(()=>revGeo(la,lo),900)};
+function getPos(){return new Promise(res=>{if(LL)return res(LL);if(!navigator.geolocation)return res(null);navigator.geolocation.getCurrentPosition(p=>{initPick();setLL(p.coords.latitude,p.coords.longitude,p.coords.accuracy);try{PM.setView([p.coords.latitude,p.coords.longitude],17)}catch(e){}res(LL)},()=>res(null),{enableHighAccuracy:true,timeout:15000})})}
+const blobData=b=>new Promise(r=>{const f=new FileReader();f.onload=()=>r(f.result);f.readAsDataURL(b)});
+window.aiPrepare=async function(){if(!T){openLogin();return}const text=$('aiqt').value.trim();if(text.length<4){toast('Say or type a few words first');return}
+ const btn=$('aigo');btn.disabled=true;btn.textContent='AI is preparing...';const ll=await getPos();if(ll)await revGeo(ll.lat,ll.lon);
+ let pd=null;const up=$('aiqp').checked&&BLOB;if(up)pd=await blobData(BLOB);
+ let r;try{r=await api('POST','/api/ai/draft',{text,lang:LG(),address:$('addr').value,city:$('city').value,state:$('state').value,pincode:$('pin').value,use_photo:!!up,photo_data:pd})}catch(e){r={ok:false,error:'Network error'}}
+ btn.disabled=false;btn.innerHTML=ic('search')+'Let AI prepare my complaint';if(!r.ok){toast(r.error||'AI error');return}
+ const d=r.draft,cats=['garbage','drainage','toilet','road','water','electricity','railway','consumer','pension','police','general'];
+ const loc=[$('addr').value,$('city').value,$('state').value,$('pin').value].filter(Boolean).join(', ');
+ $('aiconf').style.display='block';$('aiconf').innerHTML=`<div class="chip ${r.ai_used?'ok':''}">${r.ai_used?'AI draft ('+esc(r.engine)+')':'Basic draft (rules). AI not used: '+esc(r.fallback_reason)}</div>
+ ${d.emergency?'<div class="info rd" style="margin-top:8px"><div><b>Looks urgent. If anyone is in danger call 112 first.</b></div></div>':''}
+ ${d.missing?'<div class="info bl sm" style="margin-top:8px"><div>'+esc(d.missing)+'</div></div>':''}
+ <label class="f">Title</label><input id="aic_t" value="${esc(d.title)}"><label class="f">Complaint (editable)</label><textarea id="aic_d" rows="4">${esc(d.description)}</textarea>
+ <div class="grid g2"><div><label class="f">Category</label><select id="aic_c">${cats.map(x=>`<option ${x==d.category?'selected':''}>${x}</option>`).join('')}</select></div><div><label class="f">Severity (1-5)</label><input id="aic_s" type="number" min="1" max="5" value="${d.severity}"></div></div>
+ <div class="sm" style="margin-top:6px">Department: <b>${esc(d.suggested_department)}</b> · Place: <b>${esc(loc||'not set: tap GPS below')}</b> ${ll?'':'<span class="chip r">No GPS yet</span>'}</div>
+ <label class="sw"><input type="checkbox" id="aic_1"><span class="t"></span><span><b>I confirm this is true and allow JANSEVA to register it</b></span></label>
+ <label class="sw"><input type="checkbox" id="aic_2"><span class="t"></span><span><b>Include my name and contact in the letter</b><span class="sm mut" style="display:block">Government portals need your identity. Leave off to stay anonymous.</span></span></label>
+ <div class="xs mut">After this, you send the email from your own mail app in one more tap. Nothing is sent to any government site automatically.</div>
+ <button class="btn pri big" style="width:100%;margin-top:8px" onclick="aiConfirm()">Confirm and register</button>`};
+window.aiConfirm=async function(){if(!$('aic_1').checked){toast('Please tick the confirmation first');return}if(!LL){toast('Location needed: tap "Use my GPS" or pick on the map below');$('pickmap').scrollIntoView({behavior:'smooth'});return}
+ $('title').value=$('aic_t').value;$('desc').value=$('aic_d').value;AICAT=$('aic_c').value;AISEV=$('aic_s').value;const s2=$('aic_2').checked;
+ await analyse();AICAT=null;AISEV=null;if(!CUR||!CUR.id){return}
+ if(CUR.category!=AICAT)await api('POST','/api/complaints/'+CUR.id+'/confirm',{category:AICAT});
+ $('c1').checked=true;$('c2').checked=s2;$('c4').checked=true;$('c5').checked=true;await submitC()};
+
 })();

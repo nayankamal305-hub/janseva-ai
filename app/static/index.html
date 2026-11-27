@@ -66,6 +66,13 @@
 
 <section id="report" class="sec">
  <div class="wiz" id="wiz"></div>
+ <div id="aiq" class="card" style="border:2px solid var(--saf)"><h3><i data-ic="search"></i>Speak or type. AI does the rest.</h3>
+  <div class="sm mut">Just say the problem in your own language. AI picks the category, department, title, description and severity, and reads your place from GPS. You only confirm.</div>
+  <div class="row" style="align-items:flex-start;flex-wrap:nowrap;margin-top:8px"><textarea id="aiqt" class="grow" rows="3" placeholder="e.g. Hamare gate ke saamne 3 din se kachra pada hai, badbu aa rahi hai"></textarea><button class="btn saf" id="aimic" onclick="mic('aiqt')" aria-label="Speak"><i data-ic="mic"></i></button></div>
+  <div class="xs mut" id="aiqnote">Voice uses your browser's speech service (Chrome/Edge send audio to Google). Typing works everywhere. Language follows the app language.</div>
+  <label class="sw" id="aiqph" style="display:none"><input type="checkbox" id="aiqp"><span class="t"></span><span><b>Let AI look at my (blurred) photo</b><span class="sm mut" style="display:block">The photo is sent to the AI provider for this draft only.</span></span></label>
+  <button class="btn saf big" style="width:100%;margin-top:10px" id="aigo" onclick="aiPrepare()"><i data-ic="search"></i>Let AI prepare my complaint</button>
+  <div id="aiconf" style="display:none;margin-top:12px"></div></div>
  <div id="w1" class="card"><h3><i data-ic="camera"></i>Photo and place</h3>
   <label class="drop" id="dropz" for="file"><i data-ic="camera"></i><b>Take or choose a photo</b><span class="sm mut">Compressed on your phone. You can blur anything private next.</span></label>
   <input type="file" id="file" accept="image/*" capture="environment" hidden>

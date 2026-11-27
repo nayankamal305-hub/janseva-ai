@@ -123,3 +123,6 @@ Portal research: no documented URL-prefill for CPGRAMS, Swachhata or Meri Pancha
 
 ## v3.17
 Filing is never blocked by the old same-user/same-category/100 m/7-day duplicate check (it returned an error). create_complaint now returns optional similar_nearby (same category, 250 m, 30 days, any user) and the UI shows 'Support it'. The only other limiter is the per-token API rate limit (120 requests/min).
+
+## v3.18: AI quick report
+`app/llm.py`: speak/type -> draft (title, description, category, severity, language, road owner, department from our fixed map) via free-tier Gemini (GEMINI_API_KEY) or Groq (GROQ_API_KEY), tried in that order. Falls back to the rule classifier (now with Hinglish/Hindi keywords) on no key, 429/5xx (60 s cooldown), timeout, bad JSON or unknown category. Output is validated, URLs/emails/phones stripped, injected extra fields dropped, rule-detected emergencies never lowered, 30 drafts/user/day (AI_DRAFT_DAILY). The citizen confirms with two explicit ticks; nothing is registered otherwise. Photo goes to the AI only if ticked. Voice = browser Web Speech API (Chrome/Edge send audio to Google; unsupported on some browsers, typing always works). Place: GPS + OpenStreetMap Nominatim reverse geocode in the browser. Untested against live Gemini/Groq (no key available in build); tested with mocked transports.

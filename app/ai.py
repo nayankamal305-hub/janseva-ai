@@ -44,7 +44,7 @@ def _gemini(title, description, photo_url, base):
                   '{"category": one of %s, "severity": 1-5, "emergency": true/false, "confidence": 0-1, "note": "one short sentence of what is visible"}. '
                   "Do not identify people or read number plates. Citizen text: %s %s") % (CATS, title or "", description or "")
         body = {"contents": [{"parts": [{"text": prompt}, {"inline_data": {"mime_type": mime, "data": b64}}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1}}
-        model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+        model = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
         req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent" % model, data=json.dumps(body).encode(),
                                      headers={"Content-Type": "application/json", "x-goog-api-key": key})
         r = json.loads(urllib.request.urlopen(req, timeout=20).read())

@@ -62,6 +62,9 @@ class Service:
         if errs: return {"ok": False, "errors": errs}
         an = ai.analyze(d.get("title"), d["description"], d.get("photo_url"))
         user_cat = d.get("category")
+        try:   # the citizen may confirm/edit the severity of an AI draft; a rule-detected emergency is never lowered
+            us = int(d.get("severity")); an = dict(an, severity=max(1, min(5, us)) if not an.get("emergency") else max(an["severity"], us), safety_risk="high" if us >= 4 else "medium" if us == 3 else "low") if 1 <= us <= 5 else an
+        except (TypeError, ValueError): pass
         cat = user_cat or an["category"]
         low_conf = (not user_cat) and an["confidence"] < 0.6
         # Never block filing: many people can report different issues from the same place. Similar nearby reports are only a hint.

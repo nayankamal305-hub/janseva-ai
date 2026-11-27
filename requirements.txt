@@ -1,0 +1,2 @@
+# Only needed when DATABASE_URL is set (Postgres / Neon). Local SQLite mode needs nothing.
+psycopg2-binary>=2.9

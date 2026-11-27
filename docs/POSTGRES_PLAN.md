@@ -1,4 +1,4 @@
-# Postgres port plan (free options only). Not implemented yet.
+# Postgres port (free options only). IMPLEMENTED in v3.4 (see bottom).
 
 ## Why
 Render free web service resets its disk on every deploy/restart, so SQLite data and uploaded photos are lost. A hosted Postgres plus object storage fixes both.
@@ -24,3 +24,13 @@ Recommendation: Neon free for the DB. For photos use free object storage (Cloudf
 - Neon cold start adds 1 to 3 s on first request after idle.
 - Free tiers change; re-check limits at migration time.
 - Needs Kamal to create the Neon account and put DATABASE_URL in the Render env (a secret, never in chat or repo).
+
+## Implemented (v3.4)
+- app/db.py: SQLite by default. If DATABASE_URL starts with postgres:// or postgresql:// the same DB class uses psycopg2 (autocommit, one locked connection, auto-reconnect once because Neon drops idle connections). Call sites are unchanged: SQL keeps `?`, and is translated (`%s`, LIKE->ILIKE, INSERT OR IGNORE -> ON CONFLICT DO NOTHING, INSERT OR REPLACE -> ON CONFLICT (pk) DO UPDATE for otps/platforms/external_records, RETURNING id for lastrowid, Decimal->float, bool->int).
+- Migrations: the same migrations/*.sql files; for Postgres INTEGER PRIMARY KEY[ AUTOINCREMENT] -> SERIAL PRIMARY KEY and REAL -> DOUBLE PRECISION; each file runs in one transaction, guarded by an advisory lock so two booting instances do not race.
+- Tests: the whole suite passes on SQLite and on a real PostgreSQL 16 (run with `DATABASE_URL=... JANSEVA_PG_ISOLATE=1 python3 -m unittest discover -s tests`; isolate gives each test DB its own schema). tests/test_pg_storage.py has translation tests, a live Postgres test (skipped without DATABASE_URL), the AWS SigV4 published test vector and a mock S3 round trip.
+- Env: DATABASE_URL (Neon connection string with sslmode=require). Not in the repo, never in chat.
+- Photos: app/storage.py. Local disk by default; set S3_ENDPOINT, S3_BUCKET, S3_ACCESS_KEY_ID, S3_SECRET_ACCESS_KEY (optional S3_REGION default "auto", S3_PREFIX default "uploads/") for S3-compatible storage (Neon Object Storage). Stdlib SigV4, path-style URLs. DB values stay "/uploads/<name>", served through the app (/uploads/ proxies from storage). Photos already on a wiped Render disk are not recoverable.
+- /api/health now shows db (sqlite|postgres) and photo_storage (local|s3). No secrets.
+- Not verified here: the real Neon endpoint and Neon Object Storage (I have neither). SigV4 matches the AWS vector but a live PUT/GET against Neon is the first thing to test. If Neon object storage rejects path-style or needs a specific region string, set S3_REGION accordingly.
+- Data move: none (sandbox data only).

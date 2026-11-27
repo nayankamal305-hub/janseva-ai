@@ -78,10 +78,10 @@ def _attachments(svc, c):
     for key in ("photo_url", "after_photo_url"):
         u = c.get(key) or ""
         if u.startswith("/uploads/"):
-            f = os.path.join(os.environ.get("JANSEVA_UPLOADS", os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "uploads")), os.path.basename(u))
             try:
-                d = open(f, "rb").read()
-                if len(d) <= 4_000_000: out.append((os.path.basename(f), d, mimetypes.guess_type(f)[0] or "image/jpeg"))
+                from . import storage
+                got = storage.from_env(os.environ, os.environ.get("JANSEVA_UPLOADS", os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "uploads"))).get(os.path.basename(u))
+                if got and len(got[0]) <= 4_000_000: out.append((os.path.basename(u), got[0], got[1]))
             except Exception: pass
         break
     return out

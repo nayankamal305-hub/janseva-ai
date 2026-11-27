@@ -3,7 +3,7 @@ from collections import defaultdict, deque
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from .service import Service
 from .connectors.mock_gov import MockSwachhata
-from . import accounts, public, assistant, roles
+from . import accounts, public, assistant, roles, storage
 from .db import ROOT, now
 
 STATIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
@@ -51,8 +51,8 @@ def make_handler(svc, admin_token, rate=120):
             if path in ("/", "/index.html"):
                 return self._send(200, open(os.path.join(STATIC, "index.html"), "rb").read(), "text/html; charset=utf-8")
             if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": []}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, "const C='jansevaai-v27';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
-            if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now()})
+            if path == "/sw.js": return self._send(200, "const C='jansevaai-v28';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
+            if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now(), "db": "postgres" if getattr(svc.db, "pg", False) else "sqlite", "photo_storage": storage.from_env(os.environ, UPLOADS).kind})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
                 f = os.path.join(STATIC, rel)
@@ -61,8 +61,9 @@ def make_handler(svc, admin_token, rate=120):
                     return self._send(200, open(f, "rb").read(), ct, {"Cache-Control": "public, max-age=86400"})
                 return self._json(404, {"error": "not found"})
             if path.startswith("/uploads/"):
-                f = os.path.join(UPLOADS, os.path.basename(path))
-                if os.path.exists(f): return self._send(200, open(f, "rb").read(), "image/jpeg" if f.endswith("jpg") else "image/png")
+                try: got = storage.from_env(os.environ, UPLOADS).get(os.path.basename(path))
+                except Exception: return self._json(502, {"error": "photo storage unavailable"})
+                if got: return self._send(200, got[0], got[1], {"Cache-Control": "public, max-age=86400"})
                 return self._json(404, {"error": "not found"})
             if path == "/api/platforms": return self._json(200, svc.db.platforms())
             if path == "/api/emergency": return self._json(200, {"number": "112", "note": "Call 112 for immediate danger. JANSEVA is a complaint tool, not an emergency dispatch service.", "source": "India national emergency number"})
@@ -231,7 +232,8 @@ def make_handler(svc, admin_token, rate=120):
                 kind = next((v for k, v in MAGIC.items() if data.startswith(k)), None)
                 if not kind: return self._json(415, {"error": "only real JPEG or PNG images are accepted"})
                 name = hashlib.sha256(data).hexdigest()[:32] + "." + kind[0]
-                open(os.path.join(UPLOADS, name), "wb").write(data)
+                try: storage.from_env(os.environ, UPLOADS).put(name, data, "image/jpeg" if kind[0] == "jpg" else "image/png")
+                except Exception: return self._json(502, {"error": "photo storage unavailable, try again"})
                 return self._json(200, {"url": "/uploads/" + name, "note": "No malware scan or EXIF check in this build"})
             if path == "/api/wa/webhook":
                 from . import walogin

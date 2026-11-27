@@ -1,0 +1,361 @@
+[
+ {
+  "title": "Department of Agricultural Research and Education (DARE)",
+  "state": null,
+  "website": "https://dare.gov.in",
+  "x_handles": [
+   "icarindia"
+  ],
+  "found_on": "https://dare.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Atomic Energy",
+  "state": null,
+  "website": "https://dae.gov.in",
+  "x_handles": [
+   "DAEIndia"
+  ],
+  "found_on": "https://dae.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Chemicals and Petro-Chemicals (DoCP)",
+  "state": "Delhi",
+  "website": "https://chemicals.gov.in",
+  "x_handles": [
+   "narendramodi",
+   "JPNadda"
+  ],
+  "found_on": "https://chemicals.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Defence Production (DDP)",
+  "state": "Delhi",
+  "website": "https://ddpmod.gov.in",
+  "x_handles": [
+   "DefProdnIndia"
+  ],
+  "found_on": "https://ddpmod.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Economic Affairs (DEA)",
+  "state": "Delhi",
+  "website": "https://dea.gov.in",
+  "x_handles": [
+   "FinMinIndia"
+  ],
+  "found_on": "https://dea.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Empowerment of Persons with Disabilities (DEPWD)",
+  "state": null,
+  "website": "https://depwd.gov.in",
+  "x_handles": [
+   "socialpwds"
+  ],
+  "found_on": "https://depwd.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Ex-Servicemen Welfare (DESW)",
+  "state": "Delhi",
+  "website": "https://www.desw.gov.in",
+  "x_handles": [
+   "spokespersonMoD",
+   "dgrIndia"
+  ],
+  "found_on": "https://www.desw.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Financial Services (DoFS)",
+  "state": "Delhi",
+  "website": "https://financialservices.gov.in",
+  "x_handles": [
+   "DFS_India"
+  ],
+  "found_on": "https://financialservices.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Investment and Public Asset Management (DIPAM)",
+  "state": "Delhi",
+  "website": "https://dipam.gov.in",
+  "x_handles": [
+   "SecyDIPAM",
+   "NDTVProfit"
+  ],
+  "found_on": "https://dipam.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Official Language (DoOL)",
+  "state": "Delhi",
+  "website": "https://rajbhasha.gov.in",
+  "x_handles": [
+   "fertmin_india",
+   "RajbhashaVibhag"
+  ],
+  "found_on": "https://rajbhasha.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Pharmaceuticals (DoPs)",
+  "state": null,
+  "website": "https://pharma-dept.gov.in",
+  "x_handles": [
+   "Pharmadept"
+  ],
+  "found_on": "https://pharma-dept.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Posts (DoP)",
+  "state": "Delhi",
+  "website": "https://www.indiapost.gov.in",
+  "x_handles": [
+   "narendramodi",
+   "IndiaPostOffice"
+  ],
+  "found_on": "https://www.indiapost.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Department of Revenue (DoR)",
+  "state": null,
+  "website": "https://dor.gov.in",
+  "x_handles": [
+   "FinMinIndia"
+  ],
+  "found_on": "https://dor.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Civil Aviation (MoCA)",
+  "state": null,
+  "website": "https://www.civilaviation.gov.in",
+  "x_handles": [
+   "MoCA_GoI"
+  ],
+  "found_on": "https://www.civilaviation.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Coal",
+  "state": null,
+  "website": "https://coal.nic.in",
+  "x_handles": [
+   "coalministry"
+  ],
+  "found_on": "https://coal.nic.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Culture",
+  "state": null,
+  "website": "https://culture.gov.in",
+  "x_handles": [
+   "MinOfCultureGoI"
+  ],
+  "found_on": "https://culture.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Environment, Forest and Climate Change (MoEFCC)",
+  "state": null,
+  "website": "https://moef.gov.in",
+  "x_handles": [
+   "moefcc"
+  ],
+  "found_on": "https://moef.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Food Processing Industries (MoFPI)",
+  "state": null,
+  "website": "https://mofpi.gov.in",
+  "x_handles": [
+   "MOFPI_GOI"
+  ],
+  "found_on": "https://mofpi.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Heavy Industries (MoHI)",
+  "state": null,
+  "website": "https://heavyindustries.gov.in",
+  "x_handles": [
+   "MHI_GoI"
+  ],
+  "found_on": "https://heavyindustries.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Home Affairs (MHA)",
+  "state": null,
+  "website": "https://mha.gov.in",
+  "x_handles": [
+   "CyberDost",
+   "AmitShah"
+  ],
+  "found_on": "https://mha.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Information and Broadcasting (MIB)",
+  "state": null,
+  "website": "https://www.mib.gov.in",
+  "x_handles": [
+   "nsitharaman",
+   "PMOIndia"
+  ],
+  "found_on": "https://www.mib.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Panchayati Raj (MoPR)",
+  "state": null,
+  "website": "https://panchayat.gov.in",
+  "x_handles": [
+   "mopr_goi"
+  ],
+  "found_on": "https://panchayat.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Ports, Shipping and Waterways (MoPSW)",
+  "state": null,
+  "website": "https://shipmin.gov.in",
+  "x_handles": [
+   "shipmin_india"
+  ],
+  "found_on": "https://shipmin.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Steel (MoS)",
+  "state": null,
+  "website": "https://steel.gov.in",
+  "x_handles": [
+   "SteelMinIndia"
+  ],
+  "found_on": "https://steel.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Women and Child Development (MoWCD)",
+  "state": null,
+  "website": "https://wcd.gov.in",
+  "x_handles": [
+   "MinistryWCD"
+  ],
+  "found_on": "https://wcd.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Ministry of Youth Affairs and Sports (MoYAS)",
+  "state": null,
+  "website": "https://yas.gov.in",
+  "x_handles": [
+   "YASMinistry"
+  ],
+  "found_on": "https://yas.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Official Portal UT of Dadra and Nagar Haveli and Daman and Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "website": "https://ddd.gov.in",
+  "x_handles": [
+   "prafulkpatel"
+  ],
+  "found_on": "https://ddd.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Official Portal of Kerala Government",
+  "state": "Kerala",
+  "website": "https://kerala.gov.in",
+  "x_handles": [
+   "iprdkerala"
+  ],
+  "found_on": "https://kerala.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Official Portal of Ladakh Government",
+  "state": "Ladakh",
+  "website": "https://ladakh.gov.in",
+  "x_handles": [
+   "lg_ladakh"
+  ],
+  "found_on": "https://ladakh.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Official Portal of Maharashtra Government",
+  "state": "Maharashtra",
+  "website": "https://www.maharashtra.gov.in",
+  "x_handles": [
+   "MahaDGIPR"
+  ],
+  "found_on": "https://www.maharashtra.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Official Portal of Manipur Government",
+  "state": "Manipur",
+  "website": "https://manipur.gov.in",
+  "x_handles": [
+   "govt_of_manipur"
+  ],
+  "found_on": "https://manipur.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Official Portal of Meghalaya Government",
+  "state": "Meghalaya",
+  "website": "https://meghalaya.gov.in",
+  "x_handles": [
+   "CMO_Meghalaya",
+   "MeghalayaGov"
+  ],
+  "found_on": "https://meghalaya.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Official Portal of Nagaland Government",
+  "state": "Nagaland",
+  "website": "https://www.nagaland.gov.in",
+  "x_handles": [
+   "MyGovNagaland",
+   "Neiphiu_Rio"
+  ],
+  "found_on": "https://www.nagaland.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Official Portal of Puducherry Government",
+  "state": "Puducherry",
+  "website": "https://www.py.gov.in",
+  "x_handles": [
+   "utofpuducherry"
+  ],
+  "found_on": "https://www.py.gov.in",
+  "last_verified": "2026-11-27"
+ },
+ {
+  "title": "Official Portal of Telangana Government",
+  "state": "Telangana",
+  "website": "https://telangana.gov.in",
+  "x_handles": [
+   "telanganacmo"
+  ],
+  "found_on": "https://telangana.gov.in",
+  "last_verified": "2026-11-27"
+ }
+]

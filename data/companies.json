@@ -1,0 +1,122 @@
+[
+ {
+  "company": "Swiggy",
+  "sector": "food_delivery",
+  "grievance_emails": [
+   {
+    "email": "grievances@swiggy.in",
+    "found_on": "https://www.swiggy.com/privacy-policy"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "Uber India",
+  "sector": "ride_hailing",
+  "grievance_emails": [
+   {
+    "email": "grievanceredressaloffice@uber.com",
+    "found_on": "https://help.uber.com/en/riders/article/grievance-redressal?nodeId=c04af4d0-930c-4098-b099-5f6f2a2fff84"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "Amazon India",
+  "sector": "ecommerce",
+  "grievance_emails": [
+   {
+    "email": "grievance-officer@amazon.in",
+    "found_on": "https://www.amazon.in/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "Flipkart",
+  "sector": "ecommerce",
+  "grievance_emails": [
+   {
+    "email": "grievance.officer@flipkart.com",
+    "found_on": "https://stories.flipkart.com/terms-of-use"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "Myntra",
+  "sector": "ecommerce",
+  "grievance_emails": [
+   {
+    "email": "customergrievance@myntra.com",
+    "found_on": "https://www.myntra.com/grievanceredressal"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "BigBasket",
+  "sector": "grocery",
+  "grievance_emails": [
+   {
+    "email": "grievanceofficer@bigbasket.com",
+    "found_on": "https://www.bigbasket.com/faq/"
+   }
+  ],
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "Zomato",
+  "sector": "food_delivery",
+  "grievance_emails": [],
+  "note": "No grievance-officer email found on pages read; general support help@zomato.com (https://www.zomato.com/policies/) is NOT used for escalation",
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "Ola",
+  "sector": "ride_hailing",
+  "grievance_emails": [],
+  "note": "No grievance email found on https://www.olacabs.com/contact",
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "PhonePe",
+  "sector": "payments",
+  "grievance_emails": [],
+  "note": "Page https://www.phonepe.com/grievance-policy/ read, no email extracted; use its portal",
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "Paytm",
+  "sector": "payments",
+  "grievance_emails": [],
+  "note": "Only product-specific emails on https://paytm.com/company/grievance; not used",
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "MakeMyTrip",
+  "sector": "travel",
+  "grievance_emails": [],
+  "note": "No grievance email found in user agreement",
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ },
+ {
+  "company": "IRCTC",
+  "sector": "railway_ticketing",
+  "grievance_emails": [],
+  "note": "https://contents.irctc.co.in/en/ContactUsEn.html lists etickets@irctc.co.in as general contact only; not used",
+  "last_verified": "2026-11-27",
+  "domain_checked": true
+ }
+]

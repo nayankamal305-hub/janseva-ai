@@ -104,6 +104,7 @@ def make_handler(svc, admin_token, rate=120):
                 st = q.get("state", "").lower(); cat = q.get("category", "")
                 rows = [r for r in load_data("utility_contacts.json") if (not st or st in (r["state"] or "").lower()) and (not cat or cat in r["categories_heuristic"]) and (q.get("with_email") != "1" or r["emails_published_on_official_page"])]
                 return self._json(200, {"count": len(rows), "items": rows[:100], "note": "Emails are only those the body publishes on its own official site (page named in found_on). Whether they accept citizen complaints is unverified."})
+            if path == "/api/companies": return self._json(200, {"items": load_data("companies.json")})
             if path == "/api/directory/mps":
                 from .service import load_data
                 t = q.get("q", "").lower(); st = q.get("state", "").lower()
@@ -118,6 +119,10 @@ def make_handler(svc, admin_token, rate=120):
                 return self._json(200, public.monthly_report(svc.db, m))
             if path == "/api/authorities": return self._json(200, svc.db.all("SELECT * FROM authorities WHERE verified=1"))
             if path == "/api/representatives": return self._json(200, svc.db.all("SELECT id,name,office,constituency,state,public_contact,profile_url,last_verified FROM representatives WHERE verified=1"))
+            if path == "/api/admin/dispatch-run":
+                a = self._adm()
+                from . import dispatch
+                return self._json(200, dispatch.tick(svc)) if a and a["role"] == "super_admin" else self._json(403, {"error": "super admin only"})
             if path == "/api/admin/inbound-poll":
                 a = self._adm()
                 return self._json(200, svc.ingest_replies()) if a and a["role"] == "super_admin" else self._json(403, {"error": "super admin only"})
@@ -238,8 +243,18 @@ def make_handler(svc, admin_token, rate=120):
                 if act == "submit":
                     svc.db.run("UPDATE complaints SET consent_submit=?,consent_share_personal=?,notify_representative=? WHERE id=?",
                                (int(bool(d.get("consent_submit"))), int(bool(d.get("consent_share_personal"))), int(bool(d.get("notify_representative"))), cid))
-                    svc.db.audit("user:%s" % u["id"], "consent", "submit=%s share_personal=%s rep=%s v1" % (d.get("consent_submit"), d.get("consent_share_personal"), d.get("notify_representative")))
-                    return self._json(200, svc.submit(cid))
+                    svc.db.run("UPDATE complaints SET consent_email=?,reply_to_user=?,constituency=?,company=? WHERE id=?", (int(bool(d.get("consent_email"))), int(bool(d.get("reply_to_user"))), (d.get("constituency") or None), (d.get("company") or None), cid))
+                    svc.db.audit("user:%s" % u["id"], "consent", "submit=%s share_personal=%s rep=%s email_authorities=%s v2" % (d.get("consent_submit"), d.get("consent_share_personal"), d.get("notify_representative"), d.get("consent_email")))
+                    res = svc.submit(cid)
+                    if d.get("consent_email"):
+                        from . import dispatch
+                        try: res["email_dispatch"] = dispatch.plan(svc, cid); res["email_dispatch"]["send"] = dispatch.send_due(svc, cid)
+                        except Exception as ex: res["email_dispatch"] = {"ok": False, "error": type(ex).__name__}
+                    return self._json(200, res)
+                if act == "dispatches": return self._json(200, {"items": svc.db.all("SELECT level,kind,target_name,target_email,source_url,source_date,tier,status,due_at,sent_at FROM dispatches WHERE complaint_id=? ORDER BY level,id", (cid,))})
+                if act == "tweet-draft":
+                    from . import social
+                    return self._json(200, social.draft(svc, cid))
                 if act == "confirm": return self._json(200, svc.confirm_category(cid, d.get("category"), u["id"]))
                 if act == "reference": return self._json(200, svc.record_reference(cid, d.get("platform_id"), d.get("ref", "").strip(), u["id"]))
                 if act == "email-authority": return self._json(200, svc.email_authority(cid, d.get("email", ""), d.get("authority", ""), u))
@@ -259,6 +274,15 @@ def main():
         from .seed import seed
         seed(svc)
     print("JANSEVA AI on :%d  admin token: %s  swachhata mode: %s" % (port, ADMIN_TOKEN, svc.connectors()["swachhata"].mode()), flush=True)
+    if os.environ.get("JANSEVA_AUTO_DISPATCH", "1") == "1":
+        import threading, time
+        from . import dispatch
+        def loop():
+            while True:
+                time.sleep(3600)
+                try: dispatch.tick(svc)
+                except Exception: pass
+        threading.Thread(target=loop, daemon=True).start()
     ThreadingHTTPServer(("0.0.0.0", port), make_handler(svc, ADMIN_TOKEN)).serve_forever()
 
 if __name__ == "__main__":

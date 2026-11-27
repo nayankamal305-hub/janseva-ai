@@ -22,21 +22,27 @@ def _post(url, headers, body):
     except urllib.error.HTTPError as e: return {"sent": False, "reason": "%s API error %s" % (url.split("/")[2], e.code)}
     except Exception as e: return {"sent": False, "reason": "email API error: %s" % type(e).__name__}
 
-def send(to, subject, body, reply_to=None, env=os.environ):
+def send(to, subject, body, reply_to=None, env=os.environ, attachments=None, from_name=None):
+    """attachments: list of (filename, bytes, mime)."""
+    import base64
     pv = provider(env)
     if not pv: return {"sent": False, "reason": "email not configured"}
     name, addr = _split(from_address(env))
+    if from_name: name = from_name
     if pv == "brevo":
         b = {"sender": {"name": name, "email": addr}, "to": [{"email": to}], "subject": subject, "textContent": body}
         if reply_to: b["replyTo"] = {"email": reply_to}
+        if attachments: b["attachment"] = [{"name": f, "content": base64.b64encode(d).decode()} for f, d, _ in attachments]
         return _post("https://api.brevo.com/v3/smtp/email", {"api-key": env["BREVO_API_KEY"]}, b)
     if pv == "resend":
-        b = {"from": from_address(env), "to": [to], "subject": subject, "text": body}
+        b = {"from": "%s <%s>" % (from_name, addr) if from_name else from_address(env), "to": [to], "subject": subject, "text": body}
+        if attachments: b["attachments"] = [{"filename": f, "content": base64.b64encode(d).decode()} for f, d, _ in attachments]
         if reply_to: b["reply_to"] = reply_to
         return _post("https://api.resend.com/emails", {"Authorization": "Bearer " + env["RESEND_API_KEY"]}, b)
-    m = EmailMessage(); m["From"] = from_address(env); m["To"] = to; m["Subject"] = subject
+    m = EmailMessage(); m["From"] = ("%s <%s>" % (from_name, addr)) if from_name else from_address(env); m["To"] = to; m["Subject"] = subject
     if reply_to: m["Reply-To"] = reply_to
     m["X-Mailer"] = "JANSEVA AI"; m.set_content(body)
+    for f, d, mt in (attachments or []): m.add_attachment(d, maintype=mt.split("/")[0], subtype=mt.split("/")[1], filename=f)
     try:
         port = int(env.get("SMTP_PORT", "587"))
         with smtplib.SMTP(env["SMTP_HOST"], port, timeout=20) as s:
@@ -47,7 +53,7 @@ def send(to, subject, body, reply_to=None, env=os.environ):
     except Exception as e:
         return {"sent": False, "reason": "smtp error: %s" % type(e).__name__}
 
-CODE_RE = re.compile(r"JSV-[A-Z0-9]{4,}", re.I)
+CODE_RE = re.compile(r"JS-\d{4}-\d{4,}|JSV-[A-Z0-9]{4,}", re.I)
 def tracking_code(subject, to_header="", body=""):
     for t in (subject or "", to_header or "", (body or "")[:2000]):
         m = CODE_RE.search(t)

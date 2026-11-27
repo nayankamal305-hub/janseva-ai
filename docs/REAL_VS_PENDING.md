@@ -22,3 +22,10 @@
 
 ## WhatsApp login (v0.8, free variant)
 User taps "Login with WhatsApp", WhatsApp opens with "JANSEVA LOGIN <code>" to JANSEVA's number, Meta's signed webhook (/api/wa/webhook) delivers it with the sender's number, and the app logs that number in. Off unless WA_NUMBER, WA_VERIFY_TOKEN, WA_APP_SECRET are set. Messages from users to a business are not charged by Meta; JANSEVA sends nothing back, so no per-message cost. Sources: https://developers.facebook.com/docs/whatsapp/pricing ; Mint 2026-10-01; https://adversai.app/guides/whatsapp-business-api-pricing-india-2026
+
+## v1.0 dispatch (email + X)
+REAL (needs your env): consented email to PG nodal officers (state L2, central L3) and, only if you type a constituency, your MP (L4); company grievance emails only where officially published (Swiggy, Uber, Amazon, Flipkart, Myntra, BigBasket). Photos attached, your name, reply-to optional. Caps: 3 first emails per complaint, 10 per user/day, global daily cap, dedupe, generic-address blocklist, auto-cancel once resolved. Needs BREVO_API_KEY + MAIL_FROM.
+NOT AVAILABLE: MLA, district collector, department-head emails (no official machine-readable source; guided links only). Zomato, Ola, PhonePe, Paytm, MakeMyTrip, IRCTC: no published grievance email found.
+X: JANSEVA's own X API posting is paid (~$0.015/post, $0.20 with link), so not built. Citizen gets a prefilled post with official-site-linked handles and posts from their own account. Handles are suggestions, review before posting.
+CPGRAMS/Swachhata automation: not shipped (CAPTCHA/OTP are the citizen's; form selectors unmapped). Next: citizen-side userscript after mapping from a logged-in session.
+"Sent" never means "registered".

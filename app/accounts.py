@@ -89,7 +89,7 @@ def _fail(db, key):
     db.run("INSERT OR REPLACE INTO login_attempts(key,fails,locked_until,updated_at) VALUES(?,?,?,?)", (key, 0 if lock else f, lock, now()))
 
 def set_password(svc, user_id, pw):
-    svc.db.run("UPDATE users SET pw_hash=?, pw_set_at=? WHERE id=?", (pw_hash(pw), now(), user_id))
+    svc.db.run("UPDATE users SET pw_hash=?, pw_set_at=?, token=? WHERE id=?", (pw_hash(pw), now(), secrets.token_urlsafe(24), user_id))  # new token: old sessions end when the password changes
     svc.db.audit("user:%d" % user_id, "password_set", "")
 
 def password_login(svc, ident, pw, ip=""):

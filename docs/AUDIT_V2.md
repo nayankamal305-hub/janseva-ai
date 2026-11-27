@@ -103,3 +103,8 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 
 ## v3.13 desktop layout
 - At 760px and wider the page uses the full window: content centred and capped at 1480px, hero and top bar full-bleed (was a 1040px column that looked cut on laptops). Mobile layout unchanged. Checked at 1366x768 and 1920x1080 (home, dashboard, report). Login sheet: Send OTP now sits above the main button.
+
+## v3.14
+- Logo (original J mark: white J, saffron dot, navy gradient; no state emblem) in app/static/brand/: favicon.ico, 16/32 png, svg, apple-touch (180), PWA 192/512 + maskable, og.png 1200x630. Wired in index.html, /favicon.ico, /apple-touch-icon.png, manifest. og:image gets an absolute URL from PUBLIC_URL or the request Host/X-Forwarded-Proto. scripts/make_brand.py regenerates the PNGs.
+- Visual polish (CSS only): softer shadows, card hover, saffron accent on stat tiles, icon chips on card titles, focus rings, staggered fade-in, floating hero ring, blurred bottom nav, shimmer skeletons. Respects prefers-reduced-motion and lite mode.
+- Fixes: client IP for rate limiting is proxy-aware when TRUST_PROXY=1 (set it on Render); password reset/signup rotates the session token so old sessions end.

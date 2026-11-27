@@ -25,6 +25,12 @@ def make_handler(svc, admin_token, rate=120):
             self.send_header("X-Content-Type-Options", "nosniff")
             for k, v in (extra or {}).items(): self.send_header(k, v)
             self.end_headers(); self.wfile.write(body)
+        def _ip(self):
+            """Client IP. Behind a trusted proxy (TRUST_PROXY=1, e.g. Render) use the last X-Forwarded-For hop added by the proxy; otherwise the socket address."""
+            if os.environ.get("TRUST_PROXY") == "1":
+                xf = [x.strip() for x in (self.headers.get("X-Forwarded-For") or "").split(",") if x.strip()]
+                if xf: return xf[-1]
+            return self.client_address[0]
         def _json(self, code, obj): self._send(code, json.dumps(obj, default=str).encode())
         def _raw(self):
             n = int(self.headers.get("Content-Length") or 0)
@@ -32,10 +38,6 @@ def make_handler(svc, admin_token, rate=120):
         def _body(self):
             try: return json.loads(self._raw() or b"{}")
             except Exception: return {}
-        def _ip(self):
-            xff = self.headers.get("X-Forwarded-For", "")
-            if xff: return xff.split(",")[0].strip()
-            return self.client_address[0]
         def _tok(self): return (self.headers.get("Authorization") or "").replace("Bearer ", "").strip()
         def _user(self): return svc.user_by_token(self._tok())
         def _adm(self): return accounts.admin_by_token(svc.db, self._tok(), admin_token)
@@ -54,15 +56,19 @@ def make_handler(svc, admin_token, rate=120):
             if self._limited(): return self._json(429, {"error": "rate limit"})
             path = urllib.parse.urlparse(self.path).path; q = self._q()
             if path in ("/", "/index.html"):
-                return self._send(200, open(os.path.join(STATIC, "index.html"), "rb").read(), "text/html; charset=utf-8")
-            if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": []}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, "const C='jansevaai-v32';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
+                base = os.environ.get("PUBLIC_URL", "").rstrip("/") or ("%s://%s" % ((self.headers.get("X-Forwarded-Proto") or "http").split(",")[0].strip(), self.headers.get("Host") or "localhost"))
+                return self._send(200, open(os.path.join(STATIC, "index.html"), "rb").read().replace(b"__BASE__", base.encode()), "text/html; charset=utf-8")
+            if path in ("/favicon.ico", "/apple-touch-icon.png", "/apple-touch-icon-precomposed.png"):
+                fn = "favicon.ico" if path == "/favicon.ico" else "apple-touch-icon.png"
+                return self._send(200, open(os.path.join(STATIC, "brand", fn), "rb").read(), "image/x-icon" if fn.endswith("ico") else "image/png", {"Cache-Control": "public, max-age=86400"})
+            if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": [{"src": "/static/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}).encode(), "application/manifest+json")
+            if path == "/sw.js": return self._send(200, "const C='jansevaai-v34';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now(), "db": "postgres" if getattr(svc.db, "pg", False) else "sqlite", "photo_storage": storage.from_env(os.environ, UPLOADS).kind})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
                 f = os.path.join(STATIC, rel)
                 if ".." not in rel and os.path.isfile(f):
-                    ct = {"css": "text/css", "js": "application/javascript", "woff2": "font/woff2", "geojson": "application/geo+json", "json": "application/json", "png": "image/png", "svg": "image/svg+xml"}.get(f.rsplit(".", 1)[-1], "application/octet-stream")
+                    ct = {"css": "text/css", "js": "application/javascript", "woff2": "font/woff2", "geojson": "application/geo+json", "json": "application/json", "png": "image/png", "svg": "image/svg+xml", "ico": "image/x-icon"}.get(f.rsplit(".", 1)[-1], "application/octet-stream")
                     raw = open(f, "rb").read(); hd = {"Cache-Control": "public, max-age=86400"}
                     if f.endswith(".geojson") and "gzip" in (self.headers.get("Accept-Encoding") or ""):
                         import gzip; raw = _GZ.get(f) or _GZ.setdefault(f, gzip.compress(raw, 6)); hd["Content-Encoding"] = "gzip"

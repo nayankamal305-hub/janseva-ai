@@ -62,3 +62,18 @@ class TestHttp(unittest.TestCase):
             self.assertEqual(post("/api/auth/login", {"email": "a@example.com", "password": "bad bad bad"})[0], 401)
             self.assertEqual(post("/api/auth/signup", {"email": "b@example.com", "code": "123456", "password": "pass phrase 1"})[0], 401)
         finally: pr.terminate(); pr.wait(5)
+
+class TestRotate(unittest.TestCase):
+    def test_reset_rotates_token(self):
+        svc = Service(DB(os.path.join(tempfile.mkdtemp(), "r.db")), env={}, sandbox_base="http://127.0.0.1:1"); i = "r@example.com"
+        u1, _ = accounts.password_signup_or_reset(svc, i, accounts.otp_request(svc.db, i, True)["dev_code"], "first pass 123")
+        u2, _ = accounts.password_signup_or_reset(svc, i, accounts.otp_request(svc.db, i, True)["dev_code"], "second pass 123", reset=True)
+        self.assertNotEqual(u1["token"], u2["token"]); self.assertIsNone(svc.user_by_token(u1["token"]))
+
+class TestBrand(unittest.TestCase):
+    def test_icons_exist_and_html_links_them(self):
+        R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        for f in ("favicon.ico", "favicon-32.png", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "maskable-512.png", "og.png", "logo.svg"):
+            self.assertGreater(os.path.getsize(os.path.join(R, "app", "static", "brand", f)), 300, f)
+        h = open(os.path.join(R, "app", "static", "index.html")).read()
+        for k in ('rel="icon"', 'rel="apple-touch-icon"', 'og:image', '/favicon.ico'): self.assertIn(k, h)

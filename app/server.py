@@ -80,6 +80,20 @@ def make_handler(svc, admin_token, rate=120):
                     rows = [r for r in load_data(src) if (not st or st in (r["state"] or "").lower()) and (not cat or cat in r["categories_heuristic"])]
                 if t: rows = [r for r in rows if t in r["title"].lower()]
                 return self._json(200, {"count": len(rows), "items": rows[:int(q.get("limit", 100))], "source": "https://www.india.gov.in/directory/web-directory", "note": "IGOD (National Portal of India) listing. Websites only; no emails or phones are invented. 'categories_heuristic' is keyword-based, not official."})
+            if path == "/api/directory/for":
+                from .service import load_data
+                st = q.get("state", "").lower(); city = q.get("city", "").lower(); cat = q.get("category", "")
+                cm = {"garbage": "municipal", "drainage": "municipal", "toilet": "municipal", "road": "pwd_roads", "water": "water_board", "electricity": "electricity_discom", "police": "police"}.get(cat, cat)
+                S = [r for r in load_data("igod_state_ut.json") if st and st in (r["state"] or "").lower()]
+                dist = [r for r in load_data("igod_districts.json") if st and st in (r["state"] or "").lower() and city and (city in r["title"].lower() or r["title"].lower() in city)]
+                nod = [r for r in load_data("authorities_state_nodal.json") if st and st in r["name"].lower()]
+                return self._json(200, {"state_portal": next((r for r in S if r["type"] == "SPORT"), None), "district_site": dist[:2], "state_nodal_grievance_officer": nod[:1],
+                                         "bodies": [r for r in S if cm and cm in r["categories_heuristic"] and r["type"] != "SPORT"][:15], "note": "Guided links from official directories. Category match is a keyword guess; nothing is auto-submitted."})
+            if path == "/api/directory/utility-contacts":
+                from .service import load_data
+                st = q.get("state", "").lower(); cat = q.get("category", "")
+                rows = [r for r in load_data("utility_contacts.json") if (not st or st in (r["state"] or "").lower()) and (not cat or cat in r["categories_heuristic"]) and (q.get("with_email") != "1" or r["emails_published_on_official_page"])]
+                return self._json(200, {"count": len(rows), "items": rows[:100], "note": "Emails are only those the body publishes on its own official site (page named in found_on). Whether they accept citizen complaints is unverified."})
             if path == "/api/directory/mps":
                 from .service import load_data
                 t = q.get("q", "").lower(); st = q.get("state", "").lower()
@@ -209,6 +223,7 @@ def make_handler(svc, admin_token, rate=120):
                 if act == "confirm": return self._json(200, svc.confirm_category(cid, d.get("category"), u["id"]))
                 if act == "reference": return self._json(200, svc.record_reference(cid, d.get("platform_id"), d.get("ref", "").strip(), u["id"]))
                 if act == "email-authority": return self._json(200, svc.email_authority(cid, d.get("email", ""), d.get("authority", ""), u))
+                if act == "portal-status": return self._json(200, svc.portal_status(cid, d.get("platform_id"), d.get("status", ""), d.get("note", ""), u["id"]))
                 if act == "sync": return self._json(200, svc.sync(cid))
                 if act == "verify": svc.citizen_verify(cid, bool(d.get("ok")), u["id"], d.get("after_photo"), d.get("note", "")); return self._json(200, {"ok": True})
             self._json(404, {"error": "not found"})

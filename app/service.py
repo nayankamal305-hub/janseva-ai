@@ -267,6 +267,15 @@ class Service:
         self.db.audit("user:%s" % user_id, "reference_entered", "%s %s" % (cid, platform_id))
         self.refresh_parent(cid); return {"ok": True}
 
+    def portal_status(self, cid, platform_id, status, note, user_id):
+        rec = self.db.one("SELECT * FROM external_records WHERE complaint_id=? AND platform_id=?", (cid, platform_id))
+        if not rec or not rec["external_ref"] or rec["level"] < 3: return {"ok": False, "error": "add the portal reference first"}
+        if status not in ("in progress", "reply received", "closed on portal", "rejected on portal"): return {"ok": False, "error": "unknown status"}
+        msg = "Citizen-reported status on %s portal: %s%s (not verified with the government)" % (platform_id, status, (" - " + note[:300]) if note else "")
+        self.db.run("UPDATE external_records SET latest_update=? WHERE id=?", (msg, rec["id"]))
+        self.db.timeline(cid, "citizen", "portal_status", msg, rec["id"]); self.db.audit("user:%s" % user_id, "portal_status", "%s %s" % (cid, platform_id))
+        return {"ok": True, "note": "Closing on the portal does not mark it resolved. Verify the fix on the spot."}
+
     # ---- status sync -----------------------------------------------------
     def sync(self, cid=None):
         recs = self.db.all("SELECT * FROM external_records WHERE terminal=0 AND external_ref IS NOT NULL AND reference_source='government_response'" + (" AND complaint_id=%d" % cid if cid else ""))

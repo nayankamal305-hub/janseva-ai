@@ -18,4 +18,10 @@ class V06(unittest.TestCase):
         self.assertGreaterEqual(len(load_data("igod_districts.json")), 780); self.assertGreaterEqual(len(load_data("igod_state_ut.json")), 6000)
         self.assertEqual(sum(1 for r in load_data("igod_state_ut.json") if r["type"] == "SPORT"), 36)
         for r in load_data("igod_districts.json")[:50]: self.assertTrue(r["source"].startswith("https://www.india.gov.in"))
+class V07(unittest.TestCase):
+    def test_utility_contacts(self):
+        for r in load_data("utility_contacts.json"):
+            for e in r["emails_published_on_official_page"]: self.assertIn("@", e["email"]); self.assertTrue(e["found_on"].startswith("http"))
+            self.assertEqual(r["accepts_citizen_complaints"], "unverified")
+
 if __name__ == "__main__": unittest.main()

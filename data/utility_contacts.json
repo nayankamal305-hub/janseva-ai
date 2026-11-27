@@ -1,0 +1,3155 @@
+[
+{
+"title": "Ahmedabad Urban Development Authority (AUDA), Gujarat",
+"state": "Gujarat",
+"website": "https://www.auda.org.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "info-auda@gujarat.gov.in",
+"found_on": "https://www.auda.org.in/ContactUs.aspx"
+},
+{
+"email": "chairman-auda@gujarat.gov.in",
+"found_on": "https://www.auda.org.in/ContactUs.aspx"
+},
+{
+"email": "cea-auda@gujarat.gov.in",
+"found_on": "https://www.auda.org.in/ContactUs.aspx"
+},
+{
+"email": "addcoll-auda@gujarat.gov.in",
+"found_on": "https://www.auda.org.in/ContactUs.aspx"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Andhra Pradesh Electricity Regulatory Commission",
+"state": "Andhra Pradesh",
+"website": "https://aperc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Andhra Pradesh Power Generation Corporation Limited (APGENCO), Andhra Pradesh",
+"state": "Andhra Pradesh",
+"website": "https://apgenco.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "chairman@apgenco.gov.in",
+"found_on": "https://apgenco.gov.in/Main/page/1/69"
+},
+{
+"email": "apg.md@apgenco.gov.in",
+"found_on": "https://apgenco.gov.in/Main/page/1/69"
+},
+{
+"email": "dir-thermal@apgenco.gov.in",
+"found_on": "https://apgenco.gov.in/Main/page/1/69"
+},
+{
+"email": "dir-finance@apgenco.gov.in",
+"found_on": "https://apgenco.gov.in/Main/page/1/69"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Andhra Pradesh Water Resources Information & Management System",
+"state": "Andhra Pradesh",
+"website": "https://apwrims.ap.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Arunachal Pradesh Energy Development Agency (APEDA)",
+"state": "Arunachal Pradesh",
+"website": "https://apeda.nic.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Arunachal Pradesh State Electricity Regulatory Commission (APSERC)",
+"state": "Arunachal Pradesh",
+"website": "https://apserc.nic.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "apserc-arn@gov.in",
+"found_on": "https://apserc.nic.in/"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Assam Electricity Grid Corporation Limited",
+"state": "Assam",
+"website": "https://www.aegcl.co.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Assam Electricity Regulatory Commission (AERC), Assam",
+"state": "Assam",
+"website": "https://aerc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Assam Energy Development Agency (AEDA)",
+"state": "Assam",
+"website": "https://aeda.assam.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Assam Power Distribution Company Limited",
+"state": "Assam",
+"website": "https://www.apdcl.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Assam Urban Water Supply & Sewerage Board",
+"state": "Assam",
+"website": "https://auwssb.assam.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Bangalore Water Supply and Sewerage Board",
+"state": "Karnataka",
+"website": "https://bwsajala.karnataka.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Bihar Electricity Regulatory Commission",
+"state": "Bihar",
+"website": "https://berc.co.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Bihar Renewable Energy Development Agency (BREDA)",
+"state": "Bihar",
+"website": "https://breda.bih.nic.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Centre for Water Resources Development and Management (CWRDM), Kerala",
+"state": "Kerala",
+"website": "https://cwrdm.kerala.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Chamundeshwari Electricity Supply Corporation Limited Mysore, Karnataka",
+"state": "Karnataka",
+"website": "https://cescmysore.karnataka.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Chhattisgarh State Electricity Regulatory Commission (CSERC)",
+"state": "Chhattisgarh",
+"website": "https://cserc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "cm@gov.in",
+"found_on": "https://cserc.gov.in/Welcome/contact"
+},
+{
+"email": "cg@nic.in",
+"found_on": "https://cserc.gov.in/Welcome/contact"
+},
+{
+"email": "cserc.sec.cg@nic.in",
+"found_on": "https://cserc.gov.in"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Chhattisgarh State Power Distribution Company Limited (CSPDCL)",
+"state": "Chhattisgarh",
+"website": "https://cspdcl.co.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Chief Electrical Inspectorate and Collector Electricity Duty, Energy and Petrochemicals Department, Gujarat",
+"state": "Gujarat",
+"website": "https://ceiced.gujarat.gov.in",
+"categories_heuristic": [
+"electricity_discom",
+"revenue"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "City and Industrial Development Corporation of Maharashtra Limited (CIDCO), Maharashtra",
+"state": "Maharashtra",
+"website": "https://cidco.maharashtra.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Commissioner and Director of Municipal Administration, Telangana",
+"state": "Telangana",
+"website": "https://emunicipal.telangana.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Commissioner of Municipalities Administration, Urban Development & Urban Housing Department, Gujarat",
+"state": "Gujarat",
+"website": "https://communi.gujarat.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "DNH and DD Power Corporation Ltd., UT of Dadra & Nagar Haveli - Silvassa",
+"state": "Dadra and Nagar Haveli and Daman and Diu",
+"website": "https://www.dnhddpcl.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "support.dnhpdcl@ddd.gov.in",
+"found_on": "https://www.dnhddpcl.in/contact-us"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Dakshin Haryana Bijli Vitran Nigam (DHBVN), Haryana",
+"state": "Haryana",
+"website": "https://www.dhbvn.org.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Delhi Electricity Regulatory Commission",
+"state": "Delhi",
+"website": "https://www.derc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "secyderc@nic.in",
+"found_on": "https://www.derc.gov.in/contactus"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Delhi Transco Limited (DTL)",
+"state": "Delhi",
+"website": "https://www.dtl.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Department of Water Resources, Rajasthan",
+"state": "Rajasthan",
+"website": "https://water.rajasthan.gov.in/wr",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Directorate of Municipal Administration, Assam",
+"state": "Assam",
+"website": "https://dma.assam.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Directorate of Town Panchayats, Tamil Nadu",
+"state": "Tamil Nadu",
+"website": "https://www.tn.gov.in/dtp",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Directorate of Urban Local Bodies, Arunachal Pradesh",
+"state": "Arunachal Pradesh",
+"website": "https://ulb.arunachal.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Drinking Water & Sanitation Department, Tripura",
+"state": "Tripura",
+"website": "https://dws.tripura.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Drinking Water and Sanitation Department, Jharkhand",
+"state": "Jharkhand",
+"website": "https://jharjal.jharkhand.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "E-Municipal Naksha, Punjab",
+"state": "Punjab",
+"website": "https://enaksha.lgpunjab.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Electricity (Power) Department, Goa",
+"state": "Goa",
+"website": "https://www.goaelectricity.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Electricity (Power) Department, Lakshadweep",
+"state": "Lakshadweep",
+"website": "https://powerlak.utl.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "lk-ktelect@nic.in",
+"found_on": "https://powerlak.utl.gov.in"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Electricity (Power) Department, Manipur",
+"state": "Manipur",
+"website": "https://billing.mspdcl.info",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Electricity (Power) Department, Puducherry",
+"state": "Puducherry",
+"website": "https://pedservices.py.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Electricity Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+"state": "Dadra and Nagar Haveli and Daman and Diu",
+"website": "https://ddd.gov.in/electricity-department",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "elec-dmn-dd@nic.in",
+"found_on": "https://ddd.gov.in/electricity-department/"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Electricity Ombudsman(Mumbai), Maharashtra",
+"state": "Maharashtra",
+"website": "https://www.mercombudsman.org.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Electronics Corporation of Tamil Nadu Ltd. (ELCOT), Tamil Nadu",
+"state": "Tamil Nadu",
+"website": "https://www.elcot.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Forest Development Corporation of Maharashtra Limited (FDCM), Maharashtra",
+"state": "Maharashtra",
+"website": "https://fdcm.nic.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Goa State Urban Development Agency, Goa",
+"state": "Goa",
+"website": "https://www.gsuda.org",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Grid Corporation of Odisha Limited (GRIDCO), Odisha",
+"state": "Odisha",
+"website": "https://greenenergyinvest.odisha.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Gujarat Electricity Regulatory Commission, Gujarat",
+"state": "Gujarat",
+"website": "https://www.gercin.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "gerc@gercin.org",
+"found_on": "https://www.gercin.org"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Gujarat Energy Development Agency (GEDA), Gujarat",
+"state": "Gujarat",
+"website": "https://geda.gujarat.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Gujarat Power Corporation Limited (GPCL), Gujarat",
+"state": "Gujarat",
+"website": "https://gpcl.gujarat.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Gujarat State Electricity Corporation Limited (GSECL), Vadodara, Gujarat",
+"state": "Gujarat",
+"website": "https://www.gsecl.in",
+"categories_heuristic": [
+"electricity_discom",
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Gujarat State Highway Project - II, Gujarat",
+"state": "Gujarat",
+"website": "https://gshp2.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Gujarat Urban Development Mission (GUDM)",
+"state": "Gujarat",
+"website": "https://gudm.gujarat.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Gujarat Water Supply & Sewerage Board (GWSSB), Gujarat",
+"state": "Gujarat",
+"website": "https://ws.gujarat.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Guwahati Metropolitan Drinking Water and Sewerage Board, Assam",
+"state": "Assam",
+"website": "https://gmdwsb.assam.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "H.P. Electricity Regulatory Commission (HPERC), Himachal Pradesh",
+"state": "Himachal Pradesh",
+"website": "https://www.hperc.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "H.P. Government Energy Development Agency (HIMURJA), Himachal Pradesh",
+"state": "Himachal Pradesh",
+"website": "https://himurja.hp.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Handicrafts Development Corporation of Kerala Limited, Kerala",
+"state": "Kerala",
+"website": "https://www.handicrafts.kerala.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Haryana Electricity Regulatory Commission, Haryana",
+"state": "Haryana",
+"website": "https://herc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Haryana Vidyut Prasaran Nigam Limited (HVPN), Haryana",
+"state": "Haryana",
+"website": "https://hvpn.org.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Highways Department, Tamil Nadu",
+"state": "Tamil Nadu",
+"website": "https://www.tnhighways.tn.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Himachal Pradesh State Electricity Board Limited (HPSEBL), Himachal Pradesh",
+"state": "Himachal Pradesh",
+"website": "https://www.hpseb.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "info@hpseb.in",
+"found_on": "https://www.hpseb.in/irj/go/km/docs/internet/New_Website/Pages/contact.htm"
+},
+{
+"email": "directorfa@hpseb.in",
+"found_on": "https://www.hpseb.in/irj/go/km/docs/internet/New_Website/Pages/contact.htm"
+},
+{
+"email": "edp@hpseb.in",
+"found_on": "https://www.hpseb.in/irj/go/km/docs/internet/New_Website/Pages/contact.htm"
+},
+{
+"email": "directoro@hpseb.in",
+"found_on": "https://www.hpseb.in/irj/go/km/docs/internet/New_Website/Pages/contact.htm"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Housing & Urban Development Department, Jammu & Kashmir",
+"state": "Jammu and Kashmir",
+"website": "https://hudd.jk.gov.in/en",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Housing and Urban Development Department, Ladakh",
+"state": "Ladakh",
+"website": "https://ladakh.gov.in/housing-and-urban-development",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "secy-hudd@ladakh.gov.in",
+"found_on": "https://ladakh.gov.in/housing-and-urban-development"
+},
+{
+"email": "dlc-utladakh@ladakh.gov.in",
+"found_on": "https://ladakh.gov.in/housing-and-urban-development"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Housing and Urban Development Department, Odisha",
+"state": "Odisha",
+"website": "https://urban.odisha.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Housing and Urban Development Department, Punjab",
+"state": "Punjab",
+"website": "https://www.pbhousing.gov.in/en",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Hyderabad Metropolitan Water Supply & Sewerage Board (HMWSSB), Telangana",
+"state": "Telangana",
+"website": "https://www.hyderabadwater.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Hydro Power Development Corporation of Arunachal Pradesh Limited",
+"state": "Arunachal Pradesh",
+"website": "https://hpdcapl.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Hydrology Project, Water Resources Department, Gujarat",
+"state": "Gujarat",
+"website": "https://swhydrology.gujarat.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Info Tech Corporation of Goa Limited (ITG), Goa",
+"state": "Goa",
+"website": "https://infotech.goa.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Inspectorate of Electricity, Meghalaya",
+"state": "Meghalaya",
+"website": "https://iel.meghalaya.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Inspectorate of Electricity (IEC), Assam",
+"state": "Assam",
+"website": "https://cei.assam.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Irrigation & Water Resources Department, Mizoram",
+"state": "Mizoram",
+"website": "https://irrigation.mizoram.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Irrigation and Flood Control (Water Resources) Department, Arunachal Pradesh",
+"state": "Arunachal Pradesh",
+"website": "https://wrdarunachal.nic.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Irrigation and Water Resources Department, Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://www.idup.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jal Board Department, Delhi",
+"state": "Delhi",
+"website": "https://delhijalboard.delhi.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jal Jeevan Mission, Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://jjm.up.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jal Kal Vibhag Nagar Nigam, Lucknow (Lucknow Jal Sansthan) Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://jklmc.gov.in",
+"categories_heuristic": [
+"water_board",
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jal Samagra, Madhya Pradesh Jal Nigam Limited",
+"state": "Madhya Pradesh",
+"website": "https://jalsamagra.mp.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jal Shakti Department, Irrigation & Flood Control, Jammu",
+"state": "Jammu and Kashmir",
+"website": "https://ifcjmu.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jal Shakti Vibhag, Himachal Pradesh",
+"state": "Himachal Pradesh",
+"website": "https://iph.hp.nic.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jalanidhi - Kerala Rural water Supply and Sanitation Agency, Kerala",
+"state": "Kerala",
+"website": "https://jalanidhi.kerala.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jammu & Kashmir Energy Development Agency (JAKEDA), Jammu and Kashmir",
+"state": "Jammu and Kashmir",
+"website": "https://www.jakeda.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jammu and Kashmir State Water Resources Regulatory Authority (JKSWRRA), Jammu and Kashmir",
+"state": "Jammu and Kashmir",
+"website": "https://jkswrra.nic.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jharkhand Bijli Vitran Nigam Limited, Jharkhand",
+"state": "Jharkhand",
+"website": "https://jbvnl.co.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "contactus@jbvnl.co.in",
+"found_on": "https://jbvnl.co.in"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jharkhand Renewable Energy Development Agency, Jharkhand",
+"state": "Jharkhand",
+"website": "https://www.jreda.com",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "info@jreda.com",
+"found_on": "https://www.jreda.com//Content/getHeadersMenuContents/9"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Jharkhand State Electricity Regulatory Commission, Jharkhand",
+"state": "Jharkhand",
+"website": "https://jserc.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "chairman@jserc.org",
+"found_on": "https://jserc.org/contact.aspx"
+},
+{
+"email": "secretary@jserc.org",
+"found_on": "https://jserc.org/contact.aspx"
+},
+{
+"email": "info@jserc.org",
+"found_on": "https://jserc.org/contact.aspx"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Joint Electricity Regulatory Commission for the States of Manipur and Mizoram (JERC)",
+"state": "Manipur",
+"website": "https://jerc.mizoram.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Karnataka Renewable Energy Development Limited, Karnataka",
+"state": "Karnataka",
+"website": "https://kredl.karnataka.gov.in/en",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Karnataka State Highways Improvement Project (KSHIP), Karnataka",
+"state": "Karnataka",
+"website": "https://www.kship.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Kerala Electricity Ombudsman, Kerala",
+"state": "Kerala",
+"website": "https://www.keralaeo.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Kerala State Electricity Board Ltd. (KSEB), Kerala",
+"state": "Kerala",
+"website": "https://www.kseb.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "M.P. Paschim Kshetra Vidyut Vitran Co. Ltd., Madhya Pradesh",
+"state": "Madhya Pradesh",
+"website": "https://www.mpwz.co.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Madhya Pradesh Electricity Inspectorate",
+"state": "Madhya Pradesh",
+"website": "https://esd.mponline.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Madhya Pradesh Electricity Regulatory Commission (MPERC), Madhya Pradesh",
+"state": "Madhya Pradesh",
+"website": "https://mperc.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Madhya Pradesh Madhya Kshetra Vidyut Vitaran Co. Ltd., Bhopal, Madhya Pradesh",
+"state": "Madhya Pradesh",
+"website": "https://portal.mpcz.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Madhya Pradesh Poorv Kshetra Vidyut Vitran Company Limited (MPPKVVCL), Madhya Pradesh",
+"state": "Madhya Pradesh",
+"website": "https://www.mpez.co.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Madhya Pradesh Urban Development Company Limited, Madhya Pradesh",
+"state": "Madhya Pradesh",
+"website": "https://www.mpudc.co.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "info@mpudc.co.in",
+"found_on": "https://www.mpudc.co.in/contact.aspx"
+},
+{
+"email": "anandsng.udc@mpurban.gov.in",
+"found_on": "https://www.mpudc.co.in/contact.aspx"
+},
+{
+"email": "shailendra-s.udc@mpurban.gov.in",
+"found_on": "https://www.mpudc.co.in/contact.aspx"
+},
+{
+"email": "mpusipbpl@mpurban.gov.in",
+"found_on": "https://www.mpudc.co.in/contact.aspx"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Maharashtra Electricity Regulatory Commission, Maharashtra",
+"state": "Maharashtra",
+"website": "https://www.merc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Maharashtra Energy Development Agency (MEDA), Maharashtra",
+"state": "Maharashtra",
+"website": "https://www.mahaurja.maharashtra.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Maharashtra State Electricity Distribution Co. Ltd., Maharashtra",
+"state": "Maharashtra",
+"website": "https://www.mahadiscom.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Maharashtra State Electricity Transmission Co. Ltd., Maharashtra",
+"state": "Maharashtra",
+"website": "https://mahatransco.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Maharashtra Water Resources Regulatory Authority (MWRRA)",
+"state": "Maharashtra",
+"website": "https://mwrra.maharashtra.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Mahavitran - Maharashtra State Electricity Distribution Company Limited, Maharashtra",
+"state": "Maharashtra",
+"website": "https://wss.mahadiscom.in/wss/wss",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "customercare@mahadiscom.in",
+"found_on": "https://wss.mahadiscom.in/wss/wss"
+},
+{
+"email": "helpdesk_pg@mahadiscom.in",
+"found_on": "https://wss.mahadiscom.in/wss/wss"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Mangalore Electricity Supply Company, Karnataka",
+"state": "Karnataka",
+"website": "https://mescom.karnataka.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Manipur Renewable Energy Development Agency (MANIREDA), Manipur",
+"state": "Manipur",
+"website": "https://manireda.mn.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Manipur State Power Distribution Company Ltd. (MSPDCL), Manipur",
+"state": "Manipur",
+"website": "https://mspdcl.in/home",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Meghalaya New and Renewable Energy Development Agency, Meghalaya",
+"state": "Meghalaya",
+"website": "https://mnreda.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Meghalaya State Electricity Regulatory Commission (MSERC), Meghalaya",
+"state": "Meghalaya",
+"website": "https://mserc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "secy.mserc-meg@nic.in",
+"found_on": "https://mserc.gov.in/contactus.html"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Meghalaya Urban Development Agency (MUDA), Meghalaya",
+"state": "Meghalaya",
+"website": "https://mudashillong.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Minor Water Resources Department, Bihar",
+"state": "Bihar",
+"website": "https://minorirrigation.bihar.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Mission for Elimination of Poverty in Municipal Areas (MEPMA), Andhra Pradesh",
+"state": "Andhra Pradesh",
+"website": "https://www.apmepma.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Mission for Elimination of Poverty in Municipal Areas, Telangana",
+"state": "Telangana",
+"website": "https://tmepma.cgg.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Municipal College, Rourkela, Odisha",
+"state": "Odisha",
+"website": "https://www.municipalcollegerkl.com",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Municipal Corporation Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+"state": "Dadra and Nagar Haveli and Daman and Diu",
+"website": "https://ddd.gov.in/municipal-corporation",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "codmc-daman-dd@nic.in",
+"found_on": "https://ddd.gov.in/municipal-corporation"
+},
+{
+"email": "dmc-diu-dd@nic.in",
+"found_on": "https://ddd.gov.in/municipal-corporation"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Mysuru Urban Development Authority, Karnataka",
+"state": "Karnataka",
+"website": "https://mudamysore.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Nagar Nigam Roorkee, Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://nnroorkee.uk.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Narmada, Water Resources, Water Supply and Kalpsar Department, Gujarat",
+"state": "Gujarat",
+"website": "https://guj-nwrws.gujarat.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "New & Renewable Energy Development Corporation of Andhra Pradesh Ltd. (NREDCAP), Andhra Pradesh",
+"state": "Andhra Pradesh",
+"website": "https://nredcap.in",
+"categories_heuristic": [
+"electricity_discom",
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "info@nredcap.in",
+"found_on": "https://nredcap.in/List_Keycontact.aspx"
+},
+{
+"email": "vc@nredcap.in",
+"found_on": "https://nredcap.in/List_Keycontact.aspx"
+},
+{
+"email": "we@nredcap.in",
+"found_on": "https://nredcap.in/List_Keycontact.aspx"
+},
+{
+"email": "finance@nredcap.in",
+"found_on": "https://nredcap.in/List_Keycontact.aspx"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Northern Power Distribution Company of Telangana Limited, Telangana",
+"state": "Telangana",
+"website": "https://tsnpdcl.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Odisha Electricity Regulatory Commission (OERC), Odisha",
+"state": "Odisha",
+"website": "https://www.orierc.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Odisha Renewable Energy Development Agency (OREDA), Odisha",
+"state": "Odisha",
+"website": "https://oredaodisha.com",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Overseas Manpower Corporation Ltd., Tamil Nadu",
+"state": "Tamil Nadu",
+"website": "https://omcmanpower.tn.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Panchayati Raj & Drinking Water Department, Odisha",
+"state": "Odisha",
+"website": "https://panchayat.odisha.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Panipat",
+"state": "Haryana",
+"website": "https://panipat.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Paschimanchal Vidyut Vitaran Nigam Limited (PVVNL) , Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://pvvnl.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "1912@pvvnl.org",
+"found_on": "https://pvvnl.org"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Pey Jal Nigam Uttarakhand, Dehradun, Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://peyjal.uk.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Police Department, Panipat District, Haryana",
+"state": "Haryana",
+"website": "https://panipat.haryanapolice.gov.in",
+"categories_heuristic": [
+"water_board",
+"police"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Power (Electricity) Department, Assam",
+"state": "Assam",
+"website": "https://power.assam.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Power (Electricity) Department, Kerala",
+"state": "Kerala",
+"website": "https://minister-electricity.kerala.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Power Transmission Corporation of Uttarakhand Limited (PTCUL), Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://www.ptcul.org",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "se_it@ptcul.org",
+"found_on": "https://ptcul.org/contact-us"
+},
+{
+"email": "ee_it@ptcul.org",
+"found_on": "https://ptcul.org/contact-us"
+},
+{
+"email": "ee2_it@ptcul.org",
+"found_on": "https://ptcul.org/contact-us"
+},
+{
+"email": "md@ptcul.org",
+"found_on": "https://ptcul.org/contact-us"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Power and Electricity Department, Mizoram",
+"state": "Mizoram",
+"website": "https://power.mizoram.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health & Municipal Engineering Department (PHMED), Telangana",
+"state": "Telangana",
+"website": "https://publichealth.telangana.gov.in",
+"categories_heuristic": [
+"municipal",
+"health"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Department, Assam",
+"state": "Assam",
+"website": "https://phe.assam.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Department, Bihar",
+"state": "Bihar",
+"website": "https://phedbihar.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [
+{
+"email": "secy-phed-bih@nic.in",
+"found_on": "https://phedbihar.gov.in/ContactUS.aspx"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Department, Chhattisgarh",
+"state": "Chhattisgarh",
+"website": "https://phed.cg.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Department, Haryana",
+"state": "Haryana",
+"website": "https://services.phedharyana.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Department, Manipur",
+"state": "Manipur",
+"website": "https://www.phedmanipur.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Department, Meghalaya",
+"state": "Meghalaya",
+"website": "https://megphed.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Department, Mizoram",
+"state": "Mizoram",
+"website": "https://phed.mizoram.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Department, Nagaland",
+"state": "Nagaland",
+"website": "https://phed.nagaland.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Department, Rajasthan",
+"state": "Rajasthan",
+"website": "https://phed.rajasthan.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Department, West Bengal",
+"state": "West Bengal",
+"website": "https://www.wbphed.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [
+{
+"email": "mic@wbphed.gov.in",
+"found_on": "https://www.wbphed.gov.in/en/contacts"
+},
+{
+"email": "mos@wbphed.gov.in",
+"found_on": "https://www.wbphed.gov.in/en/contacts"
+},
+{
+"email": "ps_mic@wbphed.gov.in",
+"found_on": "https://www.wbphed.gov.in/en/contacts"
+},
+{
+"email": "ps_mos@wbphed.gov.in",
+"found_on": "https://www.wbphed.gov.in/en/contacts"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering Organisation (PHEO), Odisha",
+"state": "Odisha",
+"website": "https://www.pheoodisha.gov.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [
+{
+"email": "eicph@nic.in",
+"found_on": "https://www.pheoodisha.gov.in/portal-contact-us/1"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Health Engineering and Water Supply Department, Arunachal Pradesh",
+"state": "Arunachal Pradesh",
+"website": "https://arunachalphed.nic.in",
+"categories_heuristic": [
+"water_board",
+"health"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works (Roads) Department, Assam",
+"state": "Assam",
+"website": "https://pwdroads.assam.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Buildings & NH Department, Assam",
+"state": "Assam",
+"website": "https://pwdbnh.assam.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department (B&R), Haryana",
+"state": "Haryana",
+"website": "https://awas.haryanapwd.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department (Building and Roads) and Architecture Department, Haryana",
+"state": "Haryana",
+"website": "https://haryanapwd.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department (PWD), Manipur",
+"state": "Manipur",
+"website": "https://pwdmanipur.mn.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department , Tamil Nadu",
+"state": "Tamil Nadu",
+"website": "https://www.tn.gov.in/department/42",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Arunachal Pradesh",
+"state": "Arunachal Pradesh",
+"website": "https://www.arunachalpwd.org",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Chhattisgarh",
+"state": "Chhattisgarh",
+"website": "https://pwd.cg.nic.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [
+{
+"email": "pwd-cg@gov.in",
+"found_on": "https://pwd.cg.nic.in/EinC_Control/ContactUs.aspx"
+},
+{
+"email": "cg@gov.in",
+"found_on": "https://pwd.cg.nic.in/EinC_Control/ContactUs.aspx"
+},
+{
+"email": "raipur@gov.in",
+"found_on": "https://pwd.cg.nic.in/EinC_Control/ContactUs.aspx"
+},
+{
+"email": "bilaspur@gov.in",
+"found_on": "https://pwd.cg.nic.in/EinC_Control/ContactUs.aspx"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Delhi",
+"state": "Delhi",
+"website": "https://pwd.delhi.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Goa",
+"state": "Goa",
+"website": "https://pwd.goa.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Himachal Pradesh",
+"state": "Himachal Pradesh",
+"website": "https://hppwd.hp.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [
+{
+"email": "hp-shi6@nic.in",
+"found_on": "https://hppwd.hp.gov.in/contact-us"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Jammu and Kashmir",
+"state": "Jammu and Kashmir",
+"website": "https://jkpwdrb.nic.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Karnataka",
+"state": "Karnataka",
+"website": "https://kpwd.karnataka.gov.in/english",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Kerala",
+"state": "Kerala",
+"website": "https://www.pwd.kerala.gov.in/IMF_website/index",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [
+{
+"email": "ceadmin.pwd@kerala.gov.in",
+"found_on": "https://www.pwd.kerala.gov.in/IMF_website/contacts/all_offices.php?id=MTg="
+},
+{
+"email": "ceroads.pwd@kerala.gov.in",
+"found_on": "https://www.pwd.kerala.gov.in/IMF_website/contacts/all_offices.php?id=MTg="
+},
+{
+"email": "cebldgs.pwd@kerala.gov.in",
+"found_on": "https://www.pwd.kerala.gov.in/IMF_website/contacts/all_offices.php?id=MTg="
+},
+{
+"email": "cenh.pwd@kerala.gov.in",
+"found_on": "https://www.pwd.kerala.gov.in/IMF_website/contacts/all_offices.php?id=MTg="
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Ladakh",
+"state": "Ladakh",
+"website": "https://ladakh.gov.in/public-works-department",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [
+{
+"email": "chiefsecretary@ladakh.gov.in",
+"found_on": "https://ladakh.gov.in/public-works-department"
+},
+{
+"email": "urgain.dorjay1@ladakh.gov.in",
+"found_on": "https://ladakh.gov.in/public-works-department"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Lakshadweep",
+"state": "Lakshadweep",
+"website": "https://pwd.utl.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [
+{
+"email": "lk-pwd@nic.in",
+"found_on": "https://pwd.utl.gov.in/contactus.html"
+},
+{
+"email": "sio-laks@nic.in",
+"found_on": "https://pwd.utl.gov.in/contactus.html"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Madhya Pradesh",
+"state": "Madhya Pradesh",
+"website": "https://www.mppwd.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Maharashtra",
+"state": "Maharashtra",
+"website": "https://pwd.maharashtra.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Meghalaya",
+"state": "Meghalaya",
+"website": "https://megpwd.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Mizoram",
+"state": "Mizoram",
+"website": "https://pwd.mizoram.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Puducherry",
+"state": "Puducherry",
+"website": "https://pwd.py.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Rajasthan",
+"state": "Rajasthan",
+"website": "https://pwd.rajasthan.gov.in/pwd",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Tripura",
+"state": "Tripura",
+"website": "https://pwd.tripura.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://uppwd.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://pwd.uk.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Public Works Department, West Bengal",
+"state": "West Bengal",
+"website": "https://wbpwd.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Puducherry Power Corporation Limited (PPCL), Puducherry",
+"state": "Puducherry",
+"website": "https://ppclgov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "ppcl.kkl@nic.in",
+"found_on": "https://ppclgov.in/index.php?page=contactus"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Punjab Energy Development Agencies (PEDA), Punjab",
+"state": "Punjab",
+"website": "https://www.peda.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Punjab Municipal Infrastructure Development Company (PMIDC), Punjab",
+"state": "Punjab",
+"website": "https://pmidc.punjab.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Punjab Roads and Bridges Development Board (PRBDB), Punjab",
+"state": "Punjab",
+"website": "https://prbdb.punjab.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Punjab State Electricity Regulatory Commission (PSERC), Punjab",
+"state": "Punjab",
+"website": "https://pserc.punjab.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Punjab State Power Corporation Limited (PSPCL), Punjab",
+"state": "Punjab",
+"website": "https://www.pspcl.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "tender@pspcl.in",
+"found_on": "https://www.pspcl.in/contact-us.aspx"
+},
+{
+"email": "1912@pspcl.in",
+"found_on": "https://www.pspcl.in/contact-us.aspx"
+},
+{
+"email": "cmd-pspcl@pspcl.in",
+"found_on": "https://www.pspcl.in/contact-us.aspx"
+},
+{
+"email": "director-generation@pspcl.in",
+"found_on": "https://www.pspcl.in/contact-us.aspx"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Punjab Water Supply & Sewerage Board",
+"state": "Punjab",
+"website": "https://pwssb.punjab.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Purvanchal Vidyut Vitaran Nigam Limited, Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://puvvnl.up.nic.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Renewable Energy Development Agency, Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://ureda.uk.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Roads and Bridges Department, Sikkim",
+"state": "Sikkim",
+"website": "https://sikkim.gov.in/departments/roads-and-bridges-department",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [
+{
+"email": "dit-sik@nic.in",
+"found_on": "https://sikkim.gov.in/departments/roads-and-bridges-department"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Roads and Bridges Development Corporation of Kerala Ltd., Kerala",
+"state": "Kerala",
+"website": "https://web.rbdck.com",
+"categories_heuristic": [
+"pwd_roads",
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Roads and Buildings Department, Andhra Pradesh",
+"state": "Andhra Pradesh",
+"website": "https://www.randb.ap.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Roads and Buildings Department, Gujarat",
+"state": "Gujarat",
+"website": "https://rnb.gujarat.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Roads and Buildings Department, Telangana",
+"state": "Telangana",
+"website": "https://roadbuild.telangana.gov.in",
+"categories_heuristic": [
+"pwd_roads"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Rural Water Supply and Sanitation Department, Andhra Pradesh",
+"state": "Andhra Pradesh",
+"website": "https://rwss.ap.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Southern Power Distribution Company of AP Ltd. (APSPDCL), Andhra Pradesh",
+"state": "Andhra Pradesh",
+"website": "https://www.apspdcl.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "customercare@apspdcl.in",
+"found_on": "https://www.apspdcl.in"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "State Industries Promotion Corporation of Tamil Nadu Limited (SIPCOT), Tamil Nadu",
+"state": "Tamil Nadu",
+"website": "https://sipcot.tn.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "State Urban Development Agency (SUDA), Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://suda.up.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Swajal Project, Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://swajal.uk.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Tamil Nadu Electricity Regulatory Commission (TNERC), Tamil Nadu",
+"state": "Tamil Nadu",
+"website": "https://tnerc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Tamil Nadu Water Supply and Drainage Board (TWAD), Tamil Nadu",
+"state": "Tamil Nadu",
+"website": "https://www.twadboard.tn.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "TamilNadu Electricity Board Limited, Tamil Nadu",
+"state": "Tamil Nadu",
+"website": "https://www.tnebltd.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Telangana State Electricity Regulatory Commission (TSERC), Telangana",
+"state": "Telangana",
+"website": "https://tserc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Telangana State Power Generation Corporation Limited (TSGENCO), Telangana",
+"state": "Telangana",
+"website": "https://tggenco.com",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "The Agricultural Promotion and Investment Corporation of Odisha Limited (APICOL), Odisha",
+"state": "Odisha",
+"website": "https://apicol.nic.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "The Brihanmumbai Electric Supply & Transport Undertaking | of the Brihanmumbai Mahanagarpalika, Maharashtra",
+"state": "Maharashtra",
+"website": "https://www.bestundertaking.com",
+"categories_heuristic": [
+"municipal",
+"transport"
+],
+"emails_published_on_official_page": [
+{
+"email": "electric@bestundertaking.com",
+"found_on": "https://www.bestundertaking.com/contact.asp"
+},
+{
+"email": "transport@bestundertaking.com",
+"found_on": "https://www.bestundertaking.com/contact.asp"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "The Plantation Corporation of Kerala Limited, Kerala",
+"state": "Kerala",
+"website": "https://www.pcklimited.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "mdpckltd@pcklimited.in",
+"found_on": "https://en.pcklimited.in/contact-us"
+},
+{
+"email": "operationsdept@pcklimited.in",
+"found_on": "https://en.pcklimited.in/contact-us"
+},
+{
+"email": "marketingdept@pcklimited.in",
+"found_on": "https://en.pcklimited.in/contact-us"
+},
+{
+"email": "financedept@pcklimited.in",
+"found_on": "https://en.pcklimited.in/contact-us"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Tirupati Urban Development Authority (TUDA), Andhra Pradesh",
+"state": "Andhra Pradesh",
+"website": "https://www.tudaap.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Transmission Corporation of Andhra Pradesh Limited (APTRANSCO)",
+"state": "Andhra Pradesh",
+"website": "https://aptransco.gov.in",
+"categories_heuristic": [
+"electricity_discom",
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Tripura Renewable Energy Development Agency, Tripura",
+"state": "Tripura",
+"website": "https://treda.tripura.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Tripura State Electricity Corporation Limited, Tripura",
+"state": "Tripura",
+"website": "https://www.tsecl.in",
+"categories_heuristic": [
+"electricity_discom",
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development & Housing Department, Arunachal Pradesh",
+"state": "Arunachal Pradesh",
+"website": "https://www.udarunachal.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "ddud-lss-arn@gov.in",
+"found_on": "https://www.udarunachal.gov.in/contact.html"
+},
+{
+"email": "ddud-bng-arn@gov.in",
+"found_on": "https://www.udarunachal.gov.in/contact.html"
+},
+{
+"email": "eeudhhawai.arn@gov.in",
+"found_on": "https://www.udarunachal.gov.in/contact.html"
+},
+{
+"email": "ddud-cng-arn@gov.in",
+"found_on": "https://www.udarunachal.gov.in/contact.html"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development & Housing Department, Government of Jharkhand",
+"state": "Jharkhand",
+"website": "https://udhd.jharkhand.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development & Municipal Affairs Department, West Bengal",
+"state": "West Bengal",
+"website": "https://udma.wb.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development (UD) Department, Delhi",
+"state": "Delhi",
+"website": "https://udd.delhi.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "psud@nic.in",
+"found_on": "https://udd.delhi.gov.in/ud/contact-us"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development Department, Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://urbandevelopment.up.nic.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "minister.ude@up.gov.in",
+"found_on": "https://urbandevelopment.up.nic.in/contact.html"
+},
+{
+"email": "dep_urban@up.gov.in",
+"found_on": "https://urbandevelopment.up.nic.in/contact.html"
+},
+{
+"email": "diruplb@nic.in",
+"found_on": "https://urbandevelopment.up.nic.in/contact.html"
+},
+{
+"email": "nnlko@up.nic.in",
+"found_on": "https://urbandevelopment.up.nic.in/contact.html"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development Department, Goa",
+"state": "Goa",
+"website": "https://www.goa.gov.in/department/department-of-urban-development",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "goa@nic.in",
+"found_on": "https://www.goa.gov.in/department/department-of-urban-development/"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development Department, Himachal Pradesh",
+"state": "Himachal Pradesh",
+"website": "https://obpsud.hp.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [
+{
+"email": "ud-hp@nic.in",
+"found_on": "https://obpsud.hp.gov.in/contactus"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development Department, Nagaland",
+"state": "Nagaland",
+"website": "https://ud.nagaland.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development Department, Tripura",
+"state": "Tripura",
+"website": "https://udd.tripura.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development Department, UT of Dadra and Nagar Haveli and Daman and Diu",
+"state": "Dadra and Nagar Haveli and Daman and Diu",
+"website": "https://ddd.gov.in/department-of-urban-development",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development Directorate, Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://udd.uk.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development and Housing Department, Madhya Pradesh",
+"state": "Madhya Pradesh",
+"website": "https://www.mpurban.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development and Poverty Alleviation Department, Mizoram",
+"state": "Mizoram",
+"website": "https://udpa.mizoram.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Development and Urban Housing Department, Gujarat",
+"state": "Gujarat",
+"website": "https://udd.gujarat.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Local Bodies Department, Haryana",
+"state": "Haryana",
+"website": "https://ulbharyana.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Urban Water Supply & Environmental Improvement, Madhya Pradesh",
+"state": "Madhya Pradesh",
+"website": "https://projectuday.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Uttar Pradesh Electricity Regulatory Commission, Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://www.uperc.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Uttar Pradesh Jal Nigam (Urban), Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://jn.upsdc.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Uttar Pradesh Power Corporation Limited (UPPCL), Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://www.uppcl.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Uttar Pradesh Rajya Vidyut Utpadan Nigam Limited (UPRVUNL), Lucknow, Uttar Pradesh",
+"state": "Uttar Pradesh",
+"website": "https://www.uprvunl.org",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "md@uprvunl.org",
+"found_on": "https://www.uprvunl.org/contact-us"
+},
+{
+"email": "shubhamjain.bpe@up.gov.in",
+"found_on": "https://www.uprvunl.org/contact-us"
+},
+{
+"email": "director.project@uprvunl.org",
+"found_on": "https://www.uprvunl.org/contact-us"
+},
+{
+"email": "director.technical@uprvunl.org",
+"found_on": "https://www.uprvunl.org/contact-us"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Uttarakhand Electricity Regulatory Commission, Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://uerc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Uttarakhand Housing and Urban Development Authority",
+"state": "Uttarakhand",
+"website": "https://uhuda.uk.gov.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Uttarakhand Jal Sansthan Department, Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://ujs.uk.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Uttarakhand Power Corporation Limited (UPCL), Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://upcl.uk.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Uttarakhand Renewable Energy Development Agency Online (UREDA), Uttarakhand",
+"state": "Uttarakhand",
+"website": "https://uredaonline.uk.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Vidyut Ombudsman, Andhra Pradesh",
+"state": "Andhra Pradesh",
+"website": "https://vidyutombudsman.ap.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Vidyut Ombudsman, Telangana",
+"state": "Telangana",
+"website": "https://vidyutombudsman-tserc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources (Irrigation) Department, Bihar",
+"state": "Bihar",
+"website": "https://wrd.bihar.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [
+{
+"email": "wrd-bih@nic.in",
+"found_on": "https://wrd.bihar.gov.in/"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Mizoram",
+"state": "Mizoram",
+"website": "https://www.wrd.mn.gov.in/en",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Andhra Pradesh",
+"state": "Andhra Pradesh",
+"website": "https://irrigationap.cgg.gov.in/wrd/home",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Assam",
+"state": "Assam",
+"website": "https://waterresources.assam.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Chhattisgarh",
+"state": "Chhattisgarh",
+"website": "https://cgwrd.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Goa",
+"state": "Goa",
+"website": "https://goawrd.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [
+{
+"email": "ce-wrd.goa@nic.in",
+"found_on": "https://goawrd.gov.in/administration/contact-details"
+},
+{
+"email": "eo-wrd.goa@nic.in",
+"found_on": "https://goawrd.gov.in/administration/contact-details"
+},
+{
+"email": "goa@nic.in",
+"found_on": "https://goawrd.gov.in/administration/contact-details"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Jharkhand",
+"state": "Jharkhand",
+"website": "https://wrd.jharkhand.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Karnataka",
+"state": "Karnataka",
+"website": "https://waterresources.karnataka.gov.in/english",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Maharashtra",
+"state": "Maharashtra",
+"website": "https://wrd.maharashtra.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Meghalaya",
+"state": "Meghalaya",
+"website": "https://megwaterresources.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Punjab",
+"state": "Punjab",
+"website": "https://irrigation.punjab.gov.in/en/node",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Department, Tamil Nadu",
+"state": "Tamil Nadu",
+"website": "https://www.wrd.tn.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Resources Investigation & Development Department, West Bengal",
+"state": "West Bengal",
+"website": "https://www.wbwridd.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Water Supply and Sanitation Department, Maharashtra",
+"state": "Maharashtra",
+"website": "https://water.maharashtra.gov.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "West Bengal Electricity Regulatory Commission (WBERC), West Bengal",
+"state": "West Bengal",
+"website": "https://www.wberc.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "West Bengal State Electricity Distribution Company Limited (WBSEDCL), West Bengal",
+"state": "West Bengal",
+"website": "https://www.wbsedcl.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "West Bengal State Electricity Transmission Corporation Limited, West Bengal",
+"state": "West Bengal",
+"website": "https://www.wbsetcl.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [
+{
+"email": "corporate.communication@wbsetcl.in",
+"found_on": "https://www.wbsetcl.in/contact.php"
+}
+],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Women's Polytechnic, Hapania, Tripura",
+"state": "Tripura",
+"website": "https://wptripura.nic.in",
+"categories_heuristic": [
+"water_board"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "Zoram Energy Development Agency, Mizoram",
+"state": "Mizoram",
+"website": "https://zeda.mizoram.gov.in",
+"categories_heuristic": [
+"electricity_discom"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+},
+{
+"title": "e-Governance Solution - Kohima Municipal Corporation, Nagaland",
+"state": "Nagaland",
+"website": "https://www.ekmc.co.in",
+"categories_heuristic": [
+"municipal"
+],
+"emails_published_on_official_page": [],
+"accepts_citizen_complaints": "unverified",
+"last_verified": "2026-11-27"
+}
+]

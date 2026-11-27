@@ -45,3 +45,10 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - MLAs: 4101 sitting MLAs, all 31 states/UTs, from India Vote Kar MLA Register (CC BY 4.0, attribution: India Vote Kar, https://www.indiavotekar.com/datasets/mla-register/), 22 vacant seats not listed. Bihar/Telangana/Uttarakhand/Nagaland cross-checked with official portal tables. Details: data/mla_coverage.json. By-election lag possible. No MLA phone/email imported.
 - Public landing page for logged-out users (stats, how it works, sample flow, rating preview). Logged-in home unchanged.
 - Mobile ERROR hardening: see docs/MOBILE_ERROR_RCA.md.
+
+## v2.8 login fix + local bodies
+- Login bug: stale token in storage (server DB reset) made openLogin() go to My Complaints and the sheet never opened. Fixed: any 401 clears the session; openLogin() validates a stored token first; boot validates it. tests/js/login.js covers logged-out, stale token, blocked storage, valid token (the stale-token case fails on the old app.js).
+- Local bodies: data/ulbs_official.json = 5,156 ULBs (332 municipal corporations, municipalities, nagar/town panchayats, cantonment boards) from MoHUA PMAY-Urban list. No contacts in that list. 9 rows dropped (names unreadable in PDF). 4,447 "planning authority" rows skipped.
+- Rating directory now has Local bodies + state departments/boards/discoms (utility_contacts, official-site sourced).
+- Routing: route preview shows the concerned local body by city+state (matched / ambiguous / not found). It is guided, not auto-sent, as no official email is on file.
+- Gram panchayats NOT loaded (LGD download is CAPTCHA; ~2.6 lakh rows).

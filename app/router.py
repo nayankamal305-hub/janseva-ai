@@ -72,4 +72,6 @@ def plan(complaint, platforms, connectors, user):
     # Swachhata and municipal guided channel are different owners' systems: only add municipal guided when swachhata is not usable
     if any(t["platform_id"] == "swachhata" and not t["validation_errors"] for t in targets):
         pass
-    return {"targets": targets, "rejected": rejected, "needs": needs, "context": {"ulb": ulb, "asset_owner": c.get("asset_owner")}}
+    from . import localbody
+    lb = localbody.find(c.get("city"), c.get("state")) if c.get("category") in ("garbage", "drainage", "toilet", "road", "water", "streetlight", "electricity", "general") else None
+    return {"targets": targets, "rejected": rejected, "needs": needs, "local_body": lb, "context": {"ulb": ulb, "asset_owner": c.get("asset_owner")}}

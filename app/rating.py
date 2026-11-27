@@ -22,6 +22,15 @@ def entities():
     for d in load_data("igod_districts.json"):
         if d.get("website"):
             out.append({"key": "district:%s:%s" % ((d["state"] or "").lower().replace(" ", "-"), d["title"].lower().replace(" ", "-")), "type": "District administration (partial: official district site only)", "title": "%s district administration, %s" % (d["title"], d["state"]), "state": d["state"], "source_url": d["website"], "last_verified": d["last_verified"]})
+    for u in load_data("ulbs_official.json"):
+        out.append({"key": "ulb:%s:%s" % (u["city_code"], u["name"].lower().replace(" ", "-")), "type": "Local body: " + u["ulb_type"], "title": "%s %s, %s" % (u["name"], u["ulb_type"].split(" /")[0], u["state"]), "state": u["state"], "source_url": u["source_url"], "last_verified": "2026-11-27"})
+    seen = set()
+    for r in load_data("utility_contacts.json"):
+        cat = (r.get("categories_heuristic") or ["other"])[0]
+        lab = {"municipal": "urban development / municipal", "pwd_roads": "PWD / roads", "water_board": "water board / jal", "electricity_discom": "electricity / discom"}.get(cat)
+        if not lab or r["website"] in seen: continue
+        seen.add(r["website"])
+        out.append({"key": "dept:%s:%s" % ((r["state"] or "").lower().replace(" ", "-"), r["title"].lower().replace(" ", "-")[:60]), "type": "State department/board: " + lab, "title": r["title"], "state": r["state"], "source_url": r["website"], "last_verified": r["last_verified"]})
     _ENT.extend(out)
     return _ENT
 _IDX = {}

@@ -96,7 +96,7 @@
 
 <section id="rate" class="sec"><h2 style="margin:16px 0 4px">JANSEVA Rating</h2>
  <div class="info" style="margin-bottom:10px"><i data-ic="info"></i><div>Citizens rate how well public offices solve problems. Offices come only from official lists (Parliament, PG portal). Opinions about public work only, not official data. Login needed to rate.</div></div>
- <div class="card"><div class="row"><input id="rq" class="grow" placeholder="Search MLA, MP, ministry, state cell"><select id="rt"><option value="">All</option><option value="MLA">MLAs</option><option value="MP">MPs</option><option value="Ministry">Ministries</option><option value="State">State cells</option><option value="District">District offices</option></select></div><p class="muted" style="font-size:12px;margin:8px 0 0">MLA list: India Vote Kar (CC BY 4.0), sab 31 states/UTs, latest assembly. 22 seats vacant. Official portal se 4 states cross-checked.</p><div id="rlist" style="margin-top8px"></div></div>
+ <div class="card"><div class="row"><input id="rq" class="grow" placeholder="Search MLA, MP, ministry, state cell"><select id="rt"><option value="">All</option><option value="MLA">MLAs</option><option value="MP">MPs</option><option value="Ministry">Ministries</option><option value="State">State cells</option><option value="District">District offices</option><option value="Local body">Local bodies (municipal)</option><option value="State department">State depts / boards / discoms</option></select></div><p class="muted" style="font-size:12px;margin:8px 0 0">MLA list: India Vote Kar (CC BY 4.0), sab 31 states/UTs, latest assembly. 22 seats vacant. Official portal se 4 states cross-checked.</p><div id="rlist" style="margin-top8px"></div></div>
  <div id="rdet" class="card" style="display:none"></div></section>
 <section id="mine" class="sec"><h2 style="margin:16px 0 4px">My complaints</h2><div id="list"></div></section>
 
@@ -131,5 +131,5 @@
  <button id="wabtn" class="btn ok" style="width:100%;margin-top:12px;display:none" onclick="waLogin()">Login with WhatsApp</button><button class="btn pri" style="width:100%;margin-top:12px" onclick="otpReq()">Get OTP by email</button>
  <div id="otpbox" style="display:none"><label class="f">OTP</label><input id="code" inputmode="numeric" placeholder="6-digit code"><button class="btn saf" style="width:100%;margin-top:10px" onclick="otpVer()">Verify and continue</button></div><div id="otpmsg" class="info bl" style="display:none;margin-top:10px"></div></div></div>
 <div class="toast" id="toast"></div>
-<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/app.js?v=18"></script>
+<script src="/static/icons/icons.js"></script><script src="/static/vendor/leaflet/leaflet.js"></script><script src="/static/app.js?v=19"></script>
 <script>setTimeout(function(){if(!window.__boot){var b=document.getElementById("errbar");if(b)b.style.display="flex"}},12000)</script></body></html>

@@ -43,3 +43,15 @@ class TestMLA(unittest.TestCase):
         self.assertGreater(len(m), 4000)
         self.assertTrue(all(e["source_url"].startswith("https://") and e["last_verified"] for e in m))
         self.assertGreaterEqual(len({e["state"] for e in m}), 30)
+
+
+class TestLocalBodies(unittest.TestCase):
+    def test_local_bodies_in_directory_with_source(self):
+        from app import rating, localbody
+        e = rating.entities()
+        lb = [x for x in e if x["type"].startswith("Local body")]
+        self.assertGreater(len(lb), 5000)
+        self.assertGreater(len([x for x in e if x["type"].startswith("State department")]), 100)
+        self.assertTrue(all(x["source_url"].startswith("https://") for x in lb))
+        r = localbody.find("Pune", "Maharashtra"); self.assertEqual(r["status"], "matched"); self.assertEqual(r["bodies"][0]["ulb_type"], "Municipal Corporation")
+        self.assertEqual(localbody.find("Nowhereville", "Maharashtra")["status"], "not_found")

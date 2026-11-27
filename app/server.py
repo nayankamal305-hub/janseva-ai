@@ -66,6 +66,16 @@ def make_handler(svc, admin_token, rate=120):
                 return self._json(404, {"error": "not found"})
             if path == "/api/platforms": return self._json(200, svc.db.platforms())
             if path == "/api/emergency": return self._json(200, {"number": "112", "note": "Call 112 for immediate danger. JANSEVA is a complaint tool, not an emergency dispatch service.", "source": "India national emergency number"})
+            if path == "/api/wa/webhook":
+                from . import walogin
+                ch = walogin.verify_challenge(os.environ, q) if walogin.enabled(os.environ) else None
+                return self._send(200, ch.encode(), "text/plain") if ch is not None else self._json(403, {"error": "forbidden"})
+            if path == "/api/wa/poll":
+                from . import walogin
+                return self._json(200, walogin.poll(svc, q.get("id", ""), q.get("poll", ""))) if walogin.enabled(os.environ) else self._json(503, {"error": "WhatsApp login not configured"})
+            if path == "/api/config": 
+                from . import walogin, mailer
+                return self._json(200, {"whatsapp_login": walogin.enabled(os.environ), "email_login": mailer.configured() or dev_otp})
             if path == "/api/directory/nodal":
                 from .service import load_data
                 k = q.get("scope", "state"); rows = load_data("authorities_central_nodal.json" if k == "central" else "authorities_state_nodal.json")
@@ -159,6 +169,16 @@ def make_handler(svc, admin_token, rate=120):
                 name = hashlib.sha256(data).hexdigest()[:32] + "." + kind[0]
                 open(os.path.join(UPLOADS, name), "wb").write(data)
                 return self._json(200, {"url": "/uploads/" + name, "note": "No malware scan or EXIF check in this build"})
+            if path == "/api/wa/webhook":
+                from . import walogin
+                raw = self._raw()
+                if not walogin.enabled(os.environ) or not walogin.signature_ok(os.environ, raw, self.headers.get("X-Hub-Signature-256")): return self._json(403, {"error": "bad signature"})
+                try: walogin.handle_webhook(svc.db, json.loads(raw or b"{}"))
+                except Exception: pass
+                return self._json(200, {"ok": True})
+            if path == "/api/wa/start":
+                from . import walogin
+                return self._json(200, walogin.start(svc.db, os.environ)) if walogin.enabled(os.environ) else self._json(503, {"error": "WhatsApp login not configured"})
             d = self._body()
             if path == "/api/otp/request":
                 ident = accounts.norm_ident(d.get("phone") or d.get("email")); 

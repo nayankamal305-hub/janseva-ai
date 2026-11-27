@@ -165,3 +165,9 @@ let GT;window.loadIgod=function(){clearTimeout(GT);GT=setTimeout(async()=>{const
 window.openPortal=function(u){const B=window.Capacitor&&window.Capacitor.Plugins&&window.Capacitor.Plugins.Browser;if(B){B.open({url:u});return false}return true};
 window.cpTxt=async function(id){const t=$('gt'+id).textContent;try{await navigator.clipboard.writeText(t);toast('Copied. Paste it in the official form.')}catch(e){const r=document.createRange();r.selectNode($('gt'+id));getSelection().removeAllRanges();getSelection().addRange(r);toast('Select and copy the text')}};
 window.pst=async function(c,p,e){const r=await api('POST','/api/complaints/'+c+'/portal-status',{platform_id:p,status:$('ps'+e).value,note:$('pn'+e).value});toast(r.ok?'Saved':(r.error||'Failed'));load()};
+
+(async()=>{try{const c=await api('GET','/api/config');if(c.whatsapp_login)$('wabtn').style.display=''}catch(e){}})();
+window.waLogin=async function(){const r=await api('POST','/api/wa/start',{});const m=$('otpmsg');m.style.display='flex';if(r.error){m.textContent=r.error;return}
+ m.textContent='WhatsApp will open with a ready message. Press Send there, then come back. Do not edit the code.';window.open(r.link,'_blank');
+ for(let i=0;i<100;i++){await new Promise(x=>setTimeout(x,3000));const p=await api('GET','/api/wa/poll?id='+encodeURIComponent(r.id)+'&poll='+encodeURIComponent(r.poll));
+  if(p.status=='ok'){T=p.token;localStorage.jt=T;closeLogin();$('who').textContent='Account';toast('Logged in with WhatsApp');flushDrafts();return}if(p.status=='expired'||p.status=='invalid'||p.status=='used'){m.textContent='Login expired. Try again.';return}}};

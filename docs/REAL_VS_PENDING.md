@@ -19,3 +19,6 @@
 - Districts/LGD codes: the LGD bulk download is behind a CAPTCHA (not bypassed). A person can download the CSVs from https://lgdirectory.gov.in/downloadDirectory.do and load them. Pincode data: data.gov.in needs a free API key (not available here).
 - Contact emails/phones for state PWD, DISCOM, water boards, municipal bodies: IGOD gives websites only, so none are invented; per-body grievance emails need individual verification. MLAs and councillors: not loaded (no single official machine-readable list found).
 - Browser-assisted submission by an agent on the citizen's behalf: only with citizen authorization per submission and never past CAPTCHA/OTP (not built).
+
+## WhatsApp login (v0.8, free variant)
+User taps "Login with WhatsApp", WhatsApp opens with "JANSEVA LOGIN <code>" to JANSEVA's number, Meta's signed webhook (/api/wa/webhook) delivers it with the sender's number, and the app logs that number in. Off unless WA_NUMBER, WA_VERIFY_TOKEN, WA_APP_SECRET are set. Messages from users to a business are not charged by Meta; JANSEVA sends nothing back, so no per-message cost. Sources: https://developers.facebook.com/docs/whatsapp/pricing ; Mint 2026-10-01; https://adversai.app/guides/whatsapp-business-api-pricing-india-2026

@@ -81,3 +81,6 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - Contacts: +17 UP Nagar Nigam (https://localbodies.up.nic.in/listnn.htm), Patna Municipal Commissioner email (https://betastate.bihar.gov.in/urban/KeyContacts).
 - Skipped: Gujarat district-page emails (misaligned with body names), Odisha (0/30 pages loaded), Rajasthan (1/50), HP (1/10).
 - Not verified: Nearby and Dashboard mounts were wired in code but not screenshot-checked; lite mode not checked.
+
+## v3.6
+- Rajasthan: 212 ULB Raj-mail IDs from the LSG Department official list (https://department.rajasthan.gov.in/pages/sm/department-page/371474/2380, fetched 2026-11-27), each matched uniquely by name to the MoHUA list. 91 rows in the department list did not match (new ULBs or spelling differences) and are NOT imported; no fuzzy guessing. These are department-published official mail IDs, used only per-complaint with consent.

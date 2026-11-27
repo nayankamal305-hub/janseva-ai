@@ -37,5 +37,8 @@ Levels: 1 full API, 2 partial API, 3 official guided submission, 4 verified emai
 ## Rules enforced (and tested)
 Consent to submit and separate consent to share personal data; no fake acknowledgement (no id returned = failed); duplicate complaint block (same user, category, 100 m, 7 days); parent resolved only when ALL linked official records are resolved, then citizen verification; escalation uses a platform's real appeal route, otherwise a reminder explicitly marked "not an official appeal"; analytics count unique citizen complaints separately from external records; credentials only from environment variables, never in the DB; every integration call and admin action logged; no CAPTCHA/OTP bypass.
 
+## v0.2 adds
+Pincode prefix lookup (sample), Hindi toggle on key UI labels, more registry entries (AirSewa, state portal, district collector, Jal Board, hospital, school, pollution board, transport: all unverified, guided), Android APK workflow `.github/workflows/apk.yml` (wraps the DEPLOYED URL; needs a deployed backend; debug APK, sideload only, build not yet verified).
+
 ## Not done yet
-Credential vault with encryption at rest (env vars only now), photo AI classification, ward/pincode jurisdiction data, real SMTP, webhooks (none documented by the platforms), Android APK, Hindi UI, the old master-prompt features.
+Credential vault with encryption at rest (env vars only now), photo AI classification, ward/pincode jurisdiction data, real SMTP, webhooks (none documented by the platforms), the old master-prompt features.

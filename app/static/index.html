@@ -9,7 +9,7 @@ nav button{background:#fff;color:#0b3d91;margin-right:6px}small{color:#555}pre{w
 </style></head><body>
 <header><b>JANSEVA AI</b> &middot; one complaint, every official channel<br><small style="color:#cde">Sandbox build: no live government submission unless real credentials are configured</small></header>
 <main>
-<nav><button onclick="show('cit')">Citizen</button><button onclick="show('adm')">Government Integration Control Center</button></nav>
+<nav><button onclick="hi()">हिंदी / English</button><button onclick="show('cit')">Citizen</button><button onclick="show('adm')">Government Integration Control Center</button></nav>
 <div id="cit">
  <div class="card" id="login"><b>Login</b><input id="phone" placeholder="10-digit mobile"><input id="name" placeholder="Name"><button onclick="reg()">Continue</button></div>
  <div class="card" id="newc" style="display:none"><b>Report an issue</b>
@@ -52,5 +52,7 @@ async function loadAdm(){A=$('atok').value;const cc=await api('GET','/api/admin/
  const an=await api('GET','/api/admin/analytics',null,A),pl=await api('GET','/api/platforms');
  $('admout').innerHTML='<div class=card><b>Control Center</b><pre>'+esc(JSON.stringify(cc,null,1))+'</pre></div><div class=card><b>Analytics</b><pre>'+esc(JSON.stringify(an,null,1))+'</pre></div><div class=card><b>Platform directory</b>'+
  pl.map(p=>`<div><b>${esc(p.name)}</b> L${p.level} &middot; ${esc(p.approval_status)}<br><small>${esc(p.url)} | auth: ${esc(p.auth)} | docs: ${esc(p.api_docs)} | verified ${esc(p.last_verified)}</small></div>`).join('')+'</div>'}
+const HI={'Report an issue':'समस्या दर्ज करें','Describe the problem':'समस्या बताएं','Title':'शीर्षक','Photo URL':'फोटो लिंक','City':'शहर','State':'राज्य','Create and submit':'बनाएं और जमा करें','Sync status':'स्थिति जांचें'};
+let H=false;function hi(){H=!H;document.querySelectorAll('input[placeholder],textarea[placeholder],b,button').forEach(e=>{const k=e.dataset.k||(e.placeholder||e.textContent).trim();e.dataset.k=k;const v=H?(HI[k]||k):k;if(e.placeholder!==undefined&&e.tagName!='BUTTON'&&e.tagName!='B')e.placeholder=v;else if(!e.children.length)e.textContent=v})}
 init();
 </script></body></html>

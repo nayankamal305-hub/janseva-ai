@@ -1,12 +1,524 @@
 [
- {"id":"swachhata","name":"Swachhata App / Swachh City (SBM-Urban)","url":"https://www.swachh.city/","department":"MoHUA, Swachh Bharat Mission Urban","jurisdiction":{"scope":"ulb","note":"Only ULBs onboarded on Swachhata"},"categories":["garbage","sanitation","drainage","toilet"],"level":1,"connector":"swachhata","api_docs":"https://www.swachh.city/assets/files/Integrate_With_Swachhata_App_V2.2.pdf","auth":"vendor_name + access_key issued per ULB by support@sbmurban.org","required_credentials":["SWACHHATA_VENDOR_NAME","SWACHHATA_ACCESS_KEY"],"approval_status":"awaiting_ulb_credentials","last_verified":"2026-11-27","admin_owner":"unassigned","sla_days":7,"supports_appeal":false,"verified_sources":["Integrate_With_Swachhata_App_V2.2.pdf"]},
- {"id":"cpgrams","name":"CPGRAMS (Centralised Public Grievance Redress and Monitoring System)","url":"https://pgportal.gov.in/","department":"DARPG, Govt of India","jurisdiction":{"scope":"national"},"categories":["central_govt","pension","service_matters","general","passport","tax","bank_insurance","telecom","police","health","education","water","electricity"],"level":3,"connector":"guided","api_docs":"none public; NextGen CPGRAMS uses Jan Parichay login, API access only for authorised government systems","auth":"Citizen login with OTP on official portal","required_credentials":[],"approval_status":"no_public_api","last_verified":"2026-11-27","admin_owner":"unassigned","sla_days":21,"supports_appeal":true,"email_accepted":false,"steps":["Open https://pgportal.gov.in/ and log in / register with mobile OTP.","Choose Ministry/Department and paste the generated complaint text.","Attach the photo and submit.","Note the registration number and enter it in JANSEVA to track."]},
- {"id":"railmadad","name":"Rail Madad","url":"https://railmadad.indianrailways.gov.in/madad/final/home.jsp","department":"Indian Railways","jurisdiction":{"scope":"national"},"categories":["railway"],"level":3,"connector":"guided","api_docs":"none public","auth":"OTP on official portal/app","required_credentials":[],"approval_status":"no_public_api","last_verified":"2026-11-27","admin_owner":"unassigned","sla_days":3,"supports_appeal":false,"steps":["Open the Rail Madad site/app or call 139.","Enter PNR/train number or station and paste the complaint text.","Upload the photo, verify OTP, submit.","Enter the complaint reference in JANSEVA."]},
- {"id":"nch","name":"National Consumer Helpline (INGRAM)","url":"https://consumerhelpline.gov.in/","department":"Department of Consumer Affairs","jurisdiction":{"scope":"national"},"categories":["consumer"],"level":3,"connector":"guided","api_docs":"Convergence Program is for companies; no public citizen-submission API found","auth":"Portal/WhatsApp/1915","required_credentials":[],"approval_status":"no_public_api","last_verified":"2026-11-27","admin_owner":"unassigned","sla_days":30,"supports_appeal":false,"steps":["Call 1915 / 1800-11-4000 or open consumerhelpline.gov.in.","Register the grievance against the company with the generated text.","Enter the docket number in JANSEVA."]},
- {"id":"umang","name":"UMANG","url":"https://web.umang.gov.in/","department":"MeitY / NeGD","jurisdiction":{"scope":"national"},"categories":["general"],"level":5,"connector":"guided","api_docs":"No universal grievance API","auth":"UMANG login","required_credentials":[],"approval_status":"no_public_api","last_verified":"2026-11-27","admin_owner":"unassigned","sla_days":21,"supports_appeal":false,"steps":["Open UMANG and find the specific department grievance service.","Use it only if the service exists for your issue."],"fallback_only":true},
- {"id":"pmc_grievance","name":"Pune Municipal Corporation grievance (guided)","url":"https://pmc.gov.in/","department":"Pune Municipal Corporation","jurisdiction":{"scope":"city","cities":["pune"]},"categories":["garbage","sanitation","drainage","road","water","streetlight","encroachment"],"level":3,"connector":"guided","api_docs":"not verified","auth":"portal","required_credentials":[],"approval_status":"unverified","last_verified":"2026-11-27","admin_owner":"unassigned","sla_days":7,"supports_appeal":false,"steps":["Open the PMC complaint page (verify URL on pmc.gov.in).","Paste the complaint text and photo.","Enter reference in JANSEVA."]},
- {"id":"nhai","name":"NHAI complaint channel","url":"https://nhai.gov.in/","department":"National Highways Authority of India","jurisdiction":{"scope":"national","asset_owner":"nhai"},"categories":["road"],"level":5,"connector":"guided","api_docs":"not verified","auth":"portal / helpline 1033","required_credentials":[],"approval_status":"unverified","last_verified":"2026-11-27","admin_owner":"unassigned","sla_days":7,"supports_appeal":false,"steps":["Call NHAI helpline 1033 or use the official NHAI complaint route.","Quote the generated text and GPS location."]},
- {"id":"state_pwd","name":"State PWD grievance","url":"","department":"State Public Works Department","jurisdiction":{"scope":"state","asset_owner":"pwd"},"categories":["road","bridge"],"level":5,"connector":"guided","api_docs":"state-specific, not verified","auth":"varies","required_credentials":[],"approval_status":"unverified","last_verified":"2026-11-27","admin_owner":"unassigned","sla_days":10,"supports_appeal":false,"steps":["Find the PWD grievance page of your state on its official site.","Use the generated complaint letter."]},
- {"id":"state_electricity","name":"State electricity DISCOM grievance","url":"","department":"State DISCOM","jurisdiction":{"scope":"state"},"categories":["electricity"],"level":5,"connector":"guided","api_docs":"state-specific, not verified","auth":"varies","required_credentials":[],"approval_status":"unverified","last_verified":"2026-11-27","admin_owner":"unassigned","sla_days":7,"supports_appeal":false,"steps":["Use your DISCOM's consumer grievance portal or helpline.","Use the generated letter."]},
- {"id":"dept_email_sandbox","name":"Municipal sanitation officer email (sandbox demo)","url":"","department":"Municipal sanitation department","jurisdiction":{"scope":"city","cities":["pune"]},"categories":["garbage","sanitation","drainage"],"level":4,"connector":"email","api_docs":"n/a","auth":"none","required_credentials":[],"approval_status":"sandbox_only","last_verified":"2026-11-27","admin_owner":"unassigned","sla_days":7,"supports_appeal":false,"email_target":"sanitation-officer@example.invalid","email_verified":false,"notify_only":true}
+ {
+  "id": "swachhata",
+  "name": "Swachhata App / Swachh City (SBM-Urban)",
+  "url": "https://www.swachh.city/",
+  "department": "MoHUA, Swachh Bharat Mission Urban",
+  "jurisdiction": {
+   "scope": "ulb",
+   "note": "Only ULBs onboarded on Swachhata"
+  },
+  "categories": [
+   "garbage",
+   "sanitation",
+   "drainage",
+   "toilet"
+  ],
+  "level": 1,
+  "connector": "swachhata",
+  "api_docs": "https://www.swachh.city/assets/files/Integrate_With_Swachhata_App_V2.2.pdf",
+  "auth": "vendor_name + access_key issued per ULB by support@sbmurban.org",
+  "required_credentials": [
+   "SWACHHATA_VENDOR_NAME",
+   "SWACHHATA_ACCESS_KEY"
+  ],
+  "approval_status": "awaiting_ulb_credentials",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 7,
+  "supports_appeal": false,
+  "verified_sources": [
+   "Integrate_With_Swachhata_App_V2.2.pdf"
+  ]
+ },
+ {
+  "id": "cpgrams",
+  "name": "CPGRAMS (Centralised Public Grievance Redress and Monitoring System)",
+  "url": "https://pgportal.gov.in/",
+  "department": "DARPG, Govt of India",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "central_govt",
+   "pension",
+   "service_matters",
+   "general",
+   "passport",
+   "tax",
+   "bank_insurance",
+   "telecom",
+   "police",
+   "health",
+   "education",
+   "water",
+   "electricity"
+  ],
+  "level": 3,
+  "connector": "guided",
+  "api_docs": "none public; NextGen CPGRAMS uses Jan Parichay login, API access only for authorised government systems",
+  "auth": "Citizen login with OTP on official portal",
+  "required_credentials": [],
+  "approval_status": "no_public_api",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 21,
+  "supports_appeal": true,
+  "email_accepted": false,
+  "steps": [
+   "Open https://pgportal.gov.in/ and log in / register with mobile OTP.",
+   "Choose Ministry/Department and paste the generated complaint text.",
+   "Attach the photo and submit.",
+   "Note the registration number and enter it in JANSEVA to track."
+  ]
+ },
+ {
+  "id": "railmadad",
+  "name": "Rail Madad",
+  "url": "https://railmadad.indianrailways.gov.in/madad/final/home.jsp",
+  "department": "Indian Railways",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "railway"
+  ],
+  "level": 3,
+  "connector": "guided",
+  "api_docs": "none public",
+  "auth": "OTP on official portal/app",
+  "required_credentials": [],
+  "approval_status": "no_public_api",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 3,
+  "supports_appeal": false,
+  "steps": [
+   "Open the Rail Madad site/app or call 139.",
+   "Enter PNR/train number or station and paste the complaint text.",
+   "Upload the photo, verify OTP, submit.",
+   "Enter the complaint reference in JANSEVA."
+  ]
+ },
+ {
+  "id": "nch",
+  "name": "National Consumer Helpline (INGRAM)",
+  "url": "https://consumerhelpline.gov.in/",
+  "department": "Department of Consumer Affairs",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "consumer"
+  ],
+  "level": 3,
+  "connector": "guided",
+  "api_docs": "Convergence Program is for companies; no public citizen-submission API found",
+  "auth": "Portal/WhatsApp/1915",
+  "required_credentials": [],
+  "approval_status": "no_public_api",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 30,
+  "supports_appeal": false,
+  "steps": [
+   "Call 1915 / 1800-11-4000 or open consumerhelpline.gov.in.",
+   "Register the grievance against the company with the generated text.",
+   "Enter the docket number in JANSEVA."
+  ]
+ },
+ {
+  "id": "umang",
+  "name": "UMANG",
+  "url": "https://web.umang.gov.in/",
+  "department": "MeitY / NeGD",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "general"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "No universal grievance API",
+  "auth": "UMANG login",
+  "required_credentials": [],
+  "approval_status": "no_public_api",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 21,
+  "supports_appeal": false,
+  "steps": [
+   "Open UMANG and find the specific department grievance service.",
+   "Use it only if the service exists for your issue."
+  ],
+  "fallback_only": true
+ },
+ {
+  "id": "pmc_grievance",
+  "name": "Pune Municipal Corporation grievance (guided)",
+  "url": "https://pmc.gov.in/",
+  "department": "Pune Municipal Corporation",
+  "jurisdiction": {
+   "scope": "city",
+   "cities": [
+    "pune"
+   ]
+  },
+  "categories": [
+   "garbage",
+   "sanitation",
+   "drainage",
+   "road",
+   "water",
+   "streetlight",
+   "encroachment"
+  ],
+  "level": 3,
+  "connector": "guided",
+  "api_docs": "not verified",
+  "auth": "portal",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 7,
+  "supports_appeal": false,
+  "steps": [
+   "Open the PMC complaint page (verify URL on pmc.gov.in).",
+   "Paste the complaint text and photo.",
+   "Enter reference in JANSEVA."
+  ]
+ },
+ {
+  "id": "nhai",
+  "name": "NHAI complaint channel",
+  "url": "https://nhai.gov.in/",
+  "department": "National Highways Authority of India",
+  "jurisdiction": {
+   "scope": "national",
+   "asset_owner": "nhai"
+  },
+  "categories": [
+   "road"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "not verified",
+  "auth": "portal / helpline 1033",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 7,
+  "supports_appeal": false,
+  "steps": [
+   "Call NHAI helpline 1033 or use the official NHAI complaint route.",
+   "Quote the generated text and GPS location."
+  ]
+ },
+ {
+  "id": "state_pwd",
+  "name": "State PWD grievance",
+  "url": "",
+  "department": "State Public Works Department",
+  "jurisdiction": {
+   "scope": "state",
+   "asset_owner": "pwd"
+  },
+  "categories": [
+   "road",
+   "bridge"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "state-specific, not verified",
+  "auth": "varies",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 10,
+  "supports_appeal": false,
+  "steps": [
+   "Find the PWD grievance page of your state on its official site.",
+   "Use the generated complaint letter."
+  ]
+ },
+ {
+  "id": "state_electricity",
+  "name": "State electricity DISCOM grievance",
+  "url": "",
+  "department": "State DISCOM",
+  "jurisdiction": {
+   "scope": "state"
+  },
+  "categories": [
+   "electricity"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "state-specific, not verified",
+  "auth": "varies",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 7,
+  "supports_appeal": false,
+  "steps": [
+   "Use your DISCOM's consumer grievance portal or helpline.",
+   "Use the generated letter."
+  ]
+ },
+ {
+  "id": "dept_email_sandbox",
+  "name": "Municipal sanitation officer email (sandbox demo)",
+  "url": "",
+  "department": "Municipal sanitation department",
+  "jurisdiction": {
+   "scope": "city",
+   "cities": [
+    "pune"
+   ]
+  },
+  "categories": [
+   "garbage",
+   "sanitation",
+   "drainage"
+  ],
+  "level": 4,
+  "connector": "email",
+  "api_docs": "n/a",
+  "auth": "none",
+  "required_credentials": [],
+  "approval_status": "sandbox_only",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 7,
+  "supports_appeal": false,
+  "email_target": "sanitation-officer@example.invalid",
+  "email_verified": false,
+  "notify_only": true
+ },
+ {
+  "id": "airsewa",
+  "name": "AirSewa",
+  "url": "https://airsewa.gov.in/",
+  "department": "Ministry of Civil Aviation",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "aviation"
+  ],
+  "level": 3,
+  "connector": "guided",
+  "api_docs": "not verified",
+  "auth": "varies",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 15,
+  "supports_appeal": false,
+  "steps": [
+   "Find the official grievance page/helpline of this authority on its own official website (this entry has no verified URL yet).",
+   "Use the generated complaint letter and GPS location."
+  ]
+ },
+ {
+  "id": "state_grievance",
+  "name": "State public grievance portal / CM helpline (generic, state to be set by admin)",
+  "url": "",
+  "department": "State government",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "general",
+   "water",
+   "electricity",
+   "road",
+   "garbage",
+   "health",
+   "education",
+   "police"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "not verified",
+  "auth": "varies",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 15,
+  "supports_appeal": false,
+  "steps": [
+   "Find the official grievance page/helpline of this authority on its own official website (this entry has no verified URL yet).",
+   "Use the generated complaint letter and GPS location."
+  ]
+ },
+ {
+  "id": "district_collector",
+  "name": "District Collector grievance",
+  "url": "",
+  "department": "District administration",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "general",
+   "water",
+   "road",
+   "garbage",
+   "health",
+   "education"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "not verified",
+  "auth": "varies",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 15,
+  "supports_appeal": false,
+  "steps": [
+   "Find the official grievance page/helpline of this authority on its own official website (this entry has no verified URL yet).",
+   "Use the generated complaint letter and GPS location."
+  ]
+ },
+ {
+  "id": "jal_board",
+  "name": "Water board / Jal Board grievance",
+  "url": "",
+  "department": "State/municipal water authority",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "water"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "not verified",
+  "auth": "varies",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 15,
+  "supports_appeal": false,
+  "steps": [
+   "Find the official grievance page/helpline of this authority on its own official website (this entry has no verified URL yet).",
+   "Use the generated complaint letter and GPS location."
+  ]
+ },
+ {
+  "id": "govt_hospital",
+  "name": "Government hospital grievance",
+  "url": "",
+  "department": "State health department",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "health"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "not verified",
+  "auth": "varies",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 15,
+  "supports_appeal": false,
+  "steps": [
+   "Find the official grievance page/helpline of this authority on its own official website (this entry has no verified URL yet).",
+   "Use the generated complaint letter and GPS location."
+  ]
+ },
+ {
+  "id": "govt_school",
+  "name": "Government school grievance",
+  "url": "",
+  "department": "State education department",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "education"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "not verified",
+  "auth": "varies",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 15,
+  "supports_appeal": false,
+  "steps": [
+   "Find the official grievance page/helpline of this authority on its own official website (this entry has no verified URL yet).",
+   "Use the generated complaint letter and GPS location."
+  ]
+ },
+ {
+  "id": "pollution_board",
+  "name": "Pollution control board complaint",
+  "url": "",
+  "department": "CPCB / State PCB",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "pollution"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "not verified",
+  "auth": "varies",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 15,
+  "supports_appeal": false,
+  "steps": [
+   "Find the official grievance page/helpline of this authority on its own official website (this entry has no verified URL yet).",
+   "Use the generated complaint letter and GPS location."
+  ]
+ },
+ {
+  "id": "public_transport",
+  "name": "Public transport grievance",
+  "url": "",
+  "department": "State transport / city bus authority",
+  "jurisdiction": {
+   "scope": "national"
+  },
+  "categories": [
+   "transport"
+  ],
+  "level": 5,
+  "connector": "guided",
+  "api_docs": "not verified",
+  "auth": "varies",
+  "required_credentials": [],
+  "approval_status": "unverified",
+  "last_verified": "2026-11-27",
+  "admin_owner": "unassigned",
+  "sla_days": 15,
+  "supports_appeal": false,
+  "steps": [
+   "Find the official grievance page/helpline of this authority on its own official website (this entry has no verified URL yet).",
+   "Use the generated complaint letter and GPS location."
+  ]
+ }
 ]

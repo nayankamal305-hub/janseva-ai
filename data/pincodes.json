@@ -1,0 +1,21 @@
+{
+ "_note": "SAMPLE pincode prefix table. Extend from India Post data.",
+ "prefixes": {
+  "411": [
+   "pune",
+   "maharashtra"
+  ],
+  "412": [
+   "pune",
+   "maharashtra"
+  ],
+  "823": [
+   "gaya",
+   "bihar"
+  ],
+  "800": [
+   "patna",
+   "bihar"
+  ]
+ }
+}

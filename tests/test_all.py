@@ -137,6 +137,9 @@ class T(unittest.TestCase):
         self.assertEqual(s.connectors()["swachhata"].mode(), "pending")
         self.assertEqual(s.control_center()["live_connected"], [])
     def test_classifier_hindi(self): self.assertEqual(classify("यहाँ कचरा पड़ा है"), "garbage")
+    def test_pincode_fills_city(self):
+        r = self.svc.create_complaint(self.u, dict(PUNE, city="", state="", pincode="823001", description="garbage dump", lat=24.79, lon=85.0))
+        self.assertEqual(self.svc.get(r["id"])["city"], "gaya")
     def test_audit_log_written(self):
         self.mk(); self.assertTrue(self.svc.db.all("SELECT * FROM audit_log WHERE action='complaint_created'"))
 
@@ -159,7 +162,7 @@ class HTTP(unittest.TestCase):
         s = call("POST", "/api/complaints/%d/submit" % c["id"], dict(consent_submit=True, consent_share_personal=True), tok); self.assertTrue(s["ok"])
         other = call("POST", "/api/register", {"phone": "9000000002", "name": "B"})["token"]
         self.assertEqual(call("GET", "/api/complaints/%d" % c["id"], tok=other)["_code"], 404)
-        self.assertEqual(call("GET", "/api/admin/control-center", tok="adm")["total_platforms"], 10)
+        self.assertEqual(call("GET", "/api/admin/control-center", tok="adm")["total_platforms"], 18)
         srv.shutdown(); mock.stop()
 
 if __name__ == "__main__": unittest.main()

@@ -45,6 +45,9 @@ class Service:
         dup = self.find_duplicate(user["id"], cat, float(d["lat"]), float(d["lon"]))
         if dup: return {"ok": False, "errors": ["duplicate of %s (same category within 100 m in 7 days)" % dup["code"]], "duplicate_of": dup["code"]}
         city = (d.get("city") or "").strip()
+        pin = str(d.get("pincode") or "")
+        pt = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "pincodes.json")))["prefixes"].get(pin[:3])
+        if not city and pt: city = pt[0]; d["state"] = d.get("state") or pt[1]
         n = self.db.one("SELECT count(*) n FROM complaints")["n"] + 1
         code = "JS-%s-%06d" % (datetime.now().year, n)
         asset = d.get("asset_owner")

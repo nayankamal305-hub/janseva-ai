@@ -1,0 +1,28 @@
+name: android-apk
+on:
+  workflow_dispatch:
+    inputs:
+      server_url: {description: "Deployed backend URL (https://...)", required: true}
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: "20"}
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: "21"  # Capacitor 7 requires JDK 21}
+      - name: Build debug APK (Capacitor wrapper around the deployed web app)
+        working-directory: mobile
+        run: |
+          sed -i "s#https://REPLACE-WITH-DEPLOYED-URL#${{ github.event.inputs.server_url }}#g" capacitor.config.json www/index.html
+          npm init -y >/dev/null
+          npm i @capacitor/core @capacitor/cli @capacitor/android
+          npx cap add android
+          npx cap sync android
+          cd android && chmod +x gradlew && ./gradlew assembleDebug
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: apk-${{ github.run_number }}
+          files: mobile/android/app/build/outputs/apk/debug/app-debug.apk

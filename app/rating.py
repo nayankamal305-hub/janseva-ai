@@ -1,6 +1,5 @@
 """JANSEVA Rating: citizens rate how well PUBLIC OFFICES solve problems. Entities are public roles taken only from official datasets
-(sansad.in MPs, pgportal ministry / state nodal offices). No private data, no invented officials. MLAs and district collectors have no official
-machine-readable dataset yet, so they are NOT listed (never guessed). Ratings are opinions of logged-in citizens, not official performance data."""
+(sansad.in MPs, pgportal ministry / state nodal offices). No private data, no invented officials. MLAs are listed ONLY for states whose official portal list was parsed (see data/mla_coverage.json); other states are not listed (never guessed). Ratings are opinions of logged-in citizens, not official performance data."""
 import re, time
 from .service import load_data
 MAX_COMMENT = 500; REPORT_HIDE = 3; DAY_LIMIT = 15
@@ -12,6 +11,8 @@ def entities():
     out = []
     for m in load_data("representatives_parliament.json"):
         out.append({"key": "mp:%s:%s" % (m["house"][:2].lower(), m["name"].lower().replace(" ", "-")), "type": "MP (%s)" % m["house"], "title": "%s, %s" % (m["name"], m["constituency"] or m["state"]), "state": m["state"], "party": m.get("party"), "source_url": m["source_url"], "last_verified": m["last_verified"]})
+    for m in load_data("representatives_mla.json"):
+        out.append({"key": "mla:%s:%s:%s" % (m["state"].lower().replace(" ", "-"), m["constituency"].lower().replace(" ", "-"), m["name"].lower().replace(" ", "-")), "type": "MLA", "title": "%s, %s (%s)" % (m["name"], m["constituency"], m["state"]), "state": m["state"], "party": m.get("party") or None, "source_url": m["source_url"], "last_verified": m["fetched"]})
     for a in load_data("authorities_central_nodal.json"):
         out.append({"key": "ministry:" + a["name"].lower().replace(" ", "-"), "type": "Ministry / Department (PG office)", "title": a["name"], "state": None, "source_url": a["source_url"], "last_verified": a["last_verified"]})
     for a in load_data("authorities_state_nodal.json"):

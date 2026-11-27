@@ -34,3 +34,12 @@ class Dist(unittest.TestCase):
         ds = [e for e in rating.entities() if e["key"].startswith("district:")]
         self.assertGreater(len(ds), 500)
         for e in ds[:30]: self.assertTrue(e["source_url"].startswith("http"))
+
+
+class TestMLA(unittest.TestCase):
+    def test_mla_entities_sourced(self):
+        from app import rating
+        m = [e for e in rating.entities() if e["type"] == "MLA"]
+        self.assertGreater(len(m), 400)
+        self.assertTrue(all(e["source_url"].startswith("https://") and e["last_verified"] for e in m))
+        self.assertEqual({e["state"] for e in m}, {"Bihar", "Telangana", "Uttarakhand", "Nagaland"})

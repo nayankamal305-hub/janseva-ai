@@ -35,3 +35,8 @@ DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING =
 - Rating now also lists ~780 district administration offices (official district site as source; no officer names, partial). MLAs still not listed (no official dataset).
 - MP selection: constituency picker (datalist from sansad.in, filtered by state). Auto-detect from pincode/GPS still NOT built (no official boundary data).
 - 6 languages (Bodo, Dogri, Kashmiri, Manipuri, Santali, Sindhi) NOT added: I cannot translate them reliably, need native translators.
+
+## v2.5 MLA rating
+- Added MLA entities from official state portal tables: Bihar 243, Telangana 119, Uttarakhand 70, Nagaland 60 (fetched 2026-11-27, source URL per row). See data/mla_coverage.json.
+- Not covered: all other states. Tried and failed: Rajasthan, Tamil Nadu (unreachable), Goa (503), Haryana (404), Delhi (PDF), Puducherry (script page), ECI results (script-rendered). Not yet attempted: remaining states.
+- Pages may lag by-elections; no mobile numbers imported.

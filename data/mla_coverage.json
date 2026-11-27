@@ -1,0 +1,19 @@
+{
+ "covered": {
+  "Telangana": 119,
+  "Uttarakhand": 70,
+  "Nagaland": 60,
+  "Bihar": 243
+ },
+ "note": "Names copied from state official portal tables fetched 2026-11-27. Pages may lag the latest by-election/assembly change; no mobile numbers or contacts imported. Source URL per row.",
+ "tried_failed": {
+  "Rajasthan": "assembly site unreachable from our server (connection blocked)",
+  "Tamil Nadu": "elections.tn.gov.in unreachable",
+  "Goa": "503 error",
+  "Haryana": "URL 404",
+  "Delhi": "PDF only, not parsed",
+  "Puducherry": "page is script-rendered, no table",
+  "ECI results.eci.gov.in / eci.gov.in statistical reports": "script-rendered pages, no fetchable data"
+ },
+ "not_tried": "All other states/UTs (Maharashtra, UP, MP, Gujarat, Karnataka, Kerala, WB, etc.) not yet attempted; each portal needs its own parser."
+}

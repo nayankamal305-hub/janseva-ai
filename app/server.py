@@ -53,6 +53,18 @@ def make_handler(svc, admin_token, rate=120):
             return c if a and roles.can(a["role"], "complaints.view") and roles.in_scope(a, c) else None
         def _q(self): return {k: v[0] for k, v in urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query).items()}
         def do_GET(self):
+            try: self._get()
+            except Exception:
+                import traceback; traceback.print_exc()
+                try: self._json(500, {"error": "internal error (logged)"})
+                except Exception: pass
+        def do_POST(self):
+            try: self._post()
+            except Exception:
+                import traceback; traceback.print_exc()
+                try: self._json(500, {"error": "internal error (logged)"})
+                except Exception: pass
+        def _get(self):
             rt = os.environ.get("REDIRECT_TO", "").rstrip("/")
             if rt:  # legacy host: send everyone to the current public URL
                 self.send_response(301); self.send_header("Location", rt + self.path); self.end_headers(); return
@@ -77,7 +89,7 @@ def make_handler(svc, admin_token, rate=120):
                 from . import sevadmin
                 _cfg = sevadmin.public_config(svc.db, {})
                 return self._send(200, json.dumps({"name": _cfg["brand_name"], "short_name": _cfg["brand_short"], "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": [{"src": "/static/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, "const C='jansevaai-v45';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
+            if path == "/sw.js": return self._send(200, "const C='jansevaai-v46';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now(), "db": "postgres" if getattr(svc.db, "pg", False) else "sqlite", "photo_storage": storage.from_env(os.environ, UPLOADS).kind})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
@@ -308,7 +320,7 @@ def make_handler(svc, admin_token, rate=120):
                 if p == "duplicates": return self._json(200, svc.db.all("SELECT g.id, g.category, g.parent_complaint_id, (SELECT count(*) FROM complaints c WHERE c.duplicate_group=g.id) members FROM duplicate_groups g"))
                 if p == "health": return self._json(200, {"db": "ok", "integrations": svc.control_center()["modes"]})
             self._json(404, {"error": "not found"})
-        def do_POST(self):
+        def _post(self):
             if self._limited(): return self._json(429, {"error": "rate limit"})
             path = urllib.parse.urlparse(self.path).path
             if path.startswith("/api/rating/") or path.startswith("/api/admin/rating-"):

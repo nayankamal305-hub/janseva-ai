@@ -126,7 +126,7 @@ def get_application(db, ref, user_id=None):
     a = db.one("SELECT * FROM applications WHERE ref_no=?", (ref,))
     if not a or (user_id is not None and a["user_id"] != user_id): return None
     a["history"] = db.all("SELECT status,note,actor,ts FROM application_status_history WHERE application_id=? ORDER BY id", (a["id"],))
-    a["documents"] = db.all("SELECT label,status FROM application_documents WHERE application_id=?", (a["id"],))
+    a["documents"] = db.all("SELECT document_id,label,status FROM application_documents WHERE application_id=?", (a["id"],))
     a["submissions"] = db.all("SELECT portal,method,ack_no,verified,ts FROM government_submissions WHERE application_id=?", (a["id"],))
     return a
 

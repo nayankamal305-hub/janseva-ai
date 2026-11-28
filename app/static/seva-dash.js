@@ -3,24 +3,26 @@
 "use strict";
 const LS=(()=>{try{const s=window['local'+'Storage'];s.setItem('_t','1');s.removeItem('_t');return s}catch(e){const m={};return{getItem:k=>m[k]??null,setItem:(k,v)=>{m[k]=v},removeItem:k=>{delete m[k]}}}})();
 const $=id=>document.getElementById(id);
-let T=LS.getItem('jt')||'', LANG=LS.getItem('sdlang')||'hi', CATALOG=null, APPS=[], PROFILE={};
+let T=LS.getItem('jt')||'', LANG=LS.getItem('sdlang')||'hi', CATALOG=null, APPS=[], PROFILE={}, DOCS=[], DOCKINDS=[];
 
 const I18N={
 hi:{"notGov":"Seva Setu India ek private sahayata seva hai, sarkari website nahi.","nav.home":"होम","nav.complaints":"शिकायतें","nav.help":"मदद","logout":"लॉग आउट",
 "login.title":"लॉगिन / साइन अप","login.help":"मोबाइल नंबर या ईमेल डालें। हम एक बार का कोड (OTP) भेजते हैं।","login.id":"मोबाइल नंबर या ईमेल","login.code":"OTP कोड","login.name":"आपका नाम (पहली बार)","login.send":"OTP भेजें","login.verify":"OTP से लॉगिन",
-"tab.over":"सारांश","tab.apps":"आवेदन","tab.schemes":"योजना खोजें","tab.prof":"प्रोफ़ाइल",
+"tab.over":"सारांश","tab.apps":"आवेदन","tab.docs":"दस्तावेज़","tab.schemes":"योजना खोजें","tab.prof":"प्रोफ़ाइल",
 "over.next":"आप क्या करना चाहेंगे?","over.newApp":"नया आवेदन शुरू करें","over.findScheme":"मेरे लिए योजनाएं खोजें","over.complaint":"शिकायत दर्ज करें","over.recent":"हाल के आवेदन",
 "apps.title":"आपके आवेदन","apps.new":"+ नया","sch.title":"योजना खोजें","sch.help":"3 सवालों के जवाब दें - हम verified list से केंद्रीय योजनाएं मिलाते हैं। आवेदन से पहले official portal पर जरूर confirm करें।","sch.age":"आपकी उम्र","sch.occ":"काम","sch.any":"कोई भी","sch.farmer":"किसान","sch.student":"छात्र/छात्रा","sch.selfemp":"स्वरोज़गार","sch.unemp":"काम की तलाश","sch.senior":"वरिष्ठ नागरिक","sch.state":"राज्य / केंद्र शासित प्रदेश","sch.find":"योजनाएं खोजें",
 "prof.title":"आपकी प्रोफ़ाइल","prof.lang":"पसंदीदा भाषा","prof.state":"राज्य / केंद्र शासित प्रदेश","prof.district":"ज़िला","prof.block":"ब्लॉक / तहसील","prof.pin":"पिन कोड","prof.age":"उम्र समूह","prof.occ":"काम","prof.salaried":"नौकरीपेशा","prof.other":"अन्य","prof.save":"प्रोफ़ाइल सेव करें",
 "new.title":"नया आवेदन","new.help":"सेवा चुनें। आपका अनुरोध पहले Seva Setu में सेव होता है - आपकी मंज़ूरी के बिना कुछ भी किसी सरकारी portal पर नहीं जाता।","new.desc":"छोटा विवरण (optional)","new.create":"अनुरोध सेव करें",
+"docs.title":"आपके दस्तावेज़","docs.help":"दस्तावेज़ आपके Seva Setu vault में private रहते हैं। केवल आप ही खोल सकते हैं - operator किसी application पर आपकी सहमति के बाद ही देख सकता है।","docs.kind":"दस्तावेज़ प्रकार","docs.pick":"फ़ाइल चुनें (JPG, PNG या PDF, अधिकतम 5 MB)","docs.upload":"दस्तावेज़ अपलोड करें","docs.open":"खोलें","docs.del":"हटाएं","docs.attach":"Application से जोड़ें","docs.none":"अभी कोई दस्तावेज़ नहीं।",
 "foot.privacy":"Privacy","foot.contact":"Contact","foot.disclaimer":"Disclaimer"},
 en:{"notGov":"Seva Setu India is a private assistance service, not a government website.","nav.home":"Home","nav.complaints":"Complaints","nav.help":"Help","logout":"Logout",
 "login.title":"Login / Sign up","login.help":"Enter your mobile number or email. We send a one-time code (OTP) to verify it is you.","login.id":"Mobile number or email","login.code":"OTP code","login.name":"Your name (first time)","login.send":"Send OTP","login.verify":"Verify & login",
-"tab.over":"Overview","tab.apps":"Applications","tab.schemes":"Scheme finder","tab.prof":"Profile",
+"tab.over":"Overview","tab.apps":"Applications","tab.docs":"Documents","tab.schemes":"Scheme finder","tab.prof":"Profile",
 "over.next":"What would you like to do?","over.newApp":"Start a new application","over.findScheme":"Find schemes for me","over.complaint":"File a complaint","over.recent":"Recent applications",
 "apps.title":"Your applications","apps.new":"+ New","sch.title":"Scheme finder","sch.help":"Answer 3 questions - we match you with central schemes from our verified list. Always confirm on the official portal before applying.","sch.age":"Your age","sch.occ":"Occupation","sch.any":"Any","sch.farmer":"Farmer","sch.student":"Student","sch.selfemp":"Self-employed","sch.unemp":"Looking for work","sch.senior":"Senior citizen","sch.state":"State / UT","sch.find":"Find schemes",
 "prof.title":"Your profile","prof.lang":"Preferred language","prof.state":"State / UT","prof.district":"District","prof.block":"Block / Tehsil","prof.pin":"PIN code","prof.age":"Age group","prof.occ":"Occupation","prof.salaried":"Salaried","prof.other":"Other","prof.save":"Save profile",
 "new.title":"New application","new.help":"Pick a service. We save your request in Seva Setu first - nothing goes to any government portal until you approve it.","new.desc":"Short description (optional)","new.create":"Save request",
+"docs.title":"Your documents","docs.help":"Documents stay private in your Seva Setu vault. Only you can open them - operators see one only after you give consent for that application.","docs.kind":"Document type","docs.pick":"Pick a file (JPG, PNG or PDF, max 5 MB)","docs.upload":"Upload document","docs.open":"Open","docs.del":"Delete","docs.attach":"Attach to application","docs.none":"No documents yet.",
 "foot.privacy":"Privacy","foot.contact":"Contact","foot.disclaimer":"Disclaimer"}};
 const t=k=>(I18N[LANG]&&I18N[LANG][k])||I18N.en[k]||k;
 function applyI18n(){document.querySelectorAll('[data-t]').forEach(e=>{e.textContent=t(e.getAttribute('data-t'))});document.documentElement.lang=LANG;$('langT').textContent=LANG=='hi'?'EN':'हिं';}
@@ -67,7 +69,7 @@ async function boot(){
  if(!T){showLogin();return}
  try{
   PROFILE=await api('GET','/api/seva/profile');
-  await loadCatalog();await loadApps();showDash();
+  await loadCatalog();await loadApps();await loadDocs();showDash();
  }catch(e){if(e&&e.auth){T='';LS.removeItem('jt');showLogin()}else{showLogin()}}
 }
 function showDash(){$('loginView').classList.add('hide');$('dashView').classList.remove('hide');$('logoutB').classList.remove('hide');renderAll();}
@@ -99,6 +101,8 @@ document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
 /* ---------- data ---------- */
 async function loadCatalog(){if(!CATALOG)CATALOG=await api('GET','/api/seva/catalog');}
 async function loadApps(){APPS=(await api('GET','/api/seva/applications')).items||[];}
+async function loadDocs(){const r=await api('GET','/api/seva/documents');DOCS=r.items||[];DOCKINDS=r.kinds||[];
+ const sel=$('docKind');sel.innerHTML=DOCKINDS.map(k=>'<option value="'+k+'">'+k.replace(/_/g,' ')+'</option>').join('');}
 function fillStates(){
  const states=["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Andaman and Nicobar Islands","Chandigarh","Dadra and Nagar Haveli and Daman and Diu","Delhi","Jammu and Kashmir","Ladakh","Lakshadweep","Puducherry"];
  ['qState','pState'].forEach(id=>{const s=$(id);if(!s.options.length||s.options.length<2)s.innerHTML='<option value="">--</option>'+states.map(x=>'<option>'+x+'</option>').join('')});
@@ -107,7 +111,35 @@ function fillStates(){
 /* ---------- render ---------- */
 function catName(id){const c=(CATALOG.categories||[]).find(c=>c.slug==id||c.id==id);if(!c)return id;const n=c.names||{};return n[LANG]||n.en||n.hi||id;}
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function renderAll(){renderOver();renderApps();renderSchemes();renderProf();}
+function renderAll(){renderOver();renderApps();renderSchemes();renderProf();renderDocs();}
+
+function renderDocs(){
+ $('docList').innerHTML=DOCS.length?DOCS.map(d=>
+  '<div class="appitem"><div class="top"><div><div class="ttl">'+esc(d.filename)+'</div>'+
+  '<div class="ref">'+esc(d.kind.replace(/_/g,' '))+' · '+(d.size>1048576?(d.size/1048576).toFixed(1)+' MB':d.size>1024?Math.round(d.size/1024)+' KB':d.size+' B')+'</div></div>'+
+  '<span class="badge b-ssi">'+esc(d.mime=='application/pdf'?'PDF':'IMG')+'</span></div>'+
+  '<div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">'+
+  '<button class="btn btn-navy" data-open="'+d.id+'">'+t('docs.open')+'</button>'+
+  '<button class="btn btn-ghost" data-del="'+d.id+'">'+t('docs.del')+'</button></div></div>').join('')
+  :'<div class="empty">'+t('docs.none')+'</div>';
+ $('docList').querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>openDoc(b.getAttribute('data-open')));
+ $('docList').querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>delDoc(b.getAttribute('data-del')));
+}
+async function openDoc(id){
+ try{const r=await fetch('/api/seva/documents/'+id+'/file',{headers:{Authorization:'Bearer '+T}});
+  if(!r.ok)return;const b=await r.blob();window.open(URL.createObjectURL(b),'_blank')}catch(e){}
+}
+async function delDoc(id){
+ try{await api('POST','/api/seva/documents/'+id+'/delete',{});await loadDocs();renderDocs()}catch(e){}
+}
+$('docUp').onclick=async()=>{
+ const f=$('docFile').files[0],m=$('dmsg');m.classList.remove('err');
+ if(!f){m.textContent=LANG=='hi'?'पहले फ़ाइल चुनें':'Pick a file first';m.classList.add('err');return}
+ try{const r=await fetch('/api/seva/documents',{method:'POST',headers:{Authorization:'Bearer '+T,'X-Doc-Name':f.name,'X-Doc-Label':$('docKind').value},body:f});
+  const d=await r.json();
+  if(d.ok){m.textContent=d.note||'OK';$('docFile').value='';await loadDocs();renderDocs()}
+  else{m.textContent=d.error||'Failed';m.classList.add('err')}
+ }catch(e){m.textContent='Failed';m.classList.add('err')}};
 
 function renderOver(){
  $('hello').textContent=(LANG=='hi'?'नमस्ते':'Namaste')+(PROFILE&&PROFILE.district?', '+PROFILE.district:'')+'!';
@@ -137,12 +169,23 @@ async function openApp(ref){
  const subs=(a.submissions||[]).map(s=>'<div class="subnote'+(s.verified?'':' unv')+'">'+
   (s.verified?(LANG=='hi'?'✓ Verified submission':'✓ Verified submission'):(LANG=='hi'?'Unverified (manual note)':'Unverified (manual note)'))+
   ' · '+esc(s.portal||'')+(s.ack_no?' · Ack: '+esc(s.ack_no):'')+(s.ts?' · '+esc(s.ts):'')+'</div>').join('');
+ const adocs=(a.documents||[]).map(x=>'<div class="docchip">'+esc(x.label||'')+' <span class="mut">('+esc(x.status||'')+')</span></div>').join('');
+ const vaultOpts=DOCS.map(x=>'<option value="'+x.id+'">'+esc(x.filename)+'</option>').join('');
  d.innerHTML='<button class="btn btn-ghost" id="backL">&larr; '+(LANG=='hi'?'सूची':'Back')+'</button>'+
   '<div class="card"><h3>'+esc(a.title||catName(a.category_id))+'</h3>'+
   '<div class="ref" style="font-family:ui-monospace,monospace;color:var(--mut);font-size:13px">'+esc(a.ref_no)+' · '+esc(catName(a.category_id))+'</div>'+
   '<div style="margin:10px 0">'+sbadge(a.status)+'</div><div class="honest">'+honestNote(a)+'</div>'+subs+
+  '<h3 style="margin-top:16px">'+t('docs.title')+'</h3>'+(adocs||'<div class="mut" style="font-size:13px">'+t('docs.none')+'</div>')+
+  (DOCS.length?'<div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap"><select id="attSel" class="fld" style="flex:1;min-width:160px;padding:9px;border:1.5px solid var(--line);border-radius:10px">'+vaultOpts+'</select>'+
+  '<button class="btn btn-navy" id="attB">'+t('docs.attach')+'</button></div>':'')+
+  '<p id="attMsg" class="lmsg" role="status"></p>'+
   '<h3 style="margin-top:16px">'+(LANG=='hi'?'इतिहास':'Timeline')+'</h3><div class="tl">'+hist+'</div></div>';
  $('backL').onclick=renderApps;
+ if($('attB'))$('attB').onclick=async()=>{
+  const mm=$('attMsg');mm.classList.remove('err');
+  try{const rr=await api('POST','/api/seva/applications/'+encodeURIComponent(ref)+'/documents',{document_id:parseInt($('attSel').value)});
+   if(rr.ok){await loadApps();openApp(ref)}else{mm.textContent=rr.error||'Failed';mm.classList.add('err')}
+  }catch(e){mm.textContent=(e&&e.error)||'Failed';mm.classList.add('err')}};
 }
 
 /* ---------- new application ---------- */

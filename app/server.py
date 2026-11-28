@@ -83,7 +83,9 @@ def make_handler(svc, admin_token, rate=120):
                     return self._send(200, raw, ct, hd)
                 return self._json(404, {"error": "not found"})
             if path.startswith("/uploads/"):
-                try: got = storage.from_env(os.environ, UPLOADS).get(os.path.basename(path))
+                bn = os.path.basename(path)
+                if bn.startswith("doc-"): return self._json(404, {"error": "not found"})  # citizen documents are private; served only via /api/seva/documents/<id>/file
+                try: got = storage.from_env(os.environ, UPLOADS).get(bn)
                 except Exception: return self._json(502, {"error": "photo storage unavailable"})
                 if got: return self._send(200, got[0], got[1], {"Cache-Control": "public, max-age=86400"})
                 return self._json(404, {"error": "not found"})
@@ -207,6 +209,17 @@ def make_handler(svc, admin_token, rate=120):
             if path == "/api/seva/consents":
                 from . import seva
                 return self._json(200, {"items": seva.consents(svc.db, u["id"])}) if u else self._json(401, {"error": "login"})
+            if path == "/api/seva/documents":
+                from . import sevdoc
+                return self._json(200, {"items": sevdoc.list_documents(svc.db, u["id"]), "kinds": sevdoc.DOC_KINDS}) if u else self._json(401, {"error": "login"})
+            if path.startswith("/api/seva/documents/") and path.endswith("/file"):
+                from . import sevdoc
+                if not u: return self._json(401, {"error": "login"})
+                row = sevdoc.get_document(svc.db, int(path.split("/")[-2]), u["id"])
+                if not row: return self._json(404, {"error": "not found"})
+                got = sevdoc.read_document(svc.db, os.environ, UPLOADS, row, "citizen:%s" % u["id"])
+                if not got: return self._json(404, {"error": "file missing"})
+                return self._send(200, got[0], got[1], {"Content-Disposition": "inline; filename=\"%s\"" % got[2].replace('"', ''), "Cache-Control": "private, no-store"})
             if path == "/api/complaints":
                 return self._json(200, svc.list_for(u["id"])) if u else self._json(401, {"error": "login"})
             if path.startswith("/api/complaints/"):
@@ -297,6 +310,13 @@ def make_handler(svc, admin_token, rate=120):
             if path == "/api/wa/start":
                 from . import walogin
                 return self._json(200, walogin.start(svc.db, os.environ)) if walogin.enabled(os.environ) else self._json(503, {"error": "WhatsApp login not configured"})
+            if path == "/api/seva/documents":
+                from . import sevdoc
+                u = self._user()
+                if not u: return self._json(401, {"error": "login"})
+                data = self._raw()
+                r = sevdoc.save_document(svc.db, os.environ, UPLOADS, u, self.headers.get("X-Doc-Name", ""), data, self.headers.get("X-Doc-Label", ""))
+                return self._json(200 if r.get("ok") else 422, r)
             d = self._body()
             if path.startswith("/api/seva/"):
                 from . import seva
@@ -315,6 +335,16 @@ def make_handler(svc, admin_token, rate=120):
                         app_id = a["id"]
                     if not d.get("scope"): return self._json(422, {"error": "scope required"})
                     return self._json(200, {"ok": True, "id": seva.record_consent(svc.db, u["id"], d["scope"], bool(d.get("granted")), app_id)})
+                if path.startswith("/api/seva/documents/") and path.endswith("/delete"):
+                    from . import sevdoc
+                    ok = sevdoc.delete_document(svc.db, int(path.split("/")[-2]), u["id"])
+                    return self._json(200 if ok else 404, {"ok": ok})
+                if path.startswith("/api/seva/applications/") and path.endswith("/documents"):
+                    from . import sevdoc
+                    a = seva.get_application(svc.db, path.split("/")[-2], u["id"])
+                    if not a: return self._json(404, {"error": "application not found"})
+                    r = sevdoc.attach_document(svc.db, a, int(d.get("document_id", 0)), u, d.get("label", ""))
+                    return self._json(200 if r.get("ok") else 422, r)
             if path == "/api/auth/login":
                 ident = accounts.norm_ident(d.get("email") or d.get("phone"))
                 u, st = accounts.password_login(svc, ident, d.get("password", ""), self._ip())

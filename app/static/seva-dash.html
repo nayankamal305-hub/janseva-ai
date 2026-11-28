@@ -49,6 +49,7 @@
   <nav class="tabs" role="tablist" aria-label="Dashboard sections">
    <button class="tab on" data-tab="over" role="tab" data-t="tab.over">Overview</button>
    <button class="tab" data-tab="apps" role="tab" data-t="tab.apps">Applications</button>
+   <button class="tab" data-tab="docs" role="tab" data-t="tab.docs">Documents</button>
    <button class="tab" data-tab="schemes" role="tab" data-t="tab.schemes">Scheme finder</button>
    <button class="tab" data-tab="prof" role="tab" data-t="tab.prof">Profile</button>
   </nav>
@@ -77,6 +78,19 @@
    </div>
    <div id="appList"></div>
    <div id="appDetail" class="hide"></div>
+  </div>
+
+  <div id="tab-docs" class="tpane hide">
+   <h2 data-t="docs.title">Your documents</h2>
+   <p class="mut" data-t="docs.help">Documents stay private in your Seva Setu vault. Only you can open them - operators see one only after you give consent for that application.</p>
+   <div class="card">
+    <label class="fld"><span data-t="docs.kind">Document type</span><select id="docKind"></select></label>
+    <label class="fld"><span data-t="docs.pick">Pick a file (JPG, PNG or PDF, max 5 MB)</span>
+     <input id="docFile" type="file" accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf"></label>
+    <button class="btn btn-saffron" id="docUp" data-t="docs.upload">Upload document</button>
+    <p id="dmsg" class="lmsg" role="status"></p>
+   </div>
+   <div id="docList"></div>
   </div>
 
   <div id="tab-schemes" class="tpane hide">

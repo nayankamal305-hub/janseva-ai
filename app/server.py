@@ -187,7 +187,24 @@ def make_handler(svc, admin_token, rate=120):
                 a = self._adm()
                 return self._json(200, svc.ingest_replies()) if a and a["role"] == "super_admin" else self._json(403, {"error": "super admin only"})
             if path == "/api/assistant": return self._json(200, assistant.answer(q.get("q", ""), q.get("lang", "en")))
+            if path == "/api/seva/catalog":
+                from . import seva
+                return self._json(200, seva.catalog(svc.db))
             u = self._user()
+            if path == "/api/seva/profile":
+                from . import seva
+                return self._json(200, seva.get_profile(svc.db, u["id"])) if u else self._json(401, {"error": "login"})
+            if path == "/api/seva/applications":
+                from . import seva
+                return self._json(200, {"items": seva.list_applications(svc.db, u["id"])}) if u else self._json(401, {"error": "login"})
+            if path.startswith("/api/seva/applications/"):
+                from . import seva
+                if not u: return self._json(401, {"error": "login"})
+                a = seva.get_application(svc.db, path.rsplit("/", 1)[-1], u["id"])
+                return self._json(200, a) if a else self._json(404, {"error": "not found"})
+            if path == "/api/seva/consents":
+                from . import seva
+                return self._json(200, {"items": seva.consents(svc.db, u["id"])}) if u else self._json(401, {"error": "login"})
             if path == "/api/complaints":
                 return self._json(200, svc.list_for(u["id"])) if u else self._json(401, {"error": "login"})
             if path.startswith("/api/complaints/"):
@@ -279,6 +296,23 @@ def make_handler(svc, admin_token, rate=120):
                 from . import walogin
                 return self._json(200, walogin.start(svc.db, os.environ)) if walogin.enabled(os.environ) else self._json(503, {"error": "WhatsApp login not configured"})
             d = self._body()
+            if path.startswith("/api/seva/"):
+                from . import seva
+                u = self._user()
+                if not u: return self._json(401, {"error": "login"})
+                if path == "/api/seva/profile":
+                    return self._json(200, seva.upsert_profile(svc.db, u["id"], d))
+                if path == "/api/seva/applications":
+                    r = seva.create_application(svc.db, u, d.get("category_id", ""), d.get("title", ""), d.get("service_id"))
+                    return self._json(200 if r.get("ok") else 422, r)
+                if path == "/api/seva/consents":
+                    app_id = None
+                    if d.get("application_ref"):
+                        a = seva.get_application(svc.db, d["application_ref"], u["id"])
+                        if not a: return self._json(404, {"error": "application not found"})
+                        app_id = a["id"]
+                    if not d.get("scope"): return self._json(422, {"error": "scope required"})
+                    return self._json(200, {"ok": True, "id": seva.record_consent(svc.db, u["id"], d["scope"], bool(d.get("granted")), app_id)})
             if path == "/api/auth/login":
                 ident = accounts.norm_ident(d.get("email") or d.get("phone"))
                 u, st = accounts.password_login(svc, ident, d.get("password", ""), self._ip())

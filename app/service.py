@@ -23,6 +23,8 @@ class Service:
         self.db = db or DB()
         self.env = dict(os.environ) if env is None else env
         self.sandbox_base = sandbox_base
+        from . import seva
+        seva.seed(self.db)
     # connectors are built per call so registry edits apply immediately
     def connectors(self):
         out = {}

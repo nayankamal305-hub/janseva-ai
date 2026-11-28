@@ -2,6 +2,8 @@
 
 **Live:** https://sevasetu-india.onrender.com (Render free tier - sleeps when idle, first load can take ~30s)
 
+**Hub (both sites):** https://seva-hub-ztp9.onrender.com · **JanSeva AI (classic complaint app):** https://janseva-india.onrender.com (branch `janseva-classic`)
+
 One citizen report, routed to the right official channels, tracked in one place. Full-stack Python app (stdlib only, SQLite), web UI, admin Control Center, connector framework, tests, Docker.
 
 > **Honest status.** This build has NO live government credentials. Nothing is sent to a real government system. Records are labelled `live`, `sandbox` or `guided`. Sandbox references come from a local mock server and are never official acknowledgements.

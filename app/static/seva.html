@@ -1,0 +1,149 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Seva Setu India</title>
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/static/brand/seva-logo.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="Seva Setu India - free multilingual citizen assistance: government schemes, certificates, applications and complaints in 8 languages. Not a government site.">
+<meta property="og:type" content="website"><meta property="og:title" content="Seva Setu India"><meta property="og:description" content="सरकारी सेवाएं, अब आपके अपने हाथ में।"><meta property="og:image" content="__BASE__/static/brand/og.png">
+<meta name="theme-color" content="#0b2a6b"><link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/seva.css?v=1">
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="notgov" data-i18n="notGov">Seva Setu India is a private assistance service, not a government website.</div>
+<header class="sh" id="sh">
+ <a class="brand" href="/" aria-label="Seva Setu India home">
+  <svg class="blogo" viewBox="0 0 48 48" role="img" aria-label="Seva Setu logo"><rect x="2" y="2" width="44" height="44" rx="12" fill="#0b2a6b"/><path d="M10 30c4-8 10-12 14-12s10 4 14 12" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><path d="M12 34h24" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/><circle cx="24" cy="14" r="3.4" fill="#fff"/></svg>
+  <span class="bname" id="brandName">Seva Setu India</span></a>
+ <nav class="hnav" aria-label="Main">
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#schemes" data-i18n="nav.schemes">Schemes</a>
+  <a href="/app" data-i18n="nav.track">Track</a>
+  <a href="/p/help" data-i18n="nav.help">Help</a>
+ </nav>
+ <div class="hact">
+  <select id="langSel" aria-label="Language"></select>
+  <div class="a11y">
+   <button id="tFont" class="a11yb" aria-pressed="false" title="Larger text">A+</button>
+   <button id="tContrast" class="a11yb" aria-pressed="false" title="High contrast">◐</button>
+   <button id="tMotion" class="a11yb" aria-pressed="false" title="Reduce motion">▶</button>
+  </div>
+  <a class="btn btn-ghost" href="/app" data-i18n="nav.login">Login</a>
+ </div>
+</header>
+<main id="main">
+<section class="hero">
+ <div class="hero-in">
+  <p class="kicker reveal" data-i18n="hero.kicker">Free · For every citizen · 8 languages</p>
+  <h1 class="reveal" data-i18n="hero.h1">सरकारी सेवाएं, अब आपके अपने हाथ में।</h1>
+  <p class="sub reveal" data-i18n="hero.sub">Schemes, certificates, applications and complaints - in one place, in your language.</p>
+  <form class="search reveal" id="searchForm" role="search" aria-label="Search">
+   <svg class="sic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+   <input id="q" type="search" autocomplete="off" data-i18n-ph="hero.searchPh" placeholder="आपको किस काम में मदद चाहिए?" aria-label="Search a service or scheme">
+   <button type="button" class="mic" id="micBtn" aria-label="Search by voice" title="Voice search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+   </button>
+   <button type="submit" class="btn btn-saffron" data-i18n="hero.searchBtn">Search</button>
+  </form>
+  <div id="sres" class="sres" role="listbox" aria-label="Search results" hidden></div>
+  <div class="ctas reveal">
+   <a class="btn btn-green" id="waHero" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="wic" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 9.5c.5 2.5 3 5 5.5 5.5l1-1.5-2-1.5-1 .5c-.8-.5-1.5-1.2-2-2l.5-1L9.5 7.5 9 9.5z" fill="currentColor"/></svg><span data-i18n="hero.wa">Get help on WhatsApp</span></a>
+   <a class="btn btn-navy" href="#schemes" data-i18n="hero.scheme">Find a government scheme</a>
+   <a class="btn btn-ghost2" href="/app" data-i18n="hero.track">Track application</a>
+  </div>
+  <div class="chips reveal">
+   <span class="chip" data-i18n="chip.free">100% free</span>
+   <span class="chip" data-i18n="chip.consent">Consent first</span>
+   <span class="chip" data-i18n="chip.notgov">Not a government site</span>
+  </div>
+ </div>
+</section>
+<section class="sec" id="services">
+ <h2 class="reveal" data-i18n="sec.popular">Popular services</h2>
+ <p class="ssub reveal" data-i18n="sec.popularSub">The most used services, with direct official links.</p>
+ <div class="pop" id="pop"></div>
+</section>
+<section class="sec" id="cats">
+ <h2 class="reveal" data-i18n="sec.categories">Browse by category</h2>
+ <p class="ssub reveal" data-i18n="sec.categoriesSub">25 service categories, each with eligibility, documents and the official portal.</p>
+ <div class="grid" id="catGrid"></div>
+</section>
+<section class="sec alt" id="schemes">
+ <h2 class="reveal" data-i18n="nav.schemes">Schemes</h2>
+ <div class="card scheme-card reveal">
+  <div class="sc-ic" aria-hidden="true">🎯</div>
+  <div>
+   <h3 data-i18n="hero.scheme">Find a government scheme</h3>
+   <p class="mut" data-i18n="sec.categoriesSub"></p>
+   <p class="sm mut">AI scheme finder (eligibility questions in your language) arrives in Phase 3. Until then, search the official MyScheme portal:</p>
+   <a class="btn btn-saffron" id="myschemeBtn" href="https://myscheme.gov.in" target="_blank" rel="noopener" data-i18n="schemesCta">Open on MyScheme</a>
+   <span class="vtag">myscheme.gov.in · <span data-i18n="verifiedOn">Verified</span> 2026-11-28</span>
+  </div>
+ </div>
+</section>
+<section class="sec" id="how">
+ <h2 class="reveal" data-i18n="sec.how">How it works in three simple steps</h2>
+ <div class="steps3">
+  <div class="step3 reveal"><div class="sn">1</div><h3 data-i18n="how1t">1. Tell us your need</h3><p data-i18n="how1d">Pick your language and say or type what you need.</p></div>
+  <div class="step3 reveal"><div class="sn">2</div><h3 data-i18n="how2t">2. Get the right path</h3><p data-i18n="how2d">We explain eligibility, documents and the official portal in simple words.</p></div>
+  <div class="step3 reveal"><div class="sn">3</div><h3 data-i18n="how3t">3. Move forward</h3><p data-i18n="how3d">Apply yourself, or take help from a verified assistant on WhatsApp.</p></div>
+ </div>
+</section>
+<section class="sec alt" id="docs">
+ <h2 class="reveal" data-i18n="sec.docs">Document assistance</h2>
+ <p class="ssub reveal" data-i18n="docsSub">Document checklists for every service, kept safely.</p>
+ <div class="feat3">
+  <div class="feat reveal"><span aria-hidden="true">📋</span><p data-i18n="docs1">Full document checklist for each service</p></div>
+  <div class="feat reveal"><span aria-hidden="true">🔒</span><p data-i18n="docs2">Secure upload, shared only with your consent</p></div>
+  <div class="feat reveal"><span aria-hidden="true">🪪</span><p data-i18n="docs3">DigiLocker linking planned after official approval</p></div>
+ </div>
+</section>
+<section class="sec" id="ops">
+ <h2 class="reveal" data-i18n="sec.ops">Verified service operators</h2>
+ <p class="ssub reveal" data-i18n="opsSub">Cyber cafes and assistants who can see your work only after verification.</p>
+ <div class="feat3">
+  <div class="feat reveal"><span aria-hidden="true">✅</span><p data-i18n="ops1">Every operator's verification on record</p></div>
+  <div class="feat reveal"><span aria-hidden="true">🙈</span><p data-i18n="ops2">Cannot see documents without your consent</p></div>
+  <div class="feat reveal"><span aria-hidden="true">🏷️</span><p data-i18n="ops3">Assistance fees are never hidden</p></div>
+ </div>
+ <p class="note sm mut" data-i18n="opsNote">Operator portal arrives in Phase 5.</p>
+</section>
+<section class="sec alt" id="faq">
+ <h2 class="reveal" data-i18n="sec.faq">Frequently asked questions</h2>
+ <div class="faqs">
+  <details class="faq reveal"><summary data-i18n="faq1q">Is this a government website?</summary><p data-i18n="faq1a"></p></details>
+  <details class="faq reveal"><summary data-i18n="faq2q">Is it really free?</summary><p data-i18n="faq2a"></p></details>
+  <details class="faq reveal"><summary data-i18n="faq3q">Do you submit applications for me?</summary><p data-i18n="faq3a"></p></details>
+  <details class="faq reveal"><summary data-i18n="faq4q">Where do my documents stay?</summary><p data-i18n="faq4a"></p></details>
+  <details class="faq reveal"><summary data-i18n="faq5q">Which languages are supported?</summary><p data-i18n="faq5a"></p></details>
+ </div>
+</section>
+</main>
+<footer class="foot">
+ <div class="fgrid">
+  <div><h4 data-i18n="foot.about">Seva Setu India</h4><p class="sm mut" data-i18n="foot.aboutText">A free, independent citizen assistance platform. Not a government department.</p>
+   <p class="sm mut" data-i18n="foot.verify">Information verified with source and date.</p></div>
+  <div><h4 data-i18n="foot.links">Important links</h4>
+   <a href="/p/privacy" data-i18n="foot.privacy">Privacy policy</a>
+   <a href="/p/contact" data-i18n="foot.contact">Contact</a>
+   <a href="/p/grievance" data-i18n="foot.grievance">Grievance help</a>
+   <a href="/p/disclaimer" data-i18n="foot.disclaimer">Disclaimer</a>
+   <a href="/p/help" data-i18n="foot.help">Help &amp; FAQ</a></div>
+ </div>
+ <p class="fmade sm mut" data-i18n="foot.made">Made for the citizens of India</p>
+ <p class="lnote xs mut" id="langNote" data-i18n="langNote" hidden></p>
+</footer>
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+ <div class="mback" data-close></div>
+ <div class="mbox">
+  <button class="mx" data-close aria-label="Close">✕</button>
+  <div class="mic2" id="mIc" aria-hidden="true"></div>
+  <h3 id="mTitle"></h3>
+  <p class="mut" id="mBlurb"></p>
+  <div class="mon" id="mOn"></div>
+  <h4 id="mDocsH">📋</h4><ul id="mDocs"></ul>
+  <div class="mlinks" id="mLinks"></div>
+  <p class="vtag" id="mVer"></p>
+ </div>
+</div>
+<script src="/static/seva-i18n.js?v=1"></script>
+<script src="/static/seva-data.js?v=1"></script>
+<script src="/static/seva.js?v=1"></script>
+</body></html>

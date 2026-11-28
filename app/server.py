@@ -58,14 +58,17 @@ def make_handler(svc, admin_token, rate=120):
                 self.send_response(301); self.send_header("Location", rt + self.path); self.end_headers(); return
             if self._limited(): return self._json(429, {"error": "rate limit"})
             path = urllib.parse.urlparse(self.path).path; q = self._q()
-            if path in ("/", "/index.html"):
+            if path in ("/", "/index.html", "/app", "/app/", "/app/index.html"):
                 base = os.environ.get("PUBLIC_URL", "").rstrip("/") or ("%s://%s" % ((self.headers.get("X-Forwarded-Proto") or "http").split(",")[0].strip(), self.headers.get("Host") or "localhost"))
-                return self._send(200, open(os.path.join(STATIC, "index.html"), "rb").read().replace(b"__BASE__", base.encode()), "text/html; charset=utf-8")
+                fn = "seva.html" if path in ("/", "/index.html") else "index.html"
+                return self._send(200, open(os.path.join(STATIC, fn), "rb").read().replace(b"__BASE__", base.encode()), "text/html; charset=utf-8")
+            if path in ("/p/privacy", "/p/contact", "/p/grievance", "/p/disclaimer", "/p/help", "/p/", "/p"):
+                return self._send(200, open(os.path.join(STATIC, "seva-info.html"), "rb").read(), "text/html; charset=utf-8")
             if path in ("/favicon.ico", "/apple-touch-icon.png", "/apple-touch-icon-precomposed.png"):
                 fn = "favicon.ico" if path == "/favicon.ico" else "apple-touch-icon.png"
                 return self._send(200, open(os.path.join(STATIC, "brand", fn), "rb").read(), "image/x-icon" if fn.endswith("ico") else "image/png", {"Cache-Control": "public, max-age=86400"})
-            if path == "/manifest.json": return self._send(200, json.dumps({"name": "JANSEVA AI", "short_name": "JANSEVA", "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": [{"src": "/static/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, "const C='jansevaai-v43';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
+            if path == "/manifest.json": return self._send(200, json.dumps({"name": os.environ.get("SEVA_BRAND_NAME", "Seva Setu India"), "short_name": os.environ.get("SEVA_SHORT_NAME", "Seva Setu"), "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": [{"src": "/static/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}).encode(), "application/manifest+json")
+            if path == "/sw.js": return self._send(200, "const C='jansevaai-v44';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now(), "db": "postgres" if getattr(svc.db, "pg", False) else "sqlite", "photo_storage": storage.from_env(os.environ, UPLOADS).kind})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
@@ -93,7 +96,9 @@ def make_handler(svc, admin_token, rate=120):
                 return self._json(200, walogin.poll(svc, q.get("id", ""), q.get("poll", ""))) if walogin.enabled(os.environ) else self._json(503, {"error": "WhatsApp login not configured"})
             if path == "/api/config": 
                 from . import walogin, mailer
-                return self._json(200, {"whatsapp_login": walogin.enabled(os.environ), "email_login": mailer.configured() or dev_otp})
+                return self._json(200, {"whatsapp_login": walogin.enabled(os.environ), "email_login": mailer.configured() or dev_otp,
+                                        "brand_name": os.environ.get("SEVA_BRAND_NAME", "Seva Setu India"),
+                                        "wa_number": os.environ.get("SEVA_WA_NUMBER", "917033167496")})
             if path == "/api/directory/nodal":
                 from .service import load_data
                 k = q.get("scope", "state"); rows = load_data("authorities_central_nodal.json" if k == "central" else "authorities_state_nodal.json")

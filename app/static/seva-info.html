@@ -1,0 +1,47 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Seva Setu India</title>
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/static/brand/seva-logo.svg">
+<meta name="theme-color" content="#0b2a6b">
+<link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/seva.css?v=1">
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="notgov">Seva Setu India is a private assistance service, not a government website.</div>
+<header class="sh">
+ <a class="brand" href="/" aria-label="Seva Setu India home">
+  <svg class="blogo" viewBox="0 0 48 48" role="img" aria-label="Seva Setu logo"><rect x="2" y="2" width="44" height="44" rx="12" fill="#0b2a6b"/><path d="M10 30c4-8 10-12 14-12s10 4 14 12" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><path d="M12 34h24" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/><circle cx="24" cy="14" r="3.4" fill="#fff"/></svg>
+  <span class="bname">Seva Setu India</span></a>
+ <div class="hact"><select id="langSel" aria-label="Language"></select></div>
+</header>
+<main id="main"><div class="pg">
+ <a class="back" href="/" id="backLink">← Home</a>
+ <h1 id="pgT"></h1>
+ <div id="pgB"></div>
+ <p class="lnote sm" id="langNote" hidden>Translations are AI-prepared; native-speaker review pending. This page is currently available in Hindi and English.</p>
+</div></main>
+<script src="/static/seva-i18n.js?v=1"></script>
+<script src="/static/seva-pages.js?v=1"></script>
+<script>
+(function(){
+ var slug=(location.pathname.split("/").pop()||"help").toLowerCase();
+ var P=window.SEVA_PAGES[slug]||window.SEVA_PAGES.help;
+ var lang="hi"; try{lang=localStorage.getItem("seva-lang")||"hi"}catch(e){}
+ if(!window.SEVA_I18N[lang])lang="hi";
+ var body=P.body[lang]||P.body.en;
+ document.getElementById("pgT").textContent=P.t[lang]||P.t.en;
+ document.getElementById("pgB").innerHTML=body;
+ document.documentElement.lang=(P.body[lang]?lang:"en");
+ if(!P.body[lang])document.getElementById("langNote").hidden=false;
+ document.title=(P.t[lang]||P.t.en)+" - Seva Setu India";
+ var s=document.getElementById("langSel");
+ (window.SEVA_LANGS||[]).forEach(function(L){var o=document.createElement("option");o.value=L.c;o.textContent=L.n;s.appendChild(o)});
+ s.value=lang;
+ s.addEventListener("change",function(){try{localStorage.setItem("seva-lang",s.value)}catch(e){}location.reload()});
+ var nb=(window.SEVA_I18N[lang]||window.SEVA_I18N.en)["nav.home"];
+ if(nb)document.getElementById("backLink").textContent="← "+nb;
+ // a11y prefs carry over from homepage
+ try{if(localStorage.getItem("seva-bigtext")==="1")document.documentElement.classList.add("bigtext");
+ if(localStorage.getItem("seva-contrast")==="1")document.documentElement.classList.add("hc");
+ if(localStorage.getItem("seva-motion")==="1")document.documentElement.classList.add("lomotion")}catch(e){}
+})();
+</script>
+</body></html>

@@ -38,7 +38,7 @@ class NoSend(unittest.TestCase):
             self.assertFalse(self.svc.db.all("SELECT * FROM external_records WHERE external_ref IS NOT NULL AND mode='live'"))
     def test_ui_wording_makes_no_unverified_promises(self):
         txt = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read() + open(os.path.join(ROOT, "app.js"), encoding="utf-8").read()
-        for bad in ["reminders at 7", "queued for the JANSEVA", "Sent by JANSEVA", "Submit through matching official channels", "Sent with consent", "Sends it by official email", "emailed only with your consent", "Done. JANSEVA ID", "posted when slot is free", "Tag concerned authorities on X"]:
+        for bad in ["reminders at 7", "queued for the Seva Setu", "Sent by Seva Setu", "Submit through matching official channels", "Sent with consent", "Sends it by official email", "emailed only with your consent", "Done. Seva Setu ID", "posted when slot is free", "Tag concerned authorities on X"]:
             self.assertNotIn(bad, txt, bad)
-        self.assertIn("Saved in JANSEVA", txt); self.assertIn("you send or file it yourself", txt); self.assertIn("Registered only with a real authority reference", txt)
+        self.assertIn("Saved in Seva Setu", txt); self.assertIn("you send or file it yourself", txt); self.assertIn("Registered only with a real authority reference", txt)
 if __name__ == "__main__": unittest.main()

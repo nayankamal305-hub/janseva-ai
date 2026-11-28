@@ -14,9 +14,9 @@ def provider(env=os.environ):
 def configured(env=os.environ): return provider(env) is not None
 def from_address(env=os.environ): return (env.get("MAIL_FROM") or env.get("SMTP_FROM") or "")
 def _split(frm):
-    m = re.match(r"^\s*(.*?)\s*<([^>]+)>\s*$", frm); return (m.group(1).strip('" '), m.group(2)) if m else ("JANSEVA AI", frm.strip())
+    m = re.match(r"^\s*(.*?)\s*<([^>]+)>\s*$", frm); return (m.group(1).strip('" '), m.group(2)) if m else ("Seva Setu India", frm.strip())
 def _post(url, headers, body):
-    r = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "Accept": "application/json", "User-Agent": "JANSEVA-AI", **headers})
+    r = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "Accept": "application/json", "User-Agent": "Seva Setu-AI", **headers})
     try:
         with urllib.request.urlopen(r, timeout=20) as x: return {"sent": 200 <= x.status < 300}
     except urllib.error.HTTPError as e: return {"sent": False, "reason": "%s API error %s" % (url.split("/")[2], e.code)}
@@ -41,7 +41,7 @@ def send(to, subject, body, reply_to=None, env=os.environ, attachments=None, fro
         return _post("https://api.resend.com/emails", {"Authorization": "Bearer " + env["RESEND_API_KEY"]}, b)
     m = EmailMessage(); m["From"] = ("%s <%s>" % (from_name, addr)) if from_name else from_address(env); m["To"] = to; m["Subject"] = subject
     if reply_to: m["Reply-To"] = reply_to
-    m["X-Mailer"] = "JANSEVA AI"; m.set_content(body)
+    m["X-Mailer"] = "Seva Setu India"; m.set_content(body)
     for f, d, mt in (attachments or []): m.add_attachment(d, maintype=mt.split("/")[0], subtype=mt.split("/")[1], filename=f)
     try:
         port = int(env.get("SMTP_PORT", "587"))
@@ -61,7 +61,7 @@ def tracking_code(subject, to_header="", body=""):
     return None
 
 def poll_inbox(env=os.environ, limit=30):
-    """Read-only-ish IMAP poll of the JANSEVA reply mailbox. Returns parsed replies; caller records them as timeline events."""
+    """Read-only-ish IMAP poll of the Seva Setu reply mailbox. Returns parsed replies; caller records them as timeline events."""
     iu = env.get("IMAP_USER") or env.get("SMTP_USER"); ip = env.get("IMAP_PASS") or env.get("SMTP_PASS")
     if not (env.get("IMAP_HOST") and iu and ip): return []
     out = []

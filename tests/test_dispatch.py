@@ -31,7 +31,7 @@ class D(unittest.TestCase):
             pl = dispatch.plan(self.svc, cid); self.assertTrue(pl["ok"])
             r = dispatch.send_due(self.svc, cid)
             self.assertGreaterEqual(r["sent"], 1); self.assertLessEqual(r["sent"], dispatch.MAX_INITIAL)
-            body = p.call_args[0][2]; self.assertIn("Asha via JANSEVA AI", body["sender"]["name"]); self.assertIn("JS-", body["subject"])
+            body = p.call_args[0][2]; self.assertIn("Asha via Seva Setu India", body["sender"]["name"]); self.assertIn("JS-", body["subject"])
             n = r["sent"]; self.assertEqual(dispatch.send_due(self.svc, cid)["sent"], 0)  # no duplicates, later levels not yet due
         self.svc.db.run("UPDATE complaints SET status='citizen_verified_resolved' WHERE id=?", (cid,))
         self.svc.db.run("UPDATE dispatches SET due_at='2000-01-01' WHERE status='scheduled'")

@@ -1,15 +1,15 @@
-# JANSEVA v2.0 self-audit against Kamal's requirements (2026-11-27)
+# Seva Setu v2.0 self-audit against Kamal's requirements (2026-11-27)
 DONE = built and tested in code. PARTIAL = built, with a stated limit. MISSING = not built. "Needs keys" = code done, runs only once env keys exist.
 
 | # | Requirement | Status | Note |
 |---|---|---|---|
 | 1 | Complaint reaches every accountable authority | PARTIAL | Email ladder L1 guided body, L2 state PG officer (all 36 states/UTs tested), L3 central ministry PG officer, L4 MP (typed constituency). Needs keys (Brevo). No MLA/collector/dept-head emails exist officially. |
 | 2 | Email with photos, user's name, reply-to, tracking ID | DONE (needs keys) | Mock-tested; not live-tested with Brevo. |
-| 3 | Reminders + escalation ladder | NOT SENDING | 7/15 day timers are configured and rows queued, but JANSEVA sends no email (citizen sends from own mail). Reminders are not promised in the UI. |
+| 3 | Reminders + escalation ladder | NOT SENDING | 7/15 day timers are configured and rows queued, but Seva Setu sends no email (citizen sends from own mail). Reminders are not promised in the UI. |
 | 4 | Private companies via official grievance email | PARTIAL | 6 companies with published email. Zomato, Ola, PhonePe, Paytm, MakeMyTrip, IRCTC: none found. |
 | 5 | X tag with consent, official handles only | PARTIAL | Queue, poster API, caps, spacing, validation done. Poster not run by me; X automation-rule suspension risk. 866 handles; coverage uneven (see docs/COVERAGE.md). No MP/MLA handles from official data. |
 | 6 | Post-on-X fallback | DONE | |
-| 7 | JANSEVA Rating | DONE | MPs, ministries, state cells. MLAs/collectors not listed (no official dataset). |
+| 7 | Seva Setu Rating | DONE | MPs, ministries, state cells. MLAs/collectors not listed (no official dataset). |
 | 8 | CPGRAMS-like umbrella flow | PARTIAL | Guided filing with copy-text + reference + citizen-reported status. Auto login/fill NOT built (CAPTCHA/OTP, unmapped selectors). |
 | 9 | Email OTP login, WhatsApp login | DONE (needs keys) | |
 | 10 | Full India data, all states/UTs | PARTIAL | IGOD 6,049 entries, 784 districts, 36/36 states have PG officer; handle crawl reached ~47% of 4,559 official sites. Rajasthan, Assam, Mizoram, Tripura, Gujarat, AP, Odisha, WB, Karnataka low (geo-block/WAF/timeouts). Archive-snapshot pass started, NOT finished (archive rate-limits). |
@@ -134,4 +134,4 @@ submit no longer reports a saved complaint as failed: when routing needs more in
 aiConfirm kept the AI category before clearing it (was posting category:null to /confirm); confirm_category rejects null/empty/unknown; /api/directory/constituencies import fix.
 
 ## v3.21: wording matches verified behaviour
-Status vocabulary: Saved in JANSEVA -> Ready to send / open official portal -> Sent by you (self-reported) / Filed by you (number typed by you) -> Registered only with a real authority reference. UI no longer promises official email/portal/X sending or 7/15-day reminders. X posting is off unless JANSEVA_X_AUTOPOST=1. Acceptance: tests/test_nosend.py (all consents ticked, no email sent, no X queued, nothing registered, wording scan).
+Status vocabulary: Saved in Seva Setu -> Ready to send / open official portal -> Sent by you (self-reported) / Filed by you (number typed by you) -> Registered only with a real authority reference. UI no longer promises official email/portal/X sending or 7/15-day reminders. X posting is off unless JANSEVA_X_AUTOPOST=1. Acceptance: tests/test_nosend.py (all consents ticked, no email sent, no X queued, nothing registered, wording scan).

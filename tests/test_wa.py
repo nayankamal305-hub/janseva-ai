@@ -14,7 +14,7 @@ class WA(unittest.TestCase):
         try:
             s = call("POST", "/api/wa/start", {}); self.assertIn("wa.me/919999900000", s["link"])
             self.assertEqual(call("GET", "/api/wa/poll?id=%s&poll=%s" % (s["id"], s["poll"]))["status"], "waiting")
-            payload = json.dumps({"entry": [{"changes": [{"value": {"messages": [{"type": "text", "from": "919876543210", "text": {"body": "JANSEVA LOGIN " + s["code"]}}]}}]}]}).encode()
+            payload = json.dumps({"entry": [{"changes": [{"value": {"messages": [{"type": "text", "from": "919876543210", "text": {"body": "Seva Setu LOGIN " + s["code"]}}]}}]}]}).encode()
             self.assertEqual(call("POST", "/api/wa/webhook", raw=payload, hdr={"X-Hub-Signature-256": "sha256=bad"}).get("http"), 403)
             self.assertEqual(call("GET", "/api/wa/poll?id=%s&poll=%s" % (s["id"], s["poll"]))["status"], "waiting")
             sig = "sha256=" + hmac.new(b"sec", payload, hashlib.sha256).hexdigest()

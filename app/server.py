@@ -66,12 +66,17 @@ def make_handler(svc, admin_token, rate=120):
                 return self._send(200, open(os.path.join(STATIC, "seva-dash.html"), "rb").read(), "text/html; charset=utf-8")
             if path in ("/op", "/op/"):
                 return self._send(200, open(os.path.join(STATIC, "seva-op.html"), "rb").read(), "text/html; charset=utf-8")
+            if path in ("/admin", "/admin/"):
+                return self._send(200, open(os.path.join(STATIC, "seva-admin.html"), "rb").read(), "text/html; charset=utf-8")
             if path in ("/p/privacy", "/p/contact", "/p/grievance", "/p/disclaimer", "/p/help", "/p/", "/p"):
                 return self._send(200, open(os.path.join(STATIC, "seva-info.html"), "rb").read(), "text/html; charset=utf-8")
             if path in ("/favicon.ico", "/apple-touch-icon.png", "/apple-touch-icon-precomposed.png"):
                 fn = "favicon.ico" if path == "/favicon.ico" else "apple-touch-icon.png"
                 return self._send(200, open(os.path.join(STATIC, "brand", fn), "rb").read(), "image/x-icon" if fn.endswith("ico") else "image/png", {"Cache-Control": "public, max-age=86400"})
-            if path == "/manifest.json": return self._send(200, json.dumps({"name": os.environ.get("SEVA_BRAND_NAME", "Seva Setu India"), "short_name": os.environ.get("SEVA_SHORT_NAME", "Seva Setu"), "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": [{"src": "/static/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}).encode(), "application/manifest+json")
+            if path == "/manifest.json":
+                from . import sevadmin
+                _cfg = sevadmin.public_config(svc.db, {})
+                return self._send(200, json.dumps({"name": _cfg["brand_name"], "short_name": _cfg["brand_short"], "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": [{"src": "/static/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}).encode(), "application/manifest+json")
             if path == "/sw.js": return self._send(200, "const C='jansevaai-v45';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now(), "db": "postgres" if getattr(svc.db, "pg", False) else "sqlite", "photo_storage": storage.from_env(os.environ, UPLOADS).kind})
             if path.startswith("/static/"):
@@ -92,7 +97,7 @@ def make_handler(svc, admin_token, rate=120):
                 if got: return self._send(200, got[0], got[1], {"Cache-Control": "public, max-age=86400"})
                 return self._json(404, {"error": "not found"})
             if path == "/api/platforms": return self._json(200, svc.db.platforms())
-            if path == "/api/emergency": return self._json(200, {"number": "112", "note": "Call 112 for immediate danger. JANSEVA is a complaint tool, not an emergency dispatch service.", "source": "India national emergency number"})
+            if path == "/api/emergency": return self._json(200, {"number": "112", "note": "Call 112 for immediate danger. Seva Setu is a complaint tool, not an emergency dispatch service.", "source": "India national emergency number"})
             if path == "/api/wa/webhook":
                 from . import walogin
                 ch = walogin.verify_challenge(os.environ, q) if walogin.enabled(os.environ) else None
@@ -101,10 +106,27 @@ def make_handler(svc, admin_token, rate=120):
                 from . import walogin
                 return self._json(200, walogin.poll(svc, q.get("id", ""), q.get("poll", ""))) if walogin.enabled(os.environ) else self._json(503, {"error": "WhatsApp login not configured"})
             if path == "/api/config": 
-                from . import walogin, mailer
+                from . import walogin, mailer, sevadmin
+                cfg = sevadmin.public_config(svc.db, {})
                 return self._json(200, {"whatsapp_login": walogin.enabled(os.environ), "email_login": mailer.configured() or dev_otp,
-                                        "brand_name": os.environ.get("SEVA_BRAND_NAME", "Seva Setu India"),
-                                        "wa_number": os.environ.get("SEVA_WA_NUMBER", "917033167496")})
+                                        "brand_name": cfg["brand_name"], "brand_short": cfg["brand_short"],
+                                        "wa_number": cfg["wa_number"], "whatsapp_status": cfg["whatsapp_status"]})
+            if path.startswith("/api/admin/"):
+                _new = path[len("/api/admin/"):] in ("overview", "citizens", "staff", "catalog", "translations", "audit", "settings")
+                if _new:
+                    from . import sevadmin
+                    a = self._adm()
+                    if not (a and roles.can(a["role"], "seva.admin")): return self._json(403, {"error": "super admin only"})
+                    if path == "/api/admin/overview": return self._json(200, sevadmin.overview(svc.db))
+                    if path == "/api/admin/citizens": return self._json(200, {"items": sevadmin.list_citizens(svc.db, q.get("q", ""))})
+                    if path == "/api/admin/staff": return self._json(200, {"items": sevadmin.list_staff(svc.db), "roles": sevadmin.EDITABLE_ROLES})
+                    if path == "/api/admin/catalog": return self._json(200, sevadmin.catalog_full(svc.db))
+                    if path == "/api/admin/translations": return self._json(200, {"items": sevadmin.list_translations(svc.db)})
+                    if path == "/api/admin/audit": return self._json(200, {"items": sevadmin.audit_recent(svc.db, q.get("limit", "100"))})
+                    if path == "/api/admin/settings":
+                        s = sevadmin.get_settings(svc.db)
+                        s["whatsapp_cloud_configured"] = bool(os.environ.get("WHATSAPP_TOKEN") and os.environ.get("WHATSAPP_PHONE_ID"))
+                        return self._json(200, s)
             if path == "/api/directory/nodal":
                 from .service import load_data
                 k = q.get("scope", "state"); rows = load_data("authorities_central_nodal.json" if k == "central" else "authorities_state_nodal.json")
@@ -186,7 +208,7 @@ def make_handler(svc, admin_token, rate=120):
                 return self._json(200, public.monthly_report(svc.db, m))
             if path == "/api/portal-guide":
                 from . import filing
-                return self._json(200, {"items": filing.TYPE_GUIDE, "note": "Official sites need your own login/OTP. JANSEVA only prepares the text."})
+                return self._json(200, {"items": filing.TYPE_GUIDE, "note": "Official sites need your own login/OTP. Seva Setu only prepares the text."})
             if path == "/api/authorities": return self._json(200, svc.db.all("SELECT * FROM authorities WHERE verified=1"))
             if path == "/api/representatives": return self._json(200, svc.db.all("SELECT id,name,office,constituency,state,public_contact,profile_url,last_verified FROM representatives WHERE verified=1"))
             if path == "/api/admin/inbound-poll":
@@ -407,6 +429,36 @@ def make_handler(svc, admin_token, rate=120):
                 u = svc.register(d["phone"], d.get("name", "")); return self._json(200, {"token": u["token"], "name": u["name"]})
             if path == "/api/assistant": return self._json(200, assistant.answer(d.get("q", ""), d.get("lang", "en")))
             if path.startswith("/api/admin/"):
+                _sub = path[len("/api/admin/"):]
+                _new = _sub in ("staff", "catalog/category", "catalog/service", "catalog/scheme", "translations", "settings") or (_sub.startswith("staff/") and _sub.endswith("/disable")) or (_sub.startswith("citizens/") and _sub.endswith("/flag"))
+                if _new:
+                    from . import sevadmin
+                    a = self._adm()
+                    if not (a and roles.can(a["role"], "seva.admin")): return self._json(403, {"error": "super admin only"})
+                    if _sub == "staff":
+                        r = sevadmin.create_staff(svc.db, d.get("name"), d.get("role", ""), a, d.get("scope_state"), d.get("scope_city"), d.get("department"))
+                        return self._json(200 if r else 422, r or {"error": "name and valid role required"})
+                    if _sub.startswith("staff/"):
+                        r = sevadmin.disable_staff(svc.db, int(_sub.split("/")[1]), a)
+                        return self._json(200 if r else 422, r if r else {"error": "cannot disable (self, super admin, or unknown id)"})
+                    if _sub.startswith("citizens/"):
+                        r = sevadmin.flag_citizen(svc.db, int(_sub.split("/")[1]), d.get("flag", ""), d.get("reason", ""), a)
+                        return self._json(200 if r else 422, r if r else {"error": "unknown citizen or bad flag"})
+                    if _sub == "catalog/category":
+                        r = sevadmin.upsert_category(svc.db, d, a)
+                        return self._json(200 if r else 422, r or {"error": "id (slug) and name required"})
+                    if _sub == "catalog/service":
+                        r = sevadmin.upsert_service(svc.db, d, a)
+                        return self._json(200 if r else 422, r or {"error": "name and known category_id required"})
+                    if _sub == "catalog/scheme":
+                        r = sevadmin.upsert_scheme(svc.db, d, a)
+                        return self._json(200 if r else 422, r or {"error": "slug and name required"})
+                    if _sub == "translations":
+                        r = sevadmin.upsert_translation(svc.db, d, a)
+                        return self._json(200 if r else 422, r or {"error": "key, lang and text required"})
+                    if _sub == "settings":
+                        return self._json(200, {"saved": sevadmin.set_settings(svc.db, d, a)})
+            if path.startswith("/api/admin/"):
                 a = self._adm()
                 if not a: return self._json(403, {"error": "admin only"})
                 p = path[len("/api/admin/"):]
@@ -502,7 +554,7 @@ def main():
     if os.environ.get("JANSEVA_SEED_DEMO") == "1":
         from .seed import seed
         seed(svc)
-    print("JANSEVA AI on :%d  admin token: %s  swachhata mode: %s" % (port, ADMIN_TOKEN, svc.connectors()["swachhata"].mode()), flush=True)
+    print("Seva Setu India on :%d  admin token: %s  swachhata mode: %s" % (port, ADMIN_TOKEN, svc.connectors()["swachhata"].mode()), flush=True)
     if os.environ.get("JANSEVA_AUTO_DISPATCH", "1") == "1":
         import threading, time
         from . import dispatch

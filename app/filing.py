@@ -1,8 +1,8 @@
 """Citizen-side filing pack: an official-style complaint letter, compose links that open in the CITIZEN'S OWN mailbox, and guided handoffs to the
-official portals. Nothing here is auto-submitted to any government site and nothing is sent from JANSEVA's address.
+official portals. Nothing here is auto-submitted to any government site and nothing is sent from Seva Setu's address.
 Honest limits: a server cannot send as someone's own Gmail/Yahoo address (SPF/DKIM), so the citizen presses Send in their own mail app.
 CPGRAMS, Swachhata and Meri Panchayat have no public submit API and need the citizen's own login/OTP, so the citizen completes that step.
-Registration numbers entered by the citizen are stored as citizen-entered, not verified by JANSEVA."""
+Registration numbers entered by the citizen are stored as citizen-entered, not verified by Seva Setu."""
 import html, json, os, re
 from datetime import datetime, timezone, timedelta
 from urllib.parse import quote
@@ -53,7 +53,7 @@ def letter_text(c, u, target=None, base="", short=False):
         lines += [i["name"] or "(name)"] + (["Mobile: %s" % i["mobile"]] if i["mobile"] else []) + (["Email: %s" % i["email"]] if i["email"] else []) + (["Address: %s" % location_line(c)] if location_line(c) else [])
     else:
         lines += ["(Name and contact withheld by the citizen on this copy)"]
-    lines += ["", "Reference: %s (JANSEVA AI tracking ID; please quote it in your reply)" % c.get("code")]
+    lines += ["", "Reference: %s (Seva Setu India tracking ID; please quote it in your reply)" % c.get("code")]
     t = "\n".join(lines)
     return t if not short else t.replace("\n\n\n", "\n\n")
 
@@ -63,7 +63,7 @@ def letter_html(c, u, target=None, base=""):
     return ("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Complaint %s</title>"
             "<style>body{font:15px/1.6 Georgia,'Noto Serif',serif;max-width:760px;margin:24px auto;padding:0 18px;color:#111}h1{font:700 18px/1.3 system-ui,sans-serif;border-bottom:2px solid #0b2a6b;padding-bottom:8px;margin:0 0 16px}"
             "p{margin:0 0 14px}.bar{font:13px system-ui,sans-serif;background:#fff6e8;border:1px solid #f5c98a;border-radius:10px;padding:10px 12px;margin-bottom:16px}button{font:600 14px system-ui;padding:9px 16px;border-radius:10px;border:0;background:#0b2a6b;color:#fff;cursor:pointer}"
-            "@media print{.bar{display:none}body{margin:0}}</style></head><body><div class=\"bar\">This is a citizen's complaint letter prepared with JANSEVA AI (not a government site). Print it or Save as PDF and send it with the photo. "
+            "@media print{.bar{display:none}body{margin:0}}</style></head><body><div class=\"bar\">This is a citizen's complaint letter prepared with Seva Setu India (not a government site). Print it or Save as PDF and send it with the photo. "
             "<button onclick=\"window.print()\">Print / Save as PDF</button></div><h1>Public grievance: %s</h1>%s</body></html>") % (html.escape(c.get("code") or ""), html.escape(subject(c)), body)
 
 def compose_links(to, subj, body, cc=""):
@@ -145,7 +145,7 @@ def portals(svc, c, u, base=""):
 
 def pack(svc, c, u, base=""):
     return {"complaint": {"code": c["code"], "status": c["status"]}, "letter_subject": subject(c), "identity_shared": identity(c, u)["share"],
-            "email_note": "Opens in YOUR own email app or Gmail/Outlook, so it is sent from your own address. JANSEVA never sends complaint emails as you. Attach your photo if you can; the letter also links it.",
+            "email_note": "Opens in YOUR own email app or Gmail/Outlook, so it is sent from your own address. Seva Setu never sends complaint emails as you. Attach your photo if you can; the letter also links it.",
             "emails": email_options(svc, c, u, base), "send_all": send_all(email_options(svc, c, u, base), c, u, base), "mp_chosen": bool(c.get("constituency") and c.get("notify_representative")), "state": c.get("state"), "portals": portals(svc, c, u, base),
             "honesty": "Sending an email or filing on a portal is done by you. 'Sent by you' or a number you type here is NOT proof of government registration. Authority-marked and citizen-verified resolution stay separate."}
 
@@ -160,7 +160,7 @@ def mark(svc, c, channel, target, reference=None):
         svc.db.run("INSERT INTO filing_records(complaint_id,channel,target,reference,status,created_at) VALUES(?,?,?,?,?,?)", (c["id"], channel, target, ref, st, now()))
     if channel == "email": svc.db.run("UPDATE dispatches SET status='sent_by_citizen', sent_at=? WHERE complaint_id=? AND target_email=? AND status IN ('scheduled','failed')", (now(), c["id"], target))
     msg = ("You marked the complaint as emailed to %s from your own email (self-reported). Delivery or registration is not confirmed." % target) if channel == "email" else \
-          ("You entered %s as the %s registration number (citizen-entered, not verified by JANSEVA)." % (ref, target))
+          ("You entered %s as the %s registration number (citizen-entered, not verified by Seva Setu)." % (ref, target))
     svc.db.timeline(c["id"], "citizen", st, msg); svc.db.audit("user:%s" % c["user_id"], "filing_" + st, "%s %s" % (target, ref or ""))
     return {"ok": True, "status": st}
 

@@ -64,6 +64,6 @@ class Connector:
 def complaint_text(c, user_name=""):
     loc = ", ".join(x for x in [c.get("address"), c.get("city"), c.get("state"), c.get("pincode")] if x)
     return ("Subject: %s\n\nI wish to report the following public issue.\n\n%s\n\nLocation: %s\nGPS: %s, %s\n"
-            "Reported via JANSEVA AI, complaint %s.\nPhoto: %s\n\nKindly look into this and share the action taken.\n%s"
+            "Reported via Seva Setu India, complaint %s.\nPhoto: %s\n\nKindly look into this and share the action taken.\n%s"
             % (c.get("title") or c.get("category"), c.get("description"), loc, c.get("lat"), c.get("lon"),
                c.get("code"), c.get("photo_url") or "attached", user_name))

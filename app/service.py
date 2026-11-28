@@ -48,6 +48,7 @@ class Service:
         if not tok: return None
         u = self.db.one("SELECT * FROM users WHERE token=?", (tok,))
         if not u: return None
+        if self.db.one("SELECT 1 x FROM citizen_flags WHERE user_id=? AND flag='suspended'", (u["id"],)): return None
         from datetime import datetime, timedelta, timezone
         n = datetime.now(timezone.utc); exp = u.get("token_exp")
         if exp and datetime.fromisoformat(exp) < n: return None
@@ -110,7 +111,7 @@ class Service:
                 break
         self.db.audit("user:%s" % user["id"], "complaint_created", code)
         out = {"ok": True, "id": cid, "code": code, "category": cat, "status": status, "ai": an, "duplicate_group": grp, "duplicate_probability": prob, "similar_nearby": [x for x in similar if x["id"] != cid]}
-        if an["emergency"]: out["emergency_notice"] = "Immediate danger: call 112 now. JANSEVA is not an emergency dispatch service."
+        if an["emergency"]: out["emergency_notice"] = "Immediate danger: call 112 now. Seva Setu is not an emergency dispatch service."
         return out
 
     def confirm_category(self, cid, category, user_id):
@@ -246,7 +247,7 @@ class Service:
         return {"platform": p["id"], "status": res.status, "note": "notification only"}
 
     def email_authority(self, cid, to_email, authority_name, user):
-        """Send the citizen's consented complaint by email from the JANSEVA mailbox. Delivery is NOT registration: status stays 'sent_unacknowledged'."""
+        """Send the citizen's consented complaint by email from the Seva Setu mailbox. Delivery is NOT registration: status stays 'sent_unacknowledged'."""
         from . import mailer
         from .connectors.base import complaint_text
         c = self.db.one("SELECT * FROM complaints WHERE id=?", (cid,))
@@ -268,7 +269,7 @@ class Service:
         return {"ok": r["sent"], "status": st, "note": "delivery is not registration"}
 
     def ingest_replies(self):
-        """Parse replies from the JANSEVA mailbox. Records them in the timeline; NEVER auto-marks resolved."""
+        """Parse replies from the Seva Setu mailbox. Records them in the timeline; NEVER auto-marks resolved."""
         from . import mailer
         n = 0
         for m in mailer.poll_inbox(self.env):

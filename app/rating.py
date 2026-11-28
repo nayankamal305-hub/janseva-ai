@@ -1,4 +1,4 @@
-"""JANSEVA Rating: citizens rate how well PUBLIC OFFICES solve problems. Entities are public roles taken only from official datasets
+"""Seva Setu Rating: citizens rate how well PUBLIC OFFICES solve problems. Entities are public roles taken only from official datasets
 (sansad.in MPs, pgportal ministry / state nodal offices). No private data, no invented officials. MLAs are listed ONLY for states whose official portal list was parsed (see data/mla_coverage.json); other states are not listed (never guessed). Ratings are opinions of logged-in citizens, not official performance data."""
 import re, time
 from .service import load_data

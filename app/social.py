@@ -1,4 +1,4 @@
-"""Public tagging on X without paying for the X API: JANSEVA prepares the post and the CITIZEN publishes it from their own X account via an
+"""Public tagging on X without paying for the X API: Seva Setu prepares the post and the CITIZEN publishes it from their own X account via an
 intent link (free). Handles come only from links found on official sites (data/social_handles.json, each with the page it was found on).
 MP/MLA/collector handles are not available from official machine-readable sources and are never guessed."""
 import urllib.parse, re
@@ -35,9 +35,9 @@ def draft(svc, cid):
         if x["state"] and x["state"].lower() == st and ct and x["title"].strip().lower() == ct and x["type"] == "E042" and re.search(r"(dm|dc|collector|district|dist|admin)", x["handle"].lower()) and "police" not in x["handle"].lower(): add(x, "district administration (official site link)"); break
     loc = ", ".join(x for x in (c["city"], c["state"]) if x)
     body = "%s at %s. Unresolved. Tracking %s" % ((c["title"] or "Public issue")[:110], loc, c["code"])
-    text = (body + " " + " ".join("@" + t for t in tags) + " #JANSEVA").strip()[:280]
+    text = (body + " " + " ".join("@" + t for t in tags) + " #Seva Setu").strip()[:280]
     return {"ok": True, "text": text, "tags": tags, "tag_sources": src, "intent_url": "https://twitter.com/intent/tweet?text=" + urllib.parse.quote(text),
-            "note": "Review before posting. You post it from your own X account; JANSEVA does not post for you. Handles are linked on official sites and may belong to a related office. MP/MLA/collector handles are not available from official data and are not guessed."}
+            "note": "Review before posting. You post it from your own X account; Seva Setu does not post for you. Handles are linked on official sites and may belong to a related office. MP/MLA/collector handles are not available from official data and are not guessed."}
 
 # ---------------- consented X tag queue (drained by a separate poster run by the operator) ----------------
 import os, re, time, hashlib, json, random
@@ -75,7 +75,7 @@ def next_pending(svc):
     it = svc.db.one("SELECT id, text, handles, complaint_id FROM x_queue WHERE status='queued' ORDER BY id LIMIT 1")
     if not it: return {"item": None, "reason": "empty"}
     svc.db.run("UPDATE x_queue SET status='picked', picked_at=? WHERE id=?", (_now(), it["id"]))
-    return {"item": dict(it), "rules": "Post exactly this text from the JANSEVA account. No edits, no replies, no extra tags. Then POST the tweet URL back."}
+    return {"item": dict(it), "rules": "Post exactly this text from the Seva Setu account. No edits, no replies, no extra tags. Then POST the tweet URL back."}
 def mark(svc, qid, ok, url="", error=""):
     it = svc.db.one("SELECT id FROM x_queue WHERE id=? AND status='picked'", (qid,))
     if not it: return {"ok": False, "error": "item is not in picked state"}

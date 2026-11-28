@@ -35,7 +35,7 @@ class T(unittest.TestCase):
         self.assertIn("hero.searchPh", b)
     def test_app_route_serves_janseva_spa(self):
         b = self.body("/app")
-        self.assertIn("/static/app.js", b); self.assertIn("JANSEVA", b)
+        self.assertIn("/static/app.js", b); self.assertIn("Seva Setu", b)
     def test_dashboard_route(self):
         b = self.body("/dashboard")
         self.assertIn("seva-dash.js", b); self.assertIn("seva-dash.css", b)

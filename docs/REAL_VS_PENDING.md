@@ -2,8 +2,8 @@
 
 ## Real today (works with free services, no card)
 - Email login with a one-time code. Needs one free SMTP account: Brevo free (300 mails/day) or Gmail app password. Set SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM. Without it, login cannot send codes (test-only JANSEVA_DEV_OTP shows the code on screen; never enable in production).
-- Email-to-authority: with the citizen's per-complaint consent, JANSEVA sends the complaint (text, GPS, photo link, tracking ID) from its own mailbox to an email found in the official directory. Target must be in the directory (pgportal nodal officer list or a verified authority). Reply-To uses plus-addressing so replies carry the tracking ID.
-- Reply parsing: POST /api/admin/inbound-poll reads the JANSEVA mailbox over IMAP (IMAP_HOST) and adds replies to the complaint timeline. It never marks a complaint resolved.
+- Email-to-authority: with the citizen's per-complaint consent, Seva Setu sends the complaint (text, GPS, photo link, tracking ID) from its own mailbox to an email found in the official directory. Target must be in the directory (pgportal nodal officer list or a verified authority). Reply-To uses plus-addressing so replies carry the tracking ID.
+- Reply parsing: POST /api/admin/inbound-poll reads the Seva Setu mailbox over IMAP (IMAP_HOST) and adds replies to the complaint timeline. It never marks a complaint resolved.
 - Directory (official sources, last verified 2026-11-27):
   - 93 central ministry/department nodal public grievance officers and 37 state/UT nodal officers: https://pgportal.gov.in/Home/NodalPgOfficers and /NodalPgOfficersState
   - 540 sitting Lok Sabha members (https://sansad.in/ls/members) and 244 Rajya Sabha members (https://sansad.in/rs/members) with official sansad emails. Personal phone numbers and home addresses are deliberately not stored.
@@ -21,17 +21,17 @@
 - Browser-assisted submission by an agent on the citizen's behalf: only with citizen authorization per submission and never past CAPTCHA/OTP (not built).
 
 ## WhatsApp login (v0.8, free variant)
-User taps "Login with WhatsApp", WhatsApp opens with "JANSEVA LOGIN <code>" to JANSEVA's number, Meta's signed webhook (/api/wa/webhook) delivers it with the sender's number, and the app logs that number in. Off unless WA_NUMBER, WA_VERIFY_TOKEN, WA_APP_SECRET are set. Messages from users to a business are not charged by Meta; JANSEVA sends nothing back, so no per-message cost. Sources: https://developers.facebook.com/docs/whatsapp/pricing ; Mint 2026-10-01; https://adversai.app/guides/whatsapp-business-api-pricing-india-2026
+User taps "Login with WhatsApp", WhatsApp opens with "Seva Setu LOGIN <code>" to Seva Setu's number, Meta's signed webhook (/api/wa/webhook) delivers it with the sender's number, and the app logs that number in. Off unless WA_NUMBER, WA_VERIFY_TOKEN, WA_APP_SECRET are set. Messages from users to a business are not charged by Meta; Seva Setu sends nothing back, so no per-message cost. Sources: https://developers.facebook.com/docs/whatsapp/pricing ; Mint 2026-10-01; https://adversai.app/guides/whatsapp-business-api-pricing-india-2026
 
 ## v1.0 dispatch (email + X)
 REAL (needs your env): consented email to PG nodal officers (state L2, central L3) and, only if you type a constituency, your MP (L4); company grievance emails only where officially published (Swiggy, Uber, Amazon, Flipkart, Myntra, BigBasket). Photos attached, your name, reply-to optional. Caps: 3 first emails per complaint, 10 per user/day, global daily cap, dedupe, generic-address blocklist, auto-cancel once resolved. Needs BREVO_API_KEY + MAIL_FROM.
 NOT AVAILABLE: MLA, district collector, department-head emails (no official machine-readable source; guided links only). Zomato, Ola, PhonePe, Paytm, MakeMyTrip, IRCTC: no published grievance email found.
-X: JANSEVA's own X API posting is paid (~$0.015/post, $0.20 with link), so not built. Citizen gets a prefilled post with official-site-linked handles and posts from their own account. Handles are suggestions, review before posting.
+X: Seva Setu's own X API posting is paid (~$0.015/post, $0.20 with link), so not built. Citizen gets a prefilled post with official-site-linked handles and posts from their own account. Handles are suggestions, review before posting.
 CPGRAMS/Swachhata automation: not shipped (CAPTCHA/OTP are the citizen's; form selectors unmapped). Next: citizen-side userscript after mapping from a logged-in session.
 "Sent" never means "registered".
 
 ## v1.1
-JANSEVA Rating: official-source offices only (540+244 MPs, 93 central ministry PG offices, 37 state/UT cells). 1-5 stars, 1 per user per office (editable), comment (500 chars, no phone/email/links/abuse words), like, report (3 reports auto-hide), moderator restore/remove at /api/admin/rating-queue. NOT listed: MLAs, collectors (no official dataset). Ratings are opinions, not official performance data.
+Seva Setu Rating: official-source offices only (540+244 MPs, 93 central ministry PG offices, 37 state/UT cells). 1-5 stars, 1 per user per office (editable), comment (500 chars, no phone/email/links/abuse words), like, report (3 reports auto-hide), moderator restore/remove at /api/admin/rating-queue. NOT listed: MLAs, collectors (no official dataset). Ratings are opinions, not official performance data.
 
 X tag queue (consent_x per complaint): text built from facts + official-site handles, validated (<=280, no abuse words, handles must be in verified lists, no duplicates), status queued/picked/posted/failed, daily cap X_DAILY_CAP (4), spacing X_MIN_GAP_MIN (25 + 0-10 jitter). Poster API (all POST, header Authorization: Bearer $X_POSTER_TOKEN): /api/poster/x/pending -> {item|null}; /api/poster/x/posted {id,url}; /api/poster/x/failed {id,error}. Poster must post the text verbatim and return the real tweet URL; items never auto-marked posted.
 HONEST RISKS: (1) X's automation rules restrict automated posting and bulk unsolicited tagging; a bot-like account can be suspended. Operate low-volume and review, or use the Post-on-X draft. (2) Verified handle coverage is thin (35 official pages, noisy). Add verified entries to data/social_handles_extra.json. MP/MLA/collector handles are not available from official data and are never guessed. 

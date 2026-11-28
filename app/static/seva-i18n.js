@@ -36,7 +36,7 @@ window.SEVA_I18N={
  "langNote":"अनुवाद AI द्वारा तैयार, मूल वक्ताओं की समीक्षा बाकी है।",
  "cat.assist":"WhatsApp सहायता","cat.portal":"आधिकारिक पोर्टल","cat.guide":"गाइड देखें",
  "online.yes":"ऑनलाइन आवेदन संभव","online.varies":"राज्य के अनुसार अलग","online.no":"ऑफलाइन/सहायक द्वारा",
- "verifiedOn":"सत्यापित","complaintsCta":"शिकायत दर्ज करें (JANSEVA ऐप)","schemesCta":"MyScheme पर खोलें",
+ "verifiedOn":"सत्यापित","complaintsCta":"शिकायत दर्ज करें (Seva Setu ऐप)","schemesCta":"MyScheme पर खोलें",
  "waPrefill":"नमस्ते! मुझे Seva Setu India से मदद चाहिए। मेरा काम: "
 },
 "en":{
@@ -70,7 +70,7 @@ window.SEVA_I18N={
  "langNote":"Translations are AI-prepared; native-speaker review pending.",
  "cat.assist":"WhatsApp assistance","cat.portal":"Official portal","cat.guide":"View guide",
  "online.yes":"Online application possible","online.varies":"Varies by state","online.no":"Offline / assisted",
- "verifiedOn":"Verified","complaintsCta":"File a complaint (JANSEVA app)","schemesCta":"Open on MyScheme",
+ "verifiedOn":"Verified","complaintsCta":"File a complaint (Seva Setu app)","schemesCta":"Open on MyScheme",
  "waPrefill":"Namaste! I need help from Seva Setu India. My need: "
 },
 "mr":{
@@ -104,7 +104,7 @@ window.SEVA_I18N={
  "langNote":"भाषांतरे AI ने तयार; मूळ भाषकांची समीक्षा बाकी.",
  "cat.assist":"WhatsApp मदत","cat.portal":"अधिकृत पोर्टल","cat.guide":"मार्गदर्शक पहा",
  "online.yes":"ऑनलाइन अर्ज शक्य","online.varies":"राज्यानुसार वेगळे","online.no":"ऑफलाइन/सहाय्याने",
- "verifiedOn":"सत्यापित","complaintsCta":"तक्रार नोंदवा (JANSEVA अ‍ॅप)","schemesCta":"MyScheme वर उघडा",
+ "verifiedOn":"सत्यापित","complaintsCta":"तक्रार नोंदवा (Seva Setu अ‍ॅप)","schemesCta":"MyScheme वर उघडा",
  "waPrefill":"नमस्कार! मला Seva Setu India कडून मदत हवी. माझे काम: "
 },
 "bn":{
@@ -138,7 +138,7 @@ window.SEVA_I18N={
  "langNote":"অনুবাদ AI-প্রস্তুত; মূল ভাষাভাষীদের পর্যালোচনা বাকি।",
  "cat.assist":"WhatsApp সহায়তা","cat.portal":"সরকারি পোর্টাল","cat.guide":"গাইড দেখুন",
  "online.yes":"অনলাইন আবেদন সম্ভব","online.varies":"রাজ্য অনুযায়ী ভিন্ন","online.no":"অফলাইন/সহায়কের মাধ্যমে",
- "verifiedOn":"যাচাইকৃত","complaintsCta":"অভিযোগ দায়ের করুন (JANSEVA অ্যাপ)","schemesCta":"MyScheme-এ খুলুন",
+ "verifiedOn":"যাচাইকৃত","complaintsCta":"অভিযোগ দায়ের করুন (Seva Setu অ্যাপ)","schemesCta":"MyScheme-এ খুলুন",
  "waPrefill":"নমস্কার! আমার Seva Setu India থেকে সাহায্য দরকার। আমার কাজ: "
 },
 "te":{
@@ -172,7 +172,7 @@ window.SEVA_I18N={
  "langNote":"అనువాదాలు AI తయారుచేసినవి; మూళ భాషావక్తల సమీక్ష పెండింగ్.",
  "cat.assist":"WhatsApp సహాయం","cat.portal":"అధికారిక పోర్టల్","cat.guide":"గైడ్ చూడండి",
  "online.yes":"ఆన్‌లైన్ దరఖాస్తు సాధ్యం","online.varies":"రాష్ట్రానుసారం మారుతుంది","online.no":"ఆఫ్‌లైన్/సహాయకుడి ద్వారా",
- "verifiedOn":"ధృవీకరించబడింది","complaintsCta":"ఫిర్యాదు నమోదు చేయండి (JANSEVA యాప్)","schemesCta":"MyScheme లో తెరవండి",
+ "verifiedOn":"ధృవీకరించబడింది","complaintsCta":"ఫిర్యాదు నమోదు చేయండి (Seva Setu యాప్)","schemesCta":"MyScheme లో తెరవండి",
  "waPrefill":"నమస్తే! నాకు Seva Setu India నుండి సహాయం కావాలి. నా పని: "
 },
 "ta":{
@@ -206,7 +206,7 @@ window.SEVA_I18N={
  "langNote":"மொழிபெயர்ப்புகள் AI உருவாக்கியவை; தாய்மொழி பேசுபவர்களின் மதிப்பாய்வு நிலுவையில்.",
  "cat.assist":"WhatsApp உதவி","cat.portal":"அதிகாரப்பூர்வ போர்டல்","cat.guide":"வழிகாட்டி பார்க்க",
  "online.yes":"ஆன்லைன் விண்ணப்பம் சாத்தியம்","online.varies":"மாநிலத்தைப் பொறுத்தது","online.no":"ஆஃப்லைன்/உதவியாளர் மூலம்",
- "verifiedOn":"சரிபார்க்கப்பட்டது","complaintsCta":"புகார் பதிவு செய்யுங்கள் (JANSEVA ஆப்)","schemesCta":"MyScheme-இல் திறக்க",
+ "verifiedOn":"சரிபார்க்கப்பட்டது","complaintsCta":"புகார் பதிவு செய்யுங்கள் (Seva Setu ஆப்)","schemesCta":"MyScheme-இல் திறக்க",
  "waPrefill":"வணக்கம்! எனக்கு Seva Setu India-விலிருந்து உதவி வேண்டும். என் வேலை: "
 },
 "gu":{
@@ -240,7 +240,7 @@ window.SEVA_I18N={
  "langNote":"અનુવાદ AI દ્વારા તૈયાર; મૂળ ભાષાભાષીઓની સમીક્ષા બાકી.",
  "cat.assist":"WhatsApp સહાય","cat.portal":"સત્તાધિક પોર્ટલ","cat.guide":"ગાઇડ જુઓ",
  "online.yes":"ઓનલાઇન અરજી શક્ય","online.varies":"રાજ્ય પ્રમાણે અલગ","online.no":"ઓફલાઇન/સહાયક દ્વારા",
- "verifiedOn":"ચકાસાયેલ","complaintsCta":"ફરિયાદ નોંધાવો (JANSEVA એપ)","schemesCta":"MyScheme પર ખોલો",
+ "verifiedOn":"ચકાસાયેલ","complaintsCta":"ફરિયાદ નોંધાવો (Seva Setu એપ)","schemesCta":"MyScheme પર ખોલો",
  "waPrefill":"નમસ્તે! મને Seva Setu India તરફથી મદદ જોઈએ. મારું કામ: "
 },
 "kn":{
@@ -274,6 +274,6 @@ window.SEVA_I18N={
  "langNote":"ಅನುವಾದಗಳು AI ತಯಾರಿಸಿದವು; ಮೂಲ ಭಾಷಿಕರ ಪರಿಶೀಲನೆ ಬಾಕಿ.",
  "cat.assist":"WhatsApp ಸಹಾಯ","cat.portal":"ಅಧಿಕೃತ ಪೋರ್ಟಲ್","cat.guide":"ಮಾರ್ಗದರ್ಶಿ ನೋಡಿ",
  "online.yes":"ಆನ್‌ಲೈನ್ ಅರ್ಜಿ ಸಾಧ್ಯ","online.varies":"ರಾಜ್ಯದ ಪ್ರಕಾರ ಬೇರೆ","online.no":"ಆಫ್‌ಲೈನ್/ಸಹಾಯಕರ ಮೂಲಕ",
- "verifiedOn":"ಪರಿಶೀಲಿಸಲಾಗಿದೆ","complaintsCta":"ದೂರು ದಾಖಲಿಸಿ (JANSEVA ಆ್ಯಪ್)","schemesCta":"MyScheme ನಲ್ಲಿ ತೆರೆಯಿರಿ",
+ "verifiedOn":"ಪರಿಶೀಲಿಸಲಾಗಿದೆ","complaintsCta":"ದೂರು ದಾಖಲಿಸಿ (Seva Setu ಆ್ಯಪ್)","schemesCta":"MyScheme ನಲ್ಲಿ ತೆರೆಯಿರಿ",
  "waPrefill":"ನಮಸ್ತೆ! ನನಗೆ Seva Setu India ಯಿಂದ ಸಹಾಯ ಬೇಕು. ನನ್ನ ಕೆಲಸ: "
 }};

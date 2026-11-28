@@ -94,7 +94,7 @@ window.SEVA_CATS=[
  links:[{u:"https://rtionline.gov.in",l:{hi:"RTI Online (आधिकारिक)",en:"RTI Online (official)"}}],on:"yes",
  docs:{hi:["पहचान विवरण","सवाल स्पष्ट लिखें","शुल्क (पोर्टल पर)"],en:["Identity details","Write clear questions","Fee (on portal)"]},verified:"2026-11-28"},
 {id:"complaints",ic:"📢",n:{hi:"सरकारी शिकायतें",en:"Government complaints",mr:"सरकारी तक्रारी",bn:"সরকারি অভিযোগ",te:"ప్రభుత్వ ఫిర్యాదులు",ta:"அரசு புகார்கள்",gu:"સરકારી ફરિયાદો",kn:"ಸರ್ಕಾರಿ ದೂರುಗಳು"},
- b:{hi:"CPGRAMS/राज्य पोर्टल की गाइड, और JANSEVA से नागरिक शिकायत तैयार करें।",en:"Guidance for CPGRAMS/state portals, or prepare a civic complaint with JANSEVA."},
+ b:{hi:"CPGRAMS/राज्य पोर्टल की गाइड, और Seva Setu से नागरिक शिकायत तैयार करें।",en:"Guidance for CPGRAMS/state portals, or prepare a civic complaint with Seva Setu."},
  links:[{u:"https://pgportal.gov.in",l:{hi:"CPGRAMS (आधिकारिक)",en:"CPGRAMS (official)"}}],on:"yes",complaint:true,
  docs:{hi:["घटना का विवरण","तारीख/स्थान","संबंधित रसीद/नंबर"],en:["Incident details","Date/place","Any receipt/reference number"]},verified:"2026-11-28"},
 {id:"other-services",ic:"➕",n:{hi:"अन्य नागरिक सेवाएं",en:"Other citizen services",mr:"इतर सेवा",bn:"অন্যান্য পরিষেবা",te:"ఇతర సేవలు",ta:"பிற சேவைகள்",gu:"અન્ય સેવાઓ",kn:"ಇತರ ಸೇವೆಗಳು"},

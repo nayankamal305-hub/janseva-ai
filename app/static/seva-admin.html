@@ -1,0 +1,121 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Admin console - Seva Setu India</title>
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/static/brand/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/static/brand/favicon-16.png"><link rel="icon" type="image/svg+xml" href="/static/brand/seva-logo.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0b2a6b"><meta name="robots" content="noindex">
+<link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/seva.css?v=1"><link rel="stylesheet" href="/static/seva-dash.css?v=1">
+<style>
+.tabs{display:flex;gap:6px;overflow-x:auto;margin:10px 0 14px;-webkit-overflow-scrolling:touch}
+.tabs .tab{white-space:nowrap}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-bottom:14px}
+.stat{background:#fff;border:1px solid #e4e9f2;border-radius:14px;padding:14px;text-align:center}
+.stat b{display:block;font-size:24px;color:#0b2a6b}
+.stat span{font-size:12px;color:#5b6b8c}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th{text-align:left;color:#5b6b8c;font-weight:600;padding:6px 8px;border-bottom:2px solid #e4e9f2}
+.tbl td{padding:8px;border-bottom:1px solid #eef1f7;vertical-align:top}
+.tblwrap{overflow-x:auto;background:#fff;border:1px solid #e4e9f2;border-radius:14px}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600;background:#e8edf7;color:#0b2a6b}
+.pill.warn{background:#fde8e8;color:#b91c1c}
+.pill.ok{background:#e3f5e9;color:#15803d}
+.frm{display:grid;gap:8px;margin:10px 0}
+.frm input,.frm select,.frm textarea{padding:10px 12px;border:1px solid #cdd6e6;border-radius:10px;font:inherit;width:100%;box-sizing:border-box}
+.msg{font-size:13px;margin-top:6px}.msg.err{color:#b91c1c}.msg.ok{color:#15803d}
+.note{background:#fff8eb;border:1px solid #f5d47e;border-radius:12px;padding:10px 12px;font-size:13px;color:#7a5b13;margin:10px 0}
+h3.sec{margin:18px 0 6px}
+</style>
+</head><body>
+<div class="notgov">Admin console - internal staff view. Seva Setu India is a private assistance service.</div>
+<header class="sh dh">
+ <a class="brand" href="/" aria-label="Seva Setu India home">
+  <svg class="blogo" viewBox="0 0 48 48" role="img" aria-label="Seva Setu logo"><rect x="2" y="2" width="44" height="44" rx="12" fill="#0b2a6b"/><path d="M10 30c4-8 10-12 14-12s10 4 14 12" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><path d="M12 34h24" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/><circle cx="24" cy="14" r="3.4" fill="#fff"/></svg>
+  <span class="bname">Seva Setu Admin</span></a>
+ <div class="hact"><a class="btn btn-ghost" href="/op">Operator</a><button id="logoutB" class="btn btn-ghost hide">Logout</button></div>
+</header>
+<main id="main">
+ <section id="loginView" class="lview hide">
+  <div class="card lcard">
+   <h1>Admin login</h1>
+   <p class="mut">Paste your super-admin token. Only the super-admin role can open this console.</p>
+   <label class="fld"><span>Token</span><input id="atok" autocomplete="off" placeholder="super admin token"></label>
+   <button id="loginB" class="btn btn-navy">Login</button>
+   <div id="lmsg" class="msg"></div>
+  </div>
+ </section>
+ <section id="adminView" class="hide">
+  <div class="tabs" id="tabs">
+   <button class="tab btn btn-navy" data-tab="overview">Overview</button>
+   <button class="tab btn btn-ghost" data-tab="citizens">Citizens</button>
+   <button class="tab btn btn-ghost" data-tab="staff">Staff</button>
+   <button class="tab btn btn-ghost" data-tab="catalog">Catalog</button>
+   <button class="tab btn btn-ghost" data-tab="translations">Translations</button>
+   <button class="tab btn btn-ghost" data-tab="settings">Brand &amp; WhatsApp</button>
+   <button class="tab btn btn-ghost" data-tab="audit">Audit log</button>
+  </div>
+
+  <div id="tab-overview" class="tabpane">
+   <div class="stat-grid" id="statGrid"></div>
+   <h3 class="sec">Applications by status</h3>
+   <div class="tblwrap"><table class="tbl" id="statusTbl"></table></div>
+  </div>
+
+  <div id="tab-citizens" class="tabpane hide">
+   <div class="frm" style="grid-template-columns:1fr auto"><input id="citQ" placeholder="search phone or name"><button class="btn btn-navy" id="citGo">Search</button></div>
+   <div class="tblwrap"><table class="tbl" id="citTbl"></table></div>
+   <div class="note">Suspending blocks the citizen's login immediately (their token stops working). It does not delete their data. Record a reason - it goes to the audit log.</div>
+  </div>
+
+  <div id="tab-staff" class="tabpane hide">
+   <h3 class="sec">Create staff token</h3>
+   <div class="frm" style="grid-template-columns:1fr 1fr auto"><input id="stfName" placeholder="display name"><select id="stfRole"></select><button class="btn btn-navy" id="stfGo">Create</button></div>
+   <div id="stfMsg" class="msg"></div>
+   <div class="note">The new token is shown ONCE. Send it to the person over a private channel. Disabling removes the token; it cannot be recovered, create a new one instead. A stored super-admin token can only be disabled with the env super token, and you cannot disable your own token.</div>
+   <div class="tblwrap"><table class="tbl" id="stfTbl"></table></div>
+  </div>
+
+  <div id="tab-catalog" class="tabpane hide">
+   <h3 class="sec">Add / update category</h3>
+   <div class="frm" style="grid-template-columns:1fr 1fr"><input id="catId" placeholder="id slug (e.g. welfare-schemes)"><input id="catName" placeholder="English name"></div>
+   <div class="frm" style="grid-template-columns:2fr 1fr auto"><input id="catBlurb" placeholder="short blurb"><input id="catSort" type="number" placeholder="sort"><button class="btn btn-navy" id="catGo">Save category</button></div>
+   <div id="catMsg" class="msg"></div>
+   <h3 class="sec">Add service</h3>
+   <div class="frm" style="grid-template-columns:1fr 1fr"><select id="svcCat"></select><input id="svcName" placeholder="service name"></div>
+   <div class="frm" style="grid-template-columns:1fr 1fr 2fr auto"><input id="svcDept" placeholder="department"><input id="svcState" placeholder="state (blank = all)"><input id="svcLink" placeholder="official link (https://...)"><button class="btn btn-navy" id="svcGo">Add service</button></div>
+   <div id="svcMsg" class="msg"></div>
+   <h3 class="sec">Add / update scheme</h3>
+   <div class="frm" style="grid-template-columns:1fr 2fr"><input id="schSlug" placeholder="slug (e.g. pm-kisan)"><input id="schName" placeholder="scheme name"></div>
+   <div class="frm" style="grid-template-columns:2fr 1fr 1fr auto"><input id="schBenefit" placeholder="benefit (short)"><input id="schLink" placeholder="official link"><input id="schSource" placeholder="source URL"><button class="btn btn-navy" id="schGo">Save scheme</button></div>
+   <div id="schMsg" class="msg"></div>
+   <h3 class="sec">Current catalog</h3>
+   <div id="catList"></div>
+  </div>
+
+  <div id="tab-translations" class="tabpane hide">
+   <h3 class="sec">Add / update translation</h3>
+   <div class="frm" style="grid-template-columns:2fr 1fr"><input id="trKey" placeholder="key (e.g. service name or ui string id)"><input id="trLang" placeholder="lang (hi, en, mr...)"></div>
+   <div class="frm"><textarea id="trText" rows="2" placeholder="translated text"></textarea></div>
+   <div><button class="btn btn-navy" id="trGo">Save translation</button></div>
+   <div id="trMsg" class="msg"></div>
+   <div class="note">These rows live in the seva_translations table (status: approved/draft). Core UI strings still ship in the app code; this table is for catalog and content translations. Full 8-language coverage of new content is a pending item.</div>
+   <div class="tblwrap"><table class="tbl" id="trTbl"></table></div>
+  </div>
+
+  <div id="tab-settings" class="tabpane hide">
+   <h3 class="sec">Brand</h3>
+   <div class="frm" style="grid-template-columns:1fr 1fr"><input id="setBrand" placeholder="brand name (Seva Setu India)"><input id="setShort" placeholder="short name (Seva Setu)"></div>
+   <h3 class="sec">WhatsApp</h3>
+   <div id="waState" class="note"></div>
+   <div class="frm" style="grid-template-columns:1fr 1fr"><input id="setWa" placeholder="WhatsApp number (91...)"><select id="setWaStatus"><option value="manual">manual chat (wa.me link)</option><option value="cloud_api">Cloud API (Phase 7)</option></select></div>
+   <h3 class="sec">Other</h3>
+   <div class="frm" style="grid-template-columns:2fr 1fr"><input id="setSupport" placeholder="support text shown on help page"><input id="setRetention" type="number" placeholder="data retention (days)"></div>
+   <div><button class="btn btn-navy" id="setGo">Save settings</button></div>
+   <div id="setMsg" class="msg"></div>
+   <div class="note">WhatsApp Cloud API (receiving documents from citizens, Phase 7) needs Kamal's own WhatsApp Business number, a Meta app, and tokens collected via vault links - nothing is connected yet. The status here is a display label only; it does not enable any integration by itself.</div>
+  </div>
+
+  <div id="tab-audit" class="tabpane hide">
+   <div class="tblwrap"><table class="tbl" id="auditTbl"></table></div>
+  </div>
+ </section>
+</main>
+<script src="/static/seva-admin.js?v=1"></script>
+</body></html>

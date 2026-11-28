@@ -19,7 +19,7 @@ def otp_request(db, phone, dev=False):
     # Email OTP is real when SMTP_* is configured. No SMS provider is wired in (DLT rules). Code is returned ONLY in dev mode (JANSEVA_DEV_OTP=1).
     if "@" in phone:
         from . import mailer
-        r = mailer.send(phone, "Your JANSEVA AI login code", "Your JANSEVA AI login code is %s. It expires in 5 minutes. If you did not ask for it, ignore this email." % code)
+        r = mailer.send(phone, "Your Seva Setu India login code", "Your Seva Setu India login code is %s. It expires in 5 minutes. If you did not ask for it, ignore this email." % code)
         if r["sent"]: return {"sent": True, "channel": "email"}
         return {"sent": False, "channel": "email", "note": "Email sending not configured on this server", **({"dev_code": code} if dev else {})}
     return {"sent": False, "channel": "sms", "note": "SMS OTP needs a DLT-registered provider; use email login", **({"dev_code": code} if dev else {})}

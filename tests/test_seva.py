@@ -36,6 +36,13 @@ class T(unittest.TestCase):
     def test_app_route_serves_janseva_spa(self):
         b = self.body("/app")
         self.assertIn("/static/app.js", b); self.assertIn("JANSEVA", b)
+    def test_dashboard_route(self):
+        b = self.body("/dashboard")
+        self.assertIn("seva-dash.js", b); self.assertIn("seva-dash.css", b)
+        self.assertIn("/api/seva/", open(STATIC + "/seva-dash.js").read())
+    def test_landing_login_points_to_dashboard(self):
+        b = self.body("/")
+        self.assertIn('href="/dashboard"', b)
     def test_info_pages_served(self):
         for slug in ("privacy", "contact", "grievance", "disclaimer", "help"):
             b = self.body("/p/" + slug)

@@ -62,6 +62,8 @@ def make_handler(svc, admin_token, rate=120):
                 base = os.environ.get("PUBLIC_URL", "").rstrip("/") or ("%s://%s" % ((self.headers.get("X-Forwarded-Proto") or "http").split(",")[0].strip(), self.headers.get("Host") or "localhost"))
                 fn = "seva.html" if path in ("/", "/index.html") else "index.html"
                 return self._send(200, open(os.path.join(STATIC, fn), "rb").read().replace(b"__BASE__", base.encode()), "text/html; charset=utf-8")
+            if path in ("/dashboard", "/dashboard/"):
+                return self._send(200, open(os.path.join(STATIC, "seva-dash.html"), "rb").read(), "text/html; charset=utf-8")
             if path in ("/p/privacy", "/p/contact", "/p/grievance", "/p/disclaimer", "/p/help", "/p/", "/p"):
                 return self._send(200, open(os.path.join(STATIC, "seva-info.html"), "rb").read(), "text/html; charset=utf-8")
             if path in ("/favicon.ico", "/apple-touch-icon.png", "/apple-touch-icon-precomposed.png"):

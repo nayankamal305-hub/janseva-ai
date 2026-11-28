@@ -1,0 +1,155 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dashboard - Seva Setu India</title>
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/static/brand/seva-logo.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="Seva Setu India citizen dashboard - your applications, schemes and profile.">
+<meta name="theme-color" content="#0b2a6b"><link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/seva.css?v=1"><link rel="stylesheet" href="/static/seva-dash.css?v=1">
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="notgov" data-t="notGov">Seva Setu India is a private assistance service, not a government website.</div>
+<header class="sh dh">
+ <a class="brand" href="/" aria-label="Seva Setu India home">
+  <svg class="blogo" viewBox="0 0 48 48" role="img" aria-label="Seva Setu logo"><rect x="2" y="2" width="44" height="44" rx="12" fill="#0b2a6b"/><path d="M10 30c4-8 10-12 14-12s10 4 14 12" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><path d="M12 34h24" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/><circle cx="24" cy="14" r="3.4" fill="#fff"/></svg>
+  <span class="bname">Seva Setu India</span></a>
+ <nav class="hnav" aria-label="Main">
+  <a href="/" data-t="nav.home">Home</a>
+  <a href="/app" data-t="nav.complaints">Complaints</a>
+  <a href="/p/help" data-t="nav.help">Help</a>
+ </nav>
+ <div class="hact">
+  <button id="langT" class="a11yb langt" title="Language">EN</button>
+  <button id="logoutB" class="btn btn-ghost hide" data-t="logout">Logout</button>
+ </div>
+</header>
+
+<main id="main">
+ <!-- Login -->
+ <section id="loginView" class="lview hide">
+  <div class="card lcard">
+   <h1 data-t="login.title">Login / Sign up</h1>
+   <p class="mut" data-t="login.help">Enter your mobile number or email. We send a one-time code (OTP) to verify it is you.</p>
+   <label class="fld"><span data-t="login.id">Mobile number or email</span>
+    <input id="lid" inputmode="text" autocomplete="username" placeholder="98765 43210 / you@email.com"></label>
+   <div id="otpRow" class="hide">
+    <label class="fld"><span data-t="login.code">OTP code</span>
+     <input id="lcode" inputmode="numeric" autocomplete="one-time-code" placeholder="6-digit code"></label>
+   </div>
+   <label class="fld hide" id="nameRow"><span data-t="login.name">Your name (first time)</span>
+    <input id="lname" autocomplete="name" placeholder="Asha Devi"></label>
+   <div class="lbtns">
+    <button id="sendOtp" class="btn btn-navy" data-t="login.send">Send OTP</button>
+    <button id="verifyOtp" class="btn btn-saffron hide" data-t="login.verify">Verify & login</button>
+   </div>
+   <p id="lmsg" class="lmsg" role="status"></p>
+  </div>
+ </section>
+
+ <!-- Dashboard -->
+ <section id="dashView" class="hide">
+  <nav class="tabs" role="tablist" aria-label="Dashboard sections">
+   <button class="tab on" data-tab="over" role="tab" data-t="tab.over">Overview</button>
+   <button class="tab" data-tab="apps" role="tab" data-t="tab.apps">Applications</button>
+   <button class="tab" data-tab="schemes" role="tab" data-t="tab.schemes">Scheme finder</button>
+   <button class="tab" data-tab="prof" role="tab" data-t="tab.prof">Profile</button>
+  </nav>
+
+  <div id="tab-over" class="tpane">
+   <h2 id="hello">Namaste</h2>
+   <div class="stats" id="stats"></div>
+   <div class="card">
+    <h3 data-t="over.next">What would you like to do?</h3>
+    <div class="qacts">
+     <button class="btn btn-saffron" id="qNewApp" data-t="over.newApp">Start a new application</button>
+     <button class="btn btn-navy" id="qScheme" data-t="over.findScheme">Find schemes for me</button>
+     <a class="btn btn-ghost2" href="/app" data-t="over.complaint">File a complaint</a>
+    </div>
+   </div>
+   <div class="card" id="overRecent">
+    <h3 data-t="over.recent">Recent applications</h3>
+    <div id="recentList"></div>
+   </div>
+  </div>
+
+  <div id="tab-apps" class="tpane hide">
+   <div class="rowbet">
+    <h2 data-t="apps.title">Your applications</h2>
+    <button class="btn btn-saffron" id="newAppB" data-t="apps.new">+ New</button>
+   </div>
+   <div id="appList"></div>
+   <div id="appDetail" class="hide"></div>
+  </div>
+
+  <div id="tab-schemes" class="tpane hide">
+   <h2 data-t="sch.title">Scheme finder</h2>
+   <p class="mut" data-t="sch.help">Answer 3 questions - we match you with central schemes from our verified list. Always confirm on the official portal before applying.</p>
+   <div class="card quiz">
+    <label class="fld"><span data-t="sch.age">Your age</span>
+     <input id="qAge" type="number" min="1" max="120" placeholder="35"></label>
+    <label class="fld"><span data-t="sch.occ">Occupation</span>
+     <select id="qOcc">
+      <option value="" data-t="sch.any">Any</option>
+      <option value="farmer" data-t="sch.farmer">Farmer</option>
+      <option value="student" data-t="sch.student">Student</option>
+      <option value="self-employed" data-t="sch.selfemp">Self-employed</option>
+      <option value="unemployed" data-t="sch.unemp">Looking for work</option>
+      <option value="senior" data-t="sch.senior">Senior citizen</option>
+     </select></label>
+    <label class="fld"><span data-t="sch.state">State / UT</span><select id="qState"></select></label>
+    <button class="btn btn-navy" id="findB" data-t="sch.find">Find schemes</button>
+   </div>
+   <div id="schemeList"></div>
+  </div>
+
+  <div id="tab-prof" class="tpane hide">
+   <h2 data-t="prof.title">Your profile</h2>
+   <div class="card">
+    <div class="grid2">
+     <label class="fld"><span data-t="prof.lang">Preferred language</span>
+      <select id="pLang">
+       <option value="hi">हिन्दी</option><option value="en">English</option><option value="bn">বাংলা</option>
+       <option value="ta">தமிழ்</option><option value="te">తెలుగు</option><option value="gu">ગુજરાતી</option>
+       <option value="kn">ಕನ್ನಡ</option><option value="mr">मराठी</option>
+      </select></label>
+     <label class="fld"><span data-t="prof.state">State / UT</span><select id="pState"></select></label>
+     <label class="fld"><span data-t="prof.district">District</span><input id="pDist" placeholder="Pune"></label>
+     <label class="fld"><span data-t="prof.block">Block / Tehsil</span><input id="pBlock"></label>
+     <label class="fld"><span data-t="prof.pin">PIN code</span><input id="pPin" inputmode="numeric" maxlength="6" placeholder="411001"></label>
+     <label class="fld"><span data-t="prof.age">Age group</span>
+      <select id="pAge"><option value="">--</option><option value="18-25">18-25</option><option value="26-40">26-40</option><option value="41-60">41-60</option><option value="60+">60+</option></select></label>
+     <label class="fld"><span data-t="prof.occ">Occupation</span>
+      <select id="pOcc">
+       <option value="">--</option><option value="farmer" data-t="sch.farmer">Farmer</option>
+       <option value="student" data-t="sch.student">Student</option>
+       <option value="self-employed" data-t="sch.selfemp">Self-employed</option>
+       <option value="salaried" data-t="prof.salaried">Salaried</option>
+       <option value="unemployed" data-t="sch.unemp">Looking for work</option>
+       <option value="senior" data-t="sch.senior">Senior citizen</option>
+       <option value="other" data-t="prof.other">Other</option>
+      </select></label>
+    </div>
+    <button class="btn btn-saffron" id="saveProf" data-t="prof.save">Save profile</button>
+    <p id="pmsg" class="lmsg" role="status"></p>
+   </div>
+  </div>
+ </section>
+</main>
+
+<!-- New application sheet -->
+<div id="newSheet" class="modal" hidden>
+ <div class="msheet">
+  <button class="mclose" id="newClose" aria-label="Close">&times;</button>
+  <h3 data-t="new.title">New application</h3>
+  <p class="mut" data-t="new.help">Pick a service. We save your request in Seva Setu first - nothing goes to any government portal until you approve it.</p>
+  <div id="catGrid" class="catgrid"></div>
+  <label class="fld"><span data-t="new.desc">Short description (optional)</span>
+   <input id="newTitle" placeholder="e.g. Income certificate for scholarship"></label>
+  <button class="btn btn-saffron" id="newCreate" data-t="new.create">Save request</button>
+  <p id="newMsg" class="lmsg" role="status"></p>
+ </div>
+</div>
+
+<footer class="dfoot">
+ <a href="/p/privacy" data-t="foot.privacy">Privacy</a><a href="/p/contact" data-t="foot.contact">Contact</a><a href="/p/disclaimer" data-t="foot.disclaimer">Disclaimer</a>
+</footer>
+<script src="/static/seva-dash.js?v=1"></script>
+</body></html>

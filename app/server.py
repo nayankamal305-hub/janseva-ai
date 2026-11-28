@@ -64,13 +64,15 @@ def make_handler(svc, admin_token, rate=120):
                 return self._send(200, open(os.path.join(STATIC, fn), "rb").read().replace(b"__BASE__", base.encode()), "text/html; charset=utf-8")
             if path in ("/dashboard", "/dashboard/"):
                 return self._send(200, open(os.path.join(STATIC, "seva-dash.html"), "rb").read(), "text/html; charset=utf-8")
+            if path in ("/op", "/op/"):
+                return self._send(200, open(os.path.join(STATIC, "seva-op.html"), "rb").read(), "text/html; charset=utf-8")
             if path in ("/p/privacy", "/p/contact", "/p/grievance", "/p/disclaimer", "/p/help", "/p/", "/p"):
                 return self._send(200, open(os.path.join(STATIC, "seva-info.html"), "rb").read(), "text/html; charset=utf-8")
             if path in ("/favicon.ico", "/apple-touch-icon.png", "/apple-touch-icon-precomposed.png"):
                 fn = "favicon.ico" if path == "/favicon.ico" else "apple-touch-icon.png"
                 return self._send(200, open(os.path.join(STATIC, "brand", fn), "rb").read(), "image/x-icon" if fn.endswith("ico") else "image/png", {"Cache-Control": "public, max-age=86400"})
             if path == "/manifest.json": return self._send(200, json.dumps({"name": os.environ.get("SEVA_BRAND_NAME", "Seva Setu India"), "short_name": os.environ.get("SEVA_SHORT_NAME", "Seva Setu"), "start_url": "/", "display": "standalone", "background_color": "#f6f8fc", "theme_color": "#0b2a6b", "icons": [{"src": "/static/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}, {"src": "/static/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}).encode(), "application/manifest+json")
-            if path == "/sw.js": return self._send(200, "const C='jansevaai-v44';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
+            if path == "/sw.js": return self._send(200, "const C='jansevaai-v45';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));\nself.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname==='/sw.js')return;\ne.respondWith(fetch(e.request).then(r=>{if(r&&r.ok&&r.status===200){const k=r.clone();caches.open(C).then(c=>c.put(e.request,k)).catch(()=>{});return r}\nreturn caches.match(e.request).then(m=>m||r)}).catch(()=>caches.match(e.request).then(m=>m||caches.match('/'))))});".encode(), "application/javascript")
             if path == "/api/health": return self._json(200, {"ok": True, "version": "0.3", "time": now(), "db": "postgres" if getattr(svc.db, "pg", False) else "sqlite", "photo_storage": storage.from_env(os.environ, UPLOADS).kind})
             if path.startswith("/static/"):
                 rel = os.path.normpath(path[len("/static/"):]).lstrip("/")
@@ -220,6 +222,27 @@ def make_handler(svc, admin_token, rate=120):
                 got = sevdoc.read_document(svc.db, os.environ, UPLOADS, row, "citizen:%s" % u["id"])
                 if not got: return self._json(404, {"error": "file missing"})
                 return self._send(200, got[0], got[1], {"Content-Disposition": "inline; filename=\"%s\"" % got[2].replace('"', ''), "Cache-Control": "private, no-store"})
+            if path == "/api/seva/notifications":
+                from . import sevop
+                return self._json(200, {"items": sevop.notifications_for(svc.db, u["id"])}) if u else self._json(401, {"error": "login"})
+            if path == "/api/op/applications":
+                from . import sevop
+                a = self._adm()
+                if not (a and roles.can(a["role"], "seva.operate")): return self._json(403, {"error": "operator only"})
+                return self._json(200, {"items": sevop.queue(svc.db, q.get("status"))})
+            if path.startswith("/api/op/applications/"):
+                from . import sevop
+                a = self._adm()
+                if not (a and roles.can(a["role"], "seva.operate")): return self._json(403, {"error": "operator only"})
+                det = sevop.detail(svc.db, path.rsplit("/", 1)[-1])
+                return self._json(200, det) if det else self._json(404, {"error": "not found"})
+            if path.startswith("/api/op/documents/") and path.endswith("/file"):
+                from . import sevop
+                a = self._adm()
+                if not (a and roles.can(a["role"], "seva.operate")): return self._json(403, {"error": "operator only"})
+                got, err = sevop.doc_file_with_consent(svc.db, os.environ, UPLOADS, int(path.split("/")[-2]), q.get("app", ""), a)
+                if not got: return self._json(403 if err and "consent" in err else 404, {"error": err})
+                return self._send(200, got[0], got[1], {"Content-Disposition": "inline; filename=\"%s\"" % got[2].replace('"', ''), "Cache-Control": "private, no-store"})
             if path == "/api/complaints":
                 return self._json(200, svc.list_for(u["id"])) if u else self._json(401, {"error": "login"})
             if path.startswith("/api/complaints/"):
@@ -345,6 +368,23 @@ def make_handler(svc, admin_token, rate=120):
                     if not a: return self._json(404, {"error": "application not found"})
                     r = sevdoc.attach_document(svc.db, a, int(d.get("document_id", 0)), u, d.get("label", ""))
                     return self._json(200 if r.get("ok") else 422, r)
+                if path.startswith("/api/seva/consents/") and path.endswith("/revoke"):
+                    from . import sevop
+                    ok = sevop.revoke_consent(svc.db, int(path.split("/")[-2]), u["id"])
+                    return self._json(200 if ok else 404, {"ok": ok})
+            if path.startswith("/api/op/"):
+                from . import sevop
+                a = self._adm()
+                if not (a and roles.can(a["role"], "seva.operate")): return self._json(403, {"error": "operator only"})
+                ref = path.split("/")[-2] if path.count("/") >= 4 else ""
+                if path.endswith("/status"):
+                    r = sevop.advance(svc.db, ref, d.get("status", ""), d.get("note", ""), a)
+                    return self._json(200 if r.get("ok") else 422, r)
+                if path.endswith("/submissions"):
+                    return self._json(200, sevop.record_submission(svc.db, ref, d.get("portal"), d.get("method"), d.get("ack_no"), d.get("receipt_url"), bool(d.get("verified")), a))
+                if path.endswith("/request-docs"):
+                    return self._json(200, sevop.request_docs(svc.db, ref, a))
+                return self._json(404, {"error": "not found"})
             if path == "/api/auth/login":
                 ident = accounts.norm_ident(d.get("email") or d.get("phone"))
                 u, st = accounts.password_login(svc, ident, d.get("password", ""), self._ip())

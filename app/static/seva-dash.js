@@ -3,7 +3,7 @@
 "use strict";
 const LS=(()=>{try{const s=window['local'+'Storage'];s.setItem('_t','1');s.removeItem('_t');return s}catch(e){const m={};return{getItem:k=>m[k]??null,setItem:(k,v)=>{m[k]=v},removeItem:k=>{delete m[k]}}}})();
 const $=id=>document.getElementById(id);
-let T=LS.getItem('jt')||'', LANG=LS.getItem('sdlang')||'hi', CATALOG=null, APPS=[], PROFILE={}, DOCS=[], DOCKINDS=[];
+let T=LS.getItem('jt')||'', LANG=LS.getItem('sdlang')||'hi', CATALOG=null, APPS=[], PROFILE={}, DOCS=[], DOCKINDS=[], NOTIFS=[], CONS=[];
 
 const I18N={
 hi:{"notGov":"Seva Setu India ek private sahayata seva hai, sarkari website nahi.","nav.home":"होम","nav.complaints":"शिकायतें","nav.help":"मदद","logout":"लॉग आउट",
@@ -11,7 +11,7 @@ hi:{"notGov":"Seva Setu India ek private sahayata seva hai, sarkari website nahi
 "tab.over":"सारांश","tab.apps":"आवेदन","tab.docs":"दस्तावेज़","tab.schemes":"योजना खोजें","tab.prof":"प्रोफ़ाइल",
 "over.next":"आप क्या करना चाहेंगे?","over.newApp":"नया आवेदन शुरू करें","over.findScheme":"मेरे लिए योजनाएं खोजें","over.complaint":"शिकायत दर्ज करें","over.recent":"हाल के आवेदन",
 "apps.title":"आपके आवेदन","apps.new":"+ नया","sch.title":"योजना खोजें","sch.help":"3 सवालों के जवाब दें - हम verified list से केंद्रीय योजनाएं मिलाते हैं। आवेदन से पहले official portal पर जरूर confirm करें।","sch.age":"आपकी उम्र","sch.occ":"काम","sch.any":"कोई भी","sch.farmer":"किसान","sch.student":"छात्र/छात्रा","sch.selfemp":"स्वरोज़गार","sch.unemp":"काम की तलाश","sch.senior":"वरिष्ठ नागरिक","sch.state":"राज्य / केंद्र शासित प्रदेश","sch.find":"योजनाएं खोजें",
-"prof.title":"आपकी प्रोफ़ाइल","prof.lang":"पसंदीदा भाषा","prof.state":"राज्य / केंद्र शासित प्रदेश","prof.district":"ज़िला","prof.block":"ब्लॉक / तहसील","prof.pin":"पिन कोड","prof.age":"उम्र समूह","prof.occ":"काम","prof.salaried":"नौकरीपेशा","prof.other":"अन्य","prof.save":"प्रोफ़ाइल सेव करें",
+"prof.title":"आपकी प्रोफ़ाइल","prof.lang":"पसंदीदा भाषा","prof.state":"राज्य / केंद्र शासित प्रदेश","prof.district":"ज़िला","prof.block":"ब्लॉक / तहसील","prof.pin":"पिन कोड","prof.age":"उम्र समूह","prof.occ":"काम","prof.salaried":"नौकरीपेशा","prof.other":"अन्य","prof.save":"प्रोफ़ाइल सेव करें","prof.consents":"आपकी सहमतियां","prof.revoke":"वापस लें","over.notifs":"सूचनाएं","notif.allow":"अनुमति दें","notif.deny":"मना करें","notif.none":"कोई सूचना नहीं।","cons.none":"अभी कोई सहमति नहीं।",
 "new.title":"नया आवेदन","new.help":"सेवा चुनें। आपका अनुरोध पहले Seva Setu में सेव होता है - आपकी मंज़ूरी के बिना कुछ भी किसी सरकारी portal पर नहीं जाता।","new.desc":"छोटा विवरण (optional)","new.create":"अनुरोध सेव करें",
 "docs.title":"आपके दस्तावेज़","docs.help":"दस्तावेज़ आपके Seva Setu vault में private रहते हैं। केवल आप ही खोल सकते हैं - operator किसी application पर आपकी सहमति के बाद ही देख सकता है।","docs.kind":"दस्तावेज़ प्रकार","docs.pick":"फ़ाइल चुनें (JPG, PNG या PDF, अधिकतम 5 MB)","docs.upload":"दस्तावेज़ अपलोड करें","docs.open":"खोलें","docs.del":"हटाएं","docs.attach":"Application से जोड़ें","docs.none":"अभी कोई दस्तावेज़ नहीं।",
 "foot.privacy":"Privacy","foot.contact":"Contact","foot.disclaimer":"Disclaimer"},
@@ -20,7 +20,7 @@ en:{"notGov":"Seva Setu India is a private assistance service, not a government 
 "tab.over":"Overview","tab.apps":"Applications","tab.docs":"Documents","tab.schemes":"Scheme finder","tab.prof":"Profile",
 "over.next":"What would you like to do?","over.newApp":"Start a new application","over.findScheme":"Find schemes for me","over.complaint":"File a complaint","over.recent":"Recent applications",
 "apps.title":"Your applications","apps.new":"+ New","sch.title":"Scheme finder","sch.help":"Answer 3 questions - we match you with central schemes from our verified list. Always confirm on the official portal before applying.","sch.age":"Your age","sch.occ":"Occupation","sch.any":"Any","sch.farmer":"Farmer","sch.student":"Student","sch.selfemp":"Self-employed","sch.unemp":"Looking for work","sch.senior":"Senior citizen","sch.state":"State / UT","sch.find":"Find schemes",
-"prof.title":"Your profile","prof.lang":"Preferred language","prof.state":"State / UT","prof.district":"District","prof.block":"Block / Tehsil","prof.pin":"PIN code","prof.age":"Age group","prof.occ":"Occupation","prof.salaried":"Salaried","prof.other":"Other","prof.save":"Save profile",
+"prof.title":"Your profile","prof.lang":"Preferred language","prof.state":"State / UT","prof.district":"District","prof.block":"Block / Tehsil","prof.pin":"PIN code","prof.age":"Age group","prof.occ":"Occupation","prof.salaried":"Salaried","prof.other":"Other","prof.save":"Save profile","prof.consents":"Your consents","prof.revoke":"Revoke","over.notifs":"Notifications","notif.allow":"Allow","notif.deny":"Deny","notif.none":"No notifications.","cons.none":"No consents yet.",
 "new.title":"New application","new.help":"Pick a service. We save your request in Seva Setu first - nothing goes to any government portal until you approve it.","new.desc":"Short description (optional)","new.create":"Save request",
 "docs.title":"Your documents","docs.help":"Documents stay private in your Seva Setu vault. Only you can open them - operators see one only after you give consent for that application.","docs.kind":"Document type","docs.pick":"Pick a file (JPG, PNG or PDF, max 5 MB)","docs.upload":"Upload document","docs.open":"Open","docs.del":"Delete","docs.attach":"Attach to application","docs.none":"No documents yet.",
 "foot.privacy":"Privacy","foot.contact":"Contact","foot.disclaimer":"Disclaimer"}};
@@ -69,7 +69,7 @@ async function boot(){
  if(!T){showLogin();return}
  try{
   PROFILE=await api('GET','/api/seva/profile');
-  await loadCatalog();await loadApps();await loadDocs();showDash();
+  await loadCatalog();await loadApps();await loadDocs();await loadNotifs();await loadConsents();showDash();
  }catch(e){if(e&&e.auth){T='';LS.removeItem('jt');showLogin()}else{showLogin()}}
 }
 function showDash(){$('loginView').classList.add('hide');$('dashView').classList.remove('hide');$('logoutB').classList.remove('hide');renderAll();}
@@ -103,6 +103,8 @@ async function loadCatalog(){if(!CATALOG)CATALOG=await api('GET','/api/seva/cata
 async function loadApps(){APPS=(await api('GET','/api/seva/applications')).items||[];}
 async function loadDocs(){const r=await api('GET','/api/seva/documents');DOCS=r.items||[];DOCKINDS=r.kinds||[];
  const sel=$('docKind');sel.innerHTML=DOCKINDS.map(k=>'<option value="'+k+'">'+k.replace(/_/g,' ')+'</option>').join('');}
+async function loadNotifs(){NOTIFS=(await api('GET','/api/seva/notifications')).items||[];}
+async function loadConsents(){CONS=(await api('GET','/api/seva/consents')).items||[];}
 function fillStates(){
  const states=["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Andaman and Nicobar Islands","Chandigarh","Dadra and Nagar Haveli and Daman and Diu","Delhi","Jammu and Kashmir","Ladakh","Lakshadweep","Puducherry"];
  ['qState','pState'].forEach(id=>{const s=$(id);if(!s.options.length||s.options.length<2)s.innerHTML='<option value="">--</option>'+states.map(x=>'<option>'+x+'</option>').join('')});
@@ -111,7 +113,41 @@ function fillStates(){
 /* ---------- render ---------- */
 function catName(id){const c=(CATALOG.categories||[]).find(c=>c.slug==id||c.id==id);if(!c)return id;const n=c.names||{};return n[LANG]||n.en||n.hi||id;}
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function renderAll(){renderOver();renderApps();renderSchemes();renderProf();renderDocs();}
+function renderAll(){renderOver();renderApps();renderSchemes();renderProf();renderDocs();renderNotifs();renderConsents();}
+
+function appRefById(id){const a=APPS.find(x=>x.id==id);return a?a.ref_no:null;}
+function activeConsentFor(appId){return CONS.find(c=>c.application_id==appId&&c.scope=='operator_document_access'&&c.granted&&!c.revoked_at);}
+function renderNotifs(){
+ const el=$('notifList');
+ if(!NOTIFS.length){el.innerHTML='<div class="empty">'+t('notif.none')+'</div>';return}
+ el.innerHTML=NOTIFS.slice(0,10).map(n=>{
+  let body=esc(n.body||''),btns='';
+  if(n.kind=='consent_request'){
+   const ref=appRefById(n.application_id);
+   body=(LANG=='hi'?'Operator ने application <b>'+esc(ref||'')+'</b> के दस्तावेज़ देखने की अनुमति मांगी है। आपकी सहमति के बिना कोई document नहीं खुलेगा।':'The operator asks your consent to view documents on application <b>'+esc(ref||'')+'</b>. No document opens without your yes.');
+   if(ref&&!activeConsentFor(n.application_id))
+    btns='<div style="display:flex;gap:8px;margin-top:8px"><button class="btn btn-saffron" data-allow="'+esc(ref)+'">'+t('notif.allow')+'</button><button class="btn btn-ghost" data-deny="'+esc(ref)+'">'+t('notif.deny')+'</button></div>';
+   else if(ref)btns='<div class="honest">'+(LANG=='hi'?'आपने अनुमति दे दी है।':'You have allowed this.')+'</div>';
+  }
+  return '<div class="appitem" style="cursor:default"><div class="dt">'+esc(n.ts||'')+'</div><div style="font-size:14px;margin-top:4px">'+body+'</div>'+btns+'</div>';
+ }).join('');
+ el.querySelectorAll('[data-allow]').forEach(b=>b.onclick=()=>answerConsent(b.getAttribute('data-allow'),true));
+ el.querySelectorAll('[data-deny]').forEach(b=>b.onclick=()=>answerConsent(b.getAttribute('data-deny'),false));
+}
+async function answerConsent(ref,granted){
+ try{await api('POST','/api/seva/consents',{scope:'operator_document_access',granted:granted,application_ref:ref});
+  await loadConsents();renderNotifs();renderConsents()}catch(e){}
+}
+function renderConsents(){
+ const el=$('consList');
+ if(!CONS.length){el.innerHTML='<div class="empty">'+t('cons.none')+'</div>';return}
+ el.innerHTML=CONS.slice(0,10).map(c=>{
+  const st=c.revoked_at?'<span class="badge b-rej">'+(LANG=='hi'?'वापस':'revoked')+'</span>':c.granted?'<span class="badge b-ok">'+(LANG=='hi'?'दी गई':'granted')+'</span>':'<span class="badge b-warn">'+(LANG=='hi'?'मना':'denied')+'</span>';
+  const rb=(c.granted&&!c.revoked_at)?' <button class="btn btn-ghost" data-rev="'+c.id+'">'+t('prof.revoke')+'</button>':'';
+  return '<div class="appitem" style="cursor:default"><div class="top"><div><div class="ttl" style="font-size:14px">'+esc(c.scope.replace(/_/g,' '))+'</div><div class="dt">'+esc(c.ts||'')+'</div></div><div>'+st+rb+'</div></div></div>';
+ }).join('');
+ el.querySelectorAll('[data-rev]').forEach(b=>b.onclick=async()=>{try{await api('POST','/api/seva/consents/'+b.getAttribute('data-rev')+'/revoke',{});await loadConsents();renderNotifs();renderConsents()}catch(e){}});
+}
 
 function renderDocs(){
  $('docList').innerHTML=DOCS.length?DOCS.map(d=>

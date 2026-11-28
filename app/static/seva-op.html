@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Operator console - Seva Setu India</title>
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/static/brand/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/static/brand/favicon-16.png"><link rel="icon" type="image/svg+xml" href="/static/brand/seva-logo.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0b2a6b"><meta name="robots" content="noindex">
+<link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/seva.css?v=1"><link rel="stylesheet" href="/static/seva-dash.css?v=1">
+</head><body>
+<div class="notgov">Operator console - internal staff view. Seva Setu India is a private assistance service.</div>
+<header class="sh dh">
+ <a class="brand" href="/" aria-label="Seva Setu India home">
+  <svg class="blogo" viewBox="0 0 48 48" role="img" aria-label="Seva Setu logo"><rect x="2" y="2" width="44" height="44" rx="12" fill="#0b2a6b"/><path d="M10 30c4-8 10-12 14-12s10 4 14 12" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><path d="M12 34h24" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/><circle cx="24" cy="14" r="3.4" fill="#fff"/></svg>
+  <span class="bname">Seva Setu Operator</span></a>
+ <div class="hact"><button id="logoutB" class="btn btn-ghost hide">Logout</button></div>
+</header>
+<main id="main">
+ <section id="loginView" class="lview hide">
+  <div class="card lcard">
+   <h1>Operator login</h1>
+   <p class="mut">Paste your operator token. Tokens are issued by a super admin.</p>
+   <label class="fld"><span>Token</span><input id="otok" autocomplete="off" placeholder="operator token"></label>
+   <button id="loginB" class="btn btn-navy">Login</button>
+   <p id="lmsg" class="lmsg" role="status"></p>
+  </div>
+ </section>
+ <section id="opView" class="hide">
+  <div class="rowbet">
+   <h2>Applications queue</h2>
+   <select id="fStatus" class="fld" style="padding:9px;border:1.5px solid var(--line);border-radius:10px"><option value="">All statuses</option></select>
+  </div>
+  <div id="queue"></div>
+  <div id="opDetail" class="hide"></div>
+ </section>
+</main>
+<footer class="dfoot"><a href="/">Citizen site</a></footer>
+<script src="/static/seva-op.js?v=1"></script>
+</body></html>

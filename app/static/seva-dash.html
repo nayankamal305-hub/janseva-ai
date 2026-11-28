@@ -1,6 +1,6 @@
 <!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Dashboard - Seva Setu India</title>
-<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/static/brand/seva-logo.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/static/brand/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/static/brand/favicon-16.png"><link rel="icon" type="image/svg+xml" href="/static/brand/seva-logo.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="description" content="Seva Setu India citizen dashboard - your applications, schemes and profile.">
 <meta name="theme-color" content="#0b2a6b"><link rel="manifest" href="/manifest.json">
 <link rel="stylesheet" href="/static/fonts/fonts.css"><link rel="stylesheet" href="/static/seva.css?v=1"><link rel="stylesheet" href="/static/seva-dash.css?v=1">
@@ -64,6 +64,10 @@
      <button class="btn btn-navy" id="qScheme" data-t="over.findScheme">Find schemes for me</button>
      <a class="btn btn-ghost2" href="/app" data-t="over.complaint">File a complaint</a>
     </div>
+   </div>
+   <div class="card" id="notifCard">
+    <h3 data-t="over.notifs">Notifications</h3>
+    <div id="notifList"></div>
    </div>
    <div class="card" id="overRecent">
     <h3 data-t="over.recent">Recent applications</h3>
@@ -143,6 +147,10 @@
     </div>
     <button class="btn btn-saffron" id="saveProf" data-t="prof.save">Save profile</button>
     <p id="pmsg" class="lmsg" role="status"></p>
+   </div>
+   <div class="card">
+    <h3 data-t="prof.consents">Your consents</h3>
+    <div id="consList"></div>
    </div>
   </div>
  </section>

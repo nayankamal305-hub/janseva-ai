@@ -131,7 +131,7 @@ def get_application(db, ref, user_id=None):
     return a
 
 def list_applications(db, user_id):
-    return db.all("SELECT ref_no,category_id,title,status,next_action,created_at,updated_at FROM applications WHERE user_id=? ORDER BY id DESC", (user_id,))
+    return db.all("SELECT id,ref_no,category_id,title,status,next_action,created_at,updated_at FROM applications WHERE user_id=? ORDER BY id DESC", (user_id,))
 
 def set_status(db, app_id, status, actor, note=""):
     if status not in STATUSES: return {"ok": False, "error": "unknown status"}

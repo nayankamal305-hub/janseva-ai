@@ -44,11 +44,11 @@ def list_documents(db, user_id):
 def get_document(db, doc_id, user_id):
     return db.one("SELECT * FROM seva_documents WHERE id=? AND user_id=? AND deleted=0", (doc_id, user_id))
 
-def read_document(db, env, uploads_root, row, actor):
+def read_document(db, env, uploads_root, row, actor, consent_id=None):
     got = _store(env, uploads_root).get(row["storage_key"])
     if not got: return None
-    db.run("INSERT INTO document_access_logs(document_id,actor,actor_role,action,consent_id,ts) VALUES(?,?,?,?,NULL,?)",
-           (row["id"], actor, actor.split(":")[0] if ":" in actor else "citizen", "view", now()))
+    db.run("INSERT INTO document_access_logs(document_id,actor,actor_role,action,consent_id,ts) VALUES(?,?,?,?,?,?)",
+           (row["id"], actor, actor.split(":")[0] if ":" in actor else "citizen", "view", consent_id, now()))
     return got[0], row["mime"], row["filename"]
 
 def delete_document(db, doc_id, user_id):

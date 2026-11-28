@@ -1,6 +1,7 @@
-ROLES = ["super_admin", "state_admin", "district_admin", "department_admin", "verification_officer", "public_viewer"]
+ROLES = ["super_admin", "state_admin", "district_admin", "department_admin", "verification_officer", "public_viewer", "seva_operator"]
 PERMS = {
  "super_admin": {"*"},
+ "seva_operator": {"seva.operate"},
  "state_admin": {"complaints.view", "complaints.reroute", "authorities.edit", "escalation.run", "reports.view"},
  "district_admin": {"complaints.view", "complaints.reroute", "escalation.run", "reports.view"},
  "department_admin": {"complaints.view", "complaints.reroute"},
